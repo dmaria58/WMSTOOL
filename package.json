@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "一套前端组件库基于atd 3.0.3、react",
   "scripts": {
     "dist": "antd-tools run dist",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dmaria58/WMSTOOL.git"
+    "url": "https://github.com/dmaria58/WMSTOOL.git"
   },
   "keywords": [
     "react",
