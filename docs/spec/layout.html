@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce">Ant Design</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feature">Features</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases">Cases</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="Principles$Menu" aria-haspopup="true"><h4>Principles</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="Principles$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity">Proximity</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment">Alignment</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast">Contrast</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition">Repetition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct">Make it Direct</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight">Keep it Lightweight</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/stay">Stay on the Page</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation">Provide an Invitation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/transition">Use Transition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction">React Immediately</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors">Colors</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon">Icons</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/font">Font</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting">Copywriting</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/spec/layout">Layout</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/navigation">Navigation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry">Data Entry</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display">Data Display</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback">Feedback</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">Motion<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>Layout<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/layout.en-US.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>Layout is the prerequisite for a webpage. It&#x27;s also the foundation of follow-up interactive and visual design. In order to guarantee consistency among similar products, Ant Design provides some common layout templates. Before choosing one of these templates, you need to have a clear mind about:</p><ul><li><p>The main tasks that a user needs to accomplish and all necessary information for making such decisions.</p></li><li><p>The priorities and features of those tasks and information, so as to select a reasonable layout</p></li></ul></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#Commonly-used-layout" title="Commonly used layout">Commonly used layout</a></li><li><a class="bisheng-toc-h2" href="#Grid" title="Grid">Grid</a></li></ul></div></div><section class="markdown"><h2 id="Commonly-used-layout"><span>Commonly used layout</span><a href="#Commonly-used-layout" class="anchor">#</a></h2><p>Through a large number of practices, Ant Design summarized six commonly used layout templates. There are home page, dashboard, list page, table page, details page and form page. Knowing these templates helps to find out a suitable layout for your product quickly.</p><h3 id="Home-page"><span>Home page</span><a href="#Home-page" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/olHkTiGQqfwThlgPIXzx.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/uxbNrsFCmPFjYdhDowky.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Home page is usually the first step for a user to understand a website or the products. Generally, home page consists of product drawings, brief product introductions, and user login interfaces. In the design, we recommend you to:</p><ul><li><p>Keep the copywriting clear and simply, which helps you better express the ideas.</p></li><li><p>Use intuitive pictures for a product, which helps to deepen a user&#x27;s understanding and impression.</p></li></ul><h3 id="Dashboard"><span>Dashboard</span><a href="#Dashboard" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/fCVwqOiItdbzyZkQOOiQ.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/LvYKhbKsPzIRLGsBxUJA.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Dashboard collects a variety of information, such as digitals, graphics, copywriting, etc. Key information should be clearly represented and easily understood. Thus, displaying the complex information in a clear way is important in the design. For this propose, we recommend you to:</p><ul><li><p>Organize the page layout according to the importance of information, so as to highlight key points.</p></li><li><p>Visualize the data, which allows users to understand key information as well as the overall situation in an intuitive way.</p></li><li><p>Use color and grid layout logically, which helps to reduce a user&#x27;s visual fatigue.</p></li></ul><h3 id="List-page"><span>List page</span><a href="#List-page" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/GSIyiSRJmxUhmxpMoyrj.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/VyFWYXzkQYYzMzqBXfzO.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>List is a way to display information in parallel. A well designed list can be helpful for users to read basic information and perform corresponding operations quickly. Therefore, the &quot;readability&quot; and &quot;operability&quot; of a list are the keys to the design. For this propose, we recommend you to:</p><ul><li><p>Identify the importance of information accordingly and show nothing but key information as well as the corresponding operations.</p></li><li><p>Fold secondary information or put it into the details page. It allows a user to access information in a progressive way when the content is too complex.</p></li></ul><h3 id="Table-page"><span>Table page</span><a href="#Table-page" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/ArRESSbBrLJWhjscKiZh.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/gDwAZagDBphbcePRDnBZ.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Table is a carrier for multi-dimensional information. It can make complex information to be read and understood easily. Its readability, convenience and operability play an essential role in the user experience. Therefore, we should pay attention to the following points in the design:</p><ul><li><p>Construct a clear table layout. It can be helpful for a user to receive and understand information.</p></li><li><p>Highlight key information through some visual adjustments.</p></li><li><p>Use the horizontal or vertical zebra strip smartly when there is a large multi-row table or there are multiple columns in each row. By doing so, information is more distinguishable and easier to be understood.</p></li></ul><h3 id="Details-page"><span>Details page</span><a href="#Details-page" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/wRdLpkIoTNfxOvNOqKyf.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/IWXpmErtdIHzDYbtNohi.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Details page usually carries a large amount of basic information, extended information as well as status information. It&#x27;s important to identify priorities of the information. A clear layout can be helpful for a user to get key information at a glance and make decisions efficiently. In the design, it&#x27;s worth noting that:</p><ul><li><p>Layout format, text size and text spacing, are the key factors that affect a user&#x27;s efficiency to access information.</p></li><li><p>Text with graphic can be better understood than pure text.</p></li></ul><h3 id="Form-page"><span>Form page</span><a href="#Form-page" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/AVxFnNgjBPIaxLnCOxJv.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/sqeTZuWlqiGboOITncCh.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Form page is often used for tasks such as login, register, booking, comment, etc. Form page is indispensable when you need to record the user information. Therefore, a well designed form page can guide the user to complete the data recording workflow behind the form efficiently. We recommended you to:</p><ul><li><p>Provide a clear user&#x27;s view path, in consideration of how a user will browse the information;</p></li><li><p>Simplify the content of a form (try to avoid redundant inputs)</p></li><li><p>Name the tags that can be easy to read and understand. Avoid confusions caused by ambiguous descriptions;</p></li><li><p>Place eye-catching submit buttons on the end of a user&#x27;s view path, which makes it more conducive for a user to complete all the operations.</p></li></ul><hr/><h2 id="Grid"><span>Grid</span><a href="#Grid" class="anchor">#</a></h2><p>There are <code>Grid</code> and <code>Gutter</code> in AntD layout. During the design, you can make an assumption that the &quot;total page width is 1440px, and the &quot;content area width is 1208px&quot;. Based on this assumption, you can design the page in 24 evenly divided columns.</p><p><img src="https://os.alipayobjects.com/rmsportal/bohSixChLxFkwsOEiNaF.png"/></p><p>It is recommended that the number of blocks arranged in the horizontal direction be at most four, at least one, so as to guarantee the comfort of view.</p><p><img src="https://os.alipayobjects.com/rmsportal/JmrNLpHxwcLebVpBIGqD.png"/></p><blockquote><p>Note: The gray parts are called &quot;Column&quot;, and the white parts are called &quot;Gutter&quot;.</p></blockquote><h3 id="Grid-formula"><span>Grid formula</span><a href="#Grid-formula" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/htXqyMPydaagYLdAGEJK.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>The <code>Gutter</code> value in ant design is fixed. When the width of a browser decrease or increase within a certain range, the width of <code>grids</code> will be changed accordingly, but the width of <code>Gutter</code> remains unchanged.</p><p>There are two <code>Gutter</code>s in Ant Design</p><ul><li><p>24px width <code>Gutter</code>, which is used in home page and Dashboard</p></li><li><p>16px width <code>Gutter</code>, which is used in list Page, table page, details page and form page.</p></li></ul><blockquote><p><a href="https://zos.alipayobjects.com/rmsportal/cbxeMLaFnqQEvFgmhSTS.png">tips for setting the grid </a>.</p></blockquote></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/copywriting">Copywriting</a><a class="next-page" href="/docs/spec/navigation">Navigation</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

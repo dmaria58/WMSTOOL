@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/navigation">Navigation</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/pattern/form">Form</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/list">List</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/table">Table</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/complex-table">Complex Table</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/advanced-search">Advanced Search</a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>Form<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/pattern/form.en-US.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>As an important interface to obtain user input, forms play the important role of matching answers to questions.</p><p>When designing a form, it&#x27;s recommended to:</p><ol><li><p>Make sure users know what is required to enter and why.</p><p>Use sample language as <code>label</code> for ordinary users and professional terms for experts. If sensitive information (for example ID card number, mobile phone number) is required, explain why.</p></li><li><p>Provide rich context to help users complete the form.</p><p>Using &quot;proper default value&quot;, &quot;structured format&quot;, &quot;tooltip&quot; and &quot;reminder&quot; are practical for describing such context.</p></li><li><p>Be error-sensitive and fault-tolerant.</p><p>Be error-sensitive means giving feedback to users quickly through a variety of validation rules of user input. If the validation starts only after a form is submitted, it would be too late. Being fault-tolerant means it should be allowed to use different kinds of formats as well as syntax. For example, if a user types in some spaces into a phone number input box, the system should delete those spaces automatically instead of telling the user to correct them.</p></li><li><p>Don&#x27;t ask unnecessary questions.</p></li></ol></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#Content" title="Content">Content</a></li><li><a class="bisheng-toc-h2" href="#Interactions" title="Interactions">Interactions</a></li><li><a class="bisheng-toc-h2" href="#Format" title="Format">Format</a></li></ul></div></div><section class="markdown"><h2 id="Content"><span>Content</span><a href="#Content" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/mLkQbODgVsdGUTe.png" alt="Example of a form"/></div><div class="preview-image-title">Example of a form</div><div class="preview-image-description"></div></div></div><p>A form usually consists of 4 parts:</p><ol><li><p>Label</p></li><li><p>Input box</p></li><li><p>Validation feedback</p></li><li><p>Action</p></li></ol><blockquote><p>Note: <code>*</code> indicates that the input is required.</p></blockquote><h2 id="Interactions"><span>Interactions</span><a href="#Interactions" class="anchor">#</a></h2><h3 id="Gap-filling-input"><span>Gap filling input</span><a href="#Gap-filling-input" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/SdzCTaevNMvJFBR.png" alt="Example of gap filling input"/></div><div class="preview-image-title">Example of gap filling input</div><div class="preview-image-description"></div></div></div><p>Gap filling input usually appears in a descriptive context to help users understand the current situation and provide information correctly.</p><h3 id="Combined-input"><span>Combined input</span><a href="#Combined-input" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/waStvhMnuoqqsCE.png" alt="Example of combined input"/></div><div class="preview-image-title">Example of combined input</div><div class="preview-image-description"></div></div></div><p>When two input boxes have strong correlation, they can be combined together so as to save some space.</p><h3 id="Alignment"><span>Alignment</span><a href="#Alignment" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/cjHTEtXFxUSdHnE.png" alt="Example of alignment"/></div><div class="preview-image-title">Example of alignment</div><div class="preview-image-description"></div></div></div><p>When designing a form, button groups should be aligned to the left of the input boxes.</p><h3 id="Disabled-main-button"><span>Disabled main button</span><a href="#Disabled-main-button" class="anchor">#</a></h3><p>When there are just a few (less than 3) input boxes in a form, &quot;submit&quot; button or other main buttons should be disabled if a user has not yet filled in all required input boxes. However, when there are too many input boxes (more than 5), do not disable those main buttons.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/VabHKlbouFxSQXz.png" alt="main button is disabled when there are not enough characters"/></div><div class="preview-image-title">main button is disabled when there are not enough characters</div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/usdFxJmWDawqUuq.png" alt="main button is enabled when there are enough characters"/></div><div class="preview-image-title">main button is enabled when there are enough characters</div><div class="preview-image-description"></div></div></div><p>When there are just a few input boxes, users can see feedback once they type in something and thus the rule is easy to understand.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/GwZhvOuXmwqUIUW.png" alt="Don&#x27;t use disabled main button"/></div><div class="preview-image-title">Don&#x27;t use disabled main button</div><div class="preview-image-description"></div></div></div><p>When there are many input boxes (especially when required input boxes are altogether with optional ones), the logic of feedback can be very complicated. Thus, disabling main buttons may cause confusion.</p><h3 id="Structured-format"><span>Structured format</span><a href="#Structured-format" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/SQgGfreRAqPZPsm.png" alt="Example of structured format"/></div><div class="preview-image-title">Example of structured format</div><div class="preview-image-description"></div></div></div><p>The structured format can be used if users are familiar with the input content and the system doesn&#x27;t accept any deviation from the desired format.</p><h3 id="Tooltip-&amp;-reminder"><span>Tooltip &amp; reminder</span><a href="#Tooltip-&amp;-reminder" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/cTlmdEprGSzMZfs.png" alt="Example of tooltip"/></div><div class="preview-image-title">Example of tooltip</div><div class="preview-image-description">when an input box is focused, the tooltip will appear until the input box loses focus again</div></div><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/QPhvLWfMbLTvjRw.png" alt="Example of reminder"/></div><div class="preview-image-title">Example of reminder</div><div class="preview-image-description">when an input box is focused, the reminder will appear until a user types in at least one character</div></div></div><p>Use a tooltip if a brief input label may cause confusion while you still want to keep the label text to be short.</p><p>Use a reminder if you want users to pay attention to the format or purpose of an input box. A reminder will disappear once there is something typed in the input box, so it should be used only when users are familiar with the content.</p><h3 id="Password-input-box"><span>Password input box</span><a href="#Password-input-box" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/wKpOgeyyoOUeCrk.png" alt="Example of password input box"/></div><div class="preview-image-title">Example of password input box</div><div class="preview-image-description"></div></div></div><p>Password input box provides real time feedback on password strength and validity. It&#x27;s quite applicable to a registration page.</p><h3 id="Validation"><span>Validation</span><a href="#Validation" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/urCdIJFuNYCenqH.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">Validation in real time</div></div><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/KkcSBkbTJirIxCw.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">Validation after losing focus</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://zos.alipayobjects.com/rmsportal/xTtVSREbASRMstTggVGD.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">When a 'submit' button is clicked, the system will deal with user inputs and display feedback (the number of errors and the types of errors) on the page.</div></div></div><p>Use different validation rules and a variety of feedback to help users correct errors before they click on a &quot;submit&quot; button.</p><h3 id="Character-counting-box"><span>Character counting box</span><a href="#Character-counting-box" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/JxzQIRfMCtMjuaH.png" alt="Example of word counting"/></div><div class="preview-image-title">Example of word counting</div><div class="preview-image-description"></div></div></div><p>A character counting box can show the current number of characters and checks if this number exceeds the limit.</p><h2 id="Format"><span>Format</span><a href="#Format" class="anchor">#</a></h2><h3 id="Margin"><span>Margin</span><a href="#Margin" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/dlTiHzZvCGRbMzL.png" alt="Example of margin between inputs"/></div><div class="preview-image-title">Example of margin between inputs</div><div class="preview-image-description"></div></div></div><p>A typical example of using margin between inputs.</p><h3 id="Width"><span>Width</span><a href="#Width" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper good"><img class="preview-img good" src="https://os.alipayobjects.com/rmsportal/vypllNQZsEHRszB.png" alt="Good"/></div><div class="preview-image-title">Good</div><div class="preview-image-description"></div></div><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper bad"><img class="preview-img bad" src="https://os.alipayobjects.com/rmsportal/XSLwnrlLbKFjiNj.png" alt="Bad"/></div><div class="preview-image-title">Bad</div><div class="preview-image-description"></div></div></div><p>If the maximum length of an input content is known, it&#x27;s recommended to define the input width according to the maximum length.</p><p><br/></p><h3 id="Alignment"><span>Alignment</span><a href="#Alignment" class="anchor">#</a></h3><p>There are both advantages and disadvantages for any particular alignment. Thus, you need to be clear about your purposes (if you want to speed up or slow down a user) and the limitations (screen width restrictions, problems of localization, etc.) before choosing one of those alignments.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/UxGJfenYBKvkEEB.png" alt="Right alignment (recommended)"/></div><div class="preview-image-title">Right alignment (recommended)</div><div class="preview-image-description"></div></div></div><p>Right alignment (recommended)</p><ul><li><p>Advantage: saves vertical space.</p></li><li><p>Disadvantages: reduces readability; reduces flexibility of the input length</p></li><li><p>When to use: you want to save more vertical space and speed up users for filling a form.</p></li></ul><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/AsyyNKormNdEMLi.png" alt="Top alignment"/></div><div class="preview-image-title">Top alignment</div><div class="preview-image-description"></div></div></div><p>Top alignment</p><ul><li><p>Advantages: high readability; high flexibility of the label length.</p></li><li><p>Disadvantages: takes a lot of vertical space.</p></li><li><p>When to use: you want users to finish filling the form quickly.</p></li></ul><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/eqUyDExbRlAQoas.png" alt="Left alignment"/></div><div class="preview-image-title">Left alignment</div><div class="preview-image-description"></div></div></div><p>Left alignment</p><ul><li><p>Advantages: easy to read and saves vertical space.</p></li><li><p>Disadvantages: slows down users and reduces flexibility for the input length.</p></li><li><p>When to use: you want to slow down users so that they can take more considerations when filling a form.</p></li></ul></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/pattern/navigation">Navigation</a><a class="next-page" href="/docs/pattern/list">List</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

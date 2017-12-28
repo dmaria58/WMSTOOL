@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/index-cn">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">搜索组件...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>English</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog-cn"><span>组件</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce-cn">Ant Design</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feature-cn">基本理念</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases-cn">实践案例</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu-selected"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="设计原则$Menu" aria-haspopup="true"><h4>设计原则</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="设计原则$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity-cn">亲密性</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment-cn">对齐</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast-cn">对比</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition-cn">重复</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct-cn">直截了当</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/stay-cn">足不出户</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight-cn">简化交互</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation-cn">提供邀请</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:80px"><a href="/docs/spec/transition-cn">巧用过渡</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction-cn">即时反应</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors-cn">色彩</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon-cn">图标</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/font-cn">字体</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting-cn">文案</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/layout-cn">布局</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/navigation-cn">导航</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry-cn">数据录入</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display-cn">数据展示</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback-cn">反馈</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">动效<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>巧用过渡<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/transition.zh-CN.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>人脑灰质（Gray Matter）会对动态的事物（eg：移动、形变、色变等）保持敏感。在界面中，适当的加入一些过渡效果，能让界面保持生动，同时也能增强用户和界面的沟通。</p><ul><li><p>Adding: 新加入的信息元素应被告知如何使用，从页面转变的信息元素需被重新识别。</p></li><li><p>Receding: 与当前页无关的信息元素应采用适当方式移除。</p></li><li><p>Normal: 指那些从转场开始到结束都没有发生变化的信息元素。</p></li></ul></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#在视图变化时保持上下文" title="在视图变化时保持上下文">在视图变化时保持上下文</a></li><li><a class="bisheng-toc-h2" href="#解释刚刚发生了什么" title="解释刚刚发生了什么">解释刚刚发生了什么</a></li><li><a class="bisheng-toc-h2" href="#改善感知性能" title="改善感知性能">改善感知性能</a></li><li><a class="bisheng-toc-h2" href="#自然运动" title="自然运动">自然运动</a></li></ul></div></div><section class="markdown"><h2 id="在视图变化时保持上下文"><span>在视图变化时保持上下文</span><a href="#在视图变化时保持上下文" class="anchor">#</a></h2><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/EejaUGsyExkXyXr.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">滑入与滑出示例</div><div class="preview-image-description"></div></div><p>滑入与滑出：可以有效构建虚拟空间。</p><p><br/></p><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/GIutPgZMTyfFfrH.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">传送带示例</div><div class="preview-image-description"></div></div><p>传送带：可极大地扩展虚拟空间。</p><p><br/></p><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/ERKhqHlcHiCDSQu.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">折叠窗口示例</div><div class="preview-image-description"></div></div><p>折叠窗口：在视图切换时，有助于保持上下文，同时也能拓展虚拟空间。</p><p><br/></p><hr/><h2 id="解释刚刚发生了什么"><span>解释刚刚发生了什么</span><a href="#解释刚刚发生了什么" class="anchor">#</a></h2><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/FqkQMyFqNqielOw.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">对象增加示例</div><div class="preview-image-description">新增一条对象时，该行『高亮』告知用户这是新增项；几秒后『高亮』消失，以免过度干扰用户。</div></div><p>对象增加：在列表/表格中，新增了一个对象。</p><p><br/></p><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/pnNkNIMoowmGUQy.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">对象删除示例</div><div class="preview-image-description"></div></div><p>对象删除：在列表/表格中，删除了一个对象。</p><p><br/></p><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/XrUIWmsmOlEnZGc.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">对象更改示例</div><div class="preview-image-description">状态一：用户更改了『详情』中的值；<br>状态二：用户点击『保存』后，详情所在的网格出现『黄底』，表明该对象发生了更改；<br>状态三：底色持续几秒后，恢复正常。</div></div><p>对象更改：在列表/表格中，更改了一个对象。</p><p><br/></p><div class="preview-image-box transition-video-player"><div class="preview-image-wrapper"><section style="position:relative"><video src="https://os.alipayobjects.com/rmsportal/gSNilqbiXOufDXF.mp4" type="video/mp4" loop="" style="width:100%"></video><section style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);cursor:pointer;opacity:1;transition:opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)"><svg version="1.2" viewBox="0 0 60 60" width="60" height="60" style="position:absolute;top:50%;left:50%;margin:-30px;border-radius:30px;background-color:#fff"><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path><path d="M20 15L20 45L45 30Z" fill="#999" style="transform-origin:30px 30px"></path></svg></section></section></div><div class="preview-image-title">对象呼出示例</div><div class="preview-image-description"></div></div><p>对象呼出：点击页面中元素，呼出一个新对象。</p><hr/><h2 id="改善感知性能"><span>改善感知性能</span><a href="#改善感知性能" class="anchor">#</a></h2><p>当无法有效提升『实际性能』时，可以考虑适当转移用户的注意力，来缩短某项操作的感知时间，改善感知性能。</p><p><br/></p><hr/><h2 id="自然运动"><span>自然运动</span><a href="#自然运动" class="anchor">#</a></h2><p>参见 <a href="http://motion.ant.design/language/time">Ant Motion 动画语言</a>。</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/invitation-cn">提供邀请</a><a class="next-page" href="/docs/spec/reaction-cn">即时反应</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/navigation">Navigation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/form">Form</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/list">List</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/table">Table</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/complex-table">Complex Table</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/pattern/advanced-search">Advanced Search</a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>Advanced Search<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/pattern/advanced-search.en-US.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>With Advanced Search, users can narrow down the range of complex lists / tables.</p></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#Conventions" title="Conventions">Conventions</a></li><li><a class="bisheng-toc-h2" href="#Field-Type" title="Field Type">Field Type</a></li></ul></div></div><section class="markdown"><h2 id="Conventions"><span>Conventions</span><a href="#Conventions" class="anchor">#</a></h2><h3 id="Interaction"><span>Interaction</span><a href="#Interaction" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/NpRKspdYRDwsKnw.png" alt="Interactive examples"/></div><div class="preview-image-title">Interactive examples</div><div class="preview-image-description">While in a stowed state, a user clicks Advanced Search to expand search options; if the user has previously entered a query, it's a best practice to transfer the corresponding value to the input box.</div></div></div><p>Conventionally used with deep tables, suitable for search conditions as well as searching for a number of unknown values ​​within a range.</p><p>Advanced search is generally used by intermediate / expert users, typically by clicking advanced search. If you are displaying complex data, you can expand advanced search by default.</p><p><br/></p><p>&lt;img class=&quot;preview-img&quot; align=&quot;right&quot; alt=&quot;Interactive examples&quot; description=&quot;Place an Alert to show the value that has already been entered; the user can click &quot;Clear&quot; to empty all the input values. Click advanced search to expand Advanced Search again.&#x27; src=&quot;<a href="https://os.alipayobjects.com/rmsportal/gKiZtjopvLufqSP.png&quot;&gt;">https://os.alipayobjects.com/rmsportal/gKiZtjopvLufqSP.png&quot;&gt;</a></p><p>When advanced search is hidden, you should display the search criteria and values when a value is entered.</p><h3 id="Arrangement"><span>Arrangement</span><a href="#Arrangement" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/TsdXCWLPIETykye.png" alt="Arrangement Example"/></div><div class="preview-image-title">Arrangement Example</div><div class="preview-image-description"></div></div></div><p>The order of the search criteria should be the same as the order of the titles in the table, and frequently used search conditions can be placed at the top.</p><h3 id="Specifications"><span>Specifications</span><a href="#Specifications" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/fuPcwZCYiohhdSt.png" alt="Specification Example"/></div><div class="preview-image-title">Specification Example</div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/bFLUSbwoNoakKYS.png" alt="Specification Example"/></div><div class="preview-image-title">Specification Example</div><div class="preview-image-description"></div></div></div><ul><li><p>Landscape layout</p></li></ul><p>Try not to place more than three columns of input boxes on one line. All Labels and input boxes should fall on the grid.</p><ul><li><p>Vertical layout</p></li></ul><p>Use <code>16px</code> for vertical margins.</p><h2 id="Field-Type"><span>Field Type</span><a href="#Field-Type" class="anchor">#</a></h2><h3 id="Interaction"><span>Interaction</span><a href="#Interaction" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/TUxfnHjfTJeKaDq.png" alt="Interactive Example"/></div><div class="preview-image-title">Interactive Example</div><div class="preview-image-description"></div></div></div><p>Field types usually appear at the bottom of the main search box. This is suitable when search conditions and values ​​are relatively small in the display.</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/pattern/complex-table">Complex Table</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/index-cn">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">搜索组件...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>English</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog-cn"><span>组件</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce-cn">Ant Design</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feature-cn">基本理念</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases-cn">实践案例</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu-selected"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="设计原则$Menu" aria-haspopup="true"><h4>设计原则</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="设计原则$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity-cn">亲密性</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment-cn">对齐</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast-cn">对比</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition-cn">重复</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct-cn">直截了当</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:80px"><a href="/docs/spec/stay-cn">足不出户</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight-cn">简化交互</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation-cn">提供邀请</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/transition-cn">巧用过渡</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction-cn">即时反应</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors-cn">色彩</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon-cn">图标</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/font-cn">字体</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting-cn">文案</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/layout-cn">布局</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/navigation-cn">导航</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry-cn">数据录入</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display-cn">数据展示</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback-cn">反馈</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">动效<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>足不出户<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/stay.zh-CN.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>能在这个页面解决的问题，就不要去其它页面解决，因为任何页面刷新和跳转都会引起变化盲视（Change Blindness），导致用户心流（Flow）被打断。频繁的页面刷新和跳转，就像在看戏时，演员说完一行台词就安排一次谢幕一样。</p><blockquote><p><strong> 变换盲视（Change Blindness）</strong> ：指视觉场景中的某些变化并未被观察者注意到的心理现象。产生这种现象的原因包括场景中的障碍物，眼球运动、地点的变化，或者是缺乏注意力等。——摘自《维基百科》</p><p><strong> 心流（Flow）</strong> ：也有别名以化境 (Zone) 表示，亦有人翻译为神驰状态，定义是一种将个人精神力完全投注在某种活动上的感觉；心流产生时同时会有高度的兴奋及充实感。——摘自《维基百科》</p></blockquote></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#覆盖层" title="覆盖层">覆盖层</a></li><li><a class="bisheng-toc-h2" href="#嵌入层" title="嵌入层">嵌入层</a></li><li><a class="bisheng-toc-h2" href="#虚拟页面" title="虚拟页面">虚拟页面</a></li><li><a class="bisheng-toc-h2" href="#流程处理" title="流程处理">流程处理</a></li></ul></div></div><section class="markdown"><h2 id="覆盖层"><span>覆盖层</span><a href="#覆盖层" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/woHOTIZeXCYmtkv.png" alt="推荐示例"/></div><div class="preview-image-title">推荐示例</div><div class="preview-image-description">用户点击『删除』后，直接操作；出现 Message 告知用户操作成功，并提供用户『撤消』的按钮；用户进行下一个操作或者 1 分钟内不进行任何操作， Message 消失，用户无法再『撤消』。</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/hDlhNscVtHdvvgu.png" alt="推荐示例"/></div><div class="preview-image-title">推荐示例</div><div class="preview-image-description">特例：在执行某些无法『撤消』的操作时，可以点击『删除』后，出现 Popconfirm 进行二次确认，在当前页面完成任务。</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/JEcWKBYlMcYIowX.png" alt="不推荐示例"/></div><div class="preview-image-title">不推荐示例</div><div class="preview-image-description">滥用 Modal 进行二次确认，就像『狼来了』一样，既打断用户心流（无法将上下文带到弹出框中），也无法避免失误的发生。</div></div></div><p>二次确认覆盖层：避免滥用 Modal 进行二次确认，应该勇敢的让用户去尝试，给用户机会『撤消』即可。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/WIhhhXExyQBsZwj.png" alt="详情覆盖层示例"/></div><div class="preview-image-title">详情覆盖层示例</div><div class="preview-image-description">通过『点击』图标查看更多详情信息。</div></div></div><p>详情覆盖层：一般在列表中，通过用户『悬停』/『点击』某个区块，在当前页加载该条列表项的更多详情信息。</p><blockquote><p>注：使用『悬停』激活时，当鼠标移入时，需要设置 0.5 秒左右的延迟触发；当鼠标移出时，立刻关闭覆盖层</p></blockquote><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/YehbrRkldqWsezo.png" alt="输入覆盖层示例"/></div><div class="preview-image-title">输入覆盖层示例</div><div class="preview-image-description">鼠标『点击』图标触发；鼠标『点击』悬浮层以外的其他区块后，直接保存输入结果并退出。</div></div></div><p>输入覆盖层：在覆盖层上，让用户直接进行少量字段的输入。</p><p><br/></p><hr/><h2 id="嵌入层"><span>嵌入层</span><a href="#嵌入层" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/bHCqDMqXhZvKbve.png" alt="列表嵌入层示例"/></div><div class="preview-image-title">列表嵌入层示例</div><div class="preview-image-description"></div></div></div><p>列表嵌入层：在列表中，显示某条列表项的详情信息，保持上下文不中断。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/MsVyvEIJtlxZWBL.png" alt="标签页示例"/></div><div class="preview-image-title">标签页示例</div><div class="preview-image-description"></div></div></div><p>标签页：将多个平级的信息进行整理和分类了，一次只显示一组信息。</p><p><br/></p><hr/><h2 id="虚拟页面"><span>虚拟页面</span><a href="#虚拟页面" class="anchor">#</a></h2><p>在交互过程中，『覆盖层』可以在当前页面上方显示附加内容和交互链接；『嵌入层』可以在页面内部实现同样效果；而『虚拟页面』不局限机械时代的『页面』，可以利用信息时代的特点构建一种新型『页面』。</p><p>无限加载和分页器，详见<a href="/docs/pattern/list-cn#显示长列表">『模式／列表／显示长列表』</a></p><p>走马灯，详见<a href="/docs/pattern/list-cn#显示图片">『模式／列表／显示图片』</a></p><p><br/></p><hr/><h2 id="流程处理"><span>流程处理</span><a href="#流程处理" class="anchor">#</a></h2><p>长期以来，Web 实现流程的方式就是把每个步骤放在一个单独的页面上。虽然这种做法是分解问题最简单的方式，但并不是最佳解决方案。对于某些『流程处理』而言，让用户始终待在同一个页面上则更有必要。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/xpynnwXnfCpGHvn.png" alt="渐进式展现示例"/></div><div class="preview-image-title">渐进式展现示例</div><div class="preview-image-description"></div></div></div><p>渐进式展现：基于用户的操作/某种特定规则，渐进式展现不同的操作选项。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/EBVLFAwHHjiXtIJ.png" alt="配置程序示例"/></div><div class="preview-image-title">配置程序示例</div><div class="preview-image-description"></div></div></div><p>配置程序：通过提供一系列的配置项，帮助用户完成任务或者产品组装。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/xcYosQncDPuFxhS.png" alt="弹出框覆盖层示例"/></div><div class="preview-image-title">弹出框覆盖层示例</div><div class="preview-image-description"></div></div></div><p>弹出框覆盖层：虽然弹出框的出现会打断用户的心流，但是有时候在弹出框中使用『步骤条』来管理复杂流程也是可行的。</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/direct-cn">直截了当</a><a class="next-page" href="/docs/spec/lightweight-cn">简化交互</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

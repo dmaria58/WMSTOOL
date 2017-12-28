@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce">Ant Design</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feature">Features</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases">Cases</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="Principles$Menu" aria-haspopup="true"><h4>Principles</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="Principles$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity">Proximity</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment">Alignment</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast">Contrast</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition">Repetition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct">Make it Direct</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight">Keep it Lightweight</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/stay">Stay on the Page</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation">Provide an Invitation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/transition">Use Transition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction">React Immediately</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors">Colors</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon">Icons</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/spec/font">Font</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting">Copywriting</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/layout">Layout</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/navigation">Navigation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry">Data Entry</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display">Data Display</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback">Feedback</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">Motion<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><div data-show="true" class="ant-alert ant-alert-warning ant-alert-no-icon"><span class="ant-alert-message"><span>This article has not been translated yet. Wan&#x27;t to help us out?<a href="https://github.com/ant-design/ant-design/issues/1471">See this issue on GitHub.</a></span></span><span class="ant-alert-description"></span></div><h1>Font<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/font.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>跨平台的字体设定，力求在各个操作系统下都有最佳展示效果。</p><p>字体是界面设计中最重要的基本构成之一，用户通过文本来消化内容和完成工作，优雅的字体将大大提升用户的阅读体验及工作效率。Ant Design 的字体方案，在满足不同终端始终保持良好的阅读体验的同时，使页面的视觉层次更加清晰。使用时有以下三点需要注意：</p><ul><li><p>合理的使用不同的字重、字号和颜色来强调界面中最重要的信息；</p></li><li><p>尽可能的使用单种字体，混合使用多种字体会让界面看起来零散和草率；</p></li><li><p>遵循 WCAG 2.0 标准，字体在使用时与背景颜色的对比值满足无障碍阅读的最低标准。</p></li></ul></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#字体家族" title="字体家族">字体家族</a></li><li><a class="bisheng-toc-h2" href="#字号" title="字号">字号</a></li><li><a class="bisheng-toc-h2" href="#行高" title="行高">行高</a></li><li><a class="bisheng-toc-h2" href="#字体颜色" title="字体颜色">字体颜色</a></li></ul></div></div><section class="markdown"><h2 id="字体家族"><span>字体家族</span><a href="#字体家族" class="anchor">#</a></h2><p>字体家族 css 代码如下：</p><p>优秀的字体系统的核心是选择一个好的字体。Ant Design 的字体家族中优先使用系统默认的界面字体，同时提供了一套利于屏显的备用字体库，来维护在不同平台以及浏览器的显示下字体始终保持良好的易读性和可读性，体现了友好，稳定和专业的特性。</p><pre class="language-css"><code><span class="token property">font-family</span><span class="token punctuation">:</span> -apple-system, BlinkMacSystemFont, <span class="token string">"Segoe UI"</span>, Roboto,
+             <span class="token string">"Helvetica Neue"</span>, Helvetica, <span class="token string">"PingFang SC"</span>, <span class="token string">"Hiragino Sans GB"</span>, <span class="token string">"Microsoft YaHei"</span>,
+             SimSun, sans-serif<span class="token punctuation">;</span></code></pre><blockquote><p>参考自：<a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/</a></p></blockquote><p>另外，在中后台系统中，数字经常需要进行纵向对比展示，我们单独将数字的字体设置为 <code>Helvetica Neue</code>，使其为等宽字体。</p><blockquote><p>技术方案：<a href="http://stackoverflow.com/questions/13611420/set-a-font-specifically-for-all-numbers-on-the-page">http://stackoverflow.com/questions/13611420/set-a-font-specifically-for-all-numbers-on-the-page</a></p></blockquote><h2 id="字号"><span>字号</span><a href="#字号" class="anchor">#</a></h2><p>Ant Design 使用不同的字号和字重来传递视觉的信息层次。默认字体为 <code>12pt</code>，展示型页面可以设置为 <code>14pt</code>，其他字体字号相应升级。</p><p><img src="https://zos.alipayobjects.com/rmsportal/UkvKkdJgvFqlewCWFyQE.png"/></p><h2 id="行高"><span>行高</span><a href="#行高" class="anchor">#</a></h2><p>行高会影响阅读的体验，西文的基本行高通常是字号的 <code>1.2em</code> 上下，而中文因为字符密实且高度一致，所以一般行高需要更大，<code>1.5em</code> 至 <code>1.8em</code> 之间是一个比较好的视觉阅读效果，Ant Design 规定默认文案字体行高为 <code>1.5em</code>，展示型页面可根据实际情况调整行高。</p><h3 id="行高公式"><span>行高公式</span><a href="#行高公式" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/qFKnfXanJURiDsjJTKDP.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>字体行高绝对值为『字号 x 1.5倍』。例如：12 号字体的行高为 <code>18px</code>，14 号字体的行高为 <code>21px</code>。</p><h2 id="字体颜色"><span>字体颜色</span><a href="#字体颜色" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://zos.alipayobjects.com/rmsportal/kNFpUKqccPYxzfiQlFTh.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">注：表格中 @Black = #000000、@White = #FFFFFF、@Blue-6 = #108EE9</div></div></div><p>文本颜色如果和背景颜色太接近就会很难以阅读，这对于深色背景和浅色背景同样适用。</p><p>考虑到无障碍设计的需求，帮助那些弱视和色盲的用户也能轻松识别和阅读屏幕上的文字，我们参考了 WACG 2.0 的标准，文本和背景色之间至少保持最小 4.5:1 的对比度（AA 级），正文内容都保持了 7:1 以上的 AAA 级对比度。</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/icon">Icons</a><a class="next-page" href="/docs/spec/copywriting">Copywriting</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/index-cn">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">搜索组件...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>English</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog-cn"><span>组件</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/navigation-cn">导航</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/pattern/form-cn">表单</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/list-cn">列表</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/table-cn">表格</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/complex-table-cn">表格：复杂数据</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/pattern/advanced-search-cn">高级搜索</a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>表单<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/pattern/form.zh-CN.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>作为获取用户输入的重要交互方式，表单也承担将问题和答案进行配对的角色。</p><p>设计者进行表单设计时，应当注意这几点：</p><ol><li><p>确保用户了解要提供什么信息，以及为什么要提供这些信息。</p><p>为初级用户／偶尔访问的用户提供白话作为『标签』；为领域专家提供专业术语作为『标签』。当需要用户提供敏感信息时，通过『输入提示』来说明系统为什么要这么做，eg：需要获取身份证号码、手机号码时。</p></li><li><p>让用户能在上下文中获取信息，帮助他完成输入。</p><p>使用『良好的默认值』、『结构化的格式』、『输入提示』、『输入提醒』等方式，避免让用户在空白中完成输入。</p></li><li><p>对错误敏感，并尽可能宽容。</p><p>通过不同的『校验』规则和形式进行反馈，避免用户在点击提交后才刚刚开始『校验』，让用户提前纠正错误；依据『容错格式』，允许用户以多种格式和语法输入，eg：用户在电话号码输入框中多输入了一个空格，系统存储时可以主动删掉空格，但是不需要告诉用户这是一个错误。</p></li><li><p>不要提出不必要的问题。</p></li></ol></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#内容" title="内容">内容</a></li><li><a class="bisheng-toc-h2" href="#交互" title="交互">交互</a></li><li><a class="bisheng-toc-h2" href="#规格" title="规格">规格</a></li></ul></div></div><section class="markdown"><h2 id="内容"><span>内容</span><a href="#内容" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/mLkQbODgVsdGUTe.png" alt="结构示例"/></div><div class="preview-image-title">结构示例</div><div class="preview-image-description"></div></div></div><p>通常表单会有四个部分组成。</p><ol><li><p>标签</p></li><li><p>输入框</p></li><li><p>校验反馈</p></li><li><p>动作</p></li></ol><blockquote><p>注：<code>*</code> 表明该项为必填项。</p></blockquote><h2 id="交互"><span>交互</span><a href="#交互" class="anchor">#</a></h2><h3 id="填空"><span>填空</span><a href="#填空" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/SdzCTaevNMvJFBR.png" alt="填空示例"/></div><div class="preview-image-title">填空示例</div><div class="preview-image-description"></div></div></div><p>在一种描述性的上下文中出现输入项，可以帮助用户理解当前的状况，以及需要提供什么数据。</p><h3 id="组合输入框"><span>组合输入框</span><a href="#组合输入框" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/waStvhMnuoqqsCE.png" alt="组合输入框示例"/></div><div class="preview-image-title">组合输入框示例</div><div class="preview-image-description"></div></div></div><p>当两个输入框关联性很强时，可以前后拼接，减少页面空间。</p><h3 id="对齐方式"><span>对齐方式</span><a href="#对齐方式" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/cjHTEtXFxUSdHnE.png" alt="对齐方式示例"/></div><div class="preview-image-title">对齐方式示例</div><div class="preview-image-description"></div></div></div><p>在页面设计表单时，按钮组必须和输入框左对齐。</p><h3 id="禁用主按钮"><span>禁用主按钮</span><a href="#禁用主按钮" class="anchor">#</a></h3><p>当输入框非常少时（一般少于 3 个），如果用户没有在必填项中输入内容，可禁用『提交』等主按钮；当输入框非常多时（超过 5 项以上），不建议禁用主按钮。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/VabHKlbouFxSQXz.png" alt="未达字符标准时，主按钮禁用状态"/></div><div class="preview-image-title">未达字符标准时，主按钮禁用状态</div><div class="preview-image-description"></div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/usdFxJmWDawqUuq.png" alt="达到字符标准时，主按钮可用状态"/></div><div class="preview-image-title">达到字符标准时，主按钮可用状态</div><div class="preview-image-description"></div></div></div><p>当输入框非常少时，用户一输入就会有反馈，因而主按钮的禁用规则非常清晰，容易被用户理解。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/GwZhvOuXmwqUIUW.png" alt="不禁用示例"/></div><div class="preview-image-title">不禁用示例</div><div class="preview-image-description"></div></div></div><p>当输入框非常多时（尤其是输入项中交叉了必填项和非必填项），整个反馈链路冗长又复杂，禁用规则难以被识别，容易引起困惑。</p><h3 id="结构化的格式"><span>结构化的格式</span><a href="#结构化的格式" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/SQgGfreRAqPZPsm.png" alt="结构化的格式示例"/></div><div class="preview-image-title">结构化的格式示例</div><div class="preview-image-description"></div></div></div><p>用户对输入的内容很熟悉，且系统不希望接受任何偏离期望的格式。</p><h3 id="输入提示-&amp;-输入提醒"><span>输入提示 &amp; 输入提醒</span><a href="#输入提示-&amp;-输入提醒" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/cTlmdEprGSzMZfs.png" alt="输入提示示例"/></div><div class="preview-image-title">输入提示示例</div><div class="preview-image-description">在输入框激活后，输入提示一直出现至该输入框失去焦点。</div></div><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/QPhvLWfMbLTvjRw.png" alt="输入提醒示例"/></div><div class="preview-image-title">输入提醒示例</div><div class="preview-image-description">在输入框激活后，输入提醒不要马上消失，等用户完成第一个词输入后再消失。</div></div></div><p>输入提示：不希望在标签上放置太多文字进行解释，同时只有标签又会引起误解。</p><p>输入提醒：提醒用户该控件的目的或所需格式，由于在用户输入后提醒就会消失，所以适用在用户对内容比较熟悉时。</p><h3 id="密码加强计"><span>密码加强计</span><a href="#密码加强计" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/wKpOgeyyoOUeCrk.png" alt="密码强度示例"/></div><div class="preview-image-title">密码强度示例</div><div class="preview-image-description"></div></div></div><p>提供关于密码强度和有效性的及时反馈，适用在注册页面时的密码输入框。</p><h3 id="校验"><span>校验</span><a href="#校验" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/urCdIJFuNYCenqH.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">输入时的实时校验。</div></div><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper"><img class="preview-img inline" src="https://os.alipayobjects.com/rmsportal/KkcSBkbTJirIxCw.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">输入框失去焦点后的校验。</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://zos.alipayobjects.com/rmsportal/xTtVSREbASRMstTggVGD.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">点击『提交』后，系统将处理结果直接在页面上进行反馈（统计错误数量和标记错误内容）。</div></div></div><p>通过不同的『校验』规则和形式进行反馈，避免用户在点击提交后才刚刚开始『校验』，让用户提前纠正错误。</p><h3 id="字数校验框"><span>字数校验框</span><a href="#字数校验框" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/JxzQIRfMCtMjuaH.png" alt="字数校验框示例"/></div><div class="preview-image-title">字数校验框示例</div><div class="preview-image-description"></div></div></div><p>用于统计当前输入长度，以及是否超过系统阈值。</p><h2 id="规格"><span>规格</span><a href="#规格" class="anchor">#</a></h2><h3 id="间距"><span>间距</span><a href="#间距" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/dlTiHzZvCGRbMzL.png" alt="间隔示例"/></div><div class="preview-image-title">间隔示例</div><div class="preview-image-description"></div></div></div><p>典型表单的间隔规范。</p><h3 id="输入框宽度"><span>输入框宽度</span><a href="#输入框宽度" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper good"><img class="preview-img good" src="https://os.alipayobjects.com/rmsportal/vypllNQZsEHRszB.png" alt="正确示例"/></div><div class="preview-image-title">正确示例</div><div class="preview-image-description"></div></div><div class="preview-image-box" style="width:50%"><div class="preview-image-wrapper bad"><img class="preview-img bad" src="https://os.alipayobjects.com/rmsportal/XSLwnrlLbKFjiNj.png" alt="错误示例"/></div><div class="preview-image-title">错误示例</div><div class="preview-image-description"></div></div></div><p>当内容可预知，可以根据内容长短进行定义其落在多少个栅格上。</p><p><br/></p><h3 id="对齐方式"><span>对齐方式</span><a href="#对齐方式" class="anchor">#</a></h3><p>无论左对齐、右对齐还是顶部对齐，都有其优缺点和应用场景，所以正确的解决方案取决于具体目标和制约因素，诸如：希望用户加快或者降低填写速度（有时设计者希望用户深思熟虑每个输入）、屏幕显示的限制、本地化考虑等多种因素。</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/UxGJfenYBKvkEEB.png" alt="右对齐（推荐）"/></div><div class="preview-image-title">右对齐（推荐）</div><div class="preview-image-description"></div></div></div><p>右对齐（推荐）。</p><ul><li><p>优点：节约垂直空间。</p></li><li><p>缺点：降低可读性；标签长度和输入框弹性小。</p></li><li><p>场景：既要减少垂直空间，又要加快填写速度。</p></li></ul><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/AsyyNKormNdEMLi.png" alt="顶部对齐"/></div><div class="preview-image-title">顶部对齐</div><div class="preview-image-description"></div></div></div><p>顶部对齐。</p><ul><li><p>优点：有最快的浏览和处理速度；标签长度弹性大。</p></li><li><p>缺点：非常占垂直空间。</p></li><li><p>场景：希望用户快速填写表单，完成任务。</p></li></ul><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/eqUyDExbRlAQoas.png" alt="左对齐"/></div><div class="preview-image-title">左对齐</div><div class="preview-image-description"></div></div></div><p>左对齐。</p><ul><li><p>优点：文字开头按阅读视线对齐，方便阅读；节约垂直空间。</p></li><li><p>缺点：填写速度慢；标签长度和输入框弹性小。</p></li><li><p>场景：希望用户放慢速度，仔细思考表单中的每个输入框。</p></li></ul></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/pattern/navigation-cn">导航</a><a class="next-page" href="/docs/pattern/list-cn">列表</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

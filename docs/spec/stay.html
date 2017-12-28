@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce">Ant Design</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feature">Features</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases">Cases</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu-selected"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="Principles$Menu" aria-haspopup="true"><h4>Principles</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="Principles$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity">Proximity</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment">Alignment</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast">Contrast</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition">Repetition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct">Make it Direct</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight">Keep it Lightweight</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:80px"><a href="/docs/spec/stay">Stay on the Page</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation">Provide an Invitation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/transition">Use Transition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction">React Immediately</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors">Colors</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon">Icons</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/font">Font</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting">Copywriting</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/layout">Layout</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/navigation">Navigation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry">Data Entry</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display">Data Display</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback">Feedback</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">Motion<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>Stay on the Page<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/stay.en-US.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>Solve most of problems on the same page and avoid a new one, because the page refresh and forwarding can lead to change blindness, in addition to disrupting the user’s mental flow.</p><blockquote><p><strong> Change Blindness</strong> is a surprising perceptual phenomenon that occurs when a change in a visual stimulus is introduced and the observer does not notice it. People&#x27;s poor ability to detect changes has been argued to reflect fundamental limitations of human attention，from the term of Change blindness, Wikipedia.</p><p><strong> Flow</strong>, also known as the zone, is the mental state of operation in which a person performing an activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity, from the term of Flow, Wikipedia</p></blockquote></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#Overlays" title="Overlays">Overlays</a></li><li><a class="bisheng-toc-h2" href="#Inlays" title="Inlays">Inlays</a></li><li><a class="bisheng-toc-h2" href="#Virtual-Pages" title="Virtual Pages">Virtual Pages</a></li><li><a class="bisheng-toc-h2" href="#Process-Flows" title="Process Flows">Process Flows</a></li></ul></div></div><section class="markdown"><h2 id="Overlays"><span>Overlays</span><a href="#Overlays" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/woHOTIZeXCYmtkv.png" alt="good example"/></div><div class="preview-image-title">good example</div><div class="preview-image-description">As the user clicks delete, a success message and an undo button are displayed. When the user does nothing within one minute or click the undo button, the message and the button disappear.</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/hDlhNscVtHdvvgu.png" alt="good example (special case)"/></div><div class="preview-image-title">good example (special case)</div><div class="preview-image-description">If the undo operation is invalid, the Popconfirm is displayed after clicking the delete button. The user can stay on the page to double confirm.</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/JEcWKBYlMcYIowX.png" alt="bad example"/></div><div class="preview-image-title">bad example</div><div class="preview-image-description">
+Abusing the Modal can neither bring the context into the popup, which is prone to interrupt the user’s flow, nor allow the user to undo the change.</div></div></div><p>Double-confirm overlay: Using the Modal to double confirm should be avoided, while affording an opportunity to undo is preferred.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/WIhhhXExyQBsZwj.png" alt="example of Detail Overlay "/></div><div class="preview-image-title">example of Detail Overlay </div><div class="preview-image-description">Click the eye icon to see more information.</div></div></div><p>Detail Overlay: Allows an overlay to present additional information when the user clicks or hovers over a link or section of content.</p><blockquote><p>Note that when a mouseover event occurs to trigger the Detail Overlay, 0.5-second delay needs to be added, and when the mouse is out, the overlay needs to be closed immediately.</p></blockquote><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/YehbrRkldqWsezo.png" alt="example of Input Overlay"/></div><div class="preview-image-title">example of Input Overlay</div><div class="preview-image-description">Click the edit icon to trigger the Input Overlay. Click the outside of it to preserve the input and close it.</div></div></div><p>Input Overlay: Let the user enter small amounts of text on the overlay.</p><p><br/></p><hr/><h2 id="Inlays"><span>Inlays</span><a href="#Inlays" class="anchor">#</a></h2><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/bHCqDMqXhZvKbve.png" alt="example of List Inlay"/></div><div class="preview-image-title">example of List Inlay</div><div class="preview-image-description"></div></div></div><p>List Inlay: Works as an effective way to hide detail until needed — while at the same time preserving space on the page for high-level overview information.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/MsVyvEIJtlxZWBL.png" alt="example of Tabs"/></div><div class="preview-image-title">example of Tabs</div><div class="preview-image-description"></div></div></div><p>Tabs: Provides additional panels of information accessible by tab controls.</p><p><br/></p><hr/><h2 id="Virtual-Pages"><span>Virtual Pages</span><a href="#Virtual-Pages" class="anchor">#</a></h2><p>In the process of interaction design, Overlays allow you to bring additional interactions or content in a layer above the cur- rent page. Inlays allow you to do this within the page itself. However, another powerful approach to keeping users engaged on the current page is to create a virtual page. That is to say, we create the illusion of a larger virtual page. </p><p>Virtual Scrolling and Pagination, more on <a href="/docs/pattern/list#显示长列表">Patterns／Lists／Show Long Lists</a></p><p>Carousel, more on <a href="/docs/pattern/list#显示图片">Patterns／Lists／Show Images</a></p><p><br/></p><hr/><h2 id="Process-Flows"><span>Process Flows</span><a href="#Process-Flows" class="anchor">#</a></h2><p>It has long been common practice on the Web to turn each step into a separate page. While this may be the simplest way break down the problem, it may not lead to the best solution. For some Process Flows it makes sense to keep the user on the same page throughout the process.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/xpynnwXnfCpGHvn.png" alt="example of Responsive Disclosure"/></div><div class="preview-image-title">example of Responsive Disclosure</div><div class="preview-image-description"></div></div></div><p>Responsive Disclosure: Make the experience for selecting painless by providing disclosures as quickly as possible, and doing it all in a single-page interface.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/EBVLFAwHHjiXtIJ.png" alt="example of Configurator Process"/></div><div class="preview-image-title">example of Configurator Process</div><div class="preview-image-description"></div></div></div><p>Configurator Process: Provides a configurator that allows users to help them accomplish the task or build their own product.</p><p><br/></p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/xcYosQncDPuFxhS.png" alt="example of Dialog Overlay Process"/></div><div class="preview-image-title">example of Dialog Overlay Process</div><div class="preview-image-description"></div></div></div><p>Dialog Overlay Process: Any page switch is an interruption to the user’s mental flow. In addition, any context switch is a chance for a user to leave the site. But sometimes the step-by-step flow is necessary.</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/lightweight">Keep it Lightweight</a><a class="next-page" href="/docs/spec/invitation">Provide an Invitation</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce">Ant Design</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/spec/feature">Features</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases">Cases</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="Principles$Menu" aria-haspopup="true"><h4>Principles</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="Principles$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity">Proximity</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment">Alignment</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast">Contrast</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition">Repetition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct">Make it Direct</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight">Keep it Lightweight</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/stay">Stay on the Page</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation">Provide an Invitation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/transition">Use Transition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction">React Immediately</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors">Colors</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon">Icons</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/font">Font</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting">Copywriting</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/layout">Layout</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/navigation">Navigation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry">Data Entry</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display">Data Display</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback">Feedback</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">Motion<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>Features<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/feature.en-US.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>Unlike other design specifications, Ant Design pursues not only user experience, but also experience of designers and developers, which practice a humanist design idea.</p><div style="margin-left:-40px;margin-right:-40px;overflow:hidden;margin-top:30px"><div class="ant-col-8 features"><img src="https://os.alipayobjects.com/rmsportal/OVirOHTeAdzDBuQ.png"/><h5 id="Subtleties"><span>Subtleties</span><a href="#Subtleties" class="anchor">#</a></h5><div>By devoted to create tiny and beautiful change, make efforts in details, we could not only make products more solid and reliable, but also bring good suprises for users.</div></div><div class="ant-col-8 features"><img src="https://os.alipayobjects.com/rmsportal/iJbUiLYpuPBXUhV.png"/><h5 id="Definiteness"><span>Definiteness</span><a href="#Definiteness" class="anchor">#</a></h5><div>Create an atmosphere of high definiteness and lower entropy, by making simple and scientific design patterns and using the same communicate channel.</div></div><div class="ant-col-8 features"><img src="https://os.alipayobjects.com/rmsportal/uSOjjlCRjRIhtIY.png"/><h5 id="Happiness"><span>Happiness</span><a href="#Happiness" class="anchor">#</a></h5><div>Don&#x27;t design for minimalism，design for getting job done and whatever makes designer happy and satisfied.</div></div></div><style>
+.features {
+  padding: 0 40px;
+  font-size: 12px;
+}
+.features h5 {
+  font-size: 14px;
+  margin-top: 16px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .features {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;;
+  }
+  .features img {
+    width: 80%;
+  }
+}
+</style></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#Subtleties" title="Subtleties">Subtleties</a></li><li><a class="bisheng-toc-h2" href="#Definiteness" title="Definiteness">Definiteness</a></li><li><a class="bisheng-toc-h2" href="#Happiness" title="Happiness">Happiness</a></li></ul></div></div><section class="markdown"><h2 id="Subtleties"><span>Subtleties</span><a href="#Subtleties" class="anchor">#</a></h2><h3 id="Micro-innovation"><span>Micro innovation</span><a href="#Micro-innovation" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/GGXdyrOtvUtOKXe.png" alt="Number Input Sample"/></div><div class="preview-image-title">Number Input Sample</div><div class="preview-image-description">Clickable area zoom out when hovering</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/UEYPnVhQsOjytSa.png" alt="Pagination Sample"/></div><div class="preview-image-title">Pagination Sample</div><div class="preview-image-description">Click the ellipsis to switch multiple pager</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/JxzQIRfMCtMjuaH.png" alt="Charactor Count Sample"/></div><div class="preview-image-title">Charactor Count Sample</div><div class="preview-image-description">Make overflow text with color and underline instantly.</div></div></div><p>&quot;Difference&quot; is not always &quot;better&quot;, but &quot;better&quot; is always different. Pursuing &quot;better&quot; in every details make our components is different, and also better naturally.</p><h3 id="Compositive-innovation"><span>Compositive innovation</span><a href="#Compositive-innovation" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/RGFMJRSgCAVCKOl.png" alt="Input inside text"/></div><div class="preview-image-title">Input inside text</div><div class="preview-image-description">Compose tag, input and text to help people understand what data need to input</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/hjHOMRIbvIUUBXS.png" alt="Table with charts"/></div><div class="preview-image-title">Table with charts</div><div class="preview-image-description">Compose Table and Chart</div></div></div><p>Compose different components for more powerful functions, it is a good path to meet varies of different bussiness requirements.</p><hr/><h2 id="Definiteness"><span>Definiteness</span><a href="#Definiteness" class="anchor">#</a></h2><h3 id="Object-oriented"><span>Object oriented</span><a href="#Object-oriented" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/MqsXoBBSDmoEDqn.png" alt="Color Sample"/></div><div class="preview-image-title">Color Sample</div><div class="preview-image-description">Generate status colors via tint/shade functions from a original primary color</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img" src="https://os.alipayobjects.com/rmsportal/WNEbRORxzEvvFKy.png" alt="Typography Sample"/></div><div class="preview-image-title">Typography Sample</div><div class="preview-image-description">Following『intimacy』principle, get the distance by a specified n value</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper good"><img class="preview-img no-padding good" src="https://os.alipayobjects.com/rmsportal/rtbYGKfPOpWRJID.png" alt="Feedback - Good"/></div><div class="preview-image-title">Feedback - Good</div><div class="preview-image-description">Unify and simpcify the button text to same text like `Ok` or `Actions` in all situations, improve designers experience by sacrifice a little user experience.</div></div></div><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper bad"><img class="preview-img no-padding bad" src="https://os.alipayobjects.com/rmsportal/OWLtvGCGmqawyPt.png" alt="Feedback - Bad"/></div><div class="preview-image-title">Feedback - Bad</div><div class="preview-image-description">It is better for this certain situation but a disaster for text maintainers. It is very easy to make typo mistakes cause text are different and unpredicable in every pages.</div></div></div><p>We create a object-oriented design method and abstract UI patterns. That help us to do our jobs with continuity.</p><h3 id="Scientific-design-principles"><span>Scientific design principles</span><a href="#Scientific-design-principles" class="anchor">#</a></h3><p>See more at <a href="/docs/spec/proximity">『Ant Design Principles』</a>.</p><hr/><h2 id="Happiness"><span>Happiness</span><a href="#Happiness" class="anchor">#</a></h2><h3 id="Happiness-of-user"><span>Happiness of user</span><a href="#Happiness-of-user" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/sBjNEGgHEpNfqTs.png" alt="User Happiess Levels"/></div><div class="preview-image-title">User Happiess Levels</div><div class="preview-image-description">Please read <em>Emotional Design 3</em> for more infomation.</div></div></div><p>Beatuful looks, tide typography and smooth animation produce positive reaction at instinct level.</p><p>Good functions, performance and usability produce positive reaction at behavious level.</p><p>Self-image, satisfaction, and good memories bring user a combining experience of thoughts and emotions at learning level.</p><h3 id="Happiness-of-designer"><span>Happiness of designer</span><a href="#Happiness-of-designer" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png" alt="Designer Happiess"/></div><div class="preview-image-title">Designer Happiess</div><div class="preview-image-description">Ant Design can not guarantee the success of products, but try to help those products <strong>successed correctly</strong> or <strong>failed correctly</strong>.</div></div></div><p>From 0 to 1, Ant Design help designers to implement a quick prototype for trial and error.</p><p>From 1 to 100, Ant Design provide a complete UI solution, help designers to create their own product personality and improve user experience.</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/introduce">Ant Design</a><a class="next-page" href="/docs/spec/cases">Cases</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

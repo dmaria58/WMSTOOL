@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enterprise-class UI design language and React-based implementation with a set of high-quality React components, one of best React UI library for enterprises">
+    <title>WMSTOOL</title>
+    <script>
+    (function() {
+      function isLocalStorageNameSupported() {
+        var testKey = 'test';
+        var storage = window.localStorage;
+        try {
+          storage.setItem(testKey, '1');
+          storage.removeItem(testKey);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+      // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
+      var pathname = location.pathname;
+
+      function isZhCN(pathname) {
+        return /-cn\/?$/.test(pathname);
+      }
+      function getLocalizedPathname(path, zhCN) {
+        var pathname = path.startsWith('/') ? path : '/' + path;
+        if (!zhCN) { // to enUS
+          return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
+        } else if (pathname === '/') {
+          return '/index-cn';
+        } else if (pathname.endsWith('/')) {
+          return pathname.replace(/\/$/, '-cn/');
+        }
+        return pathname + '-cn';
+      }
+
+      // 兼容旧的 URL， `?locale=...`
+      var queryString = location.search;
+      if (queryString) {
+        var isZhCNConfig = queryString.indexOf('zh-CN') > -1;
+        if (isZhCNConfig && !isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, isZhCNConfig)
+        }
+      }
+
+      // 首页无视链接里面的语言设置 https://github.com/ant-design/ant-design/issues/4552
+      if (isLocalStorageNameSupported() && (pathname === '/' || pathname === '/index-cn')) {
+        var lang = (window.localStorage && localStorage.getItem('locale')) || ((navigator.language || navigator.browserLanguage).toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
+        // safari is 'zh-cn', while other browser is 'zh-CN';
+        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
+          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        }
+      }
+      document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
+    })()
+    </script>
+    <link rel="stylesheet" type="text/css" href="/index-1.css"/>
+    <link rel="stylesheet" type="text/css" href="/index-2.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/color.less"/>
+    <style id="nprogress-style">
+      #nprogress { display: none }
+    </style>
+    <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+    <![endif]-->
+    <script>
+    if (!window.Intl) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/intl/1.0.1/??Intl.js,locale-data/jsonp/en.js,locale-data/jsonp/zh.js">' + '<' + '/script>');
+    }
+    if (!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+    }
+    // Enable Google Analytics
+    if (!location.port) {
+      /* eslint-disable */
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72788897-1', 'auto');
+      ga('send', 'pageview');
+      /* eslint-enable */
+    }
+    </script>
+    <!-- Hotjar Tracking Code for ant.design -->
+    <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:473408,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div id="react-content">
+      <div class="page-wrapper" data-reactroot=""><header id="header" class="clearfix"><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-8 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a id="logo" href="/">WMSTOOL</a></div><div class="ant-col-xs-0 ant-col-sm-0 ant-col-md-16 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div id="search-box"><i class="anticon anticon-search"></i><div class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="ant-select-selection__rendered"><div style="display:block;user-select:none;-webkit-user-select:none" unselectable="unselectable" class="ant-select-selection__placeholder">Search Components...</div><ul><li class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input type="text" value="" class="ant-input ant-select-search__field"/><span class="ant-select-search__field__mirror"> </span></div></li></ul></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="unselectable"><b></b></span></div></div></div><button type="button" class="ant-btn header-lang-button ant-btn-sm ant-btn-background-ghost"><span>中文</span></button><div class="version" style="border:1px solid #ccc;border-radius:5px;padding:0 10px">V <!-- -->1.0.3</div><ul class="ant-menu menu-site ant-menu-light ant-menu-root ant-menu-horizontal" role="menu" aria-activedescendant="" id="nav" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="/changelog"><span>Components</span></a></li></ul></div></div></header><div class="main-wrapper"><div class="ant-row"><div class="main-menu ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-6 ant-col-xl-5 ant-col-xxl-4"><ul class="ant-menu aside-container menu-site ant-menu-light ant-menu-root ant-menu-inline" role="menu" aria-activedescendant="" tabindex="0"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/introduce">Ant Design</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feature">Features</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/cases">Cases</a></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open"><div style="padding-left:40px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="Principles$Menu" aria-haspopup="true"><h4>Principles</h4><i class="ant-menu-submenu-arrow"></i></div><ul class="ant-menu  ant-menu-sub ant-menu-inline" role="menu" aria-activedescendant="" id="Principles$Menu"><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/proximity">Proximity</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/alignment">Alignment</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/contrast">Contrast</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/repetition">Repetition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/direct">Make it Direct</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/lightweight">Keep it Lightweight</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/stay">Stay on the Page</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/invitation">Provide an Invitation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/transition">Use Transition</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:80px"><a href="/docs/spec/reaction">React Immediately</a></li></ul></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/colors">Colors</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/icon">Icons</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/font">Font</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/copywriting">Copywriting</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/layout">Layout</a></li><li class="ant-menu-item ant-menu-item-selected" role="menuitem" aria-selected="true" style="padding-left:40px"><a href="/docs/spec/navigation">Navigation</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-entry">Data Entry</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/data-display">Data Display</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="/docs/spec/feedback">Feedback</a></li><li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left:40px"><a href="http://motion.ant.design" target="_blank" rel="noopener noreferrer" class="menu-item-link-outside">Motion<!-- --> <i class="anticon anticon-export"></i></a></li></ul></div><div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-xl-19 ant-col-xxl-20"><article class="markdown"><h1>Navigation<a class="edit-button" href="https://github.com/ant-design/ant-design/edit/master/docs/spec/navigation.en-US.md" target="_blank"><i class="anticon anticon-edit"></i></a></h1><section class="markdown"><p>Broadly speaking, anything telling users where they are, where to go and how to get there can be called navigation. When using navigation or customizing navigational structures, please pay attention to following common pitfalls:</p><ul><li><p>Provide visual and contextual cues as many as possible, to prevent users from getting lost</p></li><li><p>Maintain consistency between form and behavior, or reduce the number of items in navigation, to decrease user&#x27;s learning cost</p></li><li><p>Minimize page transitions (i.e. reduce the number of page tranistions required by a task from several to just once or twice), to ensure that user travels only a short distance from any page to another</p></li></ul></section><div class="toc-affix"><div class=""><ul class="toc"><li><a class="bisheng-toc-h2" href="#Menu" title="Menu">Menu</a></li><li><a class="bisheng-toc-h2" href="#Breadcrumb" title="Breadcrumb">Breadcrumb</a></li><li><a class="bisheng-toc-h2" href="#Tabs" title="Tabs">Tabs</a></li><li><a class="bisheng-toc-h2" href="#Steps" title="Steps">Steps</a></li><li><a class="bisheng-toc-h2" href="#Pagination" title="Pagination">Pagination</a></li></ul></div></div><section class="markdown"><h2 id="Menu"><span>Menu</span><a href="#Menu" class="anchor">#</a></h2><p>Navigation menu is an effective and user-friendly way for reprensenting site structure to users. A proper form of navigation should be utilized, once the information architecture of your site becomes clear and stable.</p><h3 id="Top-Navigation"><span>Top Navigation</span><a href="#Top-Navigation" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/CHLsYZJzIISKiFegqrXQ.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Top navigation menu put hyperlinks in a row and present information in a simple and straightforward way. It is suitable for landing pages and consumer facing web apps. The number of first level menu items should be between 2 and 7. Title for each menu item should contain less than 15 characters.</p><h3 id="Side-Navigation"><span>Side Navigation</span><a href="#Side-Navigation" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/iSgvIOKsqAdpJUeHVnnl.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Vertical navigation is more flexible than horizontal one, menu items are easily extensible downward, and longer labels can be allowed. With help from a scrollbar, unlimited number of menu items can be supported. It is suitable for multi-level, operation intensive and dashboard-like web apps.</p><ul><li><p>More layouts with navigation: <a href="/components/layout/">Layout</a>。</p></li></ul><hr/><h2 id="Breadcrumb"><span>Breadcrumb</span><a href="#Breadcrumb" class="anchor">#</a></h2><p>Breadcrumb tell users where they are now among page hierarchy, and parent-child relationships between pages.</p><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/uJPTOTAzNbKEfBKJbZmG.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><blockquote><p>Notes:
+1. When hierarchy is deep, it is recommended to hide certain pages. Depth of pages shown should at best be lower than 3, and should not exceed 5.
+2. Avoid using breadcrumb as much as you can, especially when page contains other navigation components sufficiently telling where users are.</p></blockquote><hr/><h2 id="Tabs"><span>Tabs</span><a href="#Tabs" class="anchor">#</a></h2><p>Tabs categorize content, in order to present large amount of information in a limited space. User can easily switch among tab panels without transitioning from one page to another. Categories can be determined via business logics or states, label for each category should contain less than 15 characters.</p><h3 id="Basic"><span>Basic</span><a href="#Basic" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/DIrWhQPjVkVXMTurmFtj.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Control content of the entire page. Usually used for switching among core functionalities.</p><h3 id="Card"><span>Card</span><a href="#Card" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/qUhhphhCUqcTBQuryPVz.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Control part of page content. Bordered container naturally separate it from other parts of the page.</p><h3 id="Pill"><span>Pill</span><a href="#Pill" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/JGxYplcbVQZiDBFUKnDa.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">Usually used in a small section, or along with basic and card tabs.</div></div></div><p>Switch among options in a card. Usually used along with other types of tabs, so that user can navigate to intended content via quick tab switching.</p><h3 id="Vertical"><span>Vertical</span><a href="#Vertical" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/HcKwSTAlBhXwJBmrILoj.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Used for large number of tab options. It can be easily extended to contain an unlimited number of categories.</p><hr/><h2 id="Steps"><span>Steps</span><a href="#Steps" class="anchor">#</a></h2><p>Steps is a navigation bar guiding users to perform a task following a predefined workflow. It gives users a rough estimate about how long the task is going take, tells them which step they are in, and showcases users&#x27; progress in an explicit way. It is always a good idea to break complex and procedural task into steps.</p><h3 id="Horizontal"><span>Horizontal</span><a href="#Horizontal" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/lPqKbrGtQTqzzdwofzok.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Used for more than 2 but less than 5 steps. Title for each step should contain less than 12 characters.</p><h3 id="Vertical"><span>Vertical</span><a href="#Vertical" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/gYnwqXKtCTaIQnvbhMlo.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Usually float at the left side of pages, in a fixed position. Multi-line description can be attached to each step. Suitable for large or dynamic number of steps, i.e. time-based steps with dynamic descriptions.</p><hr/><h2 id="Pagination"><span>Pagination</span><a href="#Pagination" class="anchor">#</a></h2><p>Used for paginating large amount of content. Users can clearly know the total amount of content, how much they have already browsed and how much remains to be browsed.</p><h3 id="Basic"><span>Basic</span><a href="#Basic" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/tarFEzfOZhEYtclFAsJX.png"/></div><div class="preview-image-title"></div><div class="preview-image-description">Quick page jumper can be used when there are more than 5 pages</div></div></div><p>When there is a large number of rows, page size can be made customizable by users, so that users can query and browse information more flexibly and effectively.</p><h3 id="Mini"><span>Mini</span><a href="#Mini" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/rIilfwNWTONzxGOWXbVM.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Commonly used in a Card or a floating layer.</p><h3 id="Simple"><span>Simple</span><a href="#Simple" class="anchor">#</a></h3><div class="preview-image-boxes clearfix"><div class="preview-image-box"><div class="preview-image-wrapper"><img class="preview-img no-padding" src="https://os.alipayobjects.com/rmsportal/viUMXhmLoFTqjTgoJNxZ.png"/></div><div class="preview-image-title"></div><div class="preview-image-description"></div></div></div><p>Commonly used in a Card or a data table, for no more than 10 pages.</p></section><section class="markdown api-container"></section></article></div></div><div class="ant-row"><div class="ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-18 ant-col-lg-offset-6 ant-col-xl-19 ant-col-xl-offset-5 ant-col-xxl-20 ant-col-xxl-offset-4"><section class="prev-next-nav"><a class="prev-page" href="/docs/spec/layout">Layout</a><a class="next-page" href="/docs/spec/data-entry">Data Entry</a></section></div></div></div></div>
+    </div>
+    <script src="/common.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
