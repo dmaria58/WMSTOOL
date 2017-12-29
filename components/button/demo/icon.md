@@ -18,9 +18,9 @@ title:
 If you want specific control over the positioning and placement of the `Icon`, then that should be done by placing the `Icon` component within the `Button` rather than using the `icon` property.
 
 ````jsx
-import { Button } from 'antd';
+import { Button } from 'wmstool';
 
-ReactDOM.render(
+ReactDOM.render( 
   <div>
     <Button type="primary" shape="circle" icon="search" />
     <Button type="primary" icon="search">Search</Button>

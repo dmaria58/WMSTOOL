@@ -18,7 +18,7 @@ There are `primary` button, `default` button, `dashed` button and `danger` butto
 > `danger` is supported after `antd@2.7`.
 
 ````jsx
-import { Button } from 'antd';
+import { Button } from 'wmstool';
 
 ReactDOM.render(
   <div>
