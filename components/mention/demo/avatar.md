@@ -16,7 +16,7 @@ title:
 Customize suggestions.
 
 ````jsx
-import { Mention, Avatar } from 'antd';
+import { Mention, Avatar } from 'wmstool';
 const Nav = Mention.Nav;
 
 const webFrameworks = [

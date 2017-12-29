@@ -14,7 +14,7 @@ title:
 Steps with progress dot style.
 
 ````jsx
-import { Steps } from 'antd';
+import { Steps } from 'wmstool';
 const Step = Steps.Step;
 
 ReactDOM.render(

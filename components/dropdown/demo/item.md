@@ -14,7 +14,7 @@ title:
 Divider and disabled menu item.
 
 ````jsx
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'wmstool';
 
 const menu = (
   <Menu>

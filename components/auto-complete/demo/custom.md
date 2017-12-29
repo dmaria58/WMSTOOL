@@ -14,7 +14,7 @@ title:
 Customize Input Component
 
 ````jsx
-import { AutoComplete, Input } from 'antd';
+import { AutoComplete, Input } from 'wmstool';
 const { TextArea } = Input;
 
 function onSelect(value) {
@@ -22,7 +22,7 @@ function onSelect(value) {
 }
 
 class Complete extends React.Component {
-  state = {
+  state = { 
     dataSource: [],
   }
 

@@ -14,7 +14,7 @@ title:
 Passing the `name` property to all `input[type="radio"]` that are in the same RadioGroup. It is usually used to let the browser see your RadioGroup as a real "group" and keep the default behavior. For example, using left/right keyboard arrow to change your selection that in the same RadioGroup.
 
 ```jsx
-import { Radio } from 'antd';
+import { Radio } from 'wmstool';
 const RadioGroup = Radio.Group;
 
 function App() {

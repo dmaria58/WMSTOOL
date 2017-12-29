@@ -14,7 +14,7 @@ title:
 You can add an icon beside the slider to make it meaningful.
 
 ````jsx
-import { Slider, Icon } from 'antd';
+import { Slider, Icon } from 'wmstool';
 
 class IconSlider extends React.Component {
   state = {

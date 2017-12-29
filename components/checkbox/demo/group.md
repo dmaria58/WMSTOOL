@@ -14,7 +14,7 @@ title:
 Generate a group of checkboxes from an array.
 
 ````jsx
-import { Checkbox } from 'antd';
+import { Checkbox } from 'wmstool';
 const CheckboxGroup = Checkbox.Group;
 
 function onChange(checkedValues) {

@@ -15,7 +15,7 @@ The tree structure can be populated using `treeData` property. This is a quick a
 
 
 ````jsx
-import { TreeSelect } from 'antd';
+import { TreeSelect } from 'wmstool';
 
 const treeData = [{
   label: 'Node1',

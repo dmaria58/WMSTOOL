@@ -14,7 +14,7 @@ title:
 Divider default type is `horizontal`. Support inner text inside Divider.
 
 ````jsx
-import { Divider } from 'antd';
+import { Divider } from 'wmstool';
 
 ReactDOM.render(
   <div>

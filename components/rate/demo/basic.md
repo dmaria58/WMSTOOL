@@ -14,7 +14,7 @@ title:
 The simplest usage.
 
 ````jsx
-import { Rate } from 'antd';
+import { Rate } from 'wmstool';
 
 ReactDOM.render(<Rate />, mountNode);
 ````

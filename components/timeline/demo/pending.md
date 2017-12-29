@@ -14,7 +14,7 @@ title:
 When the timeline is incomplete and ongoing, put a ghost node at last. set `pending={true}` or `pending={a React Element}`。
 
 ````jsx
-import { Timeline } from 'antd';
+import { Timeline } from 'wmstool';
 
 ReactDOM.render(
   <Timeline pending={<a href="#">See more</a>}>

@@ -14,7 +14,7 @@ title:
 Customize Trigger Token by `prefix` props. Default to `@`, `Array<string>` also supported.
 
 ````jsx
-import { Mention } from 'antd';
+import { Mention } from 'wmstool';
 const { toString } = Mention;
 
 function onChange(editorState) {

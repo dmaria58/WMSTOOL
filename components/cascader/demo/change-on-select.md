@@ -14,7 +14,7 @@ title:
 Allow only select parent options.
 
 ````jsx
-import { Cascader } from 'antd';
+import { Cascader } from 'wmstool';
 
 const options = [{
   value: 'zhejiang',

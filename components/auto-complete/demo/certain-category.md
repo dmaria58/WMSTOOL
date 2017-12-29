@@ -15,9 +15,9 @@ Demonstration of [Lookup Patterns: Certain Category](https://ant.design/docs/spe
 Basic Usage, set datasource of autocomplete with `dataSource` property.
 
 ````jsx
-import { Icon, Input, AutoComplete } from 'antd';
+import { Icon, Input, AutoComplete } from 'wmstool';
 const Option = AutoComplete.Option;
-const OptGroup = AutoComplete.OptGroup;
+const OptGroup = AutoComplete.OptGroup; 
 
 const dataSource = [{
   title: '话题',

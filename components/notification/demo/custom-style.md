@@ -14,7 +14,7 @@ title:
 The style and className are available to customize Notification.
 
 ````jsx
-import { Button, notification } from 'antd';
+import { Button, notification } from 'wmstool';
 
 const openNotification = () => {
   notification.open({

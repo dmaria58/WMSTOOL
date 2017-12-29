@@ -14,7 +14,7 @@ title:
 Replace the default icon with customized text.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'wmstool';
 
 ReactDOM.render(
   <Alert message="Info Text" type="info" closeText="Close Now" />

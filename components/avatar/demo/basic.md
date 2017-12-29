@@ -14,10 +14,10 @@ title:
 Three sizes and two shapes are available.
 
 ````jsx
-import { Avatar } from 'antd';
+import { Avatar } from 'wmstool';
 
 ReactDOM.render(
-  <div>
+  <div> 
     <div>
       <Avatar size="large" icon="user" />
       <Avatar icon="user" />

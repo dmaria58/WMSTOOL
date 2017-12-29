@@ -15,7 +15,7 @@ title:
 Fixed Header is generally used to fix the top navigation to facilitate page switching.
 
 ````jsx
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Breadcrumb } from 'wmstool';
 const { Header, Content, Footer } = Layout;
 
 ReactDOM.render(

@@ -16,7 +16,7 @@ An options object can be provided to `autosize` to specify the minimum and maxim
 
 
 ````jsx
-import { Input } from 'antd';
+import { Input } from 'wmstool';
 const { TextArea } = Input;
 
 ReactDOM.render(

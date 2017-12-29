@@ -14,7 +14,7 @@ title:
 Use custom loading indicator.
 
 ````jsx
-import { Spin, Icon } from 'antd';
+import { Spin, Icon } from 'wmstool';
 
 const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
 

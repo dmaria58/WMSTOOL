@@ -14,7 +14,7 @@ title:
 Classic page layouts.
 
 ````jsx
-import { Layout } from 'antd';
+import { Layout } from 'wmstool';
 const { Header, Footer, Sider, Content } = Layout;
 
 ReactDOM.render(

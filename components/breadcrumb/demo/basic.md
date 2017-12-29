@@ -14,7 +14,7 @@ title:
 The simplest use
 
 ````jsx
-import { Breadcrumb } from 'antd';
+import { Breadcrumb } from 'wmstool';
 
 ReactDOM.render(
   <Breadcrumb>

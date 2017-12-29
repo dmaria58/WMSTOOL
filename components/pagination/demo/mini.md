@@ -14,7 +14,7 @@ title:
 Mini size pagination.
 
 ````jsx
-import { Pagination } from 'antd';
+import { Pagination } from 'wmstool';
 
 function showTotal(total) {
   return `Total ${total} items`;

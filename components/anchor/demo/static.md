@@ -14,10 +14,10 @@ title:
 Do not change state when page is scrolling.
 
 ```jsx
-import { Anchor } from 'antd';
+import { Anchor } from 'wmstool';
 const { Link } = Anchor;
 
-ReactDOM.render(
+ReactDOM.render( 
   <Anchor affix={false}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-fixed" title="Fixed demo" />

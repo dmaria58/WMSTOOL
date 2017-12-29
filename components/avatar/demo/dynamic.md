@@ -14,7 +14,7 @@ title:
 For letter type Avatar, when the letters are too long to display, the font size can be automatically adjusted according to the width of the Avatar.
 
 ````jsx
-import { Avatar, Button } from 'antd';
+import { Avatar, Button } from 'wmstool'; 
 
 const UserList = ['U', 'Lucy', 'Tom', 'Edward'];
 const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];

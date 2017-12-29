@@ -15,7 +15,7 @@ title:
 Display Alert as a banner at top of page.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'wmstool';
 
 ReactDOM.render(
   <div>

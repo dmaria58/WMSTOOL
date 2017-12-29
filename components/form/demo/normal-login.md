@@ -14,7 +14,7 @@ title:
 Normal login form which can contain more elements.
 
 ````jsx
-import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import { Form, Icon, Input, Button, Checkbox } from 'wmstool';
 const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component {

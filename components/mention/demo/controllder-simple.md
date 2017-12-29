@@ -14,7 +14,7 @@ title:
 Controlled mode.
 
 ````jsx
-import { Mention } from 'antd';
+import { Mention } from 'wmstool';
 const { toContentState } = Mention;
 
 class App extends React.Component {

@@ -14,7 +14,7 @@ title:
 Setting `itemLayout` property with `vertical` to create a vertical list.
 
 ````jsx
-import { List, Avatar, Icon } from 'antd';
+import { List, Avatar, Icon } from 'wmstool';
 
 const listData = [];
 for (let i = 0; i < 5; i++) {

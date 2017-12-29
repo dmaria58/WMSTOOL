@@ -14,9 +14,9 @@ title:
 Usually used for messages remind.
 
 ````jsx
-import { Avatar, Badge } from 'antd';
+import { Avatar, Badge } from 'wmstool';
 
-ReactDOM.render(
+ReactDOM.render( 
   <div>
     <span style={{ marginRight: 24 }}>
       <Badge count={1}><Avatar shape="square" icon="user" /></Badge>

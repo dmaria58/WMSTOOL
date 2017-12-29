@@ -14,7 +14,7 @@ title:
 Large size tabs are usally used in page header, and small size could be used in Modal.
 
 ````jsx
-import { Tabs, Radio } from 'antd';
+import { Tabs, Radio } from 'wmstool';
 const { TabPane } = Tabs;
 
 class Demo extends React.Component {

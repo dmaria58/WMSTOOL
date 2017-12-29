@@ -14,7 +14,7 @@ title:
 Basic Usage.
 
 ````jsx
-import { Select } from 'antd';
+import { Select } from 'wmstool';
 const Option = Select.Option;
 
 function handleChange(value) {

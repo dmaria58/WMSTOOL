@@ -14,7 +14,7 @@ title:
 To show close button.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'wmstool';
 
 const onClose = function (e) {
   console.log(e, 'I was closed.');

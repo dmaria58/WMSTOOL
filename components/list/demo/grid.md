@@ -14,7 +14,7 @@ title:
 Creating a grid list by setting the `grid` property of List
 
 ````jsx
-import { List, Card } from 'antd';
+import { List, Card } from 'wmstool';
 
 const data = [
   {

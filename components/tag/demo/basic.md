@@ -14,7 +14,7 @@ title:
 Usage of basic Tag, and it could be closable by set `closable` property. Closable Tag supports `onClose` `afterClose` events.
 
 ````jsx
-import { Tag } from 'antd';
+import { Tag } from 'wmstool';
 
 function log(e) {
   console.log(e);

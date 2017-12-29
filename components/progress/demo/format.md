@@ -14,7 +14,7 @@ title:
 You can custom text format by setting `format`.
 
 ````jsx
-import { Progress } from 'antd';
+import { Progress } from 'wmstool';
 
 ReactDOM.render(
   <div>

@@ -18,7 +18,7 @@ Input.Group example
 Note: You don't need `Col` to control the width in the `compact` mode.
 
 ````jsx
-import { Input, Col, Select, InputNumber, DatePicker, AutoComplete, Cascader } from 'antd';
+import { Input, Col, Select, InputNumber, DatePicker, AutoComplete, Cascader } from 'wmstool';
 const InputGroup = Input.Group;
 const Option = Select.Option;
 

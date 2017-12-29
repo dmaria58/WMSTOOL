@@ -14,7 +14,7 @@ title:
 You can use your own custom icons by setting the property `icon` for `Steps.Step`.
 
 ````jsx
-import { Steps, Icon } from 'antd';
+import { Steps, Icon } from 'wmstool';
 const Step = Steps.Step;
 
 ReactDOM.render(

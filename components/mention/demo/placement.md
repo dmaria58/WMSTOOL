@@ -14,7 +14,7 @@ title:
 Change the suggestions placement.
 
 ````jsx
-import { Mention } from 'antd';
+import { Mention } from 'wmstool';
 const { toString } = Mention;
 
 function onChange(contentState) {

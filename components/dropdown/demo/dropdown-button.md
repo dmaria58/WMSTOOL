@@ -14,7 +14,7 @@ title:
 A button is on the left, and a related functional menu is on the right.
 
 ````jsx
-import { Menu, Dropdown, Button, Icon, message } from 'antd';
+import { Menu, Dropdown, Button, Icon, message } from 'wmstool';
 
 function handleButtonClick(e) {
   message.info('Click on left button.');

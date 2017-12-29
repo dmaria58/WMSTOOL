@@ -14,7 +14,7 @@ title:
 Normal messages as feedbacks.
 
 ````jsx
-import { message, Button } from 'antd';
+import { message, Button } from 'wmstool';
 
 const info = () => {
   message.info('This is a normal message');

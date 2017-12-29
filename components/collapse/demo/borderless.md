@@ -14,7 +14,7 @@ title:
 A borderless style of Collapse.
 
 ````jsx
-import { Collapse } from 'antd';
+import { Collapse } from 'wmstool';
 const Panel = Collapse.Panel;
 
 const text = (

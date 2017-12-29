@@ -14,7 +14,7 @@ title:
 More than one panel can be expanded at a time, the first panel is initialized to be active in this case.
 
 ````jsx
-import { Collapse } from 'antd';
+import { Collapse } from 'wmstool';
 const Panel = Collapse.Panel;
 
 function callback(key) {

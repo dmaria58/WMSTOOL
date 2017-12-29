@@ -14,9 +14,9 @@ title:
 Decent icon make information more clear and more friendly.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'wmstool';
 
-ReactDOM.render(
+ReactDOM.render( 
   <div>
     <Alert message="Success Tips" type="success" showIcon />
     <Alert message="Informational Notes" type="info" showIcon />

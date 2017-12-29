@@ -17,7 +17,7 @@ when `step` is null, users can only slide the thumbs onto marks.
 
 
 ````jsx
-import { Slider } from 'antd';
+import { Slider } from 'wmstool';
 
 const marks = {
   0: '0°C',

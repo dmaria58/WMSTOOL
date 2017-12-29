@@ -14,7 +14,7 @@ title:
 Load more list with `loadMore` property.
 
 ````jsx
-import { List, Avatar, Button, Spin } from 'antd';
+import { List, Avatar, Button, Spin } from 'wmstool';
 
 import reqwest from 'reqwest';
 

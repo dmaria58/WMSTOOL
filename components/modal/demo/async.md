@@ -15,7 +15,7 @@ Asynchronously close a modal dialog when a user clicked OK button, for example,
 you can use this pattern when you submit a form.
 
 ````jsx
-import { Modal, Button } from 'antd';
+import { Modal, Button } from 'wmstool';
 
 class App extends React.Component {
   state = {

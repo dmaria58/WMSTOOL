@@ -14,7 +14,7 @@ title:
 Basic timeline.
 
 ````jsx
-import { Timeline } from 'antd';
+import { Timeline } from 'wmstool';
 
 ReactDOM.render(
   <Timeline>

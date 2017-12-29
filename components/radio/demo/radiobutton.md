@@ -14,7 +14,7 @@ title:
 The combination of radio button style.
 
 ```jsx
-import { Radio } from 'antd';
+import { Radio } from 'wmstool';
 const RadioButton = Radio.Button;
 const RadioGroup = Radio.Group;
 

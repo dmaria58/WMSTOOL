@@ -18,7 +18,7 @@ Render radios by configuring `options`.
 > support after `2.9.0`.
 
 ```jsx
-import { Radio } from 'antd';
+import { Radio } from 'wmstool';
 const RadioGroup = Radio.Group;
 
 const plainOptions = ['Apple', 'Pear', 'Orange'];

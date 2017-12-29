@@ -14,7 +14,7 @@ title:
 Click the menu and you will see that all the other menus gets collapsed to keep the entire menu compact.
 
 ````jsx
-import { Menu, Icon } from 'antd';
+import { Menu, Icon } from 'wmstool';
 const SubMenu = Menu.SubMenu;
 
 class Sider extends React.Component {

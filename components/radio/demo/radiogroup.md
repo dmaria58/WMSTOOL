@@ -14,7 +14,7 @@ title:
 A group of radio components.
 
 ```jsx
-import { Radio } from 'antd';
+import { Radio } from 'wmstool';
 const RadioGroup = Radio.Group;
 
 class App extends React.Component {

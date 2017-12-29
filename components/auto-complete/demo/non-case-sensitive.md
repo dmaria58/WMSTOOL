@@ -14,12 +14,12 @@ title:
 A non-case-sensitive AutoComplete
 
 ````jsx
-import { AutoComplete } from 'antd';
+import { AutoComplete } from 'wmstool';
 
 const dataSource = ['Burns Bay Road', 'Downing Street', 'Wall Street'];
 
 function Complete() {
-  return (
+  return ( 
     <AutoComplete
       style={{ width: 200 }}
       dataSource={dataSource}

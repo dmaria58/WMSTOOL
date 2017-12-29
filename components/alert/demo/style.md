@@ -14,9 +14,9 @@ title:
 There are 4 types of Alert: `success`, `info`, `warning`, `error`.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'wmstool';
 
-ReactDOM.render(
+ReactDOM.render( 
   <div>
     <Alert message="Success Text" type="success" />
     <Alert message="Info Text" type="info" />

@@ -14,7 +14,7 @@ title:
 Tab's position: left, right, top or bottom.
 
 ````jsx
-import { Tabs, Select } from 'antd';
+import { Tabs, Select } from 'wmstool';
 const TabPane = Tabs.TabPane;
 const Option = Select.Option;
 

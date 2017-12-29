@@ -14,7 +14,7 @@ title:
 Change `pageSize`.
 
 ````jsx
-import { Pagination } from 'antd';
+import { Pagination } from 'wmstool';
 
 function onShowSizeChange(current, pageSize) {
   console.log(current, pageSize);

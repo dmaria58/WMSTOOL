@@ -14,7 +14,7 @@ title:
 With text and icon.
 
 ````jsx
-import { Switch, Icon } from 'antd';
+import { Switch, Icon } from 'wmstool';
 
 ReactDOM.render(
   <div>

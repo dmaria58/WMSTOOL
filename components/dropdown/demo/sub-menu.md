@@ -14,7 +14,7 @@ title:
 The menu has multiple levels.
 
 ````jsx
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'wmstool';
 const SubMenu = Menu.SubMenu;
 
 const menu = (

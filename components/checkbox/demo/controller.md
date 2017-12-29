@@ -14,7 +14,7 @@ title:
 Communicated with other components.
 
 ````jsx
-import { Checkbox, Button } from 'antd';
+import { Checkbox, Button } from 'wmstool';
 
 class App extends React.Component {
   state = {

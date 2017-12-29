@@ -14,7 +14,7 @@ title:
 Timing of scrolling to the next card/picture.
 
 ````jsx
-import { Carousel } from 'antd';
+import { Carousel } from 'wmstool';
 
 ReactDOM.render(
   <Carousel autoplay>

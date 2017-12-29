@@ -20,7 +20,7 @@ the modal dialog will be closed.
 You could set `footer` to `null` if you don't need default footer buttons.
 
 ````jsx
-import { Modal, Button } from 'antd';
+import { Modal, Button } from 'wmstool';
 
 class App extends React.Component {
   state = {

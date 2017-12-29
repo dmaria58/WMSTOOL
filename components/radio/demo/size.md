@@ -14,7 +14,7 @@ title:
 There are three sizes available: large, medium, and small. It can coordinate with input box.
 
 ```jsx
-import { Radio } from 'antd';
+import { Radio } from 'wmstool';
 const RadioButton = Radio.Button;
 const RadioGroup = Radio.Group;
 

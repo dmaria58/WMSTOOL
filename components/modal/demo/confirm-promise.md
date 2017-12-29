@@ -15,7 +15,7 @@ To use `confirm()` to popup confirmation modal dialog. Let onCancel/onOk functio
 delay closing the dialog.
 
 ````jsx
-import { Modal, Button } from 'antd';
+import { Modal, Button } from 'wmstool';
 const confirm = Modal.confirm;
 
 function showConfirm() {

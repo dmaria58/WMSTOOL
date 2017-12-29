@@ -14,13 +14,13 @@ title:
 You could pass `AutoComplete.Option` as children of `AutoComplete`, instead of using `dataSource`。
 
 ````jsx
-import { AutoComplete } from 'antd';
+import { AutoComplete } from 'wmstool';
 
 const Option = AutoComplete.Option;
 
 class Complete extends React.Component {
   state = {
-    result: [],
+    result: [], 
   }
 
   handleSearch = (value) => {

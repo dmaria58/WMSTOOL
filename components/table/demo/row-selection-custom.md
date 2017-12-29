@@ -15,7 +15,7 @@ Use `rowSelection.selections` custom selections, default no select dropdown, sho
 
 
 ````jsx
-import { Table } from 'antd';
+import { Table } from 'wmstool';
 
 const columns = [{
   title: 'Name',

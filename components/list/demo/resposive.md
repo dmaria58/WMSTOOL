@@ -14,7 +14,7 @@ title:
 Responsive grid list. The size property is as same as [Layout Grid](https://ant.design/components/grid/#Col).
 
 ````jsx
-import { List, Card } from 'antd';
+import { List, Card } from 'wmstool';
 
 const data = [
   {

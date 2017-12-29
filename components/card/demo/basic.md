@@ -14,7 +14,7 @@ title:
 A basic card containing a title, content and an extra corner content.
 
 ````jsx
-import { Card } from 'antd';
+import { Card } from 'wmstool';
 
 ReactDOM.render(
   <Card title="Card title" extra={<a href="#">More</a>} style={{ width: 300 }}>

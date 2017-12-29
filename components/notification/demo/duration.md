@@ -16,7 +16,7 @@ the notification closes automatically. If not specified, default value is 4.5 se
 the notification box will never close automatically.
 
 ````jsx
-import { Button, notification } from 'antd';
+import { Button, notification } from 'wmstool';
 
 const openNotification = () => {
   const args = {

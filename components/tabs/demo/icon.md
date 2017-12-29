@@ -15,7 +15,7 @@ The Tab with Icon.
 
 
 ````jsx
-import { Tabs, Icon } from 'antd';
+import { Tabs, Icon } from 'wmstool';
 const TabPane = Tabs.TabPane;
 
 ReactDOM.render(

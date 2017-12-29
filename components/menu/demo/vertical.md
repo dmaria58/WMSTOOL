@@ -14,7 +14,7 @@ title:
 Submenus open as pop-ups.
 
 ````jsx
-import { Menu, Icon } from 'antd';
+import { Menu, Icon } from 'wmstool';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 

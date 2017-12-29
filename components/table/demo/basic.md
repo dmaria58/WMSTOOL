@@ -14,7 +14,7 @@ title:
 Simple table with actions.
 
 ````jsx
-import { Table, Icon, Divider } from 'antd';
+import { Table, Icon, Divider } from 'wmstool';
 
 const columns = [{
   title: 'Name',

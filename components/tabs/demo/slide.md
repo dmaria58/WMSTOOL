@@ -14,7 +14,7 @@ title:
 Tab can be slide to left or right(up or down), which is used for a lot of tabs.
 
 ````jsx
-import { Tabs, Radio } from 'antd';
+import { Tabs, Radio } from 'wmstool';
 const TabPane = Tabs.TabPane;
 
 class SlidingTabsDemo extends React.Component {

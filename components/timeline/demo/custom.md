@@ -14,7 +14,7 @@ title:
 Set a node as an icon or other custom element.
 
 ````jsx
-import { Timeline, Icon } from 'antd';
+import { Timeline, Icon } from 'wmstool';
 
 ReactDOM.render(
   <Timeline>

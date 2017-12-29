@@ -20,7 +20,7 @@ Use `sorter` to make a column sortable. `sorter` can be a function `function(a, 
 Uses `defaultSortOrder` to make a column sorted by default.
 
 ````jsx
-import { Table } from 'antd';
+import { Table } from 'wmstool';
 
 const columns = [{
   title: 'Name',

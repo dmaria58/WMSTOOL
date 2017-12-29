@@ -14,7 +14,7 @@ title:
 Use `setFieldsValue` to set other control's value programmaticly.
 
 ````jsx
-import { Form, Select, Input, Button } from 'antd';
+import { Form, Select, Input, Button } from 'wmstool';
 const FormItem = Form.Item;
 const Option = Select.Option;
 

@@ -14,7 +14,7 @@ title:
 For multi-line input.
 
 ````jsx
-import { Input } from 'antd';
+import { Input } from 'wmstool';
 const { TextArea } = Input;
 
 ReactDOM.render(<TextArea rows={4} />, mountNode);

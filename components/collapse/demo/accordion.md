@@ -14,7 +14,7 @@ title:
 Accordion mode, only one panel can be expanded at a time. The first panel will be expanded by default.
 
 ````jsx
-import { Collapse } from 'antd';
+import { Collapse } from 'wmstool';
 const Panel = Collapse.Panel;
 
 const text = `

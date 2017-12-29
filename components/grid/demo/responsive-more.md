@@ -17,7 +17,7 @@ title:
 where `xs = {6}` is equivalent to `xs = {{span: 6}}`.
 
 ````jsx
-import { Row, Col } from 'antd';
+import { Row, Col } from 'wmstool';
 
 ReactDOM.render(
   <Row>

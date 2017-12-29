@@ -15,7 +15,7 @@ We preset a series of colorful tag style for different situation usage.
 And you can always set it to a hex color string for custom color.
 
 ````jsx
-import { Tag } from 'antd';
+import { Tag } from 'wmstool';
 
 ReactDOM.render(
   <div>

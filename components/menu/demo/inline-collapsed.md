@@ -18,7 +18,7 @@ Inline menu could be collapsed.
 Here is [a complete demo](/components/layout/#components-layout-demo-side) with sider layout.
 
 ````jsx
-import { Menu, Icon, Button } from 'antd';
+import { Menu, Icon, Button } from 'wmstool';
 const SubMenu = Menu.SubMenu;
 
 class App extends React.Component {

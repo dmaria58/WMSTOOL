@@ -15,12 +15,12 @@ Demonstration of [Lookup Patterns: Uncertain Category](https://ant.design/docs/s
 Basic Usage, set datasource of autocomplete with `dataSource` property.
 
 ````jsx
-import { Icon, Button, Input, AutoComplete } from 'antd';
+import { Icon, Button, Input, AutoComplete } from 'wmstool';
 const Option = AutoComplete.Option;
 
 function onSelect(value) {
   console.log('onSelect', value);
-}
+} 
 
 function getRandomInt(max, min = 0) {
   return Math.floor(Math.random() * (max - min + 1)) + min; // eslint-disable-line no-mixed-operators

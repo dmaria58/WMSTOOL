@@ -14,10 +14,10 @@ title:
 The simplest usage.
 
 ```jsx
-import { Anchor } from 'antd';
+import { Anchor } from 'wmstool';
 const { Link } = Anchor;
 
-ReactDOM.render(
+ReactDOM.render( 
   <Anchor>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-fixed" title="Fixed demo" />

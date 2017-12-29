@@ -22,7 +22,7 @@ Control filters and sorters by `filteredValue` and `sortOrder`.
 > 3. `column.key` is required.
 
 ````jsx
-import { Table, Button } from 'antd';
+import { Table, Button } from 'wmstool';
 
 const data = [{
   key: '1',

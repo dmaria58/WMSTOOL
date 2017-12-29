@@ -15,7 +15,7 @@ The input box comes in three sizes. `default` will be used if `size` is omitted.
 
 
 ````jsx
-import { DatePicker, Radio } from 'antd';
+import { DatePicker, Radio } from 'wmstool';
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
 class PickerSizesDemo extends React.Component {

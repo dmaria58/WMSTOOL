@@ -14,7 +14,7 @@ title:
 Rows can be selectable by making first column as a selectable column.
 
 ````jsx
-import { Table } from 'antd';
+import { Table } from 'wmstool';
 
 const columns = [{
   title: 'Name',

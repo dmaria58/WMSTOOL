@@ -14,7 +14,7 @@ title:
 This will simply display a red badge, without a specific count.
 
 ````jsx
-import { Badge, Icon } from 'antd';
+import { Badge, Icon } from 'wmstool';
 
 ReactDOM.render(
   <div>

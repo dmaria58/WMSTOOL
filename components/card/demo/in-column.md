@@ -14,7 +14,7 @@ title:
 Cards usually cooperate with grid column layout in overview page.
 
 ````jsx
-import { Card, Col, Row } from 'antd';
+import { Card, Col, Row } from 'wmstool';
 
 ReactDOM.render(
   <div style={{ background: '#ECECEC', padding: '30px' }}>

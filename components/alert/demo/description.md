@@ -14,10 +14,10 @@ title:
 Additional description for alert message.
 
 ````jsx
-import { Alert } from 'antd';
+import { Alert } from 'wmstool';
 
 ReactDOM.render(
-  <div>
+  <div> 
     <Alert
       message="Success Text"
       description="Success Description Success Description Success Description"
