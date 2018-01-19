@@ -12,6 +12,7 @@ export interface RadioGroupProps extends AbstractCheckboxGroupProps {
   name?: string;
   children?: React.ReactNode;
   id?: string;
+  isuncheck?:boolean;
 }
 
 export interface RadioGroupState {
