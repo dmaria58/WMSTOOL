@@ -60,10 +60,10 @@ describe('Table.sorter', () => {
   it('sort records', () => {
     const wrapper = mount(createTable());
 
-    wrapper.find('.ant-table-column-sorter-up').simulate('click');
+    wrapper.find('.wmstool-table-column-sorter-up').simulate('click');
     expect(renderedNames(wrapper)).toEqual(['Jack', 'Jerry', 'Lucy', 'Tom']);
 
-    wrapper.find('.ant-table-column-sorter-down').simulate('click');
+    wrapper.find('.wmstool-table-column-sorter-down').simulate('click');
     expect(renderedNames(wrapper)).toEqual(['Tom', 'Lucy', 'Jack', 'Jerry']);
   });
 
@@ -78,7 +78,7 @@ describe('Table.sorter', () => {
     const handleChange = jest.fn();
     const wrapper = mount(createTable({ onChange: handleChange }));
 
-    wrapper.find('.ant-table-column-sorter-up').simulate('click');
+    wrapper.find('.wmstool-table-column-sorter-up').simulate('click');
 
     const sorter = handleChange.mock.calls[0][2];
     expect(sorter.column.dataIndex).toBe('name');

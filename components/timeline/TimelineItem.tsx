@@ -13,7 +13,7 @@ export interface TimeLineItemProps {
 
 export default class TimelineItem extends React.Component<TimeLineItemProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-timeline',
+    prefixCls: 'wmstool-timeline',
     color: 'blue',
     last: false,
     pending: false,

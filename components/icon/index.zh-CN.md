@@ -29,7 +29,7 @@ toc: false
 
 ## 本地部署
 
-图标默认托管在 [iconfont.cn](http://iconfont.cn)，默认公网可访问。如需本地部署，可参考 [示例](https://github.com/ant-design/antd-init/tree/master/examples/local-iconfont)。
+图标默认托管在 [iconfont.cn](http://iconfont.cn)，默认公网可访问。如需本地部署，可参考 [示例](https://github.com/wmstool-design/antd-init/tree/master/examples/local-iconfont)。
 
 ## 图标列表
 

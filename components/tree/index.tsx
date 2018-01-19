@@ -84,7 +84,7 @@ export default class Tree extends React.Component<TreeProps, any> {
   static TreeNode = TreeNode;
 
   static defaultProps = {
-    prefixCls: 'ant-tree',
+    prefixCls: 'wmstool-tree',
     checkable: false,
     showIcon: false,
     openAnimation: animation,

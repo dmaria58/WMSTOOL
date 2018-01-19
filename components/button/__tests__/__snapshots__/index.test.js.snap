@@ -2,7 +2,7 @@
 
 exports[`Button renders Chinese characters correctly 1`] = `
 <button
-  class="ant-btn"
+  class="wmstool-btn"
   type="button"
 >
   <span>
@@ -13,7 +13,7 @@ exports[`Button renders Chinese characters correctly 1`] = `
 
 exports[`Button renders Chinese characters correctly 2`] = `
 <button
-  class="ant-btn"
+  class="wmstool-btn"
   type="button"
 >
   <i
@@ -27,7 +27,7 @@ exports[`Button renders Chinese characters correctly 2`] = `
 
 exports[`Button renders Chinese characters correctly 3`] = `
 <button
-  class="ant-btn"
+  class="wmstool-btn"
   type="button"
 >
   <i
@@ -41,7 +41,7 @@ exports[`Button renders Chinese characters correctly 3`] = `
 
 exports[`Button renders correctly 1`] = `
 <button
-  class="ant-btn"
+  class="wmstool-btn"
   type="button"
 >
   <span>
@@ -52,7 +52,7 @@ exports[`Button renders correctly 1`] = `
 
 exports[`Button should support link button 1`] = `
 <a
-  class="ant-btn"
+  class="wmstool-btn"
   href="http://ant.design"
   target="_blank"
 >

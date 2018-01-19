@@ -36,7 +36,7 @@ export default class Progress extends React.Component<ProgressProps, {}> {
     percent: 0,
     showInfo: true,
     trailColor: '#f3f3f3',
-    prefixCls: 'ant-progress',
+    prefixCls: 'wmstool-progress',
     size: 'default',
   };
 

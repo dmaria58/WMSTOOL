@@ -5,7 +5,7 @@
 @import "../../grid/style/mixin";
 @import "./mixin";
 
-@form-prefix-cls: ~"@{ant-prefix}-form";
+@form-prefix-cls: ~"@{wmstool-prefix}-form";
 @form-component-height: @input-height-base;
 @form-component-max-height: @input-height-lg;
 @form-feedback-icon-size: 14px;
@@ -39,18 +39,18 @@ input[type="checkbox"] {
 }
 
 // These classes are used directly on <label>s
-.@{ant-prefix}-radio-inline,
-.@{ant-prefix}-radio-vertical,
-.@{ant-prefix}-checkbox-inline,
-.@{ant-prefix}-checkbox-vertical {
+.@{wmstool-prefix}-radio-inline,
+.@{wmstool-prefix}-radio-vertical,
+.@{wmstool-prefix}-checkbox-inline,
+.@{wmstool-prefix}-checkbox-vertical {
   &.disabled {
     cursor: not-allowed;
   }
 }
 
 // These classes are used on elements with <label> descendants
-.@{ant-prefix}-radio,
-.@{ant-prefix}-checkbox {
+.@{wmstool-prefix}-radio,
+.@{wmstool-prefix}-checkbox {
   &.disabled {
     label {
       cursor: not-allowed;
@@ -77,12 +77,12 @@ input[type="checkbox"] {
 
   // nested FormItem
   &-control > &:last-child,
-  & [class^="@{ant-prefix}-col-"] > &:only-child {
+  & [class^="@{wmstool-prefix}-col-"] > &:only-child {
     margin-bottom: -@form-item-margin-bottom;
   }
 
   &-control {
-    line-height: @form-component-max-height - 0.0001px; // https://github.com/ant-design/ant-design/issues/8220
+    line-height: @form-component-max-height - 0.0001px; // https://github.com/wmstool-design/wmstool-design/issues/8220
     position: relative;
     .clearfix;
     > * {
@@ -120,7 +120,7 @@ input[type="checkbox"] {
     }
   }
 
-  .@{ant-prefix}-switch {
+  .@{wmstool-prefix}-switch {
     margin: 2px 0 4px;
   }
 
@@ -154,24 +154,24 @@ input[type="checkbox"] {
 // 表单下的输入框尺寸唯一: 大尺寸
 form {
   .has-feedback {
-    .@{ant-prefix}-input {
+    .@{wmstool-prefix}-input {
       padding-right: 24px;
     }
 
     // Fix overlapping between feedback icon and <Select>'s arrow.
-    // https://github.com/ant-design/ant-design/issues/4431
-    > .@{ant-prefix}-select .@{ant-prefix}-select-arrow,
-    > .@{ant-prefix}-select .@{ant-prefix}-select-selection__clear,
-    :not(.@{ant-prefix}-input-group-addon) > .@{ant-prefix}-select .@{ant-prefix}-select-arrow,
-    :not(.@{ant-prefix}-input-group-addon) > .@{ant-prefix}-select .@{ant-prefix}-select-selection__clear {
+    // https://github.com/wmstool-design/wmstool-design/issues/4431
+    > .@{wmstool-prefix}-select .@{wmstool-prefix}-select-arrow,
+    > .@{wmstool-prefix}-select .@{wmstool-prefix}-select-selection__clear,
+    :not(.@{wmstool-prefix}-input-group-addon) > .@{wmstool-prefix}-select .@{wmstool-prefix}-select-arrow,
+    :not(.@{wmstool-prefix}-input-group-addon) > .@{wmstool-prefix}-select .@{wmstool-prefix}-select-selection__clear {
       right: 28px;
     }
-    > .@{ant-prefix}-select .@{ant-prefix}-select-selection-selected-value,
-    :not(.@{ant-prefix}-input-group-addon) > .@{ant-prefix}-select .@{ant-prefix}-select-selection-selected-value {
+    > .@{wmstool-prefix}-select .@{wmstool-prefix}-select-selection-selected-value,
+    :not(.@{wmstool-prefix}-input-group-addon) > .@{wmstool-prefix}-select .@{wmstool-prefix}-select-selection-selected-value {
       padding-right: 42px;
     }
 
-    .@{ant-prefix}-cascader-picker {
+    .@{wmstool-prefix}-cascader-picker {
       &-arrow {
         margin-right: 17px;
       }
@@ -180,16 +180,16 @@ form {
       }
     }
 
-    // Fix issue: https://github.com/ant-design/ant-design/issues/7854
-    .@{ant-prefix}-input-search:not(.@{ant-prefix}-input-search-enter-button) {
-      .@{ant-prefix}-input-suffix {
+    // Fix issue: https://github.com/wmstool-design/wmstool-design/issues/7854
+    .@{wmstool-prefix}-input-search:not(.@{wmstool-prefix}-input-search-enter-button) {
+      .@{wmstool-prefix}-input-suffix {
         right: 28px;
       }
     }
 
-    // Fix issue: https://github.com/ant-design/ant-design/issues/4783
-    .@{ant-prefix}-calendar-picker,
-    .@{ant-prefix}-time-picker {
+    // Fix issue: https://github.com/wmstool-design/wmstool-design/issues/4783
+    .@{wmstool-prefix}-calendar-picker,
+    .@{wmstool-prefix}-time-picker {
       &-icon,
       &-clear {
         right: 28px;
@@ -197,12 +197,12 @@ form {
     }
   }
 
-  textarea.@{ant-prefix}-input {
+  textarea.@{wmstool-prefix}-input {
     height: auto;
   }
 
   // input[type=file]
-  .@{ant-prefix}-upload {
+  .@{wmstool-prefix}-upload {
     background: transparent;
   }
 
@@ -213,8 +213,8 @@ form {
   }
 
   // Radios and checkboxes on same line
-  .@{ant-prefix}-radio-inline,
-  .@{ant-prefix}-checkbox-inline {
+  .@{wmstool-prefix}-radio-inline,
+  .@{wmstool-prefix}-checkbox-inline {
     display: inline-block;
     vertical-align: middle;
     font-weight: normal;
@@ -226,49 +226,49 @@ form {
     }
   }
 
-  .@{ant-prefix}-checkbox-vertical,
-  .@{ant-prefix}-radio-vertical {
+  .@{wmstool-prefix}-checkbox-vertical,
+  .@{wmstool-prefix}-radio-vertical {
     display: block;
   }
 
-  .@{ant-prefix}-checkbox-vertical + .@{ant-prefix}-checkbox-vertical,
-  .@{ant-prefix}-radio-vertical + .@{ant-prefix}-radio-vertical {
+  .@{wmstool-prefix}-checkbox-vertical + .@{wmstool-prefix}-checkbox-vertical,
+  .@{wmstool-prefix}-radio-vertical + .@{wmstool-prefix}-radio-vertical {
     margin-left: 0;
   }
 
-  .@{ant-prefix}-input-number {
+  .@{wmstool-prefix}-input-number {
     margin-right: 8px;
   }
 
-  .@{ant-prefix}-select,
-  .@{ant-prefix}-cascader-picker {
+  .@{wmstool-prefix}-select,
+  .@{wmstool-prefix}-cascader-picker {
     width: 100%;
   }
 
   // Don't impact select inside input group
-  .@{ant-prefix}-input-group .@{ant-prefix}-select,
-  .@{ant-prefix}-input-group .@{ant-prefix}-cascader-picker {
+  .@{wmstool-prefix}-input-group .@{wmstool-prefix}-select,
+  .@{wmstool-prefix}-input-group .@{wmstool-prefix}-cascader-picker {
     width: auto;
   }
 
-  // fix input with addon position. https://github.com/ant-design/ant-design/issues/8243
-  .@{ant-prefix}-input-group-wrapper {
+  // fix input with addon position. https://github.com/wmstool-design/wmstool-design/issues/8243
+  .@{wmstool-prefix}-input-group-wrapper {
     position: relative;
     top: (@form-component-max-height - @input-height-base) / 2;
 
-    &.@{ant-prefix}-input-group-wrapper-lg {
+    &.@{wmstool-prefix}-input-group-wrapper-lg {
       top: (@form-component-max-height - @input-height-lg) / 2;
     }
 
-    &.@{ant-prefix}-input-group-wrapper-sm {
+    &.@{wmstool-prefix}-input-group-wrapper-sm {
       top: (@form-component-max-height - @input-height-sm) / 2;
     }
   }
 }
 
 // Input combined with select
-.@{ant-prefix}-input-group-wrap {
-  .@{ant-prefix}-select-selection {
+.@{wmstool-prefix}-input-group-wrap {
+  .@{wmstool-prefix}-select-selection {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     &:hover {
@@ -276,18 +276,18 @@ form {
     }
   }
 
-  .@{ant-prefix}-select-selection--single {
+  .@{wmstool-prefix}-select-selection--single {
     margin-left: -1px;
     height: @input-height-lg;
     background-color: #eee;
-    .@{ant-prefix}-select-selection__rendered {
+    .@{wmstool-prefix}-select-selection__rendered {
       padding-left: 8px;
       padding-right: 25px;
       line-height: 30px;
     }
   }
 
-  .@{ant-prefix}-select-open .@{ant-prefix}-select-selection {
+  .@{wmstool-prefix}-select-open .@{wmstool-prefix}-select-selection {
     border-color: @border-color-base;
     box-shadow: none;
   }
@@ -320,38 +320,38 @@ form {
 
 .@{form-prefix-cls}-vertical .@{form-prefix-cls}-item-label,
   // when labelCol is 24, it is a vertical form
-.@{ant-prefix}-col-24.@{form-prefix-cls}-item-label,
-.@{ant-prefix}-col-xl-24.@{form-prefix-cls}-item-label {
+.@{wmstool-prefix}-col-24.@{form-prefix-cls}-item-label,
+.@{wmstool-prefix}-col-xl-24.@{form-prefix-cls}-item-label {
   .make-vertical-layout-label();
 }
 
 @media (max-width: @screen-xs-max) {
   .make-vertical-layout();
-  .@{ant-prefix}-col-xs-24.@{form-prefix-cls}-item-label {
+  .@{wmstool-prefix}-col-xs-24.@{form-prefix-cls}-item-label {
     .make-vertical-layout-label();
   }
 }
 
 @media (max-width: @screen-sm-max) {
-  .@{ant-prefix}-col-sm-24.@{form-prefix-cls}-item-label {
+  .@{wmstool-prefix}-col-sm-24.@{form-prefix-cls}-item-label {
     .make-vertical-layout-label();
   }
 }
 
 @media (max-width: @screen-md-max) {
-  .@{ant-prefix}-col-md-24.@{form-prefix-cls}-item-label {
+  .@{wmstool-prefix}-col-md-24.@{form-prefix-cls}-item-label {
     .make-vertical-layout-label();
   }
 }
 
 @media (max-width: @screen-lg-max) {
-  .@{ant-prefix}-col-lg-24.@{form-prefix-cls}-item-label {
+  .@{wmstool-prefix}-col-lg-24.@{form-prefix-cls}-item-label {
     .make-vertical-layout-label();
   }
 }
 
 @media (max-width: @screen-xl-max) {
-  .@{ant-prefix}-col-xl-24.@{form-prefix-cls}-item-label {
+  .@{wmstool-prefix}-col-xl-24.@{form-prefix-cls}-item-label {
     .make-vertical-layout-label();
   }
 }
@@ -381,7 +381,7 @@ form {
     display: inline-block;
   }
 
-  // Fix https://github.com/ant-design/ant-design/issues/1040
+  // Fix https://github.com/wmstool-design/wmstool-design/issues/1040
   .@{form-prefix-cls}-explain {
     position: absolute;
   }
@@ -427,28 +427,28 @@ form {
   }
 
   //select
-  .@{ant-prefix}-select {
+  .@{wmstool-prefix}-select {
     &-selection {
       border-color: @warning-color;
     }
-    &-open .@{ant-prefix}-select-selection,
-    &-focused .@{ant-prefix}-select-selection {
+    &-open .@{wmstool-prefix}-select-selection,
+    &-focused .@{wmstool-prefix}-select-selection {
       .active(@warning-color);
     }
   }
 
   // arrow and icon
-  .@{ant-prefix}-calendar-picker-icon:after,
-  .@{ant-prefix}-time-picker-icon:after,
-  .@{ant-prefix}-picker-icon:after,
-  .@{ant-prefix}-select-arrow,
-  .@{ant-prefix}-cascader-picker-arrow {
+  .@{wmstool-prefix}-calendar-picker-icon:after,
+  .@{wmstool-prefix}-time-picker-icon:after,
+  .@{wmstool-prefix}-picker-icon:after,
+  .@{wmstool-prefix}-select-arrow,
+  .@{wmstool-prefix}-cascader-picker-arrow {
     color: @warning-color;
   }
 
   //input-number, timepicker
-  .@{ant-prefix}-input-number,
-  .@{ant-prefix}-time-picker-input {
+  .@{wmstool-prefix}-input-number,
+  .@{wmstool-prefix}-time-picker-input {
     border-color: @warning-color;
     &-focused,
     &:focus {
@@ -459,7 +459,7 @@ form {
     }
   }
 
-  .@{ant-prefix}-cascader-picker:focus .@{ant-prefix}-cascader-input {
+  .@{wmstool-prefix}-cascader-picker:focus .@{wmstool-prefix}-cascader-input {
     .active(@warning-color);
   }
 }
@@ -474,17 +474,17 @@ form {
   }
 
   //select
-  .@{ant-prefix}-select {
+  .@{wmstool-prefix}-select {
     &-selection {
       border-color: @error-color;
     }
-    &-open .@{ant-prefix}-select-selection,
-    &-focused .@{ant-prefix}-select-selection {
+    &-open .@{wmstool-prefix}-select-selection,
+    &-focused .@{wmstool-prefix}-select-selection {
       .active(@error-color);
     }
   }
 
-  .@{ant-prefix}-input-group-addon .@{ant-prefix}-select {
+  .@{wmstool-prefix}-input-group-addon .@{wmstool-prefix}-select {
     &-selection {
       border-color: transparent;
       box-shadow: none;
@@ -492,17 +492,17 @@ form {
   }
 
   // arrow and icon
-  .@{ant-prefix}-calendar-picker-icon:after,
-  .@{ant-prefix}-time-picker-icon:after,
-  .@{ant-prefix}-picker-icon:after,
-  .@{ant-prefix}-select-arrow,
-  .@{ant-prefix}-cascader-picker-arrow {
+  .@{wmstool-prefix}-calendar-picker-icon:after,
+  .@{wmstool-prefix}-time-picker-icon:after,
+  .@{wmstool-prefix}-picker-icon:after,
+  .@{wmstool-prefix}-select-arrow,
+  .@{wmstool-prefix}-cascader-picker-arrow {
     color: @error-color;
   }
 
   //input-number, timepicker
-  .@{ant-prefix}-input-number,
-  .@{ant-prefix}-time-picker-input {
+  .@{wmstool-prefix}-input-number,
+  .@{wmstool-prefix}-time-picker-input {
     border-color: @error-color;
     &-focused,
     &:focus {
@@ -512,20 +512,20 @@ form {
       border-color: @error-color;
     }
   }
-  .@{ant-prefix}-mention-wrapper {
-    .@{ant-prefix}-mention-editor {
+  .@{wmstool-prefix}-mention-wrapper {
+    .@{wmstool-prefix}-mention-editor {
       &,
       &:not([disabled]):hover {
         border-color: @error-color;
       }
     }
-    &.@{ant-prefix}-mention-active:not([disabled]) .@{ant-prefix}-mention-editor,
-    .@{ant-prefix}-mention-editor:not([disabled]):focus {
+    &.@{wmstool-prefix}-mention-active:not([disabled]) .@{wmstool-prefix}-mention-editor,
+    .@{wmstool-prefix}-mention-editor:not([disabled]):focus {
       .active(@error-color);
     }
   }
 
-  .@{ant-prefix}-cascader-picker:focus .@{ant-prefix}-cascader-input {
+  .@{wmstool-prefix}-cascader-picker:focus .@{wmstool-prefix}-cascader-input {
     .active(@error-color);
   }
 }
@@ -539,7 +539,7 @@ form {
   }
 }
 
-.@{ant-prefix}-advanced-search-form {
+.@{wmstool-prefix}-advanced-search-form {
   .@{form-prefix-cls}-item {
     margin-bottom: 24px;
   }

@@ -1,7 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 
-@layout-prefix-cls: ~"@{ant-prefix}-layout";
+@layout-prefix-cls: ~"@{wmstool-prefix}-layout";
 
 .@{layout-prefix-cls} {
   display: flex;
@@ -56,7 +56,7 @@
     &-children {
       height: 100%;
       // Hack for fixing margin collaspe bug
-      // https://github.com/ant-design/ant-design/issues/7967
+      // https://github.com/wmstool-design/wmstool-design/issues/7967
       // solution from https://stackoverflow.com/a/33132624/3040605
       padding-top: 0.1px;
       margin-top: -0.1px;

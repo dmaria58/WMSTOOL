@@ -1,6 +1,6 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Icon, Badge } from 'antd';
+import { Icon, Badge } from 'wmstool';
 
 export default class CopyableIcon extends React.Component {
   state = {

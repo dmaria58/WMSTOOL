@@ -75,7 +75,7 @@ If the form has been decorated by `Form.create` then it has `this.props.form` pr
 | resetFields | Reset the specified fields' value(to `initialValue`) and status. If you don't specify a parameter, all the fields will be reset. | Function(\[names: string\[]]) |
 | setFields | Set the value and error of a field. [Code Sample](https://github.com/react-component/form/blob/3b9959b57ab30b41d8890ff30c79a7e7c383cad3/examples/server-validate.js#L74-L79) | Function({ [fieldName]&#x3A; { value: any, errors: [Error] } }) |
 | setFields |  | Function(obj: object) |
-| setFieldsValue | Set the value of a field.(Note: please don't use it in `componentWillReceiveProps`, otherwise, it will cause an endless loop, [more](https://github.com/ant-design/ant-design/issues/2985)) | Function({ [fieldName]&#x3A; value } |
+| setFieldsValue | Set the value of a field.(Note: please don't use it in `componentWillReceiveProps`, otherwise, it will cause an endless loop, [more](https://github.com/wmstool-design/wmstool-design/issues/2985)) | Function({ [fieldName]&#x3A; value } |
 | validateFields | Validate the specified fields and get theirs values and errors. If you don't specify the parameter of fieldNames, you will vaildate all fields. | Function(\[fieldNames: string\[]], [options: object], callback: Function(errors, values)) |
 | validateFieldsAndScroll | This function is similar to `validateFields`, but after validation, if the target field is not in visible area of form, form will be automatically scrolled to the target field area. | same as `validateFields` |
 
@@ -153,13 +153,13 @@ Note:
 | required | indicates whether field is required | boolean | `false` |
 | transform | transform a value before validation | function(value) => transformedValue:any | - |
 | type | built-in validation type, [available options](https://github.com/yiminghe/async-validator#type) | string | 'string' |
-| validator | custom validate function (Note: [callback must be called](https://github.com/ant-design/ant-design/issues/5155)) | function(rule, value, callback) | - |
+| validator | custom validate function (Note: [callback must be called](https://github.com/wmstool-design/wmstool-design/issues/5155)) | function(rule, value, callback) | - |
 | whitespace | treat required fields that only contain whitespace as errors | boolean | `false` |
 
 See more advanced usage at [async-validator](https://github.com/yiminghe/async-validator).
 
 <style>
-.code-box-demo .ant-form:not(.ant-form-inline):not(.ant-form-vertical) {
+.code-box-demo .wmstool-form:not(.wmstool-form-inline):not(.wmstool-form-vertical) {
   max-width: 600px;
 }
 </style>

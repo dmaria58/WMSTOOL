@@ -2,22 +2,22 @@
 
 exports[`Table renders JSX correctly 1`] = `
 <div
-  class="ant-table-wrapper"
+  class="wmstool-table-wrapper"
 >
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-table ant-table-large ant-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-scroll-position-left"
       >
         <div
-          class="ant-table-content"
+          class="wmstool-table-content"
         >
           <div
-            class="ant-table-body"
+            class="wmstool-table-body"
           >
             <table
               class=""
@@ -28,7 +28,7 @@ exports[`Table renders JSX correctly 1`] = `
                 <col />
               </colgroup>
               <thead
-                class="ant-table-thead"
+                class="wmstool-table-thead"
               >
                 <tr>
                   <th
@@ -66,16 +66,16 @@ exports[`Table renders JSX correctly 1`] = `
                 </tr>
               </thead>
               <tbody
-                class="ant-table-tbody"
+                class="wmstool-table-tbody"
               >
                 <tr
-                  class="ant-table-row  ant-table-row-level-0"
+                  class="wmstool-table-row  wmstool-table-row-level-0"
                 >
                   <td
                     class=""
                   >
                     <span
-                      class="ant-table-row-indent indent-level-0"
+                      class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
                     John
@@ -92,13 +92,13 @@ exports[`Table renders JSX correctly 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="ant-table-row  ant-table-row-level-0"
+                  class="wmstool-table-row  wmstool-table-row-level-0"
                 >
                   <td
                     class=""
                   >
                     <span
-                      class="ant-table-row-indent indent-level-0"
+                      class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
                     Jim

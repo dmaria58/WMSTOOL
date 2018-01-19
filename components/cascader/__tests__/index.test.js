@@ -58,15 +58,15 @@ describe('Cascader', () => {
     const wrapper = mount(<Cascader options={options} />);
     wrapper.find('input').simulate('click');
     let popupWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    popupWrapper.find('.ant-cascader-menu').at(0).find('.ant-cascader-menu-item').at(0)
+    popupWrapper.find('.wmstool-cascader-menu').at(0).find('.wmstool-cascader-menu-item').at(0)
       .simulate('click');
     expect(render(wrapper.find('Trigger').instance().getComponent())).toMatchSnapshot();
     popupWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    popupWrapper.find('.ant-cascader-menu').at(1).find('.ant-cascader-menu-item').at(0)
+    popupWrapper.find('.wmstool-cascader-menu').at(1).find('.wmstool-cascader-menu-item').at(0)
       .simulate('click');
     expect(render(wrapper.find('Trigger').instance().getComponent())).toMatchSnapshot();
     popupWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    popupWrapper.find('.ant-cascader-menu').at(2).find('.ant-cascader-menu-item').at(0)
+    popupWrapper.find('.wmstool-cascader-menu').at(2).find('.wmstool-cascader-menu-item').at(0)
       .simulate('click');
     expect(render(wrapper.find('Trigger').instance().getComponent())).toMatchSnapshot();
   });

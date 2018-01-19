@@ -58,7 +58,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   static SubMenu = SubMenu;
   static ItemGroup = ItemGroup;
   static defaultProps = {
-    prefixCls: 'ant-menu',
+    prefixCls: 'wmstool-menu',
     className: '',
     theme: 'light',  // or dark
   };
@@ -188,7 +188,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
             leave: (node: HTMLElement, done: () => void) => animation.leave(node, () => {
               // Make sure inline menu leave animation finished before mode is switched
               this.switchModeFromInline = false;
-              // Fix https://github.com/ant-design/ant-design/issues/8475
+              // Fix https://github.com/wmstool-design/wmstool-design/issues/8475
               this.leaveAnimationExecutedWhenInlineCollapsed = true;
               this.setState({});
               // when inlineCollapsed change false to true, all submenu will be unmounted,
@@ -230,7 +230,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
       menuProps.openAnimation = menuOpenAnimation;
     }
 
-    // https://github.com/ant-design/ant-design/issues/8587
+    // https://github.com/wmstool-design/wmstool-design/issues/8587
     const { collapsedWidth } = this.context;
     if (
       this.getInlineCollapsed() &&

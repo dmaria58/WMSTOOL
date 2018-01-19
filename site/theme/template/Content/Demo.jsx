@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classNames from 'classnames';
-import { Icon, Tooltip } from 'antd';
+import { Icon, Tooltip } from 'wmstool';
 import EditButton from './EditButton';
 import BrowserFrame from '../BrowserFrame';
 import { ping } from '../utils';
@@ -124,7 +124,7 @@ export default class Demo extends React.Component {
 <script>
   var mountNode = document.getElementById('container');
 </script>`,
-      js: state.sourceCode.replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd';/, 'const { $1 } = antd;'),
+      js: state.sourceCode.replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'wmstool';/, 'const { $1 } = antd;'),
       css: prefillStyle,
       editors: '001',
       css_external: 'https://unpkg.com/antd/dist/antd.css',

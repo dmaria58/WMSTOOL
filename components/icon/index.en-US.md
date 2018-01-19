@@ -28,7 +28,7 @@ Use tag <Icon /> to create an icon and set its type in the type prop, for exampl
 
 ## Local deployment
 
-By default, icons are deployed at [iconfont.cn](http://iconfont.cn), publicly available repository of a huge set of icons. In case you need to use a locally deployed version of the icon font, you can refer to [this example](https://github.com/ant-design/antd-init/tree/master/examples/local-iconfont)。
+By default, icons are deployed at [iconfont.cn](http://iconfont.cn), publicly available repository of a huge set of icons. In case you need to use a locally deployed version of the icon font, you can refer to [this example](https://github.com/wmstool-design/antd-init/tree/master/examples/local-iconfont)。
 
 ## List of icons
 

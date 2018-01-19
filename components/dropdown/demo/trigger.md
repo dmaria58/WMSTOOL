@@ -31,7 +31,7 @@ const menu = (
 
 ReactDOM.render(
   <Dropdown overlay={menu} trigger={['click']}>
-    <a className="ant-dropdown-link" href="#">
+    <a className="wmstool-dropdown-link" href="#">
       Click me <Icon type="down" />
     </a>
   </Dropdown>

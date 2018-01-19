@@ -61,7 +61,7 @@ subtitle: 级联选择
 | blur() | 移除焦点 |
 
 <style>
-.ant-cascader-picker {
+.wmstool-cascader-picker {
   width: 300px;
 }
 </style>

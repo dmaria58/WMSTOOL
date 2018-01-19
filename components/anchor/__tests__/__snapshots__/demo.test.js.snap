@@ -6,23 +6,23 @@ exports[`renders ./components/anchor/demo/basic.md correctly 1`] = `
     class=""
   >
     <div
-      class="ant-anchor-wrapper"
+      class="wmstool-anchor-wrapper"
     >
       <div
-        class="ant-anchor"
+        class="wmstool-anchor"
       >
         <div
-          class="ant-anchor-ink"
+          class="wmstool-anchor-ink"
         >
           <span
-            class="ant-anchor-ink-ball"
+            class="wmstool-anchor-ink-ball"
           />
         </div>
         <div
-          class="ant-anchor-link"
+          class="wmstool-anchor-link"
         >
           <a
-            class="ant-anchor-link-title"
+            class="wmstool-anchor-link-title"
             href="#components-anchor-demo-basic"
             title="Basic demo"
           >
@@ -30,10 +30,10 @@ exports[`renders ./components/anchor/demo/basic.md correctly 1`] = `
           </a>
         </div>
         <div
-          class="ant-anchor-link"
+          class="wmstool-anchor-link"
         >
           <a
-            class="ant-anchor-link-title"
+            class="wmstool-anchor-link-title"
             href="#components-anchor-demo-fixed"
             title="Fixed demo"
           >
@@ -41,20 +41,20 @@ exports[`renders ./components/anchor/demo/basic.md correctly 1`] = `
           </a>
         </div>
         <div
-          class="ant-anchor-link"
+          class="wmstool-anchor-link"
         >
           <a
-            class="ant-anchor-link-title"
+            class="wmstool-anchor-link-title"
             href="#API"
             title="API"
           >
             API
           </a>
           <div
-            class="ant-anchor-link"
+            class="wmstool-anchor-link"
           >
             <a
-              class="ant-anchor-link-title"
+              class="wmstool-anchor-link-title"
               href="#Anchor-Props"
               title="Anchor Props"
             >
@@ -62,10 +62,10 @@ exports[`renders ./components/anchor/demo/basic.md correctly 1`] = `
             </a>
           </div>
           <div
-            class="ant-anchor-link"
+            class="wmstool-anchor-link"
           >
             <a
-              class="ant-anchor-link-title"
+              class="wmstool-anchor-link-title"
               href="#Link-Props"
               title="Link Props"
             >
@@ -81,23 +81,23 @@ exports[`renders ./components/anchor/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/anchor/demo/static.md correctly 1`] = `
 <div
-  class="ant-anchor-wrapper"
+  class="wmstool-anchor-wrapper"
 >
   <div
-    class="ant-anchor fixed"
+    class="wmstool-anchor fixed"
   >
     <div
-      class="ant-anchor-ink"
+      class="wmstool-anchor-ink"
     >
       <span
-        class="ant-anchor-ink-ball"
+        class="wmstool-anchor-ink-ball"
       />
     </div>
     <div
-      class="ant-anchor-link"
+      class="wmstool-anchor-link"
     >
       <a
-        class="ant-anchor-link-title"
+        class="wmstool-anchor-link-title"
         href="#components-anchor-demo-basic"
         title="Basic demo"
       >
@@ -105,10 +105,10 @@ exports[`renders ./components/anchor/demo/static.md correctly 1`] = `
       </a>
     </div>
     <div
-      class="ant-anchor-link"
+      class="wmstool-anchor-link"
     >
       <a
-        class="ant-anchor-link-title"
+        class="wmstool-anchor-link-title"
         href="#components-anchor-demo-fixed"
         title="Fixed demo"
       >
@@ -116,20 +116,20 @@ exports[`renders ./components/anchor/demo/static.md correctly 1`] = `
       </a>
     </div>
     <div
-      class="ant-anchor-link"
+      class="wmstool-anchor-link"
     >
       <a
-        class="ant-anchor-link-title"
+        class="wmstool-anchor-link-title"
         href="#API"
         title="API"
       >
         API
       </a>
       <div
-        class="ant-anchor-link"
+        class="wmstool-anchor-link"
       >
         <a
-          class="ant-anchor-link-title"
+          class="wmstool-anchor-link-title"
           href="#Anchor-Props"
           title="Anchor Props"
         >
@@ -137,10 +137,10 @@ exports[`renders ./components/anchor/demo/static.md correctly 1`] = `
         </a>
       </div>
       <div
-        class="ant-anchor-link"
+        class="wmstool-anchor-link"
       >
         <a
-          class="ant-anchor-link-title"
+          class="wmstool-anchor-link-title"
           href="#Link-Props"
           title="Link Props"
         >

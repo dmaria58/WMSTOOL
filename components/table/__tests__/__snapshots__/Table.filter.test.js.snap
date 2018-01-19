@@ -3,7 +3,7 @@
 exports[`Table.filter renders custom content correctly 1`] = `
 <div>
   <div
-    class="ant-dropdown  ant-dropdown-placement-bottomLeft  ant-dropdown-hidden"
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
   >
     <div>
       <div
@@ -18,22 +18,22 @@ exports[`Table.filter renders custom content correctly 1`] = `
 
 exports[`Table.filter renders filter correctly 1`] = `
 <div
-  class="ant-table-wrapper"
+  class="wmstool-table-wrapper"
 >
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-table ant-table-large ant-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-scroll-position-left"
       >
         <div
-          class="ant-table-content"
+          class="wmstool-table-content"
         >
           <div
-            class="ant-table-body"
+            class="wmstool-table-body"
           >
             <table
               class=""
@@ -42,7 +42,7 @@ exports[`Table.filter renders filter correctly 1`] = `
                 <col />
               </colgroup>
               <thead
-                class="ant-table-thead"
+                class="wmstool-table-thead"
               >
                 <tr>
                   <th
@@ -51,7 +51,7 @@ exports[`Table.filter renders filter correctly 1`] = `
                     <span>
                       Name
                       <i
-                        class="anticon anticon-filter ant-dropdown-trigger"
+                        class="anticon anticon-filter wmstool-dropdown-trigger"
                         title="Filter menu"
                       />
                     </span>
@@ -59,55 +59,55 @@ exports[`Table.filter renders filter correctly 1`] = `
                 </tr>
               </thead>
               <tbody
-                class="ant-table-tbody"
+                class="wmstool-table-tbody"
               >
                 <tr
-                  class="ant-table-row  ant-table-row-level-0"
+                  class="wmstool-table-row  wmstool-table-row-level-0"
                 >
                   <td
                     class=""
                   >
                     <span
-                      class="ant-table-row-indent indent-level-0"
+                      class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
                     Jack
                   </td>
                 </tr>
                 <tr
-                  class="ant-table-row  ant-table-row-level-0"
+                  class="wmstool-table-row  wmstool-table-row-level-0"
                 >
                   <td
                     class=""
                   >
                     <span
-                      class="ant-table-row-indent indent-level-0"
+                      class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
                     Lucy
                   </td>
                 </tr>
                 <tr
-                  class="ant-table-row  ant-table-row-level-0"
+                  class="wmstool-table-row  wmstool-table-row-level-0"
                 >
                   <td
                     class=""
                   >
                     <span
-                      class="ant-table-row-indent indent-level-0"
+                      class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
                     Tom
                   </td>
                 </tr>
                 <tr
-                  class="ant-table-row  ant-table-row-level-0"
+                  class="wmstool-table-row  wmstool-table-row-level-0"
                 >
                   <td
                     class=""
                   >
                     <span
-                      class="ant-table-row-indent indent-level-0"
+                      class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
                     Jerry
@@ -126,34 +126,34 @@ exports[`Table.filter renders filter correctly 1`] = `
 exports[`Table.filter renders menu correctly 1`] = `
 <div>
   <div
-    class="ant-dropdown  ant-dropdown-placement-bottomLeft  ant-dropdown-hidden"
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
   >
     <div
-      class="ant-table-filter-dropdown"
+      class="wmstool-table-filter-dropdown"
     >
       <ul
         aria-activedescendant=""
-        class="ant-dropdown-menu  ant-dropdown-menu-root ant-dropdown-menu-vertical"
+        class="wmstool-dropdown-menu  wmstool-dropdown-menu-root wmstool-dropdown-menu-vertical"
         role="menu"
         tabindex="0"
       >
         <li
           aria-selected="false"
-          class="ant-dropdown-menu-item"
+          class="wmstool-dropdown-menu-item"
           role="menuitem"
         >
           <label
-            class="ant-checkbox-wrapper"
+            class="wmstool-checkbox-wrapper"
           >
             <span
-              class="ant-checkbox"
+              class="wmstool-checkbox"
             >
               <input
-                class="ant-checkbox-input"
+                class="wmstool-checkbox-input"
                 type="checkbox"
               />
               <span
-                class="ant-checkbox-inner"
+                class="wmstool-checkbox-inner"
               />
             </span>
           </label>
@@ -163,21 +163,21 @@ exports[`Table.filter renders menu correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-dropdown-menu-item"
+          class="wmstool-dropdown-menu-item"
           role="menuitem"
         >
           <label
-            class="ant-checkbox-wrapper"
+            class="wmstool-checkbox-wrapper"
           >
             <span
-              class="ant-checkbox"
+              class="wmstool-checkbox"
             >
               <input
-                class="ant-checkbox-input"
+                class="wmstool-checkbox-input"
                 type="checkbox"
               />
               <span
-                class="ant-checkbox-inner"
+                class="wmstool-checkbox-inner"
               />
             </span>
           </label>
@@ -186,32 +186,32 @@ exports[`Table.filter renders menu correctly 1`] = `
           </span>
         </li>
         <li
-          class="ant-dropdown-menu-submenu ant-dropdown-menu-submenu-vertical"
+          class="wmstool-dropdown-menu-submenu wmstool-dropdown-menu-submenu-vertical"
         >
           <div
             aria-expanded="false"
             aria-haspopup="true"
             aria-owns="title$Menu"
-            class="ant-dropdown-menu-submenu-title"
+            class="wmstool-dropdown-menu-submenu-title"
             title="Title"
           >
             Title
             <i
-              class="ant-dropdown-menu-submenu-arrow"
+              class="wmstool-dropdown-menu-submenu-arrow"
             />
           </div>
         </li>
       </ul>
       <div
-        class="ant-table-filter-dropdown-btns"
+        class="wmstool-table-filter-dropdown-btns"
       >
         <a
-          class="ant-table-filter-dropdown-link confirm"
+          class="wmstool-table-filter-dropdown-link confirm"
         >
           OK
         </a>
         <a
-          class="ant-table-filter-dropdown-link clear"
+          class="wmstool-table-filter-dropdown-link clear"
         >
           Reset
         </a>
@@ -224,34 +224,34 @@ exports[`Table.filter renders menu correctly 1`] = `
 exports[`Table.filter renders radio filter correctly 1`] = `
 <div>
   <div
-    class="ant-dropdown  ant-dropdown-placement-bottomLeft  ant-dropdown-hidden"
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
   >
     <div
-      class="ant-table-filter-dropdown"
+      class="wmstool-table-filter-dropdown"
     >
       <ul
         aria-activedescendant=""
-        class="ant-dropdown-menu  ant-dropdown-menu-root ant-dropdown-menu-vertical"
+        class="wmstool-dropdown-menu  wmstool-dropdown-menu-root wmstool-dropdown-menu-vertical"
         role="menu"
         tabindex="0"
       >
         <li
           aria-selected="false"
-          class="ant-dropdown-menu-item"
+          class="wmstool-dropdown-menu-item"
           role="menuitem"
         >
           <label
-            class="ant-radio-wrapper"
+            class="wmstool-radio-wrapper"
           >
             <span
-              class="ant-radio"
+              class="wmstool-radio"
             >
               <input
-                class="ant-radio-input"
+                class="wmstool-radio-input"
                 type="radio"
               />
               <span
-                class="ant-radio-inner"
+                class="wmstool-radio-inner"
               />
             </span>
           </label>
@@ -261,21 +261,21 @@ exports[`Table.filter renders radio filter correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-dropdown-menu-item"
+          class="wmstool-dropdown-menu-item"
           role="menuitem"
         >
           <label
-            class="ant-radio-wrapper"
+            class="wmstool-radio-wrapper"
           >
             <span
-              class="ant-radio"
+              class="wmstool-radio"
             >
               <input
-                class="ant-radio-input"
+                class="wmstool-radio-input"
                 type="radio"
               />
               <span
-                class="ant-radio-inner"
+                class="wmstool-radio-inner"
               />
             </span>
           </label>
@@ -284,32 +284,32 @@ exports[`Table.filter renders radio filter correctly 1`] = `
           </span>
         </li>
         <li
-          class="ant-dropdown-menu-submenu ant-dropdown-menu-submenu-vertical"
+          class="wmstool-dropdown-menu-submenu wmstool-dropdown-menu-submenu-vertical"
         >
           <div
             aria-expanded="false"
             aria-haspopup="true"
             aria-owns="title$Menu"
-            class="ant-dropdown-menu-submenu-title"
+            class="wmstool-dropdown-menu-submenu-title"
             title="Title"
           >
             Title
             <i
-              class="ant-dropdown-menu-submenu-arrow"
+              class="wmstool-dropdown-menu-submenu-arrow"
             />
           </div>
         </li>
       </ul>
       <div
-        class="ant-table-filter-dropdown-btns"
+        class="wmstool-table-filter-dropdown-btns"
       >
         <a
-          class="ant-table-filter-dropdown-link confirm"
+          class="wmstool-table-filter-dropdown-link confirm"
         >
           OK
         </a>
         <a
-          class="ant-table-filter-dropdown-link clear"
+          class="wmstool-table-filter-dropdown-link clear"
         >
           Reset
         </a>

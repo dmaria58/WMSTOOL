@@ -6,23 +6,23 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
     style="margin-bottom:16px"
   >
     <span
-      class="ant-input-group-wrapper"
+      class="wmstool-input-group-wrapper"
     >
       <span
-        class="ant-input-wrapper ant-input-group"
+        class="wmstool-input-wrapper wmstool-input-group"
       >
         <span
-          class="ant-input-group-addon"
+          class="wmstool-input-group-addon"
         >
           Http://
         </span>
         <input
-          class="ant-input"
+          class="wmstool-input"
           type="text"
           value="mysite"
         />
         <span
-          class="ant-input-group-addon"
+          class="wmstool-input-group-addon"
         >
           .com
         </span>
@@ -33,32 +33,32 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
     style="margin-bottom:16px"
   >
     <span
-      class="ant-input-group-wrapper"
+      class="wmstool-input-group-wrapper"
     >
       <span
-        class="ant-input-wrapper ant-input-group"
+        class="wmstool-input-wrapper wmstool-input-group"
       >
         <span
-          class="ant-input-group-addon"
+          class="wmstool-input-group-addon"
         >
           <div
-            class="ant-select ant-select-enabled"
+            class="wmstool-select wmstool-select-enabled"
             style="width:90px"
           >
             <div
               aria-autocomplete="list"
               aria-expanded="false"
               aria-haspopup="true"
-              class="ant-select-selection
-            ant-select-selection--single"
+              class="wmstool-select-selection
+            wmstool-select-selection--single"
               role="combobox"
               tabindex="0"
             >
               <div
-                class="ant-select-selection__rendered"
+                class="wmstool-select-selection__rendered"
               >
                 <div
-                  class="ant-select-selection-selected-value"
+                  class="wmstool-select-selection-selected-value"
                   style="display:block;opacity:1"
                   title="Http://"
                 >
@@ -66,7 +66,7 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
                 </div>
               </div>
               <span
-                class="ant-select-arrow"
+                class="wmstool-select-arrow"
                 style="user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -76,31 +76,31 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
           </div>
         </span>
         <input
-          class="ant-input"
+          class="wmstool-input"
           type="text"
           value="mysite"
         />
         <span
-          class="ant-input-group-addon"
+          class="wmstool-input-group-addon"
         >
           <div
-            class="ant-select ant-select-enabled"
+            class="wmstool-select wmstool-select-enabled"
             style="width:80px"
           >
             <div
               aria-autocomplete="list"
               aria-expanded="false"
               aria-haspopup="true"
-              class="ant-select-selection
-            ant-select-selection--single"
+              class="wmstool-select-selection
+            wmstool-select-selection--single"
               role="combobox"
               tabindex="0"
             >
               <div
-                class="ant-select-selection__rendered"
+                class="wmstool-select-selection__rendered"
               >
                 <div
-                  class="ant-select-selection-selected-value"
+                  class="wmstool-select-selection-selected-value"
                   style="display:block;opacity:1"
                   title=".com"
                 >
@@ -108,7 +108,7 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
                 </div>
               </div>
               <span
-                class="ant-select-arrow"
+                class="wmstool-select-arrow"
                 style="user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -124,18 +124,18 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
     style="margin-bottom:16px"
   >
     <span
-      class="ant-input-group-wrapper"
+      class="wmstool-input-group-wrapper"
     >
       <span
-        class="ant-input-wrapper ant-input-group"
+        class="wmstool-input-wrapper wmstool-input-group"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           type="text"
           value="mysite"
         />
         <span
-          class="ant-input-group-addon"
+          class="wmstool-input-group-addon"
         >
           <i
             class="anticon anticon-setting"
@@ -150,14 +150,14 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
 exports[`renders ./components/input/demo/autosize-textarea.md correctly 1`] = `
 <div>
   <textarea
-    class="ant-input"
+    class="wmstool-input"
     placeholder="Autosize height based on content lines"
   />
   <div
     style="margin:24px 0"
   />
   <textarea
-    class="ant-input"
+    class="wmstool-input"
     placeholder="Autosize height with minimum and maximum number of lines"
   />
 </div>
@@ -165,7 +165,7 @@ exports[`renders ./components/input/demo/autosize-textarea.md correctly 1`] = `
 
 exports[`renders ./components/input/demo/basic.md correctly 1`] = `
 <input
-  class="ant-input"
+  class="wmstool-input"
   placeholder="Basic usage"
   type="text"
 />
@@ -174,22 +174,22 @@ exports[`renders ./components/input/demo/basic.md correctly 1`] = `
 exports[`renders ./components/input/demo/group.md correctly 1`] = `
 <div>
   <span
-    class="ant-input-group ant-input-group-lg"
+    class="wmstool-input-group wmstool-input-group-lg"
   >
     <div
-      class="ant-col-4"
+      class="wmstool-col-4"
     >
       <input
-        class="ant-input"
+        class="wmstool-input"
         type="text"
         value="0571"
       />
     </div>
     <div
-      class="ant-col-8"
+      class="wmstool-col-8"
     >
       <input
-        class="ant-input"
+        class="wmstool-input"
         type="text"
         value="26888888"
       />
@@ -197,16 +197,16 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <input
-      class="ant-input"
+      class="wmstool-input"
       style="width:20%"
       type="text"
       value="0571"
     />
     <input
-      class="ant-input"
+      class="wmstool-input"
       style="width:30%"
       type="text"
       value="26888888"
@@ -214,25 +214,25 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Zhejiang"
           >
@@ -240,7 +240,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -249,7 +249,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       </div>
     </div>
     <input
-      class="ant-input"
+      class="wmstool-input"
       style="width:50%"
       type="text"
       value="Xihu District, Hangzhou"
@@ -257,25 +257,25 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Option1"
           >
@@ -283,7 +283,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -292,50 +292,50 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       </div>
     </div>
     <input
-      class="ant-input"
+      class="wmstool-input"
       style="width:50%"
       type="text"
       value="input content"
     />
     <div
-      class="ant-input-number"
+      class="wmstool-input-number"
     >
       <div
-        class="ant-input-number-handler-wrap"
+        class="wmstool-input-number-handler-wrap"
       >
         <span
           aria-disabled="false"
           aria-label="Increase Value"
-          class="ant-input-number-handler ant-input-number-handler-up "
+          class="wmstool-input-number-handler wmstool-input-number-handler-up "
           role="button"
           unselectable="unselectable"
         >
           <span
-            class="ant-input-number-handler-up-inner"
+            class="wmstool-input-number-handler-up-inner"
             unselectable="unselectable"
           />
         </span>
         <span
           aria-disabled="false"
           aria-label="Decrease Value"
-          class="ant-input-number-handler ant-input-number-handler-down "
+          class="wmstool-input-number-handler wmstool-input-number-handler-down "
           role="button"
           unselectable="unselectable"
         >
           <span
-            class="ant-input-number-handler-down-inner"
+            class="wmstool-input-number-handler-down-inner"
             unselectable="unselectable"
           />
         </span>
       </div>
       <div
         aria-valuemin="-9007199254740991"
-        class="ant-input-number-input-wrap"
+        class="wmstool-input-number-input-wrap"
         role="spinbutton"
       >
         <input
           autocomplete="off"
-          class="ant-input-number-input"
+          class="wmstool-input-number-input"
           min="-9007199254740991"
           step="1"
           value=""
@@ -345,51 +345,51 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <input
-      class="ant-input"
+      class="wmstool-input"
       style="width:50%"
       type="text"
       value="input content"
     />
     <span
-      class="ant-calendar-picker"
+      class="wmstool-calendar-picker"
     >
       <div>
         <input
-          class="ant-calendar-picker-input ant-input"
+          class="wmstool-calendar-picker-input wmstool-input"
           placeholder="Select date"
           readonly=""
           value=""
         />
         <span
-          class="ant-calendar-picker-icon"
+          class="wmstool-calendar-picker-icon"
         />
       </div>
     </span>
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Option1-1"
           >
@@ -397,7 +397,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -406,22 +406,22 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Option2-2"
           >
@@ -429,7 +429,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -440,25 +440,25 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Between"
           >
@@ -466,7 +466,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -475,20 +475,20 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       </div>
     </div>
     <input
-      class="ant-input"
+      class="wmstool-input"
       placeholder="Minimum"
       style="width:100px;text-align:center"
       type="text"
     />
     <input
-      class="ant-input ant-input-disabled"
+      class="wmstool-input wmstool-input-disabled"
       disabled=""
       placeholder="~"
       style="width:24px;border-left:0;pointer-events:none;background-color:#fff"
       type="text"
     />
     <input
-      class="ant-input"
+      class="wmstool-input"
       placeholder="Maximum"
       style="width:100px;text-align:center;border-left:0"
       type="text"
@@ -496,25 +496,25 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Sign Up"
           >
@@ -522,7 +522,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -531,22 +531,22 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+      class="wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
       style="width:200px"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection__placeholder"
+            class="wmstool-select-selection__placeholder"
             style="display:block;user-select:none;-webkit-user-select:none"
             unselectable="unselectable"
           >
@@ -554,18 +554,18 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
           <ul>
             <li
-              class="ant-select-search ant-select-search--inline"
+              class="wmstool-select-search wmstool-select-search--inline"
             >
               <div
-                class="ant-select-search__field__wrap"
+                class="wmstool-select-search__field__wrap"
               >
                 <input
-                  class="ant-input ant-select-search__field"
+                  class="wmstool-input wmstool-select-search__field"
                   type="text"
                   value=""
                 />
                 <span
-                  class="ant-select-search__field__mirror"
+                  class="wmstool-select-search__field__mirror"
                 >
                    
                 </span>
@@ -574,7 +574,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </ul>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -585,26 +585,26 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-input-group ant-input-group-compact"
+    class="wmstool-input-group wmstool-input-group-compact"
   >
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
       style="width:30%"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Home"
           >
@@ -612,7 +612,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -621,23 +621,23 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       </div>
     </div>
     <span
-      class="ant-cascader-picker"
+      class="wmstool-cascader-picker"
       style="width:70%"
       tabindex="0"
     >
       <span
-        class="ant-cascader-picker-label"
+        class="wmstool-cascader-picker-label"
       />
       <input
         autocomplete="off"
-        class="ant-input ant-cascader-input "
+        class="wmstool-input wmstool-cascader-input "
         placeholder="Select Address"
         readonly=""
         type="text"
         value=""
       />
       <i
-        class="anticon anticon-down ant-cascader-picker-arrow"
+        class="anticon anticon-down wmstool-cascader-picker-arrow"
       />
     </span>
   </span>
@@ -646,10 +646,10 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
 
 exports[`renders ./components/input/demo/presuffix.md correctly 1`] = `
 <span
-  class="ant-input-affix-wrapper"
+  class="wmstool-input-affix-wrapper"
 >
   <span
-    class="ant-input-prefix"
+    class="wmstool-input-prefix"
   >
     <i
       class="anticon anticon-user"
@@ -657,7 +657,7 @@ exports[`renders ./components/input/demo/presuffix.md correctly 1`] = `
     />
   </span>
   <input
-    class="ant-input"
+    class="wmstool-input"
     placeholder="Enter your username"
     type="text"
     value=""
@@ -668,37 +668,37 @@ exports[`renders ./components/input/demo/presuffix.md correctly 1`] = `
 exports[`renders ./components/input/demo/search-input.md correctly 1`] = `
 <div>
   <span
-    class="ant-input-search ant-input-affix-wrapper"
+    class="wmstool-input-search wmstool-input-affix-wrapper"
     style="width:200px"
   >
     <input
-      class="ant-input"
+      class="wmstool-input"
       placeholder="input search text"
       type="text"
     />
     <span
-      class="ant-input-suffix"
+      class="wmstool-input-suffix"
     >
       <i
-        class="anticon anticon-search ant-input-search-icon"
+        class="anticon anticon-search wmstool-input-search-icon"
       />
     </span>
   </span>
   <br />
   <br />
   <span
-    class="ant-input-search ant-input-search-enter-button ant-input-affix-wrapper"
+    class="wmstool-input-search wmstool-input-search-enter-button wmstool-input-affix-wrapper"
   >
     <input
-      class="ant-input"
+      class="wmstool-input"
       placeholder="input search text"
       type="text"
     />
     <span
-      class="ant-input-suffix"
+      class="wmstool-input-suffix"
     >
       <button
-        class="ant-btn ant-input-search-button ant-btn-primary"
+        class="wmstool-btn wmstool-input-search-button wmstool-btn-primary"
         type="button"
       >
         <i
@@ -710,18 +710,18 @@ exports[`renders ./components/input/demo/search-input.md correctly 1`] = `
   <br />
   <br />
   <span
-    class="ant-input-search ant-input-search-enter-button ant-input-search-large ant-input-affix-wrapper ant-input-affix-wrapper-lg"
+    class="wmstool-input-search wmstool-input-search-enter-button wmstool-input-search-large wmstool-input-affix-wrapper wmstool-input-affix-wrapper-lg"
   >
     <input
-      class="ant-input ant-input-lg"
+      class="wmstool-input wmstool-input-lg"
       placeholder="input search text"
       type="text"
     />
     <span
-      class="ant-input-suffix"
+      class="wmstool-input-suffix"
     >
       <button
-        class="ant-btn ant-input-search-button ant-btn-primary ant-btn-lg"
+        class="wmstool-btn wmstool-input-search-button wmstool-btn-primary wmstool-btn-lg"
         type="button"
       >
         <span>
@@ -738,17 +738,17 @@ exports[`renders ./components/input/demo/size.md correctly 1`] = `
   class="example-input"
 >
   <input
-    class="ant-input ant-input-lg"
+    class="wmstool-input wmstool-input-lg"
     placeholder="large size"
     type="text"
   />
   <input
-    class="ant-input"
+    class="wmstool-input"
     placeholder="default size"
     type="text"
   />
   <input
-    class="ant-input ant-input-sm"
+    class="wmstool-input wmstool-input-sm"
     placeholder="small size"
     type="text"
   />
@@ -757,14 +757,14 @@ exports[`renders ./components/input/demo/size.md correctly 1`] = `
 
 exports[`renders ./components/input/demo/textarea.md correctly 1`] = `
 <textarea
-  class="ant-input"
+  class="wmstool-input"
   rows="4"
 />
 `;
 
 exports[`renders ./components/input/demo/tooltip.md correctly 1`] = `
 <input
-  class="ant-input"
+  class="wmstool-input"
   maxlength="25"
   placeholder="Input a number"
   style="width:120px"

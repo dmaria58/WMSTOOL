@@ -56,7 +56,7 @@ ReactDOM.render(
 ````
 
 ````css
-#components-dropdown-demo-placement .ant-btn {
+#components-dropdown-demo-placement .wmstool-btn {
   margin-right: 8px;
   margin-bottom: 8px;
 }

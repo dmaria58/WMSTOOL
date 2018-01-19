@@ -2,11 +2,11 @@
 
 exports[`renders ./components/switch/demo/basic.md correctly 1`] = `
 <span
-  class="ant-switch ant-switch-checked"
+  class="wmstool-switch wmstool-switch-checked"
   tabindex="0"
 >
   <span
-    class="ant-switch-inner"
+    class="wmstool-switch-inner"
   />
 </span>
 `;
@@ -14,16 +14,16 @@ exports[`renders ./components/switch/demo/basic.md correctly 1`] = `
 exports[`renders ./components/switch/demo/disabled.md correctly 1`] = `
 <div>
   <span
-    class="ant-switch ant-switch-checked ant-switch-disabled"
+    class="wmstool-switch wmstool-switch-checked wmstool-switch-disabled"
     tabindex="-1"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </span>
   <br />
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -36,20 +36,20 @@ exports[`renders ./components/switch/demo/disabled.md correctly 1`] = `
 exports[`renders ./components/switch/demo/loading.md correctly 1`] = `
 <div>
   <span
-    class="ant-switch-loading ant-switch ant-switch-checked"
+    class="wmstool-switch-loading wmstool-switch wmstool-switch-checked"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </span>
   <br />
   <span
-    class="ant-switch-small ant-switch-loading ant-switch"
+    class="wmstool-switch-small wmstool-switch-loading wmstool-switch"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </span>
 </div>
@@ -58,20 +58,20 @@ exports[`renders ./components/switch/demo/loading.md correctly 1`] = `
 exports[`renders ./components/switch/demo/size.md correctly 1`] = `
 <div>
   <span
-    class="ant-switch ant-switch-checked"
+    class="wmstool-switch wmstool-switch-checked"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </span>
   <br />
   <span
-    class="ant-switch-small ant-switch ant-switch-checked"
+    class="wmstool-switch-small wmstool-switch wmstool-switch-checked"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </span>
 </div>
@@ -80,33 +80,33 @@ exports[`renders ./components/switch/demo/size.md correctly 1`] = `
 exports[`renders ./components/switch/demo/text.md correctly 1`] = `
 <div>
   <span
-    class="ant-switch ant-switch-checked"
+    class="wmstool-switch wmstool-switch-checked"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     >
       开
     </span>
   </span>
   <br />
   <span
-    class="ant-switch"
+    class="wmstool-switch"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     >
       0
     </span>
   </span>
   <br />
   <span
-    class="ant-switch ant-switch-checked"
+    class="wmstool-switch wmstool-switch-checked"
     tabindex="0"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     >
       <i
         class="anticon anticon-check"

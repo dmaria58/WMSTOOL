@@ -32,8 +32,8 @@ export type PaginationLocale = any;
 
 export default class Pagination extends React.Component<PaginationProps, {}> {
   static defaultProps = {
-    prefixCls: 'ant-pagination',
-    selectPrefixCls: 'ant-select',
+    prefixCls: 'wmstool-pagination',
+    selectPrefixCls: 'wmstool-select',
   };
 
   renderPagination = (locale: PaginationLocale) => {

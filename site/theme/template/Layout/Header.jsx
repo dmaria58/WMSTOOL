@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Popover, AutoComplete, Input, Badge, Button, Tooltip } from 'antd';
+import { Select, Menu, Row, Col, Icon, Popover, AutoComplete, Input, Badge, Button, Tooltip } from 'wmstool';
 import * as utils from '../utils';
 import { version as antdVersion } from '../../../../package.json';
 
@@ -138,7 +138,7 @@ export default class Header extends React.Component {
         return (
           <Option value={url} key={url} data-label={`${meta.title.toLowerCase()} ${subtitle || ''}`}>
             <strong>{meta.title}</strong>
-            {subtitle && <span className="ant-component-decs">{subtitle}</span>}
+            {subtitle && <span className="wmstool-component-decs">{subtitle}</span>}
           </Option>
         );
       });

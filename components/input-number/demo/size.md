@@ -30,7 +30,7 @@ ReactDOM.render(
 ````
 
 ````css
-.ant-input-number {
+.wmstool-input-number {
   margin-right: 10px;
 }
 ````

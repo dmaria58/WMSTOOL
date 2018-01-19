@@ -6,22 +6,22 @@ exports[`renders ./components/avatar/demo/badge.md correctly 1`] = `
     style="margin-right:24px"
   >
     <span
-      class="ant-badge"
+      class="wmstool-badge"
     >
       <span
-        class="ant-avatar ant-avatar-square ant-avatar-icon"
+        class="wmstool-avatar wmstool-avatar-square wmstool-avatar-icon"
       >
         <i
           class="anticon anticon-user"
         />
       </span>
       <sup
-        class="ant-scroll-number ant-badge-count"
+        class="wmstool-scroll-number wmstool-badge-count"
         data-show="true"
         title="1"
       >
         <span
-          class="ant-scroll-number-only"
+          class="wmstool-scroll-number-only"
           style="transition:none;-ms-transform:translateY(-1100%);-webkit-transform:translateY(-1100%);transform:translateY(-1100%)"
         >
           <p
@@ -180,17 +180,17 @@ exports[`renders ./components/avatar/demo/badge.md correctly 1`] = `
   </span>
   <span>
     <span
-      class="ant-badge"
+      class="wmstool-badge"
     >
       <span
-        class="ant-avatar ant-avatar-square ant-avatar-icon"
+        class="wmstool-avatar wmstool-avatar-square wmstool-avatar-icon"
       >
         <i
           class="anticon anticon-user"
         />
       </span>
       <sup
-        class="ant-scroll-number ant-badge-dot"
+        class="wmstool-scroll-number wmstool-badge-dot"
         data-show="true"
       />
     </span>
@@ -202,21 +202,21 @@ exports[`renders ./components/avatar/demo/basic.md correctly 1`] = `
 <div>
   <div>
     <span
-      class="ant-avatar ant-avatar-lg ant-avatar-circle ant-avatar-icon"
+      class="wmstool-avatar wmstool-avatar-lg wmstool-avatar-circle wmstool-avatar-icon"
     >
       <i
         class="anticon anticon-user"
       />
     </span>
     <span
-      class="ant-avatar ant-avatar-circle ant-avatar-icon"
+      class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-icon"
     >
       <i
         class="anticon anticon-user"
       />
     </span>
     <span
-      class="ant-avatar ant-avatar-sm ant-avatar-circle ant-avatar-icon"
+      class="wmstool-avatar wmstool-avatar-sm wmstool-avatar-circle wmstool-avatar-icon"
     >
       <i
         class="anticon anticon-user"
@@ -225,21 +225,21 @@ exports[`renders ./components/avatar/demo/basic.md correctly 1`] = `
   </div>
   <div>
     <span
-      class="ant-avatar ant-avatar-lg ant-avatar-square ant-avatar-icon"
+      class="wmstool-avatar wmstool-avatar-lg wmstool-avatar-square wmstool-avatar-icon"
     >
       <i
         class="anticon anticon-user"
       />
     </span>
     <span
-      class="ant-avatar ant-avatar-square ant-avatar-icon"
+      class="wmstool-avatar wmstool-avatar-square wmstool-avatar-icon"
     >
       <i
         class="anticon anticon-user"
       />
     </span>
     <span
-      class="ant-avatar ant-avatar-sm ant-avatar-square ant-avatar-icon"
+      class="wmstool-avatar wmstool-avatar-sm wmstool-avatar-square wmstool-avatar-icon"
     >
       <i
         class="anticon anticon-user"
@@ -252,17 +252,17 @@ exports[`renders ./components/avatar/demo/basic.md correctly 1`] = `
 exports[`renders ./components/avatar/demo/dynamic.md correctly 1`] = `
 <div>
   <span
-    class="ant-avatar ant-avatar-lg ant-avatar-circle"
+    class="wmstool-avatar wmstool-avatar-lg wmstool-avatar-circle"
     style="background-color:#f56a00;vertical-align:middle"
   >
     <span
-      class="ant-avatar-string"
+      class="wmstool-avatar-string"
     >
       U
     </span>
   </span>
   <button
-    class="ant-btn ant-btn-sm"
+    class="wmstool-btn wmstool-btn-sm"
     style="margin-left:16px;vertical-align:middle"
     type="button"
   >
@@ -276,49 +276,49 @@ exports[`renders ./components/avatar/demo/dynamic.md correctly 1`] = `
 exports[`renders ./components/avatar/demo/type.md correctly 1`] = `
 <div>
   <span
-    class="ant-avatar ant-avatar-circle ant-avatar-icon"
+    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-icon"
   >
     <i
       class="anticon anticon-user"
     />
   </span>
   <span
-    class="ant-avatar ant-avatar-circle"
+    class="wmstool-avatar wmstool-avatar-circle"
   >
     <span
-      class="ant-avatar-string"
+      class="wmstool-avatar-string"
     >
       U
     </span>
   </span>
   <span
-    class="ant-avatar ant-avatar-circle"
+    class="wmstool-avatar wmstool-avatar-circle"
   >
     <span
-      class="ant-avatar-string"
+      class="wmstool-avatar-string"
     >
       USER
     </span>
   </span>
   <span
-    class="ant-avatar ant-avatar-circle ant-avatar-image"
+    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
   >
     <img
       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
     />
   </span>
   <span
-    class="ant-avatar ant-avatar-circle"
+    class="wmstool-avatar wmstool-avatar-circle"
     style="color:#f56a00;background-color:#fde3cf"
   >
     <span
-      class="ant-avatar-string"
+      class="wmstool-avatar-string"
     >
       U
     </span>
   </span>
   <span
-    class="ant-avatar ant-avatar-circle ant-avatar-icon"
+    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-icon"
     style="background-color:#87d068"
   >
     <i

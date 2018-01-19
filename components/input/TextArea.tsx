@@ -37,7 +37,7 @@ export type HTMLTextareaProps = React.TextareaHTMLAttributes<HTMLTextAreaElement
 
 export default class TextArea extends React.Component<TextAreaProps & HTMLTextareaProps, TextAreaState> {
   static defaultProps = {
-    prefixCls: 'ant-input',
+    prefixCls: 'wmstool-input',
   };
 
   nextFrameActionId: number;
@@ -123,7 +123,7 @@ export default class TextArea extends React.Component<TextAreaProps & HTMLTextar
       ...props.style,
       ...this.state.textareaStyles,
     };
-    // Fix https://github.com/ant-design/ant-design/issues/6776
+    // Fix https://github.com/wmstool-design/wmstool-design/issues/6776
     // Make sure it could be reset when using form.getFieldDecorator
     if ('value' in otherProps) {
       otherProps.value = otherProps.value || '';

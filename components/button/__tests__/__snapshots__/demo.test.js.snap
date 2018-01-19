@@ -3,7 +3,7 @@
 exports[`renders ./components/button/demo/basic.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -11,7 +11,7 @@ exports[`renders ./components/button/demo/basic.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -19,7 +19,7 @@ exports[`renders ./components/button/demo/basic.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-dashed"
+    class="wmstool-btn wmstool-btn-dashed"
     type="button"
   >
     <span>
@@ -27,7 +27,7 @@ exports[`renders ./components/button/demo/basic.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-danger"
+    class="wmstool-btn wmstool-btn-danger"
     type="button"
   >
     <span>
@@ -43,10 +43,10 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
     Basic
   </h4>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -54,7 +54,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -63,10 +63,10 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
     </button>
   </div>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       disabled=""
       type="button"
     >
@@ -75,7 +75,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       disabled=""
       type="button"
     >
@@ -84,7 +84,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       disabled=""
       type="button"
     >
@@ -94,10 +94,10 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
     </button>
   </div>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -105,7 +105,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -113,7 +113,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -125,10 +125,10 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
     With Icon
   </h4>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn ant-btn-primary"
+      class="wmstool-btn wmstool-btn-primary"
       type="button"
     >
       <i
@@ -139,7 +139,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn ant-btn-primary"
+      class="wmstool-btn wmstool-btn-primary"
       type="button"
     >
       <span>
@@ -151,10 +151,10 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
     </button>
   </div>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn ant-btn-primary ant-btn-icon-only"
+      class="wmstool-btn wmstool-btn-primary wmstool-btn-icon-only"
       type="button"
     >
       <i
@@ -162,7 +162,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
       />
     </button>
     <button
-      class="ant-btn ant-btn-primary ant-btn-icon-only"
+      class="wmstool-btn wmstool-btn-primary wmstool-btn-icon-only"
       type="button"
     >
       <i
@@ -176,7 +176,7 @@ exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
 exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -184,7 +184,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     disabled=""
     type="button"
   >
@@ -194,7 +194,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -202,7 +202,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     disabled=""
     type="button"
   >
@@ -212,7 +212,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -220,7 +220,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     disabled=""
     type="button"
   >
@@ -230,7 +230,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn ant-btn-dashed"
+    class="wmstool-btn wmstool-btn-dashed"
     type="button"
   >
     <span>
@@ -238,7 +238,7 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-dashed"
+    class="wmstool-btn wmstool-btn-dashed"
     disabled=""
     type="button"
   >
@@ -254,7 +254,7 @@ exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
   style="background:rgb(190, 200, 200);padding:26px 16px 16px"
 >
   <button
-    class="ant-btn ant-btn-primary ant-btn-background-ghost"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-background-ghost"
     type="button"
   >
     <span>
@@ -262,7 +262,7 @@ exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-background-ghost"
+    class="wmstool-btn wmstool-btn-background-ghost"
     type="button"
   >
     <span>
@@ -270,7 +270,7 @@ exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-dashed ant-btn-background-ghost"
+    class="wmstool-btn wmstool-btn-dashed wmstool-btn-background-ghost"
     type="button"
   >
     <span>
@@ -278,7 +278,7 @@ exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-danger ant-btn-background-ghost"
+    class="wmstool-btn wmstool-btn-danger wmstool-btn-background-ghost"
     type="button"
   >
     <span>
@@ -291,7 +291,7 @@ exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
 exports[`renders ./components/button/demo/icon.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-primary ant-btn-circle ant-btn-icon-only"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-circle wmstool-btn-icon-only"
     type="button"
   >
     <i
@@ -299,7 +299,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     />
   </button>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <i
@@ -310,7 +310,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-circle ant-btn-icon-only"
+    class="wmstool-btn wmstool-btn-circle wmstool-btn-icon-only"
     type="button"
   >
     <i
@@ -318,7 +318,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     />
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <i
@@ -330,7 +330,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn ant-btn-circle ant-btn-icon-only"
+    class="wmstool-btn wmstool-btn-circle wmstool-btn-icon-only"
     type="button"
   >
     <i
@@ -338,7 +338,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     />
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <i
@@ -349,7 +349,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-dashed ant-btn-circle ant-btn-icon-only"
+    class="wmstool-btn wmstool-btn-dashed wmstool-btn-circle wmstool-btn-icon-only"
     type="button"
   >
     <i
@@ -357,7 +357,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     />
   </button>
   <button
-    class="ant-btn ant-btn-dashed"
+    class="wmstool-btn wmstool-btn-dashed"
     type="button"
   >
     <i
@@ -373,7 +373,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
 exports[`renders ./components/button/demo/loading.md correctly 1`] = `
 <span>
   <button
-    class="ant-btn ant-btn-primary ant-btn-loading"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-loading"
     type="button"
   >
     <i
@@ -384,7 +384,7 @@ exports[`renders ./components/button/demo/loading.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-primary ant-btn-sm ant-btn-loading"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-sm wmstool-btn-loading"
     type="button"
   >
     <i
@@ -396,7 +396,7 @@ exports[`renders ./components/button/demo/loading.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -404,7 +404,7 @@ exports[`renders ./components/button/demo/loading.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <i
@@ -416,7 +416,7 @@ exports[`renders ./components/button/demo/loading.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn ant-btn-circle ant-btn-loading"
+    class="wmstool-btn wmstool-btn-circle wmstool-btn-loading"
     type="button"
   >
     <i
@@ -424,7 +424,7 @@ exports[`renders ./components/button/demo/loading.md correctly 1`] = `
     />
   </button>
   <button
-    class="ant-btn ant-btn-primary ant-btn-circle ant-btn-loading"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-circle wmstool-btn-loading"
     type="button"
   >
     <i
@@ -437,7 +437,7 @@ exports[`renders ./components/button/demo/loading.md correctly 1`] = `
 exports[`renders ./components/button/demo/multiple.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -445,7 +445,7 @@ exports[`renders ./components/button/demo/multiple.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -453,7 +453,7 @@ exports[`renders ./components/button/demo/multiple.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-dropdown-trigger"
+    class="wmstool-btn wmstool-dropdown-trigger"
     type="button"
   >
     <span>
@@ -469,21 +469,21 @@ exports[`renders ./components/button/demo/multiple.md correctly 1`] = `
 exports[`renders ./components/button/demo/size.md correctly 1`] = `
 <div>
   <div
-    class="ant-radio-group"
+    class="wmstool-radio-group"
   >
     <label
-      class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+      class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
     >
       <span
-        class="ant-radio-button ant-radio-button-checked"
+        class="wmstool-radio-button wmstool-radio-button-checked"
       >
         <input
           checked=""
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -491,17 +491,17 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -509,17 +509,17 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -530,7 +530,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
   <br />
   <br />
   <button
-    class="ant-btn ant-btn-primary ant-btn-lg"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-lg"
     type="button"
   >
     <span>
@@ -538,7 +538,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-lg"
+    class="wmstool-btn wmstool-btn-lg"
     type="button"
   >
     <span>
@@ -546,7 +546,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-dashed ant-btn-lg"
+    class="wmstool-btn wmstool-btn-dashed wmstool-btn-lg"
     type="button"
   >
     <span>
@@ -554,7 +554,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-danger ant-btn-lg"
+    class="wmstool-btn wmstool-btn-danger wmstool-btn-lg"
     type="button"
   >
     <span>
@@ -563,7 +563,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn ant-btn-primary ant-btn-circle ant-btn-lg ant-btn-icon-only"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-circle wmstool-btn-lg wmstool-btn-icon-only"
     type="button"
   >
     <i
@@ -571,7 +571,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
     />
   </button>
   <button
-    class="ant-btn ant-btn-primary ant-btn-lg"
+    class="wmstool-btn wmstool-btn-primary wmstool-btn-lg"
     type="button"
   >
     <i
@@ -583,10 +583,10 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
   </button>
   <br />
   <div
-    class="ant-btn-group ant-btn-group-lg"
+    class="wmstool-btn-group wmstool-btn-group-lg"
   >
     <button
-      class="ant-btn ant-btn-primary"
+      class="wmstool-btn wmstool-btn-primary"
       type="button"
     >
       <i
@@ -597,7 +597,7 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn ant-btn-primary"
+      class="wmstool-btn wmstool-btn-primary"
       type="button"
     >
       <span>

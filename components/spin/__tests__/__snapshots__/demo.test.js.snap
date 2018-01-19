@@ -2,10 +2,10 @@
 
 exports[`renders ./components/spin/demo/basic.md correctly 1`] = `
 <div
-  class="ant-spin ant-spin-spinning"
+  class="wmstool-spin wmstool-spin-spinning"
 >
   <span
-    class="ant-spin-dot"
+    class="wmstool-spin-dot"
   >
     <i />
     <i />
@@ -17,7 +17,7 @@ exports[`renders ./components/spin/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/spin/demo/custom-indicator.md correctly 1`] = `
 <div
-  class="ant-spin ant-spin-spinning"
+  class="wmstool-spin wmstool-spin-spinning"
 >
   <i
     class="anticon anticon-spin anticon-loading"
@@ -29,22 +29,22 @@ exports[`renders ./components/spin/demo/custom-indicator.md correctly 1`] = `
 exports[`renders ./components/spin/demo/delayAndDebounce.md correctly 1`] = `
 <div>
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon"
+        class="wmstool-alert wmstool-alert-info wmstool-alert-with-description wmstool-alert-no-icon"
         data-show="true"
       >
         <span
-          class="ant-alert-message"
+          class="wmstool-alert-message"
         >
           Alert message title
         </span>
         <span
-          class="ant-alert-description"
+          class="wmstool-alert-description"
         >
           Further details about the context of this alert.
         </span>
@@ -56,11 +56,11 @@ exports[`renders ./components/spin/demo/delayAndDebounce.md correctly 1`] = `
   >
     Loading state：
     <span
-      class="ant-switch"
+      class="wmstool-switch"
       tabindex="0"
     >
       <span
-        class="ant-switch-inner"
+        class="wmstool-switch-inner"
       />
     </span>
   </div>
@@ -72,10 +72,10 @@ exports[`renders ./components/spin/demo/inside.md correctly 1`] = `
   class="example"
 >
   <div
-    class="ant-spin ant-spin-spinning"
+    class="wmstool-spin wmstool-spin-spinning"
   >
     <span
-      class="ant-spin-dot"
+      class="wmstool-spin-dot"
     >
       <i />
       <i />
@@ -89,22 +89,22 @@ exports[`renders ./components/spin/demo/inside.md correctly 1`] = `
 exports[`renders ./components/spin/demo/nested.md correctly 1`] = `
 <div>
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon"
+        class="wmstool-alert wmstool-alert-info wmstool-alert-with-description wmstool-alert-no-icon"
         data-show="true"
       >
         <span
-          class="ant-alert-message"
+          class="wmstool-alert-message"
         >
           Alert message title
         </span>
         <span
-          class="ant-alert-description"
+          class="wmstool-alert-description"
         >
           Further details about the context of this alert.
         </span>
@@ -116,11 +116,11 @@ exports[`renders ./components/spin/demo/nested.md correctly 1`] = `
   >
     Loading state：
     <span
-      class="ant-switch"
+      class="wmstool-switch"
       tabindex="0"
     >
       <span
-        class="ant-switch-inner"
+        class="wmstool-switch-inner"
       />
     </span>
   </div>
@@ -130,10 +130,10 @@ exports[`renders ./components/spin/demo/nested.md correctly 1`] = `
 exports[`renders ./components/spin/demo/size.md correctly 1`] = `
 <div>
   <div
-    class="ant-spin ant-spin-sm ant-spin-spinning"
+    class="wmstool-spin wmstool-spin-sm wmstool-spin-spinning"
   >
     <span
-      class="ant-spin-dot"
+      class="wmstool-spin-dot"
     >
       <i />
       <i />
@@ -142,10 +142,10 @@ exports[`renders ./components/spin/demo/size.md correctly 1`] = `
     </span>
   </div>
   <div
-    class="ant-spin ant-spin-spinning"
+    class="wmstool-spin wmstool-spin-spinning"
   >
     <span
-      class="ant-spin-dot"
+      class="wmstool-spin-dot"
     >
       <i />
       <i />
@@ -154,10 +154,10 @@ exports[`renders ./components/spin/demo/size.md correctly 1`] = `
     </span>
   </div>
   <div
-    class="ant-spin ant-spin-lg ant-spin-spinning"
+    class="wmstool-spin wmstool-spin-lg wmstool-spin-spinning"
   >
     <span
-      class="ant-spin-dot"
+      class="wmstool-spin-dot"
     >
       <i />
       <i />
@@ -170,14 +170,14 @@ exports[`renders ./components/spin/demo/size.md correctly 1`] = `
 
 exports[`renders ./components/spin/demo/tip.md correctly 1`] = `
 <div
-  class="ant-spin-nested-loading"
+  class="wmstool-spin-nested-loading"
 >
   <div>
     <div
-      class="ant-spin ant-spin-spinning ant-spin-show-text"
+      class="wmstool-spin wmstool-spin-spinning wmstool-spin-show-text"
     >
       <span
-        class="ant-spin-dot"
+        class="wmstool-spin-dot"
       >
         <i />
         <i />
@@ -185,26 +185,26 @@ exports[`renders ./components/spin/demo/tip.md correctly 1`] = `
         <i />
       </span>
       <div
-        class="ant-spin-text"
+        class="wmstool-spin-text"
       >
         Loading...
       </div>
     </div>
   </div>
   <div
-    class="ant-spin-container ant-spin-blur"
+    class="wmstool-spin-container wmstool-spin-blur"
   >
     <div
-      class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon"
+      class="wmstool-alert wmstool-alert-info wmstool-alert-with-description wmstool-alert-no-icon"
       data-show="true"
     >
       <span
-        class="ant-alert-message"
+        class="wmstool-alert-message"
       >
         Alert message title
       </span>
       <span
-        class="ant-alert-description"
+        class="wmstool-alert-description"
       >
         Further details about the context of this alert.
       </span>

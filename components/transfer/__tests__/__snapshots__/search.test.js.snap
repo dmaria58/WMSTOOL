@@ -10,12 +10,12 @@ exports[`Search should show cross icon when input value exists 1`] = `
       disabled={false}
       onChange={[Function]}
       placeholder=""
-      prefixCls="ant-input"
+      prefixCls="wmstool-input"
       type="text"
       value=""
     >
       <input
-        className="ant-input"
+        className="wmstool-input"
         disabled={false}
         onChange={[Function]}
         onKeyDown={[Function]}
@@ -49,12 +49,12 @@ exports[`Search should show cross icon when input value exists 2`] = `
       disabled={false}
       onChange={[Function]}
       placeholder=""
-      prefixCls="ant-input"
+      prefixCls="wmstool-input"
       type="text"
       value="a"
     >
       <input
-        className="ant-input"
+        className="wmstool-input"
         disabled={false}
         onChange={[Function]}
         onKeyDown={[Function]}

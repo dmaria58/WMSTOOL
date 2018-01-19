@@ -47,8 +47,8 @@ export interface SliderState {
 
 export default class Slider extends React.Component<SliderProps, SliderState> {
   static defaultProps = {
-    prefixCls: 'ant-slider',
-    tooltipPrefixCls: 'ant-tooltip',
+    prefixCls: 'wmstool-slider',
+    tooltipPrefixCls: 'wmstool-tooltip',
     tipFormatter(value: number) {
       return value.toString();
     },

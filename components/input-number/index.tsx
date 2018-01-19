@@ -25,7 +25,7 @@ export interface InputNumberProps {
 
 export default class InputNumber extends React.Component<InputNumberProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-input-number',
+    prefixCls: 'wmstool-input-number',
     step: 1,
   };
 

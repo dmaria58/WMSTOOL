@@ -2,131 +2,131 @@
 
 exports[`renders ./components/steps/demo/customized-progress-dot.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-horizontal ant-steps-label-vertical ant-steps-dot"
+  class="wmstool-steps wmstool-steps-horizontal wmstool-steps-label-vertical wmstool-steps-dot"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish"
+    class="wmstool-steps-item wmstool-steps-item-finish"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         You can hover on the dot.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process"
+    class="wmstool-steps-item wmstool-steps-item-process"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Progress
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         You can hover on the dot.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         You can hover on the dot.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         You can hover on the dot.
       </div>
@@ -137,89 +137,89 @@ exports[`renders ./components/steps/demo/customized-progress-dot.md correctly 1`
 
 exports[`renders ./components/steps/demo/error.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-horizontal ant-steps-label-horizontal"
+  class="wmstool-steps wmstool-steps-horizontal wmstool-steps-label-horizontal"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish ant-steps-next-error"
+    class="wmstool-steps-item wmstool-steps-item-finish wmstool-steps-next-error"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon anticon anticon-check"
+        class="wmstool-steps-icon anticon anticon-check"
       />
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-error"
+    class="wmstool-steps-item wmstool-steps-item-error"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon anticon anticon-cross"
+        class="wmstool-steps-icon anticon anticon-cross"
       />
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Process
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         3
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description
       </div>
@@ -230,19 +230,19 @@ exports[`renders ./components/steps/demo/error.md correctly 1`] = `
 
 exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-horizontal ant-steps-label-horizontal"
+  class="wmstool-steps wmstool-steps-horizontal wmstool-steps-label-horizontal"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish ant-steps-item-custom"
+    class="wmstool-steps-item wmstool-steps-item-finish wmstool-steps-item-custom"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <i
           class="anticon anticon-user"
@@ -250,26 +250,26 @@ exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Login
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-finish ant-steps-item-custom"
+    class="wmstool-steps-item wmstool-steps-item-finish wmstool-steps-item-custom"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <i
           class="anticon anticon-solution"
@@ -277,26 +277,26 @@ exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Verification
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process ant-steps-item-custom"
+    class="wmstool-steps-item wmstool-steps-item-process wmstool-steps-item-custom"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <i
           class="anticon anticon-spin anticon-loading"
@@ -304,26 +304,26 @@ exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Pay
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait ant-steps-item-custom"
+    class="wmstool-steps-item wmstool-steps-item-wait wmstool-steps-item-custom"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <i
           class="anticon anticon-smile-o"
@@ -331,10 +331,10 @@ exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Done
       </div>
@@ -345,99 +345,99 @@ exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
 
 exports[`renders ./components/steps/demo/progress-dot.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-horizontal ant-steps-label-vertical ant-steps-dot"
+  class="wmstool-steps wmstool-steps-horizontal wmstool-steps-label-vertical wmstool-steps-dot"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish"
+    class="wmstool-steps-item wmstool-steps-item-finish"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process"
+    class="wmstool-steps-item wmstool-steps-item-process"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Progress
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         <span
-          class="ant-steps-icon-dot"
+          class="wmstool-steps-icon-dot"
         />
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
@@ -448,91 +448,91 @@ exports[`renders ./components/steps/demo/progress-dot.md correctly 1`] = `
 
 exports[`renders ./components/steps/demo/simple.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-horizontal ant-steps-label-horizontal"
+  class="wmstool-steps wmstool-steps-horizontal wmstool-steps-label-horizontal"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish"
+    class="wmstool-steps-item wmstool-steps-item-finish"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon anticon anticon-check"
+        class="wmstool-steps-icon anticon anticon-check"
       />
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process"
+    class="wmstool-steps-item wmstool-steps-item-process"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         2
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Progress
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         3
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
@@ -543,76 +543,76 @@ exports[`renders ./components/steps/demo/simple.md correctly 1`] = `
 
 exports[`renders ./components/steps/demo/small-size.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-horizontal ant-steps-small ant-steps-label-horizontal"
+  class="wmstool-steps wmstool-steps-horizontal wmstool-steps-small wmstool-steps-label-horizontal"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish"
+    class="wmstool-steps-item wmstool-steps-item-finish"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon anticon anticon-check"
+        class="wmstool-steps-icon anticon anticon-check"
       />
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process"
+    class="wmstool-steps-item wmstool-steps-item-process"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         2
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Progress
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         3
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
@@ -624,78 +624,78 @@ exports[`renders ./components/steps/demo/small-size.md correctly 1`] = `
 exports[`renders ./components/steps/demo/step-next.md correctly 1`] = `
 <div>
   <div
-    class="ant-steps ant-steps-horizontal ant-steps-label-horizontal"
+    class="wmstool-steps wmstool-steps-horizontal wmstool-steps-label-horizontal"
   >
     <div
-      class="ant-steps-item ant-steps-item-process"
+      class="wmstool-steps-item wmstool-steps-item-process"
     >
       <div
-        class="ant-steps-item-tail"
+        class="wmstool-steps-item-tail"
       />
       <div
-        class="ant-steps-item-icon"
+        class="wmstool-steps-item-icon"
       >
         <span
-          class="ant-steps-icon"
+          class="wmstool-steps-icon"
         >
           1
         </span>
       </div>
       <div
-        class="ant-steps-item-content"
+        class="wmstool-steps-item-content"
       >
         <div
-          class="ant-steps-item-title"
+          class="wmstool-steps-item-title"
         >
           First
         </div>
       </div>
     </div>
     <div
-      class="ant-steps-item ant-steps-item-wait"
+      class="wmstool-steps-item wmstool-steps-item-wait"
     >
       <div
-        class="ant-steps-item-tail"
+        class="wmstool-steps-item-tail"
       />
       <div
-        class="ant-steps-item-icon"
+        class="wmstool-steps-item-icon"
       >
         <span
-          class="ant-steps-icon"
+          class="wmstool-steps-icon"
         >
           2
         </span>
       </div>
       <div
-        class="ant-steps-item-content"
+        class="wmstool-steps-item-content"
       >
         <div
-          class="ant-steps-item-title"
+          class="wmstool-steps-item-title"
         >
           Second
         </div>
       </div>
     </div>
     <div
-      class="ant-steps-item ant-steps-item-wait"
+      class="wmstool-steps-item wmstool-steps-item-wait"
     >
       <div
-        class="ant-steps-item-tail"
+        class="wmstool-steps-item-tail"
       />
       <div
-        class="ant-steps-item-icon"
+        class="wmstool-steps-item-icon"
       >
         <span
-          class="ant-steps-icon"
+          class="wmstool-steps-icon"
         >
           3
         </span>
       </div>
       <div
-        class="ant-steps-item-content"
+        class="wmstool-steps-item-content"
       >
         <div
-          class="ant-steps-item-title"
+          class="wmstool-steps-item-title"
         >
           Last
         </div>
@@ -711,7 +711,7 @@ exports[`renders ./components/steps/demo/step-next.md correctly 1`] = `
     class="steps-action"
   >
     <button
-      class="ant-btn ant-btn-primary"
+      class="wmstool-btn wmstool-btn-primary"
       type="button"
     >
       <span>
@@ -724,91 +724,91 @@ exports[`renders ./components/steps/demo/step-next.md correctly 1`] = `
 
 exports[`renders ./components/steps/demo/vertical.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-vertical"
+  class="wmstool-steps wmstool-steps-vertical"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish"
+    class="wmstool-steps-item wmstool-steps-item-finish"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon anticon anticon-check"
+        class="wmstool-steps-icon anticon anticon-check"
       />
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process"
+    class="wmstool-steps-item wmstool-steps-item-process"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         2
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Progress
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         3
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
@@ -819,91 +819,91 @@ exports[`renders ./components/steps/demo/vertical.md correctly 1`] = `
 
 exports[`renders ./components/steps/demo/vertical-small.md correctly 1`] = `
 <div
-  class="ant-steps ant-steps-vertical ant-steps-small"
+  class="wmstool-steps wmstool-steps-vertical wmstool-steps-small"
 >
   <div
-    class="ant-steps-item ant-steps-item-finish"
+    class="wmstool-steps-item wmstool-steps-item-finish"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon anticon anticon-check"
+        class="wmstool-steps-icon anticon anticon-check"
       />
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Finished
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-process"
+    class="wmstool-steps-item wmstool-steps-item-process"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         2
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         In Progress
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>
     </div>
   </div>
   <div
-    class="ant-steps-item ant-steps-item-wait"
+    class="wmstool-steps-item wmstool-steps-item-wait"
   >
     <div
-      class="ant-steps-item-tail"
+      class="wmstool-steps-item-tail"
     />
     <div
-      class="ant-steps-item-icon"
+      class="wmstool-steps-item-icon"
     >
       <span
-        class="ant-steps-icon"
+        class="wmstool-steps-icon"
       >
         3
       </span>
     </div>
     <div
-      class="ant-steps-item-content"
+      class="wmstool-steps-item-content"
     >
       <div
-        class="ant-steps-item-title"
+        class="wmstool-steps-item-title"
       >
         Waiting
       </div>
       <div
-        class="ant-steps-item-description"
+        class="wmstool-steps-item-description"
       >
         This is a description.
       </div>

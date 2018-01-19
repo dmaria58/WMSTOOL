@@ -2,56 +2,56 @@
 
 exports[`renders ./components/cascader/demo/basic.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   />
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     placeholder="Please select"
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
 
 exports[`renders ./components/cascader/demo/change-on-select.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   />
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     placeholder="Please select"
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
 
 exports[`renders ./components/cascader/demo/custom-render.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   style="width:100%"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   >
     <span>
       Zhejiang / 
@@ -69,16 +69,16 @@ exports[`renders ./components/cascader/demo/custom-render.md correctly 1`] = `
   </span>
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-cross-circle ant-cascader-picker-clear"
+    class="anticon anticon-cross-circle wmstool-cascader-picker-clear"
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
@@ -97,113 +97,113 @@ exports[`renders ./components/cascader/demo/custom-trigger.md correctly 1`] = `
 
 exports[`renders ./components/cascader/demo/default-value.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   >
     Zhejiang / Hangzhou / West Lake
   </span>
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-cross-circle ant-cascader-picker-clear"
+    class="anticon anticon-cross-circle wmstool-cascader-picker-clear"
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
 
 exports[`renders ./components/cascader/demo/disabled-option.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   />
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     placeholder="Please select"
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
 
 exports[`renders ./components/cascader/demo/hover.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   />
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     placeholder="Please select"
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
 
 exports[`renders ./components/cascader/demo/lazy.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   />
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     placeholder="Please select"
     readonly=""
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
 
 exports[`renders ./components/cascader/demo/search.md correctly 1`] = `
 <span
-  class="ant-cascader-picker"
+  class="wmstool-cascader-picker"
   tabindex="0"
 >
   <span
-    class="ant-cascader-picker-label"
+    class="wmstool-cascader-picker-label"
   />
   <input
     autocomplete="off"
-    class="ant-input ant-cascader-input "
+    class="wmstool-input wmstool-cascader-input "
     placeholder="Please select"
     type="text"
     value=""
   />
   <i
-    class="anticon anticon-down ant-cascader-picker-arrow"
+    class="anticon anticon-down wmstool-cascader-picker-arrow"
   />
 </span>
 `;
@@ -211,64 +211,64 @@ exports[`renders ./components/cascader/demo/search.md correctly 1`] = `
 exports[`renders ./components/cascader/demo/size.md correctly 1`] = `
 <div>
   <span
-    class="ant-cascader-picker ant-cascader-picker-large"
+    class="wmstool-cascader-picker wmstool-cascader-picker-large"
     tabindex="0"
   >
     <span
-      class="ant-cascader-picker-label"
+      class="wmstool-cascader-picker-label"
     />
     <input
       autocomplete="off"
-      class="ant-input ant-cascader-input ant-input-lg"
+      class="wmstool-input wmstool-cascader-input wmstool-input-lg"
       placeholder="Please select"
       readonly=""
       type="text"
       value=""
     />
     <i
-      class="anticon anticon-down ant-cascader-picker-arrow"
+      class="anticon anticon-down wmstool-cascader-picker-arrow"
     />
   </span>
   <br />
   <br />
   <span
-    class="ant-cascader-picker"
+    class="wmstool-cascader-picker"
     tabindex="0"
   >
     <span
-      class="ant-cascader-picker-label"
+      class="wmstool-cascader-picker-label"
     />
     <input
       autocomplete="off"
-      class="ant-input ant-cascader-input "
+      class="wmstool-input wmstool-cascader-input "
       placeholder="Please select"
       readonly=""
       type="text"
       value=""
     />
     <i
-      class="anticon anticon-down ant-cascader-picker-arrow"
+      class="anticon anticon-down wmstool-cascader-picker-arrow"
     />
   </span>
   <br />
   <br />
   <span
-    class="ant-cascader-picker ant-cascader-picker-small"
+    class="wmstool-cascader-picker wmstool-cascader-picker-small"
     tabindex="0"
   >
     <span
-      class="ant-cascader-picker-label"
+      class="wmstool-cascader-picker-label"
     />
     <input
       autocomplete="off"
-      class="ant-input ant-cascader-input ant-input-sm"
+      class="wmstool-input wmstool-cascader-input wmstool-input-sm"
       placeholder="Please select"
       readonly=""
       type="text"
       value=""
     />
     <i
-      class="anticon anticon-down ant-cascader-picker-arrow"
+      class="anticon anticon-down wmstool-cascader-picker-arrow"
     />
   </span>
   <br />

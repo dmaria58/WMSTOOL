@@ -2,48 +2,48 @@
 
 exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-line"
+  class="wmstool-tabs wmstool-tabs-top wmstool-tabs-line"
 >
   <div
-    class="ant-tabs-bar"
+    class="wmstool-tabs-bar"
     role="tablist"
     tabindex="0"
   >
     <div
-      class="ant-tabs-nav-container"
+      class="wmstool-tabs-nav-container"
     >
       <span
-        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-prev-icon"
+          class="wmstool-tabs-tab-prev-icon"
         />
       </span>
       <span
-        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-next-icon"
+          class="wmstool-tabs-tab-next-icon"
         />
       </span>
       <div
-        class="ant-tabs-nav-wrap"
+        class="wmstool-tabs-nav-wrap"
       >
         <div
-          class="ant-tabs-nav-scroll"
+          class="wmstool-tabs-nav-scroll"
         >
           <div
-            class="ant-tabs-nav ant-tabs-nav-animated"
+            class="wmstool-tabs-nav wmstool-tabs-nav-animated"
           >
             <div
-              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+              class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
             />
             <div
               aria-disabled="false"
               aria-selected="true"
-              class="ant-tabs-tab-active ant-tabs-tab"
+              class="wmstool-tabs-tab-active wmstool-tabs-tab"
               role="tab"
             >
               Tab 1
@@ -51,7 +51,7 @@ exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 2
@@ -59,7 +59,7 @@ exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 3
@@ -70,24 +70,24 @@ exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs-content ant-tabs-content-animated"
+    class="wmstool-tabs-content wmstool-tabs-content-animated"
     style="margin-left:0%"
   >
     <div
       aria-hidden="false"
-      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
       role="tabpanel"
     >
       Content of Tab Pane 1
     </div>
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
   </div>
@@ -96,48 +96,48 @@ exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-no-animation"
+  class="wmstool-tabs wmstool-tabs-top wmstool-tabs-card wmstool-tabs-no-animation"
 >
   <div
-    class="ant-tabs-bar"
+    class="wmstool-tabs-bar"
     role="tablist"
     tabindex="0"
   >
     <div
-      class="ant-tabs-nav-container"
+      class="wmstool-tabs-nav-container"
     >
       <span
-        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-prev-icon"
+          class="wmstool-tabs-tab-prev-icon"
         />
       </span>
       <span
-        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-next-icon"
+          class="wmstool-tabs-tab-next-icon"
         />
       </span>
       <div
-        class="ant-tabs-nav-wrap"
+        class="wmstool-tabs-nav-wrap"
       >
         <div
-          class="ant-tabs-nav-scroll"
+          class="wmstool-tabs-nav-scroll"
         >
           <div
-            class="ant-tabs-nav ant-tabs-nav-animated"
+            class="wmstool-tabs-nav wmstool-tabs-nav-animated"
           >
             <div
-              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+              class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
             />
             <div
               aria-disabled="false"
               aria-selected="true"
-              class="ant-tabs-tab-active ant-tabs-tab"
+              class="wmstool-tabs-tab-active wmstool-tabs-tab"
               role="tab"
             >
               Tab 1
@@ -145,7 +145,7 @@ exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 2
@@ -153,7 +153,7 @@ exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 3
@@ -164,23 +164,23 @@ exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs-content ant-tabs-content-no-animated"
+    class="wmstool-tabs-content wmstool-tabs-content-no-animated"
   >
     <div
       aria-hidden="false"
-      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
       role="tabpanel"
     >
       Content of Tab Pane 1
     </div>
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
   </div>
@@ -192,48 +192,48 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
   class="card-container"
 >
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-no-animation"
+    class="wmstool-tabs wmstool-tabs-top wmstool-tabs-card wmstool-tabs-no-animation"
   >
     <div
-      class="ant-tabs-bar"
+      class="wmstool-tabs-bar"
       role="tablist"
       tabindex="0"
     >
       <div
-        class="ant-tabs-nav-container"
+        class="wmstool-tabs-nav-container"
       >
         <span
-          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-prev-icon"
+            class="wmstool-tabs-tab-prev-icon"
           />
         </span>
         <span
-          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-next-icon"
+            class="wmstool-tabs-tab-next-icon"
           />
         </span>
         <div
-          class="ant-tabs-nav-wrap"
+          class="wmstool-tabs-nav-wrap"
         >
           <div
-            class="ant-tabs-nav-scroll"
+            class="wmstool-tabs-nav-scroll"
           >
             <div
-              class="ant-tabs-nav ant-tabs-nav-animated"
+              class="wmstool-tabs-nav wmstool-tabs-nav-animated"
             >
               <div
-                class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
               />
               <div
                 aria-disabled="false"
                 aria-selected="true"
-                class="ant-tabs-tab-active ant-tabs-tab"
+                class="wmstool-tabs-tab-active wmstool-tabs-tab"
                 role="tab"
               >
                 Tab Title 1
@@ -241,7 +241,7 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab Title 2
@@ -249,7 +249,7 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab Title 3
@@ -260,11 +260,11 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-tabs-content ant-tabs-content-no-animated"
+      class="wmstool-tabs-content wmstool-tabs-content-no-animated"
     >
       <div
         aria-hidden="false"
-        class="ant-tabs-tabpane ant-tabs-tabpane-active"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
         role="tabpanel"
       >
         <p>
@@ -279,12 +279,12 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
       </div>
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
     </div>
@@ -298,7 +298,7 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
     style="margin-bottom:16px"
   >
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -307,48 +307,48 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
     </button>
   </div>
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card ant-tabs-no-animation"
+    class="wmstool-tabs wmstool-tabs-top wmstool-tabs-card wmstool-tabs-editable-card wmstool-tabs-no-animation"
   >
     <div
-      class="ant-tabs-bar"
+      class="wmstool-tabs-bar"
       role="tablist"
       tabindex="0"
     >
       <div
-        class="ant-tabs-nav-container"
+        class="wmstool-tabs-nav-container"
       >
         <span
-          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-prev-icon"
+            class="wmstool-tabs-tab-prev-icon"
           />
         </span>
         <span
-          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-next-icon"
+            class="wmstool-tabs-tab-next-icon"
           />
         </span>
         <div
-          class="ant-tabs-nav-wrap"
+          class="wmstool-tabs-nav-wrap"
         >
           <div
-            class="ant-tabs-nav-scroll"
+            class="wmstool-tabs-nav-scroll"
           >
             <div
-              class="ant-tabs-nav ant-tabs-nav-animated"
+              class="wmstool-tabs-nav wmstool-tabs-nav-animated"
             >
               <div
-                class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
               />
               <div
                 aria-disabled="false"
                 aria-selected="true"
-                class="ant-tabs-tab-active ant-tabs-tab"
+                class="wmstool-tabs-tab-active wmstool-tabs-tab"
                 role="tab"
               >
                 <div>
@@ -361,7 +361,7 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 <div>
@@ -377,18 +377,18 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-tabs-content ant-tabs-content-no-animated"
+      class="wmstool-tabs-content wmstool-tabs-content-no-animated"
     >
       <div
         aria-hidden="false"
-        class="ant-tabs-tabpane ant-tabs-tabpane-active"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
         role="tabpanel"
       >
         Content of Tab Pane 1
       </div>
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
     </div>
@@ -398,48 +398,48 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-line"
+  class="wmstool-tabs wmstool-tabs-top wmstool-tabs-line"
 >
   <div
-    class="ant-tabs-bar"
+    class="wmstool-tabs-bar"
     role="tablist"
     tabindex="0"
   >
     <div
-      class="ant-tabs-nav-container"
+      class="wmstool-tabs-nav-container"
     >
       <span
-        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-prev-icon"
+          class="wmstool-tabs-tab-prev-icon"
         />
       </span>
       <span
-        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-next-icon"
+          class="wmstool-tabs-tab-next-icon"
         />
       </span>
       <div
-        class="ant-tabs-nav-wrap"
+        class="wmstool-tabs-nav-wrap"
       >
         <div
-          class="ant-tabs-nav-scroll"
+          class="wmstool-tabs-nav-scroll"
         >
           <div
-            class="ant-tabs-nav ant-tabs-nav-animated"
+            class="wmstool-tabs-nav wmstool-tabs-nav-animated"
           >
             <div
-              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+              class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
             />
             <div
               aria-disabled="false"
               aria-selected="true"
-              class="ant-tabs-tab-active ant-tabs-tab"
+              class="wmstool-tabs-tab-active wmstool-tabs-tab"
               role="tab"
             >
               Tab 1
@@ -447,7 +447,7 @@ exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
             <div
               aria-disabled="true"
               aria-selected="false"
-              class=" ant-tabs-tab ant-tabs-tab-disabled"
+              class=" wmstool-tabs-tab wmstool-tabs-tab-disabled"
               role="tab"
             >
               Tab 2
@@ -455,7 +455,7 @@ exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 3
@@ -466,24 +466,24 @@ exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs-content ant-tabs-content-animated"
+    class="wmstool-tabs-content wmstool-tabs-content-animated"
     style="margin-left:0%"
   >
     <div
       aria-hidden="false"
-      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
       role="tabpanel"
     >
       Tab 1
     </div>
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
   </div>
@@ -492,58 +492,58 @@ exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card ant-tabs-no-animation"
+  class="wmstool-tabs wmstool-tabs-top wmstool-tabs-card wmstool-tabs-editable-card wmstool-tabs-no-animation"
 >
   <div
-    class="ant-tabs-bar"
+    class="wmstool-tabs-bar"
     role="tablist"
     tabindex="0"
   >
     <div
-      class="ant-tabs-extra-content"
+      class="wmstool-tabs-extra-content"
       style="float:right"
     >
       <span>
         <i
-          class="anticon anticon-plus ant-tabs-new-tab"
+          class="anticon anticon-plus wmstool-tabs-new-tab"
         />
       </span>
     </div>
     <div
-      class="ant-tabs-nav-container"
+      class="wmstool-tabs-nav-container"
     >
       <span
-        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-prev-icon"
+          class="wmstool-tabs-tab-prev-icon"
         />
       </span>
       <span
-        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-next-icon"
+          class="wmstool-tabs-tab-next-icon"
         />
       </span>
       <div
-        class="ant-tabs-nav-wrap"
+        class="wmstool-tabs-nav-wrap"
       >
         <div
-          class="ant-tabs-nav-scroll"
+          class="wmstool-tabs-nav-scroll"
         >
           <div
-            class="ant-tabs-nav ant-tabs-nav-animated"
+            class="wmstool-tabs-nav wmstool-tabs-nav-animated"
           >
             <div
-              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+              class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
             />
             <div
               aria-disabled="false"
               aria-selected="true"
-              class="ant-tabs-tab-active ant-tabs-tab"
+              class="wmstool-tabs-tab-active wmstool-tabs-tab"
               role="tab"
             >
               <div>
@@ -556,7 +556,7 @@ exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               <div>
@@ -569,11 +569,11 @@ exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               <div
-                class="ant-tabs-tab-unclosable"
+                class="wmstool-tabs-tab-unclosable"
               >
                 Tab 3
               </div>
@@ -584,23 +584,23 @@ exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs-content ant-tabs-content-no-animated"
+    class="wmstool-tabs-content wmstool-tabs-content-no-animated"
   >
     <div
       aria-hidden="false"
-      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
       role="tabpanel"
     >
       Content of Tab 1
     </div>
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
   </div>
@@ -609,19 +609,19 @@ exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-line"
+  class="wmstool-tabs wmstool-tabs-top wmstool-tabs-line"
 >
   <div
-    class="ant-tabs-bar"
+    class="wmstool-tabs-bar"
     role="tablist"
     tabindex="0"
   >
     <div
-      class="ant-tabs-extra-content"
+      class="wmstool-tabs-extra-content"
       style="float:right"
     >
       <button
-        class="ant-btn"
+        class="wmstool-btn"
         type="button"
       >
         <span>
@@ -630,40 +630,40 @@ exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
       </button>
     </div>
     <div
-      class="ant-tabs-nav-container"
+      class="wmstool-tabs-nav-container"
     >
       <span
-        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-prev-icon"
+          class="wmstool-tabs-tab-prev-icon"
         />
       </span>
       <span
-        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-next-icon"
+          class="wmstool-tabs-tab-next-icon"
         />
       </span>
       <div
-        class="ant-tabs-nav-wrap"
+        class="wmstool-tabs-nav-wrap"
       >
         <div
-          class="ant-tabs-nav-scroll"
+          class="wmstool-tabs-nav-scroll"
         >
           <div
-            class="ant-tabs-nav ant-tabs-nav-animated"
+            class="wmstool-tabs-nav wmstool-tabs-nav-animated"
           >
             <div
-              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+              class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
             />
             <div
               aria-disabled="false"
               aria-selected="true"
-              class="ant-tabs-tab-active ant-tabs-tab"
+              class="wmstool-tabs-tab-active wmstool-tabs-tab"
               role="tab"
             >
               Tab 1
@@ -671,7 +671,7 @@ exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 2
@@ -679,7 +679,7 @@ exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               Tab 3
@@ -690,24 +690,24 @@ exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs-content ant-tabs-content-animated"
+    class="wmstool-tabs-content wmstool-tabs-content-animated"
     style="margin-left:0%"
   >
     <div
       aria-hidden="false"
-      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
       role="tabpanel"
     >
       Content of tab 1
     </div>
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
   </div>
@@ -716,48 +716,48 @@ exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/icon.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-line"
+  class="wmstool-tabs wmstool-tabs-top wmstool-tabs-line"
 >
   <div
-    class="ant-tabs-bar"
+    class="wmstool-tabs-bar"
     role="tablist"
     tabindex="0"
   >
     <div
-      class="ant-tabs-nav-container"
+      class="wmstool-tabs-nav-container"
     >
       <span
-        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-prev-icon"
+          class="wmstool-tabs-tab-prev-icon"
         />
       </span>
       <span
-        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
         unselectable="unselectable"
       >
         <span
-          class="ant-tabs-tab-next-icon"
+          class="wmstool-tabs-tab-next-icon"
         />
       </span>
       <div
-        class="ant-tabs-nav-wrap"
+        class="wmstool-tabs-nav-wrap"
       >
         <div
-          class="ant-tabs-nav-scroll"
+          class="wmstool-tabs-nav-scroll"
         >
           <div
-            class="ant-tabs-nav ant-tabs-nav-animated"
+            class="wmstool-tabs-nav wmstool-tabs-nav-animated"
           >
             <div
-              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+              class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
             />
             <div
               aria-disabled="false"
               aria-selected="false"
-              class=" ant-tabs-tab"
+              class=" wmstool-tabs-tab"
               role="tab"
             >
               <span>
@@ -770,7 +770,7 @@ exports[`renders ./components/tabs/demo/icon.md correctly 1`] = `
             <div
               aria-disabled="false"
               aria-selected="true"
-              class="ant-tabs-tab-active ant-tabs-tab"
+              class="wmstool-tabs-tab-active wmstool-tabs-tab"
               role="tab"
             >
               <span>
@@ -786,17 +786,17 @@ exports[`renders ./components/tabs/demo/icon.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs-content ant-tabs-content-animated"
+    class="wmstool-tabs-content wmstool-tabs-content-animated"
     style="margin-left:-100%"
   >
     <div
       aria-hidden="true"
-      class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
       role="tabpanel"
     />
     <div
       aria-hidden="false"
-      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
       role="tabpanel"
     >
       Tab 2
@@ -812,22 +812,22 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
   >
     Tab position：
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="top"
           >
@@ -835,7 +835,7 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -845,48 +845,48 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-line"
+    class="wmstool-tabs wmstool-tabs-top wmstool-tabs-line"
   >
     <div
-      class="ant-tabs-bar"
+      class="wmstool-tabs-bar"
       role="tablist"
       tabindex="0"
     >
       <div
-        class="ant-tabs-nav-container"
+        class="wmstool-tabs-nav-container"
       >
         <span
-          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-prev-icon"
+            class="wmstool-tabs-tab-prev-icon"
           />
         </span>
         <span
-          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-next-icon"
+            class="wmstool-tabs-tab-next-icon"
           />
         </span>
         <div
-          class="ant-tabs-nav-wrap"
+          class="wmstool-tabs-nav-wrap"
         >
           <div
-            class="ant-tabs-nav-scroll"
+            class="wmstool-tabs-nav-scroll"
           >
             <div
-              class="ant-tabs-nav ant-tabs-nav-animated"
+              class="wmstool-tabs-nav wmstool-tabs-nav-animated"
             >
               <div
-                class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
               />
               <div
                 aria-disabled="false"
                 aria-selected="true"
-                class="ant-tabs-tab-active ant-tabs-tab"
+                class="wmstool-tabs-tab-active wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 1
@@ -894,7 +894,7 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 2
@@ -902,7 +902,7 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 3
@@ -913,24 +913,24 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-tabs-content ant-tabs-content-animated"
+      class="wmstool-tabs-content wmstool-tabs-content-animated"
       style="margin-left:0%"
     >
       <div
         aria-hidden="false"
-        class="ant-tabs-tabpane ant-tabs-tabpane-active"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
         role="tabpanel"
       >
         Content of Tab 1
       </div>
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
     </div>
@@ -941,22 +941,22 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
 exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
 <div>
   <div
-    class="ant-radio-group"
+    class="wmstool-radio-group"
     style="margin-bottom:16px"
   >
     <label
-      class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+      class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
     >
       <span
-        class="ant-radio-button ant-radio-button-checked"
+        class="wmstool-radio-button wmstool-radio-button-checked"
       >
         <input
           checked=""
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -964,17 +964,17 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -982,17 +982,17 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -1001,48 +1001,48 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
     </label>
   </div>
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-small ant-tabs-line"
+    class="wmstool-tabs wmstool-tabs-top wmstool-tabs-small wmstool-tabs-line"
   >
     <div
-      class="ant-tabs-bar"
+      class="wmstool-tabs-bar"
       role="tablist"
       tabindex="0"
     >
       <div
-        class="ant-tabs-nav-container"
+        class="wmstool-tabs-nav-container"
       >
         <span
-          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-prev-icon"
+            class="wmstool-tabs-tab-prev-icon"
           />
         </span>
         <span
-          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-next-icon"
+            class="wmstool-tabs-tab-next-icon"
           />
         </span>
         <div
-          class="ant-tabs-nav-wrap"
+          class="wmstool-tabs-nav-wrap"
         >
           <div
-            class="ant-tabs-nav-scroll"
+            class="wmstool-tabs-nav-scroll"
           >
             <div
-              class="ant-tabs-nav ant-tabs-nav-animated"
+              class="wmstool-tabs-nav wmstool-tabs-nav-animated"
             >
               <div
-                class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
               />
               <div
                 aria-disabled="false"
                 aria-selected="true"
-                class="ant-tabs-tab-active ant-tabs-tab"
+                class="wmstool-tabs-tab-active wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 1
@@ -1050,7 +1050,7 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 2
@@ -1058,7 +1058,7 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 3
@@ -1069,24 +1069,24 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-tabs-content ant-tabs-content-animated"
+      class="wmstool-tabs-content wmstool-tabs-content-animated"
       style="margin-left:0%"
     >
       <div
         aria-hidden="false"
-        class="ant-tabs-tabpane ant-tabs-tabpane-active"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
         role="tabpanel"
       >
         Content of tab 1
       </div>
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
     </div>
@@ -1097,22 +1097,22 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
 exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
 <div>
   <div
-    class="ant-radio-group"
+    class="wmstool-radio-group"
     style="margin-bottom:8px"
   >
     <label
-      class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+      class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
     >
       <span
-        class="ant-radio-button ant-radio-button-checked"
+        class="wmstool-radio-button wmstool-radio-button-checked"
       >
         <input
           checked=""
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -1120,17 +1120,17 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -1139,49 +1139,49 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
     </label>
   </div>
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-line"
+    class="wmstool-tabs wmstool-tabs-top wmstool-tabs-line"
     style="height:220px"
   >
     <div
-      class="ant-tabs-bar"
+      class="wmstool-tabs-bar"
       role="tablist"
       tabindex="0"
     >
       <div
-        class="ant-tabs-nav-container"
+        class="wmstool-tabs-nav-container"
       >
         <span
-          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-prev-icon"
+            class="wmstool-tabs-tab-prev-icon"
           />
         </span>
         <span
-          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
           unselectable="unselectable"
         >
           <span
-            class="ant-tabs-tab-next-icon"
+            class="wmstool-tabs-tab-next-icon"
           />
         </span>
         <div
-          class="ant-tabs-nav-wrap"
+          class="wmstool-tabs-nav-wrap"
         >
           <div
-            class="ant-tabs-nav-scroll"
+            class="wmstool-tabs-nav-scroll"
           >
             <div
-              class="ant-tabs-nav ant-tabs-nav-animated"
+              class="wmstool-tabs-nav wmstool-tabs-nav-animated"
             >
               <div
-                class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
               />
               <div
                 aria-disabled="false"
                 aria-selected="true"
-                class="ant-tabs-tab-active ant-tabs-tab"
+                class="wmstool-tabs-tab-active wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 1
@@ -1189,7 +1189,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 2
@@ -1197,7 +1197,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 3
@@ -1205,7 +1205,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 4
@@ -1213,7 +1213,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 5
@@ -1221,7 +1221,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 6
@@ -1229,7 +1229,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 7
@@ -1237,7 +1237,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 8
@@ -1245,7 +1245,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 9
@@ -1253,7 +1253,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 10
@@ -1261,7 +1261,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               <div
                 aria-disabled="false"
                 aria-selected="false"
-                class=" ant-tabs-tab"
+                class=" wmstool-tabs-tab"
                 role="tab"
               >
                 Tab 11
@@ -1272,64 +1272,64 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-tabs-content ant-tabs-content-animated"
+      class="wmstool-tabs-content wmstool-tabs-content-animated"
       style="margin-left:0%"
     >
       <div
         aria-hidden="false"
-        class="ant-tabs-tabpane ant-tabs-tabpane-active"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
         role="tabpanel"
       >
         Content of tab 1
       </div>
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
       <div
         aria-hidden="true"
-        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
         role="tabpanel"
       />
     </div>

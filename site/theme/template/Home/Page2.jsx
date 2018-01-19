@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import { Link } from 'bisheng/router';
 import TweenOne from 'rc-tween-one';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { Icon, Button } from 'antd';
+import { Icon, Button } from 'wmstool';
 import QueueAnim from 'rc-queue-anim';
 import * as utils from '../utils';
 

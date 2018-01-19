@@ -37,7 +37,7 @@ export interface MentionState {
 export default class Mention extends React.Component<MentionProps, MentionState> {
   static getMentions = getMentions;
   static defaultProps = {
-    prefixCls: 'ant-mention',
+    prefixCls: 'wmstool-mention',
     notFoundContent: '无匹配结果，轻敲空格完成输入',
     loading: false,
     multiLines: false,

@@ -7,7 +7,7 @@ exports[`renders ./components/affix/demo/basic.md correctly 1`] = `
       class=""
     >
       <button
-        class="ant-btn ant-btn-primary"
+        class="wmstool-btn wmstool-btn-primary"
         type="button"
       >
         <span>
@@ -22,7 +22,7 @@ exports[`renders ./components/affix/demo/basic.md correctly 1`] = `
       class=""
     >
       <button
-        class="ant-btn ant-btn-primary"
+        class="wmstool-btn wmstool-btn-primary"
         type="button"
       >
         <span>
@@ -40,7 +40,7 @@ exports[`renders ./components/affix/demo/on-change.md correctly 1`] = `
     class=""
   >
     <button
-      class="ant-btn"
+      class="wmstool-btn"
       type="button"
     >
       <span>
@@ -63,7 +63,7 @@ exports[`renders ./components/affix/demo/target.md correctly 1`] = `
         class=""
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="button"
         >
           <span>

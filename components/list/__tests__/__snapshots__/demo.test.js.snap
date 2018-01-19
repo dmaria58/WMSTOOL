@@ -2,26 +2,26 @@
 
 exports[`renders ./components/list/demo/basic.md correctly 1`] = `
 <div
-  class="ant-list ant-list-split"
+  class="wmstool-list wmstool-list-split"
 >
   <div>
     <div
-      class="ant-spin-nested-loading"
+      class="wmstool-spin-nested-loading"
     >
       <div
-        class="ant-spin-container"
+        class="wmstool-spin-container"
       >
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-meta"
+            class="wmstool-list-item-meta"
           >
             <div
-              class="ant-list-item-meta-avatar"
+              class="wmstool-list-item-meta-avatar"
             >
               <span
-                class="ant-avatar ant-avatar-circle ant-avatar-image"
+                class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
               >
                 <img
                   src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -29,10 +29,10 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               </span>
             </div>
             <div
-              class="ant-list-item-meta-content"
+              class="wmstool-list-item-meta-content"
             >
               <h4
-                class="ant-list-item-meta-title"
+                class="wmstool-list-item-meta-title"
               >
                 <a
                   href="https://ant.design"
@@ -41,7 +41,7 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
                 </a>
               </h4>
               <div
-                class="ant-list-item-meta-description"
+                class="wmstool-list-item-meta-description"
               >
                 Ant Design, a design language for background applications, is refined by Ant UED Team
               </div>
@@ -49,16 +49,16 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-meta"
+            class="wmstool-list-item-meta"
           >
             <div
-              class="ant-list-item-meta-avatar"
+              class="wmstool-list-item-meta-avatar"
             >
               <span
-                class="ant-avatar ant-avatar-circle ant-avatar-image"
+                class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
               >
                 <img
                   src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -66,10 +66,10 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               </span>
             </div>
             <div
-              class="ant-list-item-meta-content"
+              class="wmstool-list-item-meta-content"
             >
               <h4
-                class="ant-list-item-meta-title"
+                class="wmstool-list-item-meta-title"
               >
                 <a
                   href="https://ant.design"
@@ -78,7 +78,7 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
                 </a>
               </h4>
               <div
-                class="ant-list-item-meta-description"
+                class="wmstool-list-item-meta-description"
               >
                 Ant Design, a design language for background applications, is refined by Ant UED Team
               </div>
@@ -86,16 +86,16 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-meta"
+            class="wmstool-list-item-meta"
           >
             <div
-              class="ant-list-item-meta-avatar"
+              class="wmstool-list-item-meta-avatar"
             >
               <span
-                class="ant-avatar ant-avatar-circle ant-avatar-image"
+                class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
               >
                 <img
                   src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -103,10 +103,10 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               </span>
             </div>
             <div
-              class="ant-list-item-meta-content"
+              class="wmstool-list-item-meta-content"
             >
               <h4
-                class="ant-list-item-meta-title"
+                class="wmstool-list-item-meta-title"
               >
                 <a
                   href="https://ant.design"
@@ -115,7 +115,7 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
                 </a>
               </h4>
               <div
-                class="ant-list-item-meta-description"
+                class="wmstool-list-item-meta-description"
               >
                 Ant Design, a design language for background applications, is refined by Ant UED Team
               </div>
@@ -123,16 +123,16 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-meta"
+            class="wmstool-list-item-meta"
           >
             <div
-              class="ant-list-item-meta-avatar"
+              class="wmstool-list-item-meta-avatar"
             >
               <span
-                class="ant-avatar ant-avatar-circle ant-avatar-image"
+                class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
               >
                 <img
                   src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -140,10 +140,10 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
               </span>
             </div>
             <div
-              class="ant-list-item-meta-content"
+              class="wmstool-list-item-meta-content"
             >
               <h4
-                class="ant-list-item-meta-title"
+                class="wmstool-list-item-meta-title"
               >
                 <a
                   href="https://ant.design"
@@ -152,7 +152,7 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
                 </a>
               </h4>
               <div
-                class="ant-list-item-meta-description"
+                class="wmstool-list-item-meta-description"
               >
                 Ant Design, a design language for background applications, is refined by Ant UED Team
               </div>
@@ -167,47 +167,47 @@ exports[`renders ./components/list/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/list/demo/grid.md correctly 1`] = `
 <div
-  class="ant-list ant-list-split ant-list-grid"
+  class="wmstool-list wmstool-list-split wmstool-list-grid"
 >
   <div>
     <div
-      class="ant-spin-nested-loading"
+      class="wmstool-spin-nested-loading"
     >
       <div
-        class="ant-spin-container"
+        class="wmstool-spin-container"
       >
         <div
-          class="ant-row"
+          class="wmstool-row"
           style="margin-left:-8px;margin-right:-8px"
         >
           <div
-            class="ant-col-6"
+            class="wmstool-col-6"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 1
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -218,33 +218,33 @@ exports[`renders ./components/list/demo/grid.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-6"
+            class="wmstool-col-6"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 2
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -255,33 +255,33 @@ exports[`renders ./components/list/demo/grid.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-6"
+            class="wmstool-col-6"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 3
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -292,33 +292,33 @@ exports[`renders ./components/list/demo/grid.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-6"
+            class="wmstool-col-6"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 4
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -341,17 +341,17 @@ exports[`renders ./components/list/demo/infinite-load.md correctly 1`] = `
 >
   <div>
     <div
-      class="ant-list ant-list-split"
+      class="wmstool-list wmstool-list-split"
     >
       <div>
         <div
-          class="ant-spin-nested-loading"
+          class="wmstool-spin-nested-loading"
         >
           <div
-            class="ant-spin-container"
+            class="wmstool-spin-container"
           >
             <div
-              class="ant-list-empty-text"
+              class="wmstool-list-empty-text"
             >
               No data
             </div>
@@ -365,14 +365,14 @@ exports[`renders ./components/list/demo/infinite-load.md correctly 1`] = `
 
 exports[`renders ./components/list/demo/infinite-virtualized-load.md correctly 1`] = `
 <div
-  class="ant-list ant-list-split"
+  class="wmstool-list wmstool-list-split"
 >
   <div>
     <div
-      class="ant-spin"
+      class="wmstool-spin"
     >
       <span
-        class="ant-spin-dot"
+        class="wmstool-spin-dot"
       >
         <i />
         <i />
@@ -386,18 +386,18 @@ exports[`renders ./components/list/demo/infinite-virtualized-load.md correctly 1
 
 exports[`renders ./components/list/demo/loadmore.md correctly 1`] = `
 <div
-  class="ant-list demo-loadmore-list ant-list-split ant-list-loading ant-list-something-after-last-item"
+  class="wmstool-list demo-loadmore-list wmstool-list-split wmstool-list-loading wmstool-list-something-after-last-item"
 >
   <div>
     <div
-      class="ant-spin-nested-loading"
+      class="wmstool-spin-nested-loading"
     >
       <div>
         <div
-          class="ant-spin ant-spin-spinning"
+          class="wmstool-spin wmstool-spin-spinning"
         >
           <span
-            class="ant-spin-dot"
+            class="wmstool-spin-dot"
           >
             <i />
             <i />
@@ -407,10 +407,10 @@ exports[`renders ./components/list/demo/loadmore.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-spin-container ant-spin-blur"
+        class="wmstool-spin-container wmstool-spin-blur"
       >
         <div
-          class="ant-list-empty-text"
+          class="wmstool-list-empty-text"
         >
           No data
         </div>
@@ -420,7 +420,7 @@ exports[`renders ./components/list/demo/loadmore.md correctly 1`] = `
       style="text-align:center;margin-top:12px;height:32px;line-height:32px"
     >
       <button
-        class="ant-btn"
+        class="wmstool-btn"
         type="button"
       >
         <span>
@@ -434,47 +434,47 @@ exports[`renders ./components/list/demo/loadmore.md correctly 1`] = `
 
 exports[`renders ./components/list/demo/resposive.md correctly 1`] = `
 <div
-  class="ant-list ant-list-split ant-list-grid"
+  class="wmstool-list wmstool-list-split wmstool-list-grid"
 >
   <div>
     <div
-      class="ant-spin-nested-loading"
+      class="wmstool-spin-nested-loading"
     >
       <div
-        class="ant-spin-container"
+        class="wmstool-spin-container"
       >
         <div
-          class="ant-row"
+          class="wmstool-row"
           style="margin-left:-8px;margin-right:-8px"
         >
           <div
-            class="ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-6 ant-col-xl-4"
+            class="wmstool-col-xs-24 wmstool-col-sm-12 wmstool-col-md-6 wmstool-col-lg-6 wmstool-col-xl-4"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 1
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -485,33 +485,33 @@ exports[`renders ./components/list/demo/resposive.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-6 ant-col-xl-4"
+            class="wmstool-col-xs-24 wmstool-col-sm-12 wmstool-col-md-6 wmstool-col-lg-6 wmstool-col-xl-4"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 2
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -522,33 +522,33 @@ exports[`renders ./components/list/demo/resposive.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-6 ant-col-xl-4"
+            class="wmstool-col-xs-24 wmstool-col-sm-12 wmstool-col-md-6 wmstool-col-lg-6 wmstool-col-xl-4"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 3
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -559,33 +559,33 @@ exports[`renders ./components/list/demo/resposive.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-6 ant-col-xl-4"
+            class="wmstool-col-xs-24 wmstool-col-sm-12 wmstool-col-md-6 wmstool-col-lg-6 wmstool-col-xl-4"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 4
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -596,33 +596,33 @@ exports[`renders ./components/list/demo/resposive.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-6 ant-col-xl-4"
+            class="wmstool-col-xs-24 wmstool-col-sm-12 wmstool-col-md-6 wmstool-col-lg-6 wmstool-col-xl-4"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 5
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -633,33 +633,33 @@ exports[`renders ./components/list/demo/resposive.md correctly 1`] = `
             </div>
           </div>
           <div
-            class="ant-col-xs-24 ant-col-sm-12 ant-col-md-6 ant-col-lg-6 ant-col-xl-4"
+            class="wmstool-col-xs-24 wmstool-col-sm-12 wmstool-col-md-6 wmstool-col-lg-6 wmstool-col-xl-4"
           >
             <div
-              class="ant-list-item"
+              class="wmstool-list-item"
               style="padding-left:8px;padding-right:8px"
             >
               <div
-                class="ant-list-item-content ant-list-item-content-single"
+                class="wmstool-list-item-content wmstool-list-item-content-single"
               >
                 <div
-                  class="ant-card ant-card-bordered"
+                  class="wmstool-card wmstool-card-bordered"
                 >
                   <div
-                    class="ant-card-head"
+                    class="wmstool-card-head"
                   >
                     <div
-                      class="ant-card-head-wrapper"
+                      class="wmstool-card-head-wrapper"
                     >
                       <div
-                        class="ant-card-head-title"
+                        class="wmstool-card-head-title"
                       >
                         Title 6
                       </div>
                     </div>
                   </div>
                   <div
-                    class="ant-card-body"
+                    class="wmstool-card-body"
                   >
                     <div>
                       Card content
@@ -684,10 +684,10 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
     Default Size
   </h3>
   <div
-    class="ant-list ant-list-split ant-list-bordered ant-list-something-after-last-item"
+    class="wmstool-list wmstool-list-split wmstool-list-bordered wmstool-list-something-after-last-item"
   >
     <div
-      class="ant-list-header"
+      class="wmstool-list-header"
     >
       <div>
         Header
@@ -695,52 +695,52 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
     </div>
     <div>
       <div
-        class="ant-spin-nested-loading"
+        class="wmstool-spin-nested-loading"
       >
         <div
-          class="ant-spin-container"
+          class="wmstool-spin-container"
         >
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Racing car sprays burning fuel into crowd.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Japanese princess to wed commoner.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Australian walks 100km after outback crash.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Man charged over missing wedding girl.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Los Angeles battles huge wildfires.
             </div>
@@ -749,7 +749,7 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-list-footer"
+      class="wmstool-list-footer"
     >
       <div>
         Footer
@@ -762,10 +762,10 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
     Small Size
   </h3>
   <div
-    class="ant-list ant-list-sm ant-list-split ant-list-bordered ant-list-something-after-last-item"
+    class="wmstool-list wmstool-list-sm wmstool-list-split wmstool-list-bordered wmstool-list-something-after-last-item"
   >
     <div
-      class="ant-list-header"
+      class="wmstool-list-header"
     >
       <div>
         Header
@@ -773,52 +773,52 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
     </div>
     <div>
       <div
-        class="ant-spin-nested-loading"
+        class="wmstool-spin-nested-loading"
       >
         <div
-          class="ant-spin-container"
+          class="wmstool-spin-container"
         >
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Racing car sprays burning fuel into crowd.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Japanese princess to wed commoner.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Australian walks 100km after outback crash.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Man charged over missing wedding girl.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Los Angeles battles huge wildfires.
             </div>
@@ -827,7 +827,7 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-list-footer"
+      class="wmstool-list-footer"
     >
       <div>
         Footer
@@ -840,10 +840,10 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
     Large Size
   </h3>
   <div
-    class="ant-list ant-list-lg ant-list-split ant-list-bordered ant-list-something-after-last-item"
+    class="wmstool-list wmstool-list-lg wmstool-list-split wmstool-list-bordered wmstool-list-something-after-last-item"
   >
     <div
-      class="ant-list-header"
+      class="wmstool-list-header"
     >
       <div>
         Header
@@ -851,52 +851,52 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
     </div>
     <div>
       <div
-        class="ant-spin-nested-loading"
+        class="wmstool-spin-nested-loading"
       >
         <div
-          class="ant-spin-container"
+          class="wmstool-spin-container"
         >
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Racing car sprays burning fuel into crowd.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Japanese princess to wed commoner.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Australian walks 100km after outback crash.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Man charged over missing wedding girl.
             </div>
           </div>
           <div
-            class="ant-list-item"
+            class="wmstool-list-item"
           >
             <div
-              class="ant-list-item-content ant-list-item-content-single"
+              class="wmstool-list-item-content wmstool-list-item-content-single"
             >
               Los Angeles battles huge wildfires.
             </div>
@@ -905,7 +905,7 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-list-footer"
+      class="wmstool-list-footer"
     >
       <div>
         Footer
@@ -917,32 +917,32 @@ exports[`renders ./components/list/demo/simple.md correctly 1`] = `
 
 exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
 <div
-  class="ant-list ant-list-vertical ant-list-lg ant-list-split ant-list-something-after-last-item"
+  class="wmstool-list wmstool-list-vertical wmstool-list-lg wmstool-list-split wmstool-list-something-after-last-item"
 >
   <div>
     <div
-      class="ant-spin-nested-loading"
+      class="wmstool-spin-nested-loading"
     >
       <div
-        class="ant-spin-container"
+        class="wmstool-spin-container"
       >
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-extra-wrap"
+            class="wmstool-list-item-extra-wrap"
           >
             <div
-              class="ant-list-item-main"
+              class="wmstool-list-item-main"
             >
               <div
-                class="ant-list-item-meta"
+                class="wmstool-list-item-meta"
               >
                 <div
-                  class="ant-list-item-meta-avatar"
+                  class="wmstool-list-item-meta-avatar"
                 >
                   <span
-                    class="ant-avatar ant-avatar-circle ant-avatar-image"
+                    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
                   >
                     <img
                       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -950,10 +950,10 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="ant-list-item-meta-content"
+                  class="wmstool-list-item-meta-content"
                 >
                   <h4
-                    class="ant-list-item-meta-title"
+                    class="wmstool-list-item-meta-title"
                   >
                     <a
                       href="http://ant.design"
@@ -962,19 +962,19 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     </a>
                   </h4>
                   <div
-                    class="ant-list-item-meta-description"
+                    class="wmstool-list-item-meta-description"
                   >
                     Ant Design, a design language for background applications, is refined by Ant UED Team.
                   </div>
                 </div>
               </div>
               <div
-                class="ant-list-item-content"
+                class="wmstool-list-item-content"
               >
                 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
               </div>
               <ul
-                class="ant-list-item-action"
+                class="wmstool-list-item-action"
               >
                 <li>
                   <span>
@@ -985,7 +985,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -997,7 +997,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1012,7 +1012,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
               </ul>
             </div>
             <div
-              class="ant-list-item-extra"
+              class="wmstool-list-item-extra"
             >
               <img
                 alt="logo"
@@ -1023,22 +1023,22 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-extra-wrap"
+            class="wmstool-list-item-extra-wrap"
           >
             <div
-              class="ant-list-item-main"
+              class="wmstool-list-item-main"
             >
               <div
-                class="ant-list-item-meta"
+                class="wmstool-list-item-meta"
               >
                 <div
-                  class="ant-list-item-meta-avatar"
+                  class="wmstool-list-item-meta-avatar"
                 >
                   <span
-                    class="ant-avatar ant-avatar-circle ant-avatar-image"
+                    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
                   >
                     <img
                       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -1046,10 +1046,10 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="ant-list-item-meta-content"
+                  class="wmstool-list-item-meta-content"
                 >
                   <h4
-                    class="ant-list-item-meta-title"
+                    class="wmstool-list-item-meta-title"
                   >
                     <a
                       href="http://ant.design"
@@ -1058,19 +1058,19 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     </a>
                   </h4>
                   <div
-                    class="ant-list-item-meta-description"
+                    class="wmstool-list-item-meta-description"
                   >
                     Ant Design, a design language for background applications, is refined by Ant UED Team.
                   </div>
                 </div>
               </div>
               <div
-                class="ant-list-item-content"
+                class="wmstool-list-item-content"
               >
                 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
               </div>
               <ul
-                class="ant-list-item-action"
+                class="wmstool-list-item-action"
               >
                 <li>
                   <span>
@@ -1081,7 +1081,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1093,7 +1093,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1108,7 +1108,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
               </ul>
             </div>
             <div
-              class="ant-list-item-extra"
+              class="wmstool-list-item-extra"
             >
               <img
                 alt="logo"
@@ -1119,22 +1119,22 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-extra-wrap"
+            class="wmstool-list-item-extra-wrap"
           >
             <div
-              class="ant-list-item-main"
+              class="wmstool-list-item-main"
             >
               <div
-                class="ant-list-item-meta"
+                class="wmstool-list-item-meta"
               >
                 <div
-                  class="ant-list-item-meta-avatar"
+                  class="wmstool-list-item-meta-avatar"
                 >
                   <span
-                    class="ant-avatar ant-avatar-circle ant-avatar-image"
+                    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
                   >
                     <img
                       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -1142,10 +1142,10 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="ant-list-item-meta-content"
+                  class="wmstool-list-item-meta-content"
                 >
                   <h4
-                    class="ant-list-item-meta-title"
+                    class="wmstool-list-item-meta-title"
                   >
                     <a
                       href="http://ant.design"
@@ -1154,19 +1154,19 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     </a>
                   </h4>
                   <div
-                    class="ant-list-item-meta-description"
+                    class="wmstool-list-item-meta-description"
                   >
                     Ant Design, a design language for background applications, is refined by Ant UED Team.
                   </div>
                 </div>
               </div>
               <div
-                class="ant-list-item-content"
+                class="wmstool-list-item-content"
               >
                 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
               </div>
               <ul
-                class="ant-list-item-action"
+                class="wmstool-list-item-action"
               >
                 <li>
                   <span>
@@ -1177,7 +1177,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1189,7 +1189,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1204,7 +1204,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
               </ul>
             </div>
             <div
-              class="ant-list-item-extra"
+              class="wmstool-list-item-extra"
             >
               <img
                 alt="logo"
@@ -1215,22 +1215,22 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-extra-wrap"
+            class="wmstool-list-item-extra-wrap"
           >
             <div
-              class="ant-list-item-main"
+              class="wmstool-list-item-main"
             >
               <div
-                class="ant-list-item-meta"
+                class="wmstool-list-item-meta"
               >
                 <div
-                  class="ant-list-item-meta-avatar"
+                  class="wmstool-list-item-meta-avatar"
                 >
                   <span
-                    class="ant-avatar ant-avatar-circle ant-avatar-image"
+                    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
                   >
                     <img
                       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -1238,10 +1238,10 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="ant-list-item-meta-content"
+                  class="wmstool-list-item-meta-content"
                 >
                   <h4
-                    class="ant-list-item-meta-title"
+                    class="wmstool-list-item-meta-title"
                   >
                     <a
                       href="http://ant.design"
@@ -1250,19 +1250,19 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     </a>
                   </h4>
                   <div
-                    class="ant-list-item-meta-description"
+                    class="wmstool-list-item-meta-description"
                   >
                     Ant Design, a design language for background applications, is refined by Ant UED Team.
                   </div>
                 </div>
               </div>
               <div
-                class="ant-list-item-content"
+                class="wmstool-list-item-content"
               >
                 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
               </div>
               <ul
-                class="ant-list-item-action"
+                class="wmstool-list-item-action"
               >
                 <li>
                   <span>
@@ -1273,7 +1273,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1285,7 +1285,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1300,7 +1300,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
               </ul>
             </div>
             <div
-              class="ant-list-item-extra"
+              class="wmstool-list-item-extra"
             >
               <img
                 alt="logo"
@@ -1311,22 +1311,22 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-list-item"
+          class="wmstool-list-item"
         >
           <div
-            class="ant-list-item-extra-wrap"
+            class="wmstool-list-item-extra-wrap"
           >
             <div
-              class="ant-list-item-main"
+              class="wmstool-list-item-main"
             >
               <div
-                class="ant-list-item-meta"
+                class="wmstool-list-item-meta"
               >
                 <div
-                  class="ant-list-item-meta-avatar"
+                  class="wmstool-list-item-meta-avatar"
                 >
                   <span
-                    class="ant-avatar ant-avatar-circle ant-avatar-image"
+                    class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
                   >
                     <img
                       src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -1334,10 +1334,10 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="ant-list-item-meta-content"
+                  class="wmstool-list-item-meta-content"
                 >
                   <h4
-                    class="ant-list-item-meta-title"
+                    class="wmstool-list-item-meta-title"
                   >
                     <a
                       href="http://ant.design"
@@ -1346,19 +1346,19 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     </a>
                   </h4>
                   <div
-                    class="ant-list-item-meta-description"
+                    class="wmstool-list-item-meta-description"
                   >
                     Ant Design, a design language for background applications, is refined by Ant UED Team.
                   </div>
                 </div>
               </div>
               <div
-                class="ant-list-item-content"
+                class="wmstool-list-item-content"
               >
                 We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.
               </div>
               <ul
-                class="ant-list-item-action"
+                class="wmstool-list-item-action"
               >
                 <li>
                   <span>
@@ -1369,7 +1369,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1381,7 +1381,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
                     156
                   </span>
                   <em
-                    class="ant-list-item-action-split"
+                    class="wmstool-list-item-action-split"
                   />
                 </li>
                 <li>
@@ -1396,7 +1396,7 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
               </ul>
             </div>
             <div
-              class="ant-list-item-extra"
+              class="wmstool-list-item-extra"
             >
               <img
                 alt="logo"
@@ -1409,24 +1409,24 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-list-pagination"
+      class="wmstool-list-pagination"
     >
       <ul
-        class="ant-pagination "
+        class="wmstool-pagination "
         unselectable="unselectable"
       >
         <li
           aria-disabled="true"
-          class="ant-pagination-disabled ant-pagination-prev"
+          class="wmstool-pagination-disabled wmstool-pagination-prev"
           tabindex="0"
           title="Previous Page"
         >
           <a
-            class="ant-pagination-item-link"
+            class="wmstool-pagination-item-link"
           />
         </li>
         <li
-          class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+          class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
           tabindex="0"
           title="1"
         >
@@ -1436,12 +1436,12 @@ exports[`renders ./components/list/demo/vertical.md correctly 1`] = `
         </li>
         <li
           aria-disabled="true"
-          class="ant-pagination-disabled ant-pagination-next"
+          class="wmstool-pagination-disabled wmstool-pagination-next"
           tabindex="0"
           title="Next Page"
         >
           <a
-            class="ant-pagination-item-link"
+            class="wmstool-pagination-item-link"
           />
         </li>
       </ul>

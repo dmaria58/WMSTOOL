@@ -74,7 +74,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
   static defaultProps = {
     dataSource: [],
-    prefixCls: 'ant-table',
+    prefixCls: 'wmstool-table',
     useFixedHeader: false,
     rowSelection: null,
     className: '',
@@ -709,7 +709,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
             selectedKeys={colFilters}
             confirmFilter={this.handleFilter}
             prefixCls={`${prefixCls}-filter`}
-            dropdownPrefixCls={dropdownPrefixCls || 'ant-dropdown'}
+            dropdownPrefixCls={dropdownPrefixCls || 'wmstool-dropdown'}
             getPopupContainer={this.getPopupContainer}
           />
         );

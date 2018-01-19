@@ -1,7 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 
-@table-prefix-cls: ~"@{ant-prefix}-table";
+@table-prefix-cls: ~"@{wmstool-prefix}-table";
 @table-header-icon-color: @text-color-secondary;
 
 .@{table-prefix-cls}-wrapper {
@@ -132,7 +132,7 @@
     }
   }
 
-  // https://github.com/ant-design/ant-design/issues/4373
+  // https://github.com/wmstool-design/wmstool-design/issues/4373
   &-without-column-header &-title + &-content,
   &-without-column-header table {
     border-radius: 0;
@@ -162,7 +162,7 @@
     text-align: center;
     min-width: 62px;
     width: 62px;
-    .@{ant-prefix}-radio-wrapper {
+    .@{wmstool-prefix}-radio-wrapper {
       margin-right: 0;
     }
   }
@@ -320,7 +320,7 @@
     }
   }
 
-  &-pagination.@{ant-prefix}-pagination {
+  &-pagination.@{wmstool-prefix}-pagination {
     margin: 16px 0;
     float: right;
   }
@@ -332,12 +332,12 @@
     border-radius: @border-radius-base;
     box-shadow: @box-shadow-base;
 
-    .@{ant-prefix}-dropdown-menu {
+    .@{wmstool-prefix}-dropdown-menu {
       border: 0;
       box-shadow: none;
       border-radius: @border-radius-base @border-radius-base 0 0;
 
-      // https://github.com/ant-design/ant-design/issues/4916
+      // https://github.com/wmstool-design/wmstool-design/issues/4916
       &-without-submenu {
         max-height: 400px;
         overflow-x: hidden;
@@ -352,8 +352,8 @@
         box-shadow: @box-shadow-base;
       }
 
-      .@{ant-prefix}-dropdown-submenu-contain-selected {
-        .@{ant-prefix}-dropdown-menu-submenu-title:after {
+      .@{wmstool-prefix}-dropdown-submenu-contain-selected {
+        .@{wmstool-prefix}-dropdown-menu-submenu-title:after {
           color: @primary-color;
           font-weight: bold;
           text-shadow: 0 0 2px @primary-2;
@@ -361,12 +361,12 @@
       }
     }
 
-    .@{ant-prefix}-dropdown-menu-item {
+    .@{wmstool-prefix}-dropdown-menu-item {
       overflow: hidden;
     }
 
-    > .@{ant-prefix}-dropdown-menu > .@{ant-prefix}-dropdown-menu-item:last-child,
-    > .@{ant-prefix}-dropdown-menu > .@{ant-prefix}-dropdown-menu-submenu:last-child .@{ant-prefix}-dropdown-menu-submenu-title {
+    > .@{wmstool-prefix}-dropdown-menu > .@{wmstool-prefix}-dropdown-menu-item:last-child,
+    > .@{wmstool-prefix}-dropdown-menu > .@{wmstool-prefix}-dropdown-menu-submenu:last-child .@{wmstool-prefix}-dropdown-menu-submenu-title {
       border-radius: 0;
     }
 
@@ -411,7 +411,7 @@
       border-radius: @border-radius-base;
       box-shadow: @box-shadow-base;
 
-      .@{ant-prefix}-action-down {
+      .@{wmstool-prefix}-action-down {
         color: @table-header-icon-color;
       }
     }
@@ -545,7 +545,7 @@
       border-radius: 0 @border-radius-base 0 0;
     }
     // hide expand row content in right-fixed Table
-    // https://github.com/ant-design/ant-design/issues/1898
+    // https://github.com/wmstool-design/wmstool-design/issues/1898
     .@{table-prefix-cls}-expanded-row {
       color: transparent;
       pointer-events: none;

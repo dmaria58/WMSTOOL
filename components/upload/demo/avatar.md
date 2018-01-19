@@ -59,7 +59,7 @@ class Avatar extends React.Component {
     const uploadButton = (
       <div>
         <Icon type={this.state.loading ? 'loading' : 'plus'} />
-        <div className="ant-upload-text">Upload</div>
+        <div className="wmstool-upload-text">Upload</div>
       </div>
     );
     const imageUrl = this.state.imageUrl;
@@ -83,7 +83,7 @@ ReactDOM.render(<Avatar />, mountNode);
 ````
 
 ````css
-.avatar-uploader > .ant-upload {
+.avatar-uploader > .wmstool-upload {
   width: 128px;
   height: 128px;
 }

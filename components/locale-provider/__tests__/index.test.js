@@ -113,9 +113,9 @@ describe('Locale Provider', () => {
           <ModalDemo />
         </LocaleProvider>
       );
-      const currentConfirmNode = document.querySelectorAll('.ant-confirm')[document.querySelectorAll('.ant-confirm').length - 1];
-      const cancelButtonText = currentConfirmNode.querySelectorAll('.ant-btn:not(.ant-btn-primary) span')[0].innerHTML;
-      const okButtonText = currentConfirmNode.querySelectorAll('.ant-btn-primary span')[0].innerHTML;
+      const currentConfirmNode = document.querySelectorAll('.wmstool-confirm')[document.querySelectorAll('.wmstool-confirm').length - 1];
+      const cancelButtonText = currentConfirmNode.querySelectorAll('.wmstool-btn:not(.wmstool-btn-primary) span')[0].innerHTML;
+      const okButtonText = currentConfirmNode.querySelectorAll('.wmstool-btn-primary span')[0].innerHTML;
       expect(cancelButtonText).toBe(locale.Modal.cancelText);
       expect(okButtonText).toBe(locale.Modal.okText);
     });

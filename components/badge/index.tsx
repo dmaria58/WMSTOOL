@@ -25,8 +25,8 @@ export interface BadgeProps {
 
 export default class Badge extends React.Component<BadgeProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-badge',
-    scrollNumberPrefixCls: 'ant-scroll-number',
+    prefixCls: 'wmstool-badge',
+    scrollNumberPrefixCls: 'wmstool-scroll-number',
     count: null,
     showZero: false,
     dot: false,

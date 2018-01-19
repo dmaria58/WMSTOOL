@@ -50,12 +50,12 @@ ReactDOM.render(<Demo />, mountNode);
 ````
 
 ```css
-#components-tree-demo-customized-icon .ant-tree-iconEle {
+#components-tree-demo-customized-icon .wmstool-tree-iconEle {
   position: absolute;
   left: 0;
   background: #fff;
 }
-#components-tree-demo-customized-icon .ant-tree-iconEle::after {
+#components-tree-demo-customized-icon .wmstool-tree-iconEle::after {
   font-size: 12px;
   zoom: 1;
   display: inline-block;
@@ -66,21 +66,21 @@ ReactDOM.render(<Demo />, mountNode);
   margin-top: 2px;
   background: #fff;
 }
-#components-tree-demo-customized-icon .ant-tree-iconEle.ant-tree-icon__docu::after {
+#components-tree-demo-customized-icon .wmstool-tree-iconEle.wmstool-tree-icon__docu::after {
   content: "\E664";
 }
-#components-tree-demo-customized-icon .ant-tree-iconEle.ant-tree-icon__open::after {
+#components-tree-demo-customized-icon .wmstool-tree-iconEle.wmstool-tree-icon__open::after {
   content: "\E699";
 }
-#components-tree-demo-customized-icon .ant-tree-iconEle.ant-tree-icon__close::after {
+#components-tree-demo-customized-icon .wmstool-tree-iconEle.wmstool-tree-icon__close::after {
   content: "\E662";
 }
-#components-tree-demo-customized-icon .ant-tree-switcher {
+#components-tree-demo-customized-icon .wmstool-tree-switcher {
   position: relative;
   z-index: 1;
   background: transparent;
 }
-#components-tree-demo-customized-icon .ant-tree-switcher::after {
+#components-tree-demo-customized-icon .wmstool-tree-switcher::after {
   opacity: 0;
 }
 ```

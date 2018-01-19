@@ -99,9 +99,9 @@ export default class TransferList extends React.Component<TransferListProps, any
       return;
     }
     // Manually trigger scroll event for lazy search bug
-    // https://github.com/ant-design/ant-design/issues/5631
+    // https://github.com/wmstool-design/wmstool-design/issues/5631
     this.triggerScrollTimer = window.setTimeout(() => {
-      const listNode = ReactDOM.findDOMNode(this).querySelectorAll('.ant-transfer-list-content')[0];
+      const listNode = ReactDOM.findDOMNode(this).querySelectorAll('.wmstool-transfer-list-content')[0];
       if (listNode) {
         triggerEvent(listNode, 'scroll');
       }

@@ -2,64 +2,64 @@
 
 exports[`renders ./components/timeline/demo/basic.md correctly 1`] = `
 <ul
-  class="ant-timeline"
+  class="wmstool-timeline"
 >
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Create a services site 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Solve initial network problems 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Technical testing 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item ant-timeline-item-last"
+    class="wmstool-timeline-item wmstool-timeline-item-last"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Network problems being solved 2015-09-01
     </div>
@@ -69,49 +69,49 @@ exports[`renders ./components/timeline/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/timeline/demo/color.md correctly 1`] = `
 <ul
-  class="ant-timeline"
+  class="wmstool-timeline"
 >
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-green"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-green"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Create a services site 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-green"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-green"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Create a services site 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-red"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-red"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       <p>
         Solve initial network problems 1
@@ -125,16 +125,16 @@ exports[`renders ./components/timeline/demo/color.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-timeline-item ant-timeline-item-last"
+    class="wmstool-timeline-item wmstool-timeline-item-last"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       <p>
         Technical testing 1
@@ -152,46 +152,46 @@ exports[`renders ./components/timeline/demo/color.md correctly 1`] = `
 
 exports[`renders ./components/timeline/demo/custom.md correctly 1`] = `
 <ul
-  class="ant-timeline"
+  class="wmstool-timeline"
 >
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Create a services site 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Solve initial network problems 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-custom ant-timeline-item-head-red"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-custom wmstool-timeline-item-head-red"
     >
       <i
         class="anticon anticon-clock-circle-o"
@@ -199,22 +199,22 @@ exports[`renders ./components/timeline/demo/custom.md correctly 1`] = `
       />
     </div>
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Technical testing 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item ant-timeline-item-last"
+    class="wmstool-timeline-item wmstool-timeline-item-last"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Network problems being solved 2015-09-01
     </div>
@@ -224,64 +224,64 @@ exports[`renders ./components/timeline/demo/custom.md correctly 1`] = `
 
 exports[`renders ./components/timeline/demo/pending.md correctly 1`] = `
 <ul
-  class="ant-timeline ant-timeline-pending"
+  class="wmstool-timeline wmstool-timeline-pending"
 >
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Create a services site 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item"
+    class="wmstool-timeline-item"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Solve initial network problems 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item ant-timeline-item-last"
+    class="wmstool-timeline-item wmstool-timeline-item-last"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       Technical testing 2015-09-01
     </div>
   </li>
   <li
-    class="ant-timeline-item ant-timeline-item-pending"
+    class="wmstool-timeline-item wmstool-timeline-item-pending"
   >
     <div
-      class="ant-timeline-item-tail"
+      class="wmstool-timeline-item-tail"
     />
     <div
-      class="ant-timeline-item-head ant-timeline-item-head-blue"
+      class="wmstool-timeline-item-head wmstool-timeline-item-head-blue"
     />
     <div
-      class="ant-timeline-item-content"
+      class="wmstool-timeline-item-content"
     >
       <a
         href="#"

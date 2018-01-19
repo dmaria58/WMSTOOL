@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import DocumentTitle from 'react-document-title';
-import { Icon } from 'antd';
+import { Icon } from 'wmstool';
 import Banner from './Banner';
 // To store style which is only for Home and has conflicts with others.
 function getStyle() {
@@ -15,8 +15,8 @@ function getStyle() {
       position: absolute;
     }
     #header,
-    #header .ant-select-selection,
-    #header .ant-menu {
+    #header .wmstool-select-selection,
+    #header .wmstool-menu {
       background: transparent;
     }
   `;

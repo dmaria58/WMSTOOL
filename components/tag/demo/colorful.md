@@ -45,7 +45,7 @@ ReactDOM.render(
 ````
 
 ````css
-.ant-tag {
+.wmstool-tag {
   margin-bottom: 8px;
 }
 ````

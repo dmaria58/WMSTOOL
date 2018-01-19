@@ -113,7 +113,7 @@ export interface ArgsProps {
   readonly type?: IconType;
 }
 function notice(args: ArgsProps) {
-  const outerPrefixCls = args.prefixCls || 'ant-notification';
+  const outerPrefixCls = args.prefixCls || 'wmstool-notification';
   const prefixCls = `${outerPrefixCls}-notice`;
   const duration = args.duration === undefined ? defaultDuration : args.duration;
 

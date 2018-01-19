@@ -18,8 +18,8 @@ if (typeof window !== 'undefined') {
 }
 // Use require over import (will be lifted up)
 // make sure matchMedia polyfill run before require('react-slick')
-// Fix https://github.com/ant-design/ant-design/issues/6560
-// Fix https://github.com/ant-design/ant-design/issues/3308
+// Fix https://github.com/wmstool-design/wmstool-design/issues/6560
+// Fix https://github.com/wmstool-design/wmstool-design/issues/3308
 const SlickCarousel = require('react-slick').default;
 
 export type CarouselEffect = 'scrollx' | 'fade';
@@ -70,7 +70,7 @@ export default class Carousel extends React.Component<CarouselProps, {}> {
   static defaultProps = {
     dots: true,
     arrows: false,
-    prefixCls: 'ant-carousel',
+    prefixCls: 'wmstool-carousel',
     draggable: false,
   };
 
@@ -90,7 +90,7 @@ export default class Carousel extends React.Component<CarouselProps, {}> {
     if (autoplay) {
       window.addEventListener('resize', this.onWindowResized);
     }
-    // https://github.com/ant-design/ant-design/issues/7191
+    // https://github.com/wmstool-design/wmstool-design/issues/7191
     this.innerSlider = this.slick && this.slick.innerSlider;
   }
 
@@ -103,7 +103,7 @@ export default class Carousel extends React.Component<CarouselProps, {}> {
   }
 
   onWindowResized = () => {
-    // Fix https://github.com/ant-design/ant-design/issues/2550
+    // Fix https://github.com/wmstool-design/wmstool-design/issues/2550
     const { autoplay } = this.props;
     if (autoplay && this.slick && this.slick.innerSlider && this.slick.innerSlider.autoPlay) {
       this.slick.innerSlider.autoPlay();

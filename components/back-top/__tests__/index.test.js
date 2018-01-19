@@ -17,7 +17,7 @@ describe('BackTop', () => {
     // trigger scroll manually
     wrapper.instance().handleScroll();
     jest.runAllTimers();
-    wrapper.find('.ant-back-top').simulate('click');
+    wrapper.find('.wmstool-back-top').simulate('click');
     jest.runAllTimers();
     expect(Math.round(document.documentElement.scrollTop)).toBe(0);
   });

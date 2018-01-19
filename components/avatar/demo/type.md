@@ -29,7 +29,7 @@ ReactDOM.render(
 ````
 
 <style>
-#components-avatar-demo-type .ant-avatar {
+#components-avatar-demo-type .wmstool-avatar {
   margin-top: 16px;
   margin-right: 16px;
 }

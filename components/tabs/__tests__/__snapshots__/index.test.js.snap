@@ -3,16 +3,16 @@
 exports[`Tabs tabPosition remove card 1`] = `
 <Tabs
   hideAdd={false}
-  prefixCls="ant-tabs"
+  prefixCls="wmstool-tabs"
   tabBarExtraContent="xxx"
   tabPosition="left"
 >
   <Tabs
-    className="ant-tabs-vertical ant-tabs-line"
+    className="wmstool-tabs-vertical wmstool-tabs-line"
     destroyInactiveTabPane={false}
     hideAdd={false}
     onChange={[Function]}
-    prefixCls="ant-tabs"
+    prefixCls="wmstool-tabs"
     renderTabBar={[Function]}
     renderTabContent={[Function]}
     style={Object {}}
@@ -21,14 +21,14 @@ exports[`Tabs tabPosition remove card 1`] = `
     tabPosition="left"
   >
     <div
-      className="ant-tabs ant-tabs-left ant-tabs-vertical ant-tabs-line"
+      className="wmstool-tabs wmstool-tabs-left wmstool-tabs-vertical wmstool-tabs-line"
       style={Object {}}
     >
       <ScrollableInkTabBar
         activeKey="1"
         extraContent={
           <div
-            className="ant-tabs-extra-content"
+            className="wmstool-tabs-extra-content"
           >
             xxx
           </div>
@@ -47,57 +47,57 @@ exports[`Tabs tabPosition remove card 1`] = `
             foo
           </TabPane>
         }
-        prefixCls="ant-tabs"
+        prefixCls="wmstool-tabs"
         scrollAnimated={true}
         styles={Object {}}
         tabBarPosition="left"
       >
         <div
-          className="ant-tabs-bar"
+          className="wmstool-tabs-bar"
           onKeyDown={[Function]}
           role="tablist"
           tabIndex="0"
         >
           <div
-            className="ant-tabs-nav-container"
+            className="wmstool-tabs-nav-container"
             key="content"
           >
             <span
-              className="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+              className="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
               onClick={null}
               onTransitionEnd={[Function]}
               unselectable="unselectable"
             >
               <span
-                className="ant-tabs-tab-prev-icon"
+                className="wmstool-tabs-tab-prev-icon"
               />
             </span>
             <span
-              className="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+              className="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
               onClick={null}
               unselectable="unselectable"
             >
               <span
-                className="ant-tabs-tab-next-icon"
+                className="wmstool-tabs-tab-next-icon"
               />
             </span>
             <div
-              className="ant-tabs-nav-wrap"
+              className="wmstool-tabs-nav-wrap"
             >
               <div
-                className="ant-tabs-nav-scroll"
+                className="wmstool-tabs-nav-scroll"
               >
                 <div
-                  className="ant-tabs-nav ant-tabs-nav-animated"
+                  className="wmstool-tabs-nav wmstool-tabs-nav-animated"
                 >
                   <div
-                    className="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                    className="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
                     key="inkBar"
                   />
                   <div
                     aria-disabled="false"
                     aria-selected="true"
-                    className="ant-tabs-tab-active ant-tabs-tab"
+                    className="wmstool-tabs-tab-active wmstool-tabs-tab"
                     key="1"
                     onClick={[Function]}
                     role="tab"
@@ -109,7 +109,7 @@ exports[`Tabs tabPosition remove card 1`] = `
             </div>
           </div>
           <div
-            className="ant-tabs-extra-content"
+            className="wmstool-tabs-extra-content"
             key="extra"
             style={Object {}}
           >
@@ -124,11 +124,11 @@ exports[`Tabs tabPosition remove card 1`] = `
         destroyInactiveTabPane={false}
         key="tabContent"
         onChange={[Function]}
-        prefixCls="ant-tabs"
+        prefixCls="wmstool-tabs"
         tabBarPosition="left"
       >
         <div
-          className="ant-tabs-content ant-tabs-content-animated"
+          className="wmstool-tabs-content wmstool-tabs-content-animated"
           style={
             Object {
               "marginTop": "0%",
@@ -140,12 +140,12 @@ exports[`Tabs tabPosition remove card 1`] = `
             destroyInactiveTabPane={false}
             key="1"
             placeholder={null}
-            rootPrefixCls="ant-tabs"
+            rootPrefixCls="wmstool-tabs"
             tab="foo"
           >
             <div
               aria-hidden="false"
-              className="ant-tabs-tabpane ant-tabs-tabpane-active"
+              className="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
               role="tabpanel"
             >
               foo

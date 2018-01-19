@@ -3,81 +3,81 @@
 exports[`renders ./components/date-picker/demo/basic.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select month"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <span>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select week"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -87,48 +87,48 @@ exports[`renders ./components/date-picker/demo/basic.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/date-render.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -138,48 +138,48 @@ exports[`renders ./components/date-picker/demo/date-render.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/disabled.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input ant-input-disabled"
+        class="wmstool-calendar-picker-input wmstool-input wmstool-input-disabled"
         disabled=""
         placeholder="Select date"
         readonly=""
         value="2015-06-06"
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input ant-input-disabled"
+        class="wmstool-calendar-picker-input wmstool-input wmstool-input-disabled"
         disabled=""
         placeholder="Select date"
         readonly=""
         value="2015-06"
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="-1"
   >
     <span
-      class="ant-calendar-picker-input ant-input ant-input-disabled"
+      class="wmstool-calendar-picker-input wmstool-input wmstool-input-disabled"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         disabled=""
         placeholder="Start date"
         readonly=""
@@ -187,12 +187,12 @@ exports[`renders ./components/date-picker/demo/disabled.md correctly 1`] = `
         value="2015-06-06"
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         disabled=""
         placeholder="End date"
         readonly=""
@@ -200,7 +200,7 @@ exports[`renders ./components/date-picker/demo/disabled.md correctly 1`] = `
         value="2015-06-06"
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -210,66 +210,66 @@ exports[`renders ./components/date-picker/demo/disabled.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/disabled-date.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select month"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     style="width:350px"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -279,110 +279,110 @@ exports[`renders ./components/date-picker/demo/disabled-date.md correctly 1`] = 
 exports[`renders ./components/date-picker/demo/extra-footer.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     style="width:350px"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select month"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
@@ -392,74 +392,74 @@ exports[`renders ./components/date-picker/demo/extra-footer.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/format.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value="2015/01/01"
       />
       <i
-        class="anticon anticon-cross-circle ant-calendar-picker-clear"
+        class="anticon anticon-cross-circle wmstool-calendar-picker-clear"
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value="2015/01"
       />
       <i
-        class="anticon anticon-cross-circle ant-calendar-picker-clear"
+        class="anticon anticon-cross-circle wmstool-calendar-picker-clear"
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value="2015/01/01"
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value="2015/01/01"
       />
       <i
-        class="anticon anticon-cross-circle ant-calendar-picker-clear"
+        class="anticon anticon-cross-circle wmstool-calendar-picker-clear"
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -469,49 +469,49 @@ exports[`renders ./components/date-picker/demo/format.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/mode.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start month"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End month"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -521,66 +521,66 @@ exports[`renders ./components/date-picker/demo/mode.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/presetted-ranges.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     style="width:350px"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -590,20 +590,20 @@ exports[`renders ./components/date-picker/demo/presetted-ranges.md correctly 1`]
 exports[`renders ./components/date-picker/demo/size.md correctly 1`] = `
 <div>
   <div
-    class="ant-radio-group"
+    class="wmstool-radio-group"
   >
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -611,18 +611,18 @@ exports[`renders ./components/date-picker/demo/size.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+      class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
     >
       <span
-        class="ant-radio-button ant-radio-button-checked"
+        class="wmstool-radio-button wmstool-radio-button-checked"
       >
         <input
           checked=""
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -630,17 +630,17 @@ exports[`renders ./components/date-picker/demo/size.md correctly 1`] = `
       </span>
     </label>
     <label
-      class="ant-radio-button-wrapper"
+      class="wmstool-radio-button-wrapper"
     >
       <span
-        class="ant-radio-button"
+        class="wmstool-radio-button"
       >
         <input
-          class="ant-radio-button-input"
+          class="wmstool-radio-button-input"
           type="radio"
         />
         <span
-          class="ant-radio-button-inner"
+          class="wmstool-radio-button-inner"
         />
       </span>
       <span>
@@ -651,81 +651,81 @@ exports[`renders ./components/date-picker/demo/size.md correctly 1`] = `
   <br />
   <br />
   <span
-    class="ant-calendar-picker ant-calendar-picker-default"
+    class="wmstool-calendar-picker wmstool-calendar-picker-default"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select date"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker ant-calendar-picker-default"
+    class="wmstool-calendar-picker wmstool-calendar-picker-default"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select Month"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker ant-calendar-picker-default"
+    class="wmstool-calendar-picker wmstool-calendar-picker-default"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End date"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
   <br />
   <span
-    class="ant-calendar-picker ant-calendar-picker-default"
+    class="wmstool-calendar-picker wmstool-calendar-picker-default"
   >
     <span>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select Week"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>
@@ -735,32 +735,32 @@ exports[`renders ./components/date-picker/demo/size.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/start-end.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Start"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="End"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
@@ -770,50 +770,50 @@ exports[`renders ./components/date-picker/demo/start-end.md correctly 1`] = `
 exports[`renders ./components/date-picker/demo/time.md correctly 1`] = `
 <div>
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
   >
     <div>
       <input
-        class="ant-calendar-picker-input ant-input"
+        class="wmstool-calendar-picker-input wmstool-input"
         placeholder="Select Time"
         readonly=""
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </div>
   </span>
   <br />
   <span
-    class="ant-calendar-picker"
+    class="wmstool-calendar-picker"
     style="width:350px"
     tabindex="0"
   >
     <span
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
     >
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="Start Time"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-range-picker-separator"
+        class="wmstool-calendar-range-picker-separator"
       >
          ~ 
       </span>
       <input
-        class="ant-calendar-range-picker-input"
+        class="wmstool-calendar-range-picker-input"
         placeholder="End Time"
         readonly=""
         tabindex="-1"
         value=""
       />
       <span
-        class="ant-calendar-picker-icon"
+        class="wmstool-calendar-picker-icon"
       />
     </span>
   </span>

@@ -14,7 +14,7 @@ export default class Upload extends React.Component<UploadProps, UploadState> {
   static Dragger: typeof Dragger;
 
   static defaultProps = {
-    prefixCls: 'ant-upload',
+    prefixCls: 'wmstool-upload',
     type: 'select',
     multiple: false,
     action: '',

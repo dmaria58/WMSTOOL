@@ -28,7 +28,7 @@ ReactDOM.render(
 
 ````css
 /* For demo */
-.ant-carousel .slick-slide {
+.wmstool-carousel .slick-slide {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -36,7 +36,7 @@ ReactDOM.render(
   overflow: hidden;
 }
 
-.ant-carousel .slick-slide h3 {
+.wmstool-carousel .slick-slide h3 {
   color: #fff;
 }
 ````

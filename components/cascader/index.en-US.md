@@ -60,7 +60,7 @@ Fields in `showSearch`:
 | blur() | remove focus |
 
 <style>
-.ant-cascader-picker {
+.wmstool-cascader-picker {
   width: 300px;
 }
 </style>

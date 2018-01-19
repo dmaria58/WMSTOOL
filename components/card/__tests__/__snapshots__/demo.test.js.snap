@@ -2,22 +2,22 @@
 
 exports[`renders ./components/card/demo/basic.md correctly 1`] = `
 <div
-  class="ant-card ant-card-bordered"
+  class="wmstool-card wmstool-card-bordered"
   style="width:300px"
 >
   <div
-    class="ant-card-head"
+    class="wmstool-card-head"
   >
     <div
-      class="ant-card-head-wrapper"
+      class="wmstool-card-head-wrapper"
     >
       <div
-        class="ant-card-head-title"
+        class="wmstool-card-head-title"
       >
         Card title
       </div>
       <div
-        class="ant-card-extra"
+        class="wmstool-card-extra"
       >
         <a
           href="#"
@@ -28,7 +28,7 @@ exports[`renders ./components/card/demo/basic.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div>
       <p>
@@ -50,24 +50,24 @@ exports[`renders ./components/card/demo/border-less.md correctly 1`] = `
   style="background:#ECECEC;padding:30px"
 >
   <div
-    class="ant-card"
+    class="wmstool-card"
     style="width:300px"
   >
     <div
-      class="ant-card-head"
+      class="wmstool-card-head"
     >
       <div
-        class="ant-card-head-wrapper"
+        class="wmstool-card-head-wrapper"
       >
         <div
-          class="ant-card-head-title"
+          class="wmstool-card-head-title"
         >
           Card title
         </div>
       </div>
     </div>
     <div
-      class="ant-card-body"
+      class="wmstool-card-body"
     >
       <div>
         <p>
@@ -87,11 +87,11 @@ exports[`renders ./components/card/demo/border-less.md correctly 1`] = `
 
 exports[`renders ./components/card/demo/flexible-content.md correctly 1`] = `
 <div
-  class="ant-card ant-card-bordered ant-card-hoverable"
+  class="wmstool-card wmstool-card-bordered wmstool-card-hoverable"
   style="width:240px"
 >
   <div
-    class="ant-card-cover"
+    class="wmstool-card-cover"
   >
     <img
       alt="example"
@@ -99,22 +99,22 @@ exports[`renders ./components/card/demo/flexible-content.md correctly 1`] = `
     />
   </div>
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div>
       <div
-        class="ant-card-meta"
+        class="wmstool-card-meta"
       >
         <div
-          class="ant-card-meta-detail"
+          class="wmstool-card-meta-detail"
         >
           <div
-            class="ant-card-meta-title"
+            class="wmstool-card-meta-title"
           >
             Europe Street beat
           </div>
           <div
-            class="ant-card-meta-description"
+            class="wmstool-card-meta-description"
           >
             www.instagram.com
           </div>
@@ -127,63 +127,63 @@ exports[`renders ./components/card/demo/flexible-content.md correctly 1`] = `
 
 exports[`renders ./components/card/demo/grid-card.md correctly 1`] = `
 <div
-  class="ant-card ant-card-bordered ant-card-contain-grid"
+  class="wmstool-card wmstool-card-bordered wmstool-card-contain-grid"
 >
   <div
-    class="ant-card-head"
+    class="wmstool-card-head"
   >
     <div
-      class="ant-card-head-wrapper"
+      class="wmstool-card-head-wrapper"
     >
       <div
-        class="ant-card-head-title"
+        class="wmstool-card-head-title"
       >
         Card Title
       </div>
     </div>
   </div>
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
       </div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
       </div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
       </div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
       </div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
       </div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
       </div>
       <div
-        class="ant-card-grid"
+        class="wmstool-card-grid"
         style="width:25%;text-align:center"
       >
         Content
@@ -198,31 +198,31 @@ exports[`renders ./components/card/demo/in-column.md correctly 1`] = `
   style="background:#ECECEC;padding:30px"
 >
   <div
-    class="ant-row"
+    class="wmstool-row"
     style="margin-left:-8px;margin-right:-8px"
   >
     <div
-      class="ant-col-8"
+      class="wmstool-col-8"
       style="padding-left:8px;padding-right:8px"
     >
       <div
-        class="ant-card"
+        class="wmstool-card"
       >
         <div
-          class="ant-card-head"
+          class="wmstool-card-head"
         >
           <div
-            class="ant-card-head-wrapper"
+            class="wmstool-card-head-wrapper"
           >
             <div
-              class="ant-card-head-title"
+              class="wmstool-card-head-title"
             >
               Card title
             </div>
           </div>
         </div>
         <div
-          class="ant-card-body"
+          class="wmstool-card-body"
         >
           <div>
             Card content
@@ -231,27 +231,27 @@ exports[`renders ./components/card/demo/in-column.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-col-8"
+      class="wmstool-col-8"
       style="padding-left:8px;padding-right:8px"
     >
       <div
-        class="ant-card"
+        class="wmstool-card"
       >
         <div
-          class="ant-card-head"
+          class="wmstool-card-head"
         >
           <div
-            class="ant-card-head-wrapper"
+            class="wmstool-card-head-wrapper"
           >
             <div
-              class="ant-card-head-title"
+              class="wmstool-card-head-title"
             >
               Card title
             </div>
           </div>
         </div>
         <div
-          class="ant-card-body"
+          class="wmstool-card-body"
         >
           <div>
             Card content
@@ -260,27 +260,27 @@ exports[`renders ./components/card/demo/in-column.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-col-8"
+      class="wmstool-col-8"
       style="padding-left:8px;padding-right:8px"
     >
       <div
-        class="ant-card"
+        class="wmstool-card"
       >
         <div
-          class="ant-card-head"
+          class="wmstool-card-head"
         >
           <div
-            class="ant-card-head-wrapper"
+            class="wmstool-card-head-wrapper"
           >
             <div
-              class="ant-card-head-title"
+              class="wmstool-card-head-title"
             >
               Card title
             </div>
           </div>
         </div>
         <div
-          class="ant-card-body"
+          class="wmstool-card-body"
         >
           <div>
             Card content
@@ -294,23 +294,23 @@ exports[`renders ./components/card/demo/in-column.md correctly 1`] = `
 
 exports[`renders ./components/card/demo/inner.md correctly 1`] = `
 <div
-  class="ant-card ant-card-bordered"
+  class="wmstool-card wmstool-card-bordered"
 >
   <div
-    class="ant-card-head"
+    class="wmstool-card-head"
   >
     <div
-      class="ant-card-head-wrapper"
+      class="wmstool-card-head-wrapper"
     >
       <div
-        class="ant-card-head-title"
+        class="wmstool-card-head-title"
       >
         Card title
       </div>
     </div>
   </div>
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div>
       <p
@@ -319,21 +319,21 @@ exports[`renders ./components/card/demo/inner.md correctly 1`] = `
         Group title
       </p>
       <div
-        class="ant-card ant-card-bordered ant-card-type-inner"
+        class="wmstool-card wmstool-card-bordered wmstool-card-type-inner"
       >
         <div
-          class="ant-card-head"
+          class="wmstool-card-head"
         >
           <div
-            class="ant-card-head-wrapper"
+            class="wmstool-card-head-wrapper"
           >
             <div
-              class="ant-card-head-title"
+              class="wmstool-card-head-title"
             >
               Inner Card title
             </div>
             <div
-              class="ant-card-extra"
+              class="wmstool-card-extra"
             >
               <a
                 href="#"
@@ -344,7 +344,7 @@ exports[`renders ./components/card/demo/inner.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-card-body"
+          class="wmstool-card-body"
         >
           <div>
             Inner Card content
@@ -352,22 +352,22 @@ exports[`renders ./components/card/demo/inner.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-card ant-card-bordered ant-card-type-inner"
+        class="wmstool-card wmstool-card-bordered wmstool-card-type-inner"
         style="margin-top:16px"
       >
         <div
-          class="ant-card-head"
+          class="wmstool-card-head"
         >
           <div
-            class="ant-card-head-wrapper"
+            class="wmstool-card-head-wrapper"
           >
             <div
-              class="ant-card-head-title"
+              class="wmstool-card-head-title"
             >
               Inner Card title
             </div>
             <div
-              class="ant-card-extra"
+              class="wmstool-card-extra"
             >
               <a
                 href="#"
@@ -378,7 +378,7 @@ exports[`renders ./components/card/demo/inner.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-card-body"
+          class="wmstool-card-body"
         >
           <div>
             Inner Card content
@@ -392,73 +392,73 @@ exports[`renders ./components/card/demo/inner.md correctly 1`] = `
 
 exports[`renders ./components/card/demo/loading.md correctly 1`] = `
 <div
-  class="ant-card ant-card-loading ant-card-bordered"
+  class="wmstool-card wmstool-card-loading wmstool-card-bordered"
   style="width:34%"
 >
   <div
-    class="ant-card-head"
+    class="wmstool-card-head"
   >
     <div
-      class="ant-card-head-wrapper"
+      class="wmstool-card-head-wrapper"
     >
       <div
-        class="ant-card-head-title"
+        class="wmstool-card-head-title"
       >
         Card title
       </div>
     </div>
   </div>
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div
-      class="ant-card-loading-content"
+      class="wmstool-card-loading-content"
     >
       <p
-        class="ant-card-loading-block"
+        class="wmstool-card-loading-block"
         style="width:94%"
       />
       <p>
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:28%"
         />
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:62%"
         />
       </p>
       <p>
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:22%"
         />
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:66%"
         />
       </p>
       <p>
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:56%"
         />
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:39%"
         />
       </p>
       <p>
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:21%"
         />
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:15%"
         />
         <span
-          class="ant-card-loading-block"
+          class="wmstool-card-loading-block"
           style="width:40%"
         />
       </p>
@@ -469,11 +469,11 @@ exports[`renders ./components/card/demo/loading.md correctly 1`] = `
 
 exports[`renders ./components/card/demo/meta.md correctly 1`] = `
 <div
-  class="ant-card ant-card-bordered"
+  class="wmstool-card wmstool-card-bordered"
   style="width:300px"
 >
   <div
-    class="ant-card-cover"
+    class="wmstool-card-cover"
   >
     <img
       alt="example"
@@ -481,17 +481,17 @@ exports[`renders ./components/card/demo/meta.md correctly 1`] = `
     />
   </div>
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div>
       <div
-        class="ant-card-meta"
+        class="wmstool-card-meta"
       >
         <div
-          class="ant-card-meta-avatar"
+          class="wmstool-card-meta-avatar"
         >
           <span
-            class="ant-avatar ant-avatar-circle ant-avatar-image"
+            class="wmstool-avatar wmstool-avatar-circle wmstool-avatar-image"
           >
             <img
               src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -499,15 +499,15 @@ exports[`renders ./components/card/demo/meta.md correctly 1`] = `
           </span>
         </div>
         <div
-          class="ant-card-meta-detail"
+          class="wmstool-card-meta-detail"
         >
           <div
-            class="ant-card-meta-title"
+            class="wmstool-card-meta-title"
           >
             Card title
           </div>
           <div
-            class="ant-card-meta-description"
+            class="wmstool-card-meta-description"
           >
             This is the description
           </div>
@@ -516,7 +516,7 @@ exports[`renders ./components/card/demo/meta.md correctly 1`] = `
     </div>
   </div>
   <ul
-    class="ant-card-actions"
+    class="wmstool-card-actions"
   >
     <li
       style="width:33.333333333333336%"
@@ -551,11 +551,11 @@ exports[`renders ./components/card/demo/meta.md correctly 1`] = `
 
 exports[`renders ./components/card/demo/simple.md correctly 1`] = `
 <div
-  class="ant-card ant-card-bordered"
+  class="wmstool-card wmstool-card-bordered"
   style="width:300px"
 >
   <div
-    class="ant-card-body"
+    class="wmstool-card-body"
   >
     <div>
       <p>
@@ -575,22 +575,22 @@ exports[`renders ./components/card/demo/simple.md correctly 1`] = `
 exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
 <div>
   <div
-    class="ant-card ant-card-bordered ant-card-contain-tabs"
+    class="wmstool-card wmstool-card-bordered wmstool-card-contain-tabs"
     style="width:100%"
   >
     <div
-      class="ant-card-head"
+      class="wmstool-card-head"
     >
       <div
-        class="ant-card-head-wrapper"
+        class="wmstool-card-head-wrapper"
       >
         <div
-          class="ant-card-head-title"
+          class="wmstool-card-head-title"
         >
           Card title
         </div>
         <div
-          class="ant-card-extra"
+          class="wmstool-card-extra"
         >
           <a
             href="#"
@@ -600,48 +600,48 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-tabs ant-tabs-top ant-card-head-tabs ant-tabs-large ant-tabs-line"
+        class="wmstool-tabs wmstool-tabs-top wmstool-card-head-tabs wmstool-tabs-large wmstool-tabs-line"
       >
         <div
-          class="ant-tabs-bar"
+          class="wmstool-tabs-bar"
           role="tablist"
           tabindex="0"
         >
           <div
-            class="ant-tabs-nav-container"
+            class="wmstool-tabs-nav-container"
           >
             <span
-              class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+              class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
               unselectable="unselectable"
             >
               <span
-                class="ant-tabs-tab-prev-icon"
+                class="wmstool-tabs-tab-prev-icon"
               />
             </span>
             <span
-              class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+              class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
               unselectable="unselectable"
             >
               <span
-                class="ant-tabs-tab-next-icon"
+                class="wmstool-tabs-tab-next-icon"
               />
             </span>
             <div
-              class="ant-tabs-nav-wrap"
+              class="wmstool-tabs-nav-wrap"
             >
               <div
-                class="ant-tabs-nav-scroll"
+                class="wmstool-tabs-nav-scroll"
               >
                 <div
-                  class="ant-tabs-nav ant-tabs-nav-animated"
+                  class="wmstool-tabs-nav wmstool-tabs-nav-animated"
                 >
                   <div
-                    class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                    class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
                   />
                   <div
                     aria-disabled="false"
                     aria-selected="true"
-                    class="ant-tabs-tab-active ant-tabs-tab"
+                    class="wmstool-tabs-tab-active wmstool-tabs-tab"
                     role="tab"
                   >
                     tab1
@@ -649,7 +649,7 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
                   <div
                     aria-disabled="false"
                     aria-selected="false"
-                    class=" ant-tabs-tab"
+                    class=" wmstool-tabs-tab"
                     role="tab"
                   >
                     tab2
@@ -660,24 +660,24 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-tabs-content ant-tabs-content-animated"
+          class="wmstool-tabs-content wmstool-tabs-content-animated"
           style="margin-left:0%"
         >
           <div
             aria-hidden="false"
-            class="ant-tabs-tabpane ant-tabs-tabpane-active"
+            class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
             role="tabpanel"
           />
           <div
             aria-hidden="true"
-            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+            class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
             role="tabpanel"
           />
         </div>
       </div>
     </div>
     <div
-      class="ant-card-body"
+      class="wmstool-card-body"
     >
       <div>
         <p>
@@ -689,58 +689,58 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
   <br />
   <br />
   <div
-    class="ant-card ant-card-bordered ant-card-contain-tabs"
+    class="wmstool-card wmstool-card-bordered wmstool-card-contain-tabs"
     style="width:100%"
   >
     <div
-      class="ant-card-head"
+      class="wmstool-card-head"
     >
       <div
-        class="ant-card-head-wrapper"
+        class="wmstool-card-head-wrapper"
       />
       <div
-        class="ant-tabs ant-tabs-top ant-card-head-tabs ant-tabs-large ant-tabs-line"
+        class="wmstool-tabs wmstool-tabs-top wmstool-card-head-tabs wmstool-tabs-large wmstool-tabs-line"
       >
         <div
-          class="ant-tabs-bar"
+          class="wmstool-tabs-bar"
           role="tablist"
           tabindex="0"
         >
           <div
-            class="ant-tabs-nav-container"
+            class="wmstool-tabs-nav-container"
           >
             <span
-              class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+              class="wmstool-tabs-tab-prev wmstool-tabs-tab-btn-disabled"
               unselectable="unselectable"
             >
               <span
-                class="ant-tabs-tab-prev-icon"
+                class="wmstool-tabs-tab-prev-icon"
               />
             </span>
             <span
-              class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+              class="wmstool-tabs-tab-next wmstool-tabs-tab-btn-disabled"
               unselectable="unselectable"
             >
               <span
-                class="ant-tabs-tab-next-icon"
+                class="wmstool-tabs-tab-next-icon"
               />
             </span>
             <div
-              class="ant-tabs-nav-wrap"
+              class="wmstool-tabs-nav-wrap"
             >
               <div
-                class="ant-tabs-nav-scroll"
+                class="wmstool-tabs-nav-scroll"
               >
                 <div
-                  class="ant-tabs-nav ant-tabs-nav-animated"
+                  class="wmstool-tabs-nav wmstool-tabs-nav-animated"
                 >
                   <div
-                    class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                    class="wmstool-tabs-ink-bar wmstool-tabs-ink-bar-animated"
                   />
                   <div
                     aria-disabled="false"
                     aria-selected="true"
-                    class="ant-tabs-tab-active ant-tabs-tab"
+                    class="wmstool-tabs-tab-active wmstool-tabs-tab"
                     role="tab"
                   >
                     article
@@ -748,7 +748,7 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
                   <div
                     aria-disabled="false"
                     aria-selected="false"
-                    class=" ant-tabs-tab"
+                    class=" wmstool-tabs-tab"
                     role="tab"
                   >
                     app
@@ -756,7 +756,7 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
                   <div
                     aria-disabled="false"
                     aria-selected="false"
-                    class=" ant-tabs-tab"
+                    class=" wmstool-tabs-tab"
                     role="tab"
                   >
                     project
@@ -767,29 +767,29 @@ exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-tabs-content ant-tabs-content-animated"
+          class="wmstool-tabs-content wmstool-tabs-content-animated"
           style="margin-left:0%"
         >
           <div
             aria-hidden="false"
-            class="ant-tabs-tabpane ant-tabs-tabpane-active"
+            class="wmstool-tabs-tabpane wmstool-tabs-tabpane-active"
             role="tabpanel"
           />
           <div
             aria-hidden="true"
-            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+            class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
             role="tabpanel"
           />
           <div
             aria-hidden="true"
-            class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+            class="wmstool-tabs-tabpane wmstool-tabs-tabpane-inactive"
             role="tabpanel"
           />
         </div>
       </div>
     </div>
     <div
-      class="ant-card-body"
+      class="wmstool-card-body"
     >
       <div>
         <p>

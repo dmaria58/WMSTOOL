@@ -2,22 +2,22 @@
 
 exports[`renders ./components/auto-complete/demo/basic.md correctly 1`] = `
 <div
-  class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+  class="wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
   style="width:200px"
 >
   <div
     aria-autocomplete="list"
     aria-expanded="false"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--single"
+    class="wmstool-select-selection
+            wmstool-select-selection--single"
     role="combobox"
   >
     <div
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <div
-        class="ant-select-selection__placeholder"
+        class="wmstool-select-selection__placeholder"
         style="display:block;user-select:none;-webkit-user-select:none"
         unselectable="unselectable"
       >
@@ -25,18 +25,18 @@ exports[`renders ./components/auto-complete/demo/basic.md correctly 1`] = `
       </div>
       <ul>
         <li
-          class="ant-select-search ant-select-search--inline"
+          class="wmstool-select-search wmstool-select-search--inline"
         >
           <div
-            class="ant-select-search__field__wrap"
+            class="wmstool-select-search__field__wrap"
           >
             <input
-              class="ant-input ant-select-search__field"
+              class="wmstool-input wmstool-select-search__field"
               type="text"
               value=""
             />
             <span
-              class="ant-select-search__field__mirror"
+              class="wmstool-select-search__field__mirror"
             >
                
             </span>
@@ -45,7 +45,7 @@ exports[`renders ./components/auto-complete/demo/basic.md correctly 1`] = `
       </ul>
     </div>
     <span
-      class="ant-select-arrow"
+      class="wmstool-select-arrow"
       style="user-select:none;-webkit-user-select:none"
       unselectable="unselectable"
     >
@@ -61,22 +61,22 @@ exports[`renders ./components/auto-complete/demo/certain-category.md correctly 1
   style="width:250px"
 >
   <div
-    class="ant-select-lg ant-select-lg certain-category-search ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+    class="wmstool-select-lg wmstool-select-lg certain-category-search wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
     style="width:100%"
   >
     <div
       aria-autocomplete="list"
       aria-expanded="false"
       aria-haspopup="true"
-      class="ant-select-selection
-            ant-select-selection--single"
+      class="wmstool-select-selection
+            wmstool-select-selection--single"
       role="combobox"
     >
       <div
-        class="ant-select-selection__rendered"
+        class="wmstool-select-selection__rendered"
       >
         <div
-          class="ant-select-selection__placeholder"
+          class="wmstool-select-selection__placeholder"
           style="display:block;user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -84,21 +84,21 @@ exports[`renders ./components/auto-complete/demo/certain-category.md correctly 1
         </div>
         <ul>
           <li
-            class="ant-select-search ant-select-search--inline"
+            class="wmstool-select-search wmstool-select-search--inline"
           >
             <div
-              class="ant-select-search__field__wrap"
+              class="wmstool-select-search__field__wrap"
             >
               <span
-                class="ant-select-search__field ant-input-affix-wrapper"
+                class="wmstool-select-search__field wmstool-input-affix-wrapper"
               >
                 <input
-                  class="ant-input"
+                  class="wmstool-input"
                   type="text"
                   value=""
                 />
                 <span
-                  class="ant-input-suffix"
+                  class="wmstool-input-suffix"
                 >
                   <i
                     class="anticon anticon-search certain-category-icon"
@@ -106,7 +106,7 @@ exports[`renders ./components/auto-complete/demo/certain-category.md correctly 1
                 </span>
               </span>
               <span
-                class="ant-select-search__field__mirror"
+                class="wmstool-select-search__field__mirror"
               >
                  
               </span>
@@ -115,7 +115,7 @@ exports[`renders ./components/auto-complete/demo/certain-category.md correctly 1
         </ul>
       </div>
       <span
-        class="ant-select-arrow"
+        class="wmstool-select-arrow"
         style="user-select:none;-webkit-user-select:none"
         unselectable="unselectable"
       >
@@ -128,34 +128,34 @@ exports[`renders ./components/auto-complete/demo/certain-category.md correctly 1
 
 exports[`renders ./components/auto-complete/demo/custom.md correctly 1`] = `
 <div
-  class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+  class="wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
   style="width:200px"
 >
   <div
     aria-autocomplete="list"
     aria-expanded="false"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--single"
+    class="wmstool-select-selection
+            wmstool-select-selection--single"
     role="combobox"
   >
     <div
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <ul>
         <li
-          class="ant-select-search ant-select-search--inline"
+          class="wmstool-select-search wmstool-select-search--inline"
         >
           <div
-            class="ant-select-search__field__wrap"
+            class="wmstool-select-search__field__wrap"
           >
             <textarea
-              class="ant-input custom ant-select-search__field"
+              class="wmstool-input custom wmstool-select-search__field"
               placeholder="input here"
               style="height:50px"
             />
             <span
-              class="ant-select-search__field__mirror"
+              class="wmstool-select-search__field__mirror"
             >
                
             </span>
@@ -164,7 +164,7 @@ exports[`renders ./components/auto-complete/demo/custom.md correctly 1`] = `
       </ul>
     </div>
     <span
-      class="ant-select-arrow"
+      class="wmstool-select-arrow"
       style="user-select:none;-webkit-user-select:none"
       unselectable="unselectable"
     >
@@ -176,22 +176,22 @@ exports[`renders ./components/auto-complete/demo/custom.md correctly 1`] = `
 
 exports[`renders ./components/auto-complete/demo/non-case-sensitive.md correctly 1`] = `
 <div
-  class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+  class="wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
   style="width:200px"
 >
   <div
     aria-autocomplete="list"
     aria-expanded="false"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--single"
+    class="wmstool-select-selection
+            wmstool-select-selection--single"
     role="combobox"
   >
     <div
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <div
-        class="ant-select-selection__placeholder"
+        class="wmstool-select-selection__placeholder"
         style="display:block;user-select:none;-webkit-user-select:none"
         unselectable="unselectable"
       >
@@ -199,18 +199,18 @@ exports[`renders ./components/auto-complete/demo/non-case-sensitive.md correctly
       </div>
       <ul>
         <li
-          class="ant-select-search ant-select-search--inline"
+          class="wmstool-select-search wmstool-select-search--inline"
         >
           <div
-            class="ant-select-search__field__wrap"
+            class="wmstool-select-search__field__wrap"
           >
             <input
-              class="ant-input ant-select-search__field"
+              class="wmstool-input wmstool-select-search__field"
               type="text"
               value=""
             />
             <span
-              class="ant-select-search__field__mirror"
+              class="wmstool-select-search__field__mirror"
             >
                
             </span>
@@ -219,7 +219,7 @@ exports[`renders ./components/auto-complete/demo/non-case-sensitive.md correctly
       </ul>
     </div>
     <span
-      class="ant-select-arrow"
+      class="wmstool-select-arrow"
       style="user-select:none;-webkit-user-select:none"
       unselectable="unselectable"
     >
@@ -231,22 +231,22 @@ exports[`renders ./components/auto-complete/demo/non-case-sensitive.md correctly
 
 exports[`renders ./components/auto-complete/demo/options.md correctly 1`] = `
 <div
-  class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+  class="wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
   style="width:200px"
 >
   <div
     aria-autocomplete="list"
     aria-expanded="false"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--single"
+    class="wmstool-select-selection
+            wmstool-select-selection--single"
     role="combobox"
   >
     <div
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <div
-        class="ant-select-selection__placeholder"
+        class="wmstool-select-selection__placeholder"
         style="display:block;user-select:none;-webkit-user-select:none"
         unselectable="unselectable"
       >
@@ -254,18 +254,18 @@ exports[`renders ./components/auto-complete/demo/options.md correctly 1`] = `
       </div>
       <ul>
         <li
-          class="ant-select-search ant-select-search--inline"
+          class="wmstool-select-search wmstool-select-search--inline"
         >
           <div
-            class="ant-select-search__field__wrap"
+            class="wmstool-select-search__field__wrap"
           >
             <input
-              class="ant-input ant-select-search__field"
+              class="wmstool-input wmstool-select-search__field"
               type="text"
               value=""
             />
             <span
-              class="ant-select-search__field__mirror"
+              class="wmstool-select-search__field__mirror"
             >
                
             </span>
@@ -274,7 +274,7 @@ exports[`renders ./components/auto-complete/demo/options.md correctly 1`] = `
       </ul>
     </div>
     <span
-      class="ant-select-arrow"
+      class="wmstool-select-arrow"
       style="user-select:none;-webkit-user-select:none"
       unselectable="unselectable"
     >
@@ -290,22 +290,22 @@ exports[`renders ./components/auto-complete/demo/uncertain-category.md correctly
   style="width:300px"
 >
   <div
-    class="ant-select-lg ant-select-lg global-search ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+    class="wmstool-select-lg wmstool-select-lg global-search wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
     style="width:100%"
   >
     <div
       aria-autocomplete="list"
       aria-expanded="false"
       aria-haspopup="true"
-      class="ant-select-selection
-            ant-select-selection--single"
+      class="wmstool-select-selection
+            wmstool-select-selection--single"
       role="combobox"
     >
       <div
-        class="ant-select-selection__rendered"
+        class="wmstool-select-selection__rendered"
       >
         <div
-          class="ant-select-selection__placeholder"
+          class="wmstool-select-selection__placeholder"
           style="display:block;user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -313,24 +313,24 @@ exports[`renders ./components/auto-complete/demo/uncertain-category.md correctly
         </div>
         <ul>
           <li
-            class="ant-select-search ant-select-search--inline"
+            class="wmstool-select-search wmstool-select-search--inline"
           >
             <div
-              class="ant-select-search__field__wrap"
+              class="wmstool-select-search__field__wrap"
             >
               <span
-                class="ant-select-search__field ant-input-affix-wrapper"
+                class="wmstool-select-search__field wmstool-input-affix-wrapper"
               >
                 <input
-                  class="ant-input"
+                  class="wmstool-input"
                   type="text"
                   value=""
                 />
                 <span
-                  class="ant-input-suffix"
+                  class="wmstool-input-suffix"
                 >
                   <button
-                    class="ant-btn search-btn ant-btn-primary ant-btn-lg"
+                    class="wmstool-btn search-btn wmstool-btn-primary wmstool-btn-lg"
                     type="button"
                   >
                     <i
@@ -340,7 +340,7 @@ exports[`renders ./components/auto-complete/demo/uncertain-category.md correctly
                 </span>
               </span>
               <span
-                class="ant-select-search__field__mirror"
+                class="wmstool-select-search__field__mirror"
               >
                  
               </span>
@@ -349,7 +349,7 @@ exports[`renders ./components/auto-complete/demo/uncertain-category.md correctly
         </ul>
       </div>
       <span
-        class="ant-select-arrow"
+        class="wmstool-select-arrow"
         style="user-select:none;-webkit-user-select:none"
         unselectable="unselectable"
       >

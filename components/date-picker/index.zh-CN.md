@@ -44,7 +44,7 @@ subtitle: 日期选择框
 | disabled | 禁用 | boolean | false |
 | disabledDate | 不可选择的日期 | (currentDate: moment) => boolean | 无 |
 | getCalendarContainer | 定义浮层的容器，默认为 body 上新建 div | function(trigger) | 无 |
-| locale | 国际化配置 | object | [默认配置](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) |
+| locale | 国际化配置 | object | [默认配置](https://github.com/wmstool-design/wmstool-design/blob/master/components/date-picker/locale/example.json) |
 | open | 控制弹层是否展开 | boolean | - |
 | placeholder | 输入框提示文字 | string\|RangePicker\[] | - |
 | popupStyle | 格外的弹出日历样式 | object | {} |
@@ -111,7 +111,7 @@ subtitle: 日期选择框
 | onOk | 点击确定按钮的回调 | function() | - |
 
 <style>
-.code-box-demo .ant-calendar-picker {
+.code-box-demo .wmstool-calendar-picker {
   margin: 0 8px 12px 0;
 }
 </style>

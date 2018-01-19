@@ -2,22 +2,22 @@
 
 exports[`Table renders empty table 1`] = `
 <div
-  class="ant-table-wrapper"
+  class="wmstool-table-wrapper"
 >
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-table ant-table-large ant-table-empty ant-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
       >
         <div
-          class="ant-table-content"
+          class="wmstool-table-content"
         >
           <div
-            class="ant-table-body"
+            class="wmstool-table-body"
           >
             <table
               class=""
@@ -33,7 +33,7 @@ exports[`Table renders empty table 1`] = `
                 <col />
               </colgroup>
               <thead
-                class="ant-table-thead"
+                class="wmstool-table-thead"
               >
                 <tr>
                   <th
@@ -95,12 +95,12 @@ exports[`Table renders empty table 1`] = `
                 </tr>
               </thead>
               <tbody
-                class="ant-table-tbody"
+                class="wmstool-table-tbody"
               />
             </table>
           </div>
           <div
-            class="ant-table-placeholder"
+            class="wmstool-table-placeholder"
           >
             No data
           </div>
@@ -113,22 +113,22 @@ exports[`Table renders empty table 1`] = `
 
 exports[`Table renders empty table with custom emptyText 1`] = `
 <div
-  class="ant-table-wrapper"
+  class="wmstool-table-wrapper"
 >
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-table ant-table-large ant-table-empty ant-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
       >
         <div
-          class="ant-table-content"
+          class="wmstool-table-content"
         >
           <div
-            class="ant-table-body"
+            class="wmstool-table-body"
           >
             <table
               class=""
@@ -144,7 +144,7 @@ exports[`Table renders empty table with custom emptyText 1`] = `
                 <col />
               </colgroup>
               <thead
-                class="ant-table-thead"
+                class="wmstool-table-thead"
               >
                 <tr>
                   <th
@@ -206,12 +206,12 @@ exports[`Table renders empty table with custom emptyText 1`] = `
                 </tr>
               </thead>
               <tbody
-                class="ant-table-tbody"
+                class="wmstool-table-tbody"
               />
             </table>
           </div>
           <div
-            class="ant-table-placeholder"
+            class="wmstool-table-placeholder"
           >
             custom empty text 
           </div>
@@ -224,25 +224,25 @@ exports[`Table renders empty table with custom emptyText 1`] = `
 
 exports[`Table renders empty table with fixed columns 1`] = `
 <div
-  class="ant-table-wrapper"
+  class="wmstool-table-wrapper"
 >
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-table ant-table-large ant-table-empty ant-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
       >
         <div
-          class="ant-table-content"
+          class="wmstool-table-content"
         >
           <div
-            class="ant-table-scroll"
+            class="wmstool-table-scroll"
           >
             <div
-              class="ant-table-body"
+              class="wmstool-table-body"
             >
               <table
                 class=""
@@ -267,7 +267,7 @@ exports[`Table renders empty table with fixed columns 1`] = `
                   />
                 </colgroup>
                 <thead
-                  class="ant-table-thead"
+                  class="wmstool-table-thead"
                 >
                   <tr>
                     <th
@@ -350,28 +350,28 @@ exports[`Table renders empty table with fixed columns 1`] = `
                   </tr>
                 </thead>
                 <tbody
-                  class="ant-table-tbody"
+                  class="wmstool-table-tbody"
                 />
               </table>
             </div>
             <div
-              class="ant-table-placeholder"
+              class="wmstool-table-placeholder"
             >
               No data
             </div>
           </div>
           <div
-            class="ant-table-fixed-left"
+            class="wmstool-table-fixed-left"
           >
             <div
-              class="ant-table-body-outer"
+              class="wmstool-table-body-outer"
               style="-webkit-transform:translate3d (0, 0, 0)"
             >
               <div
-                class="ant-table-body-inner"
+                class="wmstool-table-body-inner"
               >
                 <table
-                  class="ant-table-fixed"
+                  class="wmstool-table-fixed"
                 >
                   <colgroup>
                     <col
@@ -382,7 +382,7 @@ exports[`Table renders empty table with fixed columns 1`] = `
                     />
                   </colgroup>
                   <thead
-                    class="ant-table-thead"
+                    class="wmstool-table-thead"
                   >
                     <tr>
                       <th
@@ -402,24 +402,24 @@ exports[`Table renders empty table with fixed columns 1`] = `
                     </tr>
                   </thead>
                   <tbody
-                    class="ant-table-tbody"
+                    class="wmstool-table-tbody"
                   />
                 </table>
               </div>
             </div>
           </div>
           <div
-            class="ant-table-fixed-right"
+            class="wmstool-table-fixed-right"
           >
             <div
-              class="ant-table-body-outer"
+              class="wmstool-table-body-outer"
               style="-webkit-transform:translate3d (0, 0, 0)"
             >
               <div
-                class="ant-table-body-inner"
+                class="wmstool-table-body-inner"
               >
                 <table
-                  class="ant-table-fixed"
+                  class="wmstool-table-fixed"
                 >
                   <colgroup>
                     <col
@@ -427,7 +427,7 @@ exports[`Table renders empty table with fixed columns 1`] = `
                     />
                   </colgroup>
                   <thead
-                    class="ant-table-thead"
+                    class="wmstool-table-thead"
                   >
                     <tr>
                       <th
@@ -440,7 +440,7 @@ exports[`Table renders empty table with fixed columns 1`] = `
                     </tr>
                   </thead>
                   <tbody
-                    class="ant-table-tbody"
+                    class="wmstool-table-tbody"
                   />
                 </table>
               </div>

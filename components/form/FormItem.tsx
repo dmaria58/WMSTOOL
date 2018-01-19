@@ -32,7 +32,7 @@ export interface FormItemContext {
 export default class FormItem extends React.Component<FormItemProps, any> {
   static defaultProps = {
     hasFeedback: false,
-    prefixCls: 'ant-form',
+    prefixCls: 'wmstool-form',
     colon: true,
   };
 
@@ -221,7 +221,7 @@ export default class FormItem extends React.Component<FormItemProps, any> {
   }
 
   // Resolve duplicated ids bug between different forms
-  // https://github.com/ant-design/ant-design/issues/7351
+  // https://github.com/wmstool-design/wmstool-design/issues/7351
   onLabelClick = () => {
     const id = this.props.id || this.getId();
     if (!id) {

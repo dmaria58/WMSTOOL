@@ -29,7 +29,7 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-badge:not(.ant-badge-status) {
+.wmstool-badge:not(.wmstool-badge-status) {
   margin-right: 20px;
 }
 .head-example {

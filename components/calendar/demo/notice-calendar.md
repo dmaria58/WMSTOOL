@@ -86,7 +86,7 @@ ReactDOM.render(
   margin: 0;
   padding: 0;
 }
-.events .ant-badge-status {
+.events .wmstool-badge-status {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;

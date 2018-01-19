@@ -108,27 +108,27 @@ ReactDOM.render(<NestedTable />, mountNode);
 ````
 
 ````css
-.components-table-demo-nested .ant-table-expanded-row > td:last-child {
+.components-table-demo-nested .wmstool-table-expanded-row > td:last-child {
   padding: 0 48px 0 8px;
 }
 
-.components-table-demo-nested .ant-table-expanded-row > td:last-child .ant-table-thead th {
+.components-table-demo-nested .wmstool-table-expanded-row > td:last-child .wmstool-table-thead th {
   border-bottom: 1px solid #e9e9e9;
 }
 
-.components-table-demo-nested .ant-table-expanded-row > td:last-child .ant-table-thead th:first-child {
+.components-table-demo-nested .wmstool-table-expanded-row > td:last-child .wmstool-table-thead th:first-child {
   padding-left: 0;
 }
 
-.components-table-demo-nested .ant-table-expanded-row > td:last-child .ant-table-row td:first-child {
+.components-table-demo-nested .wmstool-table-expanded-row > td:last-child .wmstool-table-row td:first-child {
   padding-left: 0;
 }
 
-.components-table-demo-nested .ant-table-expanded-row .ant-table-row:last-child td {
+.components-table-demo-nested .wmstool-table-expanded-row .wmstool-table-row:last-child td {
   border: none;
 }
 
-.components-table-demo-nested .ant-table-expanded-row .ant-table-thead > tr > th {
+.components-table-demo-nested .wmstool-table-expanded-row .wmstool-table-thead > tr > th {
   background: none;
 }
 

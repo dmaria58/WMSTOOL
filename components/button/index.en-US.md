@@ -32,11 +32,11 @@ To get a customized button, just set `type`/`shape`/`size`/`loading`/`disabled`.
 `<Button href="http://example.com">Hello world!</Button>` will be rendered into `<a href="http://example.com"><span>Hello world!</span></a>`.
 
 <style>
-[id^=components-button-demo-] .ant-btn {
+[id^=components-button-demo-] .wmstool-btn {
   margin-right: 8px;
   margin-bottom: 12px;
 }
-[id^=components-button-demo-] .ant-btn-group > .ant-btn {
+[id^=components-button-demo-] .wmstool-btn-group > .wmstool-btn {
   margin-right: 0;
 }
 </style>

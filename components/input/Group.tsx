@@ -11,7 +11,7 @@ export interface GroupProps {
 }
 
 const Group: React.StatelessComponent<GroupProps> = (props) => {
-  const { prefixCls = 'ant-input-group', className = '' } = props;
+  const { prefixCls = 'wmstool-input-group', className = '' } = props;
   const cls = classNames(prefixCls, {
     [`${prefixCls}-lg`]: props.size === 'large',
     [`${prefixCls}-sm`]: props.size === 'small',

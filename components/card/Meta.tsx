@@ -11,7 +11,7 @@ export interface CardMetaProps {
 }
 
 export default (props: CardMetaProps) => {
-  const { prefixCls = 'ant-card', className, avatar, title, description, ...others } = props;
+  const { prefixCls = 'wmstool-card', className, avatar, title, description, ...others } = props;
   const classString = classNames(`${prefixCls}-meta`, className);
   const avatarDom = avatar ? <div className={`${prefixCls}-meta-avatar`}>{avatar}</div> : null;
   const titleDom = title ? <div className={`${prefixCls}-meta-title`}>{title}</div> : null;

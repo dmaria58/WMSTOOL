@@ -2,17 +2,17 @@
 
 exports[`Radio should render correctly 1`] = `
 <label
-  class="customized ant-radio-wrapper"
+  class="customized wmstool-radio-wrapper"
 >
   <span
-    class="ant-radio"
+    class="wmstool-radio"
   >
     <input
-      class="ant-radio-input"
+      class="wmstool-radio-input"
       type="radio"
     />
     <span
-      class="ant-radio-inner"
+      class="wmstool-radio-inner"
     />
   </span>
   <span>

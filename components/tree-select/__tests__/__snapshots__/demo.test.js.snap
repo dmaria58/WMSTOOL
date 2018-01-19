@@ -2,28 +2,28 @@
 
 exports[`renders ./components/tree-select/demo/basic.md correctly 1`] = `
 <span
-  class="ant-select ant-select-enabled ant-select-allow-clear"
+  class="wmstool-select wmstool-select-enabled wmstool-select-allow-clear"
   style="width:300px"
 >
   <span
     aria-autocomplete="list"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--single"
+    class="wmstool-select-selection
+            wmstool-select-selection--single"
     role="combobox"
     tabindex="0"
   >
     <span
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <span
-        class="ant-select-selection__placeholder"
+        class="wmstool-select-selection__placeholder"
       >
         Please select
       </span>
     </span>
     <span
-      class="ant-select-arrow"
+      class="wmstool-select-arrow"
       style="outline:none"
     >
       <b />
@@ -34,47 +34,47 @@ exports[`renders ./components/tree-select/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/tree-select/demo/checkable.md correctly 1`] = `
 <span
-  class="ant-select ant-select-enabled"
+  class="wmstool-select wmstool-select-enabled"
   style="width:300px"
 >
   <span
     aria-autocomplete="list"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--multiple"
+    class="wmstool-select-selection
+            wmstool-select-selection--multiple"
     role="combobox"
   >
     <ul
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <li
-        class="ant-select-selection__choice"
+        class="wmstool-select-selection__choice"
         style="user-select:none;-webkit-user-select:none"
         title="Node1"
         unselectable="unselectable"
       >
         <span
-          class="ant-select-selection__choice__remove"
+          class="wmstool-select-selection__choice__remove"
         />
         <span
-          class="ant-select-selection__choice__content"
+          class="wmstool-select-selection__choice__content"
         >
           Node1
         </span>
       </li>
       <li
-        class="ant-select-search ant-select-search--inline"
+        class="wmstool-select-search wmstool-select-search--inline"
       >
         <span
-          class="ant-select-search__field__wrap"
+          class="wmstool-select-search__field__wrap"
         >
           <input
-            class="ant-select-search__field"
+            class="wmstool-select-search__field"
             role="textbox"
             value=""
           />
           <span
-            class="ant-select-search__field__mirror"
+            class="wmstool-select-search__field__mirror"
           >
              
           </span>
@@ -82,7 +82,7 @@ exports[`renders ./components/tree-select/demo/checkable.md correctly 1`] = `
       </li>
     </ul>
     <span
-      class="ant-select-search__field__placeholder"
+      class="wmstool-select-search__field__placeholder"
       style="display:none"
     >
       Please select
@@ -93,32 +93,32 @@ exports[`renders ./components/tree-select/demo/checkable.md correctly 1`] = `
 
 exports[`renders ./components/tree-select/demo/multiple.md correctly 1`] = `
 <span
-  class="ant-select ant-select-enabled ant-select-allow-clear"
+  class="wmstool-select wmstool-select-enabled wmstool-select-allow-clear"
   style="width:300px"
 >
   <span
     aria-autocomplete="list"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--multiple"
+    class="wmstool-select-selection
+            wmstool-select-selection--multiple"
     role="combobox"
   >
     <ul
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <li
-        class="ant-select-search ant-select-search--inline"
+        class="wmstool-select-search wmstool-select-search--inline"
       >
         <span
-          class="ant-select-search__field__wrap"
+          class="wmstool-select-search__field__wrap"
         >
           <input
-            class="ant-select-search__field"
+            class="wmstool-select-search__field"
             role="textbox"
             value=""
           />
           <span
-            class="ant-select-search__field__mirror"
+            class="wmstool-select-search__field__mirror"
           >
              
           </span>
@@ -126,7 +126,7 @@ exports[`renders ./components/tree-select/demo/multiple.md correctly 1`] = `
       </li>
     </ul>
     <span
-      class="ant-select-search__field__placeholder"
+      class="wmstool-select-search__field__placeholder"
       style="display:block"
     >
       Please select
@@ -137,28 +137,28 @@ exports[`renders ./components/tree-select/demo/multiple.md correctly 1`] = `
 
 exports[`renders ./components/tree-select/demo/treeData.md correctly 1`] = `
 <span
-  class="ant-select ant-select-enabled"
+  class="wmstool-select wmstool-select-enabled"
   style="width:300px"
 >
   <span
     aria-autocomplete="list"
     aria-haspopup="true"
-    class="ant-select-selection
-            ant-select-selection--single"
+    class="wmstool-select-selection
+            wmstool-select-selection--single"
     role="combobox"
     tabindex="0"
   >
     <span
-      class="ant-select-selection__rendered"
+      class="wmstool-select-selection__rendered"
     >
       <span
-        class="ant-select-selection__placeholder"
+        class="wmstool-select-selection__placeholder"
       >
         Please select
       </span>
     </span>
     <span
-      class="ant-select-arrow"
+      class="wmstool-select-arrow"
       style="outline:none"
     >
       <b />

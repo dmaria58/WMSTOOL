@@ -63,7 +63,7 @@ export default class List extends React.Component<ListProps> {
 
   static defaultProps = {
     dataSource: [],
-    prefixCls: 'ant-list',
+    prefixCls: 'wmstool-list',
     bordered: false,
     split: true,
     loading: false,

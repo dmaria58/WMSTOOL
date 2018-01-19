@@ -44,7 +44,7 @@ export default class Breadcrumb extends React.Component<BreadcrumbProps, any> {
   static Item: any;
 
   static defaultProps = {
-    prefixCls: 'ant-breadcrumb',
+    prefixCls: 'wmstool-breadcrumb',
     separator: '/',
   };
 

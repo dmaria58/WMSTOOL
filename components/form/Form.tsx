@@ -123,7 +123,7 @@ export interface ComponentDecorator<TOwnProps> {
 
 export default class Form extends React.Component<FormProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-form',
+    prefixCls: 'wmstool-form',
     layout: 'horizontal',
     hideRequiredMark: false,
     onSubmit(e: React.FormEvent<HTMLFormElement>) {

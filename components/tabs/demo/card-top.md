@@ -41,26 +41,26 @@ ReactDOM.render(
 ````
 
 ````css
-.card-container > .ant-tabs-card > .ant-tabs-content {
+.card-container > .wmstool-tabs-card > .wmstool-tabs-content {
   height: 120px;
   margin-top: -16px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+.card-container > .wmstool-tabs-card > .wmstool-tabs-content > .wmstool-tabs-tabpane {
   background: #fff;
   padding: 16px;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar {
+.card-container > .wmstool-tabs-card > .wmstool-tabs-bar {
   border-color: #fff;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+.card-container > .wmstool-tabs-card > .wmstool-tabs-bar .wmstool-tabs-tab {
   border-color: transparent;
   background: transparent;
 }
 
-.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+.card-container > .wmstool-tabs-card > .wmstool-tabs-bar .wmstool-tabs-tab-active {
   border-color: #fff;
   background: #fff;
 }

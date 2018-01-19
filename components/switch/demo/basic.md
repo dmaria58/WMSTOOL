@@ -27,7 +27,7 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-switch {
+.wmstool-switch {
   margin-bottom: 8px;
 }
 </style>

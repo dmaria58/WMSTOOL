@@ -22,7 +22,7 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-alert {
+.wmstool-alert {
   margin-bottom: 16px;
 }
 </style>

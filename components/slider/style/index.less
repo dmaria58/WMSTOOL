@@ -1,7 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 
-@slider-prefix-cls: ~"@{ant-prefix}-slider";
+@slider-prefix-cls: ~"@{wmstool-prefix}-slider";
 // slider color
 @slider-disabled-color: @disabled-color;
 // tooltip
@@ -61,7 +61,7 @@
       outline: none;
     }
 
-    &.@{ant-prefix}-tooltip-open {
+    &.@{wmstool-prefix}-tooltip-open {
       border-color: @primary-color;
     }
   }
@@ -73,7 +73,7 @@
     .@{slider-prefix-cls}-track {
       background-color: @primary-4;
     }
-    .@{slider-prefix-cls}-handle:not(.@{ant-prefix}-tooltip-open) {
+    .@{slider-prefix-cls}-handle:not(.@{wmstool-prefix}-tooltip-open) {
       border-color: @primary-4;
     }
   }

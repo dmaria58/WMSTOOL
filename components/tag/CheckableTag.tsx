@@ -16,7 +16,7 @@ export default class CheckableTag extends React.Component<CheckableTagProps> {
     }
   }
   render() {
-    const { prefixCls = 'ant-tag', className, checked, ...restProps } = this.props;
+    const { prefixCls = 'wmstool-tag', className, checked, ...restProps } = this.props;
     const cls = classNames(prefixCls, {
       [`${prefixCls}-checkable`]: true,
       [`${prefixCls}-checkable-checked`]: checked,

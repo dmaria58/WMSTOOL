@@ -38,7 +38,7 @@ describe('RangePicker', () => {
     );
 
     const rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    rangeCalendarWrapper.find('.ant-calendar-range-quick-selector a')
+    rangeCalendarWrapper.find('.wmstool-calendar-range-quick-selector a')
       .simulate('click');
     expect(render(wrapper.find('Trigger').instance().getComponent()))
       .toMatchSnapshot();
@@ -57,10 +57,10 @@ describe('RangePicker', () => {
     );
 
     let rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    rangeCalendarWrapper.find('.ant-calendar-range-quick-selector a')
+    rangeCalendarWrapper.find('.wmstool-calendar-range-quick-selector a')
       .simulate('mouseEnter');
     rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(rangeCalendarWrapper.find('.ant-calendar-selected-day').length).toBe(2);
+    expect(rangeCalendarWrapper.find('.wmstool-calendar-selected-day').length).toBe(2);
   });
 
   it('should trigger onCalendarChange when change value', () => {
@@ -73,11 +73,11 @@ describe('RangePicker', () => {
       />
     );
     const rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    rangeCalendarWrapper.find('.ant-calendar-cell').at(15).simulate('click');
+    rangeCalendarWrapper.find('.wmstool-calendar-cell').at(15).simulate('click');
     expect(onCalendarChangeFn).toHaveBeenCalled();
   });
 
-  // issue: https://github.com/ant-design/ant-design/issues/5872
+  // issue: https://github.com/wmstool-design/wmstool-design/issues/5872
   it('should not throw error when value is reset to `[]`', () => {
     const birthday = moment('2000-01-01', 'YYYY-MM-DD');
     const wrapper = mount(
@@ -89,11 +89,11 @@ describe('RangePicker', () => {
     );
     wrapper.setProps({ value: [] });
     const rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(() => rangeCalendarWrapper.find('.ant-calendar-cell').at(15).simulate('click').simulate('click'))
+    expect(() => rangeCalendarWrapper.find('.wmstool-calendar-cell').at(15).simulate('click').simulate('click'))
       .not.toThrow();
   });
 
-  // issue: https://github.com/ant-design/ant-design/issues/7077
+  // issue: https://github.com/wmstool-design/wmstool-design/issues/7077
   it('should not throw error when select after clear', () => {
     const wrapper = mount(
       <RangePicker
@@ -102,12 +102,12 @@ describe('RangePicker', () => {
       />
     );
     let rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    rangeCalendarWrapper.find('.ant-calendar-cell').at(15).simulate('click').simulate('click');
+    rangeCalendarWrapper.find('.wmstool-calendar-cell').at(15).simulate('click').simulate('click');
     wrapper.update();
-    wrapper.find('.ant-calendar-picker-clear').hostNodes().simulate('click');
-    wrapper.find('.ant-calendar-picker-input').simulate('click');
+    wrapper.find('.wmstool-calendar-picker-clear').hostNodes().simulate('click');
+    wrapper.find('.wmstool-calendar-picker-input').simulate('click');
     rangeCalendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(() => rangeCalendarWrapper.find('.ant-calendar-cell').at(15).simulate('click').simulate('click'))
+    expect(() => rangeCalendarWrapper.find('.wmstool-calendar-cell').at(15).simulate('click').simulate('click'))
       .not.toThrow();
   });
 });

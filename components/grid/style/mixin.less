@@ -12,11 +12,11 @@
 
 .make-grid-columns() {
   .col(@index) {
-    @item: ~".@{ant-prefix}-col-@{index}, .@{ant-prefix}-col-xs-@{index}, .@{ant-prefix}-col-sm-@{index}, .@{ant-prefix}-col-md-@{index}, .@{ant-prefix}-col-lg-@{index}";
+    @item: ~".@{wmstool-prefix}-col-@{index}, .@{wmstool-prefix}-col-xs-@{index}, .@{wmstool-prefix}-col-sm-@{index}, .@{wmstool-prefix}-col-md-@{index}, .@{wmstool-prefix}-col-lg-@{index}";
     .col((@index + 1), @item);
   }
   .col(@index, @list) when (@index =< @grid-columns) {
-    @item: ~".@{ant-prefix}-col-@{index}, .@{ant-prefix}-col-xs-@{index}, .@{ant-prefix}-col-sm-@{index}, .@{ant-prefix}-col-md-@{index}, .@{ant-prefix}-col-lg-@{index}";
+    @item: ~".@{wmstool-prefix}-col-@{index}, .@{wmstool-prefix}-col-xs-@{index}, .@{wmstool-prefix}-col-sm-@{index}, .@{wmstool-prefix}-col-md-@{index}, .@{wmstool-prefix}-col-lg-@{index}";
     .col((@index + 1), ~"@{list}, @{item}");
   }
   .col(@index, @list) when (@index > @grid-columns) {
@@ -33,11 +33,11 @@
 
 .float-grid-columns(@class) {
   .col(@index) { // initial
-    @item: ~".@{ant-prefix}-col@{class}-@{index}";
+    @item: ~".@{wmstool-prefix}-col@{class}-@{index}";
     .col((@index + 1), @item);
   }
   .col(@index, @list) when (@index =< @grid-columns) { // general
-    @item: ~".@{ant-prefix}-col@{class}-@{index}";
+    @item: ~".@{wmstool-prefix}-col@{class}-@{index}";
     .col((@index + 1), ~"@{list}, @{item}");
   }
   .col(@index, @list) when (@index > @grid-columns) { // terminal
@@ -51,46 +51,46 @@
 
 // lesshint false
 .loop-grid-columns(@index, @class) when (@index > 0) {
-  .@{ant-prefix}-col@{class}-@{index} {
+  .@{wmstool-prefix}-col@{class}-@{index} {
     display: block;
     box-sizing: border-box;
     width: percentage((@index / @grid-columns));
   }
-  .@{ant-prefix}-col@{class}-push-@{index} {
+  .@{wmstool-prefix}-col@{class}-push-@{index} {
     left: percentage((@index / @grid-columns));
   }
-  .@{ant-prefix}-col@{class}-pull-@{index} {
+  .@{wmstool-prefix}-col@{class}-pull-@{index} {
     right: percentage((@index / @grid-columns));
   }
-  .@{ant-prefix}-col@{class}-offset-@{index} {
+  .@{wmstool-prefix}-col@{class}-offset-@{index} {
     margin-left: percentage((@index / @grid-columns));
   }
-  .@{ant-prefix}-col@{class}-order-@{index} {
+  .@{wmstool-prefix}-col@{class}-order-@{index} {
     order: @index;
   }
   .loop-grid-columns((@index - 1), @class);
 }
 
 .loop-grid-columns(@index, @class) when (@index = 0) {
-  .@{ant-prefix}-col@{class}-@{index} {
+  .@{wmstool-prefix}-col@{class}-@{index} {
     display: none;
   }
-  .@{ant-prefix}-col-push-@{index} {
+  .@{wmstool-prefix}-col-push-@{index} {
     left: auto;
   }
-  .@{ant-prefix}-col-pull-@{index} {
+  .@{wmstool-prefix}-col-pull-@{index} {
     right: auto;
   }
-  .@{ant-prefix}-col@{class}-push-@{index} {
+  .@{wmstool-prefix}-col@{class}-push-@{index} {
     left: auto;
   }
-  .@{ant-prefix}-col@{class}-pull-@{index} {
+  .@{wmstool-prefix}-col@{class}-pull-@{index} {
     right: auto;
   }
-  .@{ant-prefix}-col@{class}-offset-@{index} {
+  .@{wmstool-prefix}-col@{class}-offset-@{index} {
     margin-left: 0;
   }
-  .@{ant-prefix}-col@{class}-order-@{index} {
+  .@{wmstool-prefix}-col@{class}-order-@{index} {
     order: 0;
   }
 }

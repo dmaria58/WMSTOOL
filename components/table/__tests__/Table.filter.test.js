@@ -115,7 +115,7 @@ describe('Table.filter', () => {
       }],
     }));
 
-    wrapper.find('.ant-dropdown-trigger').first().simulate('click');
+    wrapper.find('.wmstool-dropdown-trigger').first().simulate('click');
 
     expect(handleChange).toBeCalledWith(true);
   });
@@ -196,8 +196,8 @@ describe('Table.filter', () => {
       }],
     }));
     const dropdownWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    dropdownWrapper.find('.ant-dropdown-menu-submenu-title').at(0).simulate('mouseEnter');
-    dropdownWrapper.find('.ant-dropdown-menu-submenu-title').at(1).simulate('mouseEnter');
+    dropdownWrapper.find('.wmstool-dropdown-menu-submenu-title').at(0).simulate('mouseEnter');
+    dropdownWrapper.find('.wmstool-dropdown-menu-submenu-title').at(1).simulate('mouseEnter');
     dropdownWrapper.find('MenuItem').last().simulate('click');
     dropdownWrapper.find('.confirm').simulate('click');
     wrapper.update();
@@ -299,9 +299,9 @@ describe('Table.filter', () => {
       onChange: handleChange,
     }));
 
-    wrapper.find('.ant-dropdown-trigger').first().simulate('click');
-    wrapper.find('.ant-dropdown-menu-item').first().simulate('click');
-    wrapper.find('.ant-dropdown-trigger').first().simulate('click');
+    wrapper.find('.wmstool-dropdown-trigger').first().simulate('click');
+    wrapper.find('.wmstool-dropdown-menu-item').first().simulate('click');
+    wrapper.find('.wmstool-dropdown-trigger').first().simulate('click');
 
     expect(handleChange).toBeCalled();
   });

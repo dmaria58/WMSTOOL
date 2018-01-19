@@ -20,7 +20,7 @@ export default class UploadList extends React.Component<UploadListProps, any> {
       strokeWidth: 2,
       showInfo: false,
     },
-    prefixCls: 'ant-upload',
+    prefixCls: 'wmstool-upload',
     showRemoveIcon: true,
     showPreviewIcon: true,
   };

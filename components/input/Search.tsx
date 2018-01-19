@@ -12,8 +12,8 @@ export interface SearchProps extends InputProps {
 
 export default class Search extends React.Component<SearchProps, any> {
   static defaultProps = {
-    inputPrefixCls: 'ant-input',
-    prefixCls: 'ant-input-search',
+    inputPrefixCls: 'wmstool-input',
+    prefixCls: 'wmstool-input-search',
     enterButton: false,
   };
 

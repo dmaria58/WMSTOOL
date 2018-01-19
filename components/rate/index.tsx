@@ -24,7 +24,7 @@ export default class Rate extends React.Component<RateProps, any> {
   };
 
   static defaultProps = {
-    prefixCls: 'ant-rate',
+    prefixCls: 'wmstool-rate',
     character: <Icon type="star" />,
   };
 

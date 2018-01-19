@@ -1,7 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 
-@dropdown-prefix-cls: ~"@{ant-prefix}-dropdown";
+@dropdown-prefix-cls: ~"@{wmstool-prefix}-dropdown";
 
 .@{dropdown-prefix-cls} {
   .reset-component;
@@ -14,7 +14,7 @@
   &-wrap {
     position: relative;
 
-    .@{ant-prefix}-btn > .@{iconfont-css-prefix}-down {
+    .@{wmstool-prefix}-btn > .@{iconfont-css-prefix}-down {
       .iconfont-size-under-12px(10px);
     }
 
@@ -212,7 +212,7 @@
 .@{dropdown-prefix-cls}-button {
   white-space: nowrap;
 
-  &.@{ant-prefix}-btn-group > .@{ant-prefix}-btn:last-child:not(:first-child) {
+  &.@{wmstool-prefix}-btn-group > .@{wmstool-prefix}-btn:last-child:not(:first-child) {
     padding-left: @padding-xs;
     padding-right: @padding-xs;
   }
@@ -221,7 +221,7 @@
   }
 }
 
-// https://github.com/ant-design/ant-design/issues/4903
+// https://github.com/wmstool-design/wmstool-design/issues/4903
 .@{dropdown-prefix-cls}-menu-dark {
   &,
   .@{dropdown-prefix-cls}-menu {

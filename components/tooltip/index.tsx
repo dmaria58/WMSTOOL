@@ -56,7 +56,7 @@ const splitObject = (obj: any, keys: string[]) => {
 
 export default class Tooltip extends React.Component<TooltipProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-tooltip',
+    prefixCls: 'wmstool-tooltip',
     placement: 'top',
     transitionName: 'zoom-big-fast',
     mouseEnterDelay: 0.1,
@@ -122,7 +122,7 @@ export default class Tooltip extends React.Component<TooltipProps, any> {
     if (((element.type as typeof Button).__ANT_BUTTON || element.type === 'button') &&
         element.props.disabled && this.isHoverTrigger()) {
       // Pick some layout related style properties up to span
-      // Prevent layout bugs like https://github.com/ant-design/ant-design/issues/5254
+      // Prevent layout bugs like https://github.com/wmstool-design/wmstool-design/issues/5254
       const { picked, omited } = splitObject(
         element.props.style,
         ['position', 'left', 'right', 'top', 'bottom', 'float', 'display', 'zIndex'],

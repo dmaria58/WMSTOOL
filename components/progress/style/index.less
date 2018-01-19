@@ -1,7 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 
-@progress-prefix-cls: ~"@{ant-prefix}-progress";
+@progress-prefix-cls: ~"@{wmstool-prefix}-progress";
 
 .@{progress-prefix-cls} {
   .reset-component;
@@ -43,7 +43,7 @@
 
   &-circle-path {
     stroke: @progress-default-color;
-    animation: ~"@{ant-prefix}-progress-appear" .3s;
+    animation: ~"@{wmstool-prefix}-progress-appear" .3s;
   }
 
   &-bg {
@@ -79,7 +79,7 @@
       bottom: 0;
       background: @component-background;
       border-radius: 10px;
-      animation: ~"@{ant-prefix}-progress-active" 2.4s @ease-out-quint infinite;
+      animation: ~"@{wmstool-prefix}-progress-active" 2.4s @ease-out-quint infinite;
     }
   }
 
@@ -142,7 +142,7 @@
   }
 }
 
-@keyframes ~"@{ant-prefix}-progress-active" {
+@keyframes ~"@{wmstool-prefix}-progress-active" {
   0% {
     opacity: 0.1;
     width: 0;

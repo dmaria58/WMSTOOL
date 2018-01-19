@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
-import { Modal, message, Row, Col } from 'antd';
+import { Modal, message, Row, Col } from 'wmstool';
 import { isLocalStorageNameSupported, loadScript } from '../utils';
 import ColorPicker from '../Color/ColorPicker';
 
@@ -91,7 +91,7 @@ class Footer extends React.Component {
               <div className="footer-center">
                 <h2>Ant Design</h2>
                 <div>
-                  <a target="_blank " href="https://github.com/ant-design/ant-design">
+                  <a target="_blank " href="https://github.com/wmstool-design/wmstool-design">
                     GitHub
                   </a>
                 </div>
@@ -107,12 +107,12 @@ class Footer extends React.Component {
                   Ant Design of Angular
                 </div>
                 <div>
-                  <a target="_blank " href="https://github.com/websemantics/awesome-ant-design">
+                  <a target="_blank " href="https://github.com/websemantics/awesome-wmstool-design">
                     <FormattedMessage id="app.footer.awesome" />
                   </a>
                 </div>
                 <div>
-                  <a target="_blank " href="http://ant-design.gitee.io/">
+                  <a target="_blank " href="http://wmstool-design.gitee.io/">
                     <FormattedMessage id="app.footer.chinamirror" />
                   </a>
                 </div>
@@ -182,17 +182,17 @@ class Footer extends React.Component {
                   </a>
                 </div>
                 <div>
-                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/ant-design/ant-design/wiki/FAQ">
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/wmstool-design/wmstool-design/wiki/FAQ">
                     <FormattedMessage id="app.footer.faq" />
                   </a>
                 </div>
                 <div>
-                  <a target="_blank" rel="noopener noreferrer" href="https://gitter.im/ant-design/ant-design">
+                  <a target="_blank" rel="noopener noreferrer" href="https://gitter.im/wmstool-design/wmstool-design">
                     <FormattedMessage id="app.footer.discuss-cn" />
                   </a>
                 </div>
                 <div>
-                  <a target="_blank" rel="noopener noreferrer" href="https://gitter.im/ant-design/ant-design-english">
+                  <a target="_blank" rel="noopener noreferrer" href="https://gitter.im/wmstool-design/wmstool-design-english">
                     <FormattedMessage id="app.footer.discuss-en" />
                   </a>
                 </div>
@@ -202,7 +202,7 @@ class Footer extends React.Component {
                   </a>
                 </div>
                 <div>
-                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/ant-design/ant-design/issues">
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/wmstool-design/wmstool-design/issues">
                     <FormattedMessage id="app.footer.issues" />
                   </a>
                 </div>

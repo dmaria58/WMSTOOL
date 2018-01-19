@@ -3,118 +3,118 @@
 exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
 <div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
     >
       Header
     </div>
     <div
-      class="ant-layout-content"
+      class="wmstool-layout-content"
     >
       Content
     </div>
     <div
-      class="ant-layout-footer"
+      class="wmstool-layout-footer"
     >
       Footer
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
     >
       Header
     </div>
     <div
-      class="ant-layout"
+      class="wmstool-layout"
     >
       <div
-        class="ant-layout-sider"
+        class="wmstool-layout-sider"
         style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
       >
         <div
-          class="ant-layout-sider-children"
+          class="wmstool-layout-sider-children"
         >
           Sider
         </div>
       </div>
       <div
-        class="ant-layout-content"
+        class="wmstool-layout-content"
       >
         Content
       </div>
     </div>
     <div
-      class="ant-layout-footer"
+      class="wmstool-layout-footer"
     >
       Footer
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
     >
       Header
     </div>
     <div
-      class="ant-layout"
+      class="wmstool-layout"
     >
       <div
-        class="ant-layout-content"
+        class="wmstool-layout-content"
       >
         Content
       </div>
       <div
-        class="ant-layout-sider"
+        class="wmstool-layout-sider"
         style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
       >
         <div
-          class="ant-layout-sider-children"
+          class="wmstool-layout-sider-children"
         >
           Sider
         </div>
       </div>
     </div>
     <div
-      class="ant-layout-footer"
+      class="wmstool-layout-footer"
     >
       Footer
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-sider"
+      class="wmstool-layout-sider"
       style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
     >
       <div
-        class="ant-layout-sider-children"
+        class="wmstool-layout-sider-children"
       >
         Sider
       </div>
     </div>
     <div
-      class="ant-layout"
+      class="wmstool-layout"
     >
       <div
-        class="ant-layout-header"
+        class="wmstool-layout-header"
       >
         Header
       </div>
       <div
-        class="ant-layout-content"
+        class="wmstool-layout-content"
       >
         Content
       </div>
       <div
-        class="ant-layout-footer"
+        class="wmstool-layout-footer"
       >
         Footer
       </div>
@@ -125,27 +125,27 @@ exports[`renders ./components/layout/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
 >
   <div
-    class="ant-layout-sider"
+    class="wmstool-layout-sider"
     style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
     <div
-      class="ant-layout-sider-children"
+      class="wmstool-layout-sider-children"
     >
       <div
         class="logo"
       />
       <ul
         aria-activedescendant=""
-        class="ant-menu ant-menu-dark ant-menu-root ant-menu-inline"
+        class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-inline"
         role="menu"
         tabindex="0"
       >
         <li
           aria-selected="true"
-          class="ant-menu-item ant-menu-item-selected"
+          class="wmstool-menu-item wmstool-menu-item-selected"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -158,7 +158,7 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -171,7 +171,7 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -186,10 +186,10 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
       style="background:#fff;padding:0"
     >
       <i
@@ -197,7 +197,7 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
       />
     </div>
     <div
-      class="ant-layout-content"
+      class="wmstool-layout-content"
       style="margin:24px 16px;padding:24px;background:#fff;min-height:280px"
     >
       Content
@@ -208,10 +208,10 @@ exports[`renders ./components/layout/demo/custom-trigger.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
 >
   <div
-    class="ant-layout-header"
+    class="wmstool-layout-header"
     style="position:fixed;width:100%"
   >
     <div
@@ -219,28 +219,28 @@ exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
     />
     <ul
       aria-activedescendant=""
-      class="ant-menu ant-menu-dark ant-menu-root ant-menu-horizontal"
+      class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-horizontal"
       role="menu"
       style="line-height:64px"
       tabindex="0"
     >
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 1
       </li>
       <li
         aria-selected="true"
-        class="ant-menu-item ant-menu-item-selected"
+        class="wmstool-menu-item wmstool-menu-item-selected"
         role="menuitem"
       >
         nav 2
       </li>
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 3
@@ -248,45 +248,45 @@ exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
     </ul>
   </div>
   <div
-    class="ant-layout-content"
+    class="wmstool-layout-content"
     style="padding:0 50px;margin-top:64px"
   >
     <div
-      class="ant-breadcrumb"
+      class="wmstool-breadcrumb"
       style="margin:16px 0"
     >
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           Home
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           List
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           App
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
@@ -299,7 +299,7 @@ exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout-footer"
+    class="wmstool-layout-footer"
     style="text-align:center"
   >
     Ant Design ©2016 Created by Ant UED
@@ -309,27 +309,27 @@ exports[`renders ./components/layout/demo/fixed.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
 >
   <div
-    class="ant-layout-sider"
+    class="wmstool-layout-sider"
     style="overflow:auto;height:100vh;position:fixed;left:0;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
     <div
-      class="ant-layout-sider-children"
+      class="wmstool-layout-sider-children"
     >
       <div
         class="logo"
       />
       <ul
         aria-activedescendant=""
-        class="ant-menu ant-menu-dark ant-menu-root ant-menu-inline"
+        class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-inline"
         role="menu"
         tabindex="0"
       >
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -344,7 +344,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -359,7 +359,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -374,7 +374,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="true"
-          class="ant-menu-item ant-menu-item-selected"
+          class="wmstool-menu-item wmstool-menu-item-selected"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -389,7 +389,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -404,7 +404,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -419,7 +419,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -434,7 +434,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -451,15 +451,15 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
     style="margin-left:200px"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
       style="background:#fff;padding:0"
     />
     <div
-      class="ant-layout-content"
+      class="wmstool-layout-content"
       style="margin:24px 16px 0;overflow:initial"
     >
       <div
@@ -563,7 +563,7 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-layout-footer"
+      class="wmstool-layout-footer"
       style="text-align:center"
     >
       Ant Design ©2016 Created by Ant UED
@@ -574,27 +574,27 @@ exports[`renders ./components/layout/demo/fixed-sider.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
 >
   <div
-    class="ant-layout-sider"
+    class="wmstool-layout-sider"
     style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
     <div
-      class="ant-layout-sider-children"
+      class="wmstool-layout-sider-children"
     >
       <div
         class="logo"
       />
       <ul
         aria-activedescendant=""
-        class="ant-menu ant-menu-dark ant-menu-root ant-menu-inline"
+        class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-inline"
         role="menu"
         tabindex="0"
       >
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -609,7 +609,7 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -624,7 +624,7 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -639,7 +639,7 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
         </li>
         <li
           aria-selected="true"
-          class="ant-menu-item ant-menu-item-selected"
+          class="wmstool-menu-item wmstool-menu-item-selected"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -656,14 +656,14 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
       style="background:#fff;padding:0"
     />
     <div
-      class="ant-layout-content"
+      class="wmstool-layout-content"
       style="margin:24px 16px 0"
     >
       <div
@@ -673,7 +673,7 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-layout-footer"
+      class="wmstool-layout-footer"
       style="text-align:center"
     >
       Ant Design ©2016 Created by Ant UED
@@ -684,28 +684,28 @@ exports[`renders ./components/layout/demo/responsive.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/side.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
   style="min-height:100vh"
 >
   <div
-    class="ant-layout-sider"
+    class="wmstool-layout-sider"
     style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
   >
     <div
-      class="ant-layout-sider-children"
+      class="wmstool-layout-sider-children"
     >
       <div
         class="logo"
       />
       <ul
         aria-activedescendant=""
-        class="ant-menu ant-menu-dark ant-menu-root ant-menu-inline"
+        class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-inline"
         role="menu"
         tabindex="0"
       >
         <li
           aria-selected="true"
-          class="ant-menu-item ant-menu-item-selected"
+          class="wmstool-menu-item wmstool-menu-item-selected"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -718,7 +718,7 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -730,13 +730,13 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
           </span>
         </li>
         <li
-          class="ant-menu-submenu ant-menu-submenu-inline"
+          class="wmstool-menu-submenu wmstool-menu-submenu-inline"
         >
           <div
             aria-expanded="false"
             aria-haspopup="true"
             aria-owns="sub1$Menu"
-            class="ant-menu-submenu-title"
+            class="wmstool-menu-submenu-title"
             style="padding-left:24px"
           >
             <span>
@@ -748,18 +748,18 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
               </span>
             </span>
             <i
-              class="ant-menu-submenu-arrow"
+              class="wmstool-menu-submenu-arrow"
             />
           </div>
         </li>
         <li
-          class="ant-menu-submenu ant-menu-submenu-inline"
+          class="wmstool-menu-submenu wmstool-menu-submenu-inline"
         >
           <div
             aria-expanded="false"
             aria-haspopup="true"
             aria-owns="sub2$Menu"
-            class="ant-menu-submenu-title"
+            class="wmstool-menu-submenu-title"
             style="padding-left:24px"
           >
             <span>
@@ -771,13 +771,13 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
               </span>
             </span>
             <i
-              class="ant-menu-submenu-arrow"
+              class="wmstool-menu-submenu-arrow"
             />
           </div>
         </li>
         <li
           aria-selected="false"
-          class="ant-menu-item"
+          class="wmstool-menu-item"
           role="menuitem"
           style="padding-left:24px"
         >
@@ -791,7 +791,7 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
       </ul>
     </div>
     <div
-      class="ant-layout-sider-trigger"
+      class="wmstool-layout-sider-trigger"
       style="width:200px"
     >
       <i
@@ -800,40 +800,40 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-header"
+      class="wmstool-layout-header"
       style="background:#fff;padding:0"
     />
     <div
-      class="ant-layout-content"
+      class="wmstool-layout-content"
       style="margin:0 16px"
     >
       <div
-        class="ant-breadcrumb"
+        class="wmstool-breadcrumb"
         style="margin:16px 0"
       >
         <span>
           <span
-            class="ant-breadcrumb-link"
+            class="wmstool-breadcrumb-link"
           >
             User
           </span>
           <span
-            class="ant-breadcrumb-separator"
+            class="wmstool-breadcrumb-separator"
           >
             /
           </span>
         </span>
         <span>
           <span
-            class="ant-breadcrumb-link"
+            class="wmstool-breadcrumb-link"
           >
             Bill
           </span>
           <span
-            class="ant-breadcrumb-separator"
+            class="wmstool-breadcrumb-separator"
           >
             /
           </span>
@@ -846,7 +846,7 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-layout-footer"
+      class="wmstool-layout-footer"
       style="text-align:center"
     >
       Ant Design ©2016 Created by Ant UED
@@ -857,38 +857,38 @@ exports[`renders ./components/layout/demo/side.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/top.md correctly 1`] = `
 <div
-  class="layout ant-layout"
+  class="layout wmstool-layout"
 >
   <div
-    class="ant-layout-header"
+    class="wmstool-layout-header"
   >
     <div
       class="logo"
     />
     <ul
       aria-activedescendant=""
-      class="ant-menu ant-menu-dark ant-menu-root ant-menu-horizontal"
+      class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-horizontal"
       role="menu"
       style="line-height:64px"
       tabindex="0"
     >
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 1
       </li>
       <li
         aria-selected="true"
-        class="ant-menu-item ant-menu-item-selected"
+        class="wmstool-menu-item wmstool-menu-item-selected"
         role="menuitem"
       >
         nav 2
       </li>
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 3
@@ -896,45 +896,45 @@ exports[`renders ./components/layout/demo/top.md correctly 1`] = `
     </ul>
   </div>
   <div
-    class="ant-layout-content"
+    class="wmstool-layout-content"
     style="padding:0 50px"
   >
     <div
-      class="ant-breadcrumb"
+      class="wmstool-breadcrumb"
       style="margin:16px 0"
     >
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           Home
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           List
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           App
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
@@ -947,7 +947,7 @@ exports[`renders ./components/layout/demo/top.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout-footer"
+    class="wmstool-layout-footer"
     style="text-align:center"
   >
     Ant Design ©2016 Created by Ant UED
@@ -957,38 +957,38 @@ exports[`renders ./components/layout/demo/top.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
 >
   <div
-    class="header ant-layout-header"
+    class="header wmstool-layout-header"
   >
     <div
       class="logo"
     />
     <ul
       aria-activedescendant=""
-      class="ant-menu ant-menu-dark ant-menu-root ant-menu-horizontal"
+      class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-horizontal"
       role="menu"
       style="line-height:64px"
       tabindex="0"
     >
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 1
       </li>
       <li
         aria-selected="true"
-        class="ant-menu-item ant-menu-item-selected"
+        class="wmstool-menu-item wmstool-menu-item-selected"
         role="menuitem"
       >
         nav 2
       </li>
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 3
@@ -996,76 +996,76 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
     </ul>
   </div>
   <div
-    class="ant-layout-content"
+    class="wmstool-layout-content"
     style="padding:0 50px"
   >
     <div
-      class="ant-breadcrumb"
+      class="wmstool-breadcrumb"
       style="margin:16px 0"
     >
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           Home
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           List
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
       <span>
         <span
-          class="ant-breadcrumb-link"
+          class="wmstool-breadcrumb-link"
         >
           App
         </span>
         <span
-          class="ant-breadcrumb-separator"
+          class="wmstool-breadcrumb-separator"
         >
           /
         </span>
       </span>
     </div>
     <div
-      class="ant-layout"
+      class="wmstool-layout"
       style="padding:24px 0;background:#fff"
     >
       <div
-        class="ant-layout-sider"
+        class="wmstool-layout-sider"
         style="background:#fff;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
       >
         <div
-          class="ant-layout-sider-children"
+          class="wmstool-layout-sider-children"
         >
           <ul
             aria-activedescendant=""
-            class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+            class="wmstool-menu wmstool-menu-light wmstool-menu-root wmstool-menu-inline"
             role="menu"
             style="height:100%"
             tabindex="0"
           >
             <li
-              class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu-selected"
+              class="wmstool-menu-submenu wmstool-menu-submenu-inline wmstool-menu-submenu-open wmstool-menu-submenu-selected"
             >
               <div
                 aria-expanded="true"
                 aria-haspopup="true"
                 aria-owns="sub1$Menu"
-                class="ant-menu-submenu-title"
+                class="wmstool-menu-submenu-title"
                 style="padding-left:24px"
               >
                 <span>
@@ -1075,18 +1075,18 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
                   subnav 1
                 </span>
                 <i
-                  class="ant-menu-submenu-arrow"
+                  class="wmstool-menu-submenu-arrow"
                 />
               </div>
               <ul
                 aria-activedescendant=""
-                class="ant-menu  ant-menu-sub ant-menu-inline"
+                class="wmstool-menu  wmstool-menu-sub wmstool-menu-inline"
                 id="sub1$Menu"
                 role="menu"
               >
                 <li
                   aria-selected="true"
-                  class="ant-menu-item ant-menu-item-selected"
+                  class="wmstool-menu-item wmstool-menu-item-selected"
                   role="menuitem"
                   style="padding-left:48px"
                 >
@@ -1094,7 +1094,7 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  class="ant-menu-item"
+                  class="wmstool-menu-item"
                   role="menuitem"
                   style="padding-left:48px"
                 >
@@ -1102,7 +1102,7 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  class="ant-menu-item"
+                  class="wmstool-menu-item"
                   role="menuitem"
                   style="padding-left:48px"
                 >
@@ -1110,7 +1110,7 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  class="ant-menu-item"
+                  class="wmstool-menu-item"
                   role="menuitem"
                   style="padding-left:48px"
                 >
@@ -1119,13 +1119,13 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
               </ul>
             </li>
             <li
-              class="ant-menu-submenu ant-menu-submenu-inline"
+              class="wmstool-menu-submenu wmstool-menu-submenu-inline"
             >
               <div
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-owns="sub2$Menu"
-                class="ant-menu-submenu-title"
+                class="wmstool-menu-submenu-title"
                 style="padding-left:24px"
               >
                 <span>
@@ -1135,18 +1135,18 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
                   subnav 2
                 </span>
                 <i
-                  class="ant-menu-submenu-arrow"
+                  class="wmstool-menu-submenu-arrow"
                 />
               </div>
             </li>
             <li
-              class="ant-menu-submenu ant-menu-submenu-inline"
+              class="wmstool-menu-submenu wmstool-menu-submenu-inline"
             >
               <div
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-owns="sub3$Menu"
-                class="ant-menu-submenu-title"
+                class="wmstool-menu-submenu-title"
                 style="padding-left:24px"
               >
                 <span>
@@ -1156,7 +1156,7 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
                   subnav 3
                 </span>
                 <i
-                  class="ant-menu-submenu-arrow"
+                  class="wmstool-menu-submenu-arrow"
                 />
               </div>
             </li>
@@ -1164,7 +1164,7 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-layout-content"
+        class="wmstool-layout-content"
         style="padding:0 24px;min-height:280px"
       >
         Content
@@ -1172,7 +1172,7 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-layout-footer"
+    class="wmstool-layout-footer"
     style="text-align:center"
   >
     Ant Design ©2016 Created by Ant UED
@@ -1182,38 +1182,38 @@ exports[`renders ./components/layout/demo/top-side.md correctly 1`] = `
 
 exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
 <div
-  class="ant-layout"
+  class="wmstool-layout"
 >
   <div
-    class="header ant-layout-header"
+    class="header wmstool-layout-header"
   >
     <div
       class="logo"
     />
     <ul
       aria-activedescendant=""
-      class="ant-menu ant-menu-dark ant-menu-root ant-menu-horizontal"
+      class="wmstool-menu wmstool-menu-dark wmstool-menu-root wmstool-menu-horizontal"
       role="menu"
       style="line-height:64px"
       tabindex="0"
     >
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 1
       </li>
       <li
         aria-selected="true"
-        class="ant-menu-item ant-menu-item-selected"
+        class="wmstool-menu-item wmstool-menu-item-selected"
         role="menuitem"
       >
         nav 2
       </li>
       <li
         aria-selected="false"
-        class="ant-menu-item"
+        class="wmstool-menu-item"
         role="menuitem"
       >
         nav 3
@@ -1221,30 +1221,30 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
     </ul>
   </div>
   <div
-    class="ant-layout"
+    class="wmstool-layout"
   >
     <div
-      class="ant-layout-sider"
+      class="wmstool-layout-sider"
       style="background:#fff;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"
     >
       <div
-        class="ant-layout-sider-children"
+        class="wmstool-layout-sider-children"
       >
         <ul
           aria-activedescendant=""
-          class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+          class="wmstool-menu wmstool-menu-light wmstool-menu-root wmstool-menu-inline"
           role="menu"
           style="height:100%;border-right:0"
           tabindex="0"
         >
           <li
-            class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu-selected"
+            class="wmstool-menu-submenu wmstool-menu-submenu-inline wmstool-menu-submenu-open wmstool-menu-submenu-selected"
           >
             <div
               aria-expanded="true"
               aria-haspopup="true"
               aria-owns="sub1$Menu"
-              class="ant-menu-submenu-title"
+              class="wmstool-menu-submenu-title"
               style="padding-left:24px"
             >
               <span>
@@ -1254,18 +1254,18 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
                 subnav 1
               </span>
               <i
-                class="ant-menu-submenu-arrow"
+                class="wmstool-menu-submenu-arrow"
               />
             </div>
             <ul
               aria-activedescendant=""
-              class="ant-menu  ant-menu-sub ant-menu-inline"
+              class="wmstool-menu  wmstool-menu-sub wmstool-menu-inline"
               id="sub1$Menu"
               role="menu"
             >
               <li
                 aria-selected="true"
-                class="ant-menu-item ant-menu-item-selected"
+                class="wmstool-menu-item wmstool-menu-item-selected"
                 role="menuitem"
                 style="padding-left:48px"
               >
@@ -1273,7 +1273,7 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
               </li>
               <li
                 aria-selected="false"
-                class="ant-menu-item"
+                class="wmstool-menu-item"
                 role="menuitem"
                 style="padding-left:48px"
               >
@@ -1281,7 +1281,7 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
               </li>
               <li
                 aria-selected="false"
-                class="ant-menu-item"
+                class="wmstool-menu-item"
                 role="menuitem"
                 style="padding-left:48px"
               >
@@ -1289,7 +1289,7 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
               </li>
               <li
                 aria-selected="false"
-                class="ant-menu-item"
+                class="wmstool-menu-item"
                 role="menuitem"
                 style="padding-left:48px"
               >
@@ -1298,13 +1298,13 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
             </ul>
           </li>
           <li
-            class="ant-menu-submenu ant-menu-submenu-inline"
+            class="wmstool-menu-submenu wmstool-menu-submenu-inline"
           >
             <div
               aria-expanded="false"
               aria-haspopup="true"
               aria-owns="sub2$Menu"
-              class="ant-menu-submenu-title"
+              class="wmstool-menu-submenu-title"
               style="padding-left:24px"
             >
               <span>
@@ -1314,18 +1314,18 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
                 subnav 2
               </span>
               <i
-                class="ant-menu-submenu-arrow"
+                class="wmstool-menu-submenu-arrow"
               />
             </div>
           </li>
           <li
-            class="ant-menu-submenu ant-menu-submenu-inline"
+            class="wmstool-menu-submenu wmstool-menu-submenu-inline"
           >
             <div
               aria-expanded="false"
               aria-haspopup="true"
               aria-owns="sub3$Menu"
-              class="ant-menu-submenu-title"
+              class="wmstool-menu-submenu-title"
               style="padding-left:24px"
             >
               <span>
@@ -1335,7 +1335,7 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
                 subnav 3
               </span>
               <i
-                class="ant-menu-submenu-arrow"
+                class="wmstool-menu-submenu-arrow"
               />
             </div>
           </li>
@@ -1343,52 +1343,52 @@ exports[`renders ./components/layout/demo/top-side-2.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-layout"
+      class="wmstool-layout"
       style="padding:0 24px 24px"
     >
       <div
-        class="ant-breadcrumb"
+        class="wmstool-breadcrumb"
         style="margin:16px 0"
       >
         <span>
           <span
-            class="ant-breadcrumb-link"
+            class="wmstool-breadcrumb-link"
           >
             Home
           </span>
           <span
-            class="ant-breadcrumb-separator"
+            class="wmstool-breadcrumb-separator"
           >
             /
           </span>
         </span>
         <span>
           <span
-            class="ant-breadcrumb-link"
+            class="wmstool-breadcrumb-link"
           >
             List
           </span>
           <span
-            class="ant-breadcrumb-separator"
+            class="wmstool-breadcrumb-separator"
           >
             /
           </span>
         </span>
         <span>
           <span
-            class="ant-breadcrumb-link"
+            class="wmstool-breadcrumb-link"
           >
             App
           </span>
           <span
-            class="ant-breadcrumb-separator"
+            class="wmstool-breadcrumb-separator"
           >
             /
           </span>
         </span>
       </div>
       <div
-        class="ant-layout-content"
+        class="wmstool-layout-content"
         style="background:#fff;padding:24px;margin:0;min-height:280px"
       >
         Content

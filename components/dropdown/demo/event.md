@@ -29,7 +29,7 @@ const menu = (
 
 ReactDOM.render(
   <Dropdown overlay={menu}>
-    <a className="ant-dropdown-link" href="#">
+    <a className="wmstool-dropdown-link" href="#">
       Hover me, Click menu item <Icon type="down" />
     </a>
   </Dropdown>

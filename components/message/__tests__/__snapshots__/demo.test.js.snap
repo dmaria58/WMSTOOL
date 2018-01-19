@@ -2,7 +2,7 @@
 
 exports[`renders ./components/message/demo/duration.md correctly 1`] = `
 <button
-  class="ant-btn"
+  class="wmstool-btn"
   type="button"
 >
   <span>
@@ -13,7 +13,7 @@ exports[`renders ./components/message/demo/duration.md correctly 1`] = `
 
 exports[`renders ./components/message/demo/info.md correctly 1`] = `
 <button
-  class="ant-btn ant-btn-primary"
+  class="wmstool-btn wmstool-btn-primary"
   type="button"
 >
   <span>
@@ -24,7 +24,7 @@ exports[`renders ./components/message/demo/info.md correctly 1`] = `
 
 exports[`renders ./components/message/demo/loading.md correctly 1`] = `
 <button
-  class="ant-btn"
+  class="wmstool-btn"
   type="button"
 >
   <span>
@@ -36,7 +36,7 @@ exports[`renders ./components/message/demo/loading.md correctly 1`] = `
 exports[`renders ./components/message/demo/other.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -44,7 +44,7 @@ exports[`renders ./components/message/demo/other.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -52,7 +52,7 @@ exports[`renders ./components/message/demo/other.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>

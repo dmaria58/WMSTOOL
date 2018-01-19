@@ -9,7 +9,7 @@ describe('Calendar', () => {
     const wrapper = mount(
       <Calendar onSelect={onSelect} />
     );
-    wrapper.find('.ant-fullcalendar-cell').at(0).simulate('click');
+    wrapper.find('.wmstool-fullcalendar-cell').at(0).simulate('click');
     expect(onSelect).toBeCalledWith(expect.anything());
     const value = onSelect.mock.calls[0][0];
     expect(Moment.isMoment(value)).toBe(true);

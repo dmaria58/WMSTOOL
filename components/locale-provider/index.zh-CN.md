@@ -20,7 +20,7 @@ import enUS from 'antd/lib/locale-provider/en_US';
 return <LocaleProvider locale={enUS}><App /></LocaleProvider>;
 ```
 
-我们提供了英语，中文，俄语，法语，德语等多种语言支持，所有语言包可以在 [这里](https://github.com/ant-design/ant-design/blob/master/components/locale-provider/) 找到。
+我们提供了英语，中文，俄语，法语，德语等多种语言支持，所有语言包可以在 [这里](https://github.com/wmstool-design/wmstool-design/blob/master/components/locale-provider/) 找到。
 
 注意：如果你需要使用 UMD 版的 dist 文件，应该引入 `antd/dist/antd-with-locales.js`，然后按以下方式使用：
 
@@ -34,11 +34,11 @@ return <LocaleProvider locale={locales.en_US}><App /></LocaleProvider>;
 
 ### 增加语言包
 
-如果你找不到你需要的语言包，欢迎你在 [英文语言包](https://github.com/ant-design/ant-design/blob/master/components/locale-provider/en_US.tsx) 的基础上创建一个新的语言包，并给我们 Pull Request。
+如果你找不到你需要的语言包，欢迎你在 [英文语言包](https://github.com/wmstool-design/wmstool-design/blob/master/components/locale-provider/en_US.tsx) 的基础上创建一个新的语言包，并给我们 Pull Request。
 
 ### 其他国际化需求
 
-本模块仅用于组件的内建文案，若有业务文案的国际化需求，建议使用 [react-intl](https://github.com/yahoo/react-intl)，可参考示例：[Intl demo 1](http://github.com/ant-design/intl-example) 和 [Intl demo 2](http://yiminghe.me/learning-react/examples/react-intl.html?locale=en-US)。
+本模块仅用于组件的内建文案，若有业务文案的国际化需求，建议使用 [react-intl](https://github.com/yahoo/react-intl)，可参考示例：[Intl demo 1](http://github.com/wmstool-design/intl-example) 和 [Intl demo 2](http://yiminghe.me/learning-react/examples/react-intl.html?locale=en-US)。
 
 ## API
 

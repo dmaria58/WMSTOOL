@@ -103,7 +103,7 @@ describe('Table.rowSelection', () => {
     expect(checkboxAll.instance().state).toEqual({ checked: true, indeterminate: false });
   });
 
-  // https://github.com/ant-design/ant-design/issues/4020
+  // https://github.com/wmstool-design/wmstool-design/issues/4020
   it('handles defaultChecked', () => {
     const rowSelection = {
       getCheckboxProps: record => ({
@@ -190,7 +190,7 @@ describe('Table.rowSelection', () => {
     const wrapper = mount(createTable({ rowSelection }));
 
     const dropdownWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    dropdownWrapper.find('.ant-dropdown-menu-item > div').first().simulate('click');
+    dropdownWrapper.find('.wmstool-dropdown-menu-item > div').first().simulate('click');
 
     expect(handleSelectAll).toBeCalledWith(true, data, data);
   });
@@ -206,7 +206,7 @@ describe('Table.rowSelection', () => {
 
     checkboxes.at(1).simulate('change', { target: { checked: true } });
     const dropdownWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    dropdownWrapper.find('.ant-dropdown-menu-item > div').last().simulate('click');
+    dropdownWrapper.find('.wmstool-dropdown-menu-item > div').last().simulate('click');
 
     expect(handleSelectInvert).toBeCalledWith([1, 2, 3]);
   });
@@ -228,12 +228,12 @@ describe('Table.rowSelection', () => {
     const wrapper = mount(createTable({ rowSelection }));
 
     const dropdownWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(dropdownWrapper.find('.ant-dropdown-menu-item').length).toBe(4);
+    expect(dropdownWrapper.find('.wmstool-dropdown-menu-item').length).toBe(4);
 
-    dropdownWrapper.find('.ant-dropdown-menu-item > div').at(2).simulate('click');
+    dropdownWrapper.find('.wmstool-dropdown-menu-item > div').at(2).simulate('click');
     expect(handleSelectOdd).toBeCalledWith([0, 1, 2, 3]);
 
-    dropdownWrapper.find('.ant-dropdown-menu-item > div').at(3).simulate('click');
+    dropdownWrapper.find('.wmstool-dropdown-menu-item > div').at(3).simulate('click');
     expect(handleSelectEven).toBeCalledWith([0, 1, 2, 3]);
   });
 
@@ -250,7 +250,7 @@ describe('Table.rowSelection', () => {
     };
     const wrapper = mount(createTable({ rowSelection }));
     const dropdownWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(dropdownWrapper.find('.ant-dropdown-menu-item').length).toBe(2);
+    expect(dropdownWrapper.find('.wmstool-dropdown-menu-item').length).toBe(2);
   });
 
   it('handle custom selection onSelect correctly when hide default selection options', () => {
@@ -271,16 +271,16 @@ describe('Table.rowSelection', () => {
     const wrapper = mount(createTable({ rowSelection }));
 
     const dropdownWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(dropdownWrapper.find('.ant-dropdown-menu-item').length).toBe(2);
+    expect(dropdownWrapper.find('.wmstool-dropdown-menu-item').length).toBe(2);
 
-    dropdownWrapper.find('.ant-dropdown-menu-item > div').at(0).simulate('click');
+    dropdownWrapper.find('.wmstool-dropdown-menu-item > div').at(0).simulate('click');
     expect(handleSelectOdd).toBeCalledWith([0, 1, 2, 3]);
 
-    dropdownWrapper.find('.ant-dropdown-menu-item > div').at(1).simulate('click');
+    dropdownWrapper.find('.wmstool-dropdown-menu-item > div').at(1).simulate('click');
     expect(handleSelectEven).toBeCalledWith([0, 1, 2, 3]);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4245
+  // https://github.com/wmstool-design/wmstool-design/issues/4245
   it('handles disabled checkbox correctly when dataSource changes', () => {
     const rowSelection = {
       getCheckboxProps: record => ({ disabled: record.disabled }),
@@ -296,7 +296,7 @@ describe('Table.rowSelection', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/4779
+  // https://github.com/wmstool-design/wmstool-design/issues/4779
   it('should not switch pagination when select record', () => {
     const newData = [];
     for (let i = 0; i < 20; i += 1) {
@@ -318,7 +318,7 @@ describe('Table.rowSelection', () => {
   it('highlight selected row', () => {
     const wrapper = mount(createTable());
     wrapper.find('input').at(1).simulate('change', { target: { checked: true } });
-    expect(wrapper.find('tbody tr').at(0).hasClass('ant-table-row-selected')).toBe(true);
+    expect(wrapper.find('tbody tr').at(0).hasClass('wmstool-table-row-selected')).toBe(true);
   });
 
   it('fix selection column on the left', () => {

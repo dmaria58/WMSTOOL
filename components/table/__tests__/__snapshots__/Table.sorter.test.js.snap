@@ -2,7 +2,7 @@
 
 exports[`Table.sorter renders sorter icon correctly 1`] = `
 <thead
-  class="ant-table-thead"
+  class="wmstool-table-thead"
 >
   <tr>
     <th
@@ -11,10 +11,10 @@ exports[`Table.sorter renders sorter icon correctly 1`] = `
       <span>
         Name
         <div
-          class="ant-table-column-sorter"
+          class="wmstool-table-column-sorter"
         >
           <span
-            class="ant-table-column-sorter-up off"
+            class="wmstool-table-column-sorter-up off"
             title="↑"
           >
             <i
@@ -22,7 +22,7 @@ exports[`Table.sorter renders sorter icon correctly 1`] = `
             />
           </span>
           <span
-            class="ant-table-column-sorter-down off"
+            class="wmstool-table-column-sorter-down off"
             title="↓"
           >
             <i

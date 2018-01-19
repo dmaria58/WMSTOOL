@@ -12,7 +12,7 @@ describe('Layout', () => {
         <Content>Content</Content>
       </Layout>
     );
-    expect(wrapper.find('.ant-layout').hasClass('ant-layout-has-sider')).toBe(true);
+    expect(wrapper.find('.wmstool-layout').hasClass('wmstool-layout-has-sider')).toBe(true);
   });
 
   it('detect the sider inside the children', async () => {
@@ -22,6 +22,6 @@ describe('Layout', () => {
         <Content>Content</Content>
       </Layout>
     );
-    expect(wrapper.find('.ant-layout').hasClass('ant-layout-has-sider')).toBe(true);
+    expect(wrapper.find('.wmstool-layout').hasClass('wmstool-layout-has-sider')).toBe(true);
   });
 });

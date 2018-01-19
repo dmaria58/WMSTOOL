@@ -2,7 +2,7 @@
 
 exports[`renders ./components/notification/demo/basic.md correctly 1`] = `
 <button
-  class="ant-btn ant-btn-primary"
+  class="wmstool-btn wmstool-btn-primary"
   type="button"
 >
   <span>
@@ -13,7 +13,7 @@ exports[`renders ./components/notification/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/notification/demo/custom-icon.md correctly 1`] = `
 <button
-  class="ant-btn ant-btn-primary"
+  class="wmstool-btn wmstool-btn-primary"
   type="button"
 >
   <span>
@@ -24,7 +24,7 @@ exports[`renders ./components/notification/demo/custom-icon.md correctly 1`] = `
 
 exports[`renders ./components/notification/demo/custom-style.md correctly 1`] = `
 <button
-  class="ant-btn ant-btn-primary"
+  class="wmstool-btn wmstool-btn-primary"
   type="button"
 >
   <span>
@@ -35,7 +35,7 @@ exports[`renders ./components/notification/demo/custom-style.md correctly 1`] = 
 
 exports[`renders ./components/notification/demo/duration.md correctly 1`] = `
 <button
-  class="ant-btn ant-btn-primary"
+  class="wmstool-btn wmstool-btn-primary"
   type="button"
 >
   <span>
@@ -47,23 +47,23 @@ exports[`renders ./components/notification/demo/duration.md correctly 1`] = `
 exports[`renders ./components/notification/demo/placement.md correctly 1`] = `
 <div>
   <div
-    class="ant-select ant-select-enabled"
+    class="wmstool-select wmstool-select-enabled"
     style="width:120px;margin-right:10px"
   >
     <div
       aria-autocomplete="list"
       aria-expanded="false"
       aria-haspopup="true"
-      class="ant-select-selection
-            ant-select-selection--single"
+      class="wmstool-select-selection
+            wmstool-select-selection--single"
       role="combobox"
       tabindex="0"
     >
       <div
-        class="ant-select-selection__rendered"
+        class="wmstool-select-selection__rendered"
       >
         <div
-          class="ant-select-selection-selected-value"
+          class="wmstool-select-selection-selected-value"
           style="display:block;opacity:1"
           title="topRight"
         >
@@ -71,7 +71,7 @@ exports[`renders ./components/notification/demo/placement.md correctly 1`] = `
         </div>
       </div>
       <span
-        class="ant-select-arrow"
+        class="wmstool-select-arrow"
         style="user-select:none;-webkit-user-select:none"
         unselectable="unselectable"
       >
@@ -80,7 +80,7 @@ exports[`renders ./components/notification/demo/placement.md correctly 1`] = `
     </div>
   </div>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -92,7 +92,7 @@ exports[`renders ./components/notification/demo/placement.md correctly 1`] = `
 
 exports[`renders ./components/notification/demo/with-btn.md correctly 1`] = `
 <button
-  class="ant-btn ant-btn-primary"
+  class="wmstool-btn wmstool-btn-primary"
   type="button"
 >
   <span>
@@ -104,7 +104,7 @@ exports[`renders ./components/notification/demo/with-btn.md correctly 1`] = `
 exports[`renders ./components/notification/demo/with-icon.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -112,7 +112,7 @@ exports[`renders ./components/notification/demo/with-icon.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -120,7 +120,7 @@ exports[`renders ./components/notification/demo/with-icon.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>
@@ -128,7 +128,7 @@ exports[`renders ./components/notification/demo/with-icon.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn"
+    class="wmstool-btn"
     type="button"
   >
     <span>

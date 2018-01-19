@@ -43,7 +43,7 @@ The following APIs are shared by DatePicker, MonthPicker, RangePicker, WeekPicke
 | disabled | determine whether the DatePicker is disabled | boolean | false |
 | disabledDate | specify the date that cannot be selected | (currentDate: moment) => boolean | - |
 | getCalendarContainer | to set the container of the floating layer, while the default is to create a `div` element in `body` | function(trigger) | - |
-| locale | localization configuration | object | [default](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) |
+| locale | localization configuration | object | [default](https://github.com/wmstool-design/wmstool-design/blob/master/components/date-picker/locale/example.json) |
 | open | open state of picker | boolean | - |
 | placeholder | placeholder of date input | string\|RangePicker\[] | - |
 | popupStyle | to customize the style of the popup calendar | object | {} |
@@ -111,7 +111,7 @@ The following APIs are shared by DatePicker, MonthPicker, RangePicker, WeekPicke
 | onOk | callback when click ok button | function() | - |
 
 <style>
-.code-box-demo .ant-calendar-picker {
+.code-box-demo .wmstool-calendar-picker {
   margin: 0 8px 12px 0;
 }
 </style>

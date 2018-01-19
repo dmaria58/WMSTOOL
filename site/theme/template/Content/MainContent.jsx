@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
-import { Row, Col, Menu, Icon } from 'antd';
+import { Row, Col, Menu, Icon } from 'wmstool';
 import classNames from 'classnames';
 import MobileMenu from 'rc-drawer-menu';
 import Article from './Article';

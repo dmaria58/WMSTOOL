@@ -6,7 +6,7 @@ let defaultDuration = 3;
 let defaultTop: number;
 let messageInstance: any;
 let key = 1;
-let prefixCls = 'ant-message';
+let prefixCls = 'wmstool-message';
 let getContainer: () => HTMLElement;
 
 function getMessageInstance(callback: (i: any) => void) {

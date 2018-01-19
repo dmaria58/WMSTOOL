@@ -56,12 +56,12 @@ export default class FilterMenu<T> extends React.Component<FilterMenuProps<T>, F
 
   setNeverShown = (column: ColumnProps<T>) => {
     const rootNode = ReactDOM.findDOMNode(this);
-    const filterBelongToScrollBody = !!closest(rootNode, `.ant-table-scroll`);
+    const filterBelongToScrollBody = !!closest(rootNode, `.wmstool-table-scroll`);
     if (filterBelongToScrollBody) {
       // When fixed column have filters, there will be two dropdown menus
       // Filter dropdown menu inside scroll body should never be shown
-      // To fix https://github.com/ant-design/ant-design/issues/5010 and
-      // https://github.com/ant-design/ant-design/issues/7909
+      // To fix https://github.com/wmstool-design/wmstool-design/issues/5010 and
+      // https://github.com/wmstool-design/wmstool-design/issues/7909
       this.neverShown = !!column.fixed;
     }
   }

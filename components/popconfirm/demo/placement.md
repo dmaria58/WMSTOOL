@@ -76,14 +76,14 @@ ReactDOM.render(
 .code-box-demo .demo {
   overflow: auto;
 }
-.code-box-demo .ant-popover-wrap > a {
+.code-box-demo .wmstool-popover-wrap > a {
   margin-right: 8px;
 }
-.code-box-demo .ant-btn {
+.code-box-demo .wmstool-btn {
   margin-right: 8px;
   margin-bottom: 8px;
 }
-#components-popconfirm-demo-placement .ant-btn {
+#components-popconfirm-demo-placement .wmstool-btn {
   width: 70px;
   text-align: center;
   padding: 0;

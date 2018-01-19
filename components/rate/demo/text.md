@@ -28,7 +28,7 @@ class Rater extends React.Component {
     return (
       <span>
         <Rate onChange={this.handleChange} value={value} />
-        {value && <span className="ant-rate-text">{value} stars</span>}
+        {value && <span className="wmstool-rate-text">{value} stars</span>}
       </span>
     );
   }

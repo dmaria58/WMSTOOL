@@ -34,7 +34,7 @@ const menu = (
 
 ReactDOM.render(
   <Dropdown overlay={menu}>
-    <a className="ant-dropdown-link" href="#">
+    <a className="wmstool-dropdown-link" href="#">
       Cascading menu <Icon type="down" />
     </a>
   </Dropdown>

@@ -2,8 +2,8 @@
 @import "../../style/mixins/index";
 @import "../../input/style/mixin";
 
-@input-prefix-cls: ~"@{ant-prefix}-input";
-@select-prefix-cls: ~"@{ant-prefix}-select";
+@input-prefix-cls: ~"@{wmstool-prefix}-input";
+@select-prefix-cls: ~"@{wmstool-prefix}-select";
 @autocomplete-prefix-cls: ~"@{select-prefix-cls}-auto-complete";
 
 .@{autocomplete-prefix-cls} {
@@ -31,7 +31,7 @@
       }
     }
 
-    // Fix https://github.com/ant-design/ant-design/issues/7800
+    // Fix https://github.com/wmstool-design/wmstool-design/issues/7800
     .@{select-prefix-cls}-search--inline {
       position: static;
       float: left;

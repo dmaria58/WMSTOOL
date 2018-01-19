@@ -2,7 +2,7 @@
 @import "../../style/mixins/index";
 @import "./mixin";
 
-@btn-prefix-cls: ~"@{ant-prefix}-btn";
+@btn-prefix-cls: ~"@{wmstool-prefix}-btn";
 
 // for compatibile
 @btn-ghost-color: @text-color;
@@ -17,7 +17,7 @@
   .btn-default;
 
   // Make sure that the target of Button's click event always be `button`
-  // Ref: https://github.com/ant-design/ant-design/issues/7034
+  // Ref: https://github.com/wmstool-design/wmstool-design/issues/7034
   > i,
   > span {
     pointer-events: none;
@@ -156,11 +156,11 @@
   }
 
   &-background-ghost&-primary {
-    .button-variant-ghost(@primary-color);
+    .button-variwmstool-ghost(@primary-color);
   }
 
   &-background-ghost&-danger {
-    .button-variant-ghost(@btn-danger-color);
+    .button-variwmstool-ghost(@btn-danger-color);
   }
 }
 

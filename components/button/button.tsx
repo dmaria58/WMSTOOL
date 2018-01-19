@@ -62,7 +62,7 @@ export default class Button extends React.Component<ButtonProps, any> {
   static __ANT_BUTTON = true;
 
   static defaultProps = {
-    prefixCls: 'ant-btn',
+    prefixCls: 'wmstool-btn',
     loading: false,
     ghost: false,
   };

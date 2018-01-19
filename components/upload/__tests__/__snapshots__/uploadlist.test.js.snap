@@ -5,10 +5,10 @@ exports[`Upload List handle error 1`] = `
   class=""
 >
   <div
-    class="ant-upload ant-upload-select ant-upload-select-text"
+    class="wmstool-upload wmstool-upload-select wmstool-upload-select-text"
   >
     <span
-      class="ant-upload"
+      class="wmstool-upload"
       role="button"
       tabindex="0"
     >
@@ -23,20 +23,20 @@ exports[`Upload List handle error 1`] = `
     </span>
   </div>
   <div
-    class="ant-upload-list ant-upload-list-text"
+    class="wmstool-upload-list wmstool-upload-list-text"
   >
     <div
-      class="ant-upload-list-item ant-upload-list-item-error"
+      class="wmstool-upload-list-item wmstool-upload-list-item-error"
     >
       <div
-        class="ant-upload-list-item-info"
+        class="wmstool-upload-list-item-info"
       >
         <span>
           <i
             class="anticon anticon-paper-clip"
           />
           <span
-            class="ant-upload-list-item-name"
+            class="wmstool-upload-list-item-name"
             title="foo.png"
           >
             foo.png
@@ -48,20 +48,20 @@ exports[`Upload List handle error 1`] = `
         title="Remove file"
       />
       <div
-        class="ant-upload-list-item-progress fade-leave"
+        class="wmstool-upload-list-item-progress fade-leave"
       >
         <div
-          class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default"
+          class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-default"
         >
           <div>
             <div
-              class="ant-progress-outer"
+              class="wmstool-progress-outer"
             >
               <div
-                class="ant-progress-inner"
+                class="wmstool-progress-inner"
               >
                 <div
-                  class="ant-progress-bg"
+                  class="wmstool-progress-bg"
                   style="width: 0%; height: 2px;"
                 />
               </div>
@@ -79,10 +79,10 @@ exports[`Upload List should be uploading when upload a file 1`] = `
   class=""
 >
   <div
-    class="ant-upload ant-upload-select ant-upload-select-text"
+    class="wmstool-upload wmstool-upload-select wmstool-upload-select-text"
   >
     <span
-      class="ant-upload"
+      class="wmstool-upload"
       role="button"
       tabindex="0"
     >
@@ -97,20 +97,20 @@ exports[`Upload List should be uploading when upload a file 1`] = `
     </span>
   </div>
   <div
-    class="ant-upload-list ant-upload-list-text"
+    class="wmstool-upload-list wmstool-upload-list-text"
   >
     <div
-      class="ant-upload-list-item ant-upload-list-item-uploading ant-upload-animate-enter"
+      class="wmstool-upload-list-item wmstool-upload-list-item-uploading wmstool-upload-animate-enter"
     >
       <div
-        class="ant-upload-list-item-info"
+        class="wmstool-upload-list-item-info"
       >
         <span>
           <i
             class="anticon anticon-spin anticon-loading"
           />
           <span
-            class="ant-upload-list-item-name"
+            class="wmstool-upload-list-item-name"
             title="foo.png"
           >
             foo.png
@@ -122,20 +122,20 @@ exports[`Upload List should be uploading when upload a file 1`] = `
         title="Remove file"
       />
       <div
-        class="ant-upload-list-item-progress"
+        class="wmstool-upload-list-item-progress"
       >
         <div
-          class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default"
+          class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-default"
         >
           <div>
             <div
-              class="ant-progress-outer"
+              class="wmstool-progress-outer"
             >
               <div
-                class="ant-progress-inner"
+                class="wmstool-progress-inner"
               >
                 <div
-                  class="ant-progress-bg"
+                  class="wmstool-progress-bg"
                   style="width: 0%; height: 2px;"
                 />
               </div>
@@ -153,10 +153,10 @@ exports[`Upload List should be uploading when upload a file 2`] = `
   class=""
 >
   <div
-    class="ant-upload ant-upload-select ant-upload-select-text"
+    class="wmstool-upload wmstool-upload-select wmstool-upload-select-text"
   >
     <span
-      class="ant-upload"
+      class="wmstool-upload"
       role="button"
       tabindex="0"
     >
@@ -171,20 +171,20 @@ exports[`Upload List should be uploading when upload a file 2`] = `
     </span>
   </div>
   <div
-    class="ant-upload-list ant-upload-list-text"
+    class="wmstool-upload-list wmstool-upload-list-text"
   >
     <div
-      class="ant-upload-list-item ant-upload-list-item-done"
+      class="wmstool-upload-list-item wmstool-upload-list-item-done"
     >
       <div
-        class="ant-upload-list-item-info"
+        class="wmstool-upload-list-item-info"
       >
         <span>
           <i
             class="anticon anticon-paper-clip"
           />
           <span
-            class="ant-upload-list-item-name"
+            class="wmstool-upload-list-item-name"
             title="foo.png"
           >
             foo.png
@@ -196,20 +196,20 @@ exports[`Upload List should be uploading when upload a file 2`] = `
         title="Remove file"
       />
       <div
-        class="ant-upload-list-item-progress fade-leave"
+        class="wmstool-upload-list-item-progress fade-leave"
       >
         <div
-          class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default"
+          class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-default"
         >
           <div>
             <div
-              class="ant-progress-outer"
+              class="wmstool-progress-outer"
             >
               <div
-                class="ant-progress-inner"
+                class="wmstool-progress-inner"
               >
                 <div
-                  class="ant-progress-bg"
+                  class="wmstool-progress-bg"
                   style="width: 0%; height: 2px;"
                 />
               </div>

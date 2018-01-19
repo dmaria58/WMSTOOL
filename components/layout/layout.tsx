@@ -74,19 +74,19 @@ const Layout: React.ComponentClass<BasicProps> & {
   Content: React.ComponentClass<BasicProps>;
   Sider: React.ComponentClass<SiderProps>;
 } = generator({
-  prefixCls: 'ant-layout',
+  prefixCls: 'wmstool-layout',
 })(BasicLayout);
 
 const Header = generator({
-  prefixCls: 'ant-layout-header',
+  prefixCls: 'wmstool-layout-header',
 })(Basic);
 
 const Footer = generator({
-  prefixCls: 'ant-layout-footer',
+  prefixCls: 'wmstool-layout-footer',
 })(Basic);
 
 const Content = generator({
-  prefixCls: 'ant-layout-content',
+  prefixCls: 'wmstool-layout-content',
 })(Basic);
 
 Layout.Header = Header;

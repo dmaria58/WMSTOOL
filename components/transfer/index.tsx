@@ -320,7 +320,7 @@ export default class Transfer extends React.Component<TransferProps, any> {
 
   renderTransfer = (locale: TransferLocale) => {
     const {
-      prefixCls = 'ant-transfer',
+      prefixCls = 'wmstool-transfer',
       className,
       operations = [],
       showSearch,

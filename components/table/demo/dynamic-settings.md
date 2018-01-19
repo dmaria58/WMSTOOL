@@ -42,7 +42,7 @@ const columns = [{
       <Divider type="vertical" />
       <a href="#">Delete</a>
       <Divider type="vertical" />
-      <a href="#" className="ant-dropdown-link">
+      <a href="#" className="wmstool-dropdown-link">
         More actions <Icon type="down" />
       </a>
     </span>
@@ -169,7 +169,7 @@ ReactDOM.render(<Demo />, mountNode);
 .components-table-demo-control-bar {
   margin-bottom: 10px;
 }
-.components-table-demo-control-bar .ant-form-item {
+.components-table-demo-control-bar .wmstool-form-item {
   margin-right: 16px;
   margin-bottom: 8px;
 }

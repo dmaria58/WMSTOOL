@@ -2,21 +2,21 @@
 
 exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
 <ul
-  class="ant-rate"
+  class="wmstool-rate"
   tabindex="0"
 >
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -24,17 +24,17 @@ exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -42,17 +42,17 @@ exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -60,17 +60,17 @@ exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -78,17 +78,17 @@ exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -101,21 +101,21 @@ exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
 exports[`renders ./components/rate/demo/character.md correctly 1`] = `
 <div>
   <ul
-    class="ant-rate"
+    class="wmstool-rate"
     tabindex="0"
   >
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-heart"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-heart"
@@ -123,17 +123,17 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-heart"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-heart"
@@ -141,17 +141,17 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-heart"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-heart"
@@ -159,17 +159,17 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-heart"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-heart"
@@ -177,17 +177,17 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-heart"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-heart"
@@ -197,76 +197,76 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
   </ul>
   <br />
   <ul
-    class="ant-rate"
+    class="wmstool-rate"
     style="font-size:36px"
     tabindex="0"
   >
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         A
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         A
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         A
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         A
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         A
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         A
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         A
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         A
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         A
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         A
       </div>
@@ -274,75 +274,75 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
   </ul>
   <br />
   <ul
-    class="ant-rate"
+    class="wmstool-rate"
     tabindex="0"
   >
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         好
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         好
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         好
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         好
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         好
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         好
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         好
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         好
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         好
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         好
       </div>
@@ -353,21 +353,21 @@ exports[`renders ./components/rate/demo/character.md correctly 1`] = `
 
 exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
 <ul
-  class="ant-rate ant-rate-disabled"
+  class="wmstool-rate wmstool-rate-disabled"
   tabindex="-1"
 >
   <li
-    class="ant-rate-star ant-rate-star-full"
+    class="wmstool-rate-star wmstool-rate-star-full"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -375,17 +375,17 @@ exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-full"
+    class="wmstool-rate-star wmstool-rate-star-full"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -393,17 +393,17 @@ exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -411,17 +411,17 @@ exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -429,17 +429,17 @@ exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -451,21 +451,21 @@ exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
 
 exports[`renders ./components/rate/demo/half.md correctly 1`] = `
 <ul
-  class="ant-rate"
+  class="wmstool-rate"
   tabindex="0"
 >
   <li
-    class="ant-rate-star ant-rate-star-full"
+    class="wmstool-rate-star wmstool-rate-star-full"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -473,17 +473,17 @@ exports[`renders ./components/rate/demo/half.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-full"
+    class="wmstool-rate-star wmstool-rate-star-full"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -491,17 +491,17 @@ exports[`renders ./components/rate/demo/half.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-half ant-rate-star-active"
+    class="wmstool-rate-star wmstool-rate-star-half wmstool-rate-star-active"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -509,17 +509,17 @@ exports[`renders ./components/rate/demo/half.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -527,17 +527,17 @@ exports[`renders ./components/rate/demo/half.md correctly 1`] = `
     </div>
   </li>
   <li
-    class="ant-rate-star ant-rate-star-zero"
+    class="wmstool-rate-star wmstool-rate-star-zero"
   >
     <div
-      class="ant-rate-star-first"
+      class="wmstool-rate-star-first"
     >
       <i
         class="anticon anticon-star"
       />
     </div>
     <div
-      class="ant-rate-star-second"
+      class="wmstool-rate-star-second"
     >
       <i
         class="anticon anticon-star"
@@ -550,21 +550,21 @@ exports[`renders ./components/rate/demo/half.md correctly 1`] = `
 exports[`renders ./components/rate/demo/text.md correctly 1`] = `
 <span>
   <ul
-    class="ant-rate"
+    class="wmstool-rate"
     tabindex="0"
   >
     <li
-      class="ant-rate-star ant-rate-star-full"
+      class="wmstool-rate-star wmstool-rate-star-full"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-star"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-star"
@@ -572,17 +572,17 @@ exports[`renders ./components/rate/demo/text.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-full"
+      class="wmstool-rate-star wmstool-rate-star-full"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-star"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-star"
@@ -590,17 +590,17 @@ exports[`renders ./components/rate/demo/text.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-full"
+      class="wmstool-rate-star wmstool-rate-star-full"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-star"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-star"
@@ -608,17 +608,17 @@ exports[`renders ./components/rate/demo/text.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-star"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-star"
@@ -626,17 +626,17 @@ exports[`renders ./components/rate/demo/text.md correctly 1`] = `
       </div>
     </li>
     <li
-      class="ant-rate-star ant-rate-star-zero"
+      class="wmstool-rate-star wmstool-rate-star-zero"
     >
       <div
-        class="ant-rate-star-first"
+        class="wmstool-rate-star-first"
       >
         <i
           class="anticon anticon-star"
         />
       </div>
       <div
-        class="ant-rate-star-second"
+        class="wmstool-rate-star-second"
       >
         <i
           class="anticon anticon-star"
@@ -645,7 +645,7 @@ exports[`renders ./components/rate/demo/text.md correctly 1`] = `
     </li>
   </ul>
   <span
-    class="ant-rate-text"
+    class="wmstool-rate-text"
   >
     3 stars
   </span>

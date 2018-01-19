@@ -5,40 +5,40 @@ exports[`Modal render correctly 1`] = `
   <div />
   <div>
     <div
-      class="ant-modal-mask fade-appear"
+      class="wmstool-modal-mask fade-appear"
     />
     <div
-      class="ant-modal-wrap "
+      class="wmstool-modal-wrap "
       role="dialog"
       tabindex="-1"
     >
       <div
-        class="ant-modal zoom-appear"
+        class="wmstool-modal zoom-appear"
         role="document"
         style="width: 520px;"
       >
         <div
-          class="ant-modal-content"
+          class="wmstool-modal-content"
         >
           <button
             aria-label="Close"
-            class="ant-modal-close"
+            class="wmstool-modal-close"
           >
             <span
-              class="ant-modal-close-x"
+              class="wmstool-modal-close-x"
             />
           </button>
           <div
-            class="ant-modal-body"
+            class="wmstool-modal-body"
           >
             Here is content of Modal
           </div>
           <div
-            class="ant-modal-footer"
+            class="wmstool-modal-footer"
           >
             <div>
               <button
-                class="ant-btn"
+                class="wmstool-btn"
                 type="button"
               >
                 <span>
@@ -46,7 +46,7 @@ exports[`Modal render correctly 1`] = `
                 </span>
               </button>
               <button
-                class="ant-btn ant-btn-primary"
+                class="wmstool-btn wmstool-btn-primary"
                 type="button"
               >
                 <span>
@@ -73,31 +73,31 @@ exports[`Modal render without footer 1`] = `
   <div />
   <div>
     <div
-      class="ant-modal-mask fade-appear"
+      class="wmstool-modal-mask fade-appear"
     />
     <div
-      class="ant-modal-wrap "
+      class="wmstool-modal-wrap "
       role="dialog"
       tabindex="-1"
     >
       <div
-        class="ant-modal zoom-appear"
+        class="wmstool-modal zoom-appear"
         role="document"
         style="width: 520px;"
       >
         <div
-          class="ant-modal-content"
+          class="wmstool-modal-content"
         >
           <button
             aria-label="Close"
-            class="ant-modal-close"
+            class="wmstool-modal-close"
           >
             <span
-              class="ant-modal-close-x"
+              class="wmstool-modal-close-x"
             />
           </button>
           <div
-            class="ant-modal-body"
+            class="wmstool-modal-body"
           >
             Here is content of Modal
           </div>

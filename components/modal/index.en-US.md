@@ -79,7 +79,7 @@ ref.destroy();
 ```
 
 <style>
-.code-box-demo .ant-btn {
+.code-box-demo .wmstool-btn {
   margin-right: 8px;
 }
 </style>

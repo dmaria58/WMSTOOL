@@ -55,4 +55,4 @@ import moment from 'moment';
 | focus() | get focus |
 | blur() | remove focus |
 
-<style>.code-box-demo .ant-time-picker { margin: 0 8px 12px 0; }</style>
+<style>.code-box-demo .wmstool-time-picker { margin: 0 8px 12px 0; }</style>

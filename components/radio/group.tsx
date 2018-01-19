@@ -89,7 +89,7 @@ export default class RadioGroup extends React.Component<RadioGroupProps, RadioGr
   }
   render() {
     const props = this.props;
-    const { prefixCls = 'ant-radio-group', className = '', options } = props;
+    const { prefixCls = 'wmstool-radio-group', className = '', options } = props;
     const classString = classNames(prefixCls, {
       [`${prefixCls}-${props.size}`]: props.size,
     }, className);

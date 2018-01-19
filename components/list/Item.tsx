@@ -26,7 +26,7 @@ export interface ListItemMetaProps {
 
 export const Meta = (props: ListItemMetaProps) => {
   const {
-    prefixCls = 'ant-list',
+    prefixCls = 'wmstool-list',
     className,
     avatar,
     title,
@@ -75,7 +75,7 @@ export default class Item extends React.Component<ListItemProps, any> {
 
   render() {
     const { grid } = this.context;
-    const { prefixCls = 'ant-list', children, actions, extra, className, ...others } = this.props;
+    const { prefixCls = 'wmstool-list', children, actions, extra, className, ...others } = this.props;
     const classString = classNames(`${prefixCls}-item`, className);
 
     const metaContent: React.ReactElement<any>[] = [];

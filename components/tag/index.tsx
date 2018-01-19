@@ -29,7 +29,7 @@ export interface TagState {
 export default class Tag extends React.Component<TagProps, TagState> {
   static CheckableTag = CheckableTag;
   static defaultProps = {
-    prefixCls: 'ant-tag',
+    prefixCls: 'wmstool-tag',
     closable: false,
   };
 

@@ -68,7 +68,7 @@ export default class Sider extends React.Component<SiderProps, SliderState> {
   static __ANT_LAYOUT_SIDER: any = true;
 
   static defaultProps = {
-    prefixCls: 'ant-layout-sider',
+    prefixCls: 'wmstool-layout-sider',
     collapsible: false,
     defaultCollapsed: false,
     reverseArrow: false,
@@ -91,7 +91,7 @@ export default class Sider extends React.Component<SiderProps, SliderState> {
 
   constructor(props: SiderProps) {
     super(props);
-    this.uniqueId = generateId('ant-sider-');
+    this.uniqueId = generateId('wmstool-sider-');
     let matchMedia;
     if (typeof window !== 'undefined') {
       matchMedia = window.matchMedia;
@@ -207,7 +207,7 @@ export default class Sider extends React.Component<SiderProps, SliderState> {
       ...style,
       flex: `0 0 ${siderWidth}px`,
       maxWidth: `${siderWidth}px`, // Fix width transition bug in IE11
-      minWidth: `${siderWidth}px`, // https://github.com/ant-design/ant-design/issues/6349
+      minWidth: `${siderWidth}px`, // https://github.com/wmstool-design/wmstool-design/issues/6349
       width: `${siderWidth}px`,
     };
     const siderCls = classNames(className, prefixCls, {

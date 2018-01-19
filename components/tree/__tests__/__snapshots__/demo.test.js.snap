@@ -2,7 +2,7 @@
 
 exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
 <ul
-  class="ant-tree"
+  class="wmstool-tree"
   role="tree-node"
   unselectable="on"
 >
@@ -10,75 +10,75 @@ exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_open"
+      class="wmstool-tree-switcher wmstool-tree-switcher_open"
     />
     <span
-      class="ant-tree-checkbox ant-tree-checkbox-checked"
+      class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
     >
       <span
-        class="ant-tree-checkbox-inner"
+        class="wmstool-tree-checkbox-inner"
       />
     </span>
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
       title="parent 1"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         parent 1
       </span>
     </span>
     <ul
-      class="ant-tree-child-tree ant-tree-child-tree-open"
+      class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
       data-expanded="true"
     >
       <li
-        class="ant-tree-treenode-disabled"
+        class="wmstool-tree-treenode-disabled"
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open ant-tree-switcher-disabled"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open wmstool-tree-switcher-disabled"
         />
         <span
-          class="ant-tree-checkbox ant-tree-checkbox-checked ant-tree-checkbox-disabled"
+          class="wmstool-tree-checkbox wmstool-tree-checkbox-checked wmstool-tree-checkbox-disabled"
         >
           <span
-            class="ant-tree-checkbox-inner"
+            class="wmstool-tree-checkbox-inner"
           />
         </span>
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
           title="parent 1-0"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-0
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox ant-tree-checkbox-disabled"
+              class="wmstool-tree-checkbox wmstool-tree-checkbox-disabled"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -88,21 +88,21 @@ exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox ant-tree-checkbox-checked"
+              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -114,48 +114,48 @@ exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
-          class="ant-tree-checkbox ant-tree-checkbox-checked"
+          class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
         >
           <span
-            class="ant-tree-checkbox-inner"
+            class="wmstool-tree-checkbox-inner"
           />
         </span>
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
           title="parent 1-1"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-1
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox ant-tree-checkbox-checked"
+              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title=""
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 <span
                   style="color:#1890ff"
@@ -174,7 +174,7 @@ exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
 <ul
-  class="ant-tree"
+  class="wmstool-tree"
   role="tree-node"
   unselectable="on"
 >
@@ -182,75 +182,75 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_open"
+      class="wmstool-tree-switcher wmstool-tree-switcher_open"
     />
     <span
-      class="ant-tree-checkbox ant-tree-checkbox-indeterminate"
+      class="wmstool-tree-checkbox wmstool-tree-checkbox-indeterminate"
     >
       <span
-        class="ant-tree-checkbox-inner"
+        class="wmstool-tree-checkbox-inner"
       />
     </span>
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
       title="0-0"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         0-0
       </span>
     </span>
     <ul
-      class="ant-tree-child-tree ant-tree-child-tree-open"
+      class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
       data-expanded="true"
     >
       <li
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
-          class="ant-tree-checkbox ant-tree-checkbox-checked"
+          class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
         >
           <span
-            class="ant-tree-checkbox-inner"
+            class="wmstool-tree-checkbox-inner"
           />
         </span>
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
           title="0-0-0"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             0-0-0
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox ant-tree-checkbox-checked"
+              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="0-0-0-0"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-0-0
               </span>
@@ -260,21 +260,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox ant-tree-checkbox-checked"
+              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="0-0-0-1"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-0-1
               </span>
@@ -284,21 +284,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox ant-tree-checkbox-checked"
+              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="0-0-0-2"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-0-2
               </span>
@@ -310,48 +310,48 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
-          class="ant-tree-checkbox"
+          class="wmstool-tree-checkbox"
         >
           <span
-            class="ant-tree-checkbox-inner"
+            class="wmstool-tree-checkbox-inner"
           />
         </span>
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
           title="0-0-1"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             0-0-1
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox"
+              class="wmstool-tree-checkbox"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="0-0-1-0"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-1-0
               </span>
@@ -361,21 +361,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox"
+              class="wmstool-tree-checkbox"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="0-0-1-1"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-1-1
               </span>
@@ -385,21 +385,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-checkbox"
+              class="wmstool-tree-checkbox"
             >
               <span
-                class="ant-tree-checkbox-inner"
+                class="wmstool-tree-checkbox-inner"
               />
             </span>
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="0-0-1-2"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-1-2
               </span>
@@ -411,21 +411,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher-noop"
+          class="wmstool-tree-switcher wmstool-tree-switcher-noop"
         />
         <span
-          class="ant-tree-checkbox"
+          class="wmstool-tree-checkbox"
         >
           <span
-            class="ant-tree-checkbox-inner"
+            class="wmstool-tree-checkbox-inner"
           />
         </span>
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
           title="0-0-2"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             0-0-2
           </span>
@@ -437,21 +437,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_close"
+      class="wmstool-tree-switcher wmstool-tree-switcher_close"
     />
     <span
-      class="ant-tree-checkbox"
+      class="wmstool-tree-checkbox"
     >
       <span
-        class="ant-tree-checkbox-inner"
+        class="wmstool-tree-checkbox-inner"
       />
     </span>
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
       title="0-1"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         0-1
       </span>
@@ -461,21 +461,21 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher-noop"
+      class="wmstool-tree-switcher wmstool-tree-switcher-noop"
     />
     <span
-      class="ant-tree-checkbox"
+      class="wmstool-tree-checkbox"
     >
       <span
-        class="ant-tree-checkbox-inner"
+        class="wmstool-tree-checkbox-inner"
       />
     </span>
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
       title="0-2"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         0-2
       </span>
@@ -486,7 +486,7 @@ exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
 
 exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `
 <ul
-  class="ant-tree ant-tree-show-line"
+  class="wmstool-tree wmstool-tree-show-line"
   role="tree-node"
   unselectable="on"
 >
@@ -494,63 +494,63 @@ exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_open"
+      class="wmstool-tree-switcher wmstool-tree-switcher_open"
     />
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
       title="parent 1"
     >
       <span
-        class="ant-tree-iconEle ant-tree-icon__open"
+        class="wmstool-tree-iconEle wmstool-tree-icon__open"
       />
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         parent 1
       </span>
     </span>
     <ul
-      class="ant-tree-child-tree ant-tree-child-tree-open"
+      class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
       data-expanded="true"
     >
       <li
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open ant-tree-node-selected"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open wmstool-tree-node-selected"
           title="parent 1-0"
         >
           <span
-            class="ant-tree-iconEle ant-tree-icon__open"
+            class="wmstool-tree-iconEle wmstool-tree-icon__open"
           />
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-0
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-iconEle ant-tree-icon__docu"
+                class="wmstool-tree-iconEle wmstool-tree-icon__docu"
               />
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -560,17 +560,17 @@ exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-iconEle ant-tree-icon__docu"
+                class="wmstool-tree-iconEle wmstool-tree-icon__docu"
               />
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -582,40 +582,40 @@ exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
           title="parent 1-1"
         >
           <span
-            class="ant-tree-iconEle ant-tree-icon__open"
+            class="wmstool-tree-iconEle wmstool-tree-icon__open"
           />
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-1
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-iconEle ant-tree-icon__docu"
+                class="wmstool-tree-iconEle wmstool-tree-icon__docu"
               />
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -627,17 +627,17 @@ exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher-noop"
+          class="wmstool-tree-switcher wmstool-tree-switcher-noop"
         />
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
           title="leaf"
         >
           <span
-            class="ant-tree-iconEle ant-tree-icon__docu"
+            class="wmstool-tree-iconEle wmstool-tree-icon__docu"
           />
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             leaf
           </span>
@@ -650,7 +650,7 @@ exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `
 
 exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
 <ul
-  class="ant-tree draggable-tree"
+  class="wmstool-tree draggable-tree"
   role="tree-node"
   unselectable="on"
 >
@@ -658,60 +658,60 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_open"
+      class="wmstool-tree-switcher wmstool-tree-switcher_open"
     />
     <span
       aria-grabbed="true"
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open draggable"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open draggable"
       draggable="true"
       title="0-0"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         0-0
       </span>
     </span>
     <ul
-      class="ant-tree-child-tree ant-tree-child-tree-open"
+      class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
       data-expanded="true"
     >
       <li
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
           aria-grabbed="true"
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open draggable"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open draggable"
           draggable="true"
           title="0-0-0"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             0-0-0
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
               aria-grabbed="true"
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal draggable"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal draggable"
               draggable="true"
               title="0-0-0-0"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-0-0
               </span>
@@ -721,16 +721,16 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
               aria-grabbed="true"
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal draggable"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal draggable"
               draggable="true"
               title="0-0-0-1"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-0-1
               </span>
@@ -740,16 +740,16 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
               aria-grabbed="true"
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal draggable"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal draggable"
               draggable="true"
               title="0-0-0-2"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 0-0-0-2
               </span>
@@ -761,16 +761,16 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_close"
+          class="wmstool-tree-switcher wmstool-tree-switcher_close"
         />
         <span
           aria-grabbed="true"
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close draggable"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close draggable"
           draggable="true"
           title="0-0-1"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             0-0-1
           </span>
@@ -780,16 +780,16 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher-noop"
+          class="wmstool-tree-switcher wmstool-tree-switcher-noop"
         />
         <span
           aria-grabbed="true"
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal draggable"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal draggable"
           draggable="true"
           title="0-0-2"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             0-0-2
           </span>
@@ -801,16 +801,16 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_close"
+      class="wmstool-tree-switcher wmstool-tree-switcher_close"
     />
     <span
       aria-grabbed="true"
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close draggable"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close draggable"
       draggable="true"
       title="0-1"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         0-1
       </span>
@@ -820,16 +820,16 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher-noop"
+      class="wmstool-tree-switcher wmstool-tree-switcher-noop"
     />
     <span
       aria-grabbed="true"
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal draggable"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal draggable"
       draggable="true"
       title="0-2"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         0-2
       </span>
@@ -840,7 +840,7 @@ exports[`renders ./components/tree/demo/draggable.md correctly 1`] = `
 
 exports[`renders ./components/tree/demo/dynamic.md correctly 1`] = `
 <ul
-  class="ant-tree"
+  class="wmstool-tree"
   role="tree-node"
   unselectable="on"
 >
@@ -848,14 +848,14 @@ exports[`renders ./components/tree/demo/dynamic.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_close"
+      class="wmstool-tree-switcher wmstool-tree-switcher_close"
     />
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
       title="Expand to load"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         Expand to load
       </span>
@@ -865,14 +865,14 @@ exports[`renders ./components/tree/demo/dynamic.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_close"
+      class="wmstool-tree-switcher wmstool-tree-switcher_close"
     />
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
       title="Expand to load"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         Expand to load
       </span>
@@ -882,14 +882,14 @@ exports[`renders ./components/tree/demo/dynamic.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher-noop"
+      class="wmstool-tree-switcher wmstool-tree-switcher-noop"
     />
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
       title="Tree Node"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         Tree Node
       </span>
@@ -900,7 +900,7 @@ exports[`renders ./components/tree/demo/dynamic.md correctly 1`] = `
 
 exports[`renders ./components/tree/demo/line.md correctly 1`] = `
 <ul
-  class="ant-tree ant-tree-show-line"
+  class="wmstool-tree wmstool-tree-show-line"
   role="tree-node"
   unselectable="on"
 >
@@ -908,54 +908,54 @@ exports[`renders ./components/tree/demo/line.md correctly 1`] = `
     class=""
   >
     <span
-      class="ant-tree-switcher ant-tree-switcher_open"
+      class="wmstool-tree-switcher wmstool-tree-switcher_open"
     />
     <span
-      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
       title="parent 1"
     >
       <span
-        class="ant-tree-title"
+        class="wmstool-tree-title"
       >
         parent 1
       </span>
     </span>
     <ul
-      class="ant-tree-child-tree ant-tree-child-tree-open"
+      class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
       data-expanded="true"
     >
       <li
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_open"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
           title="parent 1-0"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-0
           </span>
         </span>
         <ul
-          class="ant-tree-child-tree ant-tree-child-tree-open"
+          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
           data-expanded="true"
         >
           <li
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -965,14 +965,14 @@ exports[`renders ./components/tree/demo/line.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -982,14 +982,14 @@ exports[`renders ./components/tree/demo/line.md correctly 1`] = `
             class=""
           >
             <span
-              class="ant-tree-switcher ant-tree-switcher-noop"
+              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
             />
             <span
-              class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
               title="leaf"
             >
               <span
-                class="ant-tree-title"
+                class="wmstool-tree-title"
               >
                 leaf
               </span>
@@ -1001,14 +1001,14 @@ exports[`renders ./components/tree/demo/line.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_close"
+          class="wmstool-tree-switcher wmstool-tree-switcher_close"
         />
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
           title="parent 1-1"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-1
           </span>
@@ -1018,14 +1018,14 @@ exports[`renders ./components/tree/demo/line.md correctly 1`] = `
         class=""
       >
         <span
-          class="ant-tree-switcher ant-tree-switcher_close"
+          class="wmstool-tree-switcher wmstool-tree-switcher_close"
         />
         <span
-          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
           title="parent 1-2"
         >
           <span
-            class="ant-tree-title"
+            class="wmstool-tree-title"
           >
             parent 1-2
           </span>
@@ -1039,24 +1039,24 @@ exports[`renders ./components/tree/demo/line.md correctly 1`] = `
 exports[`renders ./components/tree/demo/search.md correctly 1`] = `
 <div>
   <span
-    class="ant-input-search ant-input-affix-wrapper"
+    class="wmstool-input-search wmstool-input-affix-wrapper"
     style="margin-bottom:8px"
   >
     <input
-      class="ant-input"
+      class="wmstool-input"
       placeholder="Search"
       type="text"
     />
     <span
-      class="ant-input-suffix"
+      class="wmstool-input-suffix"
     >
       <i
-        class="anticon anticon-search ant-input-search-icon"
+        class="anticon anticon-search wmstool-input-search-icon"
       />
     </span>
   </span>
   <ul
-    class="ant-tree"
+    class="wmstool-tree"
     role="tree-node"
     unselectable="on"
   >
@@ -1064,14 +1064,14 @@ exports[`renders ./components/tree/demo/search.md correctly 1`] = `
       class=""
     >
       <span
-        class="ant-tree-switcher ant-tree-switcher_close"
+        class="wmstool-tree-switcher wmstool-tree-switcher_close"
       />
       <span
-        class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
         title=""
       >
         <span
-          class="ant-tree-title"
+          class="wmstool-tree-title"
         >
           <span>
             <span
@@ -1086,14 +1086,14 @@ exports[`renders ./components/tree/demo/search.md correctly 1`] = `
       class=""
     >
       <span
-        class="ant-tree-switcher ant-tree-switcher_close"
+        class="wmstool-tree-switcher wmstool-tree-switcher_close"
       />
       <span
-        class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
         title=""
       >
         <span
-          class="ant-tree-title"
+          class="wmstool-tree-title"
         >
           <span>
             <span
@@ -1108,14 +1108,14 @@ exports[`renders ./components/tree/demo/search.md correctly 1`] = `
       class=""
     >
       <span
-        class="ant-tree-switcher ant-tree-switcher-noop"
+        class="wmstool-tree-switcher wmstool-tree-switcher-noop"
       />
       <span
-        class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
         title=""
       >
         <span
-          class="ant-tree-title"
+          class="wmstool-tree-title"
         >
           <span>
             <span

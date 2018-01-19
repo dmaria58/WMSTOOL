@@ -2,25 +2,25 @@
 
 exports[`Table.rowSelection fix selection column on the left 1`] = `
 <div
-  class="ant-table-wrapper"
+  class="wmstool-table-wrapper"
 >
   <div
-    class="ant-spin-nested-loading"
+    class="wmstool-spin-nested-loading"
   >
     <div
-      class="ant-spin-container"
+      class="wmstool-spin-container"
     >
       <div
-        class="ant-table ant-table-large ant-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-scroll-position-left"
       >
         <div
-          class="ant-table-content"
+          class="wmstool-table-content"
         >
           <div
-            class="ant-table-scroll"
+            class="wmstool-table-scroll"
           >
             <div
-              class="ant-table-body"
+              class="wmstool-table-body"
             >
               <table
                 class=""
@@ -30,28 +30,28 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                   <col />
                 </colgroup>
                 <thead
-                  class="ant-table-thead"
+                  class="wmstool-table-thead"
                 >
                   <tr>
                     <th
-                      class="ant-table-selection-column"
+                      class="wmstool-table-selection-column"
                     >
                       <span>
                         <div
-                          class="ant-table-selection"
+                          class="wmstool-table-selection"
                         >
                           <label
-                            class="ant-checkbox-wrapper"
+                            class="wmstool-checkbox-wrapper"
                           >
                             <span
-                              class="ant-checkbox"
+                              class="wmstool-checkbox"
                             >
                               <input
-                                class="ant-checkbox-input"
+                                class="wmstool-checkbox-input"
                                 type="checkbox"
                               />
                               <span
-                                class="ant-checkbox-inner"
+                                class="wmstool-checkbox-inner"
                               />
                             </span>
                           </label>
@@ -68,27 +68,27 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                   </tr>
                 </thead>
                 <tbody
-                  class="ant-table-tbody"
+                  class="wmstool-table-tbody"
                 >
                   <tr
-                    class="ant-table-row  ant-table-row-level-0"
+                    class="wmstool-table-row  wmstool-table-row-level-0"
                   >
                     <td
-                      class="ant-table-selection-column"
+                      class="wmstool-table-selection-column"
                     >
                       <span>
                         <label
-                          class="ant-checkbox-wrapper"
+                          class="wmstool-checkbox-wrapper"
                         >
                           <span
-                            class="ant-checkbox"
+                            class="wmstool-checkbox"
                           >
                             <input
-                              class="ant-checkbox-input"
+                              class="wmstool-checkbox-input"
                               type="checkbox"
                             />
                             <span
-                              class="ant-checkbox-inner"
+                              class="wmstool-checkbox-inner"
                             />
                           </span>
                         </label>
@@ -98,31 +98,31 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       class=""
                     >
                       <span
-                        class="ant-table-row-indent indent-level-0"
+                        class="wmstool-table-row-indent indent-level-0"
                         style="padding-left:0px"
                       />
                       Jack
                     </td>
                   </tr>
                   <tr
-                    class="ant-table-row  ant-table-row-level-0"
+                    class="wmstool-table-row  wmstool-table-row-level-0"
                   >
                     <td
-                      class="ant-table-selection-column"
+                      class="wmstool-table-selection-column"
                     >
                       <span>
                         <label
-                          class="ant-checkbox-wrapper"
+                          class="wmstool-checkbox-wrapper"
                         >
                           <span
-                            class="ant-checkbox"
+                            class="wmstool-checkbox"
                           >
                             <input
-                              class="ant-checkbox-input"
+                              class="wmstool-checkbox-input"
                               type="checkbox"
                             />
                             <span
-                              class="ant-checkbox-inner"
+                              class="wmstool-checkbox-inner"
                             />
                           </span>
                         </label>
@@ -132,31 +132,31 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       class=""
                     >
                       <span
-                        class="ant-table-row-indent indent-level-0"
+                        class="wmstool-table-row-indent indent-level-0"
                         style="padding-left:0px"
                       />
                       Lucy
                     </td>
                   </tr>
                   <tr
-                    class="ant-table-row  ant-table-row-level-0"
+                    class="wmstool-table-row  wmstool-table-row-level-0"
                   >
                     <td
-                      class="ant-table-selection-column"
+                      class="wmstool-table-selection-column"
                     >
                       <span>
                         <label
-                          class="ant-checkbox-wrapper"
+                          class="wmstool-checkbox-wrapper"
                         >
                           <span
-                            class="ant-checkbox"
+                            class="wmstool-checkbox"
                           >
                             <input
-                              class="ant-checkbox-input"
+                              class="wmstool-checkbox-input"
                               type="checkbox"
                             />
                             <span
-                              class="ant-checkbox-inner"
+                              class="wmstool-checkbox-inner"
                             />
                           </span>
                         </label>
@@ -166,31 +166,31 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       class=""
                     >
                       <span
-                        class="ant-table-row-indent indent-level-0"
+                        class="wmstool-table-row-indent indent-level-0"
                         style="padding-left:0px"
                       />
                       Tom
                     </td>
                   </tr>
                   <tr
-                    class="ant-table-row  ant-table-row-level-0"
+                    class="wmstool-table-row  wmstool-table-row-level-0"
                   >
                     <td
-                      class="ant-table-selection-column"
+                      class="wmstool-table-selection-column"
                     >
                       <span>
                         <label
-                          class="ant-checkbox-wrapper"
+                          class="wmstool-checkbox-wrapper"
                         >
                           <span
-                            class="ant-checkbox"
+                            class="wmstool-checkbox"
                           >
                             <input
-                              class="ant-checkbox-input"
+                              class="wmstool-checkbox-input"
                               type="checkbox"
                             />
                             <span
-                              class="ant-checkbox-inner"
+                              class="wmstool-checkbox-inner"
                             />
                           </span>
                         </label>
@@ -200,7 +200,7 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       class=""
                     >
                       <span
-                        class="ant-table-row-indent indent-level-0"
+                        class="wmstool-table-row-indent indent-level-0"
                         style="padding-left:0px"
                       />
                       Jerry
@@ -211,44 +211,44 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
             </div>
           </div>
           <div
-            class="ant-table-fixed-left"
+            class="wmstool-table-fixed-left"
           >
             <div
-              class="ant-table-body-outer"
+              class="wmstool-table-body-outer"
               style="-webkit-transform:translate3d (0, 0, 0)"
             >
               <div
-                class="ant-table-body-inner"
+                class="wmstool-table-body-inner"
               >
                 <table
-                  class="ant-table-fixed"
+                  class="wmstool-table-fixed"
                 >
                   <colgroup>
                     <col />
                   </colgroup>
                   <thead
-                    class="ant-table-thead"
+                    class="wmstool-table-thead"
                   >
                     <tr>
                       <th
-                        class="ant-table-selection-column"
+                        class="wmstool-table-selection-column"
                       >
                         <span>
                           <div
-                            class="ant-table-selection"
+                            class="wmstool-table-selection"
                           >
                             <label
-                              class="ant-checkbox-wrapper"
+                              class="wmstool-checkbox-wrapper"
                             >
                               <span
-                                class="ant-checkbox"
+                                class="wmstool-checkbox"
                               >
                                 <input
-                                  class="ant-checkbox-input"
+                                  class="wmstool-checkbox-input"
                                   type="checkbox"
                                 />
                                 <span
-                                  class="ant-checkbox-inner"
+                                  class="wmstool-checkbox-inner"
                                 />
                               </span>
                             </label>
@@ -258,27 +258,27 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                     </tr>
                   </thead>
                   <tbody
-                    class="ant-table-tbody"
+                    class="wmstool-table-tbody"
                   >
                     <tr
-                      class="ant-table-row  ant-table-row-level-0"
+                      class="wmstool-table-row  wmstool-table-row-level-0"
                     >
                       <td
-                        class="ant-table-selection-column"
+                        class="wmstool-table-selection-column"
                       >
                         <span>
                           <label
-                            class="ant-checkbox-wrapper"
+                            class="wmstool-checkbox-wrapper"
                           >
                             <span
-                              class="ant-checkbox"
+                              class="wmstool-checkbox"
                             >
                               <input
-                                class="ant-checkbox-input"
+                                class="wmstool-checkbox-input"
                                 type="checkbox"
                               />
                               <span
-                                class="ant-checkbox-inner"
+                                class="wmstool-checkbox-inner"
                               />
                             </span>
                           </label>
@@ -286,24 +286,24 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       </td>
                     </tr>
                     <tr
-                      class="ant-table-row  ant-table-row-level-0"
+                      class="wmstool-table-row  wmstool-table-row-level-0"
                     >
                       <td
-                        class="ant-table-selection-column"
+                        class="wmstool-table-selection-column"
                       >
                         <span>
                           <label
-                            class="ant-checkbox-wrapper"
+                            class="wmstool-checkbox-wrapper"
                           >
                             <span
-                              class="ant-checkbox"
+                              class="wmstool-checkbox"
                             >
                               <input
-                                class="ant-checkbox-input"
+                                class="wmstool-checkbox-input"
                                 type="checkbox"
                               />
                               <span
-                                class="ant-checkbox-inner"
+                                class="wmstool-checkbox-inner"
                               />
                             </span>
                           </label>
@@ -311,24 +311,24 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       </td>
                     </tr>
                     <tr
-                      class="ant-table-row  ant-table-row-level-0"
+                      class="wmstool-table-row  wmstool-table-row-level-0"
                     >
                       <td
-                        class="ant-table-selection-column"
+                        class="wmstool-table-selection-column"
                       >
                         <span>
                           <label
-                            class="ant-checkbox-wrapper"
+                            class="wmstool-checkbox-wrapper"
                           >
                             <span
-                              class="ant-checkbox"
+                              class="wmstool-checkbox"
                             >
                               <input
-                                class="ant-checkbox-input"
+                                class="wmstool-checkbox-input"
                                 type="checkbox"
                               />
                               <span
-                                class="ant-checkbox-inner"
+                                class="wmstool-checkbox-inner"
                               />
                             </span>
                           </label>
@@ -336,24 +336,24 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
                       </td>
                     </tr>
                     <tr
-                      class="ant-table-row  ant-table-row-level-0"
+                      class="wmstool-table-row  wmstool-table-row-level-0"
                     >
                       <td
-                        class="ant-table-selection-column"
+                        class="wmstool-table-selection-column"
                       >
                         <span>
                           <label
-                            class="ant-checkbox-wrapper"
+                            class="wmstool-checkbox-wrapper"
                           >
                             <span
-                              class="ant-checkbox"
+                              class="wmstool-checkbox"
                             >
                               <input
-                                class="ant-checkbox-input"
+                                class="wmstool-checkbox-input"
                                 type="checkbox"
                               />
                               <span
-                                class="ant-checkbox-inner"
+                                class="wmstool-checkbox-inner"
                               />
                             </span>
                           </label>
@@ -368,21 +368,21 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination"
+        class="wmstool-pagination wmstool-table-pagination"
         unselectable="unselectable"
       >
         <li
           aria-disabled="true"
-          class="ant-pagination-disabled ant-pagination-prev"
+          class="wmstool-pagination-disabled wmstool-pagination-prev"
           tabindex="0"
           title="Previous Page"
         >
           <a
-            class="ant-pagination-item-link"
+            class="wmstool-pagination-item-link"
           />
         </li>
         <li
-          class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+          class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
           tabindex="0"
           title="1"
         >
@@ -392,12 +392,12 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
         </li>
         <li
           aria-disabled="true"
-          class="ant-pagination-disabled ant-pagination-next"
+          class="wmstool-pagination-disabled wmstool-pagination-next"
           tabindex="0"
           title="Next Page"
         >
           <a
-            class="ant-pagination-item-link"
+            class="wmstool-pagination-item-link"
           />
         </li>
       </ul>
@@ -409,17 +409,17 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
 exports[`Table.rowSelection render with default selection correctly 1`] = `
 <div>
   <div
-    class="ant-dropdown  ant-dropdown-placement-bottomLeft  ant-dropdown-hidden"
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
   >
     <ul
       aria-activedescendant=""
-      class="ant-dropdown-menu ant-table-selection-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical"
+      class="wmstool-dropdown-menu wmstool-table-selection-menu wmstool-dropdown-menu-light wmstool-dropdown-menu-root wmstool-dropdown-menu-vertical"
       role="menu"
       tabindex="0"
     >
       <li
         aria-selected="false"
-        class="ant-dropdown-menu-item"
+        class="wmstool-dropdown-menu-item"
         role="menuitem"
       >
         <div>
@@ -428,7 +428,7 @@ exports[`Table.rowSelection render with default selection correctly 1`] = `
       </li>
       <li
         aria-selected="false"
-        class="ant-dropdown-menu-item"
+        class="wmstool-dropdown-menu-item"
         role="menuitem"
       >
         <div>

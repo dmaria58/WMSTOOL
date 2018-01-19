@@ -17,7 +17,7 @@ export default class DropdownButton extends React.Component<DropdownButtonProps,
   static defaultProps = {
     placement: 'bottomRight',
     type: 'default',
-    prefixCls: 'ant-dropdown-button',
+    prefixCls: 'wmstool-dropdown-button',
   };
 
   render() {

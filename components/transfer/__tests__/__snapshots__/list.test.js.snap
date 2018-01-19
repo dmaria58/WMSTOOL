@@ -2,100 +2,100 @@
 
 exports[`List should render correctly 1`] = `
 <div
-  class="ant-transfer-list"
+  class="wmstool-transfer-list"
 >
   <div
-    class="ant-transfer-list-header"
+    class="wmstool-transfer-list-header"
   >
     <label
-      class="ant-checkbox-wrapper"
+      class="wmstool-checkbox-wrapper"
     >
       <span
-        class="ant-checkbox ant-checkbox-indeterminate"
+        class="wmstool-checkbox wmstool-checkbox-indeterminate"
       >
         <input
-          class="ant-checkbox-input"
+          class="wmstool-checkbox-input"
           type="checkbox"
         />
         <span
-          class="ant-checkbox-inner"
+          class="wmstool-checkbox-inner"
         />
       </span>
     </label>
     <span
-      class="ant-transfer-list-header-selected"
+      class="wmstool-transfer-list-header-selected"
     >
       <span>
         1/3 
       </span>
       <span
-        class="ant-transfer-list-header-title"
+        class="wmstool-transfer-list-header-title"
       />
     </span>
   </div>
   <div
-    class="ant-transfer-list-body"
+    class="wmstool-transfer-list-body"
   >
     <ul
-      class="ant-transfer-list-content"
+      class="wmstool-transfer-list-content"
     >
       <li
-        class="ant-transfer-list-content-item"
+        class="wmstool-transfer-list-content-item"
       >
         <label
-          class="ant-checkbox-wrapper"
+          class="wmstool-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox ant-checkbox-checked"
+            class="wmstool-checkbox wmstool-checkbox-checked"
           >
             <input
               checked=""
-              class="ant-checkbox-input"
+              class="wmstool-checkbox-input"
               type="checkbox"
             />
             <span
-              class="ant-checkbox-inner"
+              class="wmstool-checkbox-inner"
             />
           </span>
         </label>
         <span />
       </li>
       <li
-        class="ant-transfer-list-content-item"
+        class="wmstool-transfer-list-content-item"
       >
         <label
-          class="ant-checkbox-wrapper"
+          class="wmstool-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox"
+            class="wmstool-checkbox"
           >
             <input
-              class="ant-checkbox-input"
+              class="wmstool-checkbox-input"
               type="checkbox"
             />
             <span
-              class="ant-checkbox-inner"
+              class="wmstool-checkbox-inner"
             />
           </span>
         </label>
         <span />
       </li>
       <li
-        class="ant-transfer-list-content-item ant-transfer-list-content-item-disabled"
+        class="wmstool-transfer-list-content-item wmstool-transfer-list-content-item-disabled"
       >
         <label
-          class="ant-checkbox-wrapper"
+          class="wmstool-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox ant-checkbox-disabled"
+            class="wmstool-checkbox wmstool-checkbox-disabled"
           >
             <input
-              class="ant-checkbox-input"
+              class="wmstool-checkbox-input"
               disabled=""
               type="checkbox"
             />
             <span
-              class="ant-checkbox-inner"
+              class="wmstool-checkbox-inner"
             />
           </span>
         </label>
@@ -103,7 +103,7 @@ exports[`List should render correctly 1`] = `
       </li>
     </ul>
     <div
-      class="ant-transfer-list-body-not-found"
+      class="wmstool-transfer-list-body-not-found"
     >
       Not Found
     </div>

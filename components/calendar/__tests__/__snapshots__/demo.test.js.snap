@@ -2,28 +2,28 @@
 
 exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
 <div
-  class=" ant-fullcalendar-fullscreen"
+  class=" wmstool-fullcalendar-fullscreen"
 >
   <div
-    class="ant-fullcalendar-header"
+    class="wmstool-fullcalendar-header"
   >
     <div
-      class="ant-fullcalendar-year-select ant-select ant-select-enabled"
+      class="wmstool-fullcalendar-year-select wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="2016"
           >
@@ -31,7 +31,7 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -40,22 +40,22 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-fullcalendar-month-select ant-select ant-select-enabled"
+      class="wmstool-fullcalendar-month-select wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Nov"
           >
@@ -63,7 +63,7 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -72,21 +72,21 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-radio-group ant-radio-group-default"
+      class="wmstool-radio-group wmstool-radio-group-default"
     >
       <label
-        class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+        class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
       >
         <span
-          class="ant-radio-button ant-radio-button-checked"
+          class="wmstool-radio-button wmstool-radio-button-checked"
         >
           <input
             checked=""
-            class="ant-radio-button-input"
+            class="wmstool-radio-button-input"
             type="radio"
           />
           <span
-            class="ant-radio-button-inner"
+            class="wmstool-radio-button-inner"
           />
         </span>
         <span>
@@ -94,17 +94,17 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
         </span>
       </label>
       <label
-        class="ant-radio-button-wrapper"
+        class="wmstool-radio-button-wrapper"
       >
         <span
-          class="ant-radio-button"
+          class="wmstool-radio-button"
         >
           <input
-            class="ant-radio-button-input"
+            class="wmstool-radio-button-input"
             type="radio"
           />
           <span
-            class="ant-radio-button-inner"
+            class="wmstool-radio-button-inner"
           />
         </span>
         <span>
@@ -114,15 +114,15 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-fullcalendar ant-fullcalendar-full ant-fullcalendar-fullscreen"
+    class="wmstool-fullcalendar wmstool-fullcalendar-full wmstool-fullcalendar-fullscreen"
     tabindex="0"
   >
     <div
-      class="ant-fullcalendar-calendar-body"
+      class="wmstool-fullcalendar-calendar-body"
     >
       <table
         cellspacing="0"
-        class="ant-fullcalendar-table"
+        class="wmstool-fullcalendar-table"
         role="grid"
       >
         <thead>
@@ -130,78 +130,78 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
             role="row"
           >
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Sun"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Su
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Mon"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Mo
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Tue"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Tu
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Wed"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 We
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Thu"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Th
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Fri"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Fr
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Sat"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Sa
               </span>
@@ -209,135 +209,135 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
           </tr>
         </thead>
         <tbody
-          class="ant-fullcalendar-tbody"
+          class="wmstool-fullcalendar-tbody"
         >
           <tr
             class=""
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-last-month-cell"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-last-month-cell"
               role="gridcell"
               title="October 30, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   30
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-last-month-cell"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-last-month-cell"
               role="gridcell"
               title="October 31, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   31
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 1, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   01
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 2, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   02
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 3, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   03
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 4, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   04
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 5, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   05
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
@@ -347,128 +347,128 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 6, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   06
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 7, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   07
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 8, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   08
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 9, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   09
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 10, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   10
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 11, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   11
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 12, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   12
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
@@ -478,259 +478,259 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 13, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   13
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 14, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   14
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 15, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   15
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 16, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   16
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 17, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   17
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 18, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   18
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 19, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   19
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
           </tr>
           <tr
-            class="ant-fullcalendar-current-week ant-fullcalendar-active-week"
+            class="wmstool-fullcalendar-current-week wmstool-fullcalendar-active-week"
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 20, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   20
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 21, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   21
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-today ant-fullcalendar-selected-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-today wmstool-fullcalendar-selected-day"
               role="gridcell"
               title="November 22, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   22
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 23, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   23
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 24, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   24
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 25, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   25
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 26, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   26
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
@@ -740,128 +740,128 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 27, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   27
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 28, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   28
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 29, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   29
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 30, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   30
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 1, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   01
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 2, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   02
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 3, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   03
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
@@ -871,128 +871,128 @@ exports[`renders ./components/calendar/demo/basic.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 4, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   04
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 5, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   05
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 6, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   06
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 7, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   07
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 8, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   08
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 9, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   09
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 10, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   10
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 />
               </div>
             </td>
@@ -1012,25 +1012,25 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
     class=""
   >
     <div
-      class="ant-fullcalendar-header"
+      class="wmstool-fullcalendar-header"
     >
       <div
-        class="ant-select-sm ant-fullcalendar-year-select ant-select ant-select-enabled"
+        class="wmstool-select-sm wmstool-fullcalendar-year-select wmstool-select wmstool-select-enabled"
       >
         <div
           aria-autocomplete="list"
           aria-expanded="false"
           aria-haspopup="true"
-          class="ant-select-selection
-            ant-select-selection--single"
+          class="wmstool-select-selection
+            wmstool-select-selection--single"
           role="combobox"
           tabindex="0"
         >
           <div
-            class="ant-select-selection__rendered"
+            class="wmstool-select-selection__rendered"
           >
             <div
-              class="ant-select-selection-selected-value"
+              class="wmstool-select-selection-selected-value"
               style="display:block;opacity:1"
               title="2016"
             >
@@ -1038,7 +1038,7 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
             </div>
           </div>
           <span
-            class="ant-select-arrow"
+            class="wmstool-select-arrow"
             style="user-select:none;-webkit-user-select:none"
             unselectable="unselectable"
           >
@@ -1047,22 +1047,22 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-select-sm ant-fullcalendar-month-select ant-select ant-select-enabled"
+        class="wmstool-select-sm wmstool-fullcalendar-month-select wmstool-select wmstool-select-enabled"
       >
         <div
           aria-autocomplete="list"
           aria-expanded="false"
           aria-haspopup="true"
-          class="ant-select-selection
-            ant-select-selection--single"
+          class="wmstool-select-selection
+            wmstool-select-selection--single"
           role="combobox"
           tabindex="0"
         >
           <div
-            class="ant-select-selection__rendered"
+            class="wmstool-select-selection__rendered"
           >
             <div
-              class="ant-select-selection-selected-value"
+              class="wmstool-select-selection-selected-value"
               style="display:block;opacity:1"
               title="Nov"
             >
@@ -1070,7 +1070,7 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
             </div>
           </div>
           <span
-            class="ant-select-arrow"
+            class="wmstool-select-arrow"
             style="user-select:none;-webkit-user-select:none"
             unselectable="unselectable"
           >
@@ -1079,21 +1079,21 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-radio-group ant-radio-group-small"
+        class="wmstool-radio-group wmstool-radio-group-small"
       >
         <label
-          class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+          class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
         >
           <span
-            class="ant-radio-button ant-radio-button-checked"
+            class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
               checked=""
-              class="ant-radio-button-input"
+              class="wmstool-radio-button-input"
               type="radio"
             />
             <span
-              class="ant-radio-button-inner"
+              class="wmstool-radio-button-inner"
             />
           </span>
           <span>
@@ -1101,17 +1101,17 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
           </span>
         </label>
         <label
-          class="ant-radio-button-wrapper"
+          class="wmstool-radio-button-wrapper"
         >
           <span
-            class="ant-radio-button"
+            class="wmstool-radio-button"
           >
             <input
-              class="ant-radio-button-input"
+              class="wmstool-radio-button-input"
               type="radio"
             />
             <span
-              class="ant-radio-button-inner"
+              class="wmstool-radio-button-inner"
             />
           </span>
           <span>
@@ -1121,15 +1121,15 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-fullcalendar ant-fullcalendar-full"
+      class="wmstool-fullcalendar wmstool-fullcalendar-full"
       tabindex="0"
     >
       <div
-        class="ant-fullcalendar-calendar-body"
+        class="wmstool-fullcalendar-calendar-body"
       >
         <table
           cellspacing="0"
-          class="ant-fullcalendar-table"
+          class="wmstool-fullcalendar-table"
           role="grid"
         >
           <thead>
@@ -1137,78 +1137,78 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
               role="row"
             >
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Sun"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Su
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Mon"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Mo
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Tue"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Tu
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Wed"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   We
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Thu"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Th
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Fri"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Fr
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Sat"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Sa
                 </span>
@@ -1216,135 +1216,135 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
             </tr>
           </thead>
           <tbody
-            class="ant-fullcalendar-tbody"
+            class="wmstool-fullcalendar-tbody"
           >
             <tr
               class=""
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-last-month-cell"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-last-month-cell"
                 role="gridcell"
                 title="October 30, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     30
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-last-month-cell"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-last-month-cell"
                 role="gridcell"
                 title="October 31, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     31
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 1, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     01
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 2, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     02
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 3, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     03
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 4, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     04
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 5, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     05
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -1354,128 +1354,128 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 6, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     06
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 7, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     07
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 8, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     08
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 9, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     09
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 10, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     10
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 11, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     11
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 12, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     12
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -1485,259 +1485,259 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 13, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     13
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 14, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     14
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 15, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     15
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 16, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     16
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 17, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     17
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 18, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     18
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 19, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     19
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
             </tr>
             <tr
-              class="ant-fullcalendar-current-week ant-fullcalendar-active-week"
+              class="wmstool-fullcalendar-current-week wmstool-fullcalendar-active-week"
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 20, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     20
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 21, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     21
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-today ant-fullcalendar-selected-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-today wmstool-fullcalendar-selected-day"
                 role="gridcell"
                 title="November 22, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     22
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 23, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     23
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 24, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     24
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 25, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     25
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 26, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     26
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -1747,128 +1747,128 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 27, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     27
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 28, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     28
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 29, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     29
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="November 30, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     30
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 1, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     01
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 2, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     02
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 3, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     03
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -1878,128 +1878,128 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 4, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     04
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 5, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     05
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 6, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     06
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 7, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     07
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 8, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     08
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 9, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     09
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="December 10, 2016"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     10
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -2014,28 +2014,28 @@ exports[`renders ./components/calendar/demo/card.md correctly 1`] = `
 
 exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
 <div
-  class=" ant-fullcalendar-fullscreen"
+  class=" wmstool-fullcalendar-fullscreen"
 >
   <div
-    class="ant-fullcalendar-header"
+    class="wmstool-fullcalendar-header"
   >
     <div
-      class="ant-fullcalendar-year-select ant-select ant-select-enabled"
+      class="wmstool-fullcalendar-year-select wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="2016"
           >
@@ -2043,7 +2043,7 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -2052,22 +2052,22 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-fullcalendar-month-select ant-select ant-select-enabled"
+      class="wmstool-fullcalendar-month-select wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="Nov"
           >
@@ -2075,7 +2075,7 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -2084,21 +2084,21 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-radio-group ant-radio-group-default"
+      class="wmstool-radio-group wmstool-radio-group-default"
     >
       <label
-        class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+        class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
       >
         <span
-          class="ant-radio-button ant-radio-button-checked"
+          class="wmstool-radio-button wmstool-radio-button-checked"
         >
           <input
             checked=""
-            class="ant-radio-button-input"
+            class="wmstool-radio-button-input"
             type="radio"
           />
           <span
-            class="ant-radio-button-inner"
+            class="wmstool-radio-button-inner"
           />
         </span>
         <span>
@@ -2106,17 +2106,17 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
         </span>
       </label>
       <label
-        class="ant-radio-button-wrapper"
+        class="wmstool-radio-button-wrapper"
       >
         <span
-          class="ant-radio-button"
+          class="wmstool-radio-button"
         >
           <input
-            class="ant-radio-button-input"
+            class="wmstool-radio-button-input"
             type="radio"
           />
           <span
-            class="ant-radio-button-inner"
+            class="wmstool-radio-button-inner"
           />
         </span>
         <span>
@@ -2126,15 +2126,15 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-fullcalendar ant-fullcalendar-full ant-fullcalendar-fullscreen"
+    class="wmstool-fullcalendar wmstool-fullcalendar-full wmstool-fullcalendar-fullscreen"
     tabindex="0"
   >
     <div
-      class="ant-fullcalendar-calendar-body"
+      class="wmstool-fullcalendar-calendar-body"
     >
       <table
         cellspacing="0"
-        class="ant-fullcalendar-table"
+        class="wmstool-fullcalendar-table"
         role="grid"
       >
         <thead>
@@ -2142,78 +2142,78 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
             role="row"
           >
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Sun"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Su
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Mon"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Mo
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Tue"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Tu
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Wed"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 We
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Thu"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Th
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Fri"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Fr
               </span>
             </th>
             <th
-              class="ant-fullcalendar-column-header"
+              class="wmstool-fullcalendar-column-header"
               role="columnheader"
               title="Sat"
             >
               <span
-                class="ant-fullcalendar-column-header-inner"
+                class="wmstool-fullcalendar-column-header-inner"
               >
                 Sa
               </span>
@@ -2221,27 +2221,27 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
           </tr>
         </thead>
         <tbody
-          class="ant-fullcalendar-tbody"
+          class="wmstool-fullcalendar-tbody"
         >
           <tr
             class=""
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-last-month-cell"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-last-month-cell"
               role="gridcell"
               title="October 30, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   30
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2250,20 +2250,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-last-month-cell"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-last-month-cell"
               role="gridcell"
               title="October 31, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   31
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2272,20 +2272,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 1, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   01
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2294,20 +2294,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 2, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   02
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2316,20 +2316,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 3, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   03
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2338,20 +2338,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 4, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   04
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2360,20 +2360,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 5, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   05
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2387,20 +2387,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 6, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   06
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2409,20 +2409,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 7, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   07
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2431,33 +2431,33 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 8, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   08
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
                   >
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-warning"
+                          class="wmstool-badge-status-dot wmstool-badge-status-warning"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is warning event.
                         </span>
@@ -2465,13 +2465,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-success"
+                          class="wmstool-badge-status-dot wmstool-badge-status-success"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is usual event.
                         </span>
@@ -2482,20 +2482,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 9, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   09
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2504,33 +2504,33 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 10, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   10
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
                   >
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-warning"
+                          class="wmstool-badge-status-dot wmstool-badge-status-warning"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is warning event.
                         </span>
@@ -2538,13 +2538,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-success"
+                          class="wmstool-badge-status-dot wmstool-badge-status-success"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is usual event.
                         </span>
@@ -2552,13 +2552,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-error"
+                          class="wmstool-badge-status-dot wmstool-badge-status-error"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is error event.
                         </span>
@@ -2569,20 +2569,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 11, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   11
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2591,20 +2591,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 12, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   12
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2618,20 +2618,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 13, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   13
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2640,20 +2640,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 14, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   14
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2662,33 +2662,33 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 15, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   15
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
                   >
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-warning"
+                          class="wmstool-badge-status-dot wmstool-badge-status-warning"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is warning event
                         </span>
@@ -2696,13 +2696,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-success"
+                          class="wmstool-badge-status-dot wmstool-badge-status-success"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is very long usual event。。....
                         </span>
@@ -2710,13 +2710,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-error"
+                          class="wmstool-badge-status-dot wmstool-badge-status-error"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is error event 1.
                         </span>
@@ -2724,13 +2724,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-error"
+                          class="wmstool-badge-status-dot wmstool-badge-status-error"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is error event 2.
                         </span>
@@ -2738,13 +2738,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-error"
+                          class="wmstool-badge-status-dot wmstool-badge-status-error"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is error event 3.
                         </span>
@@ -2752,13 +2752,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-error"
+                          class="wmstool-badge-status-dot wmstool-badge-status-error"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is error event 4.
                         </span>
@@ -2769,20 +2769,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 16, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   16
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2791,20 +2791,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 17, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   17
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2813,20 +2813,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 18, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   18
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2835,20 +2835,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 19, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   19
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2858,24 +2858,24 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
             </td>
           </tr>
           <tr
-            class="ant-fullcalendar-current-week ant-fullcalendar-active-week"
+            class="wmstool-fullcalendar-current-week wmstool-fullcalendar-active-week"
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 20, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   20
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2884,20 +2884,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 21, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   21
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2906,20 +2906,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-today ant-fullcalendar-selected-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-today wmstool-fullcalendar-selected-day"
               role="gridcell"
               title="November 22, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   22
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2928,20 +2928,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 23, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   23
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2950,20 +2950,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 24, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   24
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2972,20 +2972,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 25, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   25
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -2994,20 +2994,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 26, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   26
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3021,20 +3021,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 27, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   27
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3043,20 +3043,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 28, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   28
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3065,20 +3065,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 29, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   29
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3087,20 +3087,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell"
+              class="wmstool-fullcalendar-cell"
               role="gridcell"
               title="November 30, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   30
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3109,20 +3109,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 1, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   01
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3131,20 +3131,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 2, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   02
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3153,20 +3153,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 3, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   03
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3180,20 +3180,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
             role="row"
           >
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 4, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   04
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3202,20 +3202,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 5, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   05
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3224,20 +3224,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 6, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   06
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3246,20 +3246,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 7, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   07
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3268,33 +3268,33 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 8, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   08
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
                   >
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-warning"
+                          class="wmstool-badge-status-dot wmstool-badge-status-warning"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is warning event.
                         </span>
@@ -3302,13 +3302,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-success"
+                          class="wmstool-badge-status-dot wmstool-badge-status-success"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is usual event.
                         </span>
@@ -3319,20 +3319,20 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 9, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   09
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
@@ -3341,33 +3341,33 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
               </div>
             </td>
             <td
-              class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+              class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
               role="gridcell"
               title="December 10, 2016"
             >
               <div
-                class="ant-fullcalendar-date"
+                class="wmstool-fullcalendar-date"
               >
                 <div
-                  class="ant-fullcalendar-value"
+                  class="wmstool-fullcalendar-value"
                 >
                   10
                 </div>
                 <div
-                  class="ant-fullcalendar-content"
+                  class="wmstool-fullcalendar-content"
                 >
                   <ul
                     class="events"
                   >
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-warning"
+                          class="wmstool-badge-status-dot wmstool-badge-status-warning"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is warning event.
                         </span>
@@ -3375,13 +3375,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-success"
+                          class="wmstool-badge-status-dot wmstool-badge-status-success"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is usual event.
                         </span>
@@ -3389,13 +3389,13 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
                     </li>
                     <li>
                       <span
-                        class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+                        class="wmstool-badge wmstool-badge-status wmstool-badge-not-a-wrapper"
                       >
                         <span
-                          class="ant-badge-status-dot ant-badge-status-error"
+                          class="wmstool-badge-status-dot wmstool-badge-status-error"
                         />
                         <span
-                          class="ant-badge-status-text"
+                          class="wmstool-badge-status-text"
                         >
                           This is error event.
                         </span>
@@ -3416,41 +3416,41 @@ exports[`renders ./components/calendar/demo/notice-calendar.md correctly 1`] = `
 exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
 <div>
   <div
-    class="ant-alert ant-alert-info ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-info wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       You selected date: 2017-01-25
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class=" ant-fullcalendar-fullscreen"
+    class=" wmstool-fullcalendar-fullscreen"
   >
     <div
-      class="ant-fullcalendar-header"
+      class="wmstool-fullcalendar-header"
     >
       <div
-        class="ant-fullcalendar-year-select ant-select ant-select-enabled"
+        class="wmstool-fullcalendar-year-select wmstool-select wmstool-select-enabled"
       >
         <div
           aria-autocomplete="list"
           aria-expanded="false"
           aria-haspopup="true"
-          class="ant-select-selection
-            ant-select-selection--single"
+          class="wmstool-select-selection
+            wmstool-select-selection--single"
           role="combobox"
           tabindex="0"
         >
           <div
-            class="ant-select-selection__rendered"
+            class="wmstool-select-selection__rendered"
           >
             <div
-              class="ant-select-selection-selected-value"
+              class="wmstool-select-selection-selected-value"
               style="display:block;opacity:1"
               title="2017"
             >
@@ -3458,7 +3458,7 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
             </div>
           </div>
           <span
-            class="ant-select-arrow"
+            class="wmstool-select-arrow"
             style="user-select:none;-webkit-user-select:none"
             unselectable="unselectable"
           >
@@ -3467,22 +3467,22 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-fullcalendar-month-select ant-select ant-select-enabled"
+        class="wmstool-fullcalendar-month-select wmstool-select wmstool-select-enabled"
       >
         <div
           aria-autocomplete="list"
           aria-expanded="false"
           aria-haspopup="true"
-          class="ant-select-selection
-            ant-select-selection--single"
+          class="wmstool-select-selection
+            wmstool-select-selection--single"
           role="combobox"
           tabindex="0"
         >
           <div
-            class="ant-select-selection__rendered"
+            class="wmstool-select-selection__rendered"
           >
             <div
-              class="ant-select-selection-selected-value"
+              class="wmstool-select-selection-selected-value"
               style="display:block;opacity:1"
               title="Jan"
             >
@@ -3490,7 +3490,7 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
             </div>
           </div>
           <span
-            class="ant-select-arrow"
+            class="wmstool-select-arrow"
             style="user-select:none;-webkit-user-select:none"
             unselectable="unselectable"
           >
@@ -3499,21 +3499,21 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-radio-group ant-radio-group-default"
+        class="wmstool-radio-group wmstool-radio-group-default"
       >
         <label
-          class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+          class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
         >
           <span
-            class="ant-radio-button ant-radio-button-checked"
+            class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
               checked=""
-              class="ant-radio-button-input"
+              class="wmstool-radio-button-input"
               type="radio"
             />
             <span
-              class="ant-radio-button-inner"
+              class="wmstool-radio-button-inner"
             />
           </span>
           <span>
@@ -3521,17 +3521,17 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
           </span>
         </label>
         <label
-          class="ant-radio-button-wrapper"
+          class="wmstool-radio-button-wrapper"
         >
           <span
-            class="ant-radio-button"
+            class="wmstool-radio-button"
           >
             <input
-              class="ant-radio-button-input"
+              class="wmstool-radio-button-input"
               type="radio"
             />
             <span
-              class="ant-radio-button-inner"
+              class="wmstool-radio-button-inner"
             />
           </span>
           <span>
@@ -3541,15 +3541,15 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-fullcalendar ant-fullcalendar-full ant-fullcalendar-fullscreen"
+      class="wmstool-fullcalendar wmstool-fullcalendar-full wmstool-fullcalendar-fullscreen"
       tabindex="0"
     >
       <div
-        class="ant-fullcalendar-calendar-body"
+        class="wmstool-fullcalendar-calendar-body"
       >
         <table
           cellspacing="0"
-          class="ant-fullcalendar-table"
+          class="wmstool-fullcalendar-table"
           role="grid"
         >
           <thead>
@@ -3557,78 +3557,78 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
               role="row"
             >
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Sun"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Su
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Mon"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Mo
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Tue"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Tu
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Wed"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   We
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Thu"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Th
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Fri"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Fr
                 </span>
               </th>
               <th
-                class="ant-fullcalendar-column-header"
+                class="wmstool-fullcalendar-column-header"
                 role="columnheader"
                 title="Sat"
               >
                 <span
-                  class="ant-fullcalendar-column-header-inner"
+                  class="wmstool-fullcalendar-column-header-inner"
                 >
                   Sa
                 </span>
@@ -3636,135 +3636,135 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
             </tr>
           </thead>
           <tbody
-            class="ant-fullcalendar-tbody"
+            class="wmstool-fullcalendar-tbody"
           >
             <tr
               class=""
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 1, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     01
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 2, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     02
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 3, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     03
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 4, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     04
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 5, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     05
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 6, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     06
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 7, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     07
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -3774,128 +3774,128 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 8, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     08
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 9, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     09
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 10, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     10
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 11, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     11
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 12, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     12
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 13, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     13
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 14, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     14
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -3905,259 +3905,259 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 15, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     15
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 16, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     16
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 17, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     17
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 18, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     18
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 19, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     19
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 20, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     20
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 21, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     21
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
             </tr>
             <tr
-              class="ant-fullcalendar-active-week"
+              class="wmstool-fullcalendar-active-week"
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 22, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     22
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 23, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     23
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 24, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     24
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-selected-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-selected-day"
                 role="gridcell"
                 title="January 25, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     25
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 26, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     26
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 27, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     27
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 28, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     28
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -4167,128 +4167,128 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 29, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     29
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 30, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     30
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell"
+                class="wmstool-fullcalendar-cell"
                 role="gridcell"
                 title="January 31, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     31
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 1, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     01
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 2, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     02
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 3, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     03
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 4, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     04
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
@@ -4298,128 +4298,128 @@ exports[`renders ./components/calendar/demo/select.md correctly 1`] = `
               role="row"
             >
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 5, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     05
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 6, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     06
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 7, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     07
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 8, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     08
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 9, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     09
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 10, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     10
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>
               <td
-                class="ant-fullcalendar-cell ant-fullcalendar-next-month-btn-day"
+                class="wmstool-fullcalendar-cell wmstool-fullcalendar-next-month-btn-day"
                 role="gridcell"
                 title="February 11, 2017"
               >
                 <div
-                  class="ant-fullcalendar-date"
+                  class="wmstool-fullcalendar-date"
                 >
                   <div
-                    class="ant-fullcalendar-value"
+                    class="wmstool-fullcalendar-value"
                   >
                     11
                   </div>
                   <div
-                    class="ant-fullcalendar-content"
+                    class="wmstool-fullcalendar-content"
                   />
                 </div>
               </td>

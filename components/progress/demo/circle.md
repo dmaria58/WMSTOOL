@@ -26,8 +26,8 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-progress-circle-wrap,
-.ant-progress-line-wrap {
+.wmstool-progress-circle-wrap,
+.wmstool-progress-line-wrap {
   margin-right: 8px;
   margin-bottom: 5px;
 }

@@ -41,7 +41,7 @@ ReactDOM.render(
 ````
 
 ````css
-.gutter-example .ant-row > div {
+.gutter-example .wmstool-row > div {
   background: transparent;
   border: 0;
 }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import { getChildren } from 'jsonml.js/lib/utils';
-import { Timeline, Alert, Affix } from 'antd';
+import { Timeline, Alert, Affix } from 'wmstool';
 import delegate from 'delegate';
 import EditButton from './EditButton';
 import { ping } from '../utils';
@@ -81,7 +81,7 @@ export default class Article extends React.Component {
               message={(
                 <span>
                   This article has not been translated yet. Wan&apos;t to help us out?
-                  <a href="https://github.com/ant-design/ant-design/issues/1471">See this issue on GitHub.</a>
+                  <a href="https://github.com/wmstool-design/wmstool-design/issues/1471">See this issue on GitHub.</a>
                 </span>
               )}
             />

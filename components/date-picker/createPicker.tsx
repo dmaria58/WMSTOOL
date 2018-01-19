@@ -16,7 +16,7 @@ export interface PickerProps {
 export default function createPicker(TheCalendar: React.ComponentClass): any {
   return class CalenderWrapper extends React.Component<any, any> {
     static defaultProps = {
-      prefixCls: 'ant-calendar',
+      prefixCls: 'wmstool-calendar',
       allowClear: true,
       showToday: true,
     };
@@ -99,7 +99,7 @@ export default function createPicker(TheCalendar: React.ComponentClass): any {
       let calendarProps: any = {};
       if (props.showTime) {
         calendarProps = {
-          // fix https://github.com/ant-design/ant-design/issues/1902
+          // fix https://github.com/wmstool-design/wmstool-design/issues/1902
           onSelect: this.handleChange,
         };
       } else {

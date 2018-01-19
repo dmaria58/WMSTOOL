@@ -4,11 +4,11 @@ exports[`Input should support maxLength 1`] = `
 <Input
   disabled={false}
   maxLength="3"
-  prefixCls="ant-input"
+  prefixCls="wmstool-input"
   type="text"
 >
   <input
-    className="ant-input"
+    className="wmstool-input"
     disabled={false}
     maxLength="3"
     onKeyDown={[Function]}
@@ -20,20 +20,20 @@ exports[`Input should support maxLength 1`] = `
 exports[`Input.Search should support suffix 1`] = `
 <Search
   enterButton={false}
-  inputPrefixCls="ant-input"
-  prefixCls="ant-input-search"
+  inputPrefixCls="wmstool-input"
+  prefixCls="wmstool-input-search"
   suffix="suffix"
 >
   <Input
-    className="ant-input-search"
+    className="wmstool-input-search"
     disabled={false}
     onPressEnter={[Function]}
-    prefixCls="ant-input"
+    prefixCls="wmstool-input"
     suffix={
       Array [
         "suffix",
         <Icon
-          className="ant-input-search-icon"
+          className="wmstool-input-search-icon"
           type="search"
         />,
       ]
@@ -41,26 +41,26 @@ exports[`Input.Search should support suffix 1`] = `
     type="text"
   >
     <span
-      className="ant-input-search ant-input-affix-wrapper"
+      className="wmstool-input-search wmstool-input-affix-wrapper"
     >
       <input
-        className="ant-input"
+        className="wmstool-input"
         disabled={false}
         onKeyDown={[Function]}
         style={null}
         type="text"
       />
       <span
-        className="ant-input-suffix"
+        className="wmstool-input-suffix"
       >
         suffix
         <Icon
-          className="ant-input-search-icon"
+          className="wmstool-input-search-icon"
           key="searchIcon"
           type="search"
         >
           <i
-            className="anticon anticon-search ant-input-search-icon"
+            className="anticon anticon-search wmstool-input-search-icon"
           />
         </Icon>
       </span>
@@ -72,10 +72,10 @@ exports[`Input.Search should support suffix 1`] = `
 exports[`TextArea should support disabled 1`] = `
 <TextArea
   disabled={true}
-  prefixCls="ant-input"
+  prefixCls="wmstool-input"
 >
   <textarea
-    className="ant-input ant-input-disabled"
+    className="wmstool-input wmstool-input-disabled"
     disabled={true}
     onChange={[Function]}
     onKeyDown={[Function]}
@@ -87,10 +87,10 @@ exports[`TextArea should support disabled 1`] = `
 exports[`TextArea should support maxLength 1`] = `
 <TextArea
   maxLength="10"
-  prefixCls="ant-input"
+  prefixCls="wmstool-input"
 >
   <textarea
-    className="ant-input"
+    className="wmstool-input"
     maxLength="10"
     onChange={[Function]}
     onKeyDown={[Function]}

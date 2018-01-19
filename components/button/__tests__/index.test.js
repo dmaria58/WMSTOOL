@@ -52,7 +52,7 @@ describe('Button', () => {
       <DefaultButton />
     );
     wrapper.simulate('click');
-    expect(wrapper.find('.ant-btn-loading').length).toBe(1);
+    expect(wrapper.find('.wmstool-btn-loading').length).toBe(1);
   });
 
   it('should change loading state with delay', () => {
@@ -72,7 +72,7 @@ describe('Button', () => {
       <DefaultButton />
     );
     wrapper.simulate('click');
-    expect(wrapper.hasClass('ant-btn-loading')).toBe(false);
+    expect(wrapper.hasClass('wmstool-btn-loading')).toBe(false);
   });
 
   it('should support link button', () => {

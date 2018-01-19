@@ -2,21 +2,21 @@
 
 exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
 <ul
-  class="ant-pagination "
+  class="wmstool-pagination "
   unselectable="unselectable"
 >
   <li
     aria-disabled="true"
-    class="ant-pagination-disabled ant-pagination-prev"
+    class="wmstool-pagination-disabled wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+    class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
     tabindex="0"
     title="1"
   >
@@ -25,7 +25,7 @@ exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-2"
+    class="wmstool-pagination-item wmstool-pagination-item-2"
     tabindex="0"
     title="2"
   >
@@ -34,7 +34,7 @@ exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-3"
+    class="wmstool-pagination-item wmstool-pagination-item-3"
     tabindex="0"
     title="3"
   >
@@ -43,7 +43,7 @@ exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-4"
+    class="wmstool-pagination-item wmstool-pagination-item-4"
     tabindex="0"
     title="4"
   >
@@ -52,7 +52,7 @@ exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-5"
+    class="wmstool-pagination-item wmstool-pagination-item-5"
     tabindex="0"
     title="5"
   >
@@ -62,12 +62,12 @@ exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
 </ul>
@@ -75,21 +75,21 @@ exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
 <ul
-  class="ant-pagination "
+  class="wmstool-pagination "
   unselectable="unselectable"
 >
   <li
     aria-disabled="false"
-    class=" ant-pagination-prev"
+    class=" wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-1"
+    class="wmstool-pagination-item wmstool-pagination-item-1"
     tabindex="0"
     title="1"
   >
@@ -98,7 +98,7 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-2"
+    class="wmstool-pagination-item wmstool-pagination-item-2"
     tabindex="0"
     title="2"
   >
@@ -107,7 +107,7 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-3 ant-pagination-item-active"
+    class="wmstool-pagination-item wmstool-pagination-item-3 wmstool-pagination-item-active"
     tabindex="0"
     title="3"
   >
@@ -116,7 +116,7 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-4"
+    class="wmstool-pagination-item wmstool-pagination-item-4"
     tabindex="0"
     title="4"
   >
@@ -125,7 +125,7 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-before-jump-next"
+    class="wmstool-pagination-item wmstool-pagination-item-5 wmstool-pagination-item-before-jump-next"
     tabindex="0"
     title="5"
   >
@@ -134,16 +134,16 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-jump-next"
+    class="wmstool-pagination-jump-next"
     tabindex="0"
     title="Next 5 Pages"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-50"
+    class="wmstool-pagination-item wmstool-pagination-item-50"
     tabindex="0"
     title="50"
   >
@@ -153,34 +153,34 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-options"
+    class="wmstool-pagination-options"
   >
     <div
-      class="ant-pagination-options-size-changer ant-select ant-select-enabled"
+      class="wmstool-pagination-options-size-changer wmstool-select wmstool-select-enabled"
     >
       <div
         aria-autocomplete="list"
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <div
-            class="ant-select-selection-selected-value"
+            class="wmstool-select-selection-selected-value"
             style="display:block;opacity:1"
             title="10 / page"
           >
@@ -188,7 +188,7 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="unselectable"
         >
@@ -202,21 +202,21 @@ exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
 
 exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
 <ul
-  class="ant-pagination "
+  class="wmstool-pagination "
   unselectable="unselectable"
 >
   <li
     aria-disabled="false"
-    class=" ant-pagination-prev"
+    class=" wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-1"
+    class="wmstool-pagination-item wmstool-pagination-item-1"
     tabindex="0"
     title="1"
   >
@@ -225,7 +225,7 @@ exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-2"
+    class="wmstool-pagination-item wmstool-pagination-item-2"
     tabindex="0"
     title="2"
   >
@@ -234,7 +234,7 @@ exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-3 ant-pagination-item-active"
+    class="wmstool-pagination-item wmstool-pagination-item-3 wmstool-pagination-item-active"
     tabindex="0"
     title="3"
   >
@@ -243,7 +243,7 @@ exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-4"
+    class="wmstool-pagination-item wmstool-pagination-item-4"
     tabindex="0"
     title="4"
   >
@@ -252,7 +252,7 @@ exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-5"
+    class="wmstool-pagination-item wmstool-pagination-item-5"
     tabindex="0"
     title="5"
   >
@@ -262,12 +262,12 @@ exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
 </ul>
@@ -275,12 +275,12 @@ exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
 
 exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
 <ul
-  class="ant-pagination "
+  class="wmstool-pagination "
   unselectable="unselectable"
 >
   <li
     aria-disabled="true"
-    class="ant-pagination-disabled ant-pagination-prev"
+    class="wmstool-pagination-disabled wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
@@ -289,7 +289,7 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+    class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
     tabindex="0"
     title="1"
   >
@@ -298,7 +298,7 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-2"
+    class="wmstool-pagination-item wmstool-pagination-item-2"
     tabindex="0"
     title="2"
   >
@@ -307,7 +307,7 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-3"
+    class="wmstool-pagination-item wmstool-pagination-item-3"
     tabindex="0"
     title="3"
   >
@@ -316,7 +316,7 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-4"
+    class="wmstool-pagination-item wmstool-pagination-item-4"
     tabindex="0"
     title="4"
   >
@@ -325,7 +325,7 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-before-jump-next"
+    class="wmstool-pagination-item wmstool-pagination-item-5 wmstool-pagination-item-before-jump-next"
     tabindex="0"
     title="5"
   >
@@ -334,16 +334,16 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-jump-next"
+    class="wmstool-pagination-jump-next"
     tabindex="0"
     title="Next 5 Pages"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-50"
+    class="wmstool-pagination-item wmstool-pagination-item-50"
     tabindex="0"
     title="50"
   >
@@ -353,7 +353,7 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
@@ -366,21 +366,21 @@ exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
 
 exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
 <ul
-  class="ant-pagination "
+  class="wmstool-pagination "
   unselectable="unselectable"
 >
   <li
     aria-disabled="false"
-    class=" ant-pagination-prev"
+    class=" wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-1"
+    class="wmstool-pagination-item wmstool-pagination-item-1"
     tabindex="0"
     title="1"
   >
@@ -389,7 +389,7 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-2 ant-pagination-item-active"
+    class="wmstool-pagination-item wmstool-pagination-item-2 wmstool-pagination-item-active"
     tabindex="0"
     title="2"
   >
@@ -398,7 +398,7 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-3"
+    class="wmstool-pagination-item wmstool-pagination-item-3"
     tabindex="0"
     title="3"
   >
@@ -407,7 +407,7 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-4"
+    class="wmstool-pagination-item wmstool-pagination-item-4"
     tabindex="0"
     title="4"
   >
@@ -416,7 +416,7 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-before-jump-next"
+    class="wmstool-pagination-item wmstool-pagination-item-5 wmstool-pagination-item-before-jump-next"
     tabindex="0"
     title="5"
   >
@@ -425,16 +425,16 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-jump-next"
+    class="wmstool-pagination-jump-next"
     tabindex="0"
     title="Next 5 Pages"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-50"
+    class="wmstool-pagination-item wmstool-pagination-item-50"
     tabindex="0"
     title="50"
   >
@@ -444,19 +444,19 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-options"
+    class="wmstool-pagination-options"
   >
     <div
-      class="ant-pagination-options-quick-jumper"
+      class="wmstool-pagination-options-quick-jumper"
     >
       Goto
       <input
@@ -471,21 +471,21 @@ exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
 exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
 <div>
   <ul
-    class="ant-pagination mini"
+    class="wmstool-pagination mini"
     unselectable="unselectable"
   >
     <li
       aria-disabled="true"
-      class="ant-pagination-disabled ant-pagination-prev"
+      class="wmstool-pagination-disabled wmstool-pagination-prev"
       tabindex="0"
       title="Previous Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+      class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
       tabindex="0"
       title="1"
     >
@@ -494,7 +494,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-2"
+      class="wmstool-pagination-item wmstool-pagination-item-2"
       tabindex="0"
       title="2"
     >
@@ -503,7 +503,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-3"
+      class="wmstool-pagination-item wmstool-pagination-item-3"
       tabindex="0"
       title="3"
     >
@@ -512,7 +512,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-4"
+      class="wmstool-pagination-item wmstool-pagination-item-4"
       tabindex="0"
       title="4"
     >
@@ -521,7 +521,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-5"
+      class="wmstool-pagination-item wmstool-pagination-item-5"
       tabindex="0"
       title="5"
     >
@@ -531,31 +531,31 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
     </li>
     <li
       aria-disabled="false"
-      class=" ant-pagination-next"
+      class=" wmstool-pagination-next"
       tabindex="0"
       title="Next Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
   </ul>
   <ul
-    class="ant-pagination mini"
+    class="wmstool-pagination mini"
     unselectable="unselectable"
   >
     <li
       aria-disabled="true"
-      class="ant-pagination-disabled ant-pagination-prev"
+      class="wmstool-pagination-disabled wmstool-pagination-prev"
       tabindex="0"
       title="Previous Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+      class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
       tabindex="0"
       title="1"
     >
@@ -564,7 +564,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-2"
+      class="wmstool-pagination-item wmstool-pagination-item-2"
       tabindex="0"
       title="2"
     >
@@ -573,7 +573,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-3"
+      class="wmstool-pagination-item wmstool-pagination-item-3"
       tabindex="0"
       title="3"
     >
@@ -582,7 +582,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-4"
+      class="wmstool-pagination-item wmstool-pagination-item-4"
       tabindex="0"
       title="4"
     >
@@ -591,7 +591,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-5"
+      class="wmstool-pagination-item wmstool-pagination-item-5"
       tabindex="0"
       title="5"
     >
@@ -601,34 +601,34 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
     </li>
     <li
       aria-disabled="false"
-      class=" ant-pagination-next"
+      class=" wmstool-pagination-next"
       tabindex="0"
       title="Next Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
     <li
-      class="ant-pagination-options"
+      class="wmstool-pagination-options"
     >
       <div
-        class="ant-select-sm ant-pagination-options-size-changer ant-select ant-select-enabled"
+        class="wmstool-select-sm wmstool-pagination-options-size-changer wmstool-select wmstool-select-enabled"
       >
         <div
           aria-autocomplete="list"
           aria-expanded="false"
           aria-haspopup="true"
-          class="ant-select-selection
-            ant-select-selection--single"
+          class="wmstool-select-selection
+            wmstool-select-selection--single"
           role="combobox"
           tabindex="0"
         >
           <div
-            class="ant-select-selection__rendered"
+            class="wmstool-select-selection__rendered"
           >
             <div
-              class="ant-select-selection-selected-value"
+              class="wmstool-select-selection-selected-value"
               style="display:block;opacity:1"
               title="10 / page"
             >
@@ -636,7 +636,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
             </div>
           </div>
           <span
-            class="ant-select-arrow"
+            class="wmstool-select-arrow"
             style="user-select:none;-webkit-user-select:none"
             unselectable="unselectable"
           >
@@ -645,7 +645,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-pagination-options-quick-jumper"
+        class="wmstool-pagination-options-quick-jumper"
       >
         Goto
         <input
@@ -656,26 +656,26 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
     </li>
   </ul>
   <ul
-    class="ant-pagination mini"
+    class="wmstool-pagination mini"
     unselectable="unselectable"
   >
     <li
-      class="ant-pagination-total-text"
+      class="wmstool-pagination-total-text"
     >
       Total 50 items
     </li>
     <li
       aria-disabled="true"
-      class="ant-pagination-disabled ant-pagination-prev"
+      class="wmstool-pagination-disabled wmstool-pagination-prev"
       tabindex="0"
       title="Previous Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+      class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
       tabindex="0"
       title="1"
     >
@@ -684,7 +684,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-2"
+      class="wmstool-pagination-item wmstool-pagination-item-2"
       tabindex="0"
       title="2"
     >
@@ -693,7 +693,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-3"
+      class="wmstool-pagination-item wmstool-pagination-item-3"
       tabindex="0"
       title="3"
     >
@@ -702,7 +702,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-4"
+      class="wmstool-pagination-item wmstool-pagination-item-4"
       tabindex="0"
       title="4"
     >
@@ -711,7 +711,7 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-5"
+      class="wmstool-pagination-item wmstool-pagination-item-5"
       tabindex="0"
       title="5"
     >
@@ -721,12 +721,12 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
     </li>
     <li
       aria-disabled="false"
-      class=" ant-pagination-next"
+      class=" wmstool-pagination-next"
       tabindex="0"
       title="Next Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
   </ul>
@@ -735,21 +735,21 @@ exports[`renders ./components/pagination/demo/mini.md correctly 1`] = `
 
 exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
 <ul
-  class="ant-pagination "
+  class="wmstool-pagination "
   unselectable="unselectable"
 >
   <li
     aria-disabled="false"
-    class=" ant-pagination-prev"
+    class=" wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-1"
+    class="wmstool-pagination-item wmstool-pagination-item-1"
     tabindex="0"
     title="1"
   >
@@ -758,16 +758,16 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-jump-prev"
+    class="wmstool-pagination-jump-prev"
     tabindex="0"
     title="Previous 5 Pages"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-4 ant-pagination-item-after-jump-prev"
+    class="wmstool-pagination-item wmstool-pagination-item-4 wmstool-pagination-item-after-jump-prev"
     tabindex="0"
     title="4"
   >
@@ -776,7 +776,7 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-5"
+    class="wmstool-pagination-item wmstool-pagination-item-5"
     tabindex="0"
     title="5"
   >
@@ -785,7 +785,7 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-6 ant-pagination-item-active"
+    class="wmstool-pagination-item wmstool-pagination-item-6 wmstool-pagination-item-active"
     tabindex="0"
     title="6"
   >
@@ -794,7 +794,7 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-7"
+    class="wmstool-pagination-item wmstool-pagination-item-7"
     tabindex="0"
     title="7"
   >
@@ -803,7 +803,7 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-8 ant-pagination-item-before-jump-next"
+    class="wmstool-pagination-item wmstool-pagination-item-8 wmstool-pagination-item-before-jump-next"
     tabindex="0"
     title="8"
   >
@@ -812,16 +812,16 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
     </a>
   </li>
   <li
-    class="ant-pagination-jump-next"
+    class="wmstool-pagination-jump-next"
     tabindex="0"
     title="Next 5 Pages"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-item ant-pagination-item-50"
+    class="wmstool-pagination-item wmstool-pagination-item-50"
     tabindex="0"
     title="50"
   >
@@ -831,12 +831,12 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
 </ul>
@@ -844,20 +844,20 @@ exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
 
 exports[`renders ./components/pagination/demo/simple.md correctly 1`] = `
 <ul
-  class="ant-pagination ant-pagination-simple "
+  class="wmstool-pagination wmstool-pagination-simple "
 >
   <li
     aria-disabled="false"
-    class=" ant-pagination-prev"
+    class=" wmstool-pagination-prev"
     tabindex="0"
     title="Previous Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
   <li
-    class="ant-pagination-simple-pager"
+    class="wmstool-pagination-simple-pager"
     title="2/5"
   >
     <input
@@ -866,7 +866,7 @@ exports[`renders ./components/pagination/demo/simple.md correctly 1`] = `
       value="2"
     />
     <span
-      class="ant-pagination-slash"
+      class="wmstool-pagination-slash"
     >
       ／
     </span>
@@ -874,12 +874,12 @@ exports[`renders ./components/pagination/demo/simple.md correctly 1`] = `
   </li>
   <li
     aria-disabled="false"
-    class=" ant-pagination-next"
+    class=" wmstool-pagination-next"
     tabindex="0"
     title="Next Page"
   >
     <a
-      class="ant-pagination-item-link"
+      class="wmstool-pagination-item-link"
     />
   </li>
 </ul>
@@ -888,26 +888,26 @@ exports[`renders ./components/pagination/demo/simple.md correctly 1`] = `
 exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
 <div>
   <ul
-    class="ant-pagination "
+    class="wmstool-pagination "
     unselectable="unselectable"
   >
     <li
-      class="ant-pagination-total-text"
+      class="wmstool-pagination-total-text"
     >
       Total 85 items
     </li>
     <li
       aria-disabled="true"
-      class="ant-pagination-disabled ant-pagination-prev"
+      class="wmstool-pagination-disabled wmstool-pagination-prev"
       tabindex="0"
       title="Previous Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+      class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
       tabindex="0"
       title="1"
     >
@@ -916,7 +916,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-2"
+      class="wmstool-pagination-item wmstool-pagination-item-2"
       tabindex="0"
       title="2"
     >
@@ -925,7 +925,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-3"
+      class="wmstool-pagination-item wmstool-pagination-item-3"
       tabindex="0"
       title="3"
     >
@@ -934,7 +934,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-4"
+      class="wmstool-pagination-item wmstool-pagination-item-4"
       tabindex="0"
       title="4"
     >
@@ -943,7 +943,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-5"
+      class="wmstool-pagination-item wmstool-pagination-item-5"
       tabindex="0"
       title="5"
     >
@@ -953,37 +953,37 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
     </li>
     <li
       aria-disabled="false"
-      class=" ant-pagination-next"
+      class=" wmstool-pagination-next"
       tabindex="0"
       title="Next Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
   </ul>
   <br />
   <ul
-    class="ant-pagination "
+    class="wmstool-pagination "
     unselectable="unselectable"
   >
     <li
-      class="ant-pagination-total-text"
+      class="wmstool-pagination-total-text"
     >
       1-20 of 85 items
     </li>
     <li
       aria-disabled="true"
-      class="ant-pagination-disabled ant-pagination-prev"
+      class="wmstool-pagination-disabled wmstool-pagination-prev"
       tabindex="0"
       title="Previous Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+      class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
       tabindex="0"
       title="1"
     >
@@ -992,7 +992,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-2"
+      class="wmstool-pagination-item wmstool-pagination-item-2"
       tabindex="0"
       title="2"
     >
@@ -1001,7 +1001,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-3"
+      class="wmstool-pagination-item wmstool-pagination-item-3"
       tabindex="0"
       title="3"
     >
@@ -1010,7 +1010,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-4"
+      class="wmstool-pagination-item wmstool-pagination-item-4"
       tabindex="0"
       title="4"
     >
@@ -1019,7 +1019,7 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
       </a>
     </li>
     <li
-      class="ant-pagination-item ant-pagination-item-5"
+      class="wmstool-pagination-item wmstool-pagination-item-5"
       tabindex="0"
       title="5"
     >
@@ -1029,12 +1029,12 @@ exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
     </li>
     <li
       aria-disabled="false"
-      class=" ant-pagination-next"
+      class=" wmstool-pagination-next"
       tabindex="0"
       title="Next Page"
     >
       <a
-        class="ant-pagination-item-link"
+        class="wmstool-pagination-item-link"
       />
     </li>
   </ul>

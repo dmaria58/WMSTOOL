@@ -11,7 +11,7 @@ export interface AnchorLinkProps {
 
 export default class AnchorLink extends React.Component<AnchorLinkProps, any> {
   static defaultProps = {
-    prefixCls: 'ant-anchor',
+    prefixCls: 'wmstool-anchor',
     href: '#',
   };
 

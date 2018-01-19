@@ -26,7 +26,7 @@ ReactDOM.render(
 ````
 
 <style>
-.ant-spin {
+.wmstool-spin {
   margin-right: 16px;
 }
 </style>

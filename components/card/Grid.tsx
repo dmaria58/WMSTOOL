@@ -8,7 +8,7 @@ export interface CardGridProps {
 }
 
 export default (props: CardGridProps) => {
-  const { prefixCls = 'ant-card', className, ...others } = props;
+  const { prefixCls = 'wmstool-card', className, ...others } = props;
   const classString = classNames(`${prefixCls}-grid`, className);
   return <div {...others} className={classString} />;
 };

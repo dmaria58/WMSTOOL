@@ -77,43 +77,43 @@ describe('Table.pagination', () => {
     expect(handlePaginationChange).toBeCalledWith(2, 2);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4532
+  // https://github.com/wmstool-design/wmstool-design/issues/4532
   // https://codepen.io/afc163/pen/dVeNoP?editors=001
   it('should have pager when change pagination from false to undefined', () => {
     const wrapper = mount(createTable({ pagination: false }));
-    expect(wrapper.find('.ant-pagination')).toHaveLength(0);
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(0);
     wrapper.setProps({ pagination: undefined });
-    expect(wrapper.find('.ant-pagination')).toHaveLength(1);
-    expect(wrapper.find('.ant-pagination-item-active')).toHaveLength(1);
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(1);
+    expect(wrapper.find('.wmstool-pagination-item-active')).toHaveLength(1);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4532
+  // https://github.com/wmstool-design/wmstool-design/issues/4532
   // https://codepen.io/afc163/pen/pWVRJV?editors=001
   it('should display pagination as prop pagination change between true and false', () => {
     const wrapper = mount(createTable());
-    expect(wrapper.find('.ant-pagination')).toHaveLength(1);
-    expect(wrapper.find('.ant-pagination-item')).toHaveLength(2);
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(1);
+    expect(wrapper.find('.wmstool-pagination-item')).toHaveLength(2);
     wrapper.setProps({ pagination: false });
-    expect(wrapper.find('.ant-pagination')).toHaveLength(0);
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(0);
     wrapper.setProps({ pagination });
     wrapper.update();
-    expect(wrapper.find('.ant-pagination')).toHaveLength(1);
-    expect(wrapper.find('.ant-pagination-item')).toHaveLength(2);
-    wrapper.find('.ant-pagination-item-2').simulate('click');
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(1);
+    expect(wrapper.find('.wmstool-pagination-item')).toHaveLength(2);
+    wrapper.find('.wmstool-pagination-item-2').simulate('click');
     expect(renderedNames(wrapper)).toEqual(['Tom', 'Jerry']);
     wrapper.setProps({ pagination: false });
-    expect(wrapper.find('.ant-pagination')).toHaveLength(0);
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(0);
     wrapper.setProps({ pagination: true });
-    expect(wrapper.find('.ant-pagination')).toHaveLength(1);
-    expect(wrapper.find('.ant-pagination-item')).toHaveLength(1); // pageSize will be 10
+    expect(wrapper.find('.wmstool-pagination')).toHaveLength(1);
+    expect(wrapper.find('.wmstool-pagination-item')).toHaveLength(1); // pageSize will be 10
     expect(renderedNames(wrapper)).toEqual(['Jack', 'Lucy', 'Tom', 'Jerry']);
   });
 
-  // https://github.com/ant-design/ant-design/issues/5259
+  // https://github.com/wmstool-design/wmstool-design/issues/5259
   it('change to correct page when data source changes', () => {
     const wrapper = mount(createTable({ pagination: { pageSize: 1 } }));
-    wrapper.find('.ant-pagination-item-3').simulate('click');
+    wrapper.find('.wmstool-pagination-item-3').simulate('click');
     wrapper.setProps({ dataSource: [data[0]] });
-    expect(wrapper.find('.ant-pagination-item-1').hasClass('ant-pagination-item-active')).toBe(true);
+    expect(wrapper.find('.wmstool-pagination-item-1').hasClass('wmstool-pagination-item-active')).toBe(true);
   });
 });

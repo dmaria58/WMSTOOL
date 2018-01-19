@@ -25,7 +25,7 @@ export interface AvatarState {
 
 export default class Avatar extends React.Component<AvatarProps, AvatarState> {
   static defaultProps = {
-    prefixCls: 'ant-avatar',
+    prefixCls: 'wmstool-avatar',
     shape: 'circle',
     size: 'default',
   };

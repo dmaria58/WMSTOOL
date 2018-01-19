@@ -2,7 +2,7 @@
 @import "../../style/mixins/index";
 @import "../../input/style/mixin";
 
-@input-number-prefix-cls: ~"@{ant-prefix}-input-number";
+@input-number-prefix-cls: ~"@{wmstool-prefix}-input-number";
 
 .@{input-number-prefix-cls} {
   .reset-component;
@@ -115,7 +115,7 @@
     opacity: 0;
     border-radius: 0 @border-radius-base @border-radius-base 0;
     transition: opacity 0.24s linear 0.1s;
-    z-index: 2; // https://github.com/ant-design/ant-design/issues/6289
+    z-index: 2; // https://github.com/wmstool-design/wmstool-design/issues/6289
   }
 
   &-handler-wrap:hover &-handler {

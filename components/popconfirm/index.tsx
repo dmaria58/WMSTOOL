@@ -26,7 +26,7 @@ export interface PopconfirmLocale {
 
 export default class Popconfirm extends React.Component<PopconfirmProps, PopconfirmState> {
   static defaultProps = {
-    prefixCls: 'ant-popover',
+    prefixCls: 'wmstool-popover',
     transitionName: 'zoom-big',
     placement: 'top',
     trigger: 'click',

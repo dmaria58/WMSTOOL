@@ -108,29 +108,29 @@ ReactDOM.render(<Complete />, mountNode);
 ````
 
 ````css
-.certain-category-search.ant-select-auto-complete .ant-input-affix-wrapper .ant-input-suffix {
+.certain-category-search.wmstool-select-auto-complete .wmstool-input-affix-wrapper .wmstool-input-suffix {
   right: 12px;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item-group-title {
+.certain-category-search-dropdown .wmstool-select-dropdown-menu-item-group-title {
   color: #666;
   font-weight: bold;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item-group {
+.certain-category-search-dropdown .wmstool-select-dropdown-menu-item-group {
   border-bottom: 1px solid #F6F6F6;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item {
+.certain-category-search-dropdown .wmstool-select-dropdown-menu-item {
   padding-left: 16px;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu-item.show-all {
+.certain-category-search-dropdown .wmstool-select-dropdown-menu-item.show-all {
   text-align: center;
   cursor: default;
 }
 
-.certain-category-search-dropdown .ant-select-dropdown-menu {
+.certain-category-search-dropdown .wmstool-select-dropdown-menu {
   max-height: 300px;
 }
 
@@ -140,7 +140,7 @@ ReactDOM.render(<Complete />, mountNode);
  right: 16px;
 }
 
-.certain-category-search.ant-select-focused .certain-category-icon {
+.certain-category-search.wmstool-select-focused .certain-category-icon {
   color: #108ee9;
 }
 

@@ -11,7 +11,7 @@ describe('DatePicker with showTime', () => {
     );
 
     const calendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    calendarWrapper.find('.ant-calendar-date').at(0).simulate('click');
+    calendarWrapper.find('.wmstool-calendar-date').at(0).simulate('click');
     expect(onChangeFn).toHaveBeenCalled();
     expect(onOpenChangeFn).not.toHaveBeenCalled();
   });
@@ -26,7 +26,7 @@ describe('DatePicker with showTime', () => {
     );
 
     const calendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    calendarWrapper.find('.ant-calendar-ok-btn').simulate('click');
+    calendarWrapper.find('.wmstool-calendar-ok-btn').simulate('click');
     expect(onOkFn).toHaveBeenCalled();
     expect(onOpenChangeFn).toHaveBeenCalledWith(false);
     expect(onChangeFn).not.toHaveBeenCalled();
@@ -41,7 +41,7 @@ describe('DatePicker with showTime', () => {
     );
 
     const calendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    calendarWrapper.find('.ant-calendar-today-btn').simulate('click');
+    calendarWrapper.find('.wmstool-calendar-today-btn').simulate('click');
     expect(onOpenChangeFn).toHaveBeenCalledWith(false);
     expect(onChangeFn).toHaveBeenCalled();
   });
@@ -51,9 +51,9 @@ describe('DatePicker with showTime', () => {
       <DatePicker showTime={{ use12Hours: true }} open />
     );
     const calendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(calendarWrapper.find('.ant-calendar-time-picker-column-4').length).toBe(0);
-    calendarWrapper.find('.ant-calendar-time-picker-btn').at(0).simulate('click');
-    expect(calendarWrapper.find('.ant-calendar-time-picker-column-4').hostNodes().length).toBe(1);
+    expect(calendarWrapper.find('.wmstool-calendar-time-picker-column-4').length).toBe(0);
+    calendarWrapper.find('.wmstool-calendar-time-picker-btn').at(0).simulate('click');
+    expect(calendarWrapper.find('.wmstool-calendar-time-picker-column-4').hostNodes().length).toBe(1);
   });
 });
 
@@ -66,12 +66,12 @@ describe('RangePicker with showTime', () => {
     );
 
     const calendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    expect(calendarWrapper.find('.ant-calendar-time-picker-btn').hasClass('ant-calendar-time-picker-btn-disabled')).toBe(true);
-    expect(calendarWrapper.find('.ant-calendar-ok-btn').hasClass('ant-calendar-ok-btn-disabled')).toBe(true);
-    calendarWrapper.find('.ant-calendar-date').at(10).simulate('click');
-    calendarWrapper.find('.ant-calendar-date').at(11).simulate('click');
-    expect(calendarWrapper.find('.ant-calendar-time-picker-btn').hasClass('ant-calendar-time-picker-btn-disabled')).toBe(false);
-    expect(calendarWrapper.find('.ant-calendar-ok-btn').hasClass('ant-calendar-ok-btn-disabled')).toBe(false);
+    expect(calendarWrapper.find('.wmstool-calendar-time-picker-btn').hasClass('wmstool-calendar-time-picker-btn-disabled')).toBe(true);
+    expect(calendarWrapper.find('.wmstool-calendar-ok-btn').hasClass('wmstool-calendar-ok-btn-disabled')).toBe(true);
+    calendarWrapper.find('.wmstool-calendar-date').at(10).simulate('click');
+    calendarWrapper.find('.wmstool-calendar-date').at(11).simulate('click');
+    expect(calendarWrapper.find('.wmstool-calendar-time-picker-btn').hasClass('wmstool-calendar-time-picker-btn-disabled')).toBe(false);
+    expect(calendarWrapper.find('.wmstool-calendar-ok-btn').hasClass('wmstool-calendar-ok-btn-disabled')).toBe(false);
     expect(onChangeFn).toHaveBeenCalled();
     expect(onOpenChangeFn).not.toHaveBeenCalled();
   });
@@ -85,10 +85,10 @@ describe('RangePicker with showTime', () => {
     );
 
     const calendarWrapper = mount(wrapper.find('Trigger').instance().getComponent());
-    calendarWrapper.find('.ant-calendar-date').at(10).simulate('click');
-    calendarWrapper.find('.ant-calendar-date').at(11).simulate('click');
+    calendarWrapper.find('.wmstool-calendar-date').at(10).simulate('click');
+    calendarWrapper.find('.wmstool-calendar-date').at(11).simulate('click');
     onChangeFn.mockClear();
-    calendarWrapper.find('.ant-calendar-ok-btn').simulate('click');
+    calendarWrapper.find('.wmstool-calendar-ok-btn').simulate('click');
     expect(onOkFn).toHaveBeenCalled();
     expect(onOpenChangeFn).toHaveBeenCalledWith(false);
     expect(onChangeFn).not.toHaveBeenCalled();

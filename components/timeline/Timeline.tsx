@@ -13,7 +13,7 @@ export interface TimelineProps {
 export default class Timeline extends React.Component<TimelineProps, any> {
   static Item = TimelineItem as React.ClassicComponentClass<TimeLineItemProps>;
   static defaultProps = {
-    prefixCls: 'ant-timeline',
+    prefixCls: 'wmstool-timeline',
   };
 
   render() {

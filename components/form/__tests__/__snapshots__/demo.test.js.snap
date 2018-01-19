@@ -3,21 +3,21 @@
 exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
 <div>
   <form
-    class="ant-form ant-form-horizontal ant-advanced-search-form"
+    class="wmstool-form wmstool-form-horizontal wmstool-advanced-search-form"
   >
     <div
-      class="ant-row"
+      class="wmstool-row"
       style="margin-left:-12px;margin-right:-12px"
     >
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:block"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -28,13 +28,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-0"
@@ -47,14 +47,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:block"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -65,13 +65,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-1"
@@ -84,14 +84,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:block"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -102,13 +102,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-2"
@@ -121,14 +121,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:block"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -139,13 +139,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-3"
@@ -158,14 +158,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:block"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -176,13 +176,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-4"
@@ -195,14 +195,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:block"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -213,13 +213,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-5"
@@ -232,14 +232,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:none"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -250,13 +250,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-6"
@@ -269,14 +269,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:none"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -287,13 +287,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-7"
@@ -306,14 +306,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:none"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -324,13 +324,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-8"
@@ -343,14 +343,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-col-8"
+        class="wmstool-col-8"
         style="padding-left:12px;padding-right:12px;display:none"
       >
         <div
-          class="ant-row ant-form-item"
+          class="wmstool-row wmstool-form-item"
         >
           <div
-            class="ant-form-item-label"
+            class="wmstool-form-item-label"
           >
             <label
               class=""
@@ -361,13 +361,13 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
             </label>
           </div>
           <div
-            class="ant-form-item-control-wrapper"
+            class="wmstool-form-item-control-wrapper"
           >
             <div
-              class="ant-form-item-control "
+              class="wmstool-form-item-control "
             >
               <input
-                class="ant-input"
+                class="wmstool-input"
                 data-__field="[object Object]"
                 data-__meta="[object Object]"
                 id="field-9"
@@ -381,14 +381,14 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-row"
+      class="wmstool-row"
     >
       <div
-        class="ant-col-24"
+        class="wmstool-col-24"
         style="text-align:right"
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -396,7 +396,7 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
           </span>
         </button>
         <button
-          class="ant-btn"
+          class="wmstool-btn"
           style="margin-left:8px"
           type="button"
         >
@@ -425,16 +425,16 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-5 ant-form-item-label"
+      class="wmstool-col-5 wmstool-form-item-label"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="note"
         title="Note"
       >
@@ -442,13 +442,13 @@ exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-12 ant-form-item-control-wrapper"
+      class="wmstool-col-12 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="note"
@@ -459,13 +459,13 @@ exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-5 ant-form-item-label"
+      class="wmstool-col-5 wmstool-form-item-label"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="gender"
         title="Gender"
       >
@@ -473,28 +473,28 @@ exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-12 ant-form-item-control-wrapper"
+      class="wmstool-col-12 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-select ant-select-enabled"
+          class="wmstool-select wmstool-select-enabled"
         >
           <div
             aria-autocomplete="list"
             aria-expanded="false"
             aria-haspopup="true"
-            class="ant-select-selection
-            ant-select-selection--single"
+            class="wmstool-select-selection
+            wmstool-select-selection--single"
             role="combobox"
             tabindex="0"
           >
             <div
-              class="ant-select-selection__rendered"
+              class="wmstool-select-selection__rendered"
             >
               <div
-                class="ant-select-selection__placeholder"
+                class="wmstool-select-selection__placeholder"
                 style="display:block;user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -502,7 +502,7 @@ exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
               </div>
             </div>
             <span
-              class="ant-select-arrow"
+              class="wmstool-select-arrow"
               style="user-select:none;-webkit-user-select:none"
               unselectable="unselectable"
             >
@@ -514,16 +514,16 @@ exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-12 ant-col-offset-5 ant-form-item-control-wrapper"
+      class="wmstool-col-12 wmstool-col-offset-5 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -538,13 +538,13 @@ exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/customized-form-controls.md correctly 1`] = `
 <form
-  class="ant-form ant-form-inline"
+  class="wmstool-form wmstool-form-inline"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label"
+      class="wmstool-form-item-label"
     >
       <label
         class=""
@@ -555,36 +555,36 @@ exports[`renders ./components/form/demo/customized-form-controls.md correctly 1`
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control has-success"
+        class="wmstool-form-item-control has-success"
       >
         <span>
           <input
-            class="ant-input"
+            class="wmstool-input"
             style="width:65%;margin-right:3%"
             type="text"
             value="0"
           />
           <div
-            class="ant-select ant-select-enabled"
+            class="wmstool-select wmstool-select-enabled"
             style="width:32%"
           >
             <div
               aria-autocomplete="list"
               aria-expanded="false"
               aria-haspopup="true"
-              class="ant-select-selection
-            ant-select-selection--single"
+              class="wmstool-select-selection
+            wmstool-select-selection--single"
               role="combobox"
               tabindex="0"
             >
               <div
-                class="ant-select-selection__rendered"
+                class="wmstool-select-selection__rendered"
               >
                 <div
-                  class="ant-select-selection-selected-value"
+                  class="wmstool-select-selection-selected-value"
                   style="display:block;opacity:1"
                   title="RMB"
                 >
@@ -592,7 +592,7 @@ exports[`renders ./components/form/demo/customized-form-controls.md correctly 1`
                 </div>
               </div>
               <span
-                class="ant-select-arrow"
+                class="wmstool-select-arrow"
                 style="user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -605,16 +605,16 @@ exports[`renders ./components/form/demo/customized-form-controls.md correctly 1`
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -629,19 +629,19 @@ exports[`renders ./components/form/demo/customized-form-controls.md correctly 1`
 
 exports[`renders ./components/form/demo/dynamic-form-item.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-xs-offset-0 ant-col-sm-20 ant-col-sm-offset-4"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-xs-offset-0 wmstool-col-sm-20 wmstool-col-sm-offset-4"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-dashed"
+          class="wmstool-btn wmstool-btn-dashed"
           style="width:60%"
           type="button"
         >
@@ -656,16 +656,16 @@ exports[`renders ./components/form/demo/dynamic-form-item.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-xs-offset-0 ant-col-sm-20 ant-col-sm-offset-4"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-xs-offset-0 wmstool-col-sm-20 wmstool-col-sm-offset-4"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -681,13 +681,13 @@ exports[`renders ./components/form/demo/dynamic-form-item.md correctly 1`] = `
 exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
 <div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-4 ant-form-item-label"
+      class="wmstool-col-4 wmstool-form-item-label"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="username"
         title="Name"
       >
@@ -695,13 +695,13 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-8 ant-form-item-control-wrapper"
+      class="wmstool-col-8 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="username"
@@ -713,10 +713,10 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-4 ant-form-item-label"
+      class="wmstool-col-4 wmstool-form-item-label"
     >
       <label
         class=""
@@ -727,13 +727,13 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-8 ant-form-item-control-wrapper"
+      class="wmstool-col-8 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="nickname"
@@ -745,26 +745,26 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-8 ant-col-offset-4 ant-form-item-control-wrapper"
+      class="wmstool-col-8 wmstool-col-offset-4 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <label
-          class="ant-checkbox-wrapper"
+          class="wmstool-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox"
+            class="wmstool-checkbox"
           >
             <input
-              class="ant-checkbox-input"
+              class="wmstool-checkbox-input"
               type="checkbox"
             />
             <span
-              class="ant-checkbox-inner"
+              class="wmstool-checkbox-inner"
             />
           </span>
           <span>
@@ -775,16 +775,16 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-8 ant-col-offset-4 ant-form-item-control-wrapper"
+      class="wmstool-col-8 wmstool-col-offset-4 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="button"
         >
           <span>
@@ -800,7 +800,7 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
 exports[`renders ./components/form/demo/form-in-modal.md correctly 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-primary"
+    class="wmstool-btn wmstool-btn-primary"
     type="button"
   >
     <span>
@@ -813,16 +813,16 @@ exports[`renders ./components/form/demo/form-in-modal.md correctly 1`] = `
 exports[`renders ./components/form/demo/global-state.md correctly 1`] = `
 <div>
   <form
-    class="ant-form ant-form-inline"
+    class="wmstool-form wmstool-form-inline"
   >
     <div
-      class="ant-row ant-form-item"
+      class="wmstool-row wmstool-form-item"
     >
       <div
-        class="ant-form-item-label"
+        class="wmstool-form-item-label"
       >
         <label
-          class="ant-form-item-required"
+          class="wmstool-form-item-required"
           for="username"
           title="Username"
         >
@@ -830,13 +830,13 @@ exports[`renders ./components/form/demo/global-state.md correctly 1`] = `
         </label>
       </div>
       <div
-        class="ant-form-item-control-wrapper"
+        class="wmstool-form-item-control-wrapper"
       >
         <div
-          class="ant-form-item-control has-success"
+          class="wmstool-form-item-control has-success"
         >
           <input
-            class="ant-input"
+            class="wmstool-input"
             data-__field="[object Object]"
             data-__meta="[object Object]"
             id="username"
@@ -861,22 +861,22 @@ exports[`renders ./components/form/demo/global-state.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
 <form
-  class="ant-form ant-form-inline"
+  class="wmstool-form wmstool-form-inline"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-input-affix-wrapper"
+          class="wmstool-input-affix-wrapper"
         >
           <span
-            class="ant-input-prefix"
+            class="wmstool-input-prefix"
           >
             <i
               class="anticon anticon-user"
@@ -884,7 +884,7 @@ exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
             />
           </span>
           <input
-            class="ant-input"
+            class="wmstool-input"
             data-__field="[object Object]"
             data-__meta="[object Object]"
             id="userName"
@@ -897,19 +897,19 @@ exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-input-affix-wrapper"
+          class="wmstool-input-affix-wrapper"
         >
           <span
-            class="ant-input-prefix"
+            class="wmstool-input-prefix"
           >
             <i
               class="anticon anticon-lock"
@@ -917,7 +917,7 @@ exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
             />
           </span>
           <input
-            class="ant-input"
+            class="wmstool-input"
             data-__field="[object Object]"
             data-__meta="[object Object]"
             id="password"
@@ -930,16 +930,16 @@ exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -955,13 +955,13 @@ exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
 exports[`renders ./components/form/demo/layout.md correctly 1`] = `
 <div>
   <form
-    class="ant-form ant-form-horizontal"
+    class="wmstool-form wmstool-form-horizontal"
   >
     <div
-      class="ant-row ant-form-item"
+      class="wmstool-row wmstool-form-item"
     >
       <div
-        class="ant-col-4 ant-form-item-label"
+        class="wmstool-col-4 wmstool-form-item-label"
       >
         <label
           class=""
@@ -971,27 +971,27 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
         </label>
       </div>
       <div
-        class="ant-col-14 ant-form-item-control-wrapper"
+        class="wmstool-col-14 wmstool-form-item-control-wrapper"
       >
         <div
-          class="ant-form-item-control "
+          class="wmstool-form-item-control "
         >
           <div
-            class="ant-radio-group"
+            class="wmstool-radio-group"
           >
             <label
-              class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+              class="wmstool-radio-button-wrapper wmstool-radio-button-wrapper-checked"
             >
               <span
-                class="ant-radio-button ant-radio-button-checked"
+                class="wmstool-radio-button wmstool-radio-button-checked"
               >
                 <input
                   checked=""
-                  class="ant-radio-button-input"
+                  class="wmstool-radio-button-input"
                   type="radio"
                 />
                 <span
-                  class="ant-radio-button-inner"
+                  class="wmstool-radio-button-inner"
                 />
               </span>
               <span>
@@ -999,17 +999,17 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
               </span>
             </label>
             <label
-              class="ant-radio-button-wrapper"
+              class="wmstool-radio-button-wrapper"
             >
               <span
-                class="ant-radio-button"
+                class="wmstool-radio-button"
               >
                 <input
-                  class="ant-radio-button-input"
+                  class="wmstool-radio-button-input"
                   type="radio"
                 />
                 <span
-                  class="ant-radio-button-inner"
+                  class="wmstool-radio-button-inner"
                 />
               </span>
               <span>
@@ -1017,17 +1017,17 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
               </span>
             </label>
             <label
-              class="ant-radio-button-wrapper"
+              class="wmstool-radio-button-wrapper"
             >
               <span
-                class="ant-radio-button"
+                class="wmstool-radio-button"
               >
                 <input
-                  class="ant-radio-button-input"
+                  class="wmstool-radio-button-input"
                   type="radio"
                 />
                 <span
-                  class="ant-radio-button-inner"
+                  class="wmstool-radio-button-inner"
                 />
               </span>
               <span>
@@ -1039,10 +1039,10 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-row ant-form-item"
+      class="wmstool-row wmstool-form-item"
     >
       <div
-        class="ant-col-4 ant-form-item-label"
+        class="wmstool-col-4 wmstool-form-item-label"
       >
         <label
           class=""
@@ -1052,13 +1052,13 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
         </label>
       </div>
       <div
-        class="ant-col-14 ant-form-item-control-wrapper"
+        class="wmstool-col-14 wmstool-form-item-control-wrapper"
       >
         <div
-          class="ant-form-item-control "
+          class="wmstool-form-item-control "
         >
           <input
-            class="ant-input"
+            class="wmstool-input"
             placeholder="input placeholder"
             type="text"
           />
@@ -1066,10 +1066,10 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-row ant-form-item"
+      class="wmstool-row wmstool-form-item"
     >
       <div
-        class="ant-col-4 ant-form-item-label"
+        class="wmstool-col-4 wmstool-form-item-label"
       >
         <label
           class=""
@@ -1079,13 +1079,13 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
         </label>
       </div>
       <div
-        class="ant-col-14 ant-form-item-control-wrapper"
+        class="wmstool-col-14 wmstool-form-item-control-wrapper"
       >
         <div
-          class="ant-form-item-control "
+          class="wmstool-form-item-control "
         >
           <input
-            class="ant-input"
+            class="wmstool-input"
             placeholder="input placeholder"
             type="text"
           />
@@ -1093,16 +1093,16 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
       </div>
     </div>
     <div
-      class="ant-row ant-form-item"
+      class="wmstool-row wmstool-form-item"
     >
       <div
-        class="ant-col-14 ant-col-offset-4 ant-form-item-control-wrapper"
+        class="wmstool-col-14 wmstool-col-offset-4 wmstool-form-item-control-wrapper"
       >
         <div
-          class="ant-form-item-control "
+          class="wmstool-form-item-control "
         >
           <button
-            class="ant-btn ant-btn-primary"
+            class="wmstool-btn wmstool-btn-primary"
             type="button"
           >
             <span>
@@ -1118,22 +1118,22 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal login-form"
+  class="wmstool-form wmstool-form-horizontal login-form"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-input-affix-wrapper"
+          class="wmstool-input-affix-wrapper"
         >
           <span
-            class="ant-input-prefix"
+            class="wmstool-input-prefix"
           >
             <i
               class="anticon anticon-user"
@@ -1141,7 +1141,7 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
             />
           </span>
           <input
-            class="ant-input"
+            class="wmstool-input"
             data-__field="[object Object]"
             data-__meta="[object Object]"
             id="userName"
@@ -1154,19 +1154,19 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-input-affix-wrapper"
+          class="wmstool-input-affix-wrapper"
         >
           <span
-            class="ant-input-prefix"
+            class="wmstool-input-prefix"
           >
             <i
               class="anticon anticon-lock"
@@ -1174,7 +1174,7 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
             />
           </span>
           <input
-            class="ant-input"
+            class="wmstool-input"
             data-__field="[object Object]"
             data-__meta="[object Object]"
             id="password"
@@ -1187,29 +1187,29 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper"
+      class="wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control has-success"
+        class="wmstool-form-item-control has-success"
       >
         <label
-          class="ant-checkbox-wrapper"
+          class="wmstool-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox ant-checkbox-checked"
+            class="wmstool-checkbox wmstool-checkbox-checked"
           >
             <input
               checked=""
-              class="ant-checkbox-input"
+              class="wmstool-checkbox-input"
               data-__field="[object Object]"
               data-__meta="[object Object]"
               type="checkbox"
             />
             <span
-              class="ant-checkbox-inner"
+              class="wmstool-checkbox-inner"
             />
           </span>
           <span>
@@ -1223,7 +1223,7 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
           Forgot password
         </a>
         <button
-          class="ant-btn login-form-button ant-btn-primary"
+          class="wmstool-btn login-form-button wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -1244,16 +1244,16 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/register.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="email"
         title="E-mail"
       >
@@ -1261,13 +1261,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="email"
@@ -1278,13 +1278,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="password"
         title="Password"
       >
@@ -1292,13 +1292,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="password"
@@ -1309,13 +1309,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="confirm"
         title="Confirm Password"
       >
@@ -1323,13 +1323,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="confirm"
@@ -1340,13 +1340,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="nickname"
         title=""
       >
@@ -1359,13 +1359,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="nickname"
@@ -1376,13 +1376,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="residence"
         title="Habitual Residence"
       >
@@ -1390,23 +1390,23 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control has-success"
+        class="wmstool-form-item-control has-success"
       >
         <span
-          class="ant-cascader-picker"
+          class="wmstool-cascader-picker"
           tabindex="0"
         >
           <span
-            class="ant-cascader-picker-label"
+            class="wmstool-cascader-picker-label"
           >
             Zhejiang / Hangzhou / West Lake
           </span>
           <input
             autocomplete="off"
-            class="ant-input ant-cascader-input "
+            class="wmstool-input wmstool-cascader-input "
             data-__field="[object Object]"
             data-__meta="[object Object]"
             id="residence"
@@ -1415,23 +1415,23 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
             value=""
           />
           <i
-            class="anticon anticon-cross-circle ant-cascader-picker-clear"
+            class="anticon anticon-cross-circle wmstool-cascader-picker-clear"
           />
           <i
-            class="anticon anticon-down ant-cascader-picker-arrow"
+            class="anticon anticon-down wmstool-cascader-picker-arrow"
           />
         </span>
       </div>
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="phone"
         title="Phone Number"
       >
@@ -1439,39 +1439,39 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-input-group-wrapper"
+          class="wmstool-input-group-wrapper"
           style="width:100%"
         >
           <span
-            class="ant-input-wrapper ant-input-group"
+            class="wmstool-input-wrapper wmstool-input-group"
           >
             <span
-              class="ant-input-group-addon"
+              class="wmstool-input-group-addon"
             >
               <div
-                class="ant-select ant-select-enabled"
+                class="wmstool-select wmstool-select-enabled"
                 style="width:70px"
               >
                 <div
                   aria-autocomplete="list"
                   aria-expanded="false"
                   aria-haspopup="true"
-                  class="ant-select-selection
-            ant-select-selection--single"
+                  class="wmstool-select-selection
+            wmstool-select-selection--single"
                   role="combobox"
                   tabindex="0"
                 >
                   <div
-                    class="ant-select-selection__rendered"
+                    class="wmstool-select-selection__rendered"
                   >
                     <div
-                      class="ant-select-selection-selected-value"
+                      class="wmstool-select-selection-selected-value"
                       style="display:block;opacity:1"
                       title="+86"
                     >
@@ -1479,7 +1479,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
                     </div>
                   </div>
                   <span
-                    class="ant-select-arrow"
+                    class="wmstool-select-arrow"
                     style="user-select:none;-webkit-user-select:none"
                     unselectable="unselectable"
                   >
@@ -1489,7 +1489,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
               </div>
             </span>
             <input
-              class="ant-input"
+              class="wmstool-input"
               data-__field="[object Object]"
               data-__meta="[object Object]"
               id="phone"
@@ -1502,13 +1502,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="website"
         title="Website"
       >
@@ -1516,27 +1516,27 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-select-show-search ant-select-auto-complete ant-select ant-select-combobox ant-select-enabled"
+          class="wmstool-select-show-search wmstool-select-auto-complete wmstool-select wmstool-select-combobox wmstool-select-enabled"
         >
           <div
             aria-autocomplete="list"
             aria-expanded="false"
             aria-haspopup="true"
-            class="ant-select-selection
-            ant-select-selection--single"
+            class="wmstool-select-selection
+            wmstool-select-selection--single"
             role="combobox"
           >
             <div
-              class="ant-select-selection__rendered"
+              class="wmstool-select-selection__rendered"
             >
               <div
-                class="ant-select-selection__placeholder"
+                class="wmstool-select-selection__placeholder"
                 style="display:block;user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -1544,18 +1544,18 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
               </div>
               <ul>
                 <li
-                  class="ant-select-search ant-select-search--inline"
+                  class="wmstool-select-search wmstool-select-search--inline"
                 >
                   <div
-                    class="ant-select-search__field__wrap"
+                    class="wmstool-select-search__field__wrap"
                   >
                     <input
-                      class="ant-input ant-select-search__field"
+                      class="wmstool-input wmstool-select-search__field"
                       type="text"
                       value=""
                     />
                     <span
-                      class="ant-select-search__field__mirror"
+                      class="wmstool-select-search__field__mirror"
                     >
                        
                     </span>
@@ -1564,7 +1564,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
               </ul>
             </div>
             <span
-              class="ant-select-arrow"
+              class="wmstool-select-arrow"
               style="user-select:none;-webkit-user-select:none"
               unselectable="unselectable"
             >
@@ -1576,13 +1576,13 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="captcha"
         title="Captcha"
       >
@@ -1590,21 +1590,21 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-row"
+          class="wmstool-row"
           style="margin-left:-4px;margin-right:-4px"
         >
           <div
-            class="ant-col-12"
+            class="wmstool-col-12"
             style="padding-left:4px;padding-right:4px"
           >
             <input
-              class="ant-input"
+              class="wmstool-input"
               data-__field="[object Object]"
               data-__meta="[object Object]"
               id="captcha"
@@ -1613,11 +1613,11 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
             />
           </div>
           <div
-            class="ant-col-12"
+            class="wmstool-col-12"
             style="padding-left:4px;padding-right:4px"
           >
             <button
-              class="ant-btn"
+              class="wmstool-btn"
               type="button"
             >
               <span>
@@ -1627,7 +1627,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-form-extra"
+          class="wmstool-form-extra"
         >
           We must make sure that your are a human.
         </div>
@@ -1635,28 +1635,28 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-xs-offset-0 ant-col-sm-16 ant-col-sm-offset-8"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-xs-offset-0 wmstool-col-sm-16 wmstool-col-sm-offset-8"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <label
-          class="ant-checkbox-wrapper"
+          class="wmstool-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox"
+            class="wmstool-checkbox"
           >
             <input
-              class="ant-checkbox-input"
+              class="wmstool-checkbox-input"
               data-__field="[object Object]"
               data-__meta="[object Object]"
               type="checkbox"
             />
             <span
-              class="ant-checkbox-inner"
+              class="wmstool-checkbox-inner"
             />
           </span>
           <span>
@@ -1672,16 +1672,16 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-xs-offset-0 ant-col-sm-16 ant-col-sm-offset-8"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-xs-offset-0 wmstool-col-sm-16 wmstool-col-sm-offset-8"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -1696,16 +1696,16 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="date-picker"
         title="DatePicker"
       >
@@ -1713,23 +1713,23 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-calendar-picker"
+          class="wmstool-calendar-picker"
         >
           <div>
             <input
-              class="ant-calendar-picker-input ant-input"
+              class="wmstool-calendar-picker-input wmstool-input"
               placeholder="Select date"
               readonly=""
               value=""
             />
             <span
-              class="ant-calendar-picker-icon"
+              class="wmstool-calendar-picker-icon"
             />
           </div>
         </span>
@@ -1737,13 +1737,13 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="date-time-picker"
         title="DatePicker[showTime]"
       >
@@ -1751,23 +1751,23 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-calendar-picker"
+          class="wmstool-calendar-picker"
         >
           <div>
             <input
-              class="ant-calendar-picker-input ant-input"
+              class="wmstool-calendar-picker-input wmstool-input"
               placeholder="Select date"
               readonly=""
               value=""
             />
             <span
-              class="ant-calendar-picker-icon"
+              class="wmstool-calendar-picker-icon"
             />
           </div>
         </span>
@@ -1775,13 +1775,13 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="month-picker"
         title="MonthPicker"
       >
@@ -1789,23 +1789,23 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-calendar-picker"
+          class="wmstool-calendar-picker"
         >
           <div>
             <input
-              class="ant-calendar-picker-input ant-input"
+              class="wmstool-calendar-picker-input wmstool-input"
               placeholder="Select date"
               readonly=""
               value=""
             />
             <span
-              class="ant-calendar-picker-icon"
+              class="wmstool-calendar-picker-icon"
             />
           </div>
         </span>
@@ -1813,13 +1813,13 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="range-picker"
         title="RangePicker"
       >
@@ -1827,39 +1827,39 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-calendar-picker"
+          class="wmstool-calendar-picker"
           tabindex="0"
         >
           <span
-            class="ant-calendar-picker-input ant-input"
+            class="wmstool-calendar-picker-input wmstool-input"
           >
             <input
-              class="ant-calendar-range-picker-input"
+              class="wmstool-calendar-range-picker-input"
               placeholder="Start date"
               readonly=""
               tabindex="-1"
               value=""
             />
             <span
-              class="ant-calendar-range-picker-separator"
+              class="wmstool-calendar-range-picker-separator"
             >
                ~ 
             </span>
             <input
-              class="ant-calendar-range-picker-input"
+              class="wmstool-calendar-range-picker-input"
               placeholder="End date"
               readonly=""
               tabindex="-1"
               value=""
             />
             <span
-              class="ant-calendar-picker-icon"
+              class="wmstool-calendar-picker-icon"
             />
           </span>
         </span>
@@ -1867,13 +1867,13 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="range-time-picker"
         title="RangePicker[showTime]"
       >
@@ -1881,40 +1881,40 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-calendar-picker"
+          class="wmstool-calendar-picker"
           style="width:350px"
           tabindex="0"
         >
           <span
-            class="ant-calendar-picker-input ant-input"
+            class="wmstool-calendar-picker-input wmstool-input"
           >
             <input
-              class="ant-calendar-range-picker-input"
+              class="wmstool-calendar-range-picker-input"
               placeholder="Start date"
               readonly=""
               tabindex="-1"
               value=""
             />
             <span
-              class="ant-calendar-range-picker-separator"
+              class="wmstool-calendar-range-picker-separator"
             >
                ~ 
             </span>
             <input
-              class="ant-calendar-range-picker-input"
+              class="wmstool-calendar-range-picker-input"
               placeholder="End date"
               readonly=""
               tabindex="-1"
               value=""
             />
             <span
-              class="ant-calendar-picker-icon"
+              class="wmstool-calendar-picker-icon"
             />
           </span>
         </span>
@@ -1922,13 +1922,13 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-8"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-8"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="time-picker"
         title="TimePicker"
       >
@@ -1936,38 +1936,38 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-16"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-16"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-time-picker "
+          class="wmstool-time-picker "
         >
           <input
-            class="ant-time-picker-input"
+            class="wmstool-time-picker-input"
             placeholder="Select time"
             type="text"
             value=""
           />
           <span
-            class="ant-time-picker-icon"
+            class="wmstool-time-picker-icon"
           />
         </span>
       </div>
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-xs-offset-0 ant-col-sm-16 ant-col-sm-offset-8"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-xs-offset-0 wmstool-col-sm-16 wmstool-col-sm-offset-8"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -1982,13 +1982,13 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
 
 exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -1998,13 +1998,13 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-form-text"
+          class="wmstool-form-text"
         >
           China
         </span>
@@ -2012,13 +2012,13 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="select"
         title="Select"
       >
@@ -2026,28 +2026,28 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-select ant-select-enabled"
+          class="wmstool-select wmstool-select-enabled"
         >
           <div
             aria-autocomplete="list"
             aria-expanded="false"
             aria-haspopup="true"
-            class="ant-select-selection
-            ant-select-selection--single"
+            class="wmstool-select-selection
+            wmstool-select-selection--single"
             role="combobox"
             tabindex="0"
           >
             <div
-              class="ant-select-selection__rendered"
+              class="wmstool-select-selection__rendered"
             >
               <div
-                class="ant-select-selection__placeholder"
+                class="wmstool-select-selection__placeholder"
                 style="display:block;user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -2055,7 +2055,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               </div>
             </div>
             <span
-              class="ant-select-arrow"
+              class="wmstool-select-arrow"
               style="user-select:none;-webkit-user-select:none"
               unselectable="unselectable"
             >
@@ -2067,13 +2067,13 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
-        class="ant-form-item-required"
+        class="wmstool-form-item-required"
         for="select-multiple"
         title="Select[multiple]"
       >
@@ -2081,27 +2081,27 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-select ant-select-enabled"
+          class="wmstool-select wmstool-select-enabled"
         >
           <div
             aria-autocomplete="list"
             aria-expanded="false"
             aria-haspopup="true"
-            class="ant-select-selection
-            ant-select-selection--multiple"
+            class="wmstool-select-selection
+            wmstool-select-selection--multiple"
             role="combobox"
           >
             <div
-              class="ant-select-selection__rendered"
+              class="wmstool-select-selection__rendered"
             >
               <div
-                class="ant-select-selection__placeholder"
+                class="wmstool-select-selection__placeholder"
                 style="display:block;user-select:none;-webkit-user-select:none"
                 unselectable="unselectable"
               >
@@ -2109,19 +2109,19 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               </div>
               <ul>
                 <li
-                  class="ant-select-search ant-select-search--inline"
+                  class="wmstool-select-search wmstool-select-search--inline"
                 >
                   <div
-                    class="ant-select-search__field__wrap"
+                    class="wmstool-select-search__field__wrap"
                   >
                     <input
                       autocomplete="off"
-                      class="ant-select-search__field"
+                      class="wmstool-select-search__field"
                       id="select-multiple"
                       value=""
                     />
                     <span
-                      class="ant-select-search__field__mirror"
+                      class="wmstool-select-search__field__mirror"
                     >
                        
                     </span>
@@ -2135,10 +2135,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2149,38 +2149,38 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control has-success"
+        class="wmstool-form-item-control has-success"
       >
         <div
-          class="ant-input-number"
+          class="wmstool-input-number"
         >
           <div
-            class="ant-input-number-handler-wrap"
+            class="wmstool-input-number-handler-wrap"
           >
             <span
               aria-disabled="false"
               aria-label="Increase Value"
-              class="ant-input-number-handler ant-input-number-handler-up "
+              class="wmstool-input-number-handler wmstool-input-number-handler-up "
               role="button"
               unselectable="unselectable"
             >
               <span
-                class="ant-input-number-handler-up-inner"
+                class="wmstool-input-number-handler-up-inner"
                 unselectable="unselectable"
               />
             </span>
             <span
               aria-disabled="false"
               aria-label="Decrease Value"
-              class="ant-input-number-handler ant-input-number-handler-down "
+              class="wmstool-input-number-handler wmstool-input-number-handler-down "
               role="button"
               unselectable="unselectable"
             >
               <span
-                class="ant-input-number-handler-down-inner"
+                class="wmstool-input-number-handler-down-inner"
                 unselectable="unselectable"
               />
             </span>
@@ -2189,12 +2189,12 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             aria-valuemax="10"
             aria-valuemin="1"
             aria-valuenow="3"
-            class="ant-input-number-input-wrap"
+            class="wmstool-input-number-input-wrap"
             role="spinbutton"
           >
             <input
               autocomplete="off"
-              class="ant-input-number-input"
+              class="wmstool-input-number-input"
               id="input-number"
               max="10"
               min="1"
@@ -2204,7 +2204,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
           </div>
         </div>
         <span
-          class="ant-form-text"
+          class="wmstool-form-text"
         >
            machines
         </span>
@@ -2212,10 +2212,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2226,30 +2226,30 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
-          class="ant-switch"
+          class="wmstool-switch"
           data-__field="[object Object]"
           data-__meta="[object Object]"
           id="switch"
           tabindex="0"
         >
           <span
-            class="ant-switch-inner"
+            class="wmstool-switch-inner"
           />
         </span>
       </div>
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2260,46 +2260,46 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-slider ant-slider-with-marks"
+          class="wmstool-slider wmstool-slider-with-marks"
         >
           <div
-            class="ant-slider-rail"
+            class="wmstool-slider-rail"
           />
           <div
-            class="ant-slider-track"
+            class="wmstool-slider-track"
             style="visibility:visible;left:0%;width:0%"
           />
           <div
-            class="ant-slider-step"
+            class="wmstool-slider-step"
           >
             <span
-              class="ant-slider-dot ant-slider-dot-active"
+              class="wmstool-slider-dot wmstool-slider-dot-active"
               style="left:0%"
             />
             <span
-              class="ant-slider-dot"
+              class="wmstool-slider-dot"
               style="left:20%"
             />
             <span
-              class="ant-slider-dot"
+              class="wmstool-slider-dot"
               style="left:40%"
             />
             <span
-              class="ant-slider-dot"
+              class="wmstool-slider-dot"
               style="left:60%"
             />
             <span
-              class="ant-slider-dot"
+              class="wmstool-slider-dot"
               style="left:80%"
             />
             <span
-              class="ant-slider-dot"
+              class="wmstool-slider-dot"
               style="left:100%"
             />
           </div>
@@ -2308,46 +2308,46 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             aria-valuemax="100"
             aria-valuemin="0"
             aria-valuenow="0"
-            class="ant-slider-handle"
+            class="wmstool-slider-handle"
             role="slider"
             style="left:0%"
             tabindex="0"
           />
           <div
-            class="ant-slider-mark"
+            class="wmstool-slider-mark"
           >
             <span
-              class="ant-slider-mark-text ant-slider-mark-text-active"
+              class="wmstool-slider-mark-text wmstool-slider-mark-text-active"
               style="width:18%;margin-left:-9%;left:0%"
             >
               A
             </span>
             <span
-              class="ant-slider-mark-text"
+              class="wmstool-slider-mark-text"
               style="width:18%;margin-left:-9%;left:20%"
             >
               B
             </span>
             <span
-              class="ant-slider-mark-text"
+              class="wmstool-slider-mark-text"
               style="width:18%;margin-left:-9%;left:40%"
             >
               C
             </span>
             <span
-              class="ant-slider-mark-text"
+              class="wmstool-slider-mark-text"
               style="width:18%;margin-left:-9%;left:60%"
             >
               D
             </span>
             <span
-              class="ant-slider-mark-text"
+              class="wmstool-slider-mark-text"
               style="width:18%;margin-left:-9%;left:80%"
             >
               E
             </span>
             <span
-              class="ant-slider-mark-text"
+              class="wmstool-slider-mark-text"
               style="width:18%;margin-left:-9%;left:100%"
             >
               F
@@ -2358,10 +2358,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2372,27 +2372,27 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-radio-group"
+          class="wmstool-radio-group"
           id="radio-group"
         >
           <label
-            class="ant-radio-wrapper"
+            class="wmstool-radio-wrapper"
           >
             <span
-              class="ant-radio"
+              class="wmstool-radio"
             >
               <input
-                class="ant-radio-input"
+                class="wmstool-radio-input"
                 type="radio"
               />
               <span
-                class="ant-radio-inner"
+                class="wmstool-radio-inner"
               />
             </span>
             <span>
@@ -2400,17 +2400,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </span>
           </label>
           <label
-            class="ant-radio-wrapper"
+            class="wmstool-radio-wrapper"
           >
             <span
-              class="ant-radio"
+              class="wmstool-radio"
             >
               <input
-                class="ant-radio-input"
+                class="wmstool-radio-input"
                 type="radio"
               />
               <span
-                class="ant-radio-inner"
+                class="wmstool-radio-inner"
               />
             </span>
             <span>
@@ -2418,17 +2418,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </span>
           </label>
           <label
-            class="ant-radio-wrapper"
+            class="wmstool-radio-wrapper"
           >
             <span
-              class="ant-radio"
+              class="wmstool-radio"
             >
               <input
-                class="ant-radio-input"
+                class="wmstool-radio-input"
                 type="radio"
               />
               <span
-                class="ant-radio-inner"
+                class="wmstool-radio-inner"
               />
             </span>
             <span>
@@ -2440,10 +2440,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2454,27 +2454,27 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-radio-group"
+          class="wmstool-radio-group"
           id="radio-button"
         >
           <label
-            class="ant-radio-button-wrapper"
+            class="wmstool-radio-button-wrapper"
           >
             <span
-              class="ant-radio-button"
+              class="wmstool-radio-button"
             >
               <input
-                class="ant-radio-button-input"
+                class="wmstool-radio-button-input"
                 type="radio"
               />
               <span
-                class="ant-radio-button-inner"
+                class="wmstool-radio-button-inner"
               />
             </span>
             <span>
@@ -2482,17 +2482,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </span>
           </label>
           <label
-            class="ant-radio-button-wrapper"
+            class="wmstool-radio-button-wrapper"
           >
             <span
-              class="ant-radio-button"
+              class="wmstool-radio-button"
             >
               <input
-                class="ant-radio-button-input"
+                class="wmstool-radio-button-input"
                 type="radio"
               />
               <span
-                class="ant-radio-button-inner"
+                class="wmstool-radio-button-inner"
               />
             </span>
             <span>
@@ -2500,17 +2500,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </span>
           </label>
           <label
-            class="ant-radio-button-wrapper"
+            class="wmstool-radio-button-wrapper"
           >
             <span
-              class="ant-radio-button"
+              class="wmstool-radio-button"
             >
               <input
-                class="ant-radio-button-input"
+                class="wmstool-radio-button-input"
                 type="radio"
               />
               <span
-                class="ant-radio-button-inner"
+                class="wmstool-radio-button-inner"
               />
             </span>
             <span>
@@ -2522,10 +2522,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2536,27 +2536,27 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control has-success"
+        class="wmstool-form-item-control has-success"
       >
         <ul
-          class="ant-rate"
+          class="wmstool-rate"
           tabindex="0"
         >
           <li
-            class="ant-rate-star ant-rate-star-full"
+            class="wmstool-rate-star wmstool-rate-star-full"
           >
             <div
-              class="ant-rate-star-first"
+              class="wmstool-rate-star-first"
             >
               <i
                 class="anticon anticon-star"
               />
             </div>
             <div
-              class="ant-rate-star-second"
+              class="wmstool-rate-star-second"
             >
               <i
                 class="anticon anticon-star"
@@ -2564,17 +2564,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </div>
           </li>
           <li
-            class="ant-rate-star ant-rate-star-full"
+            class="wmstool-rate-star wmstool-rate-star-full"
           >
             <div
-              class="ant-rate-star-first"
+              class="wmstool-rate-star-first"
             >
               <i
                 class="anticon anticon-star"
               />
             </div>
             <div
-              class="ant-rate-star-second"
+              class="wmstool-rate-star-second"
             >
               <i
                 class="anticon anticon-star"
@@ -2582,17 +2582,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </div>
           </li>
           <li
-            class="ant-rate-star ant-rate-star-full"
+            class="wmstool-rate-star wmstool-rate-star-full"
           >
             <div
-              class="ant-rate-star-first"
+              class="wmstool-rate-star-first"
             >
               <i
                 class="anticon anticon-star"
               />
             </div>
             <div
-              class="ant-rate-star-second"
+              class="wmstool-rate-star-second"
             >
               <i
                 class="anticon anticon-star"
@@ -2600,17 +2600,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </div>
           </li>
           <li
-            class="ant-rate-star ant-rate-star-zero"
+            class="wmstool-rate-star wmstool-rate-star-zero"
           >
             <div
-              class="ant-rate-star-first"
+              class="wmstool-rate-star-first"
             >
               <i
                 class="anticon anticon-star"
               />
             </div>
             <div
-              class="ant-rate-star-second"
+              class="wmstool-rate-star-second"
             >
               <i
                 class="anticon anticon-star"
@@ -2618,17 +2618,17 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             </div>
           </li>
           <li
-            class="ant-rate-star ant-rate-star-zero"
+            class="wmstool-rate-star wmstool-rate-star-zero"
           >
             <div
-              class="ant-rate-star-first"
+              class="wmstool-rate-star-first"
             >
               <i
                 class="anticon anticon-star"
               />
             </div>
             <div
-              class="ant-rate-star-second"
+              class="wmstool-rate-star-second"
             >
               <i
                 class="anticon anticon-star"
@@ -2640,10 +2640,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2654,24 +2654,24 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <span
           class=""
         >
           <div
-            class="ant-upload ant-upload-select ant-upload-select-picture"
+            class="wmstool-upload wmstool-upload-select wmstool-upload-select-picture"
             style="display:"
           />
           <div
-            class="ant-upload-list ant-upload-list-picture"
+            class="wmstool-upload-list wmstool-upload-list-picture"
           />
         </span>
         <div
-          class="ant-form-extra"
+          class="wmstool-form-extra"
         >
           longgggggggggggggggggggggggggggggggggg
         </div>
@@ -2679,10 +2679,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-6 ant-form-item-label"
+      class="wmstool-col-6 wmstool-form-item-label"
     >
       <label
         class=""
@@ -2693,10 +2693,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-14 ant-form-item-control-wrapper"
+      class="wmstool-col-14 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
           class="dropbox"
@@ -2705,10 +2705,10 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             class=""
           >
             <div
-              class="ant-upload ant-upload-drag"
+              class="wmstool-upload wmstool-upload-drag"
             />
             <div
-              class="ant-upload-list ant-upload-list-text"
+              class="wmstool-upload-list wmstool-upload-list-text"
             />
           </span>
         </div>
@@ -2716,16 +2716,16 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-col-12 ant-col-offset-6 ant-form-item-control-wrapper"
+      class="wmstool-col-12 wmstool-col-offset-6 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <button
-          class="ant-btn ant-btn-primary"
+          class="wmstool-btn wmstool-btn-primary"
           type="submit"
         >
           <span>
@@ -2740,13 +2740,13 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item ant-form-item-with-help"
+    class="wmstool-row wmstool-form-item wmstool-form-item-with-help"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2756,19 +2756,19 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-error"
+        class="wmstool-form-item-control has-error"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           id="error"
           placeholder="unavailable choice"
           type="text"
         />
         <div
-          class="ant-form-explain"
+          class="wmstool-form-explain"
         >
           Should be combination of numbers & alphabets
         </div>
@@ -2776,10 +2776,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2789,13 +2789,13 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-warning"
+        class="wmstool-form-item-control has-warning"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           id="warning"
           placeholder="Warning"
           type="text"
@@ -2804,10 +2804,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item ant-form-item-with-help"
+    class="wmstool-row wmstool-form-item wmstool-form-item-with-help"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2817,19 +2817,19 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback is-validating"
+        class="wmstool-form-item-control has-feedback is-validating"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           id="validating"
           placeholder="I'm the content is being validated"
           type="text"
         />
         <div
-          class="ant-form-explain"
+          class="wmstool-form-explain"
         >
           The information is being validated...
         </div>
@@ -2837,10 +2837,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2850,13 +2850,13 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-success"
+        class="wmstool-form-item-control has-feedback has-success"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           id="success"
           placeholder="I'm the content"
           type="text"
@@ -2865,10 +2865,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2878,13 +2878,13 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-warning"
+        class="wmstool-form-item-control has-feedback has-warning"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           id="warning"
           placeholder="Warning"
           type="text"
@@ -2893,10 +2893,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item ant-form-item-with-help"
+    class="wmstool-row wmstool-form-item wmstool-form-item-with-help"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2906,19 +2906,19 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-error"
+        class="wmstool-form-item-control has-feedback has-error"
       >
         <input
-          class="ant-input"
+          class="wmstool-input"
           id="error"
           placeholder="unavailable choice"
           type="text"
         />
         <div
-          class="ant-form-explain"
+          class="wmstool-form-explain"
         >
           Should be combination of numbers & alphabets
         </div>
@@ -2926,10 +2926,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2939,24 +2939,24 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-success"
+        class="wmstool-form-item-control has-feedback has-success"
       >
         <span
-          class="ant-calendar-picker"
+          class="wmstool-calendar-picker"
           style="width:100%"
         >
           <div>
             <input
-              class="ant-calendar-picker-input ant-input"
+              class="wmstool-calendar-picker-input wmstool-input"
               placeholder="Select date"
               readonly=""
               value=""
             />
             <span
-              class="ant-calendar-picker-icon"
+              class="wmstool-calendar-picker-icon"
             />
           </div>
         </span>
@@ -2964,10 +2964,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -2977,33 +2977,33 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-warning"
+        class="wmstool-form-item-control has-feedback has-warning"
       >
         <span
-          class="ant-time-picker "
+          class="wmstool-time-picker "
           style="width:100%"
         >
           <input
-            class="ant-time-picker-input"
+            class="wmstool-time-picker-input"
             placeholder="Select time"
             type="text"
             value=""
           />
           <span
-            class="ant-time-picker-icon"
+            class="wmstool-time-picker-icon"
           />
         </span>
       </div>
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -3013,28 +3013,28 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-error"
+        class="wmstool-form-item-control has-feedback has-error"
       >
         <div
-          class="ant-select ant-select-enabled"
+          class="wmstool-select wmstool-select-enabled"
         >
           <div
             aria-autocomplete="list"
             aria-expanded="false"
             aria-haspopup="true"
-            class="ant-select-selection
-            ant-select-selection--single"
+            class="wmstool-select-selection
+            wmstool-select-selection--single"
             role="combobox"
             tabindex="0"
           >
             <div
-              class="ant-select-selection__rendered"
+              class="wmstool-select-selection__rendered"
             >
               <div
-                class="ant-select-selection-selected-value"
+                class="wmstool-select-selection-selected-value"
                 style="display:block;opacity:1"
                 title="Option 1"
               >
@@ -3042,7 +3042,7 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
               </div>
             </div>
             <span
-              class="ant-select-arrow"
+              class="wmstool-select-arrow"
               style="user-select:none;-webkit-user-select:none"
               unselectable="unselectable"
             >
@@ -3054,10 +3054,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item ant-form-item-with-help"
+    class="wmstool-row wmstool-form-item wmstool-form-item-with-help"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -3067,34 +3067,34 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback is-validating"
+        class="wmstool-form-item-control has-feedback is-validating"
       >
         <span
-          class="ant-cascader-picker"
+          class="wmstool-cascader-picker"
           tabindex="0"
         >
           <span
-            class="ant-cascader-picker-label"
+            class="wmstool-cascader-picker-label"
           />
           <input
             autocomplete="off"
-            class="ant-input ant-cascader-input "
+            class="wmstool-input wmstool-cascader-input "
             readonly=""
             type="text"
             value=""
           />
           <i
-            class="anticon anticon-cross-circle ant-cascader-picker-clear"
+            class="anticon anticon-cross-circle wmstool-cascader-picker-clear"
           />
           <i
-            class="anticon anticon-down ant-cascader-picker-arrow"
+            class="anticon anticon-down wmstool-cascader-picker-arrow"
           />
         </span>
         <div
-          class="ant-form-explain"
+          class="wmstool-form-explain"
         >
           The information is being validated...
         </div>
@@ -3102,10 +3102,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -3115,40 +3115,40 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-col-11"
+          class="wmstool-col-11"
         >
           <div
-            class="ant-row ant-form-item ant-form-item-with-help"
+            class="wmstool-row wmstool-form-item wmstool-form-item-with-help"
           >
             <div
-              class="ant-form-item-control-wrapper"
+              class="wmstool-form-item-control-wrapper"
             >
               <div
-                class="ant-form-item-control has-error"
+                class="wmstool-form-item-control has-error"
               >
                 <span
-                  class="ant-calendar-picker"
+                  class="wmstool-calendar-picker"
                 >
                   <div>
                     <input
-                      class="ant-calendar-picker-input ant-input"
+                      class="wmstool-calendar-picker-input wmstool-input"
                       placeholder="Select date"
                       readonly=""
                       value=""
                     />
                     <span
-                      class="ant-calendar-picker-icon"
+                      class="wmstool-calendar-picker-icon"
                     />
                   </div>
                 </span>
                 <div
-                  class="ant-form-explain"
+                  class="wmstool-form-explain"
                 >
                   Please select the correct date
                 </div>
@@ -3157,7 +3157,7 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-col-2"
+          class="wmstool-col-2"
         >
           <span
             style="display:inline-block;width:100%;text-align:center"
@@ -3166,29 +3166,29 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
           </span>
         </div>
         <div
-          class="ant-col-11"
+          class="wmstool-col-11"
         >
           <div
-            class="ant-row ant-form-item"
+            class="wmstool-row wmstool-form-item"
           >
             <div
-              class="ant-form-item-control-wrapper"
+              class="wmstool-form-item-control-wrapper"
             >
               <div
-                class="ant-form-item-control "
+                class="wmstool-form-item-control "
               >
                 <span
-                  class="ant-calendar-picker"
+                  class="wmstool-calendar-picker"
                 >
                   <div>
                     <input
-                      class="ant-calendar-picker-input ant-input"
+                      class="wmstool-calendar-picker-input wmstool-input"
                       placeholder="Select date"
                       readonly=""
                       value=""
                     />
                     <span
-                      class="ant-calendar-picker-icon"
+                      class="wmstool-calendar-picker-icon"
                     />
                   </div>
                 </span>
@@ -3200,10 +3200,10 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-row ant-form-item"
+    class="wmstool-row wmstool-form-item"
   >
     <div
-      class="ant-form-item-label ant-col-xs-24 ant-col-sm-5"
+      class="wmstool-form-item-label wmstool-col-xs-24 wmstool-col-sm-5"
     >
       <label
         class=""
@@ -3213,51 +3213,51 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-form-item-control-wrapper ant-col-xs-24 ant-col-sm-12"
+      class="wmstool-form-item-control-wrapper wmstool-col-xs-24 wmstool-col-sm-12"
     >
       <div
-        class="ant-form-item-control has-feedback has-success"
+        class="wmstool-form-item-control has-feedback has-success"
       >
         <div
-          class="ant-input-number"
+          class="wmstool-input-number"
           style="width:100%"
         >
           <div
-            class="ant-input-number-handler-wrap"
+            class="wmstool-input-number-handler-wrap"
           >
             <span
               aria-disabled="false"
               aria-label="Increase Value"
-              class="ant-input-number-handler ant-input-number-handler-up "
+              class="wmstool-input-number-handler wmstool-input-number-handler-up "
               role="button"
               unselectable="unselectable"
             >
               <span
-                class="ant-input-number-handler-up-inner"
+                class="wmstool-input-number-handler-up-inner"
                 unselectable="unselectable"
               />
             </span>
             <span
               aria-disabled="false"
               aria-label="Decrease Value"
-              class="ant-input-number-handler ant-input-number-handler-down "
+              class="wmstool-input-number-handler wmstool-input-number-handler-down "
               role="button"
               unselectable="unselectable"
             >
               <span
-                class="ant-input-number-handler-down-inner"
+                class="wmstool-input-number-handler-down-inner"
                 unselectable="unselectable"
               />
             </span>
           </div>
           <div
             aria-valuemin="-9007199254740991"
-            class="ant-input-number-input-wrap"
+            class="wmstool-input-number-input-wrap"
             role="spinbutton"
           >
             <input
               autocomplete="off"
-              class="ant-input-number-input"
+              class="wmstool-input-number-input"
               min="-9007199254740991"
               step="1"
               value=""
@@ -3272,13 +3272,13 @@ exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
 
 exports[`renders ./components/form/demo/without-form-create.md correctly 1`] = `
 <form
-  class="ant-form ant-form-horizontal"
+  class="wmstool-form wmstool-form-horizontal"
 >
   <div
-    class="ant-row ant-form-item ant-form-item-with-help"
+    class="wmstool-row wmstool-form-item wmstool-form-item-with-help"
   >
     <div
-      class="ant-col-7 ant-form-item-label"
+      class="wmstool-col-7 wmstool-form-item-label"
     >
       <label
         class=""
@@ -3288,38 +3288,38 @@ exports[`renders ./components/form/demo/without-form-create.md correctly 1`] = `
       </label>
     </div>
     <div
-      class="ant-col-12 ant-form-item-control-wrapper"
+      class="wmstool-col-12 wmstool-form-item-control-wrapper"
     >
       <div
-        class="ant-form-item-control "
+        class="wmstool-form-item-control "
       >
         <div
-          class="ant-input-number"
+          class="wmstool-input-number"
         >
           <div
-            class="ant-input-number-handler-wrap"
+            class="wmstool-input-number-handler-wrap"
           >
             <span
               aria-disabled="false"
               aria-label="Increase Value"
-              class="ant-input-number-handler ant-input-number-handler-up "
+              class="wmstool-input-number-handler wmstool-input-number-handler-up "
               role="button"
               unselectable="unselectable"
             >
               <span
-                class="ant-input-number-handler-up-inner"
+                class="wmstool-input-number-handler-up-inner"
                 unselectable="unselectable"
               />
             </span>
             <span
               aria-disabled="false"
               aria-label="Decrease Value"
-              class="ant-input-number-handler ant-input-number-handler-down "
+              class="wmstool-input-number-handler wmstool-input-number-handler-down "
               role="button"
               unselectable="unselectable"
             >
               <span
-                class="ant-input-number-handler-down-inner"
+                class="wmstool-input-number-handler-down-inner"
                 unselectable="unselectable"
               />
             </span>
@@ -3328,12 +3328,12 @@ exports[`renders ./components/form/demo/without-form-create.md correctly 1`] = `
             aria-valuemax="12"
             aria-valuemin="8"
             aria-valuenow="11"
-            class="ant-input-number-input-wrap"
+            class="wmstool-input-number-input-wrap"
             role="spinbutton"
           >
             <input
               autocomplete="off"
-              class="ant-input-number-input"
+              class="wmstool-input-number-input"
               max="12"
               min="8"
               step="1"
@@ -3342,7 +3342,7 @@ exports[`renders ./components/form/demo/without-form-create.md correctly 1`] = `
           </div>
         </div>
         <div
-          class="ant-form-explain"
+          class="wmstool-form-explain"
         >
           A prime is a natural number greater than 1 that has no positive divisors other than 1 and itself.
         </div>

@@ -3,39 +3,39 @@
 exports[`renders ./components/alert/demo/banner.md correctly 1`] = `
 <div>
   <div
-    class="ant-alert ant-alert-warning ant-alert-banner"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-banner"
     data-show="true"
   >
     <i
-      class="anticon anticon-exclamation-circle ant-alert-icon"
+      class="anticon anticon-exclamation-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <br />
   <div
-    class="ant-alert ant-alert-warning ant-alert-banner"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-banner"
     data-show="true"
   >
     <i
-      class="anticon anticon-exclamation-circle ant-alert-icon"
+      class="anticon anticon-exclamation-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Very long warning text warning text text text text text text text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
     <a
-      class="ant-alert-close-icon"
+      class="wmstool-alert-close-icon"
     >
       <i
         class="anticon anticon-cross"
@@ -44,33 +44,33 @@ exports[`renders ./components/alert/demo/banner.md correctly 1`] = `
   </div>
   <br />
   <div
-    class="ant-alert ant-alert-warning ant-alert-no-icon ant-alert-banner"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-no-icon wmstool-alert-banner"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning text without icon
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <br />
   <div
-    class="ant-alert ant-alert-error ant-alert-banner"
+    class="wmstool-alert wmstool-alert-error wmstool-alert-banner"
     data-show="true"
   >
     <i
-      class="anticon anticon-cross-circle ant-alert-icon"
+      class="anticon anticon-cross-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Error text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
 </div>
@@ -78,16 +78,16 @@ exports[`renders ./components/alert/demo/banner.md correctly 1`] = `
 
 exports[`renders ./components/alert/demo/basic.md correctly 1`] = `
 <div
-  class="ant-alert ant-alert-success ant-alert-no-icon"
+  class="wmstool-alert wmstool-alert-success wmstool-alert-no-icon"
   data-show="true"
 >
   <span
-    class="ant-alert-message"
+    class="wmstool-alert-message"
   >
     Success Text
   </span>
   <span
-    class="ant-alert-description"
+    class="wmstool-alert-description"
   />
 </div>
 `;
@@ -95,19 +95,19 @@ exports[`renders ./components/alert/demo/basic.md correctly 1`] = `
 exports[`renders ./components/alert/demo/closable.md correctly 1`] = `
 <div>
   <div
-    class="ant-alert ant-alert-warning ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning Text Warning Text Warning TextW arning Text Warning Text Warning TextWarning Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
     <a
-      class="ant-alert-close-icon"
+      class="wmstool-alert-close-icon"
     >
       <i
         class="anticon anticon-cross"
@@ -115,21 +115,21 @@ exports[`renders ./components/alert/demo/closable.md correctly 1`] = `
     </a>
   </div>
   <div
-    class="ant-alert ant-alert-error ant-alert-with-description ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-error wmstool-alert-with-description wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Error Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Error Description Error Description Error Description Error Description Error Description Error Description
     </span>
     <a
-      class="ant-alert-close-icon"
+      class="wmstool-alert-close-icon"
     >
       <i
         class="anticon anticon-cross"
@@ -141,19 +141,19 @@ exports[`renders ./components/alert/demo/closable.md correctly 1`] = `
 
 exports[`renders ./components/alert/demo/close-text.md correctly 1`] = `
 <div
-  class="ant-alert ant-alert-info ant-alert-no-icon"
+  class="wmstool-alert wmstool-alert-info wmstool-alert-no-icon"
   data-show="true"
 >
   <span
-    class="ant-alert-message"
+    class="wmstool-alert-message"
   >
     Info Text
   </span>
   <span
-    class="ant-alert-description"
+    class="wmstool-alert-description"
   />
   <a
-    class="ant-alert-close-icon"
+    class="wmstool-alert-close-icon"
   >
     Close Now
   </a>
@@ -163,61 +163,61 @@ exports[`renders ./components/alert/demo/close-text.md correctly 1`] = `
 exports[`renders ./components/alert/demo/description.md correctly 1`] = `
 <div>
   <div
-    class="ant-alert ant-alert-success ant-alert-with-description ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-success wmstool-alert-with-description wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Success Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Success Description Success Description Success Description
     </span>
   </div>
   <div
-    class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-info wmstool-alert-with-description wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Info Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Info Description Info Description Info Description Info Description
     </span>
   </div>
   <div
-    class="ant-alert ant-alert-warning ant-alert-with-description ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-with-description wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Warning Description Warning Description Warning Description Warning Description
     </span>
   </div>
   <div
-    class="ant-alert ant-alert-error ant-alert-with-description ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-error wmstool-alert-with-description wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Error Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Error Description Error Description Error Description Error Description
     </span>
@@ -228,137 +228,137 @@ exports[`renders ./components/alert/demo/description.md correctly 1`] = `
 exports[`renders ./components/alert/demo/icon.md correctly 1`] = `
 <div>
   <div
-    class="ant-alert ant-alert-success"
+    class="wmstool-alert wmstool-alert-success"
     data-show="true"
   >
     <i
-      class="anticon anticon-check-circle ant-alert-icon"
+      class="anticon anticon-check-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Success Tips
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-info"
+    class="wmstool-alert wmstool-alert-info"
     data-show="true"
   >
     <i
-      class="anticon anticon-info-circle ant-alert-icon"
+      class="anticon anticon-info-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Informational Notes
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-warning"
+    class="wmstool-alert wmstool-alert-warning"
     data-show="true"
   >
     <i
-      class="anticon anticon-exclamation-circle ant-alert-icon"
+      class="anticon anticon-exclamation-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-error"
+    class="wmstool-alert wmstool-alert-error"
     data-show="true"
   >
     <i
-      class="anticon anticon-cross-circle ant-alert-icon"
+      class="anticon anticon-cross-circle wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Error
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-success ant-alert-with-description"
+    class="wmstool-alert wmstool-alert-success wmstool-alert-with-description"
     data-show="true"
   >
     <i
-      class="anticon anticon-check-circle-o ant-alert-icon"
+      class="anticon anticon-check-circle-o wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       success tips
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Detailed description and advices about successful copywriting.
     </span>
   </div>
   <div
-    class="ant-alert ant-alert-info ant-alert-with-description"
+    class="wmstool-alert wmstool-alert-info wmstool-alert-with-description"
     data-show="true"
   >
     <i
-      class="anticon anticon-info-circle-o ant-alert-icon"
+      class="anticon anticon-info-circle-o wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Informational Notes
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       Additional description and informations about copywriting.
     </span>
   </div>
   <div
-    class="ant-alert ant-alert-warning ant-alert-with-description"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-with-description"
     data-show="true"
   >
     <i
-      class="anticon anticon-exclamation-circle-o ant-alert-icon"
+      class="anticon anticon-exclamation-circle-o wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       This is a warning notice about copywriting.
     </span>
   </div>
   <div
-    class="ant-alert ant-alert-error ant-alert-with-description"
+    class="wmstool-alert wmstool-alert-error wmstool-alert-with-description"
     data-show="true"
   >
     <i
-      class="anticon anticon-cross-circle-o ant-alert-icon"
+      class="anticon anticon-cross-circle-o wmstool-alert-icon"
     />
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Error
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     >
       This is an error message about copywriting.
     </span>
@@ -369,55 +369,55 @@ exports[`renders ./components/alert/demo/icon.md correctly 1`] = `
 exports[`renders ./components/alert/demo/style.md correctly 1`] = `
 <div>
   <div
-    class="ant-alert ant-alert-success ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-success wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Success Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-info ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-info wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Info Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-warning ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-warning wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Warning Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
   <div
-    class="ant-alert ant-alert-error ant-alert-no-icon"
+    class="wmstool-alert wmstool-alert-error wmstool-alert-no-icon"
     data-show="true"
   >
     <span
-      class="ant-alert-message"
+      class="wmstool-alert-message"
     >
       Error Text
     </span>
     <span
-      class="ant-alert-description"
+      class="wmstool-alert-description"
     />
   </div>
 </div>

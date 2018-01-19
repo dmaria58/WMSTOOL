@@ -58,7 +58,7 @@ ReactDOM.render(<App />, mountNode);
 ````
 
 <style>
-.ant-modal p {
+.wmstool-modal p {
   margin: 0;
 }
 </style>

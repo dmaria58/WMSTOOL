@@ -10,8 +10,8 @@ describe('Form', () => {
         <Form.Item label="label：">input</Form.Item>
       </Form>
     );
-    expect(wrapper.find('.ant-form-item-label label').at(0).text()).not.toContain(':');
-    expect(wrapper.find('.ant-form-item-label label').at(1).text()).not.toContain('：');
+    expect(wrapper.find('.wmstool-form-item-label label').at(0).text()).not.toContain(':');
+    expect(wrapper.find('.wmstool-form-item-label label').at(1).text()).not.toContain('：');
   });
 
   it('should not remove duplicated user input colon when props colon is false', () => {
@@ -21,8 +21,8 @@ describe('Form', () => {
         <Form.Item label="label：" colon={false}>input</Form.Item>
       </Form>
     );
-    expect(wrapper.find('.ant-form-item-label label').at(0).text()).toContain(':');
-    expect(wrapper.find('.ant-form-item-label label').at(1).text()).toContain('：');
+    expect(wrapper.find('.wmstool-form-item-label label').at(0).text()).toContain(':');
+    expect(wrapper.find('.wmstool-form-item-label label').at(1).text()).toContain('：');
   });
 
   it('should not remove duplicated user input colon when layout is vertical', () => {
@@ -32,11 +32,11 @@ describe('Form', () => {
         <Form.Item label="label：">input</Form.Item>
       </Form>
     );
-    expect(wrapper.find('.ant-form-item-label label').at(0).text()).toContain(':');
-    expect(wrapper.find('.ant-form-item-label label').at(1).text()).toContain('：');
+    expect(wrapper.find('.wmstool-form-item-label label').at(0).text()).toContain(':');
+    expect(wrapper.find('.wmstool-form-item-label label').at(1).text()).toContain('：');
   });
 
-  it('should has dom with .ant-form-item-control-wrapper', () => {
+  it('should has dom with .wmstool-form-item-control-wrapper', () => {
     const formItemLayout = {
       labelCol: { span: 6 },
       wrapperCol: { span: 14 },
@@ -47,11 +47,11 @@ describe('Form', () => {
         <Form.Item>input</Form.Item>
       </Form>
     );
-    expect(wrapper.find('.ant-form-item-control-wrapper').hostNodes().length).toBe(2);
-    expect(wrapper.find('.ant-form-item-control-wrapper.ant-col-14').length).toBe(1);
+    expect(wrapper.find('.wmstool-form-item-control-wrapper').hostNodes().length).toBe(2);
+    expect(wrapper.find('.wmstool-form-item-control-wrapper.wmstool-col-14').length).toBe(1);
   });
 
-  // https://github.com/ant-design/ant-design/issues/7351
+  // https://github.com/wmstool-design/wmstool-design/issues/7351
   it('focus correct input when click label', () => {
     const Form1 = Form.create()(({ form }) => (
       <Form>
@@ -74,7 +74,7 @@ describe('Form', () => {
     expect(wrapper.find('Form input').at(1).getDOMNode()).toBe(document.activeElement);
   });
 
-  // https://github.com/ant-design/ant-design/issues/7693
+  // https://github.com/wmstool-design/wmstool-design/issues/7693
   it('should not throw error when is not a valid id', () => {
     const Form1 = Form.create()(({ form }) => (
       <Form>

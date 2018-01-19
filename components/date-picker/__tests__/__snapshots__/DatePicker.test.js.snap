@@ -2,85 +2,85 @@
 
 exports[`DatePicker prop locale should works 1`] = `
 <span
-  class="ant-calendar-picker"
+  class="wmstool-calendar-picker"
 >
   <div
     style=""
   >
     <input
-      class="ant-calendar-picker-input ant-input"
+      class="wmstool-calendar-picker-input wmstool-input"
       placeholder="Избери дата"
       readonly=""
       value="2000-01-01"
     />
     <i
-      class="anticon anticon-cross-circle ant-calendar-picker-clear"
+      class="anticon anticon-cross-circle wmstool-calendar-picker-clear"
     />
     <span
-      class="ant-calendar-picker-icon"
+      class="wmstool-calendar-picker-icon"
     />
   </div>
   <div>
     <div
-      class="ant-calendar-picker-container ant-calendar-picker-container-placement-bottomLeft slide-up-appear"
+      class="wmstool-calendar-picker-container wmstool-calendar-picker-container-placement-bottomLeft slide-up-appear"
       style="left: -999px; top: -1002px;"
     >
       <div
-        class="ant-calendar"
+        class="wmstool-calendar"
         tabindex="0"
       >
         <div
-          class="ant-calendar-panel"
+          class="wmstool-calendar-panel"
         >
           <div
-            class="ant-calendar-input-wrap"
+            class="wmstool-calendar-input-wrap"
           >
             <div
-              class="ant-calendar-date-input-wrap"
+              class="wmstool-calendar-date-input-wrap"
             >
               <input
-                class="ant-calendar-input "
+                class="wmstool-calendar-input "
                 placeholder="Избери дата"
                 value="2000-01-01"
               />
             </div>
             <a
-              class="ant-calendar-clear-btn"
+              class="wmstool-calendar-clear-btn"
               role="button"
               title="Изчистване"
             />
           </div>
           <div
-            class="ant-calendar-date-panel"
+            class="wmstool-calendar-date-panel"
           >
             <div
-              class="ant-calendar-header"
+              class="wmstool-calendar-header"
             >
               <div
                 style="position: relative;"
               >
                 <a
-                  class="ant-calendar-prev-year-btn"
+                  class="wmstool-calendar-prev-year-btn"
                   role="button"
                   title="Последна година (Control + left)"
                 />
                 <a
-                  class="ant-calendar-prev-month-btn"
+                  class="wmstool-calendar-prev-month-btn"
                   role="button"
                   title="Предишен месец (PageUp)"
                 />
                 <span
-                  class="ant-calendar-my-select"
+                  class="wmstool-calendar-my-select"
                 >
                   <a
-                    class="ant-calendar-month-select"
+                    class="wmstool-calendar-month-select"
                     role="button"
                     title="Избор на месец"
                   >
                     Jan
                   </a>
                   <a
-                    class="ant-calendar-year-select"
+                    class="wmstool-calendar-year-select"
                     role="button"
                     title="Избор на година"
                   >
@@ -88,21 +88,21 @@ exports[`DatePicker prop locale should works 1`] = `
                   </a>
                 </span>
                 <a
-                  class="ant-calendar-next-month-btn"
+                  class="wmstool-calendar-next-month-btn"
                   title="Следващ месец (PageDown)"
                 />
                 <a
-                  class="ant-calendar-next-year-btn"
+                  class="wmstool-calendar-next-year-btn"
                   title="Следваща година (Control + right)"
                 />
               </div>
             </div>
             <div
-              class="ant-calendar-body"
+              class="wmstool-calendar-body"
             >
               <table
                 cellspacing="0"
-                class="ant-calendar-table"
+                class="wmstool-calendar-table"
                 role="grid"
               >
                 <thead>
@@ -110,78 +110,78 @@ exports[`DatePicker prop locale should works 1`] = `
                     role="row"
                   >
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Sun"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         Su
                       </span>
                     </th>
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Mon"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         Mo
                       </span>
                     </th>
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Tue"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         Tu
                       </span>
                     </th>
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Wed"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         We
                       </span>
                     </th>
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Thu"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         Th
                       </span>
                     </th>
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Fri"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         Fr
                       </span>
                     </th>
                     <th
-                      class="ant-calendar-column-header"
+                      class="wmstool-calendar-column-header"
                       role="columnheader"
                       title="Sat"
                     >
                       <span
-                        class="ant-calendar-column-header-inner"
+                        class="wmstool-calendar-column-header-inner"
                       >
                         Sa
                       </span>
@@ -189,99 +189,99 @@ exports[`DatePicker prop locale should works 1`] = `
                   </tr>
                 </thead>
                 <tbody
-                  class="ant-calendar-tbody"
+                  class="wmstool-calendar-tbody"
                 >
                   <tr
-                    class="ant-calendar-active-week"
+                    class="wmstool-calendar-active-week"
                     role="row"
                   >
                     <td
-                      class="ant-calendar-cell ant-calendar-last-month-cell"
+                      class="wmstool-calendar-cell wmstool-calendar-last-month-cell"
                       role="gridcell"
                       title="December 26, 1999"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         26
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-last-month-cell"
+                      class="wmstool-calendar-cell wmstool-calendar-last-month-cell"
                       role="gridcell"
                       title="December 27, 1999"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         27
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-last-month-cell"
+                      class="wmstool-calendar-cell wmstool-calendar-last-month-cell"
                       role="gridcell"
                       title="December 28, 1999"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         28
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-last-month-cell"
+                      class="wmstool-calendar-cell wmstool-calendar-last-month-cell"
                       role="gridcell"
                       title="December 29, 1999"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         29
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-last-month-cell"
+                      class="wmstool-calendar-cell wmstool-calendar-last-month-cell"
                       role="gridcell"
                       title="December 30, 1999"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         30
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-last-month-cell"
+                      class="wmstool-calendar-cell wmstool-calendar-last-month-cell"
                       role="gridcell"
                       title="December 31, 1999"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         31
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-selected-date ant-calendar-selected-day"
+                      class="wmstool-calendar-cell wmstool-calendar-selected-date wmstool-calendar-selected-day"
                       role="gridcell"
                       title="January 1, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="true"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         1
                       </div>
@@ -292,92 +292,92 @@ exports[`DatePicker prop locale should works 1`] = `
                     role="row"
                   >
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 2, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         2
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 3, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         3
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 4, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         4
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 5, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         5
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 6, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         6
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 7, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         7
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 8, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         8
                       </div>
@@ -388,92 +388,92 @@ exports[`DatePicker prop locale should works 1`] = `
                     role="row"
                   >
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 9, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         9
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 10, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         10
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 11, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         11
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 12, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         12
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 13, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         13
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 14, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         14
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 15, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         15
                       </div>
@@ -484,92 +484,92 @@ exports[`DatePicker prop locale should works 1`] = `
                     role="row"
                   >
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 16, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         16
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 17, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         17
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 18, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         18
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 19, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         19
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 20, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         20
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 21, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         21
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 22, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         22
                       </div>
@@ -580,92 +580,92 @@ exports[`DatePicker prop locale should works 1`] = `
                     role="row"
                   >
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 23, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         23
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 24, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         24
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 25, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         25
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 26, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         26
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 27, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         27
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 28, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         28
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 29, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         29
                       </div>
@@ -676,92 +676,92 @@ exports[`DatePicker prop locale should works 1`] = `
                     role="row"
                   >
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 30, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         30
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell"
+                      class="wmstool-calendar-cell"
                       role="gridcell"
                       title="January 31, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         31
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-next-month-btn-day"
+                      class="wmstool-calendar-cell wmstool-calendar-next-month-btn-day"
                       role="gridcell"
                       title="February 1, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         1
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-next-month-btn-day"
+                      class="wmstool-calendar-cell wmstool-calendar-next-month-btn-day"
                       role="gridcell"
                       title="February 2, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         2
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-next-month-btn-day"
+                      class="wmstool-calendar-cell wmstool-calendar-next-month-btn-day"
                       role="gridcell"
                       title="February 3, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         3
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-next-month-btn-day"
+                      class="wmstool-calendar-cell wmstool-calendar-next-month-btn-day"
                       role="gridcell"
                       title="February 4, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         4
                       </div>
                     </td>
                     <td
-                      class="ant-calendar-cell ant-calendar-next-month-btn-day"
+                      class="wmstool-calendar-cell wmstool-calendar-next-month-btn-day"
                       role="gridcell"
                       title="February 5, 2000"
                     >
                       <div
                         aria-disabled="false"
                         aria-selected="false"
-                        class="ant-calendar-date"
+                        class="wmstool-calendar-date"
                       >
                         5
                       </div>
@@ -771,13 +771,13 @@ exports[`DatePicker prop locale should works 1`] = `
               </table>
             </div>
             <div
-              class="ant-calendar-footer"
+              class="wmstool-calendar-footer"
             >
               <span
-                class="ant-calendar-footer-btn"
+                class="wmstool-calendar-footer-btn"
               >
                 <a
-                  class="ant-calendar-today-btn "
+                  class="wmstool-calendar-today-btn "
                   role="button"
                   title="November 22, 2016"
                 >

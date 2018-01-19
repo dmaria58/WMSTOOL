@@ -39,7 +39,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, {}>
   static OptGroup = OptGroup as React.ClassicComponentClass<OptGroupProps>;
 
   static defaultProps = {
-    prefixCls: 'ant-select',
+    prefixCls: 'wmstool-select',
     transitionName: 'slide-up',
     optionLabelProp: 'children',
     choiceTransitionName: 'zoom',
@@ -54,7 +54,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, {}>
     const element = children && React.isValidElement(children) && children.type !== Option ?
       React.Children.only(this.props.children) : <Input />;
     const elementProps = { ...element.props };
-    // https://github.com/ant-design/ant-design/pull/7742
+    // https://github.com/wmstool-design/wmstool-design/pull/7742
     delete elementProps.children;
     return (
       <InputElement {...elementProps}>{element}</InputElement>

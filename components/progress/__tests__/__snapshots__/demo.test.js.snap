@@ -3,18 +3,18 @@
 exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
 <div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-normal ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:120px;height:120px;font-size:24px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -24,7 +24,7 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -36,25 +36,25 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         75%
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-exception ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-exception wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:120px;height:120px;font-size:24px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -64,7 +64,7 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -76,7 +76,7 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-cross"
@@ -85,18 +85,18 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-success ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-success wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:120px;height:120px;font-size:24px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -106,7 +106,7 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -118,7 +118,7 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-check"
@@ -132,18 +132,18 @@ exports[`renders ./components/progress/demo/circle.md correctly 1`] = `
 exports[`renders ./components/progress/demo/circle-dynamic.md correctly 1`] = `
 <div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-normal ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:120px;height:120px;font-size:24px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -153,7 +153,7 @@ exports[`renders ./components/progress/demo/circle-dynamic.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -165,17 +165,17 @@ exports[`renders ./components/progress/demo/circle-dynamic.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         0%
       </span>
     </div>
   </div>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn ant-btn-icon-only"
+      class="wmstool-btn wmstool-btn-icon-only"
       type="button"
     >
       <i
@@ -183,7 +183,7 @@ exports[`renders ./components/progress/demo/circle-dynamic.md correctly 1`] = `
       />
     </button>
     <button
-      class="ant-btn ant-btn-icon-only"
+      class="wmstool-btn wmstool-btn-icon-only"
       type="button"
     >
       <i
@@ -197,18 +197,18 @@ exports[`renders ./components/progress/demo/circle-dynamic.md correctly 1`] = `
 exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
 <div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-normal ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:80px;height:80px;font-size:18px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -218,7 +218,7 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -230,25 +230,25 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         30%
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-exception ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-exception wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:80px;height:80px;font-size:18px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -258,7 +258,7 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -270,7 +270,7 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-cross"
@@ -279,18 +279,18 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-success ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-success wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:80px;height:80px;font-size:18px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -300,7 +300,7 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -312,7 +312,7 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-check"
@@ -325,18 +325,18 @@ exports[`renders ./components/progress/demo/circle-mini.md correctly 1`] = `
 
 exports[`renders ./components/progress/demo/dashboard.md correctly 1`] = `
 <div
-  class="ant-progress ant-progress-circle ant-progress-status-normal ant-progress-show-info ant-progress-default"
+  class="wmstool-progress wmstool-progress-circle wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
 >
   <div
-    class="ant-progress-inner"
+    class="wmstool-progress-inner"
     style="width:120px;height:120px;font-size:24px"
   >
     <svg
-      class="ant-progress-circle "
+      class="wmstool-progress-circle "
       viewBox="0 0 100 100"
     >
       <path
-        class="ant-progress-circle-trail"
+        class="wmstool-progress-circle-trail"
         d="M 50,50 m 0,47
      a 47,47 0 1 1 0,-94
      a 47,47 0 1 1 0,94"
@@ -346,7 +346,7 @@ exports[`renders ./components/progress/demo/dashboard.md correctly 1`] = `
         style="stroke-dasharray:220.30970943744057px 295.3097094374406px;stroke-dashoffset:-37.5px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
       />
       <path
-        class="ant-progress-circle-path"
+        class="wmstool-progress-circle-path"
         d="M 50,50 m 0,47
      a 47,47 0 1 1 0,-94
      a 47,47 0 1 1 0,94"
@@ -358,7 +358,7 @@ exports[`renders ./components/progress/demo/dashboard.md correctly 1`] = `
       />
     </svg>
     <span
-      class="ant-progress-text"
+      class="wmstool-progress-text"
     >
       75%
     </span>
@@ -369,33 +369,33 @@ exports[`renders ./components/progress/demo/dashboard.md correctly 1`] = `
 exports[`renders ./components/progress/demo/dynamic.md correctly 1`] = `
 <div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:0%;height:8px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         0%
       </span>
     </div>
   </div>
   <div
-    class="ant-btn-group"
+    class="wmstool-btn-group"
   >
     <button
-      class="ant-btn ant-btn-icon-only"
+      class="wmstool-btn wmstool-btn-icon-only"
       type="button"
     >
       <i
@@ -403,7 +403,7 @@ exports[`renders ./components/progress/demo/dynamic.md correctly 1`] = `
       />
     </button>
     <button
-      class="ant-btn ant-btn-icon-only"
+      class="wmstool-btn wmstool-btn-icon-only"
       type="button"
     >
       <i
@@ -417,18 +417,18 @@ exports[`renders ./components/progress/demo/dynamic.md correctly 1`] = `
 exports[`renders ./components/progress/demo/format.md correctly 1`] = `
 <div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-normal ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:120px;height:120px;font-size:24px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -438,7 +438,7 @@ exports[`renders ./components/progress/demo/format.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -450,25 +450,25 @@ exports[`renders ./components/progress/demo/format.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         75 Days
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-circle ant-progress-status-success ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-circle wmstool-progress-status-success wmstool-progress-show-info wmstool-progress-default"
   >
     <div
-      class="ant-progress-inner"
+      class="wmstool-progress-inner"
       style="width:120px;height:120px;font-size:24px"
     >
       <svg
-        class="ant-progress-circle "
+        class="wmstool-progress-circle "
         viewBox="0 0 100 100"
       >
         <path
-          class="ant-progress-circle-trail"
+          class="wmstool-progress-circle-trail"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -478,7 +478,7 @@ exports[`renders ./components/progress/demo/format.md correctly 1`] = `
           style="stroke-dasharray:295.3097094374406px 295.3097094374406px;stroke-dashoffset:-0px;transition:stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
         />
         <path
-          class="ant-progress-circle-path"
+          class="wmstool-progress-circle-path"
           d="M 50,50 m 0,-47
      a 47,47 0 1 1 0,94
      a 47,47 0 1 1 0,-94"
@@ -490,7 +490,7 @@ exports[`renders ./components/progress/demo/format.md correctly 1`] = `
         />
       </svg>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         Done
       </span>
@@ -502,69 +502,69 @@ exports[`renders ./components/progress/demo/format.md correctly 1`] = `
 exports[`renders ./components/progress/demo/line.md correctly 1`] = `
 <div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-default"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:30%;height:8px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         30%
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-active ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-active wmstool-progress-show-info wmstool-progress-default"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:50%;height:8px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         50%
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-exception ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-exception wmstool-progress-show-info wmstool-progress-default"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:70%;height:8px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-cross-circle"
@@ -573,23 +573,23 @@ exports[`renders ./components/progress/demo/line.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-success ant-progress-show-info ant-progress-default"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-success wmstool-progress-show-info wmstool-progress-default"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:100%;height:8px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-check-circle"
@@ -598,17 +598,17 @@ exports[`renders ./components/progress/demo/line.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-default"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:50%;height:8px"
           />
         </div>
@@ -623,69 +623,69 @@ exports[`renders ./components/progress/demo/line-mini.md correctly 1`] = `
   style="width:170px"
 >
   <div
-    class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-show-info ant-progress-small"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-normal wmstool-progress-show-info wmstool-progress-small"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:30%;height:6px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         30%
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-active ant-progress-show-info ant-progress-small"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-active wmstool-progress-show-info wmstool-progress-small"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:50%;height:6px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         50%
       </span>
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-exception ant-progress-show-info ant-progress-small"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-exception wmstool-progress-show-info wmstool-progress-small"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:70%;height:6px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-cross-circle"
@@ -694,23 +694,23 @@ exports[`renders ./components/progress/demo/line-mini.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-progress ant-progress-line ant-progress-status-success ant-progress-show-info ant-progress-small"
+    class="wmstool-progress wmstool-progress-line wmstool-progress-status-success wmstool-progress-show-info wmstool-progress-small"
   >
     <div>
       <div
-        class="ant-progress-outer"
+        class="wmstool-progress-outer"
       >
         <div
-          class="ant-progress-inner"
+          class="wmstool-progress-inner"
         >
           <div
-            class="ant-progress-bg"
+            class="wmstool-progress-bg"
             style="width:100%;height:6px"
           />
         </div>
       </div>
       <span
-        class="ant-progress-text"
+        class="wmstool-progress-text"
       >
         <i
           class="anticon anticon-check-circle"

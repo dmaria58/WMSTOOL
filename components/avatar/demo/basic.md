@@ -33,7 +33,7 @@ ReactDOM.render(
 ````
 
 <style>
-#components-avatar-demo-basic .ant-avatar {
+#components-avatar-demo-basic .wmstool-avatar {
   margin-top: 16px;
   margin-right: 16px;
 }

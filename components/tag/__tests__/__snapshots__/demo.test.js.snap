@@ -3,35 +3,35 @@
 exports[`renders ./components/tag/demo/basic.md correctly 1`] = `
 <div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       Tag 1
     </span>
   </div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       <a
-        href="https://github.com/ant-design/ant-design/issues/1862"
+        href="https://github.com/wmstool-design/wmstool-design/issues/1862"
       >
         Link
       </a>
     </span>
   </div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       Tag 2
     </span>
@@ -40,11 +40,11 @@ exports[`renders ./components/tag/demo/basic.md correctly 1`] = `
     />
   </div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       Prevent Default
     </span>
@@ -58,17 +58,17 @@ exports[`renders ./components/tag/demo/basic.md correctly 1`] = `
 exports[`renders ./components/tag/demo/checkable.md correctly 1`] = `
 <div>
   <div
-    class="ant-tag ant-tag-checkable ant-tag-checkable-checked"
+    class="wmstool-tag wmstool-tag-checkable wmstool-tag-checkable-checked"
   >
     Tag1
   </div>
   <div
-    class="ant-tag ant-tag-checkable ant-tag-checkable-checked"
+    class="wmstool-tag wmstool-tag-checkable wmstool-tag-checkable-checked"
   >
     Tag2
   </div>
   <div
-    class="ant-tag ant-tag-checkable ant-tag-checkable-checked"
+    class="wmstool-tag wmstool-tag-checkable wmstool-tag-checkable-checked"
   >
     Tag3
   </div>
@@ -84,111 +84,111 @@ exports[`renders ./components/tag/demo/colorful.md correctly 1`] = `
   </h4>
   <div>
     <div
-      class="ant-tag ant-tag-magenta"
+      class="wmstool-tag wmstool-tag-magenta"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         magenta
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-red"
+      class="wmstool-tag wmstool-tag-red"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         red
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-volcano"
+      class="wmstool-tag wmstool-tag-volcano"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         volcano
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-orange"
+      class="wmstool-tag wmstool-tag-orange"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         orange
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-gold"
+      class="wmstool-tag wmstool-tag-gold"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         gold
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-lime"
+      class="wmstool-tag wmstool-tag-lime"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         lime
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-green"
+      class="wmstool-tag wmstool-tag-green"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         green
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-cyan"
+      class="wmstool-tag wmstool-tag-cyan"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         cyan
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-blue"
+      class="wmstool-tag wmstool-tag-blue"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         blue
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-geekblue"
+      class="wmstool-tag wmstool-tag-geekblue"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         geekblue
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-purple"
+      class="wmstool-tag wmstool-tag-purple"
       data-show="true"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         purple
       </span>
@@ -201,45 +201,45 @@ exports[`renders ./components/tag/demo/colorful.md correctly 1`] = `
   </h4>
   <div>
     <div
-      class="ant-tag ant-tag-has-color"
+      class="wmstool-tag wmstool-tag-has-color"
       data-show="true"
       style="background-color:#f50"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         #f50
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-has-color"
+      class="wmstool-tag wmstool-tag-has-color"
       data-show="true"
       style="background-color:#2db7f5"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         #2db7f5
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-has-color"
+      class="wmstool-tag wmstool-tag-has-color"
       data-show="true"
       style="background-color:#87d068"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         #87d068
       </span>
     </div>
     <div
-      class="ant-tag ant-tag-has-color"
+      class="wmstool-tag wmstool-tag-has-color"
       data-show="true"
       style="background-color:#108ee9"
     >
       <span
-        class="ant-tag-text"
+        class="wmstool-tag-text"
       >
         #108ee9
       </span>
@@ -251,21 +251,21 @@ exports[`renders ./components/tag/demo/colorful.md correctly 1`] = `
 exports[`renders ./components/tag/demo/control.md correctly 1`] = `
 <div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       Unremovable
     </span>
   </div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       Tag 2
     </span>
@@ -274,11 +274,11 @@ exports[`renders ./components/tag/demo/control.md correctly 1`] = `
     />
   </div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       Tag 3
     </span>
@@ -287,12 +287,12 @@ exports[`renders ./components/tag/demo/control.md correctly 1`] = `
     />
   </div>
   <div
-    class="ant-tag"
+    class="wmstool-tag"
     data-show="true"
     style="background:#fff;border-style:dashed"
   >
     <span
-      class="ant-tag-text"
+      class="wmstool-tag-text"
     >
       <i
         class="anticon anticon-plus"
@@ -311,22 +311,22 @@ exports[`renders ./components/tag/demo/hot-tags.md correctly 1`] = `
     Categories:
   </h6>
   <div
-    class="ant-tag ant-tag-checkable"
+    class="wmstool-tag wmstool-tag-checkable"
   >
     Movies
   </div>
   <div
-    class="ant-tag ant-tag-checkable"
+    class="wmstool-tag wmstool-tag-checkable"
   >
     Books
   </div>
   <div
-    class="ant-tag ant-tag-checkable"
+    class="wmstool-tag wmstool-tag-checkable"
   >
     Music
   </div>
   <div
-    class="ant-tag ant-tag-checkable"
+    class="wmstool-tag wmstool-tag-checkable"
   >
     Sports
   </div>
