@@ -1,18 +1,18 @@
 import * as React from 'react';
 import Icon from '../icon';
-interface ReactProps  {  
-  isopen : boolean;
-  addicon:any
+export interface ScoProps  {  
+  isopen ?: boolean;
+  addicon?:any
 }  
   
-interface ReactState {  
-    open: boolean  
+export interface ScoState {  
+    open?: boolean  
 }  
   
   
 
-export default class Scollapse extends React.Component<ReactProps,ReactState> {      
-  constructor(props : ReactProps){  
+export default class Scollapse extends React.Component<ScoProps,ScoState> {      
+  constructor(props : ScoProps){  
     super(props); 
     this.state={
       open:props.isopen?props.isopen:false

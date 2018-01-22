@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmaria58/WMSTOOL.git"
+    "url": "git+https://github.com/dmaria58/WMSTOOL.git"
   },
   "keywords": [
     "react",
@@ -152,5 +152,9 @@
   "bugs": {
     "url": "https://github.com/dmaria58/WMSTOOL/issues"
   },
-  "homepage": "https://github.com/dmaria58/WMSTOOL#readme"
+  "homepage": "https://github.com/dmaria58/WMSTOOL#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  }
 }
