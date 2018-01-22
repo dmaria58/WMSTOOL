@@ -1,0 +1,15 @@
+@import "../../style/themes/default";
+@import "../../style/mixins/index";
+@collapse-prefix-cls: ~"@{wmstool-prefix}-scollapse-bordered";
+.@{collapse-prefix-cls}{
+  border-radius: @border-radius-base;
+  border: @border-width-base @border-style-base @border-color-base;
+}
+.@{wmstool-prefix}-scollapse-icon-div{
+	 text-align: right;
+	 .anticon{
+	    cursor: pointer;
+	    padding: 8px 5px;
+	    color:@blue-6;    
+     }		
+}

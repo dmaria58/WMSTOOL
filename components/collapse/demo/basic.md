@@ -7,7 +7,7 @@ title:
 
 ## zh-CN
 
-可以同时展开多个面板，这个例子默认展开了第一个。
+可以同时展开多个面板，这个例子默认展开了第一个。以及type="searchbar"实例
 
 ## en-US
 
@@ -28,7 +28,8 @@ const text = `
 `;
 
 ReactDOM.render(
-  <Collapse defaultActiveKey={['1']} onChange={callback}>
+  <div>
+  <Collapse defaultActiveKey={['1']} onChange={callback} type="">
     <Panel header="This is panel header 1" key="1">
       <p>{text}</p>
     </Panel>
@@ -39,6 +40,13 @@ ReactDOM.render(
       <p>{text}</p>
     </Panel>
   </Collapse>
+  <br></br>
+    <Collapse defaultActiveKey={['1']} onChange={callback}>
+    <Panel header="This is panel header 1" key="1">
+      <p>{text}</p>
+    </Panel>
+  </Collapse>
+  </div>
 , mountNode);
 ````
 

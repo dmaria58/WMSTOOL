@@ -16,5 +16,5 @@ The simplest use.
 ```jsx
 import { Radio } from 'wmstool';
 
-ReactDOM.render(<Radio isuncheck={true}>Radio</Radio>, mountNode);
+ReactDOM.render(<Radio>Radio</Radio>, mountNode);
 ```

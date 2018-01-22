@@ -6,8 +6,10 @@ import shallowEqual from 'shallowequal';
 import RadioGroup from './group';
 import RadioButton from './radioButton';
 import { RadioProps, RadioGroupContext } from './interface';
-
-export default class Radio extends React.Component<RadioProps, {}> {
+export interface RadioState {
+  value: any;
+}
+export default class Radio extends React.Component<RadioProps,RadioState> {
   static Group: typeof RadioGroup;
   static Button: typeof RadioButton;
 
@@ -21,7 +23,14 @@ export default class Radio extends React.Component<RadioProps, {}> {
   };
 
   private rcCheckbox: any;
-
+  constructor(props: any) {
+      super(props);
+      let kyvalue;
+      kyvalue=props.value;
+      this.state = {
+        value:kyvalue
+      };
+  }
   shouldComponentUpdate(nextProps: RadioProps, nextState: {}, nextContext: RadioGroupContext) {
     return !shallowEqual(this.props, nextProps) ||
            !shallowEqual(this.state, nextState) ||
@@ -39,7 +48,14 @@ export default class Radio extends React.Component<RadioProps, {}> {
   saveCheckbox = (node: any) => {
     this.rcCheckbox = node;
   }
-
+  clickno=()=>{
+    if(this.context.radioGroup&&this.props.value==this.context.radioGroup.value&&this.state.value!=""){
+      this.setState({value:""})
+    }
+    else{
+      this.setState({value:this.props.value})
+    }
+  }
   render() {
     const { props, context } = this;
     const {
@@ -54,7 +70,7 @@ export default class Radio extends React.Component<RadioProps, {}> {
     if (radioGroup) {
       radioProps.name = radioGroup.name;
       radioProps.onChange = radioGroup.onChange;
-      radioProps.checked = props.value === radioGroup.value;
+      radioProps.checked = this.state.value==""?false:this.state.value === radioGroup.value;
       radioProps.disabled = props.disabled || radioGroup.disabled;
     }
     const wrapperClassString = classNames(className, {
@@ -68,6 +84,7 @@ export default class Radio extends React.Component<RadioProps, {}> {
         style={style}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
+        onClick={this.clickno}
       >
         <RcCheckbox
           {...radioProps}

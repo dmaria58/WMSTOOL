@@ -12,7 +12,7 @@ export interface RadioGroupProps extends AbstractCheckboxGroupProps {
   name?: string;
   children?: React.ReactNode;
   id?: string;
-  isuncheck?:boolean;
+  onClick?:React.MouseEventHandler<HTMLDivElement>;
 }
 
 export interface RadioGroupState {
@@ -25,6 +25,7 @@ export interface RadioGroupContext {
     value: any;
     disabled: boolean;
     name: string;
+    onClick:React.MouseEventHandler<HTMLDivElement>;
   };
 }
 

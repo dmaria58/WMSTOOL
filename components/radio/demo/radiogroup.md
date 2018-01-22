@@ -30,10 +30,10 @@ class App extends React.Component {
   render() {
     return (
       <RadioGroup onChange={this.onChange}  value={this.state.value}>
-        <Radio value={1} isuncheck={true}>A</Radio>
-        <Radio value={2} isuncheck={true}>B</Radio>
-        <Radio value={3} isuncheck={true}>C</Radio>
-        <Radio value={4} isuncheck={true}>D</Radio>
+        <Radio value={1}>A</Radio>
+        <Radio value={2}>B</Radio>
+        <Radio value={3}>C</Radio>
+        <Radio value={4}>D</Radio>
       </RadioGroup>
     );
   }
