@@ -6,6 +6,8 @@ import classNames from 'classnames';
 import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
+import Buttom from '../button';
+import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
 import warning from '../_util/warning';
@@ -93,7 +95,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   store: Store;
   columns: ColumnProps<T>[];
   components: TableComponents;
-
   constructor(props: TableProps<T>) {
     super(props);
 
@@ -104,14 +105,16 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     );
 
     this.columns = props.columns || normalizeColumns(props.children as React.ReactChildren);
-
     this.createComponents(props.components);
-
+    let hjj=this.props.ColumnsChangeList || this.columns;
     this.state = {
       ...this.getDefaultSortOrder(this.columns),
       // 减少状态
       filters: this.getFiltersFromColumns(),
       pagination: this.getDefaultPagination(props),
+      abcard:'none',
+      statecolumn:hjj,
+
     };
 
     this.CheckboxPropsCache = {};
@@ -467,9 +470,17 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     let selectedRowKeys = this.store.getState().selectedRowKeys.concat(defaultSelection);
     let key = this.getRecordKey(record, rowIndex);
     selectedRowKeys = [key];
-    this.store.setState({
-      selectionDirty: true,
-    });
+    if(this.store.getState().selectionDirty !== true){
+      this.store.setState({
+        selectionDirty: true,
+      });
+    }
+    else{
+      this.store.setState({
+        selectionDirty: false,
+      });
+      selectedRowKeys=[];
+    }
     this.setSelectedRowKeys(selectedRowKeys, {
       selectWay: 'onSelect',
       record,
@@ -623,7 +634,14 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
   renderRowSelection(locale: TableLocale) {
     const { prefixCls, rowSelection } = this.props;
-    const columns = this.columns.concat();
+    let columns :any;
+     if(this.props.isColumnsChange && this.props.isColumnsChange === true){
+       columns = this.state.statecolumn.concat();
+    }
+    else{
+       columns = this.columns.concat();
+    }
+    
     if (rowSelection) {
       const data = this.getFlatCurrentPageData().filter((item, index) => {
         if (rowSelection.getCheckboxProps) {
@@ -660,7 +678,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       }
       if ('fixed' in rowSelection) {
         selectionColumn.fixed = rowSelection.fixed;
-      } else if (columns.some(column => column.fixed === 'left' || column.fixed === true)) {
+      } else if (columns.some((column:any) => column.fixed === 'left' || column.fixed === true)) {
         selectionColumn.fixed = 'left';
       }
       if (columns[0] && columns[0].key === 'selection-column') {
@@ -910,6 +928,14 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     }
   }
 
+  onrRowClick = (record: T, index: number, event: React.ChangeEvent<HTMLInputElement>)=>{
+    let {rowSelection}=this.props;
+    if(rowSelection && rowSelection.selecttype && rowSelection.selecttype === true){
+     rowSelection.type === 'radio' ? this.handleRadioSelect(record, index, event) :
+                           this.handleSelect(record, index, event);     
+                         }
+  } 
+
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
     const { style, className, prefixCls, showHeader, ...restProps } = this.props;
@@ -925,7 +951,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
     let columns = this.renderRowSelection(locale);
     columns = this.renderColumnsDropdown(columns, locale);
-    columns = columns.map((column, i) => {
+    columns = columns.map((column:any, i:any) => {
       const newColumn = { ...column };
       newColumn.key = this.getColumnKey(newColumn, i);
       return newColumn;
@@ -934,7 +960,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     if ('expandIconColumnIndex' in restProps) {
       expandIconColumnIndex = restProps.expandIconColumnIndex as number;
     }
-
     return (
       <RcTable
         key="table"
@@ -946,13 +971,79 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         columns={columns}
         showHeader={showHeader}
         className={classString}
+        onRowClick={this.onrRowClick}
         expandIconColumnIndex={expandIconColumnIndex}
         expandIconAsCell={expandIconAsCell}
         emptyText={() => locale.emptyText}
       />
     );
   }
-
+  isSortColumnbt = () =>{ 
+    if(this.props.isColumnsChange && this.props.isColumnsChange === true){
+        let {columns}=this.props;
+        let {abcard}=this.state
+        let u;
+        let athis=this;
+        if(columns){
+          u=columns.map((data)=>{
+              let bh=athis.isCheckDefault(data); 
+              return <div><Checkbox value={data.dataIndex} defaultChecked={bh} onChange={athis.changSbt}>{data.title}</Checkbox></div>
+          })          
+        }
+      return(<div className="wmstool-table-edit_div">
+        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="edit" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}</div></div>)
+    }
+  }
+  isCheckDefault = (data:any) =>{
+    if(this.props.ColumnsChangeList){
+      let hj:any;
+      this.props.ColumnsChangeList.filter((list:any)=>{
+        if(list.dataIndex === data.dataIndex){
+           hj=true
+        }
+      });
+      if(hj != true){return false}
+      else{return true}  
+    }
+    else{
+      return true
+    }
+  }
+  changSbt = (e:React.ChangeEvent<HTMLInputElement>) =>{
+    this.getComsList(e.target.value,e.target.checked)
+  }
+  getComsList = (id:string,che:boolean) =>{
+    let bhl;
+    if(che === false){
+      bhl=this.state.statecolumn.filter((data:any) => {
+        if(data.dataIndex === id){
+          return false
+        }
+        return data
+      })
+    }
+    else{
+      bhl=this.state.statecolumn;
+      let bm=this.columns.filter((data:any)=>{
+        if(data.dataIndex === id){
+          return data;
+        }
+        else{
+          return false
+        }
+      })
+      bhl.push(bm[0])
+    }
+    this.setState({statecolumn:bhl})
+  }
+  changeDisplayc = () =>{
+    if(this.state.abcard === "none"){
+      this.setState({abcard:"block"})
+    }
+    else{
+      this.setState({abcard:"none"})
+    }
+  }
   render() {
     const { style, className, prefixCls } = this.props;
     const data = this.getCurrentPageData();
@@ -988,6 +1079,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
           className={loading ? `${paginationPatchClass} ${prefixCls}-spin-holder` : ''}
         >
           {table}
+          {this.isSortColumnbt()}
           {this.renderPagination()}
         </Spin>
       </div>

@@ -9,7 +9,7 @@ title: Scollapse
 
 ## 何时使用
 
-- 用于展开折叠查询框。
+- 用于展开折叠
 
 ## API
 
@@ -19,6 +19,7 @@ title: Scollapse
 | --- | --- | --- | --- |
 | isopen | 是否默认打开 | boolean | false |
 | addicon | 右侧说明icon内容 | string | string |
+| closetype | 收起时展示的图标 | string | "search" |
 
 
 

@@ -37,6 +37,7 @@ export interface TransferListProps {
   itemsUnit: string;
   body?: (props: any) => any;
   footer?: (props: any) => void;
+  columsheader?: (props: any) => void;
   lazy?: boolean | {};
   onScroll: Function;
 }
@@ -134,13 +135,13 @@ export default class TransferList extends React.Component<TransferListProps, any
     const {
       prefixCls, dataSource, titleText, checkedKeys, lazy,
       body = noop, footer = noop, showSearch, style, filter,
-      searchPlaceholder, notFoundContent, itemUnit, itemsUnit, onScroll,
+      searchPlaceholder, notFoundContent, itemUnit, itemsUnit, onScroll,columsheader = noop
     } = this.props;
 
     // Custom Layout
     const footerDom = footer({ ...this.props });
     const bodyDom = body({ ...this.props });
-
+    const columsheaderDom = columsheader({ ...this.props });
     const listCls = classNames(prefixCls, {
       [`${prefixCls}-with-footer`]: !!footerDom,
     });
@@ -213,7 +214,11 @@ export default class TransferList extends React.Component<TransferListProps, any
         {footerDom}
       </div>
     ) : null;
-
+    const columsheaders = columsheaderDom ? (
+      <div className={`${prefixCls}-colums`}>
+        {columsheaderDom}
+      </div>
+    ) : null;
     const checkStatus = this.getCheckStatus(filteredDataSource);
     const checkedAll = checkStatus === 'all';
     const checkAllCheckbox = (
@@ -238,6 +243,7 @@ export default class TransferList extends React.Component<TransferListProps, any
             </span>
           </span>
         </div>
+        {columsheaders}
         {listBody}
         {listFooter}
       </div>

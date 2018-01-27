@@ -5,27 +5,21 @@ type: Data Display
 title: Scollapse
 ---
 
-进行标记和分类的小标签。
+查询框折叠框。
 
 ## 何时使用
 
-- 用于标记事物的属性和维度。
-- 进行分类。
+- 用于展开折叠
 
 ## API
 
-### Tag
+### Scollapse
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| afterClose | 关闭动画完成后的回调 | () => void | - |
-| closable | 标签是否可以关闭 | boolean | false |
-| color | 标签色 | string | - |
-| onClose | 关闭时的回调 | (e) => void | - |
+| isopen | 是否默认打开 | boolean | false |
+| addicon | 右侧说明icon内容 | string | string |
+| closetype | 收起时展示的图标 | string | "search" |
 
-### Tag.CheckableTag
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| checked | 设置标签的选中状态 | boolean | false |
-| onChange | 点击标签时触发的回调 | (checked) => void | - |
+

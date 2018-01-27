@@ -26,6 +26,7 @@ export interface TransferItem {
 export interface TransferProps {
   prefixCls?: string;
   className?: string;
+  culomsList?: (props: TransferListProps) => React.ReactNode;
   dataSource: TransferItem[];
   targetKeys?: string[];
   selectedKeys?: string[];
@@ -317,7 +318,11 @@ export default class Transfer extends React.Component<TransferProps, any> {
   getSelectedKeysName(direction: TransferDirection) {
     return direction === 'left' ? 'sourceSelectedKeys' : 'targetSelectedKeys';
   }
-
+  getColumns = () => {
+    if(this.props.culomsList){
+       return this.props.culomsList
+    }
+  }
   renderTransfer = (locale: TransferLocale) => {
     const {
       prefixCls = 'wmstool-transfer',
@@ -331,6 +336,7 @@ export default class Transfer extends React.Component<TransferProps, any> {
       listStyle,
       filterOption,
       render,
+      culomsList,
       lazy,
     } = this.props;
     const { leftFilter, rightFilter, sourceSelectedKeys, targetSelectedKeys } = this.state;
@@ -364,6 +370,7 @@ export default class Transfer extends React.Component<TransferProps, any> {
           itemsUnit={locale.itemsUnit}
           body={body}
           footer={footer}
+          columsheader={culomsList}
           lazy={lazy}
           onScroll={this.handleLeftScroll}
         />
@@ -396,6 +403,7 @@ export default class Transfer extends React.Component<TransferProps, any> {
           itemsUnit={locale.itemsUnit}
           body={body}
           footer={footer}
+          columsheader={culomsList}
           lazy={lazy}
           onScroll={this.handleRightScroll}
         />

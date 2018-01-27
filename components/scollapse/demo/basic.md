@@ -40,7 +40,7 @@ ReactDOM.render(
     <p>Card content</p>
   </Scollapse>
   <br></br>
-  <Scollapse >
+  <Scollapse closetype="setting">
     <p>Card content</p>
     <p>Card content</p>
     <p>Card content</p>

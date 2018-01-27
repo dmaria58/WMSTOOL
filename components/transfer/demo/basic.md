@@ -20,7 +20,7 @@ const mockData = [];
 for (let i = 0; i < 20; i++) {
   mockData.push({
     key: i.toString(),
-    title: `content${i + 1}`,
+    title: <span>content{i + 1}</span>,
     description: `description of content${i + 1}`,
     disabled: i % 3 < 1,
   });
@@ -55,7 +55,13 @@ class App extends React.Component {
     console.log('direction:', direction);
     console.log('target:', e.target);
   }
-
+  renderFooter = () => {
+    return (
+      <div>
+      <span>1</span><span>2</span><span>3</span>
+      </div>
+    );
+  }
   render() {
     const state = this.state;
     return (
@@ -68,6 +74,7 @@ class App extends React.Component {
         onSelectChange={this.handleSelectChange}
         onScroll={this.handleScroll}
         render={item => item.title}
+        culomsList={this.renderFooter}
       />
     );
   }

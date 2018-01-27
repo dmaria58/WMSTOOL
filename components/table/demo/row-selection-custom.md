@@ -27,7 +27,13 @@ const columns = [{
   title: 'Address',
   dataIndex: 'address',
 }];
-
+const columns2 = [{
+  title: 'Name',
+  dataIndex: 'name',
+}, {
+  title: 'Age',
+  dataIndex: 'age',
+}]
 const data = [];
 for (let i = 0; i < 46; i++) {
   data.push({
@@ -48,10 +54,17 @@ class App extends React.Component {
   }
   render() {
     const { selectedRowKeys } = this.state;
+    const tablepation={
+      defaultCurrent:3,
+      total:500,
+      showSizeChanger:true
+    }
     const rowSelection = {
       selectedRowKeys,
+      type: 'radio',
       onChange: this.onSelectChange,
       hideDefaultSelections: true,
+      selecttype: true,
       selections: [{
         key: 'all-data',
         text: 'Select All Data',
@@ -90,7 +103,7 @@ class App extends React.Component {
       onSelection: this.onSelection,
     };
     return (
-      <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+      <Table rowSelection={rowSelection} ColumnsChangeList={columns2}  isColumnsChange={true} columns={columns} dataSource={data} pagination={tablepation} />
     );
   }
 }

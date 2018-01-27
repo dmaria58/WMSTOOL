@@ -68,6 +68,7 @@ export interface TableRowSelection<T> {
   selections?: SelectionItem[] | boolean;
   hideDefaultSelections?: boolean;
   fixed?: boolean;
+  selecttype?: boolean;
 }
 
 export interface TableProps<T> {
@@ -107,6 +108,8 @@ export interface TableProps<T> {
   className?: string;
   style?: React.CSSProperties;
   children?: React.ReactNode;
+  isColumnsChange?: boolean;
+  ColumnsChangeList?: ColumnProps<T>[];
 }
 
 export interface TableStateFilters {
@@ -118,6 +121,8 @@ export interface TableState<T> {
   filters: TableStateFilters;
   sortColumn: ColumnProps<T> | null;
   sortOrder: string;
+  abcard: string;
+  statecolumn?: any;
 }
 
 export type SelectionItemSelectFn = (key: string[]) => any;
