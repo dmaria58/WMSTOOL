@@ -87,7 +87,11 @@ TreeNode.prototype.renderCheckbox = function renderCheckbox(props) {
   if (props.checked) {
       checkboxCls[prefixCls + '-checkbox-checked'] = true;
   } else if (props.halfChecked) {
+    if(props.needHalfChecked){
+      checkboxCls[prefixCls + '-checkbox-indeterminate'] = true;
+  }else{
       checkboxCls[prefixCls + '-checkbox-checked'] = true;
+  }
   }
   var customEle = null;
   if (typeof props.checkable !== 'boolean') {
@@ -117,6 +121,7 @@ export default class Tree extends React.Component<TreeProps, any> {
     prefixCls: 'wmstool-tree',
     checkable: false,
     showIcon: false,
+    needHalfChecked: false, //是否需要半选图标 - 
     openAnimation: animation,
   };
 

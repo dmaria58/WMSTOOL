@@ -20,7 +20,11 @@ TreeNode.prototype.renderCheckbox = function renderCheckbox(props) {
     if (props.checked) {
         checkboxCls[prefixCls + '-checkbox-checked'] = true;
     } else if (props.halfChecked) {
-        checkboxCls[prefixCls + '-checkbox-checked'] = true;
+        if(props.needHalfChecked){
+            checkboxCls[prefixCls + '-checkbox-indeterminate'] = true;
+        }else{
+            checkboxCls[prefixCls + '-checkbox-checked'] = true;
+        }
     }
     var customEle = null;
     if (typeof props.checkable !== 'boolean') {
@@ -48,5 +52,6 @@ Tree.defaultProps = {
     prefixCls: 'wmstool-tree',
     checkable: false,
     showIcon: false,
+    needHalfChecked: false,
     openAnimation: animation,
 };
