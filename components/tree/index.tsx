@@ -1,7 +1,7 @@
 import * as React from 'react';
 import RcTree, { TreeNode } from 'rc-tree';
 import animation from '../_util/openAnimation';
-
+import classNames from 'classnames';
 export interface AntTreeNodeProps {
   disabled?: boolean;
   disableCheckbox?: boolean;
@@ -79,7 +79,37 @@ export interface TreeProps {
   prefixCls?: string;
   filterTreeNode?: (node: AntTreeNode) => boolean;
 }
+TreeNode.prototype.renderCheckbox = function renderCheckbox(props) {
+  var _checkboxCls : any;
 
+  var prefixCls = props.prefixCls;
+  var checkboxCls = (_checkboxCls = {}, _checkboxCls[prefixCls + '-checkbox'] = true, _checkboxCls);
+  if (props.checked) {
+      checkboxCls[prefixCls + '-checkbox-checked'] = true;
+  } else if (props.halfChecked) {
+      checkboxCls[prefixCls + '-checkbox-checked'] = true;
+  }
+  var customEle = null;
+  if (typeof props.checkable !== 'boolean') {
+      customEle = props.checkable;
+  }
+  if (props.disabled || props.disableCheckbox) {
+      checkboxCls[prefixCls + '-checkbox-disabled'] = true;
+      return React.createElement(
+      'span',
+      { className: classNames(checkboxCls) },
+      customEle
+      );
+  }
+  return React.createElement(
+      'span',
+      {
+      className: classNames(checkboxCls),
+      onClick: this.onCheck
+      },
+      customEle
+  );
+};
 export default class Tree extends React.Component<TreeProps, any> {
   static TreeNode = TreeNode;
 

@@ -14,7 +14,7 @@ title:
 The most basic usage, tell you how to use checkable, selectable, disabled, defaultExpandKeys, and etc.
 
 ````jsx
-import { Tree } from 'antd';
+import Tree from '../index.tsx';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component {
