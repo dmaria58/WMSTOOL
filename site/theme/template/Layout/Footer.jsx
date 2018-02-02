@@ -64,7 +64,7 @@ class Footer extends React.Component {
       title: messages['app.publish.title'],
       content: (
         <div>
-          <img src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" alt="Ant Design" />
+          <img src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" alt="WMSTOOL" />
           <p>
             {messages['app.publish.greeting']}
             <a target="_blank" rel="noopener noreferrer" href="/changelog">antd@3.0.0</a>

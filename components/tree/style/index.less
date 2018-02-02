@@ -202,3 +202,68 @@
     }
   }
 }
+.wmstool-tree-checkbox-indeterminate .wmstool-tree-checkbox-uninner:after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    position: absolute;
+    display: table;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ' ';
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+.wmstool-tree-checkbox-uninner:after {
+    -webkit-transform: rotate(45deg) scale(0);
+    -ms-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+    position: absolute;
+    left: 4.57142857px;
+    top: 1.14285714px;
+    display: table;
+    width: 5.71428571px;
+    height: 9.14285714px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ' ';
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+}
+.wmstool-tree-checkbox-checked .wmstool-tree-checkbox-uninner, .wmstool-tree-checkbox-indeterminate .wmstool-tree-checkbox-uninner {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+.wmstool-tree-checkbox-uninner {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.wmstool-tree-checkbox-checked .wmstool-tree-checkbox-uninner:after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    position: absolute;
+    display: table;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ' ';
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+.wmstool-tree-checkbox-checked .wmstool-tree-checkbox-uninner, .wmstool-tree-checkbox-checked .wmstool-tree-checkbox-uninner {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}

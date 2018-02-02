@@ -15,7 +15,7 @@ title:
 You can customize icons for different nodes by styles override.
 
 ````jsx
-import { Tree } from 'antd';
+import { Tree } from 'wmstool';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component {

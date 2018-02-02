@@ -119,7 +119,7 @@ export default class Demo extends React.Component {
     const prefillStyle = `@import 'antd/dist/antd.css';\n\n${style || ''}`.replace(new RegExp(`#${meta.id}\\s*`, 'g'), '');
 
     const codepenPrefillConfig = {
-      title: `${localizedTitle} - Ant Design Demo`,
+      title: `${localizedTitle} - WMSTOOL Demo`,
       html: `<div id="container" style="padding: 24px"></div>
 <script>
   var mountNode = document.getElementById('container');
@@ -137,7 +137,7 @@ export default class Demo extends React.Component {
       js_pre_processor: 'typescript',
     };
     const riddlePrefillConfig = {
-      title: `${localizedTitle} - Ant Design Demo`,
+      title: `${localizedTitle} - WMSTOOL Demo`,
       js: state.sourceCode,
       css: prefillStyle,
     };

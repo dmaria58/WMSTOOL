@@ -14,7 +14,7 @@ title:
 Drag treeNode to insert after the other treeNode or insert into the other parent TreeNode.
 
 ````jsx
-import { Tree } from 'antd';
+import { Tree } from 'wmstool';
 const TreeNode = Tree.TreeNode;
 
 const x = 3;

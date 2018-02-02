@@ -14,7 +14,7 @@ title:
 To load data asynchronously when click to expand a treeNode.
 
 ````jsx
-import { Tree } from 'antd';
+import { Tree } from 'wmstool';
 const TreeNode = Tree.TreeNode;
 
 class Demo extends React.Component {

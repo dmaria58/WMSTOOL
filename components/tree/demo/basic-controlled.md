@@ -14,7 +14,7 @@ title:
 basic controlled example
 
 ````jsx
-import { Tree } from 'antd';
+import { Tree } from 'wmstool';
 const TreeNode = Tree.TreeNode;
 
 const treeData = [{
@@ -91,7 +91,21 @@ class Demo extends React.Component {
   }
   render() {
     return (
+      <div>
       <Tree
+        checkable
+        onExpand={this.onExpand}
+        expandedKeys={this.state.expandedKeys}
+        autoExpandParent={this.state.autoExpandParent}
+        onCheck={this.onCheck}
+        checkedKeys={this.state.checkedKeys}
+        onSelect={this.onSelect}
+        isnohalfChecked={true}
+        selectedKeys={this.state.selectedKeys}
+      >
+        {this.renderTreeNodes(treeData)}
+      </Tree>
+            <Tree
         checkable
         onExpand={this.onExpand}
         expandedKeys={this.state.expandedKeys}
@@ -103,6 +117,7 @@ class Demo extends React.Component {
       >
         {this.renderTreeNodes(treeData)}
       </Tree>
+      </div>
     );
   }
 }

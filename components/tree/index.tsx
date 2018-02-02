@@ -1,7 +1,7 @@
 import * as React from 'react';
 import RcTree, { TreeNode } from 'rc-tree';
 import animation from '../_util/openAnimation';
-import classNames from 'classnames';
+
 export interface AntTreeNodeProps {
   disabled?: boolean;
   disableCheckbox?: boolean;
@@ -27,7 +27,10 @@ export interface AntTreeNodeMouseEvent {
 }
 
 export interface TreeProps {
+  isnohalfChecked?:boolean;
+
   showLine?: boolean;
+
   className?: string;
   /** 是否支持多选 */
   multiple?: boolean;
@@ -79,41 +82,7 @@ export interface TreeProps {
   prefixCls?: string;
   filterTreeNode?: (node: AntTreeNode) => boolean;
 }
-TreeNode.prototype.renderCheckbox = function renderCheckbox(props) {
-  var _checkboxCls : any;
 
-  var prefixCls = props.prefixCls;
-  var checkboxCls = (_checkboxCls = {}, _checkboxCls[prefixCls + '-checkbox'] = true, _checkboxCls);
-  if (props.checked) {
-      checkboxCls[prefixCls + '-checkbox-checked'] = true;
-  } else if (props.halfChecked) {
-    if(props.needHalfChecked){
-      checkboxCls[prefixCls + '-checkbox-indeterminate'] = true;
-  }else{
-      checkboxCls[prefixCls + '-checkbox-checked'] = true;
-  }
-  }
-  var customEle = null;
-  if (typeof props.checkable !== 'boolean') {
-      customEle = props.checkable;
-  }
-  if (props.disabled || props.disableCheckbox) {
-      checkboxCls[prefixCls + '-checkbox-disabled'] = true;
-      return React.createElement(
-      'span',
-      { className: classNames(checkboxCls) },
-      customEle
-      );
-  }
-  return React.createElement(
-      'span',
-      {
-      className: classNames(checkboxCls),
-      onClick: this.onCheck
-      },
-      customEle
-  );
-};
 export default class Tree extends React.Component<TreeProps, any> {
   static TreeNode = TreeNode;
 
@@ -121,19 +90,20 @@ export default class Tree extends React.Component<TreeProps, any> {
     prefixCls: 'wmstool-tree',
     checkable: false,
     showIcon: false,
-    needHalfChecked: false, //是否需要半选图标 - 
     openAnimation: animation,
+    isnohalfChecked: false,
   };
 
   render() {
     const props = this.props;
     const { prefixCls, className } = props;
     let checkable = props.checkable;
+    let myclassname = props.isnohalfChecked == true ? `${prefixCls}-checkbox-uninner`:`${prefixCls}-checkbox-inner`
     return (
       <RcTree
         {...props}
         className={className}
-        checkable={checkable ? <span className={`${prefixCls}-checkbox-inner`} /> : checkable}
+        checkable={checkable ? <span className={`${myclassname}`} /> : checkable}
       >
         {this.props.children}
       </RcTree>

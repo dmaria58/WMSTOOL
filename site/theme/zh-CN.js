@@ -34,7 +34,7 @@ module.exports = {
     'app.home.sub-slogan': '微小 · 确定 · 幸福',
     'app.home.vision': '这是一套致力于提升『用户』和『设计者』使用体验的中后台设计语言。',
     'app.footer.repo': 'GitHub 仓库',
-    'app.footer.awesome': 'Awesome Ant Design',
+    'app.footer.awesome': 'Awesome WMSTOOL',
     'app.footer.chinamirror': '国内镜像站点 🇨🇳',
     'app.footer.primary-color-changed': '修改主题色成功！',
     'app.footer.scaffold': '脚手架',

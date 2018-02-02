@@ -56,7 +56,7 @@ class Home extends React.Component {
       </a>
     );
     return (
-      <DocumentTitle title={`Ant Design - ${this.props.intl.formatMessage({ id: 'app.home.slogan' })}`}>
+      <DocumentTitle title={`WMSTOOL - ${this.props.intl.formatMessage({ id: 'app.home.slogan' })}`}>
         <div className="main-wrapper">
           {promoteBanner}
           <Banner {...this.props} />
