@@ -61,6 +61,7 @@ class App extends React.Component {
     const { loading, selectedRowKeys } = this.state;
     const rowSelection = {
       selectedRowKeys,
+      selecttype: true,
       onChange: this.onSelectChange,
     };
     const hasSelected = selectedRowKeys.length > 0;
