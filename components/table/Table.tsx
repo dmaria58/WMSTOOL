@@ -449,7 +449,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     const defaultSelection = this.store.getState().selectionDirty ? [] : this.getDefaultSelection();
     let selectedRowKeys = this.store.getState().selectedRowKeys.concat(defaultSelection);
     let key = this.getRecordKey(record, rowIndex);
-    if (checked) {
+    if (checked || !selectedRowKeys.includes(key)) {
       selectedRowKeys.push(this.getRecordKey(record, rowIndex));
     } else {
       selectedRowKeys = selectedRowKeys.filter((i: string) => key !== i);
