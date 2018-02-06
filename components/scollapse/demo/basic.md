@@ -28,13 +28,14 @@ const content= (
  )
 ReactDOM.render(
     <div>
-  <Scollapse isopen={true} addicon={content}>
-    <p>Card content</p>
+   测试测试测试
+  <Scollapse isopen={true} addicon={content} borderType={false}>
+    <p>没有边框，图标可以任意位置</p>
     <p>Card content</p>
     <p>Card content</p>
   </Scollapse>
   <br></br>
-  <Scollapse isopen={false}>
+  <Scollapse isopen={false} addicon={content}>
     <p>Card content</p>
     <p>Card content</p>
     <p>Card content</p>

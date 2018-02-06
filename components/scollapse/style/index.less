@@ -5,11 +5,33 @@
   border-radius: @border-radius-base;
   border: @border-width-base @border-style-base @border-color-base;
 }
-.@{wmstool-prefix}-scollapse-icon-div{
+/* .@{wmstool-prefix}-scollapse-icon-div{
 	 text-align: right;
 	 .anticon{
 	    cursor: pointer;
 	    padding: 8px 5px;
 	    color:@blue-6;    
      }		
+} */
+
+//没有边框时的样式
+.@{wmstool-prefix}-scollapse-borderedless {
+	position: relative;
+	border-width: 0;
+
+	//图标位置控制
+	.@{wmstool-prefix}-scollapse-icon-div{
+		position: absolute;
+		right: 0;
+		.anticon{
+			 cursor: pointer;
+			 padding: 8px 5px;
+			 color:@blue-6;    
+			}		
+	}
+	//去除border-top
+	.@{wmstool-prefix}-collapse-content {
+		border-top-width: 0;
+	}
 }
+
