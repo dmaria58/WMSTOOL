@@ -57,6 +57,10 @@ class App extends React.Component {
     console.log('selectedRowKeys changed: ', selectedRowKeys);
     this.setState({ selectedRowKeys });
   }
+  onRowClick  =(i,j) => {
+      console.log(i);
+      console.log(j);
+  }
   render() {
     const { loading, selectedRowKeys } = this.state;
     const rowSelection = {
@@ -80,7 +84,7 @@ class App extends React.Component {
             {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
           </span>
         </div>
-        <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+        <Table rowSelection={rowSelection} onRowClick={this.onRowClick}  columns={columns} dataSource={data} />
       </div>
     );
   }

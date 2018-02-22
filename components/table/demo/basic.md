@@ -62,5 +62,5 @@ const data = [{
   address: 'Sidney No. 1 Lake Park',
 }];
 
-ReactDOM.render(<Table columns={columns}  dataSource={data} />, mountNode);
+ReactDOM.render(<Table columns={columns} dataSource={data} />, mountNode);
 ````

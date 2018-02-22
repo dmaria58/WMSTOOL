@@ -95,7 +95,7 @@ export interface TableProps<T> {
   loading?: boolean | SpinProps;
   locale?: Object;
   indentSize?: number;
-  onRowClick?: (record: T, index: number, event: Event) => any;
+  onRowClick?: (record: T, index: number, event: any) => any;
   onRow?: (record: T, index: number) => any;
   useFixedHeader?: boolean;
   bordered?: boolean;

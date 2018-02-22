@@ -934,6 +934,9 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
      rowSelection.type === 'radio' ? this.handleRadioSelect(record, index, event) :
                            this.handleSelect(record, index, event);     
                          }
+   if(this.props.onRowClick){
+     this.props.onRowClick(record, index, event)
+   }
   } 
 
   renderTable = (contextLocale: TableLocale) => {

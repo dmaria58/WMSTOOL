@@ -14,9 +14,10 @@ timeline: true
 ---
 ## 1.3.4
 
-`2018-02-01`
+`2018-02-22`
 
-- 🐞 修改复选框半选图标 - 为全选图标✓
+- 🐞 tree 新增 isnohalfChecked【 去半选模式 设置为true时全部为√图标 】
+- 🐞 table 修复onRowClick 事件bug
 
 ## 1.2.4
 

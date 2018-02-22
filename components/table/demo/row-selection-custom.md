@@ -52,6 +52,10 @@ class App extends React.Component {
     console.log('selectedRowKeys changed: ', selectedRowKeys);
     this.setState({ selectedRowKeys });
   }
+  onRowClick  =(i,j) => {
+      console.log(i);
+      console.log(j);
+  }
   render() {
     const { selectedRowKeys } = this.state;
     const tablepation={
@@ -102,8 +106,9 @@ class App extends React.Component {
       }],
       onSelection: this.onSelection,
     };
+
     return (
-      <Table rowSelection={rowSelection} ColumnsChangeList={columns2}  isColumnsChange={true} columns={columns} dataSource={data} pagination={tablepation} />
+      <Table rowSelection={rowSelection} onRowClick={this.onRowClick}  ColumnsChangeList={columns2}  isColumnsChange={true} columns={columns} dataSource={data} pagination={tablepation} />
     );
   }
 }
