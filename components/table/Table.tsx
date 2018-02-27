@@ -116,7 +116,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       statecolumn:hjj,
 
     };
-
+    props.returnSelectColumn?props.returnSelectColumn(hjj):"";
     this.CheckboxPropsCache = {};
 
     this.store = createStore({
@@ -994,7 +994,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
           })          
         }
       return(<div className="wmstool-table-edit_div">
-        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="edit" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}</div></div>)
+        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="setting" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}</div></div>)
     }
   }
   isCheckDefault = (data:any) =>{
@@ -1013,7 +1013,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     }
   }
   changSbt = (e:React.ChangeEvent<HTMLInputElement>) =>{
-    this.getComsList(e.target.value,e.target.checked)
+    this.getComsList(e.target.value,e.target.checked)    
   }
   getComsList = (id:string,che:boolean) =>{
     let bhl;
@@ -1038,6 +1038,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       bhl.push(bm[0])
     }
     this.setState({statecolumn:bhl})
+    this.props.returnSelectColumn?this.props.returnSelectColumn(bhl):"";
   }
   changeDisplayc = () =>{
     if(this.state.abcard === "none"){

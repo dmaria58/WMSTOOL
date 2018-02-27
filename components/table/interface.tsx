@@ -110,6 +110,7 @@ export interface TableProps<T> {
   children?: React.ReactNode;
   isColumnsChange?: boolean;
   ColumnsChangeList?: ColumnProps<T>[];
+  returnSelectColumn?:(clumons: any)=> any;
 }
 
 export interface TableStateFilters {

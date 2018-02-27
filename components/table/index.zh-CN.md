@@ -128,6 +128,7 @@ const columns = [{
 | type | 多选/单选，`checkbox` or `radio` | string | `checkbox` |
 | selecttype | 是否点击行选中| boolean | false |
 |isColumnsChange| 是否可隐藏columns【参考自定义选择项例子】【此模式支持radio框取消选择】| boolean | false |
+| returnSelectColumn| isColumnsChange 模式下自定义项发生变化回调，返回显示列 | Function(columns) | - |
 | onChange | 选中项发生变化的时的回调 | Function(selectedRowKeys, selectedRows) | - |
 | onSelect | 用户手动选择/取消选择某列的回调 | Function(record, selected, selectedRows) | - |
 | onSelectAll | 用户手动选择/取消选择所有列的回调 | Function(selected, selectedRows, changeRows) | - |
