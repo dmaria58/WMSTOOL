@@ -121,4 +121,6 @@ export { default as Upload } from './upload';
 
 export { default as Scollapse } from './scollapse';
 
+export { default as Easyform } from './easyform';
+
 export { default as version } from './version';

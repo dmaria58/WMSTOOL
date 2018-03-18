@@ -5,11 +5,11 @@ type: Data Display
 title: Scollapse
 ---
 
-查询框折叠框。
+简易表单验证。
 
 ## 何时使用
 
-- 用于展开折叠
+- 简易表单验证
 
 ## API
 
