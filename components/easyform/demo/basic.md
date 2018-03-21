@@ -23,6 +23,7 @@ class App extends React.Component {
       name:"",
       address:"",
       number:"",
+      number2:"",
       select:"",
       ischeck:false,
       checkkey:{},
@@ -64,6 +65,7 @@ class App extends React.Component {
       address:"",
       select:"",
       number:"",
+      number2:"",
       ischeck:false
     })
   }
@@ -80,7 +82,8 @@ class App extends React.Component {
 
   }
   render() {
-  let {name,ischeck,isright,address,number,select}=this.state;
+  let {name,ischeck,isright,address,number,select,number2}=this.state;
+  let num =this.state.number2?this.state.number2:9
   let rules=[
         {"required":true,message:'Please input your name'},
         {pattern:/^([\w-]{4,12}|.{0})$/,message:'balabala'}
@@ -90,11 +93,16 @@ class App extends React.Component {
         {pattern:/^.{0,10}$/,message:'too long'}
       ]
   let rules3=[
-        {pattern:/^(0|[1-9][0-9]*)$/,message:'正整数'}
+        {maxnum:100,message:'大于'},
+        {minnum:10,message:'小于'},
       ] 
   let rules4=[
         {"required":true,message:'Please select'},
-      ]      
+      ] 
+    let rules5=[
+        {pattern:/^(0|[1-9][0-9]*)$/,message:'正整数'}
+      ]     
+      console.log(num,rules3[0].pattern)     
     return (
       <div>
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input1")} easyCheckValue={name} rules={rules}>
@@ -103,6 +111,10 @@ class App extends React.Component {
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input2")} easyCheckValue={address} rules={rules2}>
         <Input value={address} onChange={(e)=>this.changeInput(e,"address")} />
       </Easyform>
+      <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input5")} easyCheckValue={number2} rules={rules5}>
+        <Input value={number2} type="number" max={4} onChange={(e)=>this.changeInput(e,"number2")} />
+      </Easyform>    
+      ss  
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input3")} easyCheckValue={number} rules={rules3}>
         <Input value={number} onChange={(e)=>this.changeInput(e,"number")} />
       </Easyform>

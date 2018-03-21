@@ -21,6 +21,12 @@ export default class Easyform extends React.Component<EformProps> {
         else if(rules[i].pattern && value && rules[i].pattern.test(value) ==false){
           return rules[i].message?rules[i].message:"not in the correct format"
         }
+        else if(rules[i].maxnum && value && parseFloat(rules[i].maxnum)<parseFloat(value)){
+          return rules[i].message?rules[i].message:"not in the correct format"
+        }
+        else if(rules[i].minnum && value && parseFloat(rules[i].minnum)>parseFloat(value)){
+          return rules[i].message?rules[i].message:"not in the correct format"
+        }
       }   
     }  
 
