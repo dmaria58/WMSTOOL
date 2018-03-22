@@ -43,7 +43,7 @@ export default class Easyform extends React.Component<EformProps> {
         :isrt=true
       let gh:any;
       gh= this.props.isright; 
-      gh(isrt); 
+      gh?gh(isrt):""; 
       if(showd && showd !=""){
         return <div className='wmstool-easyform-errorshow' >{showd}</div>
       }
