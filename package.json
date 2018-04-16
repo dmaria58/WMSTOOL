@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "一套前端组件库基于atd 3.0.3、react",
   "scripts": {
     "dist": "antd-tools run dist",
@@ -57,6 +57,8 @@
     "rc-tree-select": "~1.12.0",
     "rc-upload": "~2.4.0",
     "rc-util": "^4.0.4",
+    "react-dnd": "^2.5.4",
+    "react-dnd-html5-backend": "^2.5.4",
     "react-lazy-load": "^3.0.12",
     "react-slick": "~0.16.0",
     "shallowequal": "^1.0.1",
@@ -126,8 +128,6 @@
     "react": "^16.0.0",
     "react-color": "^2.11.7",
     "react-copy-to-clipboard": "^5.0.0",
-    "react-dnd": "^2.5.4",
-    "react-dnd-html5-backend": "^2.5.4",
     "react-document-title": "^2.0.1",
     "react-dom": "^16.0.0",
     "react-github-button": "^0.1.1",
@@ -154,7 +154,6 @@
   },
   "homepage": "https://github.com/dmaria58/WMSTOOL#readme",
   "directories": {
-    "doc": "docs",
-    "lib": "lib"
+    "doc": "docs"
   }
 }

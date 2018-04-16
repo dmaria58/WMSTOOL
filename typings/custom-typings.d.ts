@@ -86,6 +86,12 @@ declare module 'react-lazy-load';
 
 declare module 'dom-closest';
 
+declare module 'react-dnd-html5-backend';
+
+declare module 'react-dnd';
+
+declare module 'immutability-helper';
+
 declare module "*.json" {
   const value: any;
   export const version: string;

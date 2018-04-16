@@ -123,4 +123,6 @@ export { default as Scollapse } from './scollapse';
 
 export { default as Easyform } from './easyform';
 
+export { default as Dragdata } from './dragdata';
+
 export { default as version } from './version';
