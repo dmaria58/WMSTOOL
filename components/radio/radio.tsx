@@ -48,14 +48,19 @@ export default class Radio extends React.Component<RadioProps,RadioState> {
   saveCheckbox = (node: any) => {
     this.rcCheckbox = node;
   }
-  clickno=()=>{
+  /*clickno=()=>{
     if(this.context.radioGroup&&this.props.value==this.context.radioGroup.value&&this.state.value!=""){
-      this.setState({value:""})
+      this.setState({value:""},()=>{
+       if(this.props.onChange){
+        this.props.onChange(this.state.value);
+        } 
+
+      });
     }
     else{
       this.setState({value:this.props.value})
     }
-  }
+  }*/
   render() {
     const { props, context } = this;
     const {
@@ -84,7 +89,7 @@ export default class Radio extends React.Component<RadioProps,RadioState> {
         style={style}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
-        onClick={this.clickno}
+        //onClick={this.clickno}
       >
         <RcCheckbox
           {...radioProps}
