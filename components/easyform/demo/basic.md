@@ -106,12 +106,9 @@ class App extends React.Component {
    let rule6 =[
                   {
                       func: value => {
-                          if (value === "2018") {
-                              return false
-                          }
-                          return true
+                          return !/[0-9]/.test(value)
                       },
-                      message: '输入不能为2018'
+                      message: '不能输入数字'
                   }
               ]  
    let rule7 =[
@@ -122,6 +119,9 @@ class App extends React.Component {
                           }
                           if(/[a-z]/.test(value)){
                                 return {result:false,message:"不能输入小写字母"}
+                          }
+                          if(input6 && input6 == input7){
+                                return {result:false,message:"两次输入不能一样"}
                           }
                           return true;// or  return {result:true,message:""}  
                       }
@@ -139,7 +139,7 @@ class App extends React.Component {
         <Input value={number2} type="number" max={4} onChange={(e)=>this.changeInput(e,"number2")} />
       </Easyform>    
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input6")} easyCheckValue={input6} rules={rule6}>
-        <Input value={input6} type="text" onChange={(e)=>this.changeInput(e,"input6")} placeholder="自定义校验方法：输入不能为2018" defaultValue="2018" />
+        <Input value={input6} type="text" onChange={(e)=>this.changeInput(e,"input6")} placeholder="自定义校验方法：输入不能为2018"/>
       </Easyform>    
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input7")} easyCheckValue={input7} rules={rule7}>
         <Input value={input7} type="text" onChange={(e)=>this.changeInput(e,"input7")} placeholder="自定义校验方法：不能为数字、不能为小写" />
