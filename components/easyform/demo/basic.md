@@ -82,7 +82,7 @@ class App extends React.Component {
 
   }
   render() {
-  let {name,ischeck,isright,address,number,select,number2}=this.state;
+  let {name,ischeck,isright,address,number,select,number2,input6,input7}=this.state;
   let num =this.state.number2?this.state.number2:9
   let rules=[
         {"required":true,message:'Please input your name'},
@@ -101,8 +101,32 @@ class App extends React.Component {
       ] 
     let rules5=[
         {pattern:/^(0|[1-9][0-9]*)$/,message:'正整数'}
-      ]     
-      console.log(num,rules3[0].pattern)     
+      ]  
+      
+   let rule6 =[
+                  {
+                      func: value => {
+                          if (value === "2018") {
+                              return false
+                          }
+                          return true
+                      },
+                      message: '输入不能为2018'
+                  }
+              ]  
+   let rule7 =[
+                  {
+                      func: value => {
+                          if(/[0-9]/.test(value)){
+                                return {result:false,message:"不能输入数字"}
+                          }
+                          if(/[a-z]/.test(value)){
+                                return {result:false,message:"不能输入小写字母"}
+                          }
+                          return true;// or  return {result:true,message:""}  
+                      }
+                  }
+              ]    
     return (
       <div>
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input1")} easyCheckValue={name} rules={rules}>
@@ -113,6 +137,12 @@ class App extends React.Component {
       </Easyform>
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input5")} easyCheckValue={number2} rules={rules5}>
         <Input value={number2} type="number" max={4} onChange={(e)=>this.changeInput(e,"number2")} />
+      </Easyform>    
+      <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input6")} easyCheckValue={input6} rules={rule6}>
+        <Input value={input6} type="text" onChange={(e)=>this.changeInput(e,"input6")} placeholder="自定义校验方法：输入不能为2018" defaultValue="2018" />
+      </Easyform>    
+      <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input7")} easyCheckValue={input7} rules={rule7}>
+        <Input value={input7} type="text" onChange={(e)=>this.changeInput(e,"input7")} placeholder="自定义校验方法：不能为数字、不能为小写" />
       </Easyform>    
       ss  
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input3")} easyCheckValue={number} rules={rules3}>
