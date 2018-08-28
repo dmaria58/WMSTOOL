@@ -13,7 +13,6 @@ export default class Easyform extends React.Component<EformProps> {
   } 
   checkrules = (value:any) =>{
     let rules= this.props.rules;
-    console.log(rules)
     if(rules && rules.length){
       for(let i=0;i<rules.length;i++){
         if(rules[i].required && rules[i].required==true && !value){
