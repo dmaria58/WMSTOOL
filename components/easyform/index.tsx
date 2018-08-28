@@ -12,7 +12,7 @@ export default class Easyform extends React.Component<EformProps> {
     super(props);
   } 
   checkrules = (value:any) =>{
-    let rules= this.props.rules; 
+    let rules= this.props.rules;
     if(rules && rules.length){
       for(let i=0;i<rules.length;i++){
         if(rules[i].required && rules[i].required==true && !value){
@@ -26,6 +26,15 @@ export default class Easyform extends React.Component<EformProps> {
         }
         else if(rules[i].minnum && value && parseFloat(rules[i].minnum)>parseFloat(value)){
           return rules[i].message?rules[i].message:"not in the correct format"
+        }
+        else if(typeof rules[i].func === 'function' && value ){//支持自定义方法
+          const res = rules[i].func(value);
+          if(typeof res === 'object' && !res.result){//自定义方法，校验结果为返回的message
+             return res.message;
+          }
+          if(!res){
+              return rules[i].message?rules[i].message:"not in the correct format"
+          }
         }
       }   
     }  
