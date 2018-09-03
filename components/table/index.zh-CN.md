@@ -163,7 +163,7 @@ const data: IUser[] = [{
   key: 0,
   name: 'Jack',
 }];
-
+  
 class UserTable extends Table<IUser> {}
 <UserTable columns={columns} dataSource={data} />
 
