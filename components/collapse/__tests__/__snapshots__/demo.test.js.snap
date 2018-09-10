@@ -53,68 +53,106 @@ exports[`renders ./components/collapse/demo/accordion.md correctly 1`] = `
 `;
 
 exports[`renders ./components/collapse/demo/basic.md correctly 1`] = `
-<div
-  class="wmstool-collapse"
->
+<div>
   <div
-    class="wmstool-collapse-item wmstool-collapse-item-active"
-    role="tablist"
+    class="wmstool-collapse"
   >
     <div
-      aria-expanded="true"
-      class="wmstool-collapse-header"
-      role="tab"
-    >
-      <i
-        class="arrow"
-      />
-      This is panel header 1
-    </div>
-    <div
-      class="wmstool-collapse-content wmstool-collapse-content-active"
-      role="tabpanel"
+      class="wmstool-collapse-item wmstool-collapse-item-active"
+      role="tablist"
     >
       <div
-        class="wmstool-collapse-content-box"
+        aria-expanded="true"
+        class="wmstool-collapse-header"
+        role="tab"
       >
-        <p>
-          
+        <i
+          class="arrow"
+        />
+        This is panel header 1
+      </div>
+      <div
+        class="wmstool-collapse-content wmstool-collapse-content-active"
+        role="tabpanel"
+      >
+        <div
+          class="wmstool-collapse-content-box"
+        >
+          <p>
+            
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
 
-        </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wmstool-collapse-item"
+      role="tablist"
+    >
+      <div
+        aria-expanded="false"
+        class="wmstool-collapse-header"
+        role="tab"
+      >
+        <i
+          class="arrow"
+        />
+        This is panel header 2
+      </div>
+    </div>
+    <div
+      class="wmstool-collapse-item wmstool-collapse-item-disabled"
+      role="tablist"
+    >
+      <div
+        aria-expanded="false"
+        class="wmstool-collapse-header"
+        role="tab"
+      >
+        <i
+          class="arrow"
+        />
+        This is panel header 3
       </div>
     </div>
   </div>
+  <br />
   <div
-    class="wmstool-collapse-item"
-    role="tablist"
+    class="wmstool-collapse"
   >
     <div
-      aria-expanded="false"
-      class="wmstool-collapse-header"
-      role="tab"
+      class="wmstool-collapse-item wmstool-collapse-item-active"
+      role="tablist"
     >
-      <i
-        class="arrow"
-      />
-      This is panel header 2
-    </div>
-  </div>
-  <div
-    class="wmstool-collapse-item wmstool-collapse-item-disabled"
-    role="tablist"
-  >
-    <div
-      aria-expanded="false"
-      class="wmstool-collapse-header"
-      role="tab"
-    >
-      <i
-        class="arrow"
-      />
-      This is panel header 3
+      <div
+        aria-expanded="true"
+        class="wmstool-collapse-header"
+        role="tab"
+      >
+        <i
+          class="arrow"
+        />
+        This is panel header 1
+      </div>
+      <div
+        class="wmstool-collapse-content wmstool-collapse-content-active"
+        role="tabpanel"
+      >
+        <div
+          class="wmstool-collapse-content-box"
+        >
+          <p>
+            
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
