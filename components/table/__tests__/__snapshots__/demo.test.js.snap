@@ -200,7 +200,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Action 一 John Brown
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -208,7 +208,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -258,7 +258,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Action 一 Jim Green
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -266,7 +266,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -316,7 +316,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Action 一 Joe Black
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -324,7 +324,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -1761,7 +1761,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -1769,7 +1769,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -1843,7 +1843,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -1851,7 +1851,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -1925,7 +1925,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -1933,7 +1933,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2007,7 +2007,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2015,7 +2015,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2089,7 +2089,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2097,7 +2097,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2171,7 +2171,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2179,7 +2179,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2253,7 +2253,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2261,7 +2261,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2335,7 +2335,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2343,7 +2343,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2417,7 +2417,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2425,7 +2425,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2499,7 +2499,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2507,7 +2507,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="wmstool-divider wmstool-divider-vertical"
+                          class="ant-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -8435,7 +8435,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Action 一 
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -8443,7 +8443,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -8494,7 +8494,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Action 一 
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -8502,7 +8502,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -8553,7 +8553,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Action 一 
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -8561,7 +8561,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="wmstool-divider wmstool-divider-vertical"
+                        class="ant-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -10168,7 +10168,6 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                 <col />
                 <col />
                 <col />
-                <col />
               </colgroup>
               <thead
                 class="wmstool-table-thead"
@@ -10177,34 +10176,7 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   <th
                     class="wmstool-table-selection-column wmstool-table-selection-column-custom"
                   >
-                    <span>
-                      <div
-                        class="wmstool-table-selection"
-                      >
-                        <label
-                          class="wmstool-table-selection-select-all-custom wmstool-checkbox-wrapper"
-                        >
-                          <span
-                            class="wmstool-checkbox"
-                          >
-                            <input
-                              class="wmstool-checkbox-input"
-                              type="checkbox"
-                            />
-                            <span
-                              class="wmstool-checkbox-inner"
-                            />
-                          </span>
-                        </label>
-                        <div
-                          class="wmstool-table-selection-down wmstool-dropdown-trigger"
-                        >
-                          <i
-                            class="anticon anticon-down"
-                          />
-                        </div>
-                      </div>
-                    </span>
+                    <span />
                   </th>
                   <th
                     class=""
@@ -10220,13 +10192,6 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       Age
                     </span>
                   </th>
-                  <th
-                    class=""
-                  >
-                    <span>
-                      Address
-                    </span>
-                  </th>
                 </tr>
               </thead>
               <tbody
@@ -10240,17 +10205,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10263,17 +10228,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 0
+                    Edward King 20
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 0
                   </td>
                 </tr>
                 <tr
@@ -10284,17 +10244,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10307,17 +10267,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 1
+                    Edward King 21
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 1
                   </td>
                 </tr>
                 <tr
@@ -10328,17 +10283,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10351,17 +10306,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 2
+                    Edward King 22
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 2
                   </td>
                 </tr>
                 <tr
@@ -10372,17 +10322,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10395,17 +10345,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 3
+                    Edward King 23
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 3
                   </td>
                 </tr>
                 <tr
@@ -10416,17 +10361,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10439,17 +10384,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 4
+                    Edward King 24
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 4
                   </td>
                 </tr>
                 <tr
@@ -10460,17 +10400,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10483,17 +10423,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 5
+                    Edward King 25
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 5
                   </td>
                 </tr>
                 <tr
@@ -10504,17 +10439,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10527,17 +10462,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 6
+                    Edward King 26
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 6
                   </td>
                 </tr>
                 <tr
@@ -10548,17 +10478,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10571,17 +10501,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 7
+                    Edward King 27
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 7
                   </td>
                 </tr>
                 <tr
@@ -10592,17 +10517,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10615,17 +10540,12 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 8
+                    Edward King 28
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 8
                   </td>
                 </tr>
                 <tr
@@ -10636,17 +10556,17 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                   >
                     <span>
                       <label
-                        class="wmstool-checkbox-wrapper"
+                        class="wmstool-radio-wrapper"
                       >
                         <span
-                          class="wmstool-checkbox"
+                          class="wmstool-radio"
                         >
                           <input
-                            class="wmstool-checkbox-input"
-                            type="checkbox"
+                            class="wmstool-radio-input"
+                            type="radio"
                           />
                           <span
-                            class="wmstool-checkbox-inner"
+                            class="wmstool-radio-inner"
                           />
                         </span>
                       </label>
@@ -10659,21 +10579,99 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
                       class="wmstool-table-row-indent indent-level-0"
                       style="padding-left:0px"
                     />
-                    Edward King 9
+                    Edward King 29
                   </td>
                   <td
                     class=""
                   >
                     32
-                  </td>
-                  <td
-                    class=""
-                  >
-                    London, Park Lane no. 9
                   </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+      <div
+        class="wmstool-table-edit_div"
+      >
+        <div
+          class="wmstool-table-edit_b_div"
+        >
+          <button
+            class="wmstool-btn wmstool-table-edit_b"
+            type="button"
+          >
+            <i
+              class="anticon anticon-setting"
+            />
+          </button>
+        </div>
+        <div
+          class="wmstool-table-iss-card"
+          style="display:none"
+        >
+          <div>
+            <label
+              class="wmstool-checkbox-wrapper"
+            >
+              <span
+                class="wmstool-checkbox wmstool-checkbox-checked"
+              >
+                <input
+                  checked=""
+                  class="wmstool-checkbox-input"
+                  type="checkbox"
+                />
+                <span
+                  class="wmstool-checkbox-inner"
+                />
+              </span>
+              <span>
+                Name
+              </span>
+            </label>
+          </div>
+          <div>
+            <label
+              class="wmstool-checkbox-wrapper"
+            >
+              <span
+                class="wmstool-checkbox wmstool-checkbox-checked"
+              >
+                <input
+                  checked=""
+                  class="wmstool-checkbox-input"
+                  type="checkbox"
+                />
+                <span
+                  class="wmstool-checkbox-inner"
+                />
+              </span>
+              <span>
+                Age
+              </span>
+            </label>
+          </div>
+          <div>
+            <label
+              class="wmstool-checkbox-wrapper"
+            >
+              <span
+                class="wmstool-checkbox"
+              >
+                <input
+                  class="wmstool-checkbox-input"
+                  type="checkbox"
+                />
+                <span
+                  class="wmstool-checkbox-inner"
+                />
+              </span>
+              <span>
+                Address
+              </span>
+            </label>
           </div>
         </div>
       </div>
@@ -10682,8 +10680,8 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
         unselectable="unselectable"
       >
         <li
-          aria-disabled="true"
-          class="wmstool-pagination-disabled wmstool-pagination-prev"
+          aria-disabled="false"
+          class=" wmstool-pagination-prev"
           tabindex="0"
           title="Previous Page"
         >
@@ -10692,7 +10690,7 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
           />
         </li>
         <li
-          class="wmstool-pagination-item wmstool-pagination-item-1 wmstool-pagination-item-active"
+          class="wmstool-pagination-item wmstool-pagination-item-1"
           tabindex="0"
           title="1"
         >
@@ -10710,7 +10708,7 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
           </a>
         </li>
         <li
-          class="wmstool-pagination-item wmstool-pagination-item-3"
+          class="wmstool-pagination-item wmstool-pagination-item-3 wmstool-pagination-item-active"
           tabindex="0"
           title="3"
         >
@@ -10728,12 +10726,30 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
           </a>
         </li>
         <li
-          class="wmstool-pagination-item wmstool-pagination-item-5"
+          class="wmstool-pagination-item wmstool-pagination-item-5 wmstool-pagination-item-before-jump-next"
           tabindex="0"
           title="5"
         >
           <a>
             5
+          </a>
+        </li>
+        <li
+          class="wmstool-pagination-jump-next"
+          tabindex="0"
+          title="Next 5 Pages"
+        >
+          <a
+            class="wmstool-pagination-item-link"
+          />
+        </li>
+        <li
+          class="wmstool-pagination-item wmstool-pagination-item-50"
+          tabindex="0"
+          title="50"
+        >
+          <a>
+            50
           </a>
         </li>
         <li
@@ -10745,6 +10761,42 @@ exports[`renders ./components/table/demo/row-selection-custom.md correctly 1`] =
           <a
             class="wmstool-pagination-item-link"
           />
+        </li>
+        <li
+          class="wmstool-pagination-options"
+        >
+          <div
+            class="wmstool-pagination-options-size-changer wmstool-select wmstool-select-enabled"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="wmstool-select-selection
+            wmstool-select-selection--single"
+              role="combobox"
+              tabindex="0"
+            >
+              <div
+                class="wmstool-select-selection__rendered"
+              >
+                <div
+                  class="wmstool-select-selection-selected-value"
+                  style="display:block;opacity:1"
+                  title="10 / page"
+                >
+                  10 / page
+                </div>
+              </div>
+              <span
+                class="wmstool-select-arrow"
+                style="user-select:none;-webkit-user-select:none"
+                unselectable="unselectable"
+              >
+                <b />
+              </span>
+            </div>
+          </div>
         </li>
       </ul>
     </div>

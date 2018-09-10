@@ -3,6 +3,7 @@
   "version": "1.4.10",
   "description": "一套前端组件库基于atd 3.0.3、react",
   "scripts": {
+    "test": "jest --config  .jest.js",
     "dist": "antd-tools run dist",
     "compile": "antd-tools run compile",
     "site": "cross-env NODE_ENV=production bisheng build --ssr -c ./site/bisheng.config.js && node ./scripts/generateColorLess.js",
