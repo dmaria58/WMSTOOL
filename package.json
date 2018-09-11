@@ -14,8 +14,8 @@
     "url": "git+https://github.com/dmaria58/WMSTOOL.git"
   },
   "keywords": [
-    "react",    
-    "component"   
+    "react",
+    "component"
   ],
   "author": "maria",
   "license": "MIT",
@@ -27,6 +27,7 @@
     "css-animation": "^1.2.5",
     "dom-closest": "^0.2.0",
     "enquire.js": "^2.1.1",
+    "immutability-helper": "^2.5.0",
     "lodash.debounce": "^4.0.8",
     "moment": "^2.19.3",
     "omit.js": "^1.0.0",
@@ -61,7 +62,6 @@
     "react-dnd": "^2.5.4",
     "react-dnd-html5-backend": "^2.5.4",
     "react-lazy-load": "^3.0.12",
-    "immutability-helper": "^2.5.0",
     "react-slick": "~0.16.0",
     "shallowequal": "^1.0.1",
     "warning": "~3.0.0"
@@ -118,7 +118,6 @@
     "majo": "^0.4.1",
     "mockdate": "^2.0.1",
     "moment-timezone": "^0.5.5",
-    "pre-commit": "^1.2.2",
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",
     "querystring": "^0.2.0",

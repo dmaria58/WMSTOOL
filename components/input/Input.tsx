@@ -5,6 +5,7 @@ import omit from 'omit.js';
 import Group from './Group';
 import Search from './Search';
 import TextArea from './TextArea';
+import Icon from "../icon";
 
 function fixControlledValue(value: undefined | null | string) {
   if (typeof value === 'undefined' || value === null) {
@@ -43,6 +44,7 @@ export interface InputProps extends AbstractInputProps {
   suffix?: React.ReactNode;
   spellCheck?: boolean;
   autoFocus?: boolean;
+  allowClear?: boolean;
 }
 
 export default class Input extends React.Component<InputProps, any> {
@@ -98,6 +100,13 @@ export default class Input extends React.Component<InputProps, any> {
 
   blur() {
     this.input.blur();
+  }
+
+  emitEmpty = () => {
+    this.input.value = "";
+    this.input.focus();
+    //临时伪造事件对象触发onChange方法 eslint 参数类型校验未通过
+    typeof this.props.onChange === 'function' && this.props.onChange({target:{value:""},nativeEvent:{inputType:"delete"}});
   }
 
   getInputClassName() {
@@ -170,7 +179,7 @@ export default class Input extends React.Component<InputProps, any> {
 
   renderLabeledIcon(children: React.ReactElement<any>) {
     const { props } = this;
-    if (!('prefix' in props || 'suffix' in props)) {
+    if (!('prefix' in props || 'suffix' in props || props.allowClear)) {
       return children;
     }
 
@@ -179,9 +188,17 @@ export default class Input extends React.Component<InputProps, any> {
         {props.prefix}
       </span>
     ) : null;
-
-    const suffix = props.suffix ? (
+    let clearSuffix = null;
+    if(props.allowClear){
+      if( "value" in props && ( !props.value || props.value === 0)){
+          //如果为受控组件，那么会更新组件,如果有值才会显示打叉
+      }else{//如果非受控组件，默认显示打叉
+          clearSuffix = <Icon type="close-circle" onClick={this.emitEmpty} />
+      }
+    }
+    const suffix = props.suffix || clearSuffix ? (
       <span className={`${props.prefixCls}-suffix`}>
+        {clearSuffix}
         {props.suffix}
       </span>
     ) : null;
