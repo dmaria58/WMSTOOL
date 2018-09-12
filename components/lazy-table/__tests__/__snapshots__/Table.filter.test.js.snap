@@ -1,0 +1,320 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table.filter renders custom content correctly 1`] = `
+<div>
+  <div
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
+  >
+    <div>
+      <div
+        class="custom-filter-dropdown"
+      >
+        custom filter
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table.filter renders filter correctly 1`] = `
+<div
+  class="wmstool-table-wrapper"
+>
+  <div
+    class="wmstool-spin-nested-loading"
+  >
+    <div
+      class="wmstool-spin-container"
+    >
+      <div
+        class="wmstool-table wmstool-table-large wmstool-table-scroll-position-left"
+      >
+        <div
+          class="wmstool-table-content"
+        >
+          <div
+            class="wmstool-table-body"
+          >
+            <table
+              class=""
+            >
+              <colgroup>
+                <col />
+              </colgroup>
+              <thead
+                class="wmstool-table-thead"
+              >
+                <tr>
+                  <th
+                    class=""
+                  >
+                    <span>
+                      Name
+                      <i
+                        class="anticon anticon-filter wmstool-dropdown-trigger"
+                        title="Filter menu"
+                      />
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="wmstool-table-tbody"
+              >
+                <tr
+                  class="wmstool-table-row  wmstool-table-row-level-0"
+                >
+                  <td
+                    class=""
+                  >
+                    <span
+                      class="wmstool-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Jack
+                  </td>
+                </tr>
+                <tr
+                  class="wmstool-table-row  wmstool-table-row-level-0"
+                >
+                  <td
+                    class=""
+                  >
+                    <span
+                      class="wmstool-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Lucy
+                  </td>
+                </tr>
+                <tr
+                  class="wmstool-table-row  wmstool-table-row-level-0"
+                >
+                  <td
+                    class=""
+                  >
+                    <span
+                      class="wmstool-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Tom
+                  </td>
+                </tr>
+                <tr
+                  class="wmstool-table-row  wmstool-table-row-level-0"
+                >
+                  <td
+                    class=""
+                  >
+                    <span
+                      class="wmstool-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Jerry
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table.filter renders menu correctly 1`] = `
+<div>
+  <div
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
+  >
+    <div
+      class="wmstool-table-filter-dropdown"
+    >
+      <ul
+        aria-activedescendant=""
+        class="wmstool-dropdown-menu  wmstool-dropdown-menu-root wmstool-dropdown-menu-vertical"
+        role="menu"
+        tabindex="0"
+      >
+        <li
+          aria-selected="false"
+          class="wmstool-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="wmstool-checkbox-wrapper"
+          >
+            <span
+              class="wmstool-checkbox"
+            >
+              <input
+                class="wmstool-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="wmstool-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Boy
+          </span>
+        </li>
+        <li
+          aria-selected="false"
+          class="wmstool-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="wmstool-checkbox-wrapper"
+          >
+            <span
+              class="wmstool-checkbox"
+            >
+              <input
+                class="wmstool-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="wmstool-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Girl
+          </span>
+        </li>
+        <li
+          class="wmstool-dropdown-menu-submenu wmstool-dropdown-menu-submenu-vertical"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-owns="title$Menu"
+            class="wmstool-dropdown-menu-submenu-title"
+            title="Title"
+          >
+            Title
+            <i
+              class="wmstool-dropdown-menu-submenu-arrow"
+            />
+          </div>
+        </li>
+      </ul>
+      <div
+        class="wmstool-table-filter-dropdown-btns"
+      >
+        <a
+          class="wmstool-table-filter-dropdown-link confirm"
+        >
+          OK
+        </a>
+        <a
+          class="wmstool-table-filter-dropdown-link clear"
+        >
+          Reset
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table.filter renders radio filter correctly 1`] = `
+<div>
+  <div
+    class="wmstool-dropdown  wmstool-dropdown-placement-bottomLeft  wmstool-dropdown-hidden"
+  >
+    <div
+      class="wmstool-table-filter-dropdown"
+    >
+      <ul
+        aria-activedescendant=""
+        class="wmstool-dropdown-menu  wmstool-dropdown-menu-root wmstool-dropdown-menu-vertical"
+        role="menu"
+        tabindex="0"
+      >
+        <li
+          aria-selected="false"
+          class="wmstool-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="wmstool-radio-wrapper"
+          >
+            <span
+              class="wmstool-radio"
+            >
+              <input
+                class="wmstool-radio-input"
+                type="radio"
+              />
+              <span
+                class="wmstool-radio-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Boy
+          </span>
+        </li>
+        <li
+          aria-selected="false"
+          class="wmstool-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="wmstool-radio-wrapper"
+          >
+            <span
+              class="wmstool-radio"
+            >
+              <input
+                class="wmstool-radio-input"
+                type="radio"
+              />
+              <span
+                class="wmstool-radio-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Girl
+          </span>
+        </li>
+        <li
+          class="wmstool-dropdown-menu-submenu wmstool-dropdown-menu-submenu-vertical"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-owns="title$Menu"
+            class="wmstool-dropdown-menu-submenu-title"
+            title="Title"
+          >
+            Title
+            <i
+              class="wmstool-dropdown-menu-submenu-arrow"
+            />
+          </div>
+        </li>
+      </ul>
+      <div
+        class="wmstool-table-filter-dropdown-btns"
+      >
+        <a
+          class="wmstool-table-filter-dropdown-link confirm"
+        >
+          OK
+        </a>
+        <a
+          class="wmstool-table-filter-dropdown-link clear"
+        >
+          Reset
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
