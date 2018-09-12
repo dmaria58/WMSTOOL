@@ -20,6 +20,7 @@ function getColumns({ showHour, showMinute, showSecond, use12Hours }) {
     return column;
 }
 export default function wrapPicker(Picker, defaultFormat) {
+    var _a;
     return _a = class PickerWrapper extends React.Component {
             constructor() {
                 super(...arguments);
@@ -101,5 +102,4 @@ export default function wrapPicker(Picker, defaultFormat) {
             inputPrefixCls: 'wmstool-input',
         },
         _a;
-    var _a;
 }

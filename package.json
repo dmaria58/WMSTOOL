@@ -3,6 +3,7 @@
   "version": "1.4.10",
   "description": "一套前端组件库基于atd 3.0.3、react",
   "scripts": {
+    "newtest": "jest -u  .jest.js",
     "test": "jest --config  .jest.js",
     "dist": "antd-tools run dist",
     "compile": "antd-tools run compile",

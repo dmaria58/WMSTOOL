@@ -3,6 +3,7 @@
 exports[`Table renders JSX correctly 1`] = `
 <div
   class="wmstool-table-wrapper"
+  id=""
 >
   <div
     class="wmstool-spin-nested-loading"

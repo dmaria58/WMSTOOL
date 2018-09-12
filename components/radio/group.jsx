@@ -84,12 +84,12 @@ export default class RadioGroup extends React.Component {
         // 如果存在 options, 优先使用
         if (options && options.length > 0) {
             children = options.map((option, index) => {
-                if (typeof option === 'string') {
+                if (typeof option === 'string') { // 此处类型自动推导为 string
                     return (<Radio key={index} disabled={this.props.disabled} value={option} onChange={this.onRadioChange} checked={this.state.value === option}>
               {option}
             </Radio>);
                 }
-                else {
+                else { // 此处类型自动推导为 { label: string value: string }
                     return (<Radio key={index} disabled={option.disabled || this.props.disabled} value={option.value} onChange={this.onRadioChange} checked={this.state.value === option.value}>
               {option.label}
             </Radio>);
