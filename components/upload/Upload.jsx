@@ -30,7 +30,7 @@ export default class Upload extends React.Component {
                     response = JSON.parse(response);
                 }
             }
-            catch (e) {
+            catch (e) { /* do nothing */
             }
             let fileList = this.state.fileList;
             let targetItem = getFileItem(file, fileList);

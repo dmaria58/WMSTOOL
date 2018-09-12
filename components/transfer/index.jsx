@@ -103,8 +103,13 @@ export default class Transfer extends React.Component {
         };
         this.handleLeftScroll = (e) => this.handleScroll('left', e);
         this.handleRightScroll = (e) => this.handleScroll('right', e);
+        this.getColumns = () => {
+            if (this.props.culomsList) {
+                return this.props.culomsList;
+            }
+        };
         this.renderTransfer = (locale) => {
-            const { prefixCls = 'wmstool-transfer', className, operations = [], showSearch, notFoundContent, searchPlaceholder, body, footer, listStyle, filterOption, render, lazy, } = this.props;
+            const { prefixCls = 'wmstool-transfer', className, operations = [], showSearch, notFoundContent, searchPlaceholder, body, footer, listStyle, filterOption, render, culomsList, lazy, } = this.props;
             const { leftFilter, rightFilter, sourceSelectedKeys, targetSelectedKeys } = this.state;
             const { leftDataSource, rightDataSource } = this.splitDataSource(this.props);
             const leftActive = targetSelectedKeys.length > 0;
@@ -112,9 +117,9 @@ export default class Transfer extends React.Component {
             const cls = classNames(className, prefixCls);
             const titles = this.getTitles(locale);
             return (<div className={cls}>
-        <List prefixCls={`${prefixCls}-list`} titleText={titles[0]} dataSource={leftDataSource} filter={leftFilter} filterOption={filterOption} style={listStyle} checkedKeys={sourceSelectedKeys} handleFilter={this.handleLeftFilter} handleClear={this.handleLeftClear} handleSelect={this.handleLeftSelect} handleSelectAll={this.handleLeftSelectAll} render={render} showSearch={showSearch} searchPlaceholder={searchPlaceholder || locale.searchPlaceholder} notFoundContent={notFoundContent || locale.notFoundContent} itemUnit={locale.itemUnit} itemsUnit={locale.itemsUnit} body={body} footer={footer} lazy={lazy} onScroll={this.handleLeftScroll}/>
+        <List prefixCls={`${prefixCls}-list`} titleText={titles[0]} dataSource={leftDataSource} filter={leftFilter} filterOption={filterOption} style={listStyle} checkedKeys={sourceSelectedKeys} handleFilter={this.handleLeftFilter} handleClear={this.handleLeftClear} handleSelect={this.handleLeftSelect} handleSelectAll={this.handleLeftSelectAll} render={render} showSearch={showSearch} searchPlaceholder={searchPlaceholder || locale.searchPlaceholder} notFoundContent={notFoundContent || locale.notFoundContent} itemUnit={locale.itemUnit} itemsUnit={locale.itemsUnit} body={body} footer={footer} columsheader={culomsList} lazy={lazy} onScroll={this.handleLeftScroll}/>
         <Operation className={`${prefixCls}-operation`} rightActive={rightActive} rightArrowText={operations[0]} moveToRight={this.moveToRight} leftActive={leftActive} leftArrowText={operations[1]} moveToLeft={this.moveToLeft}/>
-        <List prefixCls={`${prefixCls}-list`} titleText={titles[1]} dataSource={rightDataSource} filter={rightFilter} filterOption={filterOption} style={listStyle} checkedKeys={targetSelectedKeys} handleFilter={this.handleRightFilter} handleClear={this.handleRightClear} handleSelect={this.handleRightSelect} handleSelectAll={this.handleRightSelectAll} render={render} showSearch={showSearch} searchPlaceholder={searchPlaceholder || locale.searchPlaceholder} notFoundContent={notFoundContent || locale.notFoundContent} itemUnit={locale.itemUnit} itemsUnit={locale.itemsUnit} body={body} footer={footer} lazy={lazy} onScroll={this.handleRightScroll}/>
+        <List prefixCls={`${prefixCls}-list`} titleText={titles[1]} dataSource={rightDataSource} filter={rightFilter} filterOption={filterOption} style={listStyle} checkedKeys={targetSelectedKeys} handleFilter={this.handleRightFilter} handleClear={this.handleRightClear} handleSelect={this.handleRightSelect} handleSelectAll={this.handleRightSelectAll} render={render} showSearch={showSearch} searchPlaceholder={searchPlaceholder || locale.searchPlaceholder} notFoundContent={notFoundContent || locale.notFoundContent} itemUnit={locale.itemUnit} itemsUnit={locale.itemsUnit} body={body} footer={footer} columsheader={culomsList} lazy={lazy} onScroll={this.handleRightScroll}/>
       </div>);
         };
         const { selectedKeys = [], targetKeys = [] } = props;

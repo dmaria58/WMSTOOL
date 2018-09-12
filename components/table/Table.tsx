@@ -93,6 +93,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     [key: string]: any;
   };
   store: Store;
+  renderData:any;
   columns: ColumnProps<T>[];
   components: TableComponents;
   constructor(props: TableProps<T>) {
@@ -107,6 +108,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     this.columns = props.columns || normalizeColumns(props.children as React.ReactChildren);
     this.createComponents(props.components);
     let hjj=this.props.ColumnsChangeList || this.columns;
+    //先取100行
+    let hdata = this.props.dataSource && this.props.dataSource[0] && this.props.dataSource.slice(0, 100)? this.props.dataSource.slice(0, 100): []
     this.state = {
       ...this.getDefaultSortOrder(this.columns),
       // 减少状态
@@ -114,6 +117,9 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       pagination: this.getDefaultPagination(props),
       abcard:'none',
       statecolumn:hjj,
+      tdata:hdata,
+      //原始数据状态
+      sdata:[],
 
     };
     props.returnSelectColumn?props.returnSelectColumn(hjj):"";
@@ -123,8 +129,13 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       selectedRowKeys: (props.rowSelection || {}).selectedRowKeys || [],
       selectionDirty: false,
     });
-  }
 
+    this.renderData = "";
+    
+  }
+  componentDidMount (){
+    this.onScollList();
+  }
   getCheckboxPropsByItem = (item: T, index: number) => {
     const { rowSelection = {} } = this.props;
     if (!rowSelection.getCheckboxProps) {
@@ -190,9 +201,9 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       this.store.setState({
         selectionDirty: false,
       });
+      this.getScollData(nextProps.dataSource);
       this.CheckboxPropsCache = {};
     }
-
     if (this.getSortOrderColumns(this.columns).length > 0) {
       const sortState = this.getSortStateFromColumns(this.columns);
       if (sortState.sortColumn !== this.state.sortColumn ||
@@ -869,7 +880,48 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     }
     return data;
   }
+  onScollList() {
+    //此模式只支持单页请求一次数据
+    if(!this.props.isMaxData){
+      return;
+    }
+    const tableMaxid = this.props.isMaxData && this.props.isMaxData.id ?this.props.isMaxData.id:"";
+    const wtable = document.querySelector("#testscroll .wmstool-table-body");
+    if(wtable)
+    wtable.addEventListener("scroll",()=>{
+      //变量t就是滚动区域div
+      let t =document.querySelector('#'+tableMaxid+' .wmstool-table-body')?document.querySelector("#testscroll .wmstool-table-body"):null;
+      //到顶部距离
+      let st = t && t.scrollTop?t.scrollTop:0 as number;
+      //let sf = f && f.scrollHeight?f.scrollHeight:"";
+      //13800
+      let at = t && t.scrollHeight?t.scrollHeight:0 as number;
+      //283
+      let sct = t && t.clientHeight?t.clientHeight:0 as number;
 
+      let lscoll = at-st-sct as number;
+      
+      const {tdata} = this.state;
+      const data = this.getCurrentPageData();
+      //console.log("toubu"+st,"allh"+at,"neir"+sct,lscoll,tdata.length < data.length)
+      if(lscoll && lscoll <= 100 && tdata.length < data.length){
+        let innum = tdata.length+100 as number;
+        let scoldata = data[0] && data.slice(0,innum)?data.slice(0,innum):[];
+        this.setState({tdata:scoldata});
+      }
+    });
+  }
+  getScollData(dataSource:any) {
+    //需要渲染的data
+    if(!this.props.isMaxData){
+      //this.setState({tdata:data});
+      return;
+    }
+    //先取100行
+    let hdata = dataSource && dataSource[0] && dataSource.slice(0, 100)? dataSource.slice(0, 100): [];
+    this.setState({tdata:hdata}); 
+
+  }
   getFlatData() {
     return flatArray(this.getLocalData());
   }
@@ -941,8 +993,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
-    const { style, className, prefixCls, showHeader, ...restProps } = this.props;
+    const { style, className, prefixCls, showHeader,isMaxData, ...restProps } = this.props;
+    const {tdata} = this.state;
     const data = this.getCurrentPageData();
+    const ldata = !isMaxData?data:tdata;
     const expandIconAsCell = this.props.expandedRowRender && this.props.expandIconAsCell !== false;
 
     const classString = classNames({
@@ -970,7 +1024,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         onRow={this.onRow}
         components={this.components}
         prefixCls={prefixCls}
-        data={data}
+        data={ldata}
         columns={columns}
         showHeader={showHeader}
         className={classString}
@@ -1051,7 +1105,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   render() {
     const { style, className, prefixCls } = this.props;
     const data = this.getCurrentPageData();
-
     const table = (
       <LocaleReceiver
         componentName="Table"
@@ -1072,9 +1125,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         spinning: loading,
       };
     }
-
+    const tableMaxid = this.props.isMaxData && this.props.isMaxData.id ?this.props.isMaxData.id:"";
     return (
       <div
+        id={tableMaxid}
         className={classNames(`${prefixCls}-wrapper`, className)}
         style={style}
       >

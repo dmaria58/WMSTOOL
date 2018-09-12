@@ -147,6 +147,50 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
 </div>
 `;
 
+exports[`renders ./components/input/demo/allowClear.md correctly 1`] = `
+<div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <input
+      class="wmstool-input"
+      type="text"
+      value="非受控组件"
+    />
+  </div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <input
+      class="wmstool-input"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <span
+      class="wmstool-input-affix-wrapper"
+    >
+      <input
+        class="wmstool-input"
+        type="text"
+        value=""
+      />
+      <span
+        class="wmstool-input-suffix"
+      >
+        <i
+          class="anticon anticon-user"
+          style="color:rgba(0,0,0,.25)"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`renders ./components/input/demo/autosize-textarea.md correctly 1`] = `
 <div>
   <textarea

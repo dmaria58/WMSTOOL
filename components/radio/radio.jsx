@@ -18,17 +18,10 @@ export default class Radio extends React.Component {
         this.saveCheckbox = (node) => {
             this.rcCheckbox = node;
         };
-        this.clickno = () => {
-            console.log(this.state);
-            console.log(this.props);
-            console.log(this.context);
-            if (this.context.radioGroup && this.props.value == this.context.radioGroup.value) {
-                this.context.radioGroup.value = null;
-                this.setState({ selectvalue: "" });
-            }
-        };
+        let kyvalue;
+        kyvalue = props.value;
         this.state = {
-            selectvalue: "",
+            value: kyvalue
         };
     }
     shouldComponentUpdate(nextProps, nextState, nextContext) {
@@ -42,15 +35,28 @@ export default class Radio extends React.Component {
     blur() {
         this.rcCheckbox.blur();
     }
+    /*clickno=()=>{
+      if(this.context.radioGroup&&this.props.value==this.context.radioGroup.value&&this.state.value!=""){
+        this.setState({value:""},()=>{
+         if(this.props.onChange){
+          this.props.onChange(this.state.value);
+          }
+  
+        });
+      }
+      else{
+        this.setState({value:this.props.value})
+      }
+    }*/
     render() {
-        const { props, context, state } = this;
+        const { props, context } = this;
         const { prefixCls, className, children, style } = props, restProps = __rest(props, ["prefixCls", "className", "children", "style"]);
         const { radioGroup } = context;
         let radioProps = Object.assign({}, restProps);
         if (radioGroup) {
             radioProps.name = radioGroup.name;
             radioProps.onChange = radioGroup.onChange;
-            radioProps.checked = props.value === radioGroup.value;
+            radioProps.checked = this.state.value == "" ? false : this.state.value === radioGroup.value;
             radioProps.disabled = props.disabled || radioGroup.disabled;
         }
         const wrapperClassString = classNames(className, {
@@ -58,9 +64,7 @@ export default class Radio extends React.Component {
             [`${prefixCls}-wrapper-checked`]: radioProps.checked,
             [`${prefixCls}-wrapper-disabled`]: radioProps.disabled,
         });
-        radioGroup.checked = state.selectvalue === ;
-        console.log(radioProps.checked);
-        return (<label className={wrapperClassString} style={style} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={this.clickno}>
+        return (<label className={wrapperClassString} style={style} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
         <RcCheckbox {...radioProps} prefixCls={prefixCls} ref={this.saveCheckbox}/>
         {children !== undefined ? <span>{children}</span> : null}
       </label>);

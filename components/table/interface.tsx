@@ -109,6 +109,7 @@ export interface TableProps<T> {
   style?: React.CSSProperties;
   children?: React.ReactNode;
   isColumnsChange?: boolean;
+  isMaxData?:any;
   ColumnsChangeList?: ColumnProps<T>[];
   returnSelectColumn?:(clumons: any)=> any;
 }
@@ -124,6 +125,8 @@ export interface TableState<T> {
   sortOrder: string;
   abcard: string;
   statecolumn?: any;
+  tdata?:any;
+  sdata?:any;
 }
 
 export type SelectionItemSelectFn = (key: string[]) => any;
