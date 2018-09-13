@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "1.4.10",
+  "version": "1.4.11",
   "description": "一套前端组件库基于atd 3.0.3、react",
   "scripts": {
     "testsingle": "jest --config  .jest.js",
@@ -157,6 +157,7 @@
   "homepage": "https://github.com/dmaria58/WMSTOOL#readme",
   "directories": {
     "doc": "docs",
-    "lib": "lib"
+    "lib": "lib",
+    "test": "tests"
   }
 }
