@@ -53,7 +53,6 @@ describe('Table.rowSelection', () => {
       selectionDirty: true,
     });
   });
-
   it('select by radio', () => {
     const wrapper = mount(createTable({ rowSelection: { type: 'radio' } }));
     const radios = wrapper.find('input');
@@ -65,14 +64,17 @@ describe('Table.rowSelection', () => {
       selectedRowKeys: [0],
       selectionDirty: true,
     });
-
+    radios.first().simulate('change', { target: { checked: true } });
+    expect(wrapper.instance().store.getState()).toEqual({
+      selectedRowKeys: [],
+      selectionDirty: false,
+    });    
     radios.last().simulate('change', { target: { checked: true } });
     expect(wrapper.instance().store.getState()).toEqual({
       selectedRowKeys: [3],
       selectionDirty: true,
     });
   });
-
   it('pass getCheckboxProps to checkbox', () => {
     const rowSelection = {
       getCheckboxProps: record => ({

@@ -26,15 +26,83 @@ const columns = [{
 }, {
   title: 'Address',
   dataIndex: 'address',
+}, {
+  title: 'code1',
+  dataIndex: 'code1',
+}, {
+  title: 'code2',
+  dataIndex: 'code2',
+}, {
+  title: 'code3',
+  dataIndex: 'code3',
+}, {
+  title: 'code4',
+  dataIndex: 'code4',
+}, {
+  title: 'code5',
+  dataIndex: 'code5',
+}, {
+  title: 'code6',
+  dataIndex: 'code7',
+}, {
+  title: 'code8',
+  dataIndex: 'code8',
+}, {
+  title: 'code9',
+  dataIndex: 'code9',
+}, {
+  title: 'code10',
+  dataIndex: 'code10',
+}, {
+  title: 'code11',
+  dataIndex: 'code11',
+}, {
+  title: 'code12',
+  dataIndex: 'code12',
+}, {
+  title: 'code12',
+  dataIndex: 'code12',
+}, {
+  title: 'code13',
+  dataIndex: 'code13',
+}, {
+  title: 'code14',
+  dataIndex: 'code14',
+}, {
+  title: 'code15',
+  dataIndex: 'code15',
+}, {
+  title: 'code16',
+  dataIndex: 'code16',
 }];
 
 const data = [];
-for (let i = 0; i < 46; i++) {
+for (let i = 0; i < 1000; i++) {
   data.push({
     key: i,
     name: `Edward King ${i}`,
     age: 32,
     address: `London, Park Lane no. ${i}`,
+    code1:`London, Park Lane no. ${i}`,
+    code2:`London, Park Lane no. ${i}`,
+    code3:`London, Park Lane no. ${i}`,
+    code4:`London, Park Lane no. ${i}`,
+    code5:`London, Park Lane no. ${i}`,
+    code6:`London, Park Lane no. ${i}`,
+    code7:`London, Park Lane no. ${i}`,
+    code8:`London, Park Lane no. ${i}`,
+    code9:`London, Park Lane no. ${i}`,
+    code10:`London, Park Lane no. ${i}`,
+    code11:`London, Park Lane no. ${i}`,
+    code12:`London, Park Lane no. ${i}`,
+    code13:`London, Park Lane no. ${i}`,
+    code14:`London, Park Lane no. ${i}`,
+    code15:`London, Park Lane no. ${i}`,
+    code16:`London, Park Lane no. ${i}`,
+    code17:`London, Park Lane no. ${i}`,
+    code18:`London, Park Lane no. ${i}`,
+    code19:`London, Park Lane no. ${i}`,
+
   });
 }
 
@@ -84,7 +152,7 @@ class App extends React.Component {
             {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
           </span>
         </div>
-        <Table rowSelection={rowSelection} onRowClick={this.onRowClick}  columns={columns} dataSource={data} />
+        <Table rowSelection={rowSelection} pagination={{ pageSize: 500 }} onRowClick={this.onRowClick}  scroll={{ x: 1500, y: 300 }} columns={columns} dataSource={data} isMaxData={{lazyHeight:32}}/>
       </div>
     );
   }

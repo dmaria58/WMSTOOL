@@ -230,6 +230,21 @@ exports[`renders ./components/transfer/demo/basic.md correctly 1`] = `
       </span>
     </div>
     <div
+      class="wmstool-transfer-list-colums"
+    >
+      <div>
+        <span>
+          1
+        </span>
+        <span>
+          2
+        </span>
+        <span>
+          3
+        </span>
+      </div>
+    </div>
+    <div
       class="wmstool-transfer-list-body"
     >
       <ul
@@ -354,6 +369,21 @@ exports[`renders ./components/transfer/demo/basic.md correctly 1`] = `
           Target
         </span>
       </span>
+    </div>
+    <div
+      class="wmstool-transfer-list-colums"
+    >
+      <div>
+        <span>
+          1
+        </span>
+        <span>
+          2
+        </span>
+        <span>
+          3
+        </span>
+      </div>
     </div>
     <div
       class="wmstool-transfer-list-body"

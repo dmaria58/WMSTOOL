@@ -83,10 +83,11 @@ export default class TransferList extends React.Component {
         return 'part';
     }
     render() {
-        const { prefixCls, dataSource, titleText, checkedKeys, lazy, body = noop, footer = noop, showSearch, style, filter, searchPlaceholder, notFoundContent, itemUnit, itemsUnit, onScroll, } = this.props;
+        const { prefixCls, dataSource, titleText, checkedKeys, lazy, body = noop, footer = noop, showSearch, style, filter, searchPlaceholder, notFoundContent, itemUnit, itemsUnit, onScroll, columsheader = noop } = this.props;
         // Custom Layout
         const footerDom = footer(Object.assign({}, this.props));
         const bodyDom = body(Object.assign({}, this.props));
+        const columsheaderDom = columsheader(Object.assign({}, this.props));
         const listCls = classNames(prefixCls, {
             [`${prefixCls}-with-footer`]: !!footerDom,
         });
@@ -122,6 +123,9 @@ export default class TransferList extends React.Component {
         const listFooter = footerDom ? (<div className={`${prefixCls}-footer`}>
         {footerDom}
       </div>) : null;
+        const columsheaders = columsheaderDom ? (<div className={`${prefixCls}-colums`}>
+        {columsheaderDom}
+      </div>) : null;
         const checkStatus = this.getCheckStatus(filteredDataSource);
         const checkedAll = checkStatus === 'all';
         const checkAllCheckbox = (<Checkbox ref="checkbox" checked={checkedAll} indeterminate={checkStatus === 'part'} onChange={() => this.props.handleSelectAll(filteredDataSource, checkedAll)}/>);
@@ -137,6 +141,7 @@ export default class TransferList extends React.Component {
             </span>
           </span>
         </div>
+        {columsheaders}
         {listBody}
         {listFooter}
       </div>);
