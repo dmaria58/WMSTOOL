@@ -125,8 +125,7 @@ export interface TableState<T> {
   sortOrder: string;
   abcard: string;
   statecolumn?: any;
-  tdata?:any;
-  sdata?:any;
+  tableId?:string;
 }
 
 export type SelectionItemSelectFn = (key: string[]) => any;
