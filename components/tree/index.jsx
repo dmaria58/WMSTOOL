@@ -6,7 +6,8 @@ export default class Tree extends React.Component {
         const props = this.props;
         const { prefixCls, className } = props;
         let checkable = props.checkable;
-        return (<RcTree {...props} className={className} checkable={checkable ? <span className={`${prefixCls}-checkbox-inner`}/> : checkable}>
+        let myclassname = props.isnohalfChecked == true ? `${prefixCls}-checkbox-uninner` : `${prefixCls}-checkbox-inner`;
+        return (<RcTree {...props} className={className} checkable={checkable ? <span className={`${myclassname}`}/> : checkable}>
         {this.props.children}
       </RcTree>);
     }
@@ -17,4 +18,5 @@ Tree.defaultProps = {
     checkable: false,
     showIcon: false,
     openAnimation: animation,
+    isnohalfChecked: false,
 };

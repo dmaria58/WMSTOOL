@@ -19,6 +19,7 @@ import Column from './Column';
 import ColumnGroup from './ColumnGroup';
 import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
+import LazyLoad , { forceCheck } from 'react-lazyload';
 import {
   TableProps,
   TableState,
@@ -52,6 +53,22 @@ const defaultPagination = {
  */
 const emptyObject = {};
 
+// Lazy Table
+const Tr = (props: any)=>{
+  return props
+}
+
+const TableWrap = (lazyHeight: number, props: any)=>{
+  return (
+    <tbody {...props}>
+      {
+        props.children.map(
+          (child: any, index: number) => <LazyLoad key={index} height={lazyHeight} scroll={false}><Tr {...child}/></LazyLoad>
+        )
+      }
+    </tbody>
+  )
+}
 export default class Table<T> extends React.Component<TableProps<T>, TableState<T>> {
   static Column = Column;
   static ColumnGroup = ColumnGroup;
@@ -93,6 +110,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     [key: string]: any;
   };
   store: Store;
+  renderData:any;
   columns: ColumnProps<T>[];
   components: TableComponents;
   constructor(props: TableProps<T>) {
@@ -107,6 +125,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     this.columns = props.columns || normalizeColumns(props.children as React.ReactChildren);
     this.createComponents(props.components);
     let hjj=this.props.ColumnsChangeList || this.columns;
+    //先取100行
     this.state = {
       ...this.getDefaultSortOrder(this.columns),
       // 减少状态
@@ -114,6 +133,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       pagination: this.getDefaultPagination(props),
       abcard:'none',
       statecolumn:hjj,
+      tableId: "lazy-table-"+(Math.random().toString().slice(2)),
 
     };
     props.returnSelectColumn?props.returnSelectColumn(hjj):"";
@@ -123,8 +143,19 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       selectedRowKeys: (props.rowSelection || {}).selectedRowKeys || [],
       selectionDirty: false,
     });
-  }
 
+    this.renderData = "";
+    
+  }
+  componentDidMount (){
+    //监听table滚动
+    if(this.props.isMaxData ){
+      let table = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body`);
+      if(table){
+        table.addEventListener("scroll", forceCheck);
+      }
+    }
+  }
   getCheckboxPropsByItem = (item: T, index: number) => {
     const { rowSelection = {} } = this.props;
     if (!rowSelection.getCheckboxProps) {
@@ -192,7 +223,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       });
       this.CheckboxPropsCache = {};
     }
-
     if (this.getSortOrderColumns(this.columns).length > 0) {
       const sortState = this.getSortStateFromColumns(this.columns);
       if (sortState.sortColumn !== this.state.sortColumn ||
@@ -919,6 +949,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   createComponents(components: TableComponents = {}, prevComponents?: TableComponents) {
     const bodyRow = components && components.body && components.body.row;
     const preBodyRow = prevComponents && prevComponents.body && prevComponents.body.row;
+    if(this.props.isMaxData){
+      this.components = {body: {wrapper: TableWrap.bind(this, this.props.isMaxData.lazyHeight)}};
+      return;
+    }
     if (!this.components || bodyRow !== preBodyRow) {
       this.components = { ...components };
       this.components.body = {
@@ -941,7 +975,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
-    const { style, className, prefixCls, showHeader, ...restProps } = this.props;
+    const { style, className, prefixCls, showHeader,isMaxData, ...restProps } = this.props;
     const data = this.getCurrentPageData();
     const expandIconAsCell = this.props.expandedRowRender && this.props.expandIconAsCell !== false;
 
@@ -950,6 +984,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       [`${prefixCls}-bordered`]: this.props.bordered,
       [`${prefixCls}-empty`]: !data.length,
       [`${prefixCls}-without-column-header`]: !showHeader,
+      [`${this.state.tableId}`]: true,
     });
 
     let columns = this.renderRowSelection(locale);
@@ -1051,7 +1086,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   render() {
     const { style, className, prefixCls } = this.props;
     const data = this.getCurrentPageData();
-
     const table = (
       <LocaleReceiver
         componentName="Table"
@@ -1072,9 +1106,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         spinning: loading,
       };
     }
-
+    const tableMaxid = this.props.isMaxData && this.props.isMaxData.id ?this.props.isMaxData.id:"";
     return (
       <div
+        id={tableMaxid}
         className={classNames(`${prefixCls}-wrapper`, className)}
         style={style}
       >

@@ -3,6 +3,7 @@
 exports[`Table.pagination renders pagination correctly 1`] = `
 <div
   class="wmstool-table-wrapper"
+  id=""
 >
   <div
     class="wmstool-spin-nested-loading"

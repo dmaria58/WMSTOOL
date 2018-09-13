@@ -3,6 +3,7 @@
 exports[`Table renders empty table 1`] = `
 <div
   class="wmstool-table-wrapper"
+  id=""
 >
   <div
     class="wmstool-spin-nested-loading"
@@ -114,6 +115,7 @@ exports[`Table renders empty table 1`] = `
 exports[`Table renders empty table with custom emptyText 1`] = `
 <div
   class="wmstool-table-wrapper"
+  id=""
 >
   <div
     class="wmstool-spin-nested-loading"
@@ -225,6 +227,7 @@ exports[`Table renders empty table with custom emptyText 1`] = `
 exports[`Table renders empty table with fixed columns 1`] = `
 <div
   class="wmstool-table-wrapper"
+  id=""
 >
   <div
     class="wmstool-spin-nested-loading"

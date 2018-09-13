@@ -3,6 +3,7 @@
 exports[`Table.rowSelection fix selection column on the left 1`] = `
 <div
   class="wmstool-table-wrapper"
+  id=""
 >
   <div
     class="wmstool-spin-nested-loading"

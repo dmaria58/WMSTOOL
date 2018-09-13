@@ -8,6 +8,7 @@ import Icon from '../icon';
 import warning from '../_util/warning';
 import callMoment from '../_util/callMoment';
 export default function createPicker(TheCalendar) {
+    var _a;
     return _a = class CalenderWrapper extends React.Component {
             constructor(props) {
                 super(props);
@@ -106,5 +107,4 @@ export default function createPicker(TheCalendar) {
             showToday: true,
         },
         _a;
-    var _a;
 }

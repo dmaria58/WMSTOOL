@@ -6,16 +6,16 @@ exports[`renders ./components/divider/demo/horizontal.md correctly 1`] = `
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
   </p>
   <div
-    class="wmstool-divider wmstool-divider-horizontal"
+    class="ant-divider ant-divider-horizontal"
   />
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
   </p>
   <div
-    class="wmstool-divider wmstool-divider-horizontal wmstool-divider-with-text"
+    class="ant-divider ant-divider-horizontal ant-divider-with-text"
   >
     <span
-      class="wmstool-divider-inner-text"
+      class="ant-divider-inner-text"
     >
       With Text
     </span>
@@ -24,7 +24,7 @@ exports[`renders ./components/divider/demo/horizontal.md correctly 1`] = `
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
   </p>
   <div
-    class="wmstool-divider wmstool-divider-horizontal wmstool-divider-dashed"
+    class="ant-divider ant-divider-horizontal ant-divider-dashed"
   />
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
@@ -36,7 +36,7 @@ exports[`renders ./components/divider/demo/vertical.md correctly 1`] = `
 <div>
   Text
   <div
-    class="wmstool-divider wmstool-divider-vertical"
+    class="ant-divider ant-divider-vertical"
   />
   <a
     href="#"
@@ -44,7 +44,7 @@ exports[`renders ./components/divider/demo/vertical.md correctly 1`] = `
     Link
   </a>
   <div
-    class="wmstool-divider wmstool-divider-vertical"
+    class="ant-divider ant-divider-vertical"
   />
   <a
     href="#"
