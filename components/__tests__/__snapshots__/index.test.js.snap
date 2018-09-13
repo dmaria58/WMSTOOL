@@ -55,6 +55,9 @@ Array [
   "Tooltip",
   "Mention",
   "Upload",
+  "Scollapse",
+  "Easyform",
+  "Dragdata",
   "version",
 ]
 `;

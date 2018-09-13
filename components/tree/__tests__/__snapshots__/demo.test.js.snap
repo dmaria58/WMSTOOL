@@ -173,315 +173,626 @@ exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
 `;
 
 exports[`renders ./components/tree/demo/basic-controlled.md correctly 1`] = `
-<ul
-  class="wmstool-tree"
-  role="tree-node"
-  unselectable="on"
->
-  <li
-    class=""
+<div>
+  <ul
+    class="wmstool-tree"
+    role="tree-node"
+    unselectable="on"
   >
-    <span
-      class="wmstool-tree-switcher wmstool-tree-switcher_open"
-    />
-    <span
-      class="wmstool-tree-checkbox wmstool-tree-checkbox-indeterminate"
+    <li
+      class=""
     >
       <span
-        class="wmstool-tree-checkbox-inner"
+        class="wmstool-tree-switcher wmstool-tree-switcher_open"
       />
-    </span>
-    <span
-      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
-      title="0-0"
+      <span
+        class="wmstool-tree-checkbox wmstool-tree-checkbox-indeterminate"
+      >
+        <span
+          class="wmstool-tree-checkbox-uninner"
+        />
+      </span>
+      <span
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
+        title="0-0"
+      >
+        <span
+          class="wmstool-tree-title"
+        >
+          0-0
+        </span>
+      </span>
+      <ul
+        class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
+        data-expanded="true"
+      >
+        <li
+          class=""
+        >
+          <span
+            class="wmstool-tree-switcher wmstool-tree-switcher_open"
+          />
+          <span
+            class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+          >
+            <span
+              class="wmstool-tree-checkbox-uninner"
+            />
+          </span>
+          <span
+            class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
+            title="0-0-0"
+          >
+            <span
+              class="wmstool-tree-title"
+            >
+              0-0-0
+            </span>
+          </span>
+          <ul
+            class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
+            data-expanded="true"
+          >
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+              >
+                <span
+                  class="wmstool-tree-checkbox-uninner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-0-0"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-0-0
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+              >
+                <span
+                  class="wmstool-tree-checkbox-uninner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-0-1"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-0-1
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+              >
+                <span
+                  class="wmstool-tree-checkbox-uninner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-0-2"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-0-2
+                </span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li
+          class=""
+        >
+          <span
+            class="wmstool-tree-switcher wmstool-tree-switcher_open"
+          />
+          <span
+            class="wmstool-tree-checkbox"
+          >
+            <span
+              class="wmstool-tree-checkbox-uninner"
+            />
+          </span>
+          <span
+            class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
+            title="0-0-1"
+          >
+            <span
+              class="wmstool-tree-title"
+            >
+              0-0-1
+            </span>
+          </span>
+          <ul
+            class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
+            data-expanded="true"
+          >
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox"
+              >
+                <span
+                  class="wmstool-tree-checkbox-uninner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-1-0"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-1-0
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox"
+              >
+                <span
+                  class="wmstool-tree-checkbox-uninner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-1-1"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-1-1
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox"
+              >
+                <span
+                  class="wmstool-tree-checkbox-uninner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-1-2"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-1-2
+                </span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li
+          class=""
+        >
+          <span
+            class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+          />
+          <span
+            class="wmstool-tree-checkbox"
+          >
+            <span
+              class="wmstool-tree-checkbox-uninner"
+            />
+          </span>
+          <span
+            class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+            title="0-0-2"
+          >
+            <span
+              class="wmstool-tree-title"
+            >
+              0-0-2
+            </span>
+          </span>
+        </li>
+      </ul>
+    </li>
+    <li
+      class=""
     >
       <span
-        class="wmstool-tree-title"
+        class="wmstool-tree-switcher wmstool-tree-switcher_close"
+      />
+      <span
+        class="wmstool-tree-checkbox"
       >
-        0-0
+        <span
+          class="wmstool-tree-checkbox-uninner"
+        />
       </span>
-    </span>
-    <ul
-      class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
-      data-expanded="true"
+      <span
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
+        title="0-1"
+      >
+        <span
+          class="wmstool-tree-title"
+        >
+          0-1
+        </span>
+      </span>
+    </li>
+    <li
+      class=""
     >
-      <li
-        class=""
+      <span
+        class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+      />
+      <span
+        class="wmstool-tree-checkbox"
       >
         <span
-          class="wmstool-tree-switcher wmstool-tree-switcher_open"
+          class="wmstool-tree-checkbox-uninner"
         />
-        <span
-          class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
-        >
-          <span
-            class="wmstool-tree-checkbox-inner"
-          />
-        </span>
-        <span
-          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
-          title="0-0-0"
-        >
-          <span
-            class="wmstool-tree-title"
-          >
-            0-0-0
-          </span>
-        </span>
-        <ul
-          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
-          data-expanded="true"
-        >
-          <li
-            class=""
-          >
-            <span
-              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-            />
-            <span
-              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
-            >
-              <span
-                class="wmstool-tree-checkbox-inner"
-              />
-            </span>
-            <span
-              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-              title="0-0-0-0"
-            >
-              <span
-                class="wmstool-tree-title"
-              >
-                0-0-0-0
-              </span>
-            </span>
-          </li>
-          <li
-            class=""
-          >
-            <span
-              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-            />
-            <span
-              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
-            >
-              <span
-                class="wmstool-tree-checkbox-inner"
-              />
-            </span>
-            <span
-              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-              title="0-0-0-1"
-            >
-              <span
-                class="wmstool-tree-title"
-              >
-                0-0-0-1
-              </span>
-            </span>
-          </li>
-          <li
-            class=""
-          >
-            <span
-              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-            />
-            <span
-              class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
-            >
-              <span
-                class="wmstool-tree-checkbox-inner"
-              />
-            </span>
-            <span
-              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-              title="0-0-0-2"
-            >
-              <span
-                class="wmstool-tree-title"
-              >
-                0-0-0-2
-              </span>
-            </span>
-          </li>
-        </ul>
-      </li>
-      <li
-        class=""
+      </span>
+      <span
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+        title="0-2"
       >
         <span
-          class="wmstool-tree-switcher wmstool-tree-switcher_open"
-        />
-        <span
-          class="wmstool-tree-checkbox"
+          class="wmstool-tree-title"
         >
-          <span
-            class="wmstool-tree-checkbox-inner"
-          />
+          0-2
         </span>
-        <span
-          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
-          title="0-0-1"
-        >
-          <span
-            class="wmstool-tree-title"
-          >
-            0-0-1
-          </span>
-        </span>
-        <ul
-          class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
-          data-expanded="true"
-        >
-          <li
-            class=""
-          >
-            <span
-              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-            />
-            <span
-              class="wmstool-tree-checkbox"
-            >
-              <span
-                class="wmstool-tree-checkbox-inner"
-              />
-            </span>
-            <span
-              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-              title="0-0-1-0"
-            >
-              <span
-                class="wmstool-tree-title"
-              >
-                0-0-1-0
-              </span>
-            </span>
-          </li>
-          <li
-            class=""
-          >
-            <span
-              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-            />
-            <span
-              class="wmstool-tree-checkbox"
-            >
-              <span
-                class="wmstool-tree-checkbox-inner"
-              />
-            </span>
-            <span
-              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-              title="0-0-1-1"
-            >
-              <span
-                class="wmstool-tree-title"
-              >
-                0-0-1-1
-              </span>
-            </span>
-          </li>
-          <li
-            class=""
-          >
-            <span
-              class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-            />
-            <span
-              class="wmstool-tree-checkbox"
-            >
-              <span
-                class="wmstool-tree-checkbox-inner"
-              />
-            </span>
-            <span
-              class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-              title="0-0-1-2"
-            >
-              <span
-                class="wmstool-tree-title"
-              >
-                0-0-1-2
-              </span>
-            </span>
-          </li>
-        </ul>
-      </li>
-      <li
-        class=""
-      >
-        <span
-          class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-        />
-        <span
-          class="wmstool-tree-checkbox"
-        >
-          <span
-            class="wmstool-tree-checkbox-inner"
-          />
-        </span>
-        <span
-          class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-          title="0-0-2"
-        >
-          <span
-            class="wmstool-tree-title"
-          >
-            0-0-2
-          </span>
-        </span>
-      </li>
-    </ul>
-  </li>
-  <li
-    class=""
+      </span>
+    </li>
+  </ul>
+  <ul
+    class="wmstool-tree"
+    role="tree-node"
+    unselectable="on"
   >
-    <span
-      class="wmstool-tree-switcher wmstool-tree-switcher_close"
-    />
-    <span
-      class="wmstool-tree-checkbox"
+    <li
+      class=""
     >
       <span
-        class="wmstool-tree-checkbox-inner"
+        class="wmstool-tree-switcher wmstool-tree-switcher_open"
       />
-    </span>
-    <span
-      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
-      title="0-1"
-    >
       <span
-        class="wmstool-tree-title"
+        class="wmstool-tree-checkbox wmstool-tree-checkbox-indeterminate"
       >
-        0-1
+        <span
+          class="wmstool-tree-checkbox-inner"
+        />
       </span>
-    </span>
-  </li>
-  <li
-    class=""
-  >
-    <span
-      class="wmstool-tree-switcher wmstool-tree-switcher-noop"
-    />
-    <span
-      class="wmstool-tree-checkbox"
+      <span
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
+        title="0-0"
+      >
+        <span
+          class="wmstool-tree-title"
+        >
+          0-0
+        </span>
+      </span>
+      <ul
+        class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
+        data-expanded="true"
+      >
+        <li
+          class=""
+        >
+          <span
+            class="wmstool-tree-switcher wmstool-tree-switcher_open"
+          />
+          <span
+            class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+          >
+            <span
+              class="wmstool-tree-checkbox-inner"
+            />
+          </span>
+          <span
+            class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
+            title="0-0-0"
+          >
+            <span
+              class="wmstool-tree-title"
+            >
+              0-0-0
+            </span>
+          </span>
+          <ul
+            class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
+            data-expanded="true"
+          >
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+              >
+                <span
+                  class="wmstool-tree-checkbox-inner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-0-0"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-0-0
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+              >
+                <span
+                  class="wmstool-tree-checkbox-inner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-0-1"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-0-1
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox wmstool-tree-checkbox-checked"
+              >
+                <span
+                  class="wmstool-tree-checkbox-inner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-0-2"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-0-2
+                </span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li
+          class=""
+        >
+          <span
+            class="wmstool-tree-switcher wmstool-tree-switcher_open"
+          />
+          <span
+            class="wmstool-tree-checkbox"
+          >
+            <span
+              class="wmstool-tree-checkbox-inner"
+            />
+          </span>
+          <span
+            class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-open"
+            title="0-0-1"
+          >
+            <span
+              class="wmstool-tree-title"
+            >
+              0-0-1
+            </span>
+          </span>
+          <ul
+            class="wmstool-tree-child-tree wmstool-tree-child-tree-open"
+            data-expanded="true"
+          >
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox"
+              >
+                <span
+                  class="wmstool-tree-checkbox-inner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-1-0"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-1-0
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox"
+              >
+                <span
+                  class="wmstool-tree-checkbox-inner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-1-1"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-1-1
+                </span>
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+              />
+              <span
+                class="wmstool-tree-checkbox"
+              >
+                <span
+                  class="wmstool-tree-checkbox-inner"
+                />
+              </span>
+              <span
+                class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+                title="0-0-1-2"
+              >
+                <span
+                  class="wmstool-tree-title"
+                >
+                  0-0-1-2
+                </span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li
+          class=""
+        >
+          <span
+            class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+          />
+          <span
+            class="wmstool-tree-checkbox"
+          >
+            <span
+              class="wmstool-tree-checkbox-inner"
+            />
+          </span>
+          <span
+            class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+            title="0-0-2"
+          >
+            <span
+              class="wmstool-tree-title"
+            >
+              0-0-2
+            </span>
+          </span>
+        </li>
+      </ul>
+    </li>
+    <li
+      class=""
     >
       <span
-        class="wmstool-tree-checkbox-inner"
+        class="wmstool-tree-switcher wmstool-tree-switcher_close"
       />
-    </span>
-    <span
-      class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
-      title="0-2"
+      <span
+        class="wmstool-tree-checkbox"
+      >
+        <span
+          class="wmstool-tree-checkbox-inner"
+        />
+      </span>
+      <span
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-close"
+        title="0-1"
+      >
+        <span
+          class="wmstool-tree-title"
+        >
+          0-1
+        </span>
+      </span>
+    </li>
+    <li
+      class=""
     >
       <span
-        class="wmstool-tree-title"
+        class="wmstool-tree-switcher wmstool-tree-switcher-noop"
+      />
+      <span
+        class="wmstool-tree-checkbox"
       >
-        0-2
+        <span
+          class="wmstool-tree-checkbox-inner"
+        />
       </span>
-    </span>
-  </li>
-</ul>
+      <span
+        class="wmstool-tree-node-content-wrapper wmstool-tree-node-content-wrapper-normal"
+        title="0-2"
+      >
+        <span
+          class="wmstool-tree-title"
+        >
+          0-2
+        </span>
+      </span>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`renders ./components/tree/demo/customized-icon.md correctly 1`] = `

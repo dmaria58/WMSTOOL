@@ -79,6 +79,7 @@ const columns = [{
 | onExpandedRowsChange | 展开的行变化时触发 | Function(expandedRows) |  |
 | onHeaderRow | 设置头部列属性 | Function(column, index) | - |
 | onRow | 设置列属性 | Function(record, index) | - |
+| isMaxData | 数据过多设置参数能下拉渲染【例子：row-selection-and-operation.md】 | object |{{lazyHeight:"这里设置单行tr高度"}}|
 
 ### Column
 
@@ -163,7 +164,7 @@ const data: IUser[] = [{
   key: 0,
   name: 'Jack',
 }];
-
+  
 class UserTable extends Table<IUser> {}
 <UserTable columns={columns} dataSource={data} />
 
