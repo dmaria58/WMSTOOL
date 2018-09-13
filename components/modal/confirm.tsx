@@ -11,7 +11,7 @@ interface ConfirmDialogProps extends ModalFuncProps {
   close: (...args: any[]) => void;
 }
 
-const IS_REACT_16 = !!ReactDOM.createPortal;
+const IS_REACT_16 = !!("createPortal" in ReactDOM);
 
 const ConfirmDialog = (props: ConfirmDialogProps) => {
   const { onCancel, onOk, close, zIndex, afterClose, visible } = props;
