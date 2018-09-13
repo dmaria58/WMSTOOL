@@ -61,7 +61,7 @@ export { default as InputNumber } from './input-number';
 
 export { default as Layout } from './layout';
 
-export { default as LazyTable } from './lazy-table';
+//export { default as LazyTable } from './lazy-table';
 
 export { default as List } from './list';
 

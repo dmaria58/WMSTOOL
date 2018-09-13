@@ -19,6 +19,7 @@ import Column from './Column';
 import ColumnGroup from './ColumnGroup';
 import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
+import LazyLoad , { forceCheck } from 'react-lazyload';
 import {
   TableProps,
   TableState,
@@ -52,6 +53,22 @@ const defaultPagination = {
  */
 const emptyObject = {};
 
+// Lazy Table
+const Tr = (props: any)=>{
+  return props
+}
+
+const TableWrap = (lazyHeight: number, props: any)=>{
+  return (
+    <tbody {...props}>
+      {
+        props.children.map(
+          (child: any, index: number) => <LazyLoad key={index} height={lazyHeight} scroll={false}><Tr {...child}/></LazyLoad>
+        )
+      }
+    </tbody>
+  )
+}
 export default class Table<T> extends React.Component<TableProps<T>, TableState<T>> {
   static Column = Column;
   static ColumnGroup = ColumnGroup;
@@ -134,7 +151,15 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     
   }
   componentDidMount (){
-    this.onScollList();
+   // this.onScollList();
+    const tableMaxid = this.props.isMaxData && this.props.isMaxData.id ?this.props.isMaxData.id:"";
+        //监听table滚动
+    if(tableMaxid){
+    let table = document.querySelector(`#${tableMaxid} .wmstool-table-scroll .wmstool-table-body`);
+    if(table){
+      table.addEventListener("scroll", forceCheck);
+    }
+    }
   }
   getCheckboxPropsByItem = (item: T, index: number) => {
     const { rowSelection = {} } = this.props;
@@ -882,10 +907,16 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   }
   onScollList() {
     //此模式只支持单页请求一次数据
-    if(!this.props.isMaxData){
+    /*if(!this.props.isMaxData){
       return;
-    }
+    }*/
+
     const tableMaxid = this.props.isMaxData && this.props.isMaxData.id ?this.props.isMaxData.id:"";
+        //监听table滚动
+    let table = document.querySelector(`.${tableMaxid} .wmstool-table-scroll .wmstool-table-body`);
+
+    table && (table.addEventListener("scroll", forceCheck));
+    /*const tableMaxid = this.props.isMaxData && this.props.isMaxData.id ?this.props.isMaxData.id:"";
     const wtable = document.querySelector("#testscroll .wmstool-table-body");
     if(wtable)
     wtable.addEventListener("scroll",()=>{
@@ -909,7 +940,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         let scoldata = data[0] && data.slice(0,innum)?data.slice(0,innum):[];
         this.setState({tdata:scoldata});
       }
-    });
+    });*/
   }
   getScollData(dataSource:any) {
     //需要渲染的data
@@ -971,6 +1002,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   createComponents(components: TableComponents = {}, prevComponents?: TableComponents) {
     const bodyRow = components && components.body && components.body.row;
     const preBodyRow = prevComponents && prevComponents.body && prevComponents.body.row;
+    if(this.props.isMaxData){
+      this.components = {body: {wrapper: TableWrap.bind(this, this.props.isMaxData.lazyHeight)}};
+      return;
+    }
     if (!this.components || bodyRow !== preBodyRow) {
       this.components = { ...components };
       this.components.body = {
@@ -994,9 +1029,9 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
     const { style, className, prefixCls, showHeader,isMaxData, ...restProps } = this.props;
-    const {tdata} = this.state;
+    //const {tdata} = this.state;
     const data = this.getCurrentPageData();
-    const ldata = !isMaxData?data:tdata;
+    //const ldata = !isMaxData?data:tdata;
     const expandIconAsCell = this.props.expandedRowRender && this.props.expandIconAsCell !== false;
 
     const classString = classNames({
@@ -1024,7 +1059,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         onRow={this.onRow}
         components={this.components}
         prefixCls={prefixCls}
-        data={ldata}
+        data={data}
         columns={columns}
         showHeader={showHeader}
         className={classString}

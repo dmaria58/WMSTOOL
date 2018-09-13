@@ -152,7 +152,7 @@ class App extends React.Component {
             {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
           </span>
         </div>
-        <Table rowSelection={rowSelection} pagination={{ pageSize: 500 }} onRowClick={this.onRowClick}  scroll={{ x: 1500, y: 300 }} columns={columns} dataSource={data} isMaxData={{id:"testscroll"}}/>
+        <Table rowSelection={rowSelection} pagination={{ pageSize: 500 }} onRowClick={this.onRowClick}  scroll={{ x: 1500, y: 300 }} columns={columns} dataSource={data} isMaxData={{id:"testscroll",lazyHeight:32}}/>
       </div>
     );
   }
