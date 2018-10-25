@@ -762,6 +762,7 @@ exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value="false"
             />
             <span
               class="wmstool-checkbox-inner"
@@ -989,6 +990,7 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
                   checked=""
                   class="wmstool-radio-button-input"
                   type="radio"
+                  value="horizontal"
                 />
                 <span
                   class="wmstool-radio-button-inner"
@@ -1007,6 +1009,7 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
                 <input
                   class="wmstool-radio-button-input"
                   type="radio"
+                  value="vertical"
                 />
                 <span
                   class="wmstool-radio-button-inner"
@@ -1025,6 +1028,7 @@ exports[`renders ./components/form/demo/layout.md correctly 1`] = `
                 <input
                   class="wmstool-radio-button-input"
                   type="radio"
+                  value="inline"
                 />
                 <span
                   class="wmstool-radio-button-inner"
@@ -1206,6 +1210,7 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
               class="wmstool-checkbox-input"
               data-__field="[object Object]"
               data-__meta="[object Object]"
+              id="remember"
               type="checkbox"
             />
             <span
@@ -1653,6 +1658,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
               class="wmstool-checkbox-input"
               data-__field="[object Object]"
               data-__meta="[object Object]"
+              id="agreement"
               type="checkbox"
             />
             <span
@@ -2195,6 +2201,8 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
             <input
               autocomplete="off"
               class="wmstool-input-number-input"
+              data-__field="[object Object]"
+              data-__meta="[object Object]"
               id="input-number"
               max="10"
               min="1"
@@ -2390,6 +2398,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               <input
                 class="wmstool-radio-input"
                 type="radio"
+                value="a"
               />
               <span
                 class="wmstool-radio-inner"
@@ -2408,6 +2417,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               <input
                 class="wmstool-radio-input"
                 type="radio"
+                value="b"
               />
               <span
                 class="wmstool-radio-inner"
@@ -2426,6 +2436,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               <input
                 class="wmstool-radio-input"
                 type="radio"
+                value="c"
               />
               <span
                 class="wmstool-radio-inner"
@@ -2472,6 +2483,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               <input
                 class="wmstool-radio-button-input"
                 type="radio"
+                value="a"
               />
               <span
                 class="wmstool-radio-button-inner"
@@ -2490,6 +2502,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               <input
                 class="wmstool-radio-button-input"
                 type="radio"
+                value="b"
               />
               <span
                 class="wmstool-radio-button-inner"
@@ -2508,6 +2521,7 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
               <input
                 class="wmstool-radio-button-input"
                 type="radio"
+                value="c"
               />
               <span
                 class="wmstool-radio-button-inner"

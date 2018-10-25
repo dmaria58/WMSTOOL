@@ -219,7 +219,7 @@ exports[`Locale Provider should display the text as locale changed 1`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -291,6 +291,7 @@ exports[`Locale Provider should display the text as locale changed 1`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -377,6 +378,7 @@ exports[`Locale Provider should display the text as locale changed 1`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -505,8 +507,10 @@ exports[`Locale Provider should display the text as locale changed 1`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -525,6 +529,7 @@ exports[`Locale Provider should display the text as locale changed 1`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -1436,7 +1441,7 @@ exports[`Locale Provider should display the text as locale changed 1`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-4493478731862406 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -1787,7 +1792,7 @@ exports[`Locale Provider should display the text as locale changed 2`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -1859,6 +1864,7 @@ exports[`Locale Provider should display the text as locale changed 2`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -1945,6 +1951,7 @@ exports[`Locale Provider should display the text as locale changed 2`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -2073,8 +2080,10 @@ exports[`Locale Provider should display the text as locale changed 2`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -2093,6 +2102,7 @@ exports[`Locale Provider should display the text as locale changed 2`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -3004,7 +3014,7 @@ exports[`Locale Provider should display the text as locale changed 2`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-2279215429895598 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -3355,7 +3365,7 @@ exports[`Locale Provider should display the text as locale changed 3`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -3427,6 +3437,7 @@ exports[`Locale Provider should display the text as locale changed 3`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -3513,6 +3524,7 @@ exports[`Locale Provider should display the text as locale changed 3`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -3641,8 +3653,10 @@ exports[`Locale Provider should display the text as locale changed 3`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -3661,6 +3675,7 @@ exports[`Locale Provider should display the text as locale changed 3`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -4572,7 +4587,7 @@ exports[`Locale Provider should display the text as locale changed 3`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-06773901172453756 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -4923,7 +4938,7 @@ exports[`Locale Provider should display the text as locale changed 4`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -4995,6 +5010,7 @@ exports[`Locale Provider should display the text as locale changed 4`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -5081,6 +5097,7 @@ exports[`Locale Provider should display the text as locale changed 4`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -5209,8 +5226,10 @@ exports[`Locale Provider should display the text as locale changed 4`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -5229,6 +5248,7 @@ exports[`Locale Provider should display the text as locale changed 4`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -6140,7 +6160,7 @@ exports[`Locale Provider should display the text as locale changed 4`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-5066807921943113 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -6491,7 +6511,7 @@ exports[`Locale Provider should display the text as locale changed 5`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -6563,6 +6583,7 @@ exports[`Locale Provider should display the text as locale changed 5`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -6649,6 +6670,7 @@ exports[`Locale Provider should display the text as locale changed 5`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -6777,8 +6799,10 @@ exports[`Locale Provider should display the text as locale changed 5`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -6797,6 +6821,7 @@ exports[`Locale Provider should display the text as locale changed 5`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -7708,7 +7733,7 @@ exports[`Locale Provider should display the text as locale changed 5`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-6358561841482868 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -8059,7 +8084,7 @@ exports[`Locale Provider should display the text as locale changed 6`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -8131,6 +8156,7 @@ exports[`Locale Provider should display the text as locale changed 6`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -8217,6 +8243,7 @@ exports[`Locale Provider should display the text as locale changed 6`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -8345,8 +8372,10 @@ exports[`Locale Provider should display the text as locale changed 6`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -8365,6 +8394,7 @@ exports[`Locale Provider should display the text as locale changed 6`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -9276,7 +9306,7 @@ exports[`Locale Provider should display the text as locale changed 6`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-9266947872226889 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -9627,7 +9657,7 @@ exports[`Locale Provider should display the text as locale changed 7`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -9699,6 +9729,7 @@ exports[`Locale Provider should display the text as locale changed 7`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -9785,6 +9816,7 @@ exports[`Locale Provider should display the text as locale changed 7`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -9913,8 +9945,10 @@ exports[`Locale Provider should display the text as locale changed 7`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -9933,6 +9967,7 @@ exports[`Locale Provider should display the text as locale changed 7`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -10844,7 +10879,7 @@ exports[`Locale Provider should display the text as locale changed 7`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-1499302176755044 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -11195,7 +11230,7 @@ exports[`Locale Provider should display the text as locale changed 8`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -11267,6 +11302,7 @@ exports[`Locale Provider should display the text as locale changed 8`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -11353,6 +11389,7 @@ exports[`Locale Provider should display the text as locale changed 8`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -11481,8 +11518,10 @@ exports[`Locale Provider should display the text as locale changed 8`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -11501,6 +11540,7 @@ exports[`Locale Provider should display the text as locale changed 8`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -12412,7 +12452,7 @@ exports[`Locale Provider should display the text as locale changed 8`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-6469643633704014 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -12763,7 +12803,7 @@ exports[`Locale Provider should display the text as locale changed 9`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -12835,6 +12875,7 @@ exports[`Locale Provider should display the text as locale changed 9`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -12921,6 +12962,7 @@ exports[`Locale Provider should display the text as locale changed 9`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -13049,8 +13091,10 @@ exports[`Locale Provider should display the text as locale changed 9`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -13069,6 +13113,7 @@ exports[`Locale Provider should display the text as locale changed 9`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -13980,7 +14025,7 @@ exports[`Locale Provider should display the text as locale changed 9`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-547029125677829 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -14331,7 +14376,7 @@ exports[`Locale Provider should display the text as locale changed 10`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -14403,6 +14448,7 @@ exports[`Locale Provider should display the text as locale changed 10`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -14489,6 +14535,7 @@ exports[`Locale Provider should display the text as locale changed 10`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -14617,8 +14664,10 @@ exports[`Locale Provider should display the text as locale changed 10`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -14637,6 +14686,7 @@ exports[`Locale Provider should display the text as locale changed 10`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -15548,7 +15598,7 @@ exports[`Locale Provider should display the text as locale changed 10`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-14457500546638546 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -15899,7 +15949,7 @@ exports[`Locale Provider should display the text as locale changed 11`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -15971,6 +16021,7 @@ exports[`Locale Provider should display the text as locale changed 11`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -16057,6 +16108,7 @@ exports[`Locale Provider should display the text as locale changed 11`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -16185,8 +16237,10 @@ exports[`Locale Provider should display the text as locale changed 11`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -16205,6 +16259,7 @@ exports[`Locale Provider should display the text as locale changed 11`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -17116,7 +17171,7 @@ exports[`Locale Provider should display the text as locale changed 11`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-9146917890561401 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -17467,7 +17522,7 @@ exports[`Locale Provider should display the text as locale changed 12`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -17539,6 +17594,7 @@ exports[`Locale Provider should display the text as locale changed 12`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -17625,6 +17681,7 @@ exports[`Locale Provider should display the text as locale changed 12`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -17753,8 +17810,10 @@ exports[`Locale Provider should display the text as locale changed 12`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -17773,6 +17832,7 @@ exports[`Locale Provider should display the text as locale changed 12`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -18684,7 +18744,7 @@ exports[`Locale Provider should display the text as locale changed 12`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7515456233655322 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -19035,7 +19095,7 @@ exports[`Locale Provider should display the text as locale changed 13`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -19107,6 +19167,7 @@ exports[`Locale Provider should display the text as locale changed 13`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -19193,6 +19254,7 @@ exports[`Locale Provider should display the text as locale changed 13`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -19321,8 +19383,10 @@ exports[`Locale Provider should display the text as locale changed 13`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -19341,6 +19405,7 @@ exports[`Locale Provider should display the text as locale changed 13`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -20252,7 +20317,7 @@ exports[`Locale Provider should display the text as locale changed 13`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-38520074956213435 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -20603,7 +20668,7 @@ exports[`Locale Provider should display the text as locale changed 14`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -20675,6 +20740,7 @@ exports[`Locale Provider should display the text as locale changed 14`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -20761,6 +20827,7 @@ exports[`Locale Provider should display the text as locale changed 14`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -20889,8 +20956,10 @@ exports[`Locale Provider should display the text as locale changed 14`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -20909,6 +20978,7 @@ exports[`Locale Provider should display the text as locale changed 14`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -21820,7 +21890,7 @@ exports[`Locale Provider should display the text as locale changed 14`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-051050465931135935 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -22171,7 +22241,7 @@ exports[`Locale Provider should display the text as locale changed 15`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -22243,6 +22313,7 @@ exports[`Locale Provider should display the text as locale changed 15`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -22329,6 +22400,7 @@ exports[`Locale Provider should display the text as locale changed 15`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -22457,8 +22529,10 @@ exports[`Locale Provider should display the text as locale changed 15`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -22477,6 +22551,7 @@ exports[`Locale Provider should display the text as locale changed 15`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -23388,7 +23463,7 @@ exports[`Locale Provider should display the text as locale changed 15`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-8439207189057578 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -23739,7 +23814,7 @@ exports[`Locale Provider should display the text as locale changed 16`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -23811,6 +23886,7 @@ exports[`Locale Provider should display the text as locale changed 16`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -23897,6 +23973,7 @@ exports[`Locale Provider should display the text as locale changed 16`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -24025,8 +24102,10 @@ exports[`Locale Provider should display the text as locale changed 16`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -24045,6 +24124,7 @@ exports[`Locale Provider should display the text as locale changed 16`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -24956,7 +25036,7 @@ exports[`Locale Provider should display the text as locale changed 16`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7849982367891215 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -25307,7 +25387,7 @@ exports[`Locale Provider should display the text as locale changed 17`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -25379,6 +25459,7 @@ exports[`Locale Provider should display the text as locale changed 17`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -25465,6 +25546,7 @@ exports[`Locale Provider should display the text as locale changed 17`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -25593,8 +25675,10 @@ exports[`Locale Provider should display the text as locale changed 17`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -25613,6 +25697,7 @@ exports[`Locale Provider should display the text as locale changed 17`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -26524,7 +26609,7 @@ exports[`Locale Provider should display the text as locale changed 17`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-4798442467304902 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -26875,7 +26960,7 @@ exports[`Locale Provider should display the text as locale changed 18`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -26947,6 +27032,7 @@ exports[`Locale Provider should display the text as locale changed 18`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -27033,6 +27119,7 @@ exports[`Locale Provider should display the text as locale changed 18`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -27161,8 +27248,10 @@ exports[`Locale Provider should display the text as locale changed 18`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -27181,6 +27270,7 @@ exports[`Locale Provider should display the text as locale changed 18`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -28092,7 +28182,7 @@ exports[`Locale Provider should display the text as locale changed 18`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7318314990574037 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -28443,7 +28533,7 @@ exports[`Locale Provider should display the text as locale changed 19`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -28515,6 +28605,7 @@ exports[`Locale Provider should display the text as locale changed 19`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -28601,6 +28692,7 @@ exports[`Locale Provider should display the text as locale changed 19`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -28729,8 +28821,10 @@ exports[`Locale Provider should display the text as locale changed 19`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -28749,6 +28843,7 @@ exports[`Locale Provider should display the text as locale changed 19`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -29660,7 +29755,7 @@ exports[`Locale Provider should display the text as locale changed 19`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-48957750499890773 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -30011,7 +30106,7 @@ exports[`Locale Provider should display the text as locale changed 20`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -30083,6 +30178,7 @@ exports[`Locale Provider should display the text as locale changed 20`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -30169,6 +30265,7 @@ exports[`Locale Provider should display the text as locale changed 20`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -30297,8 +30394,10 @@ exports[`Locale Provider should display the text as locale changed 20`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -30317,6 +30416,7 @@ exports[`Locale Provider should display the text as locale changed 20`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -31228,7 +31328,7 @@ exports[`Locale Provider should display the text as locale changed 20`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-06101795174528979 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -31579,7 +31679,7 @@ exports[`Locale Provider should display the text as locale changed 21`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -31651,6 +31751,7 @@ exports[`Locale Provider should display the text as locale changed 21`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -31737,6 +31838,7 @@ exports[`Locale Provider should display the text as locale changed 21`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -31865,8 +31967,10 @@ exports[`Locale Provider should display the text as locale changed 21`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -31885,6 +31989,7 @@ exports[`Locale Provider should display the text as locale changed 21`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -32796,7 +32901,7 @@ exports[`Locale Provider should display the text as locale changed 21`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7136685028573031 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -33147,7 +33252,7 @@ exports[`Locale Provider should display the text as locale changed 22`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -33219,6 +33324,7 @@ exports[`Locale Provider should display the text as locale changed 22`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -33305,6 +33411,7 @@ exports[`Locale Provider should display the text as locale changed 22`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -33433,8 +33540,10 @@ exports[`Locale Provider should display the text as locale changed 22`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -33453,6 +33562,7 @@ exports[`Locale Provider should display the text as locale changed 22`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -34364,7 +34474,7 @@ exports[`Locale Provider should display the text as locale changed 22`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-6028197978589473 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -34715,7 +34825,7 @@ exports[`Locale Provider should display the text as locale changed 23`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -34787,6 +34897,7 @@ exports[`Locale Provider should display the text as locale changed 23`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -34873,6 +34984,7 @@ exports[`Locale Provider should display the text as locale changed 23`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -35001,8 +35113,10 @@ exports[`Locale Provider should display the text as locale changed 23`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -35021,6 +35135,7 @@ exports[`Locale Provider should display the text as locale changed 23`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -35932,7 +36047,7 @@ exports[`Locale Provider should display the text as locale changed 23`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-4438142269227374 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -36283,7 +36398,7 @@ exports[`Locale Provider should display the text as locale changed 24`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -36355,6 +36470,7 @@ exports[`Locale Provider should display the text as locale changed 24`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -36441,6 +36557,7 @@ exports[`Locale Provider should display the text as locale changed 24`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -36569,8 +36686,10 @@ exports[`Locale Provider should display the text as locale changed 24`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -36589,6 +36708,7 @@ exports[`Locale Provider should display the text as locale changed 24`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -37500,7 +37620,7 @@ exports[`Locale Provider should display the text as locale changed 24`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-3002956768658853 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -37851,7 +37971,7 @@ exports[`Locale Provider should display the text as locale changed 25`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -37923,6 +38043,7 @@ exports[`Locale Provider should display the text as locale changed 25`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -38009,6 +38130,7 @@ exports[`Locale Provider should display the text as locale changed 25`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -38137,8 +38259,10 @@ exports[`Locale Provider should display the text as locale changed 25`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -38157,6 +38281,7 @@ exports[`Locale Provider should display the text as locale changed 25`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -39068,7 +39193,7 @@ exports[`Locale Provider should display the text as locale changed 25`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-5596717972680403 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -39419,7 +39544,7 @@ exports[`Locale Provider should display the text as locale changed 26`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -39491,6 +39616,7 @@ exports[`Locale Provider should display the text as locale changed 26`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -39577,6 +39703,7 @@ exports[`Locale Provider should display the text as locale changed 26`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -39705,8 +39832,10 @@ exports[`Locale Provider should display the text as locale changed 26`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -39725,6 +39854,7 @@ exports[`Locale Provider should display the text as locale changed 26`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -40636,7 +40766,7 @@ exports[`Locale Provider should display the text as locale changed 26`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-03433023616463493 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -40987,7 +41117,7 @@ exports[`Locale Provider should display the text as locale changed 27`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -41059,6 +41189,7 @@ exports[`Locale Provider should display the text as locale changed 27`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -41145,6 +41276,7 @@ exports[`Locale Provider should display the text as locale changed 27`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -41273,8 +41405,10 @@ exports[`Locale Provider should display the text as locale changed 27`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -41293,6 +41427,7 @@ exports[`Locale Provider should display the text as locale changed 27`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -42204,7 +42339,7 @@ exports[`Locale Provider should display the text as locale changed 27`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-4893299060153111 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -42555,7 +42690,7 @@ exports[`Locale Provider should display the text as locale changed 28`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -42627,6 +42762,7 @@ exports[`Locale Provider should display the text as locale changed 28`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -42713,6 +42849,7 @@ exports[`Locale Provider should display the text as locale changed 28`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -42841,8 +42978,10 @@ exports[`Locale Provider should display the text as locale changed 28`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -42861,6 +43000,7 @@ exports[`Locale Provider should display the text as locale changed 28`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -43772,7 +43912,7 @@ exports[`Locale Provider should display the text as locale changed 28`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7859775893369976 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -44123,7 +44263,7 @@ exports[`Locale Provider should display the text as locale changed 29`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -44195,6 +44335,7 @@ exports[`Locale Provider should display the text as locale changed 29`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -44281,6 +44422,7 @@ exports[`Locale Provider should display the text as locale changed 29`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -44409,8 +44551,10 @@ exports[`Locale Provider should display the text as locale changed 29`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -44429,6 +44573,7 @@ exports[`Locale Provider should display the text as locale changed 29`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -45340,7 +45485,7 @@ exports[`Locale Provider should display the text as locale changed 29`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-462776719902078 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -45691,7 +45836,7 @@ exports[`Locale Provider should display the text as locale changed 30`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -45763,6 +45908,7 @@ exports[`Locale Provider should display the text as locale changed 30`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -45849,6 +45995,7 @@ exports[`Locale Provider should display the text as locale changed 30`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -45977,8 +46124,10 @@ exports[`Locale Provider should display the text as locale changed 30`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -45997,6 +46146,7 @@ exports[`Locale Provider should display the text as locale changed 30`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -46908,7 +47058,7 @@ exports[`Locale Provider should display the text as locale changed 30`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-38148962887860893 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -47259,7 +47409,7 @@ exports[`Locale Provider should display the text as locale changed 31`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -47331,6 +47481,7 @@ exports[`Locale Provider should display the text as locale changed 31`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -47417,6 +47568,7 @@ exports[`Locale Provider should display the text as locale changed 31`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -47545,8 +47697,10 @@ exports[`Locale Provider should display the text as locale changed 31`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -47565,6 +47719,7 @@ exports[`Locale Provider should display the text as locale changed 31`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -48476,7 +48631,7 @@ exports[`Locale Provider should display the text as locale changed 31`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-9256014521732157 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -48827,7 +48982,7 @@ exports[`Locale Provider should display the text as locale changed 32`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -48899,6 +49054,7 @@ exports[`Locale Provider should display the text as locale changed 32`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -48985,6 +49141,7 @@ exports[`Locale Provider should display the text as locale changed 32`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -49113,8 +49270,10 @@ exports[`Locale Provider should display the text as locale changed 32`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -49133,6 +49292,7 @@ exports[`Locale Provider should display the text as locale changed 32`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -50044,7 +50204,7 @@ exports[`Locale Provider should display the text as locale changed 32`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7341552511388816 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
@@ -50395,7 +50555,7 @@ exports[`Locale Provider should display the text as locale changed 33`] = `
   </a>
   <div>
     <div
-      class="wmstool-popover wmstool-popover-placement-top zoom-big-appear"
+      class="wmstool-popover  wmstool-popover-placement-top "
       style="left: -999px; top: -1003px;"
     >
       <div
@@ -50467,6 +50627,7 @@ exports[`Locale Provider should display the text as locale changed 33`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -50553,6 +50714,7 @@ exports[`Locale Provider should display the text as locale changed 33`] = `
             <input
               class="wmstool-checkbox-input"
               type="checkbox"
+              value=""
             />
             <span
               class="wmstool-checkbox-inner"
@@ -50681,8 +50843,10 @@ exports[`Locale Provider should display the text as locale changed 33`] = `
             class="wmstool-radio-button wmstool-radio-button-checked"
           >
             <input
+              checked=""
               class="wmstool-radio-button-input"
               type="radio"
+              value="date"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -50701,6 +50865,7 @@ exports[`Locale Provider should display the text as locale changed 33`] = `
             <input
               class="wmstool-radio-button-input"
               type="radio"
+              value="month"
             />
             <span
               class="wmstool-radio-button-inner"
@@ -51612,7 +51777,7 @@ exports[`Locale Provider should display the text as locale changed 33`] = `
         class="wmstool-spin-container"
       >
         <div
-          class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+          class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-37005805753616294 wmstool-table-scroll-position-left"
         >
           <div
             class="wmstool-table-content"
