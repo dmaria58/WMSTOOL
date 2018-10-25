@@ -12,7 +12,7 @@ exports[`Table.pagination renders pagination correctly 1`] = `
       class="wmstool-spin-container"
     >
       <div
-        class="wmstool-table wmstool-table-large wmstool-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large lazy-table-4240015047735044 wmstool-table-scroll-position-left"
       >
         <div
           class="wmstool-table-content"
