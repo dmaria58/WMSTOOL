@@ -41,6 +41,7 @@ exports[`renders ./components/locale-provider/demo/all.md correctly 1`] = `
           <input
             class="wmstool-radio-button-input"
             type="radio"
+            value="[object Object]"
           />
           <span
             class="wmstool-radio-button-inner"
@@ -551,6 +552,7 @@ exports[`renders ./components/locale-provider/demo/all.md correctly 1`] = `
                   checked=""
                   class="wmstool-radio-button-input"
                   type="radio"
+                  value="date"
                 />
                 <span
                   class="wmstool-radio-button-inner"
@@ -569,6 +571,7 @@ exports[`renders ./components/locale-provider/demo/all.md correctly 1`] = `
                 <input
                   class="wmstool-radio-button-input"
                   type="radio"
+                  value="month"
                 />
                 <span
                   class="wmstool-radio-button-inner"
@@ -1475,6 +1478,7 @@ exports[`renders ./components/locale-provider/demo/all.md correctly 1`] = `
     >
       <div
         class="wmstool-table-wrapper"
+        id=""
       >
         <div
           class="wmstool-spin-nested-loading"
@@ -1483,7 +1487,7 @@ exports[`renders ./components/locale-provider/demo/all.md correctly 1`] = `
             class="wmstool-spin-container"
           >
             <div
-              class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+              class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-7527853644205396 wmstool-table-scroll-position-left"
             >
               <div
                 class="wmstool-table-content"

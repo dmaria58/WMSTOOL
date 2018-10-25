@@ -37,7 +37,7 @@ exports[`renders ./components/tree/demo/basic.md correctly 1`] = `
         class="wmstool-tree-treenode-disabled"
       >
         <span
-          class="wmstool-tree-switcher wmstool-tree-switcher_open wmstool-tree-switcher-disabled"
+          class="wmstool-tree-switcher wmstool-tree-switcher_open"
         />
         <span
           class="wmstool-tree-checkbox wmstool-tree-checkbox-checked wmstool-tree-checkbox-disabled"
