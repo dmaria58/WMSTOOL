@@ -1022,14 +1022,19 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         let {abcard}=this.state
         let u;
         let athis=this;
+        let buttom;
         if(columns){
           u=columns.map((data)=>{
               let bh=athis.isCheckDefault(data); 
               return <div><Checkbox value={data.dataIndex} defaultChecked={bh} onChange={athis.changSbt}>{data.title}</Checkbox></div>
           })          
         }
+        if(this.props.columnsChangeData ){
+          let text=this.props.columnsChangeData.text?this.props.columnsChangeData.text:"Ok";
+          buttom = <Buttom className="wmstool-table-edit_save_bt" type="primary" onClick={athis.clickChangeColums}>{text}</Buttom>;
+        }
       return(<div className="wmstool-table-edit_div">
-        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="setting" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}</div></div>)
+        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="setting" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}<div>{buttom}</div></div></div>)
     }
   }
   isCheckDefault = (data:any) =>{
@@ -1051,7 +1056,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     this.getComsList(e.target.value,e.target.checked)    
   }
   getComsList = (id:string,che:boolean) =>{
-    let bhl;
+    let bhl:any;
     if(che === false){
       bhl=this.state.statecolumn.filter((data:any) => {
         if(data.dataIndex === id){
@@ -1059,6 +1064,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         }
         return data
       })
+
     }
     else{
       bhl=this.state.statecolumn;
@@ -1071,6 +1077,16 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         }
       })
       bhl.push(bm[0])
+      //排序
+      let last:any=[];
+      this.columns.map((data:any)=>{
+        bhl.map((ldata:any)=>{
+          if(data.dataIndex === ldata.dataIndex){
+            last.push(data);
+          }
+        })
+      })
+      bhl = last;
     }
     this.setState({statecolumn:bhl})
     this.props.returnSelectColumn?this.props.returnSelectColumn(bhl):"";
@@ -1081,6 +1097,11 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     }
     else{
       this.setState({abcard:"none"})
+    }
+  }
+  clickChangeColums= () =>{
+    if(this.props.columnsChangeData.onSaveColums){
+      this.props.columnsChangeData.onSaveColums(this.state.statecolumn,this.columns);
     }
   }
   render() {
