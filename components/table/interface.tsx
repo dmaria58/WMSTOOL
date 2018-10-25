@@ -109,6 +109,7 @@ export interface TableProps<T> {
   style?: React.CSSProperties;
   children?: React.ReactNode;
   isColumnsChange?: boolean;
+  columnsChangeData?:any;
   isMaxData?:any;
   ColumnsChangeList?: ColumnProps<T>[];
   returnSelectColumn?:(clumons: any)=> any;

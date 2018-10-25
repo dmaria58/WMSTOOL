@@ -512,6 +512,11 @@ tr.wmstool-table-expanded-row:hover {
   padding: 6px;
   border-radius: 5px;
 }
+.wmstool-table-edit_save_bt {
+  width: 100%;
+  font-size: 10px;
+  margin-top: 5px;
+}
 .wmstool-table-middle > .wmstool-table-title,
 .wmstool-table-middle > .wmstool-table-footer {
   padding: 12px 8px;

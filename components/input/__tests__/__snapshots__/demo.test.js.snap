@@ -152,20 +152,35 @@ exports[`renders ./components/input/demo/allowClear.md correctly 1`] = `
   <div
     style="margin-bottom:16px"
   >
-    <input
-      class="wmstool-input"
-      type="text"
-      value="非受控组件"
-    />
+    <span
+      class="wmstool-input-affix-wrapper"
+    >
+      <input
+        class="wmstool-input"
+        type="text"
+        value="非受控组件"
+      />
+      <span
+        class="wmstool-input-suffix"
+      >
+        <i
+          class="anticon anticon-close-circle"
+        />
+      </span>
+    </span>
   </div>
   <div
     style="margin-bottom:16px"
   >
-    <input
-      class="wmstool-input"
-      type="text"
-      value=""
-    />
+    <span
+      class="wmstool-input-affix-wrapper"
+    >
+      <input
+        class="wmstool-input"
+        type="text"
+        value=""
+      />
+    </span>
   </div>
   <div
     style="margin-bottom:16px"

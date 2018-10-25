@@ -22,7 +22,7 @@ exports[`DatePicker prop locale should works 1`] = `
   </div>
   <div>
     <div
-      class="wmstool-calendar-picker-container wmstool-calendar-picker-container-placement-bottomLeft slide-up-appear"
+      class="wmstool-calendar-picker-container  wmstool-calendar-picker-container-placement-bottomLeft "
       style="left: -999px; top: -1002px;"
     >
       <div
