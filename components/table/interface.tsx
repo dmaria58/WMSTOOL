@@ -124,7 +124,7 @@ export interface TableState<T> {
   filters: TableStateFilters;
   sortColumn: ColumnProps<T> | null;
   sortOrder: string;
-  abcard: string;
+  abcard: boolean;
   statecolumn?: any;
   tableId?:string;
 }
