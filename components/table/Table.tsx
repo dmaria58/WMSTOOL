@@ -31,6 +31,8 @@ import {
   TableStateFilters,
   SelectionItemSelectFn,
 } from './interface';
+const RcTrigger = require("rc-trigger/lib/index.js");
+
 
 function noop() {
 }
@@ -131,7 +133,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       // 减少状态
       filters: this.getFiltersFromColumns(),
       pagination: this.getDefaultPagination(props),
-      abcard:'none',
+      abcard:false,//是否显示列过滤器
       statecolumn:hjj,
       tableId: "lazy-table-"+(Math.random().toString().slice(2)),
 
@@ -1019,7 +1021,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   isSortColumnbt = () =>{ 
     if(this.props.isColumnsChange && this.props.isColumnsChange === true){
         let {columns}=this.props;
-        let {abcard}=this.state
+        let { abcard }=this.state
         let u;
         let athis=this;
         let buttom;
@@ -1033,8 +1035,31 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
           let text=this.props.columnsChangeData.text?this.props.columnsChangeData.text:"Ok";
           buttom = <Buttom className="wmstool-table-edit_save_bt" type="primary" onClick={athis.clickChangeColums}>{text}</Buttom>;
         }
-      return(<div className="wmstool-table-edit_div">
-        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="setting" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}<div>{buttom}</div></div></div>)
+      return(<div className="wmstool-table-edit_div ">
+          <RcTrigger
+              action={["click"]}
+              prefixCls={this.props.prefixCls}
+              popupVisible = {abcard}
+              onPopupVisibleChange={this.changeDisplayc}
+              getPopupContainer={(target:any) => target.parentNode}
+              popup={(
+                  <div className={`${this.props.columnsChangeData.fixed ? "wmstool-table-iss-card-fixed" : ""} `}>
+                      <div className="wmstool-table-iss-card ">
+                          {u}<div>{buttom}</div>
+                      </div>
+                  </div>
+              )}
+              popupAlign={{
+                  points: ['tl', 'bl']
+              }}
+          >
+              <div className="wmstool-table-edit_b_div" >
+                  <Buttom className="wmstool-table-edit_b">
+                      <Icon type="setting" />
+                  </Buttom>
+              </div>
+          </RcTrigger>
+      </div>)
     }
   }
   isCheckDefault = (data:any) =>{
@@ -1091,17 +1116,15 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     this.setState({statecolumn:bhl})
     this.props.returnSelectColumn?this.props.returnSelectColumn(bhl):"";
   }
-  changeDisplayc = () =>{
-    if(this.state.abcard === "none"){
-      this.setState({abcard:"block"})
-    }
-    else{
-      this.setState({abcard:"none"})
-    }
+  //列选择器显示状态切换
+  changeDisplayc = (visiable:boolean) =>{
+    this.setState({abcard:visiable})
   }
   clickChangeColums= () =>{
     if(this.props.columnsChangeData.onSaveColums){
-      this.props.columnsChangeData.onSaveColums(this.state.statecolumn,this.columns);
+      this.props.columnsChangeData.onSaveColums(this.state.statecolumn,this.columns,() =>{//保存成功可以调用第三个参数关闭菜单
+        this.changeDisplayc(false)
+      });
     }
   }
   render() {
