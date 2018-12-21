@@ -57,6 +57,7 @@
     "rc-tooltip": "~3.7.0",
     "rc-tree": "~1.7.0",
     "rc-tree-select": "~1.12.0",
+    "rc-trigger": "^2.6.2",
     "rc-upload": "~2.4.0",
     "rc-util": "^4.0.4",
     "react-dnd": "^2.5.4",
