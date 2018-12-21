@@ -21,6 +21,7 @@ import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
 import LazyLoad , { forceCheck } from 'react-lazyload';
 import KEY_CODE from 'rc-util/lib/KeyCode';
+import Trigger from 'rc-trigger';
 import {
   TableProps,
   TableState,
@@ -32,7 +33,7 @@ import {
   TableStateFilters,
   SelectionItemSelectFn,
 } from './interface';
-const RcTrigger = require("rc-trigger/lib/index.js");
+//const RcTrigger = require("rc-trigger/lib/index.js");
 
 
 function noop() {
@@ -1091,7 +1092,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
           buttom = <Buttom className="wmstool-table-edit_save_bt" type="primary" onClick={athis.clickChangeColums}>{text}</Buttom>;
         }
       return(<div className="wmstool-table-edit_div ">
-          <RcTrigger
+          <Trigger
               action={["click"]}
               prefixCls={this.props.prefixCls}
               popupVisible = {abcard}
@@ -1113,7 +1114,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
                       <Icon type="setting" />
                   </Buttom>
               </div>
-          </RcTrigger>
+          </Trigger>
       </div>)
     }
   }
