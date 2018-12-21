@@ -20,6 +20,7 @@ import ColumnGroup from './ColumnGroup';
 import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
 import LazyLoad , { forceCheck } from 'react-lazyload';
+import KEY_CODE from 'rc-util/lib/KeyCode';
 import {
   TableProps,
   TableState,
@@ -115,6 +116,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   renderData:any;
   columns: ColumnProps<T>[];
   components: TableComponents;
+  shiftOn?:boolean ;
+
   constructor(props: TableProps<T>) {
     super(props);
 
@@ -156,6 +159,28 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       if(table){
         table.addEventListener("scroll", forceCheck);
       }
+    }
+    //监听shift
+    if(this.props.rowSelection && this.props.rowSelection.shiftSelect){//按住shift的时候 this.shiftOn 是true，松开就变成false了
+	    document.addEventListener("keydown",this.setShiftBtnOn)
+	    document.addEventListener("keyup",this.setShiftBtnOff)
+    }
+  }
+	componentWillUnmount(){
+		//移除监听
+		if(this.props.rowSelection && this.props.rowSelection.shiftSelect){
+			document.removeEventListener("keydown",this.setShiftBtnOn)
+			document.removeEventListener("keyup",this.setShiftBtnOff)
+		}
+  }
+  setShiftBtnOn = (event: any) =>{
+    if(KEY_CODE.SHIFT === event.keyCode){
+      this.shiftOn = true;
+    }
+  }
+  setShiftBtnOff = (event: any) =>{
+    if(KEY_CODE.SHIFT === event.keyCode){
+        this.shiftOn = false;
     }
   }
   getCheckboxPropsByItem = (item: T, index: number) => {
@@ -475,14 +500,44 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       }
     });
   }
-
+	/**
+	 * 按住shift 进行多选。最后选择的一条数据到新选择的数据区间内全选。
+	 * @param {string[]} selectedRowKeys
+	 * @param {number} rowIndex
+	 * @returns {string[]}
+	 */
+  getShiftOnSelectRowKeys = (selectedRowKeys :string[] ,rowIndex:number) =>{
+	  const currentPageData = this.getCurrentPageData();//当前页面数据
+	  const currentPageDataKeys = currentPageData.map((record,rowIndex) => this.getRecordKey(record, rowIndex));//当前页面数据的key数组
+	  const lastSelectRowkey = selectedRowKeys[selectedRowKeys.length - 1];//最后一次选中的列key
+	  const lastSelectRowKeyIndex = currentPageDataKeys.reduce(((previousValue, currentValue, currentIndex) => {//最后一次选中的列下标
+	    if(currentValue === lastSelectRowkey){
+	      return currentIndex;
+      }
+      return previousValue;
+    }),0);
+	  const startIndex = lastSelectRowKeyIndex < rowIndex ? lastSelectRowKeyIndex : rowIndex;//选中数据区间起始
+	  const endIndex = lastSelectRowKeyIndex < rowIndex ? rowIndex: lastSelectRowKeyIndex ;//选中区间结束
+	  for(let i  = startIndex ; i <= endIndex ; i++ ){
+	    const record = currentPageData[i];
+	    const selectedRowKey = this.getRecordKey(record, i);
+	    if(!selectedRowKeys.includes(selectedRowKey) && !this.getCheckboxPropsByItem(record,i).disabled){//如果选中的key 没有选中过且不是disabled
+		    selectedRowKeys.push(selectedRowKey)
+	    }
+	  }
+    return selectedRowKeys;
+  }
   handleSelect = (record: T, rowIndex: number, e: React.ChangeEvent<HTMLInputElement>) => {
     const checked = e.target.checked;
     const defaultSelection = this.store.getState().selectionDirty ? [] : this.getDefaultSelection();
     let selectedRowKeys = this.store.getState().selectedRowKeys.concat(defaultSelection);
     let key = this.getRecordKey(record, rowIndex);
     if (checked || !selectedRowKeys.includes(key)) {
-      selectedRowKeys.push(this.getRecordKey(record, rowIndex));
+      if(this.shiftOn && selectedRowKeys.length){
+	      selectedRowKeys = this.getShiftOnSelectRowKeys(selectedRowKeys,rowIndex);
+      }else{
+	      selectedRowKeys.push(this.getRecordKey(record, rowIndex));
+      }
     } else {
       selectedRowKeys = selectedRowKeys.filter((i: string) => key !== i);
     }
@@ -627,11 +682,11 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
   renderSelectionBox = (type: RowSelectionType | undefined) => {
     return (_: any, record: T, index: number) => {
-      let rowIndex = this.getRecordKey(record, index); // 从 1 开始
+	    let rowIndex = this.getRecordKey(record, index); // 从 1 开始
       const props = this.getCheckboxPropsByItem(record, index);
       const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        type === 'radio' ? this.handleRadioSelect(record, rowIndex, e) :
-                           this.handleSelect(record, rowIndex, e);
+        type === 'radio' ? this.handleRadioSelect(record, index, e) :
+                           this.handleSelect(record, index, e);
       };
 
       return (
@@ -968,12 +1023,12 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     let {rowSelection}=this.props;
     if(rowSelection && rowSelection.selecttype && rowSelection.selecttype === true){
      rowSelection.type === 'radio' ? this.handleRadioSelect(record, index, event) :
-                           this.handleSelect(record, index, event);     
+                           this.handleSelect(record, index, event);
                          }
    if(this.props.onRowClick){
      this.props.onRowClick(record, index, event)
    }
-  } 
+  }
 
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
@@ -1018,7 +1073,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       />
     );
   }
-  isSortColumnbt = () =>{ 
+  isSortColumnbt = () =>{
     if(this.props.isColumnsChange && this.props.isColumnsChange === true){
         let {columns}=this.props;
         let { abcard }=this.state
@@ -1027,9 +1082,9 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         let buttom;
         if(columns){
           u=columns.map((data)=>{
-              let bh=athis.isCheckDefault(data); 
+              let bh=athis.isCheckDefault(data);
               return <div><Checkbox value={data.dataIndex} defaultChecked={bh} onChange={athis.changSbt}>{data.title}</Checkbox></div>
-          })          
+          })
         }
         if(this.props.columnsChangeData ){
           let text=this.props.columnsChangeData.text?this.props.columnsChangeData.text:"Ok";
@@ -1071,14 +1126,14 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         }
       });
       if(hj != true){return false}
-      else{return true}  
+      else{return true}
     }
     else{
       return true
     }
   }
   changSbt = (e:React.ChangeEvent<HTMLInputElement>) =>{
-    this.getComsList(e.target.value,e.target.checked)    
+    this.getComsList(e.target.value,e.target.checked)
   }
   getComsList = (id:string,che:boolean) =>{
     let bhl:any;

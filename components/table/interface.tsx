@@ -69,6 +69,7 @@ export interface TableRowSelection<T> {
   hideDefaultSelections?: boolean;
   fixed?: boolean;
   selecttype?: boolean;
+  shiftSelect?: boolean;
 }
 
 export interface TableProps<T> {
