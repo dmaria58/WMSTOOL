@@ -1,0 +1,76 @@
+---
+order: 0
+title:
+  zh-CN: 数据导出
+  en-US: Basic Exportexcel
+---
+
+## zh-CN
+
+excel数据导出
+
+## en-US
+
+excel数据导出
+
+````jsx
+import { ExportExcel,Icon} from 'wmstool';
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      columnsSource:[
+      {
+        title: '姓名',
+        dataIndex: 'name',
+        key: 'name',
+      },{
+        title: '年龄',
+        dataIndex: 'age',
+        key: 'age',
+      },{
+        title: '住址',
+        dataIndex: 'address',
+        key: 'address',
+      }
+      ],
+      dataSource:[
+        {
+        key: '1',
+        name: 'chenchen',
+        age: 32,
+        address: '西湖区湖底公园1号'
+      },{
+        key: '2',
+        name: 'fangfang',
+        age: 32,
+        address: '西湖区湖底公园2号' 
+      },{
+        key: '3',
+        name: 'lanlan',
+        age: 32,
+        address: '西湖区湖底公园3号'
+      }
+      ],
+      isPort:false,
+    }
+  }
+  onClick=()=>{
+    this.setState({isPort:!this.state.isPort})
+  }
+  render() {   
+    let {columnsSource,dataSource}=this.state
+    return (
+      <div>
+        <Icon type="download" onClick={this.onClick}/>
+        <ExportExcel columnsSource={columnsSource} dataSource={dataSource} isPort={this.state.isPort} />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, mountNode);
+````
+
+

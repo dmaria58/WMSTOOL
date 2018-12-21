@@ -58,6 +58,7 @@ Array [
   "Scollapse",
   "Easyform",
   "Dragdata",
+  "Exportexcel",
   "version",
 ]
 `;
