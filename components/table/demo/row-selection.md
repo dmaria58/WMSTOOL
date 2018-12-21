@@ -28,23 +28,33 @@ const columns = [{
   dataIndex: 'address',
 }];
 const data = [{
-  key: '1',
+  key: 'A',
   name: 'John Brown',
   age: 32,
   address: 'New York No. 1 Lake Park',
 }, {
-  key: '2',
+  key: 'B',
   name: 'Jim Green',
   age: 42,
   address: 'London No. 1 Lake Park',
 }, {
-  key: '3',
+  key: 'C',
   name: 'Joe Black',
   age: 32,
   address: 'Sidney No. 1 Lake Park',
 }, {
-  key: '4',
+  key: 'D',
   name: 'Disabled User',
+  age: 99,
+  address: 'Sidney No. 1 Lake Park',
+}, {
+  key: 'E',
+  name: ' User',
+  age: 99,
+  address: 'Sidney No. 1 Lake Park',
+}, {
+  key: 'F',
+  name: ' User',
   age: 99,
   address: 'Sidney No. 1 Lake Park',
 }];
@@ -54,6 +64,7 @@ const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
     console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
   },
+  shiftSelect:true,//按shift选中一片
   getCheckboxProps: record => ({
     disabled: record.name === 'Disabled User', // Column configuration not to be checked
   }),

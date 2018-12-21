@@ -7,7 +7,9 @@
 .@{table-prefix-cls}-wrapper {
   .clearfix;
 }
-
+.@{table-prefix-cls}-hidden{
+  display: none;
+}
 .@{table-prefix-cls} {
   .reset-component;
   overflow: hidden;
@@ -585,5 +587,18 @@
     width: 100%;
     font-size: 10px;
     margin-top: 5px;
+}
+.wmstool-table-iss-card-fixed{
+  position: relative;
+  .wmstool-table-iss-card{
+    padding-bottom: 40px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .wmstool-table-edit_save_bt{
+    position: absolute;
+    bottom:5px;
+    width: calc(100% - 15px);
+  }
 }
 @import './size';

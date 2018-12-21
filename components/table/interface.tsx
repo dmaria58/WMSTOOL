@@ -69,6 +69,7 @@ export interface TableRowSelection<T> {
   hideDefaultSelections?: boolean;
   fixed?: boolean;
   selecttype?: boolean;
+  shiftSelect?: boolean;
 }
 
 export interface TableProps<T> {
@@ -124,7 +125,7 @@ export interface TableState<T> {
   filters: TableStateFilters;
   sortColumn: ColumnProps<T> | null;
   sortOrder: string;
-  abcard: string;
+  abcard: boolean;
   statecolumn?: any;
   tableId?:string;
 }
