@@ -128,6 +128,7 @@ const columns = [{
 | selections | 自定义选择项 [配置项](#selection), 设为 `true` 时使用默认选择项 | object\[]\|boolean | true |
 | type | 多选/单选，`checkbox` or `radio` | string | `checkbox` |
 | selecttype | 是否点击行选中| boolean | false |
+| shiftSelect | 是否启动shift快捷多选| boolean | false |
 |isColumnsChange| 是否可隐藏columns【参考自定义选择项例子】【此模式支持radio框取消选择】| boolean | false |
 |columnsChangeData| 是否可隐藏columns新增按钮和回掉功能，可用于保存记住自定义列表项,onSaveColums返回实际显示的列表数据和所有列表数据【参考自定义选择项例子】| {text:"保存",onSaveColums:this.onSaveColums} | - |
 | returnSelectColumn| isColumnsChange 模式下自定义项发生变化回调，返回显示列 | Function(columns) | - |
