@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "1.4.12",
+  "version": "1.4.13",
   "description": "一套前端组件库基于atd 3.0.3、react",
   "scripts": {
     "testsingle": "jest --config  .jest.js",
@@ -47,7 +47,7 @@
     "rc-pagination": "~1.12.4",
     "rc-progress": "~2.2.2",
     "rc-rate": "~2.3.0",
-    "rc-select": "~7.3.2",
+    "rc-select": "~8.4.3",
     "rc-slider": "~8.5.0",
     "rc-steps": "~3.0.0",
     "rc-switch": "~1.6.0",
