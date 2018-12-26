@@ -49,6 +49,7 @@ class App extends React.Component {
       },{
         key: '3',
         name: 'lanlan',
+        gugug:"aaaa",
         age: 32,
         address: '西湖区湖底公园3号'
       }
@@ -64,7 +65,7 @@ class App extends React.Component {
     return (
       <div>
         <Icon type="download" onClick={this.onClick}/>
-        <Exportexcel columnsSource={columnsSource} dataSource={dataSource} isPort={this.state.isPort} />
+        <Exportexcel columnsSource={columnsSource} dataSource={dataSource} isPort={this.state.isPort}  linkName={"下载666.xls"} />
       </div>
     );
   }
