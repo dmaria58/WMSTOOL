@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Table from '../table';
 declare function unescape(s:string): string;
 export interface EformProps {
   columnsSource?: any;
   dataSource?: any;
   isPort?:(h:boolean)=>any;
+  linkName?: any;
 }
 export default class Exportexcel extends React.Component<EformProps> {
   constructor(props: EformProps) {
@@ -12,41 +12,45 @@ export default class Exportexcel extends React.Component<EformProps> {
   }
   tableNode?: any;
   componentWillReceiveProps(nextProps:any) {
+    const { columnsSource, dataSource,} = this.props;
     if(nextProps.isPort != this.props.isPort){
-      tableToExcel(this.tableNode)
+      // 处理数据
+      let arry=[]
+      for(let i = 0; i < dataSource.length; i++){
+          let tep={}
+          columnsSource.forEach((filter:any)=>{
+              tep[filter.dataIndex]=dataSource[i][filter.dataIndex]
+          })
+          arry.push(tep)
+      }
+      this.tableToExcel(columnsSource,arry) 
     }
   }
-  renderTable = () => {
-    const { columnsSource, dataSource } = this.props;
-    return (
-      <div ref={node => this.tableNode = node} style={{ display: "none" }}>
-        <Table
-          columns={columnsSource}
-          dataSource={dataSource}
-        />
-      </div>
-    )
+  tableToExcel(columnsSource:any,dataSource:any){
+    const { linkName } = this.props;
+    let str ='';
+    for(let i = 0; i < columnsSource.length; i++){
+        str+=`${columnsSource[i].key + '\t'},`;
+    }
+    str += '\n';
+    for (let i = 0; i < dataSource.length; i++) {
+        for (let item in dataSource[i]) {
+            str += `${dataSource[i][item] + '\t'},`;
+        }
+        str += '\n';
+    }
+    let uri = 'data:text/csv;charset=utf-8,\ufeff' + encodeURIComponent(str);
+    var link = document.createElement("a");
+    link.href = uri;
+    link.download = linkName?linkName:"下载.xls";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); 
   }
   render() {
     return (
       <div>
-        {this.renderTable()}
       </div>
     );
   }
 }
-//导出方法
-
-const tableToExcel = (function () {
-  let uri = 'data:application/vnd.ms-excel;base64,';
-  let template = '<html><head><meta charset="UTF-8"></head><body><table>{table}</table></body></html>';
-  let base64 = function (s: any) { return window.btoa(unescape(encodeURIComponent(s))) };
-  let format = function (s: any, c: any) {
-    return s.replace(/{(\w+)}/g,
-      function (p: any) { return c[p]; })
-  }
-  return function (table: any) {
-    var ctx = { worksheet: name || 'Worksheet', table: table.innerHTML }
-    window.location.href = uri + base64(format(template, ctx))
-  }
-})()
