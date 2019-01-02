@@ -1136,7 +1136,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       return (
         <div className="wmstool-table-edit_download">
           <Icon type={downloadExcelData.iconType||"export"} onClick={() => this.clickDownExcel(downloadExcelData)} />
-          <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} />
+          <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} linkName={downloadExcelData.linkName}/>
         </div>
       )
     }
