@@ -65,7 +65,7 @@ class App extends React.Component {
     return (
       <div>
         <Icon type="download" onClick={this.onClick}/>
-        <Exportexcel getExportExcel={fn => this.handleExport = fn}  />
+        <Exportexcel getExportExcel={fn => this.handleExport = fn}  linkName={"download.xls"} />
       </div>
     );
   }

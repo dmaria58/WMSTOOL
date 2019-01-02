@@ -105,6 +105,6 @@ const rowSelection = {
 
 ReactDOM.render(
   <Table rowSelection={rowSelection} columns={columns} dataSource={data}  
-  downloadExcelData={{iconType:"download",isDownTableExcel:true,downloadExcelHeader:excelHeader,downloadExcelBody:excelBody}}/>
+  downloadExcelData={{iconType:"download",linkName:"downloadSummary.xls",isDownTableExcel:true,downloadExcelHeader:excelHeader,downloadExcelBody:excelBody}}/>
 , mountNode);
 ````
