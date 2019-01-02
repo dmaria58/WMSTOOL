@@ -134,6 +134,7 @@ class App extends React.Component {
     const rowSelection = {
       selectedRowKeys,
       selecttype: true,
+      shiftSelect: true,
       onChange: this.onSelectChange,
     };
     const hasSelected = selectedRowKeys.length > 0;

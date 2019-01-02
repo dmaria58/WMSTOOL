@@ -12,6 +12,27 @@ timeline: true
 未定义
 
 ---
+## 1.4.14
+
+`2019-01-02`
+
+- 🐞 Table 可隐藏列选择框下拉样式修改
+- 🐞 Table 新增shiftSelect属性，shift快捷多选
+- 🐞 Table 新增downloadExcelData属性，实现excel导出功能
+- 🐞 Exportexcel 新增Excel导出数据组件
+
+## 1.4.13
+
+`2018-10-29`
+
+- 🐞 更新rc-select版本修复select bug
+
+## 1.4.12
+
+`2018-10-25`
+
+- 🐞 table 可编辑表格排序优化，新增columnsChangeData
+
 ## 1.4.11
 
 `2018-09-13`

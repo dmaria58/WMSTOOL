@@ -82,6 +82,8 @@ declare module 'rc-collapse';
 
 declare module 'rc-form*';
 
+declare module 'rc-trigger';
+
 declare module 'react-lazy-load';
 
 declare module 'dom-closest';

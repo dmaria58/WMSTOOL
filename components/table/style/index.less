@@ -7,7 +7,9 @@
 .@{table-prefix-cls}-wrapper {
   .clearfix;
 }
-
+.@{table-prefix-cls}-hidden{
+  display: none;
+}
 .@{table-prefix-cls} {
   .reset-component;
   overflow: hidden;
@@ -566,11 +568,28 @@
     right: 7px;  
     width:150px;
 }
+.wmstool-table-edit_download{
+  position: absolute;
+  top: 6px;
+  right: 50px;  
+  width:150px;
+  text-align:right;
+  padding: 5px;
+  cursor: pointer;
+}
+.wmstool-table-edit_download:hover{
+  color: #1890ff;
+}
 .wmstool-table-edit_b{
     padding: 5px;
 }
 .wmstool-table-edit_b_div{
   text-align:right;
+}
+.wmstool-table-edit_div {
+  &>div:last-child{
+    width: auto !important;
+  }
 }
 .wmstool-table-edit_div .wmstool-checkbox-wrapper{
   display: inline-block;
@@ -580,5 +599,16 @@
   border: 1px solid #ccc;
   padding: 6px;
   border-radius: 5px;
+  white-space: nowrap;
+  .row-selector-content{
+    max-height: 200px;
+    overflow-y: auto;
+  }
 }
+.wmstool-table-edit_save_bt{
+    width: 100%;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
 @import './size';

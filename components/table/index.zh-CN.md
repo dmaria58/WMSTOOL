@@ -80,6 +80,7 @@ const columns = [{
 | onHeaderRow | 设置头部列属性 | Function(column, index) | - |
 | onRow | 设置列属性 | Function(record, index) | - |
 | isMaxData | 数据过多设置参数能下拉渲染【例子：row-selection-and-operation.md】 | object |{{lazyHeight:"这里设置单行tr高度"}}|
+| downloadExcelData | excel下载 | object | {isDownTableExcel：true;<br>iconType:下载图标类型，，默认图标"export";<br>downloadExcelHeader：下载表头数据，默认是当前table显示Columns;<br>downloadExcelBody:下载数据,默认是当前页的table数据;<br>linkName:下载列表的名称，默认download;} |
 
 ### Column
 
@@ -128,7 +129,9 @@ const columns = [{
 | selections | 自定义选择项 [配置项](#selection), 设为 `true` 时使用默认选择项 | object\[]\|boolean | true |
 | type | 多选/单选，`checkbox` or `radio` | string | `checkbox` |
 | selecttype | 是否点击行选中| boolean | false |
+| shiftSelect | 是否启动shift快捷多选| boolean | false |
 |isColumnsChange| 是否可隐藏columns【参考自定义选择项例子】【此模式支持radio框取消选择】| boolean | false |
+|columnsChangeData| 是否可隐藏columns新增按钮和回掉功能，可用于保存记住自定义列表项,onSaveColums返回实际显示的列表数据和所有列表数据【参考自定义选择项例子】| {text:"保存",onSaveColums:this.onSaveColums} | - |
 | returnSelectColumn| isColumnsChange 模式下自定义项发生变化回调，返回显示列 | Function(columns) | - |
 | onChange | 选中项发生变化的时的回调 | Function(selectedRowKeys, selectedRows) | - |
 | onSelect | 用户手动选择/取消选择某列的回调 | Function(record, selected, selectedRows) | - |
