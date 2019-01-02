@@ -1,41 +1,44 @@
 import * as React from 'react';
+import Icon from '../icon';
 declare function unescape(s:string): string;
 export interface EformProps {
-  columnsSource?: any;
+  columns?: any;
   dataSource?: any;
-  isPort?:(h:boolean)=>any;
+  getExportExcel?: any;
+  Exportexcel?: any;
   linkName?: any;
 }
+
 export default class Exportexcel extends React.Component<EformProps> {
   constructor(props: EformProps) {
     super(props);
   }
   tableNode?: any;
-  componentWillReceiveProps(nextProps:any) {
-    const { columnsSource, dataSource,} = this.props;
-    if(nextProps.isPort != this.props.isPort){
-      // 处理数据
-      let arry=[]
+  componentDidMount() {
+    this.props.getExportExcel((columns:any,dataSource:any) => this.tableToExcel(columns,dataSource))
+  }
+  tableToExcel(columns:any,dataSource:any){
+    const { linkName } = this.props;
+     // 处理数据
+    let newDataSource=[]
+    if(columns){
       for(let i = 0; i < dataSource.length; i++){
           let tep={}
-          columnsSource.forEach((filter:any)=>{
+          columns.forEach((filter:any)=>{
               tep[filter.dataIndex]=dataSource[i][filter.dataIndex]
           })
-          arry.push(tep)
+          newDataSource.push(tep)
       }
-      this.tableToExcel(columnsSource,arry) 
     }
-  }
-  tableToExcel(columnsSource:any,dataSource:any){
-    const { linkName } = this.props;
+    
     let str ='';
-    for(let i = 0; i < columnsSource.length; i++){
-        str+=`${columnsSource[i].key + '\t'},`;
+    for(let i = 0; i < columns.length; i++){
+        str+=`${columns[i].dataIndex + '\t'},`;
     }
     str += '\n';
-    for (let i = 0; i < dataSource.length; i++) {
-        for (let item in dataSource[i]) {
-            str += `${dataSource[i][item] + '\t'},`;
+    for (let i = 0; i < newDataSource.length; i++) {
+        for (let item in newDataSource[i]) {
+            str += `${newDataSource[i][item] + '\t'},`;
         }
         str += '\n';
     }

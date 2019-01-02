@@ -7,6 +7,7 @@ import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
 import Buttom from '../button';
+import  Exportexcel from '../export-excel';
 import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
@@ -1118,6 +1119,26 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       </div>)
     }
   }
+  // 下载按钮
+  isDownTablebt = () => {
+    if (this.props.isDownTableExcel && this.props.isDownTableExcel === true) {
+      return (
+        <div className="wmstool-table-edit_download">
+          <Icon type="download" onClick={() => this.clickDownExcel()} />
+          <Exportexcel getExportExcel={fn => this.handleExport = fn} />
+        </div>
+      )
+    }
+  }
+  clickDownExcel() {
+    let { dataSource, ColumnsChangeList, downloadExcelHeader, downloadExcelBody } = this.props;
+    if (downloadExcelHeader && downloadExcelBody) {
+      this.handleExport(downloadExcelHeader, downloadExcelBody)
+    } else {
+      this.handleExport(ColumnsChangeList, dataSource)
+    }
+  }
+
   isCheckDefault = (data:any) =>{
     if(this.props.ColumnsChangeList){
       let hj:any;
@@ -1219,6 +1240,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         >
           {table}
           {this.isSortColumnbt()}
+          {this.isDownTablebt()}
           {this.renderPagination()}
         </Spin>
       </div>
