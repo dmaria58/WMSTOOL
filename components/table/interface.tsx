@@ -110,6 +110,7 @@ export interface TableProps<T> {
   style?: React.CSSProperties;
   children?: React.ReactNode;
   isColumnsChange?: boolean;
+  isDownTableExcel?:boolean;
   columnsChangeData?:any;
   isMaxData?:any;
   ColumnsChangeList?: ColumnProps<T>[];
