@@ -42,7 +42,7 @@ export default class Exportexcel extends React.Component<EformProps> {
     let uri = 'data:text/csv;charset=utf-8,\ufeff' + encodeURIComponent(str);
     var link = document.createElement("a");
     link.href = uri;
-    link.download = linkName?linkName:"下载.xls";
+    link.download = linkName?linkName:"download.xls";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link); 
