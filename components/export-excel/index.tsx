@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Icon from '../icon';
-declare function unescape(s:string): string;
 export interface EformProps {
   columns?: any;
   dataSource?: any;
@@ -13,7 +11,6 @@ export default class Exportexcel extends React.Component<EformProps> {
   constructor(props: EformProps) {
     super(props);
   }
-  tableNode?: any;
   componentDidMount() {
     this.props.getExportExcel((columns:any,dataSource:any) => this.tableToExcel(columns,dataSource))
   }
@@ -23,7 +20,7 @@ export default class Exportexcel extends React.Component<EformProps> {
     let newDataSource=[]
     if(columns){
       for(let i = 0; i < dataSource.length; i++){
-          let tep={}
+          let tep={} 
           columns.forEach((filter:any)=>{
               tep[filter.dataIndex]=dataSource[i][filter.dataIndex]
           })
