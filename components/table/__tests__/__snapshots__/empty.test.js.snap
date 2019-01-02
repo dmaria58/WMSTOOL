@@ -12,7 +12,7 @@ exports[`Table renders empty table 1`] = `
       class="wmstool-spin-container"
     >
       <div
-        class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-8682818694610197 wmstool-table-scroll-position-left"
       >
         <div
           class="wmstool-table-content"
@@ -124,7 +124,7 @@ exports[`Table renders empty table with custom emptyText 1`] = `
       class="wmstool-spin-container"
     >
       <div
-        class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-4590458380408047 wmstool-table-scroll-position-left"
       >
         <div
           class="wmstool-table-content"
@@ -236,7 +236,7 @@ exports[`Table renders empty table with fixed columns 1`] = `
       class="wmstool-spin-container"
     >
       <div
-        class="wmstool-table wmstool-table-large wmstool-table-empty wmstool-table-scroll-position-left"
+        class="wmstool-table wmstool-table-large wmstool-table-empty lazy-table-4432531924917893 wmstool-table-scroll-position-left"
       >
         <div
           class="wmstool-table-content"
