@@ -175,11 +175,20 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 			document.removeEventListener("keyup",this.setShiftBtnOff)
 		}
   }
+	
+	/**
+	 * 开启shift监听状态
+	 * @param event
+	 */
   setShiftBtnOn = (event: any) =>{
     if(KEY_CODE.SHIFT === event.keyCode){
       this.shiftOn = true;
     }
   }
+	/**
+	 * 关闭shift监听状态
+	 * @param event
+	 */
   setShiftBtnOff = (event: any) =>{
     if(KEY_CODE.SHIFT === event.keyCode){
         this.shiftOn = false;
@@ -1100,14 +1109,14 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
               onPopupVisibleChange={this.changeDisplayc}
               getPopupContainer={(target:any) => target.parentNode}
               popup={(
-                  <div className={`${this.props.columnsChangeData.fixed ? "wmstool-table-iss-card-fixed" : ""} `}>
+                  <div className={`${this.props.columnsChangeData && this.props.columnsChangeData.fixed ? "wmstool-table-iss-card-fixed" : ""} `}>
                       <div className="wmstool-table-iss-card ">
-                          {u}<div>{buttom}</div>
+                          {u}<div className="button-container">{buttom}</div>
                       </div>
                   </div>
               )}
               popupAlign={{
-                  points: ['tl', 'bl']
+                  points: ['tr', 'br']
               }}
           >
               <div className="wmstool-table-edit_b_div" >
