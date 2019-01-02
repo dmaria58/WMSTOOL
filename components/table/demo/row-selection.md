@@ -58,7 +58,40 @@ const data = [{
   age: 99,
   address: 'Sidney No. 1 Lake Park',
 }];
-
+const excelHeader=[
+ {
+  title: '姓名',
+  dataIndex: 'name',
+  key: 'name',
+  },{
+  title: '年龄',
+  dataIndex: 'age',
+  key: 'age',
+  },{
+  title: '住址',
+  dataIndex: 'address',
+  key: 'address',
+  }
+]
+const excelBody=[
+ {
+  key: '1',
+  name: 'chenchen',
+  age: 32,
+  address: '西湖区湖底公园1号'
+  },{
+  key: '2',
+  name: 'fangfang',
+  age: 32,
+  address: '西湖区湖底公园2号' 
+  },{
+  key: '3',
+  name: 'lanlan',
+  gugug:"aaaa",
+  age: 32,
+  address: '西湖区湖底公园3号'
+  }
+]
 // rowSelection object indicates the need for row selection
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
@@ -71,6 +104,6 @@ const rowSelection = {
 };
 
 ReactDOM.render(
-  <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+  <Table rowSelection={rowSelection} columns={columns} dataSource={data} isDownTableExcel={true} downloadExcelHeader={excelHeader} downloadExcelBody={excelBody}/>
 , mountNode);
 ````

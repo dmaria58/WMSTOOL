@@ -58,14 +58,14 @@ class App extends React.Component {
     }
   }
   onClick=()=>{
-    this.setState({isPort:!this.state.isPort})
+    let {columnsSource,dataSource}=this.state
+    this.handleExport(columnsSource,dataSource)
   }
   render() {   
-    let {columnsSource,dataSource}=this.state
     return (
       <div>
         <Icon type="download" onClick={this.onClick}/>
-        <Exportexcel columnsSource={columnsSource} dataSource={dataSource} isPort={this.state.isPort}  linkName={"下载666.xls"} />
+        <Exportexcel getExportExcel={fn => this.handleExport = fn}  linkName={"下载666.xls"} />
       </div>
     );
   }
