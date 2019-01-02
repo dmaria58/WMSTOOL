@@ -27,7 +27,7 @@ export default class Exportexcel extends React.Component<EformProps> {
           newDataSource.push(tep)
       }
     }
-    
+
     let str ='';
     for(let i = 0; i < columns.length; i++){
         str+=`${columns[i].dataIndex + '\t'},`;

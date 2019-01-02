@@ -80,9 +80,7 @@ const columns = [{
 | onHeaderRow | 设置头部列属性 | Function(column, index) | - |
 | onRow | 设置列属性 | Function(record, index) | - |
 | isMaxData | 数据过多设置参数能下拉渲染【例子：row-selection-and-operation.md】 | object |{{id:"这里设置table的id"}}|
-| downloadExcelBody | 要下载的数据数组 | any\[] | 如果传入，会优先下载； |
-| downloadExcelHeader | 要下载的表头 |  any\[] | 如果传入，会优先下载； |
-| isDownTableExcel | 是否下载table当前页面数据【row-selection-custom,md】| boolean | false |
+| downloadExcelData | excel下载 | object | {isDownTableExcel：true,iconType:下载图标类型，downloadExcelHeader：下载表头数据，默认是当前table显示Columns,downloadExcelBody:下载数据,默认是当前页的table数据} |
 
 ### Column
 
