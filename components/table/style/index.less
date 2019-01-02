@@ -586,6 +586,11 @@
 .wmstool-table-edit_b_div{
   text-align:right;
 }
+.wmstool-table-edit_div {
+  &>div:last-child{
+    width: auto !important;
+  }
+}
 .wmstool-table-edit_div .wmstool-checkbox-wrapper{
   display: inline-block;
 }
@@ -594,6 +599,7 @@
   border: 1px solid #ccc;
   padding: 6px;
   border-radius: 5px;
+  white-space: nowrap;
 }
 .wmstool-table-edit_save_bt{
     width: 100%;
@@ -606,11 +612,17 @@
     padding-bottom: 40px;
     max-height: 200px;
     overflow-y: auto;
+    min-width: 150px;
   }
-  .wmstool-table-edit_save_bt{
+  .button-container{
     position: absolute;
     bottom:5px;
-    width: calc(100% - 15px);
+    width: calc(100% - 20px);
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .wmstool-table-edit_save_bt{
+    width: 98%;
   }
 }
 @import './size';
