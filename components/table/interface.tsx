@@ -69,6 +69,7 @@ export interface TableRowSelection<T> {
   hideDefaultSelections?: boolean;
   fixed?: boolean;
   selecttype?: boolean;
+  shiftSelect?: boolean;
 }
 
 export interface TableProps<T> {
@@ -109,9 +110,12 @@ export interface TableProps<T> {
   style?: React.CSSProperties;
   children?: React.ReactNode;
   isColumnsChange?: boolean;
+  isDownTableExcel?:boolean;
+  columnsChangeData?:any;
   isMaxData?:any;
   ColumnsChangeList?: ColumnProps<T>[];
   returnSelectColumn?:(clumons: any)=> any;
+  downloadExcelData?:any;
 }
 
 export interface TableStateFilters {
@@ -123,7 +127,7 @@ export interface TableState<T> {
   filters: TableStateFilters;
   sortColumn: ColumnProps<T> | null;
   sortOrder: string;
-  abcard: string;
+  abcard: boolean;
   statecolumn?: any;
   tableId?:string;
 }

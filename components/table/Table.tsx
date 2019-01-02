@@ -7,6 +7,7 @@ import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
 import Buttom from '../button';
+import  Exportexcel from '../export-excel';
 import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
@@ -20,6 +21,8 @@ import ColumnGroup from './ColumnGroup';
 import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
 import LazyLoad , { forceCheck } from 'react-lazyload';
+import KEY_CODE from 'rc-util/lib/KeyCode';
+import Trigger from 'rc-trigger';
 import {
   TableProps,
   TableState,
@@ -31,6 +34,8 @@ import {
   TableStateFilters,
   SelectionItemSelectFn,
 } from './interface';
+//const RcTrigger = require("rc-trigger/lib/index.js");
+
 
 function noop() {
 }
@@ -113,6 +118,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   renderData:any;
   columns: ColumnProps<T>[];
   components: TableComponents;
+  shiftOn?:boolean ;
+
   constructor(props: TableProps<T>) {
     super(props);
 
@@ -131,7 +138,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       // 减少状态
       filters: this.getFiltersFromColumns(),
       pagination: this.getDefaultPagination(props),
-      abcard:'none',
+      abcard:false,//是否显示列过滤器
       statecolumn:hjj,
       tableId: "lazy-table-"+(Math.random().toString().slice(2)),
 
@@ -154,6 +161,37 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       if(table){
         table.addEventListener("scroll", forceCheck);
       }
+    }
+    //监听shift
+    if(this.props.rowSelection && this.props.rowSelection.shiftSelect){//按住shift的时候 this.shiftOn 是true，松开就变成false了
+	    document.addEventListener("keydown",this.setShiftBtnOn)
+	    document.addEventListener("keyup",this.setShiftBtnOff)
+    }
+  }
+	componentWillUnmount(){
+		//移除监听
+		if(this.props.rowSelection && this.props.rowSelection.shiftSelect){
+			document.removeEventListener("keydown",this.setShiftBtnOn)
+			document.removeEventListener("keyup",this.setShiftBtnOff)
+		}
+  }
+	
+	/**
+	 * 开启shift监听状态
+	 * @param event
+	 */
+  setShiftBtnOn = (event: any) =>{
+    if(KEY_CODE.SHIFT === event.keyCode){
+      this.shiftOn = true;
+    }
+  }
+	/**
+	 * 关闭shift监听状态
+	 * @param event
+	 */
+  setShiftBtnOff = (event: any) =>{
+    if(KEY_CODE.SHIFT === event.keyCode){
+        this.shiftOn = false;
     }
   }
   getCheckboxPropsByItem = (item: T, index: number) => {
@@ -473,14 +511,44 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       }
     });
   }
-
+	/**
+	 * 按住shift 进行多选。最后选择的一条数据到新选择的数据区间内全选。
+	 * @param {string[]} selectedRowKeys
+	 * @param {number} rowIndex
+	 * @returns {string[]}
+	 */
+  getShiftOnSelectRowKeys = (selectedRowKeys :string[] ,rowIndex:number) =>{
+	  const currentPageData = this.getCurrentPageData();//当前页面数据
+	  const currentPageDataKeys = currentPageData.map((record,rowIndex) => this.getRecordKey(record, rowIndex));//当前页面数据的key数组
+	  const lastSelectRowkey = selectedRowKeys[selectedRowKeys.length - 1];//最后一次选中的列key
+	  const lastSelectRowKeyIndex = currentPageDataKeys.reduce(((previousValue, currentValue, currentIndex) => {//最后一次选中的列下标
+	    if(currentValue === lastSelectRowkey){
+	      return currentIndex;
+      }
+      return previousValue;
+    }),0);
+	  const startIndex = lastSelectRowKeyIndex < rowIndex ? lastSelectRowKeyIndex : rowIndex;//选中数据区间起始
+	  const endIndex = lastSelectRowKeyIndex < rowIndex ? rowIndex: lastSelectRowKeyIndex ;//选中区间结束
+	  for(let i  = startIndex ; i <= endIndex ; i++ ){
+	    const record = currentPageData[i];
+	    const selectedRowKey = this.getRecordKey(record, i);
+	    if(!selectedRowKeys.includes(selectedRowKey) && !this.getCheckboxPropsByItem(record,i).disabled){//如果选中的key 没有选中过且不是disabled
+		    selectedRowKeys.push(selectedRowKey)
+	    }
+	  }
+    return selectedRowKeys;
+  }
   handleSelect = (record: T, rowIndex: number, e: React.ChangeEvent<HTMLInputElement>) => {
     const checked = e.target.checked;
     const defaultSelection = this.store.getState().selectionDirty ? [] : this.getDefaultSelection();
     let selectedRowKeys = this.store.getState().selectedRowKeys.concat(defaultSelection);
     let key = this.getRecordKey(record, rowIndex);
     if (checked || !selectedRowKeys.includes(key)) {
-      selectedRowKeys.push(this.getRecordKey(record, rowIndex));
+      if(this.shiftOn && selectedRowKeys.length){
+	      selectedRowKeys = this.getShiftOnSelectRowKeys(selectedRowKeys,rowIndex);
+      }else{
+	      selectedRowKeys.push(this.getRecordKey(record, rowIndex));
+      }
     } else {
       selectedRowKeys = selectedRowKeys.filter((i: string) => key !== i);
     }
@@ -625,11 +693,11 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
   renderSelectionBox = (type: RowSelectionType | undefined) => {
     return (_: any, record: T, index: number) => {
-      let rowIndex = this.getRecordKey(record, index); // 从 1 开始
+	    let rowIndex = this.getRecordKey(record, index); // 从 1 开始
       const props = this.getCheckboxPropsByItem(record, index);
       const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        type === 'radio' ? this.handleRadioSelect(record, rowIndex, e) :
-                           this.handleSelect(record, rowIndex, e);
+        type === 'radio' ? this.handleRadioSelect(record, index, e) :
+                           this.handleSelect(record, index, e);
       };
 
       return (
@@ -966,12 +1034,12 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     let {rowSelection}=this.props;
     if(rowSelection && rowSelection.selecttype && rowSelection.selecttype === true){
      rowSelection.type === 'radio' ? this.handleRadioSelect(record, index, event) :
-                           this.handleSelect(record, index, event);     
+                           this.handleSelect(record, index, event);
                          }
    if(this.props.onRowClick){
      this.props.onRowClick(record, index, event)
    }
-  } 
+  }
 
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
@@ -1016,22 +1084,75 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       />
     );
   }
-  isSortColumnbt = () =>{ 
+  isSortColumnbt = () =>{
     if(this.props.isColumnsChange && this.props.isColumnsChange === true){
         let {columns}=this.props;
-        let {abcard}=this.state
+        let { abcard }=this.state
         let u;
         let athis=this;
+        let buttom;
         if(columns){
           u=columns.map((data)=>{
-              let bh=athis.isCheckDefault(data); 
+              let bh=athis.isCheckDefault(data);
               return <div><Checkbox value={data.dataIndex} defaultChecked={bh} onChange={athis.changSbt}>{data.title}</Checkbox></div>
-          })          
+          })
         }
-      return(<div className="wmstool-table-edit_div">
-        <div className="wmstool-table-edit_b_div" ><Buttom onClick={athis.changeDisplayc} className="wmstool-table-edit_b"><Icon type="setting" /></Buttom></div><div style={{display:abcard}} className="wmstool-table-iss-card">{u}</div></div>)
+        if(this.props.columnsChangeData ){
+          let text=this.props.columnsChangeData.text?this.props.columnsChangeData.text:"Ok";
+          buttom = <Buttom className="wmstool-table-edit_save_bt" type="primary" onClick={athis.clickChangeColums}>{text}</Buttom>;
+        }
+      return(<div className="wmstool-table-edit_div ">
+          <Trigger
+              action={["click"]}
+              prefixCls={this.props.prefixCls}
+              popupVisible = {abcard}
+              onPopupVisibleChange={this.changeDisplayc}
+              getPopupContainer={(target:any) => target.parentNode}
+              popup={(
+                  <div>
+                      <div className="wmstool-table-iss-card ">
+                        <div className={"row-selector-content"}>{u}</div>
+                        <div className="button-container">{buttom}</div>
+                      </div>
+                  </div>
+              )}
+              popupAlign={{
+                  points: ['tr', 'br']
+              }}
+          >
+              <div className="wmstool-table-edit_b_div" >
+                  <Buttom className="wmstool-table-edit_b">
+                      <Icon type="setting" />
+                  </Buttom>
+              </div>
+          </Trigger>
+      </div>)
     }
   }
+  // 下载按钮
+  isDownTablebt = () => {
+    let { downloadExcelData } = this.props;
+    if (downloadExcelData&&downloadExcelData.isDownTableExcel) {
+      return (
+        <div className="wmstool-table-edit_download">
+          <Icon type={downloadExcelData.iconType||"export"} onClick={() => this.clickDownExcel(downloadExcelData)} />
+          <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} linkName={downloadExcelData.linkName}/>
+        </div>
+      )
+    }
+  }
+  handleExport(header:any,body:any){
+    return {header,body}//无意义，处理类型（原因：定义后的类型一定要使用才可以）
+  }
+  clickDownExcel(downloadExcelData:any) {
+    let { dataSource, ColumnsChangeList } = this.props;
+    if (downloadExcelData.downloadExcelHeader && downloadExcelData.downloadExcelBody) {
+      this.handleExport(downloadExcelData.downloadExcelHeader, downloadExcelData.downloadExcelBody)
+    } else {
+      this.handleExport(ColumnsChangeList, dataSource)
+    }
+  }
+
   isCheckDefault = (data:any) =>{
     if(this.props.ColumnsChangeList){
       let hj:any;
@@ -1041,17 +1162,17 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         }
       });
       if(hj != true){return false}
-      else{return true}  
+      else{return true}
     }
     else{
       return true
     }
   }
   changSbt = (e:React.ChangeEvent<HTMLInputElement>) =>{
-    this.getComsList(e.target.value,e.target.checked)    
+    this.getComsList(e.target.value,e.target.checked)
   }
   getComsList = (id:string,che:boolean) =>{
-    let bhl;
+    let bhl:any;
     if(che === false){
       bhl=this.state.statecolumn.filter((data:any) => {
         if(data.dataIndex === id){
@@ -1059,6 +1180,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         }
         return data
       })
+
     }
     else{
       bhl=this.state.statecolumn;
@@ -1071,16 +1193,29 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         }
       })
       bhl.push(bm[0])
+      //排序
+      let last:any=[];
+      this.columns.map((data:any)=>{
+        bhl.map((ldata:any)=>{
+          if(data.dataIndex === ldata.dataIndex){
+            last.push(data);
+          }
+        })
+      })
+      bhl = last;
     }
     this.setState({statecolumn:bhl})
     this.props.returnSelectColumn?this.props.returnSelectColumn(bhl):"";
   }
-  changeDisplayc = () =>{
-    if(this.state.abcard === "none"){
-      this.setState({abcard:"block"})
-    }
-    else{
-      this.setState({abcard:"none"})
+  //列选择器显示状态切换
+  changeDisplayc = (visiable:boolean) =>{
+    this.setState({abcard:visiable})
+  }
+  clickChangeColums= () =>{
+    if(this.props.columnsChangeData.onSaveColums){
+      this.props.columnsChangeData.onSaveColums(this.state.statecolumn,this.columns,() =>{//保存成功可以调用第三个参数关闭菜单
+        this.changeDisplayc(false)
+      });
     }
   }
   render() {
@@ -1119,6 +1254,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         >
           {table}
           {this.isSortColumnbt()}
+          {this.isDownTablebt()}
           {this.renderPagination()}
         </Spin>
       </div>

@@ -65,5 +65,6 @@ export { default as Mention } from './mention';
 export { default as Upload } from './upload';
 export { default as Scollapse } from './scollapse';
 export { default as Easyform } from './easyform';
+export { default as Exportexcel } from './export-excel';
 export { default as Dragdata } from './dragdata';
 export { default as version } from './version';

@@ -954,6 +954,7 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
           checked=""
           class="wmstool-radio-button-input"
           type="radio"
+          value="small"
         />
         <span
           class="wmstool-radio-button-inner"
@@ -972,6 +973,7 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
         <input
           class="wmstool-radio-button-input"
           type="radio"
+          value="default"
         />
         <span
           class="wmstool-radio-button-inner"
@@ -990,6 +992,7 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
         <input
           class="wmstool-radio-button-input"
           type="radio"
+          value="large"
         />
         <span
           class="wmstool-radio-button-inner"
@@ -1110,6 +1113,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
           checked=""
           class="wmstool-radio-button-input"
           type="radio"
+          value="top"
         />
         <span
           class="wmstool-radio-button-inner"
@@ -1128,6 +1132,7 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
         <input
           class="wmstool-radio-button-input"
           type="radio"
+          value="left"
         />
         <span
           class="wmstool-radio-button-inner"
