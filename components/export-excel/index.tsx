@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Icon from '../icon';
-declare function unescape(s:string): string;
 export interface EformProps {
   columns?: any;
   dataSource?: any;
@@ -23,7 +21,7 @@ export default class Exportexcel extends React.Component<EformProps> {
     let newDataSource=[]
     if(columns){
       for(let i = 0; i < dataSource.length; i++){
-          let tep={}
+          let tep={} as any;
           columns.forEach((filter:any)=>{
               tep[filter.dataIndex]=dataSource[i][filter.dataIndex]
           })
