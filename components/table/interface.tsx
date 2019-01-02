@@ -115,6 +115,7 @@ export interface TableProps<T> {
   isMaxData?:any;
   ColumnsChangeList?: ColumnProps<T>[];
   returnSelectColumn?:(clumons: any)=> any;
+  downloadExcelData?:any;
 }
 
 export interface TableStateFilters {

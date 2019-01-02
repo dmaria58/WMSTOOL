@@ -1130,19 +1130,20 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   }
   // 下载按钮
   isDownTablebt = () => {
-    if (this.props.isDownTableExcel && this.props.isDownTableExcel === true) {
+    let { downloadExcelData } = this.props;
+    if (downloadExcelData.isDownTableExcel) {
       return (
         <div className="wmstool-table-edit_download">
-          <Icon type="download" onClick={() => this.clickDownExcel()} />
-          <Exportexcel getExportExcel={fn => this.handleExport = fn} />
+          <Icon type={downloadExcelData.iconType||"export"} onClick={() => this.clickDownExcel(downloadExcelData)} />
+          <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} />
         </div>
       )
     }
   }
-  clickDownExcel() {
-    let { dataSource, ColumnsChangeList, downloadExcelHeader, downloadExcelBody } = this.props;
-    if (downloadExcelHeader && downloadExcelBody) {
-      this.handleExport(downloadExcelHeader, downloadExcelBody)
+  clickDownExcel(downloadExcelData:any) {
+    let { dataSource, ColumnsChangeList } = this.props;
+    if (downloadExcelData.downloadExcelHeader && downloadExcelData.downloadExcelBody) {
+      this.handleExport(downloadExcelData.downloadExcelHeader, downloadExcelData.downloadExcelBody)
     } else {
       this.handleExport(ColumnsChangeList, dataSource)
     }
