@@ -26,6 +26,30 @@ const columns = [{
 }, {
   title: 'Address',
   dataIndex: 'address',
+}, {
+  title: 'Address1',
+  dataIndex: 'address1',
+}, {
+  title: 'Address2',
+  dataIndex: 'address2',
+}, {
+  title: 'Address3',
+  dataIndex: 'address3',
+}, {
+  title: 'Address4',
+  dataIndex: 'address4',
+}, {
+  title: 'Addres5',
+  dataIndex: 'address5',
+}, {
+  title: 'Address6',
+  dataIndex: 'address6',
+}, {
+  title: 'Address7',
+  dataIndex: 'address7',
+}, {
+  title: 'Address8',
+  dataIndex: 'address8',
 }];
 const columns2 = [{
   title: 'Name',
@@ -59,8 +83,10 @@ class App extends React.Component {
   returnSelectColumn =(data)=>{
     console.log(data)
   }
-  onSaveColums=(data,dataall)=>{
-    console.log("显示列的数据",data,dataall);
+  onSaveColums=(data,dataall,closeSettingFun)=>{
+    console.log("显示列的数据,一秒后关闭",data,dataall);
+    setTimeout(()=>{
+    closeSettingFun()},1000)
   }
   render() {
     const { selectedRowKeys } = this.state;
@@ -116,6 +142,7 @@ class App extends React.Component {
     return (
       <Table rowSelection={rowSelection} onRowClick={this.onRowClick}  ColumnsChangeList={columns2} returnSelectColumn={this.returnSelectColumn}  isColumnsChange={true} columns={columns} dataSource={data} pagination={tablepation}
         columnsChangeData={{text:"保存",onSaveColums:this.onSaveColums}}
+        downloadExcelData={{isDownTableExcel:true}}
        />
     );
   }

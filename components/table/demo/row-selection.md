@@ -28,38 +28,83 @@ const columns = [{
   dataIndex: 'address',
 }];
 const data = [{
-  key: '1',
+  key: 'A',
   name: 'John Brown',
   age: 32,
   address: 'New York No. 1 Lake Park',
 }, {
-  key: '2',
+  key: 'B',
   name: 'Jim Green',
   age: 42,
   address: 'London No. 1 Lake Park',
 }, {
-  key: '3',
+  key: 'C',
   name: 'Joe Black',
   age: 32,
   address: 'Sidney No. 1 Lake Park',
 }, {
-  key: '4',
+  key: 'D',
   name: 'Disabled User',
   age: 99,
   address: 'Sidney No. 1 Lake Park',
+}, {
+  key: 'E',
+  name: ' User',
+  age: 99,
+  address: 'Sidney No. 1 Lake Park',
+}, {
+  key: 'F',
+  name: ' User',
+  age: 99,
+  address: 'Sidney No. 1 Lake Park',
 }];
-
+const excelHeader=[
+ {
+  title: '姓名',
+  dataIndex: 'name',
+  key: 'name',
+  },{
+  title: '年龄',
+  dataIndex: 'age',
+  key: 'age',
+  },{
+  title: '住址',
+  dataIndex: 'address',
+  key: 'address',
+  }
+]
+const excelBody=[
+ {
+  key: '1',
+  name: 'chenchen',
+  age: 32,
+  address: '西湖区湖底公园1号'
+  },{
+  key: '2',
+  name: 'fangfang',
+  age: 32,
+  address: '西湖区湖底公园2号' 
+  },{
+  key: '3',
+  name: 'lanlan',
+  gugug:"aaaa",
+  age: 32,
+  address: '西湖区湖底公园3号'
+  }
+]
 // rowSelection object indicates the need for row selection
 const rowSelection = {
   onChange: (selectedRowKeys, selectedRows) => {
     console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
   },
+  shiftSelect:true,//按shift选中一片
   getCheckboxProps: record => ({
     disabled: record.name === 'Disabled User', // Column configuration not to be checked
   }),
 };
 
 ReactDOM.render(
-  <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+  <Table rowSelection={rowSelection} columns={columns} dataSource={data}  
+  downloadExcelData={{iconType:"download",linkName:"downloadSummary.xls",isDownTableExcel:true,downloadExcelHeader:excelHeader,downloadExcelBody:excelBody}}/>
 , mountNode);
 ````
