@@ -1131,7 +1131,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   // 下载按钮
   isDownTablebt = () => {
     let { downloadExcelData } = this.props;
-    if (downloadExcelData.isDownTableExcel) {
+    if (downloadExcelData&&downloadExcelData.isDownTableExcel) {
       return (
         <div className="wmstool-table-edit_download">
           <Icon type={downloadExcelData.iconType||"export"} onClick={() => this.clickDownExcel(downloadExcelData)} />
@@ -1139,6 +1139,9 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         </div>
       )
     }
+  }
+  handleExport(header:any,body:any){
+    return {header,body}//无意义，处理类型（原因：定义后的类型一定要使用才可以）
   }
   clickDownExcel(downloadExcelData:any) {
     let { dataSource, ColumnsChangeList } = this.props;
