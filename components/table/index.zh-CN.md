@@ -80,8 +80,8 @@ const columns = [{
 | onHeaderRow | 设置头部列属性 | Function(column, index) | - |
 | onRow | 设置列属性 | Function(record, index) | - |
 | isMaxData | 数据过多设置参数能下拉渲染【例子：row-selection-and-operation.md】 | object |{{lazyHeight:"这里设置单行tr高度"}}|
-| downloadExcelBody | 要下载的数据数组 | any\[] |  |
-| downloadExcelHeader | 要下载的表头 |  any\[] | - |
+| downloadExcelBody | 要下载的数据数组 | any\[] | 如果传入，会优先下载；|
+| downloadExcelHeader | 要下载的表头 |  any\[] | 如果传入，会优先下载； |
 | isDownTableExcel | 是否下载table当前页面数据【row-selection-custom,md】| boolean | false |
 
 ### Column
