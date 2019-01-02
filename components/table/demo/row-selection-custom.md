@@ -141,8 +141,8 @@ class App extends React.Component {
 
     return (
       <Table rowSelection={rowSelection} onRowClick={this.onRowClick}  ColumnsChangeList={columns2} returnSelectColumn={this.returnSelectColumn}  isColumnsChange={true} columns={columns} dataSource={data} pagination={tablepation}
-        columnsChangeData={{text:"保存",onSaveColums:this.onSaveColums,fixed:false}}
         isDownTableExcel={true} 
+        columnsChangeData={{text:"保存",onSaveColums:this.onSaveColums,fixed:true}}
        />
     );
   }
