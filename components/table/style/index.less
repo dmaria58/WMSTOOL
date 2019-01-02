@@ -588,29 +588,15 @@
   padding: 6px;
   border-radius: 5px;
   white-space: nowrap;
+  .row-selector-content{
+    max-height: 200px;
+    overflow-y: auto;
+  }
 }
 .wmstool-table-edit_save_bt{
     width: 100%;
     font-size: 10px;
     margin-top: 5px;
 }
-.wmstool-table-iss-card-fixed{
-  position: relative;
-  .wmstool-table-iss-card{
-    padding-bottom: 40px;
-    max-height: 200px;
-    overflow-y: auto;
-    min-width: 150px;
-  }
-  .button-container{
-    position: absolute;
-    bottom:5px;
-    width: calc(100% - 20px);
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  .wmstool-table-edit_save_bt{
-    width: 98%;
-  }
-}
+
 @import './size';
