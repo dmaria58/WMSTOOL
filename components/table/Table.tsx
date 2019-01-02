@@ -7,6 +7,7 @@ import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
 import Buttom from '../button';
+import  Exportexcel from '../export-excel';
 import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
@@ -1128,6 +1129,30 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       </div>)
     }
   }
+  // 下载按钮
+  isDownTablebt = () => {
+    let { downloadExcelData } = this.props;
+    if (downloadExcelData&&downloadExcelData.isDownTableExcel) {
+      return (
+        <div className="wmstool-table-edit_download">
+          <Icon type={downloadExcelData.iconType||"export"} onClick={() => this.clickDownExcel(downloadExcelData)} />
+          <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} />
+        </div>
+      )
+    }
+  }
+  handleExport(header:any,body:any){
+    return {header,body}//无意义，处理类型（原因：定义后的类型一定要使用才可以）
+  }
+  clickDownExcel(downloadExcelData:any) {
+    let { dataSource, ColumnsChangeList } = this.props;
+    if (downloadExcelData.downloadExcelHeader && downloadExcelData.downloadExcelBody) {
+      this.handleExport(downloadExcelData.downloadExcelHeader, downloadExcelData.downloadExcelBody)
+    } else {
+      this.handleExport(ColumnsChangeList, dataSource)
+    }
+  }
+
   isCheckDefault = (data:any) =>{
     if(this.props.ColumnsChangeList){
       let hj:any;
@@ -1229,6 +1254,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         >
           {table}
           {this.isSortColumnbt()}
+          {this.isDownTablebt()}
           {this.renderPagination()}
         </Spin>
       </div>
