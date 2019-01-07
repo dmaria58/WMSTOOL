@@ -1145,8 +1145,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     return {header,body}//无意义，处理类型（原因：定义后的类型一定要使用才可以）
   }
   clickDownExcel(downloadExcelData: any) {
-    let { dataSource, ColumnsChangeList } = this.props;
-    const columns = downloadExcelData.downloadExcelHeader ? downloadExcelData.downloadExcelHeader : ColumnsChangeList
+    let { dataSource } = this.props;
+    const columns = downloadExcelData.downloadExcelHeader ? downloadExcelData.downloadExcelHeader : this.state.statecolumn
     const newdataSource = downloadExcelData.downloadExcelBody ? downloadExcelData.downloadExcelBody : dataSource
     this.handleExport(columns, newdataSource)
   }

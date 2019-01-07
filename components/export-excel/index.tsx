@@ -36,7 +36,7 @@ export default class Exportexcel extends React.Component<EformProps> {
     for (let i = 0; i < newDataSource.length; i++) {
       for (let item in newDataSource[i]) {
         let news = newDataSource[i][item] ? newDataSource[i][item] : "";
-        str += `<td>${news + '\t'}</td>`;
+        str += `<td style="mso-number-format:\'@\'">${news + '\t'}</td>`;
       }
       str += '</tr>';
     }
