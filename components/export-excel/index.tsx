@@ -27,18 +27,19 @@ export default class Exportexcel extends React.Component<EformProps> {
           newDataSource.push(tep)
       }
     }
-
     let str ='';
     for(let i = 0; i < columns.length; i++){
-        str+=`${columns[i].dataIndex + '\t'},`;
+        str+=`${columns[i].title + '\t'},`;
     }
     str += '\n';
     for (let i = 0; i < newDataSource.length; i++) {
         for (let item in newDataSource[i]) {
-            str += `${newDataSource[i][item] + '\t'},`;
+            let news=newDataSource[i][item]?(newDataSource[i][item].indexOf(',')!=-1?newDataSource[i][item].replace(/\,/g," "):newDataSource[i][item]):null
+            str += `${news + '\t'},`;
         }
         str += '\n';
     }
+
     let uri = 'data:text/csv;charset=utf-8,\ufeff' + encodeURIComponent(str);
     var link = document.createElement("a");
     link.href = uri;
