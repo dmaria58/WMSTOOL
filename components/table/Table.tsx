@@ -1134,8 +1134,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     let { downloadExcelData } = this.props;
     if (downloadExcelData&&downloadExcelData.isDownTableExcel) {
       return (
-        <div className="wmstool-table-edit_download">
-          <Icon type={downloadExcelData.iconType||"export"} onClick={() => this.clickDownExcel(downloadExcelData)} />
+        <div className="wmstool-table-edit_download" onClick={() => this.clickDownExcel(downloadExcelData)}>
+          {downloadExcelData.IconContent?downloadExcelData.IconContent:<Icon title={downloadExcelData.iconTitle||null} type={downloadExcelData.iconType||"export"} />} 
           <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} linkName={downloadExcelData.linkName}/>
         </div>
       )
@@ -1144,13 +1144,11 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   handleExport(header:any,body:any){
     return {header,body}//无意义，处理类型（原因：定义后的类型一定要使用才可以）
   }
-  clickDownExcel(downloadExcelData:any) {
-    let { dataSource, ColumnsChangeList } = this.props;
-    if (downloadExcelData.downloadExcelHeader && downloadExcelData.downloadExcelBody) {
-      this.handleExport(downloadExcelData.downloadExcelHeader, downloadExcelData.downloadExcelBody)
-    } else {
-      this.handleExport(ColumnsChangeList, dataSource)
-    }
+  clickDownExcel(downloadExcelData: any) {
+    let { dataSource } = this.props;
+    const columns = downloadExcelData.downloadExcelHeader ? downloadExcelData.downloadExcelHeader : this.state.statecolumn
+    const newdataSource = downloadExcelData.downloadExcelBody ? downloadExcelData.downloadExcelBody : dataSource
+    this.handleExport(columns, newdataSource)
   }
 
   isCheckDefault = (data:any) =>{
