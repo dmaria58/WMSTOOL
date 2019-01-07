@@ -14,7 +14,7 @@ title:
 Rows can be selectable by making first column as a selectable column.
 
 ````jsx
-import { Table } from 'wmstool';
+import { Table ,Icon} from 'wmstool';
 
 const columns = [{
   title: 'Name',
@@ -105,6 +105,7 @@ const rowSelection = {
 
 ReactDOM.render(
   <Table rowSelection={rowSelection} columns={columns} dataSource={data}  
-  downloadExcelData={{iconType:"download",linkName:"downloadSummary.xls",isDownTableExcel:true,downloadExcelHeader:excelHeader,downloadExcelBody:excelBody}}/>
+  downloadExcelData={{iconTitle:"exportData",iconType:"download",linkName:"downloadSummary.xls",isDownTableExcel:true,downloadExcelHeader:excelHeader,downloadExcelBody:excelBody,
+  IconContent: <Icon title={"Export Data"} type={"export"}  />}}/>
 , mountNode);
 ````
