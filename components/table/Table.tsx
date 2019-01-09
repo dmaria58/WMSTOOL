@@ -7,7 +7,7 @@ import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
 import Buttom from '../button';
-import  Exportexcel from '../export-excel';
+import Exportexcel, {tableToExcel} from '../export-excel';
 import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
@@ -1136,19 +1136,15 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       return (
         <div className="wmstool-table-edit_download" onClick={() => this.clickDownExcel(downloadExcelData)}>
           {downloadExcelData.IconContent?downloadExcelData.IconContent:<Icon title={downloadExcelData.iconTitle||null} type={downloadExcelData.iconType||"export"} />} 
-          <Exportexcel getExportExcel={(fn:any) => this.handleExport = fn} linkName={downloadExcelData.linkName}/>
         </div>
       )
     }
-  }
-  handleExport(header:any,body:any){
-    return {header,body}//无意义，处理类型（原因：定义后的类型一定要使用才可以）
   }
   clickDownExcel(downloadExcelData: any) {
     let { dataSource } = this.props;
     const columns = downloadExcelData.downloadExcelHeader ? downloadExcelData.downloadExcelHeader : this.state.statecolumn
     const newdataSource = downloadExcelData.downloadExcelBody ? downloadExcelData.downloadExcelBody : dataSource
-    this.handleExport(columns, newdataSource)
+	  tableToExcel(columns, newdataSource,downloadExcelData.linkName)
   }
 
   isCheckDefault = (data:any) =>{
