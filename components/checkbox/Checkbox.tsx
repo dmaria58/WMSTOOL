@@ -19,6 +19,15 @@ export interface AbstractCheckboxProps {
   name?: string;
   children?: React.ReactNode;
 }
+export interface CheckboxChangeEventTarget extends CheckboxProps {
+	checked: boolean;
+}
+export interface CheckboxChangeEvent {
+	target: CheckboxChangeEventTarget;
+	stopPropagation: () => void;
+	preventDefault: () => void;
+	nativeEvent: MouseEvent;
+}
 
 export interface CheckboxProps extends AbstractCheckboxProps {
   indeterminate?: boolean;

@@ -7,7 +7,7 @@ import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
 import Buttom from '../button';
-import Exportexcel, {tableToExcel} from '../export-excel';
+import {tableToExcel} from '../export-excel';
 import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
@@ -21,7 +21,6 @@ import ColumnGroup from './ColumnGroup';
 import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
 import LazyLoad , { forceCheck } from 'react-lazyload';
-import KEY_CODE from 'rc-util/lib/KeyCode';
 import Trigger from 'rc-trigger';
 import {
   TableProps,
@@ -118,7 +117,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   renderData:any;
   columns: ColumnProps<T>[];
   components: TableComponents;
-  shiftOn?:boolean ;
 
   constructor(props: TableProps<T>) {
     super(props);
@@ -149,6 +147,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     this.store = createStore({
       selectedRowKeys: (props.rowSelection || {}).selectedRowKeys || [],
       selectionDirty: false,
+	    lastIndex:null
     });
 
     this.renderData = "";
@@ -161,37 +160,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       if(table){
         table.addEventListener("scroll", forceCheck);
       }
-    }
-    //监听shift
-    if(this.props.rowSelection && this.props.rowSelection.shiftSelect){//按住shift的时候 this.shiftOn 是true，松开就变成false了
-	    document.addEventListener("keydown",this.setShiftBtnOn)
-	    document.addEventListener("keyup",this.setShiftBtnOff)
-    }
-  }
-	componentWillUnmount(){
-		//移除监听
-		if(this.props.rowSelection && this.props.rowSelection.shiftSelect){
-			document.removeEventListener("keydown",this.setShiftBtnOn)
-			document.removeEventListener("keyup",this.setShiftBtnOff)
-		}
-  }
-	
-	/**
-	 * 开启shift监听状态
-	 * @param event
-	 */
-  setShiftBtnOn = (event: any) =>{
-    if(KEY_CODE.SHIFT === event.keyCode){
-      this.shiftOn = true;
-    }
-  }
-	/**
-	 * 关闭shift监听状态
-	 * @param event
-	 */
-  setShiftBtnOff = (event: any) =>{
-    if(KEY_CODE.SHIFT === event.keyCode){
-        this.shiftOn = false;
     }
   }
   getCheckboxPropsByItem = (item: T, index: number) => {
@@ -258,6 +226,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         nextProps.dataSource !== this.props.dataSource) {
       this.store.setState({
         selectionDirty: false,
+	      lastIndex: null,
       });
       this.CheckboxPropsCache = {};
     }
@@ -499,13 +468,15 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     this.setState(newState, () => {
       this.store.setState({
         selectionDirty: false,
+	      lastIndex:null
       });
       const onChange = this.props.onChange;
       if (onChange) {
         onChange.apply(null, this.prepareParamsArguments({
           ...this.state,
           selectionDirty: false,
-          filters,
+	        lastIndex:null,
+	        filters,
           pagination,
         }));
       }
@@ -517,43 +488,53 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 	 * @param {number} rowIndex
 	 * @returns {string[]}
 	 */
-  getShiftOnSelectRowKeys = (selectedRowKeys :string[] ,rowIndex:number) =>{
+	/**
+   *
+	 * @param {string[]} selectedRowKeys
+	 * @param {number} startIndex 选中数据区间起始
+	 * @param {number} endIndex 选中区间结束
+	 * @param {boolean} checked
+	 * @returns {string[]}
+	 */
+  getShiftOnSelectRowKeys = (selectedRowKeys :any ,lastIndex:number ,currentIndex:number,checked:boolean) =>{
 	  const currentPageData = this.getCurrentPageData();//当前页面数据
-	  const currentPageDataKeys = currentPageData.map((record,rowIndex) => this.getRecordKey(record, rowIndex));//当前页面数据的key数组
-	  const lastSelectRowkey = selectedRowKeys[selectedRowKeys.length - 1];//最后一次选中的列key
-	  const lastSelectRowKeyIndex = currentPageDataKeys.reduce(((previousValue, currentValue, currentIndex) => {//最后一次选中的列下标
-	    if(currentValue === lastSelectRowkey){
-	      return currentIndex;
-      }
-      return previousValue;
-    }),0);
-	  const startIndex = lastSelectRowKeyIndex < rowIndex ? lastSelectRowKeyIndex : rowIndex;//选中数据区间起始
-	  const endIndex = lastSelectRowKeyIndex < rowIndex ? rowIndex: lastSelectRowKeyIndex ;//选中区间结束
+    const rangeRowKeys:any = [];//区间的key
+    const startIndex = lastIndex > currentIndex ? currentIndex : lastIndex;//选中数据区间起始
+    const endIndex = lastIndex < currentIndex ? currentIndex : lastIndex;//选中数据区间结束
 	  for(let i  = startIndex ; i <= endIndex ; i++ ){
 	    const record = currentPageData[i];
-	    const selectedRowKey = this.getRecordKey(record, i);
-	    if(!selectedRowKeys.includes(selectedRowKey) && !this.getCheckboxPropsByItem(record,i).disabled){//如果选中的key 没有选中过且不是disabled
-		    selectedRowKeys.push(selectedRowKey)
+	    const rowKeys = this.getRecordKey(record, i);
+	    if(!this.getCheckboxPropsByItem(record,i).disabled){//如果选中的key 没有选中过且不是disabled
+		    rangeRowKeys.push(rowKeys)
 	    }
 	  }
+	  if(checked){//如果区间全选中，那么合并selectedRowKeys与rangeRowKeys并去重就可以
+	    const selectRowKeysSet = new Set([].concat(selectedRowKeys).concat(rangeRowKeys))
+		  selectedRowKeys = Array.from(selectRowKeysSet);
+    }else{
+		  selectedRowKeys = selectedRowKeys.filter((rowKey:string) => !rangeRowKeys.includes(rowKey));//如果区间取消，则反选区间内的数据
+    }
     return selectedRowKeys;
   }
   handleSelect = (record: T, rowIndex: number, e: React.ChangeEvent<HTMLInputElement>) => {
     const checked = e.target.checked;
-    const defaultSelection = this.store.getState().selectionDirty ? [] : this.getDefaultSelection();
-    let selectedRowKeys = this.store.getState().selectedRowKeys.concat(defaultSelection);
+	  const nativeEvent:any = e.nativeEvent;
+	  const defaultSelection = this.store.getState().selectionDirty ? [] : this.getDefaultSelection();
+	  let selectedRowKeys = this.store.getState().selectedRowKeys.concat(defaultSelection);
+	  const lastIndex = this.store.getState().lastIndex;
     let key = this.getRecordKey(record, rowIndex);
-    if (checked || !selectedRowKeys.includes(key)) {
-      if(this.shiftOn && selectedRowKeys.length){
-	      selectedRowKeys = this.getShiftOnSelectRowKeys(selectedRowKeys,rowIndex);
-      }else{
-	      selectedRowKeys.push(this.getRecordKey(record, rowIndex));
-      }
-    } else {
-      selectedRowKeys = selectedRowKeys.filter((i: string) => key !== i);
+    if(nativeEvent.shiftKey && null !== lastIndex && typeof lastIndex !== "undefined"){//如果按着shift且 最后选中的下标有值
+	    selectedRowKeys = this.getShiftOnSelectRowKeys(selectedRowKeys,lastIndex,rowIndex,checked);
+    }else{
+	    if (checked || !selectedRowKeys.includes(key)) {
+		    selectedRowKeys.push(this.getRecordKey(record, rowIndex));
+	    } else {
+		    selectedRowKeys = selectedRowKeys.filter((i: string) => key !== i);
+	    }
     }
     this.store.setState({
       selectionDirty: true,
+	    lastIndex:rowIndex
     });
     this.setSelectedRowKeys(selectedRowKeys, {
       selectWay: 'onSelect',
@@ -636,6 +617,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
     this.store.setState({
       selectionDirty: true,
+	    lastIndex:null,
     });
     // when select custom selection, callback selections[n].onSelect
     const { rowSelection } = this.props;
@@ -679,6 +661,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 
     this.store.setState({
       selectionDirty: false,
+	    lastIndex:null,
     });
 
     const onChange = this.props.onChange;
@@ -686,7 +669,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       onChange.apply(null, this.prepareParamsArguments({
         ...this.state,
         selectionDirty: false,
-        pagination,
+	      lastIndex:null,
+	      pagination,
       }));
     }
   }
