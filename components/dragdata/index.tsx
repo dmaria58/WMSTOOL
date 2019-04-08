@@ -166,18 +166,17 @@ export default class Dragdata extends React.Component <DdataProps,DdataState> {
     return rdata;
   }
   getAllCards = (cardsdata:any,ischild:any) =>{
-    let fstytle = {"background-color":"#ccc","padding":"10px","margin":"5px"} as any;
     return cardsdata.map((list:any, i:number) => {
               if(list){
                 let myindex = ischild !== false?ischild+"-"+i:i as any;
                 if(list.children){
                   return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
-                            <div style={fstytle}>{this.getAllCards(list.children,myindex)}</div>
+                            <div className="wmstool_drag_fdiv">{this.getAllCards(list.children,myindex)}</div>
                           </Card>
                 }
                 else if(ischild === false){
                   return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
-                            <div style={fstytle}>{list.showtext}</div>
+                            <div className="wmstool_drag_fdiv">{list.showtext}</div>
                           </Card>                  
                 } 
                 else{

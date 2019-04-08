@@ -2,3 +2,8 @@
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+.wmstool_drag_fdiv {
+  background-color: #ccc;
+  padding: 10px;
+  margin: 5px;
+}
