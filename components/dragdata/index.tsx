@@ -33,12 +33,15 @@ const cardTarget = {
     const dragIndex = monitor.getItem().index
 
     const hoverIndex = props.index
-
-    if (dragIndex === hoverIndex) {
-      return
+    let dragLength = (dragIndex+"").split("-").length as number;
+    let hoverLength = (hoverIndex+"").split("-").length as number;
+    if (dragIndex == hoverIndex) {
+      return;
     }
+    //不同层级之间不允许拖拽
+    if(dragLength != hoverLength) return 
 
-    const hoverBoundingRect = findDOMNode(component).getBoundingClientRect()
+    const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
 
     const hoverMiddleY = (hoverBoundingRect.bottom - hoverBoundingRect.top) / 2
 
@@ -77,7 +80,7 @@ export  class Card extends React.Component <any> {
     //text: PropTypes.string.isRequired,
     moveCard: PropTypes.func.isRequired,
   }
-
+ 
   render() {
     const {
       //text,
@@ -109,31 +112,87 @@ export default class Dragdata extends React.Component <DdataProps,DdataState> {
     }
   }
   moveCard(dragIndex:any, hoverIndex:any) {
-    let  cards  = this.state.cards;
-    let dragCard:any;
-    if(cards && cards[dragIndex]){
-      dragCard = cards[dragIndex];
-    }
-    this.setState(
-      update(this.state, {
-        cards: {
-          $splice: [[dragIndex, 1], [hoverIndex, 0, dragCard]],
-        },
-      }),()=>{
-      let cardsdata = this.state.cards;
-      if(this.props.getChangeSource){
-        this.props.getChangeSource(cardsdata)
-      }      
+    let  cards  = this.state.cards?this.state.cards:[];
+    let rdata = this.getChangeDragdata(dragIndex,hoverIndex,cards);
+    this.setState({cards:rdata},()=>{
+        let cardsdata = this.state.cards;
+        if(this.props.getChangeSource){
+          this.props.getChangeSource(cardsdata)
+        }   
+    })
+  }
+  getChangeDragdata = (dragIndexs:any,hoverIndexs:any,cards:any) =>{   
+    let rdata:any;
+    rdata = update(cards,{$splice:[]});
+    let indexlist = (dragIndexs+"").split("-") as any;
+    let addlist = (hoverIndexs+"").split("-") as any;
+    let ddata="",addata="",dledata="" as string;
+    //删除位点
+    indexlist.map((k:number,j:number)=>{
+      if(j == 0){
+        dledata = ddata;
+        ddata = ddata + "["+k+"]"
       }
-    )
+      else{
+        if(eval("rdata"+ddata+".children")){
+          ddata= ddata+".children"
+        }
+        dledata = ddata;
+        ddata = ddata + "["+k+"]";
+      }
+
+    })
+    let list = eval("rdata"+ddata+";") as any;
+    if(!dledata){
+      eval("rdata"+".splice("+indexlist[indexlist.length-1]+",1)");
+    }else{
+      eval("rdata"+dledata+".splice("+indexlist[indexlist.length-1]+",1)");
+    } 
+    //新增位点
+    addlist.map((k:number,j:number)=>{
+        if(j<addlist.length-1){
+          addata = addata + "["+k+"]"; 
+          if(eval("rdata"+addata+".children")){
+            addata= addata+".children"
+          }  
+        }                           
+    })
+    if(!list){return}
+    if(!addata){
+      eval("rdata"+".splice("+addlist[addlist.length-1]+",0,list)");
+    }else{
+      eval("rdata"+addata+".splice("+addlist[addlist.length-1]+",0,list)");
+    }   
+    return rdata;
+  }
+  getAllCards = (cardsdata:any,ischild:any) =>{
+    let fstytle = {"background-color":"#ccc","padding":"10px","margin":"5px"} as any;
+    return cardsdata.map((list:any, i:number) => {
+              if(list){
+                let myindex = ischild !== false?ischild+"-"+i:i as any;
+                if(list.children){
+                  return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
+                            <div style={fstytle}>{this.getAllCards(list.children,myindex)}</div>
+                          </Card>
+                }
+                else if(ischild === false){
+                  return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
+                            <div style={fstytle}>{list.showtext}</div>
+                          </Card>                  
+                } 
+                else{
+                  return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
+                            {list.showtext}
+                          </Card>
+                }
+              }             
+           })
   }
   render() {
     let cardsdata = this.state.cards;
     return (
       <div >
-        {cardsdata && cardsdata.length && cardsdata.map((list:any, i:number) => (
-          <Card key={list.id} index={i} id={list.id} moveCard={this.moveCard}>{list.showtext}</Card>
-        ))}
+        {cardsdata && cardsdata.length && this.getAllCards(cardsdata,false)}
       </div>
     )
   }
