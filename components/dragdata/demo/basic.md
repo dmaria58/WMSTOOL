@@ -26,12 +26,33 @@ const DATA=[
         {
           id: 1,
           text: 'hello',
-          showtext:<div style={STYPE} key="1">第一条数据<span>add</span></div>
+          children:[{
+           id: 4,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-1">第1条子数据<span>add-1</span></div>,
+          },{
+           id: 5,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-2">第2条子数据<span>add-2</span></div>,
+          },{
+           id: 6,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-3">第3条子数据<span>add-3</span></div>,
+          },{
+           id: 7,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-4">第4条子数据<span>add-4</span></div>,
+          }]
         },
         {
           id: 2,
           text: 'luck',
-          showtext:<div style={STYPE} key="2">第二条数据<span>delete</span></div>
+          children:[{
+          id: 8,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="2">第二条数据-2-0<span>delete</span></div>            
+          }]
+
         },
         {
           id: 3,
@@ -72,7 +93,7 @@ class App extends React.Component {
     this.setState({data:DATA2})
   } 
   getChangeSource=(data)=>{
-    console.log("数据改变了",data)
+    //console.log("数据改变了",data)
 
   }
   render() {
