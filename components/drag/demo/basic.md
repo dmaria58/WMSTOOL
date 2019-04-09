@@ -40,7 +40,8 @@ class App extends React.Component {
   state = {
     dataSource : {
         a:[{id:1},{id:2}],
-        b:[{id:3},{id:4}]
+        b:[{id:3},{id:4}],
+        c:[{id:5},{id:6}],
       }
   }
 
@@ -49,7 +50,8 @@ class App extends React.Component {
       this.setState({
       dataSource: {
          a:[{id:1},{id:2},{id:3},{id:4}],
-          b:[{id:5},{id:6}]
+          b:[{id:5},{id:6}],
+          c:[{id:7},{id:8}],
       }
     })
     },1000)
@@ -66,11 +68,12 @@ class App extends React.Component {
   }
   render() {
     return (
-      <DragContainer type="teset" getStore={store => this.store = store} dataSource={this.state.dataSource} onChange={this.onChange}>
+      <DragContainer type="teset" dragType="move" getStore={store => this.store = store} dataSource={this.state.dataSource} onChange={this.onChange}>
         <Button onClick={this.onReset} >reset</Button>
          <DragCard
             component="div"
             style={cardStyle}
+            canDrop={false}
             renderItem={(value,index,monitor) =>  <div style={Object.assign({opacity:monitor.isDragging ? 0: 1},STYPE)} >{monitor.isDragging ? 'isDragging':JSON.stringify(value)}</div>}
             name="a" ></DragCard>
         <DragCard 
@@ -80,6 +83,15 @@ class App extends React.Component {
             canDrag={false}
             renderItem={(value) =>  <div style={STYPE} >{JSON.stringify(value)}</div>}
             ></DragCard>
+         <DragCard 
+            component="div"
+            style={cardStyle}
+            name="c"
+             canDrop={(props,monitor) => {
+               return monitor.getItem().originName === 'a'||  monitor.getItem().originName === 'c'
+             }}
+            renderItem={(value,index,monitor) =>  <div style={Object.assign({opacity:monitor.isDragging ? 0: 1},STYPE)} >{JSON.stringify(value)}</div>}
+            />
       </DragContainer>
     )
   }
