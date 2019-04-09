@@ -80,7 +80,7 @@ class DragableCard extends React.PureComponent < DragCardProps > {
   };
   static contextTypes = {
     store: PropTypes.object,
-    dragType: PropTypes.string,
+    type: PropTypes.string,
   }
   store : any;
  
@@ -125,9 +125,9 @@ class DragableCard extends React.PureComponent < DragCardProps > {
 export default class Card extends React.Component {
   static contextTypes = {
     store: PropTypes.object,
-    dragType: PropTypes.string,
+    type: PropTypes.string,
   }
-  Component = withDragType(DropTarget,this.context.dragType,target, (connect : any, monitor : any) => ({
+  Component = withDragType(DropTarget,this.context.type,target, (connect : any, monitor : any) => ({
     connectDropTarget: connect.dropTarget(),
     monitor:monitor
   }))(DragableCard)
