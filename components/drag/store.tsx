@@ -12,9 +12,12 @@ export default class Store implements DragStore {
   defaultValues: any;
   listeners: any[];
   confirmValues: string;
+  dragType: 'move'|'copy';
   constructor(
     values: object,
+    dragType?: 'move'|'copy',
   ){
+    this.dragType = dragType || 'move';
     this.values = values;
     this.defaultValues = JSON.parse(JSON.stringify(values));
     this.listeners = [];
@@ -43,8 +46,11 @@ export default class Store implements DragStore {
       return;
     }
     toValues.splice(to.index,0,fromData)
-    this.set(from.name,fromValues)
+    if (this.dragType === 'move') {
+      this.set(from.name,fromValues)
+    }  
     this.set(to.name,toValues)
+    
   }
 
   confirm() {
@@ -59,6 +65,7 @@ export default class Store implements DragStore {
   swap(name: string, fromIndex:number, toIndex:number) {
     let values = this.get(name).slice(0);
     [values[fromIndex], values[toIndex]] = [values[toIndex], values[fromIndex]]
+    if (values.find((value:any) => !value)) return;
     this.set(name,values);
   }
   

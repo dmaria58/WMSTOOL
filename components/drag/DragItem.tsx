@@ -65,6 +65,7 @@ const source = {
     const item = {
       id: props.id,
       name: props.name,
+      originName: props.name,
       data: props.data,
       index: props.index,
       itemType: monitor.getItemType()
@@ -99,6 +100,7 @@ const target = {
       props.hover(props, monitor, component);
       return;
     }
+    
     if (!monitor.canDrop()) {
       return;
     }
@@ -113,7 +115,6 @@ const target = {
     const clientOffset = monitor.getClientOffset();
     const hoverClientY = clientOffset.y - hoverBoundingRect.top;
 
-    
     if (item.name === props.name) {
       if (dragIndex === hoverIndex) {
         return
@@ -142,6 +143,7 @@ const target = {
         index: hoverIndex
       });
       monitor.getItem().name = props.name   
+      // monitor.getItem().hoverName = props.name   
       monitor.getItem().index = hoverIndex   
   },
 
@@ -168,22 +170,24 @@ class Item extends React.Component < ItemProps > {
 export default class DragItem extends React.PureComponent < DragItemProps > {
   static contextTypes = {
     store: PropTypes.object,
-    dragType: PropTypes.dragType
+    type: PropTypes.string,
   }
 
   static defaultProps = {
     isDragging(props : DragItemProps, monitor : any) {
       return monitor
         .getItem()
-        .id === props.id
+        .id === props.id && monitor
+        .getItem()
+        .name === props.name;
     },
     canDrag:true,
     canDrop: true,
   };
-  Item = withDragType(DragSource,this.context.dragType,source, (connect : any, monitor : any) => ({
+  Item = withDragType(DragSource,this.context.type,source, (connect : any, monitor : any) => ({
     connectDragSource: connect.dragSource(),
     dragging: monitor.isDragging()
-  }))(withDragType(DropTarget,this.context.dragType,target, (connect : any, monitor : any) => ({
+  }))(withDragType(DropTarget,this.context.type,target, (connect : any, monitor : any) => ({
     connectDropTarget: connect.dropTarget(),
     isOver: monitor.isOver(),
     isOverCurrent: monitor.isOver({shallow: true}),
@@ -202,7 +206,7 @@ export default class DragItem extends React.PureComponent < DragItemProps > {
     const {
       ...rest
     } = this.props;
-    const Com = this.Item;
-    return <Com {...rest} store={this.store}/>
+    const Component = this.Item;
+    return <Component {...rest} store={this.store}/>
   }
 }

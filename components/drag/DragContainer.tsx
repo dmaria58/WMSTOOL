@@ -7,23 +7,27 @@ export interface DragContainerProps {
   children: React.ReactNode;
   dataSource: object;
   type: string;
+  dragType?: 'move'|'copy';
   getStore: (store: Store) => void;
   onChange?: (values:any) => any;
 }
 
 @withDragDropContext
 export default class DragDropContainer extends React.Component<DragContainerProps> {
+  static defaultProps = {
+    dragType: 'move',
+  }
   static childContextTypes = {
     store: PropTypes.object,
-    dragType: PropTypes.string,
+    type: PropTypes.string,
   };
   store: Store;
-  constructor(props: DragContainerProps) {
-    super(props);
+  constructor(props: DragContainerProps,context: any) {
+    super(props,context);
     this.state = {
 
     }
-    this.store = new Store(props.dataSource);
+    this.store = new Store(props.dataSource, props.dragType);
     if (props.getStore) {
       props.getStore(this.store)
     }
@@ -38,7 +42,7 @@ export default class DragDropContainer extends React.Component<DragContainerProp
   }
 
   getChildContext() {
-    return {store:this.store,dragType: this.props.type};
+    return {store:this.store,type: this.props.type};
   }
 
   render() {
