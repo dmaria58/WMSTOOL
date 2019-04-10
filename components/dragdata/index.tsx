@@ -1,9 +1,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types'
 import { findDOMNode } from 'react-dom'
-import { DragSource, DropTarget ,DragDropContext} from 'react-dnd'
+import { DragSource, DropTarget } from 'react-dnd'
 import update from 'immutability-helper'
-import HTML5Backend from 'react-dnd-html5-backend'
+import WithDragDropContext from '../withdrag-dropcontext';
 export interface DataList{
   id?:any;
   showtext?:any;
@@ -97,8 +97,7 @@ export  class Card extends React.Component <any> {
   }
 }
 
-@DragDropContext(HTML5Backend)
-export default class Dragdata extends React.Component <DdataProps,DdataState> {
+class Dragdata extends React.Component <DdataProps,DdataState> {
   constructor(props: DdataProps) {
     super(props)
     this.moveCard = this.moveCard.bind(this)
@@ -196,5 +195,6 @@ export default class Dragdata extends React.Component <DdataProps,DdataState> {
     )
   }
 }
+export default WithDragDropContext(Dragdata)
 
   
