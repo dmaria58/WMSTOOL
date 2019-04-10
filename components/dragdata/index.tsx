@@ -35,25 +35,37 @@ const cardTarget = {
     const hoverIndex = props.index
     let dragLength = (dragIndex+"").split("-").length as number;
     let hoverLength = (hoverIndex+"").split("-").length as number;
+    const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
+
+    const hoverMiddleY = (hoverBoundingRect.bottom - hoverBoundingRect.top) / 2;
+
+    const clientOffset = monitor.getClientOffset();
+
+    const hoverClientY = clientOffset.y - hoverBoundingRect.top;
+
+    console.log("darg",dragIndex,hoverIndex,hoverClientY,hoverMiddleY);
+    console.log("tttt",dragIndex,hoverIndex,hoverClientY,hoverMiddleY)
+
     if (dragIndex == hoverIndex) {
       return;
     }
+    if(dragLength-1 == hoverLength 
+      && (dragIndex+"").split("-")[0] != (hoverIndex+"").split("-")[0]){
+      console.log("pppppp");
+      props.moveCard(dragIndex, hoverIndex);
+      monitor.getItem().index = hoverIndex;
+      return;
+    }
+    
     //不同层级之间不允许拖拽
-    if(dragLength != hoverLength) return 
+    if(dragLength != hoverLength )return 
 
-    const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
-
-    const hoverMiddleY = (hoverBoundingRect.bottom - hoverBoundingRect.top) / 2
-
-    const clientOffset = monitor.getClientOffset()
-
-    const hoverClientY = clientOffset.y - hoverBoundingRect.top
-
+    
     if (dragIndex < hoverIndex && hoverClientY < hoverMiddleY) {
       return
     }
 
-    if (dragIndex > hoverIndex && hoverClientY > hoverMiddleY) {
+    if (dragIndex > hoverIndex && hoverClientY > hoverMiddleY) {   
       return
     }
 
@@ -120,7 +132,8 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
         }   
     })
   }
-  getChangeDragdata = (dragIndexs:any,hoverIndexs:any,cards:any) =>{   
+  getChangeDragdata = (dragIndexs:any,hoverIndexs:any,cards:any) =>{  
+    console.log("moving",dragIndexs,hoverIndexs) 
     let rdata:any;
     rdata = update(cards,{$splice:[]});
     let indexlist = (dragIndexs+"").split("-") as any;
@@ -147,21 +160,31 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
     }else{
       eval("rdata"+dledata+".splice("+indexlist[indexlist.length-1]+",1)");
     } 
-    //新增位点
-    addlist.map((k:number,j:number)=>{
-        if(j<addlist.length-1){
-          addata = addata + "["+k+"]"; 
-          if(eval("rdata"+addata+".children")){
-            addata= addata+".children"
-          }  
-        }                           
-    })
-    if(!list){return}
-    if(!addata){
-      eval("rdata"+".splice("+addlist[addlist.length-1]+",0,list)");
-    }else{
-      eval("rdata"+addata+".splice("+addlist[addlist.length-1]+",0,list)");
-    }   
+    //新增位点-层级相同
+    if(indexlist.length == addlist.length){
+      addlist.map((k:number,j:number)=>{        
+          if(j<addlist.length-1){
+            addata = addata + "["+k+"]"; 
+            if(eval("rdata"+addata+".children")){
+              addata= addata+".children"
+            }  
+          }                        
+      })
+      if(!list){return}
+      if(!addata){
+        eval("rdata"+".splice("+addlist[addlist.length-1]+",0,list)");
+      }else{
+        eval("rdata"+addata+".splice("+addlist[addlist.length-1]+",0,list)");
+      } 
+    }
+    //新增位点-层级不同，往上移，增加children末尾
+    else if(indexlist[0] > addlist[0]){
+      rdata[addlist[0]].children.push(list)
+    }
+    //新增位点-层级不同，往下移，增加children首位
+    else if(indexlist[0] < addlist[0]){
+      rdata[addlist[0]].children.unshift(list)
+    }
     return rdata;
   }
   getAllCards = (cardsdata:any,ischild:any) =>{
