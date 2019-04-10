@@ -14,9 +14,8 @@ title:
 By using custom components, we can integrate table with react-dnd to implement drag sorting.
 
 ````jsx
-import { Table } from 'wmstool';
-import { DragDropContext, DragSource, DropTarget } from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
+import { Table,WithDragDropContext } from 'wmstool';
+import { DragSource, DropTarget } from 'react-dnd';
 import update from 'immutability-helper';
 
 function dragDirection(
@@ -133,7 +132,6 @@ const columns = [{
   dataIndex: 'address',
   key: 'address',
 }];
-
 class DragSortingTable extends React.Component {
   state = {
     data: [{
@@ -188,7 +186,7 @@ class DragSortingTable extends React.Component {
   }
 }
 
-const Demo = DragDropContext(HTML5Backend)(DragSortingTable);
+const Demo = WithDragDropContext(DragSortingTable);
 
 ReactDOM.render(<Demo />, mountNode);
 ````
