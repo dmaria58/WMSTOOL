@@ -93,7 +93,7 @@ class App extends React.Component {
     this.setState({data:DATA2})
   } 
   getChangeSource=(data)=>{
-    //console.log("数据改变了",data)
+    console.log("数据改变了",data)
 
   }
   render() {
