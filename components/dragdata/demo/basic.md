@@ -50,14 +50,26 @@ const DATA=[
           children:[{
           id: 8,
           text: 'hello',            
-          showtext:<div style={STYPE} key="2">第二条数据-2-0<span>delete</span></div>            
+          showtext:<div style={STYPE} key="2-0">第二条数据-2-0<span>delete</span></div>            
+          },{
+          id: 10,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="2-1">第二条数据-2-1<span>delete</span></div>            
           }]
 
         },
         {
           id: 3,
           text: 'good',
-          showtext:<div style={STYPE} key="3">第三条数据<span>test</span></div>
+          children:[{
+          id: 9,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="3-0">第二条数据-3-0<span>delete</span></div>            
+          },{
+          id: 11,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="3-1">第二条数据-3-1<span>delete</span></div>            
+          }]
         }
       ];
 const DATA2=[
