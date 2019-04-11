@@ -26,12 +26,6 @@ const cardSource = {
       index: props.index,
     }
   },
-  endDrag(props:any){
-    return {
-      id: props.id,
-      index: props.index,
-    }
-  }
 }
 
 const cardTarget = {
@@ -53,16 +47,13 @@ const cardTarget = {
     const clientOffset = monitor.getClientOffset()
 
     const hoverClientY = clientOffset.y - hoverBoundingRect.top
-    console.log("000",dragIndex,hoverIndex,hoverClientY,hoverMiddleY)
-    console.log("111",dragIndex < hoverIndex,)
+    
     if (dragIndex < hoverIndex && hoverClientY < hoverMiddleY) {
       return
     }
-
     if (dragIndex > hoverIndex && hoverClientY > hoverMiddleY) {
       return
     }
-
     props.moveCard(dragIndex, hoverIndex)
 
     monitor.getItem().index = hoverIndex
