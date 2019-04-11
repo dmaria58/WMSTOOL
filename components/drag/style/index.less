@@ -1,0 +1,12 @@
+@import "../../style/themes/default";
+@import "../../style/mixins/index";
+
+@drag-prefix-cls: ~"@{wmstool-prefix}-drag";
+
+
+.@{drag-prefix-cls} {
+  &-card {
+    border: @border-width-base @border-style-base @border-color-base;
+    padding: 10px 20px;
+  }
+}

@@ -31,15 +31,28 @@ const cardSource = {
 const cardTarget = {
   hover(props:any, monitor:any, component:any) {
     const dragIndex = monitor.getItem().index
-
     const hoverIndex = props.index
     let dragLength = (dragIndex+"").split("-").length as number;
     let hoverLength = (hoverIndex+"").split("-").length as number;
+    let hoverIndexFinal=""as string;
+    console.log("Length",dragLength,hoverLength)
+    // //判断是否有children,如果有，则能拖拽
+    if (dragLength > hoverLength && props.children) {
+      const dragFatherIndex = dragIndex.substring(0, 1)
+      //当前移动节点的父节点
+      if (dragFatherIndex > hoverIndex) {
+        //向上拖拽
+        hoverIndexFinal = hoverIndex + '-' + (props.children.props.children.length - 1)
+      } else {
+        //向下拖拽
+        hoverIndexFinal = hoverIndex + '-' + 0
+      }
+    }
     if (dragIndex == hoverIndex) {
       return;
     }
-    //不同层级之间不允许拖拽
-    if(dragLength != hoverLength) return 
+    // // //不同层级之间不允许拖拽
+    // if(dragLength != hoverLength) return 
 
     const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
 
@@ -56,8 +69,8 @@ const cardTarget = {
     if (dragIndex > hoverIndex && hoverClientY > hoverMiddleY) {
       return
     }
-
-    props.moveCard(dragIndex, hoverIndex)
+    let finalIndex=hoverIndexFinal?hoverIndexFinal:hoverIndex
+    props.moveCard(dragIndex, finalIndex)
 
     monitor.getItem().index = hoverIndex
   },
@@ -120,13 +133,14 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
         }   
     })
   }
-  getChangeDragdata = (dragIndexs:any,hoverIndexs:any,cards:any) =>{   
+  getChangeDragdata = (dragIndexs:any,hoverIndexs:any,cards:any) =>{  
     let rdata:any;
     rdata = update(cards,{$splice:[]});
     let indexlist = (dragIndexs+"").split("-") as any;
     let addlist = (hoverIndexs+"").split("-") as any;
     let ddata="",addata="",dledata="" as string;
     //删除位点
+    console.log("indexlist",indexlist,addlist,rdata)
     indexlist.map((k:number,j:number)=>{
       if(j == 0){
         dledata = ddata;
@@ -162,6 +176,8 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
     }else{
       eval("rdata"+addata+".splice("+addlist[addlist.length-1]+",0,list)");
     }   
+
+    console.log("rdata",rdata)
     return rdata;
   }
   getAllCards = (cardsdata:any,ischild:any) =>{
