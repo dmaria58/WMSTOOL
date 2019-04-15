@@ -14,84 +14,122 @@ title:
 拖拽
 
 ```jsx
-import { Drag,Button } from 'wmstool';
+import { Drag,Button,Dragdata } from 'wmstool';
 
 const DragContainer = Drag.Container;
 const DragCard = Drag.Card;
-const DragItem = Drag.Item;
-
 const STYPE={
   border: '1px dashed gray',
   padding: '0.5rem 1rem',
   marginBottom: '.5rem',
   backgroundColor: 'white',
   cursor: 'move',
+  display:'inline-block',
+  width:"50%",
+  float:'right',
 }
-
-const cardStyle = {
-  border: '1px solid #000',
-  padding: '20px',
-  marginBottom: '20px',
-  // backgroundColor: 'white',
-  // cursor: 'move',
+const STYPE2={
+  border: '1px dashed gray',
+  padding: '0.5rem 1rem',
+  marginBottom: '.5rem',
+  backgroundColor: 'white',
+  cursor: 'move',
 }
+const Data=[
+  {id:11,value:'aaa'},
+  {id:22,value:'bbb'},
+  {id:33,value:'ccc'},
+  {id:44,value:'ddd'},
+  {id:55,value:'eee'},
+  {id:66,value:'fff'},
+  {id:77,value:'ggg'},
+]
 
 class App extends React.Component {
-  state = {
-    dataSource : {
-        a:[{id:1},{id:2}],
-        b:[{id:3},{id:4}],
-        c:[{id:5},{id:6}],
-      }
+  constructor(props) {
+    super(props)
+    this.state={
+      data:this.getData("please")
+    }
   }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-      dataSource: {
-         a:[{id:1},{id:2},{id:3},{id:4}],
-          b:[{id:5},{id:6}],
-          c:[{id:7},{id:8}],
-      }
-    })
-    },1000)
+  getData=(text)=>{
+    return(
+      [
+        {
+          id: 100,
+          text: 'hello',
+          children:[{
+           id: 1001,
+           text: 'hello-1',
+           showtext:<div style={STYPE2} key="1-0">
+            <DragCard 
+                  id={1001} 
+                  text={'1-0'}
+                  onChange={this.onChange}
+                />
+            </div>,
+          },{
+           id: 1002,
+           text: 'hello-2',
+           showtext:<div style={STYPE2} key="1-1"> 
+           <DragCard 
+                  id={1002} 
+                  text={'1-1'}
+                  onChange={this.onChange}
+                />
+            </div>,
+          },]
+        }, {
+          id: 200,
+          text: 'hi',
+          children:[{
+          id: 2001,
+          text: 'hi-1',            
+          showtext:
+          <div style={STYPE2} key="1-1"> 
+           <DragCard 
+                  id={2001} 
+                  text={text}
+                 onChange={this.onChange} 
+                />  
+          </div>
+          },]}
+    ]
+    )
   }
-
-  onChange = (dataSource) =>{
-    this.setState({
-      dataSource
-    })
+  getChangeSource=(data)=>{
+    console.log("数据改变了",data)
   }
-
-  onReset = () => {
-    this.store.reset();
+  addBlock=()=>{
+    console.log("增加一个空模块",)
+  }
+  onChange=(id,dragItem)=>{
+    console.log("拖拽成功返回的数据ID",id,dragItem)
+    if(id===2001){
+     this.setState({
+      data:this.getData(dragItem.text)
+      })
+    }
   }
   render() {
     return (
-      <DragContainer type="teset" dragType="copy" getStore={store => this.store = store} dataSource={this.state.dataSource} onChange={this.onChange}>
-        <Button onClick={this.onReset} >reset</Button>
-         <DragCard
-            component="div"
-            style={cardStyle}
-            // canDrop={false}
-            renderItem={(value,index,monitor) =>  <div style={Object.assign({},STYPE)} >{monitor.isDragging ? 'isDragging':JSON.stringify(value)}</div>}
-            name="a" ></DragCard>
-        <DragCard 
-            component="div"
-            style={cardStyle}
-            name="b"
-            // canDrag={false}
-            renderItem={(value) =>  <div style={STYPE} >{JSON.stringify(value)}</div>}
-            ></DragCard>
-         <DragCard 
-            component="div"
-            style={cardStyle}
-            name="c"
-            //  canDrop={(props,monitor) => {
-            //    return monitor.getItem().originName === 'a'||  monitor.getItem().originName === 'c'
-            //  }}
-            renderItem={(value,index,monitor) =>  <div style={Object.assign({opacity:monitor.isDragging ? 0: 1},STYPE)} >{JSON.stringify(value)}</div>}
-            />
+      <DragContainer >
+          <div style={{ display:'inline-block',width:"50%"}}>
+            <Button onClick={this.addBlock}>AddBlock </Button>
+            <Dragdata dataSource = {this.state.data}  ChangeSource={(data)=>this.getChangeSource(data)}/>
+          </div>
+          <div style={STYPE}>
+            {
+              Data.map(item=>(
+                <DragCard 
+                  key={item.id}
+                  id={item.id}
+                  text={item.value}
+                  onChange={this.onChange}
+                />
+              ))
+            }
+          </div>
       </DragContainer>
     )
   }

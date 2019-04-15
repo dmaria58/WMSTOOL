@@ -45,3 +45,4 @@ export const tableToExcel = (columns: any, dataSource: any,linkName:string) =>{
 	link.click();
 	document.body.removeChild(link);
 }
+ 
