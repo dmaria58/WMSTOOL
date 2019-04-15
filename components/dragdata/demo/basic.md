@@ -56,7 +56,6 @@ const DATA=[
           text: 'hello',            
           showtext:<div style={STYPE} key="2-1">第二条数据-2-1<span>delete</span></div>            
           }]
-
         },
         {
           id: 3,
