@@ -12,10 +12,12 @@ export interface DataList{
 export interface DdataProps {  
   dataSource?:Array<DataList>;
   getChangeSource?:(h:any)=>any;
+  type:string;
 }  
 export interface DdataState{
   cards?:Array<DataList>;
 }
+
 const ItemTypes={
   CARD: 'card',
 }
@@ -27,7 +29,7 @@ const cardSource = {
     }
   },
 }
-
+let indexChildren =0 as any;
 const cardTarget = {
   hover(props:any, monitor:any, component:any) {
     const dragIndex = monitor.getItem().index
@@ -45,17 +47,17 @@ const cardTarget = {
     if (dragIndex == hoverIndex) {
       return;
     }
+    //拖拽的层级与触发的层级不一样，但是触发的子层与拖拽的子层是同一层级可以拖拽
     if(dragLength-1 == hoverLength 
       && (dragIndex+"").split("-")[0] != (hoverIndex+"").split("-")[0]){
       props.moveCard(dragIndex, hoverIndex);
-      monitor.getItem().index = hoverIndex;
+      monitor.getItem().index = hoverIndex+"-"+indexChildren;
       return;
     }
     
     //不同层级之间不允许拖拽
-    if(dragLength != hoverLength )return 
-
-    
+    if (dragLength != hoverLength) { return } 
+   
     if (dragIndex < hoverIndex && hoverClientY < hoverMiddleY) {
       return
     }
@@ -63,12 +65,12 @@ const cardTarget = {
     if (dragIndex > hoverIndex && hoverClientY > hoverMiddleY) {   
       return
     }
+    
     props.moveCard(dragIndex, hoverIndex)
 
     monitor.getItem().index = hoverIndex
   },
 }
-
 @DropTarget(ItemTypes.CARD, cardTarget, (connect:any)=> ({
   connectDropTarget: connect.dropTarget(),
 }))
@@ -116,7 +118,7 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
       this.setState({cards:nextProps.dataSource})
     }
   }
-  moveCard(dragIndex:any, hoverIndex:any) {
+  moveCard(dragIndex:any, hoverIndex:any,) {
     let  cards  = this.state.cards?this.state.cards:[];
     let rdata = this.getChangeDragdata(dragIndex,hoverIndex,cards);
     this.setState({cards:rdata},()=>{
@@ -145,15 +147,16 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
         dledata = ddata;
         ddata = ddata + "["+k+"]";
       }
-
     })
     let list = eval("rdata"+ddata+";") as any;
+   
     if(!dledata){
       eval("rdata"+".splice("+indexlist[indexlist.length-1]+",1)");
     }else{
       eval("rdata"+dledata+".splice("+indexlist[indexlist.length-1]+",1)");
     } 
-    //新增位点-层级相同
+
+    // 新增位点-层级相同
     if(indexlist.length == addlist.length){
       addlist.map((k:number,j:number)=>{        
           if(j<addlist.length-1){
@@ -172,10 +175,12 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
     }
     //新增位点-层级不同，往上移，增加children末尾
     else if(indexlist[0] > addlist[0]){
-      rdata[addlist[0]].children.push(list)
+      indexChildren = rdata[addlist[0]].children.length;
+      rdata[addlist[0]].children.push(list);      
     }
     //新增位点-层级不同，往下移，增加children首位
     else if(indexlist[0] < addlist[0]){
+      indexChildren = 0;
       rdata[addlist[0]].children.unshift(list)
     }
     return rdata;

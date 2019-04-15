@@ -1,11 +1,8 @@
 // import * as React from 'react';
 import DragContainer from './DragContainer';
-import DragableCard from './DragableCard';
-import Item from './DragItem';
-
+import DragCard from './DragCard';
 export default {
   Container:DragContainer,
-  Card:DragableCard,
-  Item
+  Card:DragCard,
 };
 
