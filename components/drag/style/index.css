@@ -1,0 +1,14 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+.wmstool-drag-card {
+  border: 1px solid #d9d9d9;
+  padding: 10px 20px;
+}
+.drag-card-main{
+  border:1px dashed gray;
+  background-color:#ccc;
+	padding:10px;
+	margin:5px;	
+}
