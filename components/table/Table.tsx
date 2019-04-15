@@ -7,7 +7,7 @@ import Pagination, { PaginationProps } from '../pagination';
 import Icon from '../icon';
 import Spin from '../spin';
 import Buttom from '../button';
-import {tableToExcel} from '../export-excel';
+import tableToExcel from '../export-excel';
 import Checkbox from '../checkbox';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
