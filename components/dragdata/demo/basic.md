@@ -110,7 +110,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Dragdata dataSource = {this.state.data} getChangeSource={(data)=>this.getChangeSource(data)}/>
+        <Dragdata type="card"  dataSource = {this.state.data} 
+        getChangeSource={(data)=>this.getChangeSource(data)}/>
         <Button onClick={this.changeList}>change</Button>
       </div>
     )
