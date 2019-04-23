@@ -8,32 +8,38 @@ export interface DataList{
   id?:any;
   showtext?:any;
   text?:any;
+  clickId?:any;
+  isNotDrag?:boolean;
 }
 export interface DdataProps {  
   dataSource?:Array<DataList>;
   getChangeSource?:(h:any)=>any;
-  type:string;
+  type?:string;
+  onClick?:(h:any)=>any;
 }  
 export interface DdataState{
   cards?:Array<DataList>;
-}
-
-const ItemTypes={
-  CARD: 'card',
+  type?:string;
+  clickId?:any;
 }
 const cardSource = {
   beginDrag(props:any) {
     return {
       id: props.id,
       index: props.index,
+      isNotDrag: props.isNotDrag,
     }
   },
 }
 let indexChildren =0 as any;
 const cardTarget = {
   hover(props:any, monitor:any, component:any) {
+    const isNotDrag=monitor.getItem().isNotDrag
     const dragIndex = monitor.getItem().index
     const hoverIndex = props.index
+    if (isNotDrag==true) { 
+      return ;
+    }  
     let dragLength = (dragIndex+"").split("-").length as number;
     let hoverLength = (hoverIndex+"").split("-").length as number;
     const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
@@ -43,7 +49,7 @@ const cardTarget = {
     const clientOffset = monitor.getClientOffset();
 
     const hoverClientY = clientOffset.y - hoverBoundingRect.top;
-
+  
     if (dragIndex == hoverIndex) {
       return;
     }
@@ -71,10 +77,10 @@ const cardTarget = {
     monitor.getItem().index = hoverIndex
   },
 }
-@DropTarget(ItemTypes.CARD, cardTarget, (connect:any)=> ({
+@DropTarget((props:any) => props.type, cardTarget, (connect:any)=> ({
   connectDropTarget: connect.dropTarget(),
 }))
-@DragSource(ItemTypes.CARD, cardSource, (connect:any, monitor:any) => ({
+@DragSource((props:any) => props.type, cardSource, (connect:any, monitor:any) => ({
   connectDragSource: connect.dragSource(),
   isDragging: monitor.isDragging(),
 }))
@@ -85,22 +91,21 @@ export  class Card extends React.Component <any> {
     index: PropTypes.number.isRequired,
     isDragging: PropTypes.bool.isRequired,
     id: PropTypes.any.isRequired,
-    //text: PropTypes.string.isRequired,
     moveCard: PropTypes.func.isRequired,
+    className: PropTypes.string.isRequired,
   }
- 
+
   render() {
     const {
-      //text,
       id,
       isDragging,
       connectDragSource,
       connectDropTarget,
+      className,
     } = this.props
     const opacity = isDragging ? 0 : 1
-
     return connectDragSource(
-      connectDropTarget(<div style={{opacity }} key={id} >{this.props.children}</div>),
+      connectDropTarget(<div className={className}   style={{opacity }} key={id} >{this.props.children}</div>),
     )
   }
 }
@@ -110,8 +115,11 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
     super(props)
     this.moveCard = this.moveCard.bind(this)
     this.state = {
-      cards: props.dataSource?props.dataSource:[]
+      cards: props.dataSource?props.dataSource:[],
+      type: props.type ? props.type : "card",
+      clickId:null,
     }
+    this.onClick= this.onClick.bind(this)
   }
   componentWillReceiveProps(nextProps:any) {
     if(nextProps.dataSource != this.props.dataSource){
@@ -185,33 +193,47 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
     }
     return rdata;
   }
-  getAllCards = (cardsdata:any,ischild:any) =>{
-    return cardsdata.map((list:any, i:number) => {
-              if(list){
-                let myindex = ischild !== false?ischild+"-"+i:i as any;
-                if(list.children){
-                  return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
-                            <div className="wmstool_drag_fdiv">{this.getAllCards(list.children,myindex)}</div>
-                          </Card>
-                }
-                else if(ischild === false){
-                  return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
-                            <div className="wmstool_drag_fdiv">{list.showtext}</div>
-                          </Card>                  
-                } 
-                else{
-                  return  <Card key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
-                            {list.showtext}
-                          </Card>
-                }
-              }             
-           })
+  onClick=(clickId:any)=>{
+    let id=this.state.clickId
+    if(this.props.onClick){
+      this.setState({
+        clickId:clickId==id?null:clickId,
+      })
+      this.props.onClick(clickId==id?null:clickId)
+    }
+  }
+  getAllCards = (cardsdata: any, ischild: any, type: string) => {
+    return cardsdata.map((list: any, i: number) => {
+      let className=list.clickId&&this.state.clickId==list.clickId?"wmstool_drag_fdiv_click":"wmstool_drag_fdiv"
+      if (list) {
+        let myindex = ischild !== false ? ischild + "-" + i : i as any;
+        if (list.children) {
+          return <Card clickId={list.clickId} className={list.className || ""} type={type} isNotDrag={list.isNotDrag || false}
+            key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
+            <div onClick={this.onClick.bind(this,list.clickId)} className={className}>{this.getAllCards(list.children, myindex, type)}</div>
+          </Card>
+        }
+        else if (ischild === false) {
+          return <Card  className={list.className || ""} type={type} isNotDrag={list.isNotDrag || false}
+            key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
+            <div  onClick={this.onClick.bind(this,list.clickId)}  className={className}>{list.showtext}</div>
+          </Card>
+        }
+        else {
+          return <Card  className={list.className || ""} type={type} isNotDrag={list.isNotDrag || false}
+            key={list.id} index={myindex} id={list.id} moveCard={this.moveCard}>
+            <div  onClick={this.onClick.bind(this,list.clickId)} >{list.showtext}</div>
+          </Card>
+        }
+      }
+    })
   }
   render() {
     let cardsdata = this.state.cards;
+    let type=this.state.type||"card"
     return (
       <div >
-        {cardsdata && cardsdata.length && this.getAllCards(cardsdata,false)}
+        {cardsdata && cardsdata.length && this.getAllCards(cardsdata,false,type)}
       </div>
     )
   }
