@@ -19,6 +19,5 @@ Excel导出数据。
 | --- | --- | --- | --- |
 | columnsSource | 导出的表头信息 | object[] | [] |
 | dataSource | 导出表体信息 | object[] | [] |
-| isPort | 判断是否导出 | boolean | false |
 | linkName | excel下载名称 | string | 'download' |
 

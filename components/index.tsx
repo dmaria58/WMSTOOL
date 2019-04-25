@@ -129,4 +129,7 @@ export { default as Exportexcel } from './export-excel';
 
 export { default as Dragdata } from './dragdata';
 
+export {default as WithDragDropContext} from './withdrag-dropcontext';
+export { default as Drag } from './drag';
+
 export { default as version } from './version';

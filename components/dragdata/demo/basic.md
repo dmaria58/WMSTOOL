@@ -26,17 +26,49 @@ const DATA=[
         {
           id: 1,
           text: 'hello',
-          showtext:<div style={STYPE} key="1">第一条数据<span>add</span></div>
+          children:[{
+           id: 4,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-1">第1条子数据<span>add-1</span></div>,
+          },{
+           id: 5,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-2">第2条子数据<span>add-2</span></div>,
+          },{
+           id: 6,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-3">第3条子数据<span>add-3</span></div>,
+          },{
+           id: 7,
+           text: 'hello',
+           showtext:<div style={STYPE} key="1-4">第4条子数据<span>add-4</span></div>,
+          }]
         },
         {
           id: 2,
           text: 'luck',
-          showtext:<div style={STYPE} key="2">第二条数据<span>delete</span></div>
+          children:[{
+          id: 8,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="2-0">第二条数据-2-0<span>delete</span></div>            
+          },{
+          id: 10,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="2-1">第二条数据-2-1<span>delete</span></div>            
+          }]
         },
         {
           id: 3,
           text: 'good',
-          showtext:<div style={STYPE} key="3">第三条数据<span>test</span></div>
+          children:[{
+          id: 9,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="3-0">第二条数据-3-0<span>delete</span></div>            
+          },{
+          id: 11,
+          text: 'hello',            
+          showtext:<div style={STYPE} key="3-1">第二条数据-3-1<span>delete</span></div>            
+          }]
         }
       ];
 const DATA2=[
@@ -78,7 +110,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Dragdata dataSource = {this.state.data} getChangeSource={(data)=>this.getChangeSource(data)}/>
+        <Dragdata type="card"  dataSource = {this.state.data} 
+        getChangeSource={(data)=>this.getChangeSource(data)}/>
         <Button onClick={this.changeList}>change</Button>
       </div>
     )
