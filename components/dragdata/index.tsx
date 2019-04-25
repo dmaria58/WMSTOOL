@@ -39,7 +39,7 @@ const cardTarget = {
     const hoverIndex = props.index
     if (isNotDrag==true) { 
       return ;
-    }  
+    } 
     let dragLength = (dragIndex+"").split("-").length as number;
     let hoverLength = (hoverIndex+"").split("-").length as number;
     const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
@@ -55,7 +55,7 @@ const cardTarget = {
     }
     //拖拽的层级与触发的层级不一样，但是触发的子层与拖拽的子层是同一层级可以拖拽
     if(dragLength-1 == hoverLength 
-      && (dragIndex+"").split("-")[0] != (hoverIndex+"").split("-")[0]){
+      && (dragIndex+"").split("-")[0] != (hoverIndex+"").split("-")[0]&&(!props.isNotDrag)){
       props.moveCard(dragIndex, hoverIndex);
       monitor.getItem().index = hoverIndex+"-"+indexChildren;
       return;
@@ -157,13 +157,11 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
       }
     })
     let list = eval("rdata"+ddata+";") as any;
-   
     if(!dledata){
       eval("rdata"+".splice("+indexlist[indexlist.length-1]+",1)");
     }else{
       eval("rdata"+dledata+".splice("+indexlist[indexlist.length-1]+",1)");
     } 
-
     // 新增位点-层级相同
     if(indexlist.length == addlist.length){
       addlist.map((k:number,j:number)=>{        
@@ -184,7 +182,7 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
     //新增位点-层级不同，往上移，增加children末尾
     else if(indexlist[0] > addlist[0]){
       indexChildren = rdata[addlist[0]].children.length;
-      rdata[addlist[0]].children.push(list);      
+      rdata[addlist[0]].children.push(list); 
     }
     //新增位点-层级不同，往下移，增加children首位
     else if(indexlist[0] < addlist[0]){
@@ -204,7 +202,7 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
   }
   getAllCards = (cardsdata: any, ischild: any, type: string) => {
     return cardsdata.map((list: any, i: number) => {
-      let className=list.clickId&&this.state.clickId==list.clickId?"wmstool_drag_fdiv_click":"wmstool_drag_fdiv"
+      let className=list.clickId&&this.state.clickId==list.clickId?"wmstool_drag_fdiv wmstool_drag_fdiv_click":"wmstool_drag_fdiv"
       if (list) {
         let myindex = ischild !== false ? ischild + "-" + i : i as any;
         if (list.children) {
