@@ -27,6 +27,7 @@ const STYPE={
   display:'inline-block',
   width:"50%",
   float:'right',
+  marginTop:"50px",
 }
 const STYPE2={
   border: '1px dashed gray',
@@ -52,7 +53,7 @@ class App extends React.Component {
       data:this.getData("please")
     }
   }
-  getData=(text)=>{
+  getData=()=>{
     return(
       [
         {
@@ -65,8 +66,11 @@ class App extends React.Component {
             <DragCard 
                   id={1001} 
                   text={'1-0'}
+                  
+                   type="BOX1" 
                   onChange={this.onChange}
-                />
+                >
+                </DragCard> 
             </div>,
           },{
            id: 1002,
@@ -75,8 +79,11 @@ class App extends React.Component {
            <DragCard 
                   id={1002} 
                   text={'1-1'}
+               
+                   type="BOX1" 
                   onChange={this.onChange}
-                />
+                >
+                  </DragCard> 
             </div>,
           },]
         }, {
@@ -89,9 +96,12 @@ class App extends React.Component {
           <div style={STYPE2} key="1-1"> 
            <DragCard 
                   id={2001} 
-                  text={text}
+                 
+                  text={""}
+                  type="BOX1" 
                  onChange={this.onChange} 
-                />  
+                > 
+             </DragCard> 
           </div>
           },]}
     ]
@@ -103,8 +113,8 @@ class App extends React.Component {
   addBlock=()=>{
     console.log("增加一个空模块",)
   }
-  onChange=(id,dragItem)=>{
-    console.log("拖拽成功返回的数据ID",id,dragItem)
+  onChange=(targetItem,sourceItem)=>{
+    console.log("拖拽成功返回的数据ID",targetItem,sourceItem)
     if(id===2001){
      this.setState({
       data:this.getData(dragItem.text)
@@ -116,17 +126,18 @@ class App extends React.Component {
       <DragContainer >
           <div style={{ display:'inline-block',width:"50%"}}>
             <Button onClick={this.addBlock}>AddBlock </Button>
-            <Dragdata dataSource = {this.state.data}  ChangeSource={(data)=>this.getChangeSource(data)}/>
+            <Dragdata dataSource = {this.state.data} type="card9"  ChangeSource={(data)=>this.getChangeSource(data)}/>
           </div>
           <div style={STYPE}>
             {
               Data.map(item=>(
                 <DragCard 
-                  key={item.id}
                   id={item.id}
                   text={item.value}
+                  type="BOX1" 
                   onChange={this.onChange}
-                />
+                >
+                </DragCard>
               ))
             }
           </div>
