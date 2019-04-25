@@ -14,7 +14,7 @@ excel数据导出
 excel数据导出
 
 ````jsx
-import { Exportexcel,Icon} from 'wmstool';
+import { Exportexcel as tableToExcel,Icon} from 'wmstool';
 
 class App extends React.Component {
   constructor(props){
@@ -59,13 +59,12 @@ class App extends React.Component {
   }
   onClick=()=>{
     let {columnsSource,dataSource}=this.state
-    this.handleExport(columnsSource,dataSource)
+  	tableToExcel(columnsSource, dataSource,"download.xls")
   }
   render() {   
     return (
       <div>
         <Icon type="download" onClick={this.onClick}/>
-        <Exportexcel getExportExcel={fn => this.handleExport = fn}  linkName={"download.xls"} />
       </div>
     );
   }
