@@ -2,8 +2,13 @@
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
-.wmstool_drag_fdiv {
-  background-color: #ccc;
-  padding: 10px;
-  margin: 5px;
+.wmstool-drag-card {
+  border: 1px solid #d9d9d9;
+  padding: 10px 20px;
+}
+.drag-card-main{
+  border:1px dashed gray;
+  background-color:#ccc;
+	padding:10px;
+	margin:5px;	
 }

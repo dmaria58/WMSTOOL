@@ -1,7 +1,7 @@
 
 declare function unescape(s:string): string;
 
-export const tableToExcel = (columns: any, dataSource: any,linkName:string) =>{
+const tableToExcel = (columns: any, dataSource: any,linkName:string) =>{
 	// 处理数据
 	let newDataSource = []
 	if (columns) {
@@ -45,3 +45,4 @@ export const tableToExcel = (columns: any, dataSource: any,linkName:string) =>{
 	link.click();
 	document.body.removeChild(link);
 }
+export default tableToExcel;
