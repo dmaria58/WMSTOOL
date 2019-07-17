@@ -180,12 +180,12 @@ class Dragdata extends React.Component <DdataProps,DdataState> {
       } 
     }
     //新增位点-层级不同，往上移，增加children末尾
-    else if(indexlist[0] > addlist[0]){
+    else if(indexlist[0] > addlist[0]&&list){
       indexChildren = rdata[addlist[0]].children.length;
       rdata[addlist[0]].children.push(list); 
     }
     //新增位点-层级不同，往下移，增加children首位
-    else if(indexlist[0] < addlist[0]){
+    else if(indexlist[0] < addlist[0]&&list){
       indexChildren = 0;
       rdata[addlist[0]].children.unshift(list)
     }
