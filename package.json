@@ -67,6 +67,7 @@
     "react-lazy-load": "^3.0.12",
     "react-lazyload": "^2.3.0",
     "react-slick": "~0.16.0",
+    "react-window": "^1.8.5",
     "shallowequal": "^1.0.1",
     "warning": "~3.0.0"
   },
@@ -81,6 +82,7 @@
     "@types/react": "16.0.0",
     "@types/react-dom": "16.0.0",
     "@types/react-lazyload": "2.3.1",
+    "@types/react-window": "^1.1.0",
     "ansi-styles": "^3.2.0",
     "antd-tools": "^4.0.6",
     "babel-cli": "^6.18.0",
