@@ -123,7 +123,7 @@ export default class Card extends React.Component<CardProps, {}> {
   render() {
     const {
       prefixCls = 'wmstool-card', className, extra, bodyStyle, noHovering, hoverable, title, loading,
-      bordered = true, type, cover, actions, tabList, children, ...others,
+      bordered = true, type, cover, actions, tabList, children, ...others
     } = this.props;
 
     const classString = classNames(prefixCls, className, {

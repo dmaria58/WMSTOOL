@@ -4,14 +4,14 @@ import debounce from 'lodash.debounce';
 // matchMedia polyfill for
 // https://github.com/WickyNilliams/enquire.js/issues/82
 if (typeof window !== 'undefined') {
-  const matchMediaPolyfill = (mediaQuery: string): MediaQueryList => {
+  const matchMediaPolyfill = (mediaQuery: string): any => {
     return {
       media: mediaQuery,
       matches: false,
-      addListener() {
+      addListener(){
       },
       removeListener() {
-      },
+      }
     };
   };
   window.matchMedia = window.matchMedia || matchMediaPolyfill;

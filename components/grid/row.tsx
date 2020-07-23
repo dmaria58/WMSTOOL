@@ -2,14 +2,14 @@
 // https://github.com/WickyNilliams/enquire.js/issues/82
 let enquire: any;
 if (typeof window !== 'undefined') {
-  const matchMediaPolyfill = (mediaQuery: string): MediaQueryList => {
+  const matchMediaPolyfill = (mediaQuery: string): any => {
     return {
       media: mediaQuery,
       matches: false,
-      addListener() {
+      addListener:()=>{
       },
-      removeListener() {
-      },
+      removeListener:()=> {
+      }
     };
   };
   window.matchMedia = window.matchMedia || matchMediaPolyfill;
@@ -124,7 +124,7 @@ export default class Row extends React.Component<RowProps, RowState> {
   render() {
     const {
       type, justify, align, className, style, children,
-      prefixCls = 'wmstool-row', ...others,
+      prefixCls = 'wmstool-row', ...others
     } = this.props;
     const gutter = this.getGutter();
     const classes = classNames({
@@ -143,13 +143,13 @@ export default class Row extends React.Component<RowProps, RowState> {
         return null;
       }
       if (col.props && (gutter as number) > 0) {
-        return cloneElement(col, {
-          style: {
-            paddingLeft: (gutter as number) / 2,
+          const c_style=col.props.style as React.CSSProperties;
+        const colS={
+            paddingLeft: (gutter as number) / 2 ,
             paddingRight: (gutter as number) / 2,
-            ...col.props.style,
-          },
-        });
+            ...c_style
+        } as React.CSSProperties;       
+        return cloneElement(col,{style:colS} as any);
       }
       return col;
     });

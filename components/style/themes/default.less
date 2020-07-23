@@ -13,6 +13,7 @@
 @highlight-color        : @red-6;
 @warning-color          : @gold-6;
 @normal-color           : #d9d9d9;
+@black: #000;
 
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
@@ -398,3 +399,32 @@
 // ---
 @pagination-item-size: 32px;
 @pagination-item-size-sm: 24px;
+
+//select
+// ---
+@select-border-color: @border-color-base;
+@select-item-selected-color: @text-color;
+@select-item-selected-font-weight: 600;
+@select-dropdown-bg: @component-background;
+@select-item-selected-bg: @primary-1;
+@select-item-active-bg: @item-hover-bg;
+@select-dropdown-vertical-padding: @dropdown-vertical-padding;
+@select-dropdown-font-size: @dropdown-font-size;
+@select-dropdown-line-height: @dropdown-line-height;
+@select-dropdown-height: 32px;
+@select-background: @component-background;
+@select-clear-background: @select-background;
+@select-selection-item-bg: @background-color-base;
+@select-selection-item-border-color: @border-color-split;
+@select-single-item-height-lg: 40px;
+@select-multiple-item-height: @input-height-base - @input-padding-vertical-base * 2; // Normal 24px
+@select-multiple-item-height-lg: 32px;
+@select-multiple-item-spacing-half: ceil(@input-padding-vertical-base / 2);
+//Dropdown
+@dropdown-menu-bg: @component-background;
+@dropdown-vertical-padding: 5px;
+@dropdown-edge-child-vertical-padding: 4px;
+@dropdown-font-size: @font-size-base;
+@dropdown-line-height: 22px;
+
+@icon-color-hover: fade(@black, 75%);
