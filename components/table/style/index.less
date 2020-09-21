@@ -429,38 +429,7 @@
     }
   }
 
-  &-row {
-    &-expand-icon {
-      cursor: pointer;
-      display: inline-block;
-      width: 17px;
-      height: 17px;
-      text-align: center;
-      line-height: 14px;
-      border: @border-width-base @border-style-base @border-color-split;
-      user-select: none;
-      background: @component-background;
-    }
 
-    &-expanded:after {
-      content: '-';
-    }
-
-    &-collapsed:after {
-      content: '+';
-    }
-
-    &-spaced {
-      visibility: hidden;
-      &:after {
-        content: '.';
-      }
-    }
-
-    &[class*="@{table-prefix-cls}-row-level-0"] .@{table-prefix-cls}-selection-column > span {
-      display: inline-block;
-    }
-  }
 
   tr&-expanded-row {
     &,
@@ -610,5 +579,43 @@
     font-size: 10px;
     margin-top: 5px;
 }
+  &-row {
+    &-expand-icon {
+      cursor: pointer;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      text-align: center;
+      line-height: 14px;
+      border: @border-width-base @border-style-base @border-color-split;
+      user-select: none;
+      background: @component-background;
+    }
 
+    &-expanded:after {
+      content: '-';
+    }
+
+    &-collapsed:after {
+      content: '+';
+    }
+
+    &-spaced {
+      visibility: hidden;
+      &:after {
+        content: '.';
+      }
+    }
+
+    &[class*="@{table-prefix-cls}-row-level-0"] .@{table-prefix-cls}-selection-column > span {
+      display: inline-block;
+    }
+  } 
+.table_lazy_list::-webkit-scrollbar    //滚动条整体部分
+{  
+    width: 0px;  
+}
+.table_lazy_list{
+  padding-bottom:10px;
+}
 @import './size';

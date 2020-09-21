@@ -1,15 +1,16 @@
 ---
 category: Components
+subtitle: 选择器
 type: Data Entry
 title: Select
 ---
 
-Select component to select value from options.
+下拉选择器。
 
-## When To Use
+## 何时使用
 
-- A dropdown menu for displaying choices - an elegant alternative to the native `<select>` element.
-- Utilizing [Radio](/components/radio/) is recommended when there are fewer total options (less than 5).
+- 弹出一个下拉菜单给用户选择操作，用于代替原生的选择器，或者需要一个更优雅的多选器时。
+- 当选项少时（少于 5 项），建议直接将选项平铺，使用 [Radio](/components/radio/) 是更好的选择。
 
 ## API
 
@@ -21,60 +22,66 @@ Select component to select value from options.
 
 ### Select props
 
-| Property | Description | Type | Default |
-| -------- | ----------- | ---- | ------- |
-| allowClear | Show clear button. | boolean | false |
-| autoFocus | Get focus by default | boolean | false |
-| defaultActiveFirstOption | Whether active first option by default | boolean | true |
-| defaultValue | Initial selected option. | string\|string\[] | - |
-| disabled | Whether disabled select | boolean | false |
-| dropdownClassName | className of dropdown menu | string | - |
-| dropdownMatchSelectWidth | Whether dropdown's with is same with select. | boolean | true |
-| dropdownStyle | style of dropdown menu | object | - |
-| filterOption | If true, filter options by input, if function, filter options against it. The function will receive two arguments, `inputValue` and `option`, if the function returns `true`, the option will be included in the filtered set; Otherwise, it will be excluded. | boolean or function(inputValue, option) | true |
-| firstActiveValue | Value of action option by default | string\|string\[] | - |
-| getPopupContainer | Parent Node which the selector should be rendered to. Default to `body`. When position issues happen, try to modify it into scrollable content and position it relative. [Example](https://codesandbox.io/s/4j168r7jw01) | function(triggerNode) | () => document.body |
-| labelInValue | whether to embed label in value, turn the format of value from `string` to `{key: string, label: ReactNode}` | boolean | false |
-| maxTagCount |  Max tag count to show | number | - |
-| maxTagPlaceholder | Placeholder for not showing tags | ReactNode/function(omittedValues) | - |
-| mode | Set mode of Select (Support after 2.9) | 'multiple' \| 'tags' \| 'combobox' | - |
-| notFoundContent | Specify content to show when no result matches.. | string | 'Not Found' |
-| optionFilterProp | Which prop value of option will be used for filter if filterOption is true | string | value |
-| optionLabelProp | Which prop value of option will render as content of select. | string | `children` |
-| placeholder | Placeholder of select | string\|ReactNode | - |
-| showSearch | Whether show search input in single mode. | boolean | false |
-| size | Size of Select input. `default` `large` `small` | string | default |
-| tokenSeparators | Separator used to tokenize on tag/multiple mode | string\[] |  |
-| value | Current selected option. | string\|string\[] | - |
-| onBlur | Called when blur | function | - |
-| onChange | Called when select an option or input value change, or value of input is changed in combobox mode | function(value, label) | - |
-| onDeselect | Called when a option is deselected, the params are option's value (or key) . only called for multiple or tags, effective in multiple or tags mode only. | function(value) | - |
-| onFocus | Called when focus | function | - |
-| onMouseEnter | Called when mouse enter | function | - |
-| onMouseLeave | Called when mouse leave | function | - |
-| onPopupScroll | Called when dropdown scrolls | function | - |
-| onSearch | Callback function that is fired when input changed. | function(value: string) |  |
-| onSelect | Called when a option is selected, the params are option's value (or key) and option instance. | function(value, option) | - |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| allowClear | 支持清除 | boolean | false |
+| autoFocus | 默认获取焦点 | boolean | false |
+| combobox | 输入框自动提示模式（2.9 之后废弃，请使用 `mode`） | boolean | false |
+| defaultActiveFirstOption | 是否默认高亮第一个选项。 | boolean | true |
+| defaultValue | 指定默认选中的条目 | string\|string\[] | - |
+| disabled | 是否禁用 | boolean | false |
+| dropdownClassName | 下拉菜单的 className 属性 | string | - |
+| dropdownMatchSelectWidth | 下拉菜单和选择器同宽false 时会关闭虚拟滚动 | boolean | true |
+| dropdownStyle | 下拉菜单的 style 属性 | object | - |
+| filterOption | 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 `true`，反之则返回 `false`。 | boolean or function(inputValue, option) | true |
+| firstActiveValue | 默认高亮的选项 | string\|string\[] | - |
+| getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) | Function(triggerNode) | () => document.body |
+| labelInValue | 是否把每个选项的 label 包装到 value 中，会把 Select 的 value 类型从 `string` 变为 `{key: string, label: ReactNode}` 的格式 | boolean | false |
+| maxTagCount | 最多显示多少个 tag | number | - |
+| maxTagPlaceholder | 隐藏 tag 时显示的内容 | ReactNode/function(omittedValues) | - |
+| mode | 设置 Select 的模式（2.9 之后支持） | 'multiple' \| 'tags' \| 'combobox' | - |
+| multiple | 支持多选（2.9 之后废弃，请使用 `mode`） | boolean | false |
+| notFoundContent | 当下拉列表为空时显示的内容 | string | 'Not Found' |
+| optionFilterProp | 搜索时过滤对应的 option 属性，如设置为 children 表示对内嵌内容进行搜索 | string | value |
+| optionLabelProp | 回填到选择框的 Option 的属性值，默认是 Option 的子元素。比如在子元素需要高亮效果时，此值可以设为 `value`。 | string | `children` （combobox 模式下为 `value`） |
+| placeholder | 选择框默认文字 | string | - |
+| showSearch | 使单选模式可搜索 | boolean | false |
+| size | 选择框大小，可选 `large` `small` | string | default |
+| tags | 可以把随意输入的条目作为 tag，输入项不需要与下拉选项匹配（2.9 之后废弃，请使用 `mode`） | boolean | false |
+| tokenSeparators | 在 tags 和 multiple 模式下自动分词的分隔符 | string\[] |  |
+| value | 指定当前选中的条目 | string\|string\[] | - |
+| onBlur | 失去焦点的时回调 | function | - |
+| onChange | 选中 option，或 input 的 value 变化（combobox 模式下）时，调用此函数 | function(value) | - |
+| onDeselect | 取消选中时调用，参数为选中项的 value (或 key) 值，仅在 multiple 或 tags 模式下生效 | function(value) | - |
+| onFocus | 获得焦点时回调 | function | - |
+| onMouseEnter | 鼠标移入时回调 | function | - |
+| onMouseLeave | 鼠标移出时回调 | function | - |
+| onPopupScroll | 下拉列表滚动时的回调 | function | - |
+| onSearch | 文本框值变化时回调 | function(value: string) |  |
+| onSelect | 被选中时调用，参数为选中项的 value (或 key) 值 | function(value, option) | - |
+| virtual | 设置 true 时开启虚拟滚动 | boolean | false | 4.1.0 |
+
+> 注意，如果发现下拉菜单跟随页面滚动，或者需要在其他弹层中触发 Select，请尝试使用 `getPopupContainer={triggerNode => triggerNode.parentNode}` 将下拉弹层渲染节点固定在触发器的父元素中。
 
 ### Select Methods
 
-| Name | Description |
+| 名称 | 说明 |
 | --- | --- |
-| blur() | Remove focus |
-| focus() | Get focus |
+| blur() | 取消焦点 |
+| focus() | 获取焦点 |
 
 ### Option props
 
-| Property | Description | Type | Default |
-| -------- | ----------- | ---- | ------- |
-| disabled | Disable this option | boolean | false |
-| key | Same usage as `value`. If React request you to set this property, you can set it to value of option, and then omit value property. | string |  |
-| title | `title` of Select after select this Option | string | - |
-| value | default to filter with this property | string | - |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| disabled | 是否禁用 | boolean | false |
+| key | 和 value 含义一致。如果 React 需要你设置此项，此项值与 value 的值相同，然后可以省略 value 设置 | string |  |
+| title | 选中该 Option 后，Select 的 title | string | - |
+| value | 默认根据此属性值进行筛选 | string | - |
 
 ### OptGroup props
 
-| Property | Description | Type | Default |
-| -------- | ----------- | ---- | ------- |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
 | key |  | string | - |
-| label | Group label | string\|React.Element | - |
+| label | 组名 | string\|React.Element | 无 |

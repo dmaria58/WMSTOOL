@@ -130,6 +130,7 @@ export interface TableState<T> {
   abcard: boolean;
   statecolumn?: any;
   tableId?:string;
+  lazy_marginTop?:number;
 }
 
 export type SelectionItemSelectFn = (key: string[]) => any;

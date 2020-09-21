@@ -16,6 +16,9 @@
   font-size: 0;
   height: 0;
 }
+.wmstool-table-hidden {
+  display: none;
+}
 .wmstool-table {
   font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -382,32 +385,6 @@
 .wmstool-table-selection-down:hover .anticon-down {
   color: #666;
 }
-.wmstool-table-row-expand-icon {
-  cursor: pointer;
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  text-align: center;
-  line-height: 14px;
-  border: 1px solid #e8e8e8;
-  user-select: none;
-  background: #fff;
-}
-.wmstool-table-row-expanded:after {
-  content: '-';
-}
-.wmstool-table-row-collapsed:after {
-  content: '+';
-}
-.wmstool-table-row-spaced {
-  visibility: hidden;
-}
-.wmstool-table-row-spaced:after {
-  content: '.';
-}
-.wmstool-table-row[class*="wmstool-table-row-level-0"] .wmstool-table-selection-column > span {
-  display: inline-block;
-}
 tr.wmstool-table-expanded-row,
 tr.wmstool-table-expanded-row:hover {
   background: #fbfbfb;
@@ -497,11 +474,26 @@ tr.wmstool-table-expanded-row:hover {
   right: 7px;
   width: 150px;
 }
+.wmstool-table-edit_download {
+  position: absolute;
+  top: 6px;
+  right: 50px;
+  width: 150px;
+  text-align: right;
+  padding: 5px;
+  cursor: pointer;
+}
+.wmstool-table-edit_download:hover {
+  color: #1890ff;
+}
 .wmstool-table-edit_b {
   padding: 5px;
 }
 .wmstool-table-edit_b_div {
   text-align: right;
+}
+.wmstool-table-edit_div > div:last-child {
+  width: auto !important;
 }
 .wmstool-table-edit_div .wmstool-checkbox-wrapper {
   display: inline-block;
@@ -511,11 +503,48 @@ tr.wmstool-table-expanded-row:hover {
   border: 1px solid #ccc;
   padding: 6px;
   border-radius: 5px;
+  white-space: nowrap;
+}
+.wmstool-table-iss-card .row-selector-content {
+  max-height: 200px;
+  overflow-y: auto;
 }
 .wmstool-table-edit_save_bt {
   width: 100%;
   font-size: 10px;
   margin-top: 5px;
+}
+-row-expand-icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  line-height: 14px;
+  border: 1px solid #e8e8e8;
+  user-select: none;
+  background: #fff;
+}
+-row-expanded:after {
+  content: '-';
+}
+-row-collapsed:after {
+  content: '+';
+}
+-row-spaced {
+  visibility: hidden;
+}
+-row-spaced:after {
+  content: '.';
+}
+-row[class*="wmstool-table-row-level-0"] .wmstool-table-selection-column > span {
+  display: inline-block;
+}
+.table_lazy_list::-webkit-scrollbar {
+  width: 0px;
+}
+.table_lazy_list {
+  padding-bottom: 10px;
 }
 .wmstool-table-middle > .wmstool-table-title,
 .wmstool-table-middle > .wmstool-table-footer {

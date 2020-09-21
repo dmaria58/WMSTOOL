@@ -65,7 +65,7 @@ When uploading state change, it returns:
    }
    ```
 
-   > Before `antd@1.9.0`, this parameter will be Array Object `[file, ...]` in multiple mode, while in `antd@1.9.0+`, it will always be an Object.
+   > Before `wmstool@1.9.0`, this parameter will be Array Object `[file, ...]` in multiple mode, while in `wmstool@1.9.0+`, it will always be an Object.
 
 2. `fileList` current list of files
 3. `event` response from server, including uploading progress, supported by advanced browsers.

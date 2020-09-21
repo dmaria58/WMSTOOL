@@ -57,7 +57,7 @@ export default class Progress extends React.Component<ProgressProps, {}> {
     const props = this.props;
     const {
       prefixCls, className, percent = 0, status, format, trailColor, size,
-      type, strokeWidth, width, showInfo, gapDegree = 0, gapPosition, ...restProps,
+      type, strokeWidth, width, showInfo, gapDegree = 0, gapPosition, ...restProps
     } = props;
     const progressStatus = parseInt(percent.toString(), 10) >= 100 && !('status' in props) ?
       'success' : (status || 'normal');

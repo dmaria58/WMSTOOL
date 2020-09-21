@@ -15,7 +15,7 @@ If uploaded file is a picture, the thumbnail can be shown. `IE8/9` do not suppor
 
 
 ````jsx
-import { Upload, Button, Icon } from 'antd';
+import { Upload, Button, Icon } from 'wmstool';
 
 const fileList = [{
   uid: -1,

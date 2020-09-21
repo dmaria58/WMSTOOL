@@ -16,7 +16,7 @@ export default function Divider({
   className,
   children,
   dashed,
-  ...restProps,
+  ...restProps
 }: DividerProps) {
   const classString = classNames(
     className, `${prefixCls}-divider`, `${prefixCls}-divider-${type}`, {

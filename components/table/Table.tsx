@@ -20,7 +20,7 @@ import Column from './Column';
 import ColumnGroup from './ColumnGroup';
 import createBodyRow from './createBodyRow';
 import { flatArray, treeMap, flatFilter, normalizeColumns } from './util';
-import LazyLoad , { forceCheck } from 'react-lazyload';
+import { FixedSizeList as List } from 'react-window';
 import Trigger from 'rc-trigger';
 import {
   TableProps,
@@ -33,7 +33,7 @@ import {
   TableStateFilters,
   SelectionItemSelectFn,
 } from './interface';
-//const RcTrigger = require("rc-trigger/lib/index.js");
+
 
 
 function noop() {
@@ -57,22 +57,11 @@ const defaultPagination = {
  */
 const emptyObject = {};
 
-// Lazy Table
+// // Lazy Table
 const Tr = (props: any)=>{
   return props
 }
 
-const TableWrap = (lazyHeight: number, props: any)=>{
-  return (
-    <tbody {...props}>
-      {
-        props.children.map(
-          (child: any, index: number) => <LazyLoad key={index} height={lazyHeight} scroll={false}><Tr {...child}/></LazyLoad>
-        )
-      }
-    </tbody>
-  )
-}
 export default class Table<T> extends React.Component<TableProps<T>, TableState<T>> {
   static Column = Column;
   static ColumnGroup = ColumnGroup;
@@ -128,7 +117,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     );
 
     this.columns = props.columns || normalizeColumns(props.children as React.ReactChildren);
-    this.createComponents(props.components);
+    
     let hjj=this.props.ColumnsChangeList || this.columns;
     //先取100行
     this.state = {
@@ -139,8 +128,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       abcard:false,//是否显示列过滤器
       statecolumn:hjj,
       tableId: "lazy-table-"+(Math.random().toString().slice(2)),
+      lazy_marginTop:0,
 
     };
+    this.createComponents(props.components);
     props.returnSelectColumn?props.returnSelectColumn(hjj):"";
     this.CheckboxPropsCache = {};
 
@@ -156,11 +147,28 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   componentDidMount (){
     //监听table滚动
     if(this.props.isMaxData ){
-      let table = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body`);
-      if(table){
-        table.addEventListener("scroll", forceCheck);
+      let table = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body`) as any;
+      let f_lazy = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body .wmstool-table-fixed .table_lazy_list`)as any;
+      if(table && f_lazy){
+        table.addEventListener("scroll",()=>{
+          if(this.state.lazy_marginTop != table.scrollTop){
+           f_lazy.scrollTop=table.scrollTop;
+           this.setState({lazy_marginTop:table.scrollTop})           
+          }
+
+        })
+        f_lazy.addEventListener("scroll",()=>{
+          if(this.state.lazy_marginTop != f_lazy.scrollTop){
+            table.scrollTop=f_lazy.scrollTop;
+            this.setState({lazy_marginTop:f_lazy.scrollTop})
+          }
+        })        
       }
     }
+  }
+  getSameScrollTop=(num:number)=>{
+      let table = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body`) as any;
+      if(table) table.scrollTop=num;
   }
   getCheckboxPropsByItem = (item: T, index: number) => {
     const { rowSelection = {} } = this.props;
@@ -227,8 +235,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       this.store.setState({
         selectionDirty: false,
 	      lastIndex: null,
+        lazy_marginTop:0
       });
-      this.CheckboxPropsCache = {};
+      this.CheckboxPropsCache = {};     
+      this.getSameScrollTop(0);
     }
     if (this.getSortOrderColumns(this.columns).length > 0) {
       const sortState = this.getSortStateFromColumns(this.columns);
@@ -250,7 +260,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       }
     }
 
-    this.createComponents(nextProps.components, this.props.components);
+    //this.createComponents(nextProps.components, this.props.components);
   }
 
   onRow = (record: T, index: number) => {
@@ -997,15 +1007,57 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     }
     return data;
   }
-
-  createComponents(components: TableComponents = {}, prevComponents?: TableComponents) {
+  TableWrap = (lazyHeight: number,{x,y}:any,mergedColumns:object[],props:any)=>{
+    let tableprops=props as any;
+    let mheight=lazyHeight as number;
+    let s_height=mheight*tableprops.children.length as number;
+    let r_Col=this.getCol(mergedColumns);
+    return (
+      <div style={{height:s_height,paddingTop:this.state.lazy_marginTop,width:'100%',minWidth:x}}>
+      <List
+        className="table_lazy_list"
+        height={y}
+        itemCount={tableprops.children.length}
+        itemSize={mheight}
+        width={'100%'}
+      >
+      {({ index,style}:any) => {
+        return (<table className="wmstool-table-tbody" style={style}>
+          <colgroup>
+              {r_Col}
+          </colgroup>
+          <Tr {...props.children[index]} style={style} />
+          </table>)
+      }}
+      </List>
+      </div>     
+    )
+  }
+  getCol=(mergedColumns:object[])=>{
+    return mergedColumns.map((list:any)=>{
+      return <col style={{"width":list.width+'px','minWidth':list.width+'px'}}/>
+    })
+  }
+  createComponents=(components: TableComponents = {}, prevComponents?: TableComponents)=> {
     const bodyRow = components && components.body && components.body.row;
     const preBodyRow = prevComponents && prevComponents.body && prevComponents.body.row;
-    if(this.props.isMaxData){
-      this.components = {body: {wrapper: TableWrap.bind(this, this.props.isMaxData.lazyHeight)}};
+    if(this.props.isMaxData && this.props.dataSource){
+      const locale = { ...this.props.locale } as any;
+      let columns = this.renderRowSelection(locale);
+      columns = this.renderColumnsDropdown(columns, locale);
+      columns = columns.map((column:any, i:any) => {
+        const newColumn = { ...column };
+        newColumn.key = this.getColumnKey(newColumn, i);
+        return newColumn;
+      });     
+      this.components = {body: {wrapper: this.TableWrap.bind(this,
+        this.props.isMaxData.lazyHeight,
+        this.props.scroll,
+        columns      
+        )}};
       return;
     }
-    if (!this.components || bodyRow !== preBodyRow) {
+    else if (!this.components || bodyRow !== preBodyRow) {
       this.components = { ...components };
       this.components.body = {
         ...components.body,
@@ -1024,7 +1076,6 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
      this.props.onRowClick(record, index, event)
    }
   }
-
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
     const { style, className, prefixCls, showHeader,isMaxData, ...restProps } = this.props;
@@ -1050,7 +1101,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     if ('expandIconColumnIndex' in restProps) {
       expandIconColumnIndex = restProps.expandIconColumnIndex as number;
     }
-    return (
+    return (    
       <RcTable
         key="table"
         {...restProps}

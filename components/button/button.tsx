@@ -127,7 +127,7 @@ export default class Button extends React.Component<ButtonProps, any> {
 
   render() {
     const {
-      type, shape, size, className, htmlType, children, icon, prefixCls, ghost, ...others,
+      type, shape, size, className, htmlType, children, icon, prefixCls, ghost, ...others
     } = this.props;
 
     const { loading, clicked } = this.state;
@@ -160,7 +160,7 @@ export default class Button extends React.Component<ButtonProps, any> {
     const iconType = loading ? 'loading' : icon;
     const iconNode = iconType ? <Icon type={iconType} /> : null;
     const needInserted = React.Children.count(children) === 1 && (!iconType || iconType === 'loading');
-    const kids = children ? React.Children.map(children, child => insertSpace(child, needInserted)) : null;
+    const kids = children ? React.Children.map(children, child => insertSpace(child as React.ReactChild, needInserted)) : null;
 
     return (
       <ComponentProp

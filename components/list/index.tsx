@@ -127,7 +127,7 @@ export default class List extends React.Component<ListProps> {
       renderItem,
       header,
       footer,
-      ...rest,
+      ...rest
     } = this.props;
 
     // large => lg

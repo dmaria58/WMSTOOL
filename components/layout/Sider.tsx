@@ -1,7 +1,7 @@
 // matchMedia polyfill for
 // https://github.com/WickyNilliams/enquire.js/issues/82
 if (typeof window !== 'undefined') {
-  const matchMediaPolyfill = (mediaQuery: string): MediaQueryList => {
+  const matchMediaPolyfill = (mediaQuery: string): any => {
     return {
       media: mediaQuery,
       matches: false,
@@ -86,7 +86,7 @@ export default class Sider extends React.Component<SiderProps, SliderState> {
     siderHook: PropTypes.object,
   };
 
-  private mql: MediaQueryList;
+  private mql: any;
   private uniqueId: string;
 
   constructor(props: SiderProps) {
@@ -178,7 +178,7 @@ export default class Sider extends React.Component<SiderProps, SliderState> {
   render() {
     const { prefixCls, className,
       collapsible, reverseArrow, trigger, style, width, collapsedWidth,
-      ...others,
+      ...others
     } = this.props;
     const divProps = omit(others, ['collapsed',
       'defaultCollapsed', 'onCollapse', 'breakpoint']);

@@ -52,8 +52,9 @@ export function normalizeColumns(elements: React.ReactChildren) {
     if (!React.isValidElement(element)) {
       return;
     }
-    const column: any = {
-      ...element.props,
+    let k_ele=element.props as React.ReactChildren;
+    const column:any = {
+      ...k_ele
     };
     if (element.key) {
       column.key = element.key;

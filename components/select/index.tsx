@@ -49,6 +49,9 @@ export interface SelectProps extends AbstractSelectProps {
   tokenSeparators?: string[];
   getInputElement?: () => React.ReactElement<any>;
   autoFocus?: boolean;
+  listHeight?: string;
+  listItemHeight?: string;  
+  virtual?:boolean;
 }
 
 export interface OptionProps {
@@ -82,6 +85,11 @@ const SelectPropTypes = {
 // export { Option, OptGroup };
 
 export default class Select extends React.Component<SelectProps, {}> {
+  selectRef:any;
+  constructor(props:any) {
+    super(props);
+    this.selectRef = React.createRef();
+  }
   static Option = Option as React.ClassicComponentClass<OptionProps>;
   static OptGroup = OptGroup as React.ClassicComponentClass<OptGroupProps>;
 
@@ -93,28 +101,30 @@ export default class Select extends React.Component<SelectProps, {}> {
   };
 
   static propTypes = SelectPropTypes;
+  public focus = () => {
+    if (this.selectRef.current) {
+      this.selectRef.current.focus();
+    }
+  };
 
-  private rcSelect: any;
-
-  focus() {
-    this.rcSelect.focus();
-  }
-
-  blur() {
-    this.rcSelect.blur();
-  }
-
-  saveSelect = (node: any) => {
-    this.rcSelect = node;
-  }
-
+  public blur = () => {
+    if (this.selectRef.current) {
+      this.selectRef.current.blur();
+    }
+  };
   renderSelect = (locale: SelectLocale) => {
     const {
       prefixCls,
       className = '',
       size,
       mode,
-      ...restProps,
+      listHeight = 256,
+      listItemHeight = 24,  
+      virtual=false,
+      getPopupContainer,    
+      dropdownClassName,
+      filterOption=true,
+      ...restProps
     } = this.props;
     const cls = classNames({
       [`${prefixCls}-lg`]: size === 'large',
@@ -131,21 +141,31 @@ export default class Select extends React.Component<SelectProps, {}> {
     const modeConfig = {
       multiple: mode === 'multiple',
       tags: mode === 'tags',
-      combobox: isCombobox,
+      combobox: true,
     };
-
     // AutoComplete don't have notFoundContent defaultly
-    const notFoundContentLocale = isCombobox ?
-      (notFoundContent || '') : (notFoundContent || locale.notFoundContent);
+    const notFoundContentLocale = notFoundContent || locale.notFoundContent; 
+    const direction='rtl';
+    const rcSelectRtlDropDownClassName = classNames(dropdownClassName);
     return (
-      <RcSelect
+      <RcSelect   
         {...restProps}
         {...modeConfig}
+        virtual={virtual}
+        mode={mode}
+        listHeight={listHeight}
+        listItemHeight={listItemHeight}        
         prefixCls={prefixCls}
+        direction={direction}
         className={cls}
         optionLabelProp={optionLabelProp || 'children'}
         notFoundContent={notFoundContentLocale}
-        ref={this.saveSelect}
+        getPopupContainer={getPopupContainer}
+        ref={this.selectRef}
+        showSearch={true}
+        dropdownClassName={rcSelectRtlDropDownClassName}
+        filterOption={filterOption}
+        
       />
     );
   }
@@ -155,6 +175,7 @@ export default class Select extends React.Component<SelectProps, {}> {
       <LocaleReceiver
         componentName="Select"
         defaultLocale={defaultLocale.Select}
+
       >
         {this.renderSelect}
       </LocaleReceiver>

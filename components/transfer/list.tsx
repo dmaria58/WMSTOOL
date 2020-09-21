@@ -36,8 +36,8 @@ export interface TransferListProps {
   itemUnit: string;
   itemsUnit: string;
   body?: (props: any) => any;
-  footer?: (props: any) => void;
-  columsheader?: (props: any) => void;
+  footer?: (props: TransferListProps) => React.ReactNode;
+  columsheader?: (props: any) => React.ReactNode;
   lazy?: boolean | {};
   onScroll: Function;
 }
@@ -102,7 +102,8 @@ export default class TransferList extends React.Component<TransferListProps, any
     // Manually trigger scroll event for lazy search bug
     // https://github.com/wmstool-design/wmstool-design/issues/5631
     this.triggerScrollTimer = window.setTimeout(() => {
-      const listNode = ReactDOM.findDOMNode(this).querySelectorAll('.wmstool-transfer-list-content')[0];
+      const flistDom = ReactDOM.findDOMNode(this) as Element;
+      const listNode = flistDom.querySelectorAll('.wmstool-transfer-list-content')[0];
       if (listNode) {
         triggerEvent(listNode, 'scroll');
       }
@@ -139,11 +140,11 @@ export default class TransferList extends React.Component<TransferListProps, any
     } = this.props;
 
     // Custom Layout
-    const footerDom = footer({ ...this.props });
+    const footerDom = footer && footer(this.props);
     const bodyDom = body({ ...this.props });
     const columsheaderDom = columsheader({ ...this.props });
     const listCls = classNames(prefixCls, {
-      [`${prefixCls}-with-footer`]: !!footerDom,
+      [`${prefixCls}-with-footer`]: footerDom,
     });
 
     const filteredDataSource: TransferItem[] = [];
