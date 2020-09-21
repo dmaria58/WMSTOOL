@@ -4,5 +4,4 @@ node_modules/
 /es 
 /_site
 .idea/
-yarn.lock
 yarn-error.log

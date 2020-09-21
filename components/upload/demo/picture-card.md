@@ -14,7 +14,7 @@ title:
 After users upload picture, the thumbnail will be shown in list. The upload button will disappear when count meets limitation.
 
 ````jsx
-import { Upload, Icon, Modal } from 'antd';
+import { Upload, Icon, Modal } from 'wmstool';
 
 class PicturesWall extends React.Component {
   state = {

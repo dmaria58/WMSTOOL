@@ -74,7 +74,7 @@ export default class Checkbox extends React.Component<CheckboxProps, {}> {
       style,
       onMouseEnter,
       onMouseLeave,
-      ...restProps,
+      ...restProps
     } = props;
     const { checkboxGroup } = context;
     let checkboxProps: CheckboxProps = { ...restProps };

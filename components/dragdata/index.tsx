@@ -42,7 +42,8 @@ const cardTarget = {
     } 
     let dragLength = (dragIndex+"").split("-").length as number;
     let hoverLength = (hoverIndex+"").split("-").length as number;
-    const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
+    const findnode = findDOMNode(component) as HTMLElement;
+    const hoverBoundingRect = findnode.getBoundingClientRect();
 
     const hoverMiddleY = (hoverBoundingRect.bottom - hoverBoundingRect.top) / 2;
 

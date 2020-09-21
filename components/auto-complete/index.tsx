@@ -51,8 +51,8 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, {}>
 
   getInputElement = () => {
     const { children } = this.props;
-    const element = children && React.isValidElement(children) && children.type !== Option ?
-      React.Children.only(this.props.children) : <Input />;
+    const element = (children && React.isValidElement(children) && children.type !== Option ?
+      React.Children.only(this.props.children) : <Input />) as React.ReactElement;
     const elementProps = { ...element.props };
     // https://github.com/wmstool-design/wmstool-design/pull/7742
     delete elementProps.children;
