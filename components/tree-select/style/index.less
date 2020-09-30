@@ -144,3 +144,147 @@
     display: block;
   }
 }
+
+//select框样式
+.@{select-prefix-cls}-o-tree-select{
+  .@{select-prefix-cls}-arrow {
+      display: inline-block;
+      color: inherit;
+      font-style: normal;
+      line-height: 0;
+      text-align: center;
+      text-transform: none;
+      vertical-align: -.125em;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      top: 50%;
+      right: 11px;
+      margin-top: -6px;
+      color: rgba(0,0,0,.25);
+      font-size: 12px;
+      line-height: 1;
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+  }
+  .@{select-prefix-cls}-selection--single{
+      position: relative;
+      height: 32px;
+      cursor: pointer;
+  }    
+    .@{select-prefix-cls}-selection__rendered{
+      line-height: 30px;
+      height: 30px;
+      margin-right: 24px;
+      position: relative;
+      display: block;
+      margin-right: 11px;
+      margin-left: 11px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: #fff;
+      border: 0px solid #d9d9d9;
+      border-top-width: 0px;
+      border-radius: 0px;
+      outline: none;
+      transition: all .3s cubic-bezier(.645,.045,.355,1);
+      user-select: none;       
+
+    }
+    .@{select-prefix-cls}-selection__placeholder,.@{select-prefix-cls}-search__field__placeholder {
+        position: absolute;
+        top: 50%;
+        right: 9px;
+        left: 0;
+        max-width: 100%;
+        height: 20px;
+        margin-top: -10px;
+        overflow: hidden;
+        color: #bfbfbf;
+        line-height: 20px;
+        white-space: nowrap;
+        text-align: left;
+        text-overflow: ellipsis;
+    }
+  .@{select-prefix-cls}-selection--multiple .@{select-prefix-cls}-selection__choice__content {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -webkit-transition: margin .3s cubic-bezier(.645,.045,.355,1);
+      transition: margin .3s cubic-bezier(.645,.045,.355,1);
+  }
+  .@{select-prefix-cls}-selection--multiple .@{select-prefix-cls}-selection__choice {
+      position: relative;
+      float: left;
+      max-width: 99%;
+      margin-right: 4px;
+      padding: 0 20px 0 10px;
+      overflow: hidden;
+      color: rgba(0, 0, 0, 0.65);
+      background-color: #fafafa;
+      border: 1px solid #e8e8e8;
+      border-radius: 2px;
+      cursor: default;
+      -webkit-transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      height: 32px;
+      margin-top: 3px;
+      .@{select-prefix-cls}-selection__choice__remove{
+          color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        right: 4px;
+        color: rgba(0,0,0,.45);
+        font-weight: 700;
+        line-height: inherit;
+        cursor: pointer;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        display: inline-block;
+        font-size: 12px;
+        font-size: 10px \9;
+        -webkit-transform: scale(.83333333) rotate(0deg);
+        -ms-transform: scale(.83333333) rotate(0deg);
+        transform: scale(.83333333) rotate(0deg);
+      }
+      .@{select-prefix-cls}-selection__choice__remove:after
+      { 
+      content:" ×";
+      }
+  }
+  .@{select-prefix-cls}-search--inline{
+    .@{select-prefix-cls}-search__field{
+      display: none;
+    }
+  }
+  .@{select-prefix-cls}{
+    min-height: 32px;
+      padding-bottom: 3px;
+      cursor: text;
+      zoom: 1;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+      border-top-width: 1.02px;
+      border-radius: 4px;
+      outline: none;
+      -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+      transition: all .3s cubic-bezier(.645,.045,.355,1);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;  
+  }
+}
