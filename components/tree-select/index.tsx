@@ -65,6 +65,7 @@ export default class TreeSelect extends React.Component<TreeSelectProps, any> {
       checkable = <span className={`${prefixCls}-tree-checkbox-inner`} />;
     }
     return (
+      <div className={`${prefixCls}-o-tree-select`}>
       <RcTreeSelect
         {...restProps}
         prefixCls={prefixCls}
@@ -74,6 +75,7 @@ export default class TreeSelect extends React.Component<TreeSelectProps, any> {
         notFoundContent={notFoundContent || locale.notFoundContent}
         ref={this.saveTreeSelect}
       />
+      </div>
     );
   }
 
