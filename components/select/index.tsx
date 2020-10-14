@@ -52,6 +52,7 @@ export interface SelectProps extends AbstractSelectProps {
   listHeight?: string;
   listItemHeight?: string;  
   virtual?:boolean;
+  direction?: 'ltr' | 'rtl'
 }
 
 export interface OptionProps {
@@ -115,6 +116,7 @@ export default class Select extends React.Component<SelectProps, {}> {
   renderSelect = (locale: SelectLocale) => {
     const {
       prefixCls,
+      direction,
       className = '',
       size,
       mode,
@@ -145,7 +147,6 @@ export default class Select extends React.Component<SelectProps, {}> {
     };
     // AutoComplete don't have notFoundContent defaultly
     const notFoundContentLocale = notFoundContent || locale.notFoundContent; 
-    const direction='rtl';
     const rcSelectRtlDropDownClassName = classNames(dropdownClassName);
     return (
       <RcSelect   
