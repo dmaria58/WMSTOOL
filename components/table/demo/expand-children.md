@@ -101,6 +101,6 @@ const rowSelection = {
 };
 
 ReactDOM.render(
-  <Table columns={columns} rowSelection={rowSelection} dataSource={data} />
+  <Table columns={columns} rowSelection={rowSelection} dataSource={data} defaultExpandAllRows/>
 , mountNode);
 ````
