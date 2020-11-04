@@ -24,13 +24,14 @@ class App extends React.Component {
       address:"",
       number:"",
       number2:"",
+      input8:0,
       select:"",
+      select2:[],
       ischeck:false,
       checkkey:{},
     };
   }
   checkdate =(value,key)=>{
-    console.log(value.target.value)
     return value.target.value;
   }
   changeInput=(e,key)=>{
@@ -64,6 +65,7 @@ class App extends React.Component {
       name:"",
       address:"",
       select:"",
+      select2:'',
       number:"",
       number2:"",
       ischeck:false
@@ -81,8 +83,13 @@ class App extends React.Component {
     }
 
   }
+  handleMultipleChange=(v)=>{
+    this.setState({
+        select2:v,
+      }) 
+  }
   render() {
-  let {name,ischeck,isright,address,number,select,number2,input6,input7}=this.state;
+  let {name,ischeck,isright,address,number,select,select2,number2,input6,input7,input8}=this.state;
   let num =this.state.number2?this.state.number2:9
   let rules=[
         {"required":true,message:'Please input your name'},
@@ -99,7 +106,7 @@ class App extends React.Component {
   let rules4=[
         {"required":true,message:'Please select'},
       ] 
-    let rules5=[
+  let rules5=[
         {pattern:/^(0|[1-9][0-9]*)$/,message:'正整数'}
       ]  
       
@@ -126,15 +133,23 @@ class App extends React.Component {
                           return true;// or  return {result:true,message:""}  
                       }
                   }
-              ]    
+              ]  
+   let rules8=[
+        {"required":true,message:'Please input'},
+      ]   
     return (
       <div>
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input1")} easyCheckValue={name} rules={rules}>
         <Input value={name} onChange={(e)=>this.changeInput(e,"name")} />
       </Easyform>
+      input 必填校验
+      <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input8")} easyCheckValue={input8} rules={rules8}>
+        <Input value={input8} onChange={(e)=>this.changeInput(e,"input8")} />
+      </Easyform>
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input2")} easyCheckValue={address} rules={rules2}>
         <Input value={address} onChange={(e)=>this.changeInput(e,"address")} />
       </Easyform>
+      正整数
       <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"input5")} easyCheckValue={number2} rules={rules5}>
         <Input value={number2} type="number" max={4} onChange={(e)=>this.changeInput(e,"number2")} />
       </Easyform>    
@@ -153,6 +168,19 @@ class App extends React.Component {
           style={{"width":"200px"}}
           value={select}
           onChange={this.handleChange}
+        >
+          <Option value="jack">Jack</Option>
+          <Option value="lucy">Lucy</Option>
+          <Option value="tom">Tom</Option>
+        </Select>
+      </Easyform>
+      多选
+      <Easyform easyCheck={ischeck} isright={(e)=>this.onIsright(e,"select2")} easyCheckValue={select2} rules={rules4}>
+        <Select
+          style={{"width":"200px"}}
+          value={select2}
+          mode={'tags'}
+          onChange={this.handleMultipleChange}
         >
           <Option value="jack">Jack</Option>
           <Option value="lucy">Lucy</Option>

@@ -163,7 +163,7 @@ export default class Select extends React.Component<SelectProps, {}> {
         notFoundContent={notFoundContentLocale}
         getPopupContainer={getPopupContainer}
         ref={this.selectRef}
-        showSearch={true}
+        showSearch={false}
         dropdownClassName={rcSelectRtlDropDownClassName}
         filterOption={filterOption}
         
