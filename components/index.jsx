@@ -68,3 +68,4 @@ export { default as Easyform } from './easyform';
 export { default as Exportexcel } from './export-excel';
 export { default as Dragdata } from './dragdata';
 export { default as version } from './version';
+export { default as MultipleInput} from './multipleInput';
