@@ -134,4 +134,4 @@ export { default as Drag } from './drag';
 
 export { default as version } from './version';
 
-export { default as MultipleInput } from './multipleInput';
+export { default as MultipleInput } from './multipleinput';
