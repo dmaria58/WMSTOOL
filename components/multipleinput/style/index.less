@@ -19,11 +19,11 @@ textarea.ant-input{
     text-overflow:ellipsis!important;
     white-space: nowrap!important;
   }
-  .input-multiple-detele{
+  .input-multiple-delete{
     display:none;
   }
   &:hover{
-    .input-multiple-detele{
+    .input-multiple-delete{
       position:absolute;
       display:block;
       color:#ccc;
@@ -40,11 +40,16 @@ position: absolute;
 max-height: 300px;
 overflow-y: auto;
 border-radius: 4px;
+top:-9px;
 .drop-drown-option{
   border-bottom:1px solid #ddd;
   background: #fff!important;
   z-index: 20;
   padding: 2px;
+  .dropdown-option-input{
+    width: calc(~"100% - 20px");
+    color:rgba(0,0,0,0.65)
+  }
   .dropdown-option-delete{
     width: 18px;
     height: 18px;

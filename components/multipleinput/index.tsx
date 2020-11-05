@@ -1,8 +1,8 @@
 import * as React from 'react';
-//import PropTypes from 'prop-types';
 import Icon from '../icon';
 import Input from '../input';
 import Trigger from "rc-trigger";
+const { TextArea } = Input;
 export interface MultipleInputProps {  
   value?:string;
   dropDown?:boolean,
@@ -36,15 +36,17 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
     if (nextProps.value !== this.props.value) {
       if (!nextProps.value) {
         this.setState({ value: "", valueData: [] });
+      }else{
+        let data = this.handleValueData(nextProps.value, []);
+        this.setState({ value: nextProps.value,valueData: data });
       }
-      this.setState({ value: nextProps.value });
     }
   }
   handleValueData = (code:string, valueData:Array<any>) => {
     let newCode = code.split(SPLIT_REG);
     let newArray = valueData.concat(newCode);
     let step = new Map();
-    let data = newArray.filter((res) => !step.has(res) && step.set(res, 1)); //数组去重,
+    let data = newArray.filter((res) => res&&(!step.has(res)) && step.set(res, 1)); //数组去重,
     return data;
   };
   onChange = (e:any) => {
@@ -80,7 +82,7 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
   renderOptions = (item:any) => {
     return (
       <div className="drop-drown-option">
-        <Input className="dropdown-option-input" value={item} />
+        <Input disabled className="dropdown-option-input" value={item} />
         <Icon
           className="dropdown-option-delete"
           type="plus-circle"
@@ -140,16 +142,15 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
           getPopupContainer={() => this.refs.node}
         >
           <div>
-            <Input
+            <TextArea 
               {...this.props}
-              type="textarea"
               value={value}
-              onChange={this.onChange}
-              autoSize={{ maxRows: 1 }}
+              onChange={this.onChange.bind(this)}
+              autosize={{ maxRows: 1 }}
               title={value}
             />
             <Icon
-              className="input-multiple-detele"
+              className="input-multiple-delete"
               type="cross-circle"
               onClick={this.handleDeleteAll.bind(this)}
             />
