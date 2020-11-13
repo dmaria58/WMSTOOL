@@ -50,7 +50,7 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
     return data;
   };
   onChange = (e:any) => {
-    let code = e.target.value || "";
+    let code = e.target.value.trim() || "";
     let {valueData,dropDown}=this.state
     //直接在表格中删除
     if (!code && !SPLIT_REG.test(code) && !dropDown) {

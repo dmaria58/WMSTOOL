@@ -18,6 +18,8 @@ export default class Easyform extends React.Component<EformProps> {
       }else{
         return value.join(',')
       }
+    }else if(value===0){
+      return `${value}`
     }else{
       return value
     }
@@ -26,7 +28,7 @@ export default class Easyform extends React.Component<EformProps> {
     let rules= this.props.rules;
     if(rules && rules.length){
       for(let i=0;i<rules.length;i++){
-        let value=`${this.checkValue(values)}`
+        let value=this.checkValue(values)
         if(rules[i].required && rules[i].required==true && !value){
           return rules[i].message?rules[i].message:"can not be null"
         }
