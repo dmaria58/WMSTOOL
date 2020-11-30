@@ -1,29 +1,16 @@
 import * as React from 'react';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Icon from '../icon';
 import Input from '../input';
 import "./style";
 import Trigger from "rc-trigger";
-export interface MultipleInputProps {  
-  value?:string;
-  dropDown?:boolean,
-  valueData?:Array<any>;
-  onChange?:(h:any)=>any;
-}
-export interface MultipleInputState{
-  value:string;
-  dropDown:boolean,
-  valueData:Array<any>;
-} 
-//分隔符
-const SPLIT_REG = /[,\r\n，]/;
-export default class MultipleInput extends React.Component<MultipleInputProps,MultipleInputState> {
-  constructor(props:MultipleInputProps) {
+class MultipleInput extends Component {
+  constructor(props) {
     super(props);
     this.state = {
-      value: props.value?props.value:'', //当前操作的value
-      dropDown: props.dropDown?props.dropDown:false, //是否展示下拉数据
-      valueData: props.valueData?props.valueData:[], //下拉框数据
+      value: props.value, //当前操作的value
+      dropDown: false, //是否展示下拉数据
+      valueData: [], //下拉框数据
     };
   }
   //如果props.value存在 要處理valueData
@@ -33,7 +20,7 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
       this.setState({ valueData: data });
     }
   }
-  componentWillReceiveProps(nextProps:any) {
+  componentWillReceiveProps(nextProps) {
     if (nextProps.value !== this.props.value) {
       if (!nextProps.value) {
         this.setState({ value: "", valueData: [] });
@@ -41,16 +28,17 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
       this.setState({ value: nextProps.value });
     }
   }
-  handleValueData = (code:string, valueData:Array<any>) => {
+  handleValueData = (code, valueData) => {
     let newCode = code.split(SPLIT_REG);
     let newArray = valueData.concat(newCode);
     let step = new Map();
-    let data = newArray.filter((res) => !step.has(res) && step.set(res, 1)); //数组去重,
+    data = newArray.filter((res) => !step.has(res) && step.set(res, 1)); //数组去重,
     return data;
   };
-  onChange = (e:any) => {
+  onChange = (e) => {
     let code = e.target.value || "";
-    let {valueData,dropDown}=this.state
+    const { valueData, dropDown } = this.state;
+
     //直接在表格中删除
     if (!code && !SPLIT_REG.test(code) && !dropDown) {
       this.setState({ value: "", valueData: [] }, () => {
@@ -66,9 +54,9 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
       this.setState({ value: code });
     }
   };
-  handleDelete = (item:any) => {
-    let valueData=this.state.valueData
-    let data = valueData.filter((filter:any) => filter !== item) || [];
+  handleDelete = (item) => {
+    const { valueData } = this.state;
+    let data = valueData.filter((filter) => filter !== item) || [];
     this.setState({
       valueData: data,
     });
@@ -78,7 +66,7 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
       this.props.onChange && this.props.onChange("");
     });
   };
-  renderOptions = (item:any) => {
+  renderOptions = (item) => {
     return (
       <div className="drop-drown-option">
         <Input className="dropdown-option-input" value={item} />
@@ -97,13 +85,13 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
     }
     return (
       <div className="drop-drown-style">
-        {valueData.map((item:any) => {
+        {valueData.map((item) => {
           return this.renderOptions(item);
         })}
       </div>
     );
   }
-  triggerChange = (show:any) => {
+  triggerChange = (show) => {
     if (show) {
       this.setState({
         dropDown: true,
@@ -115,7 +103,7 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
       if (value) {
         valueData.push(value);
         let step = new Map();
-        data = valueData.filter((res:any) => !step.has(res) && step.set(res, 1)); //数组去重,
+        data = valueData.filter((res) => !step.has(res) && step.set(res, 1)); //数组去重,
       }
       this.setState({
         dropDown: false,
@@ -160,3 +148,16 @@ export default class MultipleInput extends React.Component<MultipleInputProps,Mu
     );
   }
 }
+MultipleInput.defaultProps = {
+  onChange: () => null, //onChange 回调
+  handleDeleteAll:()=>null,
+  triggerChange:()=>null,
+  showDropDown:()=>null,
+  value: "",
+};
+MultipleInput.propTypes = {
+  value:PropTypes.string,
+  dropDown:PropTypes.bool,
+  valueData:PropTypes.array,
+};
+export default MultipleInput;

@@ -17,7 +17,7 @@ Enter multiple, drag to display the entered data
 import { MultipleInput } from 'wmstool';
 
 class App extends React.Component {
-  state = { value: "aaa,bbb,ccc,aaa" }
+  state = { value: "" }
   onChange=(value)=>{
     this.setState({value})
   }

@@ -8,8 +8,7 @@ title: MultipleInput
 
 ## 何时使用
 
-- 输入多个数据,多个值是逗号分隔的字符串"aa,bb,ccc"
-- 鼠标移入下拉展示当前数据
+- 输入多个数据
 
 ## API
 
@@ -17,7 +16,9 @@ title: MultipleInput
 
 | Property | Description | Type | Default Value |
 | --- | --- | --- | --- |
-| value | 当前操作数据| string |""|
+| value | 当前操作数据| string |  |
+| dropDown | 是否展开下拉框数据 | boolean | true |
+| valueData | 数据| object[] | [] |
 | onChange | 回调时间 | func | 无 |
 
 
