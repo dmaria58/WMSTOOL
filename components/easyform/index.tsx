@@ -11,10 +11,24 @@ export default class Easyform extends React.Component<EformProps> {
   constructor(props : EformProps){  
     super(props);
   } 
-  checkrules = (value:any) =>{
+  checkValue=(value:any)=>{
+    if(Array.isArray(value)){
+      if(value.length==0){
+        return ''
+      }else{
+        return value.join(',')
+      }
+    }else if(value===0){
+      return `${value}`
+    }else{
+      return value
+    }
+  }
+  checkrules = (values:any) =>{
     let rules= this.props.rules;
     if(rules && rules.length){
       for(let i=0;i<rules.length;i++){
+        let value=this.checkValue(values)
         if(rules[i].required && rules[i].required==true && !value){
           return rules[i].message?rules[i].message:"can not be null"
         }
@@ -41,8 +55,8 @@ export default class Easyform extends React.Component<EformProps> {
 
   } 
   getRulesdetail =()=>{
-    let hj=this.props.easyCheckValue;
     let tr=this.props.easyCheck;
+    let hj=this.checkValue(this.props.easyCheckValue)
     if(tr == true || hj){
       let showd:any;
       let isrt :boolean;
