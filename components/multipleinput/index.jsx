@@ -2,7 +2,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '../icon';
 import Input from '../input';
-import "./style";
 import Trigger from "rc-trigger";
 class MultipleInput extends Component {
   constructor(props) {

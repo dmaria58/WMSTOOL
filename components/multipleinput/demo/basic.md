@@ -14,18 +14,23 @@ title:
 Enter multiple, drag to display the entered data
 
 ````jsx
-import { MultipleInput } from 'wmstool';
+import { MultipleInput,Button,Col,Row } from 'wmstool';
 
 class App extends React.Component {
-  state = { value: "" }
+  state = { value: "aaa,bbb,ccc,aaa" }
   onChange=(value)=>{
+     console.log('value',value)
     this.setState({value})
+  }
+  onClick=()=>{
+  console.log('ddd',this.state.value)
   }
   render() {
     return (
-      <div>
-        <MultipleInput value={this.state.value} onChange={this.onChange}/>
-      </div>
+      <Row>
+      <Col span={16}> <MultipleInput value={this.state.value} onChange={this.onChange}/></Col>
+      <Col span={6}><Button  type="primary" onClick={this.onClick}>查询</Button></Col>
+      </Row>
     );
   }
 }
