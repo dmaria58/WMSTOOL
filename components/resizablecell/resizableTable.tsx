@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Resizable } from "react-resizable";
-
-export const resizableColumnsTableWrapper = (TableComponent: any) => {
   interface ResizableColumnsProps {
     columns?: Array<any>;
   }
   interface ResizableColumnsState {
     columns: Array<any>;
   }
+export const resizableColumnsTableWrapper = (TableComponent: any) => {
+
   return class ResizableColumns extends React.Component<ResizableColumnsProps,ResizableColumnsState> {
     constructor(props: ResizableColumnsProps) {
       super(props);

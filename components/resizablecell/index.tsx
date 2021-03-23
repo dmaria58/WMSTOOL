@@ -20,6 +20,7 @@ class ResizableCell extends React.Component<ResizableCellProps,ResizableCellStat
       resize:this.props.resize?[this.props.resize]:['right']
     };
   }
+  static resizableColumnsTableWrapper = resizableColumnsTableWrapper as (h: any) => any;
   onResize =  (index:number,_e:React.SyntheticEvent<HTMLElement>, data:any) => {
     let {dataSource}=this.state
     let {size}=data
@@ -62,5 +63,4 @@ class ResizableCell extends React.Component<ResizableCellProps,ResizableCellStat
   }
 }
 
-ResizableCell.resizableColumnsTableWrapper = resizableColumnsTableWrapper
 export default ResizableCell;
