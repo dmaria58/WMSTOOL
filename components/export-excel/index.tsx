@@ -1,6 +1,6 @@
 
 import ExcelJS, { Column as ExcelColumn } from 'exceljs'
-import saveAs from 'file-saver';
+import {saveAs} from 'file-saver';
 import React from 'react';
 import { ColumnProps } from '../table';
 
