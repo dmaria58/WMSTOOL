@@ -82,12 +82,15 @@ const columns = [{
 | isMaxData | 数据过多设置参数能下拉渲染【例子：row-selection-and-operation.md】 | object |{{lazyHeight:"这里设置单行tr高度"}}|
 | downloadExcelData | excel下载 | object | {isDownTableExcel：true;<br>iconType:下载图标类型，，默认图标"export";<br>iconTitle:下载图标title,默认无;<br>downloadExcelHeader：下载表头数据，默认是当前table显示Columns;<br>downloadExcelBody:下载数据,默认是当前页的table数据;<br>linkName:下载列表的名称，默认download;} <br>IconContent:下载标签|
 
+
+
 ### Column
 
 列描述数据对象，是 columns 中的一项，Column 使用相同的 API。
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
+| ellipsis | 超过宽度将自动省略，暂不支持和排序筛选一起使用。设置为 true 时，表格布局将变成 tableLayout="fixed"。| boolean | false
 | className | 列的 className | string | - |
 | colSpan | 表头列合并,设置为 0 时，不渲染 | number |  |
 | dataIndex | 列数据在数据项中对应的 key，支持 `a.b.c` 的嵌套写法 | string | - |

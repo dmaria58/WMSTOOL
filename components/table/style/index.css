@@ -655,3 +655,14 @@ tr.wmstool-table-expanded-row:hover {
   border-left: 0;
   border-bottom: 0;
 }
+
+
+.tableLayout .wmstool-table-body > table{
+  table-layout: fixed;
+}
+.wmstool-table-cell-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
