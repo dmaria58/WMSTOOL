@@ -31,7 +31,7 @@ class App extends React.Component {
     setTimeout(() =>{
         // 表格导出返回结果是个Promise对象，可以通过resolve判断是否导出成功
       	tableToExcel(columns, dataSource,"LoadingDownLoad").then(() =>{
-          Modal.alert({title:'下载成功！'})
+          Modal.info({title:'下载成功！'})
         })
         this.setState({loading:false});
     },1000);
