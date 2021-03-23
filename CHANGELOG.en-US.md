@@ -15,7 +15,10 @@ timeline: true
 ## 3.0.0
 `2021`
 
-- 🐞 修复 ： Exportexcel导出后的Excel文件不标准导致的提示文件格式不正确的问题
+- 🐞  修复 ： Exportexcel导出后的Excel文件不标准导致的提示文件格式不正确的问题
+- 🐞  table增加ellipsis属性 ：columns 中设置 ellipsis: true,超过单元格宽度会自动显示省略号
+- 🐞  增加ResizableCell组件 ：可伸缩容器，可以放入任何类型实现拖拽
+- 🐞  table实现columns（th）可以拖拽 ：table使用ResizableCell中resizableColumnsTableWrapper方法实现拖拽功能
 ## 2.1.3
 `2020-11-30`
 
