@@ -15,7 +15,7 @@ export interface ActionButtonState {
 }
 
 export default class ActionButton extends React.Component<ActionButtonProps, ActionButtonState> {
-  timeoutId: number;
+  timeoutId: any;
 
   constructor(props: ActionButtonProps) {
     super(props);
@@ -26,7 +26,7 @@ export default class ActionButton extends React.Component<ActionButtonProps, Act
   componentDidMount() {
     if (this.props.autoFocus) {
       const $this = ReactDOM.findDOMNode(this) as HTMLInputElement;
-      this.timeoutId = setTimeout(() => $this.focus());
+      this.timeoutId = setTimeout(() => $this.focus(),0);
     }
   }
   componentWillUnmount() {
@@ -70,3 +70,4 @@ export default class ActionButton extends React.Component<ActionButtonProps, Act
     );
   }
 }
+
