@@ -1,5 +1,5 @@
 
-import ExcelJS, { Column as ExcelColumn } from 'exceljs'
+import ExcelJS, { Column as ExcelColumn } from 'exceljs';
 import {saveAs} from 'file-saver';
 import React from 'react';
 import { ColumnProps } from '../table';
@@ -20,7 +20,12 @@ export const exportXlsx = (columns: Partial<ExcelColumn>[], rows: Array<any>, fi
 	if (!fileName) {
 		fileName = `${new Date().valueOf()}`
 	}
-	fileName = /\.xlsx$/.test(fileName) ? fileName : `${fileName}.xlsx`
+	// 旧的功能导出使用的是xls格式，需要更正为xlsx
+	if(/\.xls$/i.test(fileName)){
+		fileName = `${fileName}x`
+	}else{
+		fileName = /\.xlsx$/i.test(fileName) ? fileName : `${fileName}.xlsx`
+	}
 	return workbook.xlsx.writeBuffer().then(function (buffer) {
 		saveAs(new Blob([buffer], { type: "application/octet-stream" }), fileName);
 	});
