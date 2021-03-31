@@ -73,6 +73,7 @@ module.exports = {
       wmstool: path.join(process.cwd(), 'index'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
+      'exceljs': 'exceljs/dist/exceljs',
     };
 
     config.externals = {

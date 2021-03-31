@@ -24,13 +24,14 @@ class App extends React.Component {
     }
   }
   handleDownload = () =>{
-    tableToExcel(columns, dataSource,"LoadingDownLoad")
+    tableToExcel(columns, dataSource,"CommonDownLoad")
   }
   handleLoadingDownLoad = () =>{
     this.setState({loading:true});
     setTimeout(() =>{
         // 表格导出返回结果是个Promise对象，可以通过resolve判断是否导出成功
-      	tableToExcel(columns, dataSource,"LoadingDownLoad").then(() =>{
+        // 后缀名会自动被改成xlsx
+      	tableToExcel(columns, dataSource,"LoadingDownLoad.xls").then(() =>{
           Modal.info({title:'下载成功！'})
         })
         this.setState({loading:false});
