@@ -15,10 +15,12 @@ timeline: true
 ## 3.0.0
 `2021`
 
+- 🐞  修复 ： Easyform校验fun(),传入数组传出字符串，修改成传入数据类型和传出数据类型一样
 - 🐞  修复 ： Exportexcel导出后的Excel文件不标准导致的提示文件格式不正确的问题
 - 🐞  table增加ellipsis属性 ：columns 中设置 ellipsis: true,超过单元格宽度会自动显示省略号
 - 🐞  增加ResizableCell组件 ：可伸缩容器，可以放入任何类型实现拖拽
 - 🐞  table实现columns（th）可以拖拽 ：table使用ResizableCell中resizableColumnsTableWrapper方法实现拖拽功能
+
 ## 2.1.3
 `2020-11-30`
 
@@ -35,6 +37,7 @@ timeline: true
 `2020-11-13`
 
 - 🐞 修改MultipleInput组件输入值前后去空格、easyform 0校验bug重新修复
+
 ## 2.1.0
 
 `2020-11-06`
