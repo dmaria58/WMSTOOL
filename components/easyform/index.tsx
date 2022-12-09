@@ -11,10 +11,24 @@ export default class Easyform extends React.Component<EformProps> {
   constructor(props : EformProps){  
     super(props);
   } 
-  checkrules = (value:any) =>{
+  checkValue=(value:any)=>{
+    if(Array.isArray(value)){
+      if(value.length==0){
+        return ''
+      }else{
+        return value.join(',')
+      }
+    }else if(value===0){
+      return `${value}`
+    }else{
+      return value
+    }
+  }
+  checkrules = (values:any) =>{
     let rules= this.props.rules;
     if(rules && rules.length){
       for(let i=0;i<rules.length;i++){
+        let value=this.checkValue(values)
         if(rules[i].required && rules[i].required==true && !value){
           return rules[i].message?rules[i].message:"can not be null"
         }
@@ -28,7 +42,7 @@ export default class Easyform extends React.Component<EformProps> {
           return rules[i].message?rules[i].message:"not in the correct format"
         }
         else if(typeof rules[i].func === 'function' ){//支持自定义方法
-          const res = rules[i].func(value);
+          const res = rules[i].func(values);
           if(typeof res === 'object' && !res.result){//自定义方法，校验结果为返回的message
              return res.message;
           }
@@ -41,12 +55,12 @@ export default class Easyform extends React.Component<EformProps> {
 
   } 
   getRulesdetail =()=>{
-    let hj=this.props.easyCheckValue;
     let tr=this.props.easyCheck;
+    let hj=this.checkValue(this.props.easyCheckValue)
     if(tr == true || hj){
       let showd:any;
       let isrt :boolean;
-      showd = this.checkrules(hj);
+      showd = this.checkrules(this.props.easyCheckValue);
       this.props.isright && showd && showd!=""
         ?isrt=false
         :isrt=true

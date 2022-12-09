@@ -514,7 +514,7 @@ tr.wmstool-table-expanded-row:hover {
   font-size: 10px;
   margin-top: 5px;
 }
--row-expand-icon {
+.wmstool-table-row-expand-icon {
   cursor: pointer;
   display: inline-block;
   width: 17px;
@@ -525,19 +525,19 @@ tr.wmstool-table-expanded-row:hover {
   user-select: none;
   background: #fff;
 }
--row-expanded:after {
+.wmstool-table-row-expanded:after {
   content: '-';
 }
--row-collapsed:after {
+.wmstool-table-row-collapsed:after {
   content: '+';
 }
--row-spaced {
+.wmstool-table-row-spaced {
   visibility: hidden;
 }
--row-spaced:after {
+.wmstool-table-row-spaced:after {
   content: '.';
 }
--row[class*="wmstool-table-row-level-0"] .wmstool-table-selection-column > span {
+.wmstool-table-row[class*="wmstool-table-row-level-0"] .wmstool-table-selection-column > span {
   display: inline-block;
 }
 .table_lazy_list::-webkit-scrollbar {
@@ -654,4 +654,15 @@ tr.wmstool-table-expanded-row:hover {
 .wmstool-table-small.wmstool-table-bordered .wmstool-table-placeholder {
   border-left: 0;
   border-bottom: 0;
+}
+
+
+.tableLayout .wmstool-table-body > table{
+  table-layout: fixed;
+}
+.wmstool-table-cell-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
 }

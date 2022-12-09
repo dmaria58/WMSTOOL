@@ -133,3 +133,7 @@ export {default as WithDragDropContext} from './withdrag-dropcontext';
 export { default as Drag } from './drag';
 
 export { default as version } from './version';
+
+export { default as MultipleInput } from './multipleinput';
+
+export { default as ResizableCell } from './resizablecell';

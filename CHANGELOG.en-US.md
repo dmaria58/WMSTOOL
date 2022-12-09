@@ -12,12 +12,61 @@ timeline: true
 未定义
 
 ---
+## 3.0.0
+`2021`
+
+- 🐞  修复 ： Easyform校验fun(),传入数组传出字符串，修改成传入数据类型和传出数据类型一样
+- 🐞  修复 ： Exportexcel导出后的Excel文件不标准导致的提示文件格式不正确的问题
+- 🐞  table增加ellipsis属性 ：columns 中设置 ellipsis: true,超过单元格宽度会自动显示省略号
+- 🐞  增加ResizableCell组件 ：可伸缩容器，可以放入任何类型实现拖拽
+- 🐞  table实现columns（th）可以拖拽 ：table使用ResizableCell中resizableColumnsTableWrapper方法实现拖拽功能
+
+## 2.1.3
+`2020-11-30`
+
+- 🐞 修复MultipleInput 不触发下拉框删除，再输入，没有把值传出的错误
+
+## 2.1.2
+`2020-11-13`
+
+- 🐞 修改MultipleInput输入内容不去空格
+
+## 2.1.1
+
+`2020-11-13`
+
+- 🐞 修改MultipleInput组件输入值前后去空格、easyform 0校验bug重新修复
+
+## 2.1.0
+
+`2020-11-06`
+
+- 🐞 新增MultipleInput组件、select默认不查询设置、easyform 0校验bug修复
+
+## 2.0.2
+
+`2020-10-15`
+
+- 🐞 table、select虚拟滚动优化
+
+## 2.0.1
+
+`2020-10-16`
+
+- 🐞 table展开树样式调整
+
+## 2.0.0
+
+`2020-10-14`
+
+- 🐞 select、tree-select样式调整
+
 ## 1.5.5
 
 `2020-07-23`
 
 - 🐞 table、select虚拟滚动优化
-
+- 
 ## 1.5.4
 
 `2019-07-17`

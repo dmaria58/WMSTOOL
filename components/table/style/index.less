@@ -579,6 +579,7 @@
     font-size: 10px;
     margin-top: 5px;
 }
+.@{table-prefix-cls}{
   &-row {
     &-expand-icon {
       cursor: pointer;
@@ -611,11 +612,22 @@
       display: inline-block;
     }
   } 
+ }
 .table_lazy_list::-webkit-scrollbar    //滚动条整体部分
 {  
     width: 0px;  
 }
 .table_lazy_list{
   padding-bottom:10px;
+}
+
+.tableLayout .wmstool-table-body > table{
+  table-layout: fixed;
+}
+.wmstool-table-cell-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
 }
 @import './size';

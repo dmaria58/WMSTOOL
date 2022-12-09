@@ -14,13 +14,48 @@ excel数据导出
 excel数据导出
 
 ````jsx
-import { Exportexcel as tableToExcel,Icon} from 'wmstool';
+import { Exportexcel as tableToExcel,Icon,Table,Modal,Button } from 'wmstool';
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      columnsSource:[
+      loading:false
+    }
+  }
+  handleDownload = () =>{
+    tableToExcel(columns, dataSource,"CommonDownLoad")
+  }
+  handleLoadingDownLoad = () =>{
+    this.setState({loading:true});
+    setTimeout(() =>{
+        // 表格导出返回结果是个Promise对象，可以通过resolve判断是否导出成功
+        // 后缀名会自动被改成xlsx
+      	tableToExcel(columns, dataSource,"LoadingDownLoad.xls").then(() =>{
+          Modal.info({title:'下载成功！'})
+        })
+        this.setState({loading:false});
+    },1000);
+  }
+  render() {   
+    return (
+      <div>
+        <Button onClick={this.handleDownload}>Simple DownLoad </Button>
+        <Button onClick={this.handleLoadingDownLoad} loading={this.state.loading}>Loading DownLoad </Button>
+        <Table dataSource = {dataSource} columns={columns} bordered rowKey="key"/>
+      </div>
+    );
+  }
+}
+
+const columns = [
+      {
+        title: '序号',
+        dataIndex: 'index',
+        key: 'index',
+        width:100,
+        render:(_,__,index) => `${index + 1}`
+      },
       {
         title: '姓名',
         dataIndex: 'name',
@@ -28,14 +63,16 @@ class App extends React.Component {
       },{
         title: '年龄',
         dataIndex: 'age',
-        key: 'age',
+        key: 'age'
       },{
         title: '住址',
         dataIndex: 'address',
         key: 'address',
+        render:text => <div>{text}</div>
       }
-      ],
-      dataSource:[
+];
+
+const dataSource = [
         {
         key: '1',
         name: 'chenchen',
@@ -53,23 +90,7 @@ class App extends React.Component {
         age: 32,
         address: '西湖区湖底公园3号'
       }
-      ],
-      isPort:false,
-    }
-  }
-  onClick=()=>{
-    let {columnsSource,dataSource}=this.state
-  	tableToExcel(columnsSource, dataSource,"download.xls")
-  }
-  render() {   
-    return (
-      <div>
-        <Icon type="download" onClick={this.onClick}/>
-      </div>
-    );
-  }
-}
-
+]
 ReactDOM.render(<App />, mountNode);
 ````
 
