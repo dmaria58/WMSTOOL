@@ -65,7 +65,7 @@ class App extends React.Component {
       name:"",
       address:"",
       select:"",
-      select2:'',
+      select2:[],
       number:"",
       number2:"",
       ischeck:false

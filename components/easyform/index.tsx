@@ -42,7 +42,7 @@ export default class Easyform extends React.Component<EformProps> {
           return rules[i].message?rules[i].message:"not in the correct format"
         }
         else if(typeof rules[i].func === 'function' ){//支持自定义方法
-          const res = rules[i].func(value);
+          const res = rules[i].func(values);
           if(typeof res === 'object' && !res.result){//自定义方法，校验结果为返回的message
              return res.message;
           }
@@ -60,7 +60,7 @@ export default class Easyform extends React.Component<EformProps> {
     if(tr == true || hj){
       let showd:any;
       let isrt :boolean;
-      showd = this.checkrules(hj);
+      showd = this.checkrules(this.props.easyCheckValue);
       this.props.isright && showd && showd!=""
         ?isrt=false
         :isrt=true

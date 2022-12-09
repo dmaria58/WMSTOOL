@@ -1081,21 +1081,25 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     const { style, className, prefixCls, showHeader,isMaxData, ...restProps } = this.props;
     const data = this.getCurrentPageData();
     const expandIconAsCell = this.props.expandedRowRender && this.props.expandIconAsCell !== false;
-
+    let isAddTableLayoutFixedClass=false
+    let columns = this.renderRowSelection(locale);
+    columns = this.renderColumnsDropdown(columns, locale);
+    columns = columns.map((column:any, i:any) => {
+        if(column.ellipsis){
+          isAddTableLayoutFixedClass=true
+          column.className=`${column.className?column.className:''} wmstool-table-cell-ellipsis`
+        }
+      const newColumn = { ...column };
+      newColumn.key = this.getColumnKey(newColumn, i);
+      return newColumn;
+    });
     const classString = classNames({
       [`${prefixCls}-${this.props.size}`]: true,
       [`${prefixCls}-bordered`]: this.props.bordered,
       [`${prefixCls}-empty`]: !data.length,
       [`${prefixCls}-without-column-header`]: !showHeader,
       [`${this.state.tableId}`]: true,
-    });
-
-    let columns = this.renderRowSelection(locale);
-    columns = this.renderColumnsDropdown(columns, locale);
-    columns = columns.map((column:any, i:any) => {
-      const newColumn = { ...column };
-      newColumn.key = this.getColumnKey(newColumn, i);
-      return newColumn;
+      ['tableLayout']:isAddTableLayoutFixedClass
     });
     let expandIconColumnIndex = (columns[0] && columns[0].key === 'selection-column') ? 1 : 0;
     if ('expandIconColumnIndex' in restProps) {
