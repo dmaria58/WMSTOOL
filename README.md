@@ -9,8 +9,9 @@ WMSTOOL  PC 端规范的 React 实现，基于 antd 提供了一整套基础的 
 
 
 ### 安装
-
-未定义
+npm install
+开发模式：npm run start
+打包发布：npm run dist
   
 ### 使用组件
 
