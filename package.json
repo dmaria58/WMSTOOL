@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "一套前端组件库基于antd 3.0.3、react",
   "scripts": {
     "testsingle": "jest --config  .jest.js",
