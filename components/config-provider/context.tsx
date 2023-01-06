@@ -1,5 +1,5 @@
 import * as React from 'react';
-import createReactContext from 'create-react-context';
+import createReactContext from '@ant-design/create-react-context';
 import defaultRenderEmpty, { RenderEmptyHandler } from './renderEmpty';
 import { Locale } from '../locale-provider';
 
