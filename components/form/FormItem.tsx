@@ -59,6 +59,7 @@ export default class FormItem extends React.Component<FormItemProps, any> {
   componentDidMount() {
     warning(
       this.getControls(this.props.children, true).length <= 1,
+      'Form.Item',
       '`Form.Item` cannot generate `validateStatus` and `help` automatically, ' +
       'while there are more than one `getFieldDecorator` in it.',
     );

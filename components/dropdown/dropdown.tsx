@@ -40,6 +40,7 @@ export default class Dropdown extends React.Component<DropDownProps, any> {
     const overlayProps = (overlay as any).props as any;
     warning(
       !overlayProps.mode || overlayProps.mode === 'vertical',
+      'Dropdown',
       `mode="${overlayProps.mode}" is not supported for Dropdown\'s Menu.`,
     );
   }

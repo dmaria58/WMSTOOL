@@ -54,9 +54,10 @@ export default class Card extends React.Component<CardProps, {}> {
     if ('noHovering' in this.props) {
       warning(
         !this.props.noHovering,
+        'Card',
         '`noHovering` of Card is deperated, you can remove it safely or use `hoverable` instead.',
       );
-      warning(!!this.props.noHovering, '`noHovering={false}` of Card is deperated, use `hoverable` instead.');
+      warning(!!this.props.noHovering, 'Card', '`noHovering={false}` of Card is deperated, use `hoverable` instead.');
     }
   }
   componentWillUnmount() {

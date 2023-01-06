@@ -59,4 +59,7 @@ export default {
   PageHeader: {
     back: 'Back',
   },
+  Select: {
+    notFoundContent: 'Not Found',
+  },
 };
