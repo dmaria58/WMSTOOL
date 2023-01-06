@@ -2,24 +2,24 @@
 
 exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
 <article
-  class="ant-typography"
+  class="wmstool-typography"
 >
   <h1
-    class="ant-typography"
+    class="wmstool-typography"
   >
     Introduction
   </h1>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     In the process of internal desktop applications development, many different design specs and implementations would be involved, which might cause designers and developers difficulties and duplication and reduce the efficiency of development.
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     After massive project practice and summaries, Ant Design, a design language for background applications, is refined by Ant UED Team, which aims to
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <strong>
         uniform the user interface specs for internal background projects, lower the unnecessary cost of design differences and implementation and liberate the resources of design and front-end development
@@ -28,16 +28,16 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     .
   </div>
   <h2
-    class="ant-typography"
+    class="wmstool-typography"
   >
     Guidelines and Resources
   </h2>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     We supply a series of design principles, practical patterns and high quality design resources (
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Sketch
@@ -45,7 +45,7 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     </span>
      and 
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Axure
@@ -54,7 +54,7 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     ), to help people create their product prototypes beautifully and efficiently.
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <ul>
       <li>
@@ -81,25 +81,25 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     </ul>
   </div>
   <div
-    class="ant-divider ant-divider-horizontal"
+    class="wmstool-divider ant-divider-horizontal"
     role="separator"
   />
   <h1
-    class="ant-typography"
+    class="wmstool-typography"
   >
     介绍
   </h1>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     蚂蚁的企业级产品是一个庞大且复杂的体系。这类产品不仅量级巨大且功能复杂，而且变动和并发频繁，常常需要设计与开发能够快速的做出响应。同时这类产品中有存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁金服体验技术部）经过大量的项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 Ant Design。基于
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <mark>
         『确定』和『自然』
@@ -107,7 +107,7 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     </span>
     的设计价值观，通过模块化的解决方案，降低冗余的生产成本，让设计者专注于
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <strong>
         更好的用户体验
@@ -116,16 +116,16 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     。
   </div>
   <h2
-    class="ant-typography"
+    class="wmstool-typography"
   >
     设计资源
   </h2>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     我们提供完善的设计原则、最佳实践和设计资源文件（
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Sketch
@@ -133,7 +133,7 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     </span>
      和
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Axure
@@ -142,7 +142,7 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
     ），来帮助业务快速设计出高质量的产品原型。
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <ul>
       <li>
@@ -174,12 +174,12 @@ exports[`renders ./components/typography/demo/basic.md correctly 1`] = `
 exports[`renders ./components/typography/demo/ellipsis.md correctly 1`] = `
 <div>
   <div
-    class="ant-typography ant-typography-ellipsis"
+    class="wmstool-typography ant-typography-ellipsis"
   >
     Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
   </div>
   <div
-    class="ant-typography ant-typography-ellipsis"
+    class="wmstool-typography ant-typography-ellipsis"
   >
     Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
   </div>
@@ -191,79 +191,79 @@ exports[`renders ./components/typography/demo/ellipsis-debug.md correctly 1`] = 
   <button
     aria-checked="true"
     checked=""
-    class="ant-switch ant-switch-checked"
+    class="wmstool-switch ant-switch-checked"
     role="switch"
     type="button"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     >
       Long Text
     </span>
   </button>
   <button
     aria-checked="false"
-    class="ant-switch"
+    class="wmstool-switch"
     role="switch"
     type="button"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </button>
   <button
     aria-checked="false"
-    class="ant-switch"
+    class="wmstool-switch"
     role="switch"
     type="button"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </button>
   <button
     aria-checked="false"
-    class="ant-switch"
+    class="wmstool-switch"
     role="switch"
     type="button"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     />
   </button>
   <div
-    class="ant-slider"
+    class="wmstool-slider"
   >
     <div
-      class="ant-slider-rail"
+      class="wmstool-slider-rail"
     />
     <div
-      class="ant-slider-track"
+      class="wmstool-slider-track"
       style="left:0%;right:auto;width:0%"
     />
     <div
-      class="ant-slider-step"
+      class="wmstool-slider-step"
     />
     <div
       aria-disabled="false"
       aria-valuemax="10"
       aria-valuemin="1"
       aria-valuenow="1"
-      class="ant-slider-handle"
+      class="wmstool-slider-handle"
       role="slider"
       style="left:0%;right:auto;transform:translateX(-50%)"
       tabindex="0"
     />
     <div
-      class="ant-slider-mark"
+      class="wmstool-slider-mark"
     />
   </div>
   <div
-    class="ant-typography ant-typography-ellipsis"
+    class="wmstool-typography ant-typography-ellipsis"
   >
     Ant Design, a design language for background applications, is refined by Ant UED Team. This is a nest sample 
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         <del>
@@ -281,12 +281,12 @@ exports[`renders ./components/typography/demo/ellipsis-debug.md correctly 1`] = 
 exports[`renders ./components/typography/demo/interactive.md correctly 1`] = `
 <div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     This is an editable text.
     <div
       aria-label="Edit"
-      class="ant-typography-edit"
+      class="wmstool-typography-edit"
       role="button"
       style="border:0;background:transparent;padding:0;line-height:inherit;display:inline-block"
       tabindex="0"
@@ -314,12 +314,12 @@ exports[`renders ./components/typography/demo/interactive.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     This is a copyable text.
     <div
       aria-label="Copy"
-      class="ant-typography-copy"
+      class="wmstool-typography-copy"
       role="button"
       style="border:0;background:transparent;padding:0;line-height:inherit;display:inline-block"
       tabindex="0"
@@ -347,12 +347,12 @@ exports[`renders ./components/typography/demo/interactive.md correctly 1`] = `
     </div>
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     Replace copy text.
     <div
       aria-label="Copy"
-      class="ant-typography-copy"
+      class="wmstool-typography-copy"
       role="button"
       style="border:0;background:transparent;padding:0;line-height:inherit;display:inline-block"
       tabindex="0"
@@ -385,21 +385,21 @@ exports[`renders ./components/typography/demo/interactive.md correctly 1`] = `
 exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] = `
 <div>
   <h1
-    class="ant-typography"
+    class="wmstool-typography"
   >
     Introduction
   </h1>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     In the process of internal desktop applications development, many different design specs and implementations would be involved, which might cause designers and developers difficulties and duplication and reduce the efficiency of development.
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     After massive project practice and summaries, Ant Design, a design language for background applications, is refined by Ant UED Team, which aims to
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <strong>
         uniform the user interface specs for internal background projects, lower the unnecessary cost of design differences and implementation and liberate the resources of design and front-end development
@@ -408,16 +408,16 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     .
   </div>
   <h2
-    class="ant-typography"
+    class="wmstool-typography"
   >
     Guidelines and Resources
   </h2>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     We supply a series of design principles, practical patterns and high quality design resources (
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Sketch
@@ -425,7 +425,7 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     </span>
      and 
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Axure
@@ -434,7 +434,7 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     ), to help people create their product prototypes beautifully and efficiently.
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <ul>
       <li>
@@ -461,22 +461,22 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     </ul>
   </div>
   <h1
-    class="ant-typography"
+    class="wmstool-typography"
     id="intro"
   >
     介绍
   </h1>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     蚂蚁的企业级产品是一个庞大且复杂的体系。这类产品不仅量级巨大且功能复杂，而且变动和并发频繁，常常需要设计与开发能够快速的做出响应。同时这类产品中有存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     随着商业化的趋势，越来越多的企业级产品对更好的用户体验有了进一步的要求。带着这样的一个终极目标，我们（蚂蚁金服体验技术部）经过大量的项目实践和总结，逐步打磨出一个服务于企业级产品的设计体系 Ant Design。基于
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <mark>
         『确定』和『自然』
@@ -484,7 +484,7 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     </span>
     的设计价值观，通过模块化的解决方案，降低冗余的生产成本，让设计者专注于
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <strong>
         更好的用户体验
@@ -493,16 +493,16 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     。
   </div>
   <h2
-    class="ant-typography"
+    class="wmstool-typography"
   >
     设计资源
   </h2>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     我们提供完善的设计原则、最佳实践和设计资源文件（
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Sketch
@@ -510,7 +510,7 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     </span>
      和
     <span
-      class="ant-typography"
+      class="wmstool-typography"
     >
       <code>
         Axure
@@ -519,7 +519,7 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
     ），来帮助业务快速设计出高质量的产品原型。
   </div>
   <div
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <ul>
       <li>
@@ -551,37 +551,37 @@ exports[`renders ./components/typography/demo/paragraph-debug.md correctly 1`] =
 exports[`renders ./components/typography/demo/text.md correctly 1`] = `
 <div>
   <span
-    class="ant-typography"
+    class="wmstool-typography"
   >
     Ant Design
   </span>
   <br />
   <span
-    class="ant-typography ant-typography-secondary"
+    class="wmstool-typography ant-typography-secondary"
   >
     Ant Design
   </span>
   <br />
   <span
-    class="ant-typography ant-typography-warning"
+    class="wmstool-typography ant-typography-warning"
   >
     Ant Design
   </span>
   <br />
   <span
-    class="ant-typography ant-typography-danger"
+    class="wmstool-typography ant-typography-danger"
   >
     Ant Design
   </span>
   <br />
   <span
-    class="ant-typography ant-typography-disabled"
+    class="wmstool-typography ant-typography-disabled"
   >
     Ant Design
   </span>
   <br />
   <span
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <mark>
       Ant Design
@@ -589,7 +589,7 @@ exports[`renders ./components/typography/demo/text.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <code>
       Ant Design
@@ -597,7 +597,7 @@ exports[`renders ./components/typography/demo/text.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <u>
       Ant Design
@@ -605,7 +605,7 @@ exports[`renders ./components/typography/demo/text.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <del>
       Ant Design
@@ -613,7 +613,7 @@ exports[`renders ./components/typography/demo/text.md correctly 1`] = `
   </span>
   <br />
   <span
-    class="ant-typography"
+    class="wmstool-typography"
   >
     <strong>
       Ant Design
@@ -625,22 +625,22 @@ exports[`renders ./components/typography/demo/text.md correctly 1`] = `
 exports[`renders ./components/typography/demo/title.md correctly 1`] = `
 <div>
   <h1
-    class="ant-typography"
+    class="wmstool-typography"
   >
     h1. Ant Design
   </h1>
   <h2
-    class="ant-typography"
+    class="wmstool-typography"
   >
     h2. Ant Design
   </h2>
   <h3
-    class="ant-typography"
+    class="wmstool-typography"
   >
     h3. Ant Design
   </h3>
   <h4
-    class="ant-typography"
+    class="wmstool-typography"
   >
     h4. Ant Design
   </h4>
