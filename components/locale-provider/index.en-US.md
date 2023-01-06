@@ -12,8 +12,8 @@ title: LocaleProvider
 `LocaleProvider` takes use of [context](https://facebook.github.io/react/docs/context.html), a feature of React, to accomplish global effectiveness by wrapping the app only once.
 
 ```jsx
-import { LocaleProvider } from 'antd';
-import enUS from 'antd/lib/locale-provider/en_US';
+import { LocaleProvider } from 'wmstool';
+import enUS from 'wmstool/lib/locale-provider/en_US';
 
 ...
 

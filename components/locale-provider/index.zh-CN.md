@@ -13,7 +13,7 @@ title: LocaleProvider
 LocaleProvider 使用 React 的 [context](https://facebook.github.io/react/docs/context.html) 特性，只需在应用外围包裹一次即可全局生效。
 
 ```jsx
-import enUS from 'antd/lib/locale-provider/en_US';
+import enUS from 'wmstool/lib/locale-provider/en_US';
 
 ...
 
