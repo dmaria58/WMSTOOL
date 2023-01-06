@@ -13,6 +13,14 @@ timeline: true
 
 ---
 
+## 3.0.2
+`2022-12-12`
+
+- 🐞  新特性 ： 新增 Typography 组件。
+- 🐞  新特性 ： 新增 Empty 组件。
+- 🐞  新特性 ： 新增 LocaleProvider 组件。
+- 🐞  新特性 ： 新增 ConfigProvider 组件。
+
 ## 3.0.1
 `2022-12-12`
 
