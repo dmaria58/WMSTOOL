@@ -17,7 +17,7 @@ export default class Steps extends React.Component<StepsProps, any> {
 
   static defaultProps = {
     prefixCls: 'wmstool-steps',
-    iconPrefix: 'ant',
+    iconPrefix: 'wmstool',
     current: 0,
   };
 

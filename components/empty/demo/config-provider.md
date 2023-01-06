@@ -42,7 +42,6 @@ class Demo extends React.Component {
   };
 
   render() {
-    console.log('===========empty',ConfigProvider)
     const { customize } = this.state;
     return (
       <div>

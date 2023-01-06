@@ -10,7 +10,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 import * as React from 'react';
 import classNames from 'classnames';
 export default function Divider(_a) {
-    var { prefixCls = 'ant', type = 'horizontal', className, children, dashed } = _a, restProps = __rest(_a, ["prefixCls", "type", "className", "children", "dashed"]);
+    var { prefixCls = 'wmstool', type = 'horizontal', className, children, dashed } = _a, restProps = __rest(_a, ["prefixCls", "type", "className", "children", "dashed"]);
     const classString = classNames(className, `${prefixCls}-divider`, `${prefixCls}-divider-${type}`, {
         [`${prefixCls}-divider-with-text`]: children,
         [`${prefixCls}-divider-dashed`]: !!dashed,
