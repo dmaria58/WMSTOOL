@@ -137,3 +137,5 @@ export { default as version } from './version';
 export { default as MultipleInput } from './multipleinput';
 
 export { default as ResizableCell } from './resizablecell';
+
+export { default as Typography } from './typography';

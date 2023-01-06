@@ -25,7 +25,7 @@ export const ConfigContext = createReactContext<ConfigConsumerProps>({
   getPrefixCls: (suffixCls: string, customizePrefixCls?: string) => {
     if (customizePrefixCls) return customizePrefixCls;
 
-    return `ant-${suffixCls}`;
+    return `wmstool-${suffixCls}`;
   },
 
   renderEmpty: defaultRenderEmpty,
