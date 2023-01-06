@@ -28,11 +28,10 @@ import {
   Transfer,
   Radio,
 } from 'wmstool';
+import enUS from 'wmstool/lib/locale/en_US';
+import zhCN from 'wmstool/lib/locale/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
-
-const enUS = 'enUS'
-const zhCN = 'zhCN'
 
 moment.locale('en');
 
