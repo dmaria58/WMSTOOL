@@ -8,11 +8,11 @@ describe('Empty', () => {
 
   it('image size should change', () => {
     const wrapper = mount(<Empty imageStyle={{ height: 20 }} />);
-    expect(wrapper.find('.ant-empty-image').props().style.height).toBe(20);
+    expect(wrapper.find('.wmstool-empty-image').props().style.height).toBe(20);
   });
 
   it('description can be false', () => {
     const wrapper = mount(<Empty description={false} />);
-    expect(wrapper.find('.ant-empty-description').length).toBe(0);
+    expect(wrapper.find('.wmstool-empty-description').length).toBe(0);
   });
 });

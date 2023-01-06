@@ -139,3 +139,7 @@ export { default as MultipleInput } from './multipleinput';
 export { default as ResizableCell } from './resizablecell';
 
 export { default as Typography } from './typography';
+
+export { default as Empty } from './empty';
+
+export { default as ConfigProvider } from './config-provider';

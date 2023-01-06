@@ -2,10 +2,10 @@
 
 exports[`renders ./components/empty/demo/basic.md correctly 1`] = `
 <div
-  class="ant-empty"
+  class="wmstool-empty"
 >
   <div
-    class="ant-empty-image"
+    class="wmstool-empty-image"
   >
     <svg
       height="152"
@@ -68,7 +68,7 @@ exports[`renders ./components/empty/demo/basic.md correctly 1`] = `
     </svg>
   </div>
   <p
-    class="ant-empty-description"
+    class="wmstool-empty-description"
   >
     No Data
   </p>
@@ -79,18 +79,18 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="ant-switch"
+    class="wmstool-switch"
     role="switch"
     type="button"
   >
     <span
-      class="ant-switch-inner"
+      class="wmstool-switch-inner"
     >
       default
     </span>
   </button>
   <div
-    class="ant-divider ant-divider-horizontal"
+    class="wmstool-divider wmstool-divider-horizontal"
     role="separator"
   />
   <div
@@ -100,7 +100,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
       Select
     </h3>
     <div
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
       style="width:200px"
     >
       <div
@@ -108,22 +108,22 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
         aria-controls=""
         aria-expanded="false"
         aria-haspopup="true"
-        class="ant-select-selection
-            ant-select-selection--single"
+        class="wmstool-select-selection
+            wmstool-select-selection--single"
         role="combobox"
         tabindex="0"
       >
         <div
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         />
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="user-select:none;-webkit-user-select:none"
           unselectable="on"
         >
           <i
             aria-label="icon: down"
-            class="anticon anticon-down ant-select-arrow-icon"
+            class="anticon anticon-down wmstool-select-arrow-icon"
           >
             <svg
               aria-hidden="true"
@@ -148,28 +148,28 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
     </h3>
     <span
       aria-haspopup="listbox"
-      class="ant-select ant-select-enabled"
+      class="wmstool-select wmstool-select-enabled"
       role="combobox"
       style="width:200px"
       tabindex="0"
     >
       <span
-        class="ant-select-selection ant-select-selection--single"
+        class="wmstool-select-selection wmstool-select-selection--single"
       >
         <span
-          class="ant-select-selection__rendered"
+          class="wmstool-select-selection__rendered"
         >
           <span
-            class="ant-select-selection__placeholder"
+            class="wmstool-select-selection__placeholder"
           />
         </span>
         <span
-          class="ant-select-arrow"
+          class="wmstool-select-arrow"
           style="outline:none"
         >
           <i
             aria-label="icon: down"
-            class="anticon anticon-down ant-select-arrow-icon"
+            class="anticon anticon-down wmstool-select-arrow-icon"
           >
             <svg
               aria-hidden="true"
@@ -193,16 +193,16 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
       Cascader
     </h3>
     <span
-      class="ant-cascader-picker ant-cascader-picker-show-search"
+      class="wmstool-cascader-picker wmstool-cascader-picker-show-search"
       style="width:200px"
       tabindex="0"
     >
       <span
-        class="ant-cascader-picker-label"
+        class="wmstool-cascader-picker-label"
       />
       <input
         autocomplete="off"
-        class="ant-input ant-cascader-input "
+        class="wmstool-input wmstool-cascader-input "
         placeholder="Please select"
         tabindex="-1"
         type="text"
@@ -210,7 +210,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
       />
       <i
         aria-label="icon: down"
-        class="anticon anticon-down ant-cascader-picker-arrow"
+        class="anticon anticon-down wmstool-cascader-picker-arrow"
       >
         <svg
           aria-hidden="true"
@@ -232,51 +232,51 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
       Transfer
     </h3>
     <div
-      class="ant-transfer"
+      class="wmstool-transfer"
     >
       <div
-        class="ant-transfer-list"
+        class="wmstool-transfer-list"
       >
         <div
-          class="ant-transfer-list-header"
+          class="wmstool-transfer-list-header"
         >
           <label
-            class="ant-checkbox-wrapper"
+            class="wmstool-checkbox-wrapper"
           >
             <span
-              class="ant-checkbox"
+              class="wmstool-checkbox"
             >
               <input
-                class="ant-checkbox-input"
+                class="wmstool-checkbox-input"
                 type="checkbox"
               />
               <span
-                class="ant-checkbox-inner"
+                class="wmstool-checkbox-inner"
               />
             </span>
           </label>
           <span
-            class="ant-transfer-list-header-selected"
+            class="wmstool-transfer-list-header-selected"
           >
             <span>
               0 item
             </span>
             <span
-              class="ant-transfer-list-header-title"
+              class="wmstool-transfer-list-header-title"
             />
           </span>
         </div>
         <div
-          class="ant-transfer-list-body"
+          class="wmstool-transfer-list-body"
         >
           <div
-            class="ant-transfer-list-body-not-found"
+            class="wmstool-transfer-list-body-not-found"
           >
             <div
-              class="ant-empty ant-empty-normal ant-empty-small"
+              class="wmstool-empty wmstool-empty-normal wmstool-empty-small"
             >
               <div
-                class="ant-empty-image"
+                class="wmstool-empty-image"
               >
                 <svg
                   height="41"
@@ -312,7 +312,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
                 </svg>
               </div>
               <p
-                class="ant-empty-description"
+                class="wmstool-empty-description"
               >
                 No Data
               </p>
@@ -321,10 +321,10 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
         </div>
       </div>
       <div
-        class="ant-transfer-operation"
+        class="wmstool-transfer-operation"
       >
         <button
-          class="ant-btn ant-btn-primary ant-btn-sm ant-btn-icon-only"
+          class="wmstool-btn wmstool-btn-primary wmstool-btn-sm wmstool-btn-icon-only"
           disabled=""
           type="button"
         >
@@ -349,7 +349,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
           </i>
         </button>
         <button
-          class="ant-btn ant-btn-primary ant-btn-sm ant-btn-icon-only"
+          class="wmstool-btn wmstool-btn-primary wmstool-btn-sm wmstool-btn-icon-only"
           disabled=""
           type="button"
         >
@@ -375,48 +375,48 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
         </button>
       </div>
       <div
-        class="ant-transfer-list"
+        class="wmstool-transfer-list"
       >
         <div
-          class="ant-transfer-list-header"
+          class="wmstool-transfer-list-header"
         >
           <label
-            class="ant-checkbox-wrapper"
+            class="wmstool-checkbox-wrapper"
           >
             <span
-              class="ant-checkbox"
+              class="wmstool-checkbox"
             >
               <input
-                class="ant-checkbox-input"
+                class="wmstool-checkbox-input"
                 type="checkbox"
               />
               <span
-                class="ant-checkbox-inner"
+                class="wmstool-checkbox-inner"
               />
             </span>
           </label>
           <span
-            class="ant-transfer-list-header-selected"
+            class="wmstool-transfer-list-header-selected"
           >
             <span>
               0 item
             </span>
             <span
-              class="ant-transfer-list-header-title"
+              class="wmstool-transfer-list-header-title"
             />
           </span>
         </div>
         <div
-          class="ant-transfer-list-body"
+          class="wmstool-transfer-list-body"
         >
           <div
-            class="ant-transfer-list-body-not-found"
+            class="wmstool-transfer-list-body-not-found"
           >
             <div
-              class="ant-empty ant-empty-normal ant-empty-small"
+              class="wmstool-empty wmstool-empty-normal wmstool-empty-small"
             >
               <div
-                class="ant-empty-image"
+                class="wmstool-empty-image"
               >
                 <svg
                   height="41"
@@ -452,7 +452,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
                 </svg>
               </div>
               <p
-                class="ant-empty-description"
+                class="wmstool-empty-description"
               >
                 No Data
               </p>
@@ -465,23 +465,23 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
       Table
     </h3>
     <div
-      class="ant-table-wrapper"
+      class="wmstool-table-wrapper"
       style="margin-top:8px"
     >
       <div
-        class="ant-spin-nested-loading"
+        class="wmstool-spin-nested-loading"
       >
         <div
-          class="ant-spin-container"
+          class="wmstool-spin-container"
         >
           <div
-            class="ant-table ant-table-default ant-table-empty ant-table-scroll-position-left"
+            class="wmstool-table wmstool-table-default wmstool-table-empty wmstool-table-scroll-position-left"
           >
             <div
-              class="ant-table-content"
+              class="wmstool-table-content"
             >
               <div
-                class="ant-table-body"
+                class="wmstool-table-body"
               >
                 <table
                   class=""
@@ -491,41 +491,41 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
                     <col />
                   </colgroup>
                   <thead
-                    class="ant-table-thead"
+                    class="wmstool-table-thead"
                   >
                     <tr>
                       <th
                         class=""
                       >
                         <span
-                          class="ant-table-header-column"
+                          class="wmstool-table-header-column"
                         >
                           <div>
                             <span
-                              class="ant-table-column-title"
+                              class="wmstool-table-column-title"
                             >
                               Name
                             </span>
                             <span
-                              class="ant-table-column-sorter"
+                              class="wmstool-table-column-sorter"
                             />
                           </div>
                         </span>
                       </th>
                       <th
-                        class="ant-table-row-cell-last"
+                        class="wmstool-table-row-cell-last"
                       >
                         <span
-                          class="ant-table-header-column"
+                          class="wmstool-table-header-column"
                         >
                           <div>
                             <span
-                              class="ant-table-column-title"
+                              class="wmstool-table-column-title"
                             >
                               Age
                             </span>
                             <span
-                              class="ant-table-column-sorter"
+                              class="wmstool-table-column-sorter"
                             />
                           </div>
                         </span>
@@ -533,18 +533,18 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
                     </tr>
                   </thead>
                   <tbody
-                    class="ant-table-tbody"
+                    class="wmstool-table-tbody"
                   />
                 </table>
               </div>
               <div
-                class="ant-table-placeholder"
+                class="wmstool-table-placeholder"
               >
                 <div
-                  class="ant-empty ant-empty-normal"
+                  class="wmstool-empty wmstool-empty-normal"
                 >
                   <div
-                    class="ant-empty-image"
+                    class="wmstool-empty-image"
                   >
                     <svg
                       height="41"
@@ -580,7 +580,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
                     </svg>
                   </div>
                   <p
-                    class="ant-empty-description"
+                    class="wmstool-empty-description"
                   >
                     No Data
                   </p>
@@ -595,22 +595,22 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
       List
     </h3>
     <div
-      class="ant-list ant-list-split"
+      class="wmstool-list wmstool-list-split"
     >
       <div
-        class="ant-spin-nested-loading"
+        class="wmstool-spin-nested-loading"
       >
         <div
-          class="ant-spin-container"
+          class="wmstool-spin-container"
         >
           <div
-            class="ant-list-empty-text"
+            class="wmstool-list-empty-text"
           >
             <div
-              class="ant-empty ant-empty-normal"
+              class="wmstool-empty wmstool-empty-normal"
             >
               <div
-                class="ant-empty-image"
+                class="wmstool-empty-image"
               >
                 <svg
                   height="41"
@@ -646,7 +646,7 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
                 </svg>
               </div>
               <p
-                class="ant-empty-description"
+                class="wmstool-empty-description"
               >
                 No Data
               </p>
@@ -661,10 +661,10 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
 
 exports[`renders ./components/empty/demo/customize.md correctly 1`] = `
 <div
-  class="ant-empty"
+  class="wmstool-empty"
 >
   <div
-    class="ant-empty-image"
+    class="wmstool-empty-image"
     style="height:60px"
   >
     <img
@@ -673,7 +673,7 @@ exports[`renders ./components/empty/demo/customize.md correctly 1`] = `
     />
   </div>
   <p
-    class="ant-empty-description"
+    class="wmstool-empty-description"
   >
     <span>
       Customize 
@@ -685,10 +685,10 @@ exports[`renders ./components/empty/demo/customize.md correctly 1`] = `
     </span>
   </p>
   <div
-    class="ant-empty-footer"
+    class="wmstool-empty-footer"
   >
     <button
-      class="ant-btn ant-btn-primary"
+      class="wmstool-btn wmstool-btn-primary"
       type="button"
     >
       <span>
@@ -701,10 +701,10 @@ exports[`renders ./components/empty/demo/customize.md correctly 1`] = `
 
 exports[`renders ./components/empty/demo/description.md correctly 1`] = `
 <div
-  class="ant-empty"
+  class="wmstool-empty"
 >
   <div
-    class="ant-empty-image"
+    class="wmstool-empty-image"
   >
     <svg
       height="152"
@@ -771,10 +771,10 @@ exports[`renders ./components/empty/demo/description.md correctly 1`] = `
 
 exports[`renders ./components/empty/demo/simple.md correctly 1`] = `
 <div
-  class="ant-empty ant-empty-normal"
+  class="wmstool-empty wmstool-empty-normal"
 >
   <div
-    class="ant-empty-image"
+    class="wmstool-empty-image"
   >
     <svg
       height="41"
@@ -810,7 +810,7 @@ exports[`renders ./components/empty/demo/simple.md correctly 1`] = `
     </svg>
   </div>
   <p
-    class="ant-empty-description"
+    class="wmstool-empty-description"
   >
     No Data
   </p>
