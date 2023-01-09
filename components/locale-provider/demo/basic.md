@@ -13,9 +13,9 @@ title:
 
 Wrap your app with `LocaleProvider`, and apply the corresponding language package.
 
-````jsx
+```jsx
 import { Pagination, LocaleProvider } from 'wmstool';
-import enUS from 'antd/lib/locale-provider/en_US';
+import zhCN from 'wmstool/es/locale-provider/zh_CN';
 
 const App = () => (
   <div>
@@ -24,8 +24,9 @@ const App = () => (
 );
 
 ReactDOM.render(
-  <LocaleProvider locale={enUS}>
+  <LocaleProvider locale={zhCN}>
     <App />
-  </LocaleProvider>
-, mountNode);
-````
+  </LocaleProvider>,
+  mountNode,
+);
+```

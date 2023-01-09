@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "wmstool": ["components/index.tsx"],
+      "wmstool/es/*": ["components/*"]
+    },
     "strictNullChecks": true,
     "moduleResolution": "node",
     "esModuleInterop": true,

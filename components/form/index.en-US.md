@@ -167,8 +167,8 @@ See more advanced usage at [async-validator](https://github.com/yiminghe/async-v
 ## Using in TypeScript
 
 ```jsx
-import { Form } from 'antd';
-import { FormComponentProps } from 'antd/lib/form';
+import { Form } from 'wmstool';
+import { FormComponentProps } from 'wmstool/es/form';
 
 interface UserFormProps extends FormComponentProps {
   age: number;

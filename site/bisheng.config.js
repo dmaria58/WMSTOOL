@@ -70,6 +70,7 @@ module.exports = {
   webpackConfig(config) {
     config.resolve.alias = {
       'wmstool/lib': path.join(process.cwd(), 'components'),
+      'wmstool/es': path.join(process.cwd(), 'components'),
       wmstool: path.join(process.cwd(), 'index'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',

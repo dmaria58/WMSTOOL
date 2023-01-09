@@ -47,6 +47,10 @@
 @font-size-base         : 14px;
 @font-size-lg           : @font-size-base + 2px;
 @font-size-sm           : 12px;
+@heading-1-size         : ceil(@font-size-base * 2.71);
+@heading-2-size         : ceil(@font-size-base * 2.14);
+@heading-3-size         : ceil(@font-size-base * 1.71);
+@heading-4-size         : ceil(@font-size-base * 1.42);
 @line-height-base       : 1.5;
 @border-radius-base     : 4px;
 @border-radius-sm       : 2px;
@@ -428,3 +432,11 @@
 @dropdown-line-height: 22px;
 
 @icon-color-hover: fade(@black, 75%);
+
+// Empty
+@empty-font-size: @font-size-base;
+
+// Typography
+@typography-title-font-weight: 600;
+@typography-title-margin-top: 1.2em;
+@typography-title-margin-bottom: 0.5em;

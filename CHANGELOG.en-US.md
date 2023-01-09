@@ -12,6 +12,24 @@ timeline: true
 未定义
 
 ---
+## 3.0.4
+`2023-01-09`
+
+- 🐞  修复 ： 修复 rc-calendar 版本低导致的locale语言丢失问题。
+
+## 3.0.3
+`2023-01-06`
+
+- 🐞  修复 ： 修复 wmstool 打包后引入错误的问题。
+- 🐞  更新 ： 更新 wmstool/lib 引入路径为 wmstool/es。
+  
+## 3.0.2
+`2023-01-06`
+
+- 🐞  新特性 ： 新增 Typography 组件。
+- 🐞  新特性 ： 新增 Empty 组件。
+- 🐞  新特性 ： 新增 LocaleProvider 组件。
+- 🐞  新特性 ： 新增 ConfigProvider 组件。
 
 ## 3.0.1
 `2022-12-12`

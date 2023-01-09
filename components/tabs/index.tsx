@@ -114,6 +114,7 @@ export default class Tabs extends React.Component<TabsProps, any> {
 
     warning(
       !(type.indexOf('card') >= 0 && (size === 'small' || size === 'large')),
+      'Tabs',
       'Tabs[type=card|editable-card] doesn\'t have small or large size, it\'s by designed.',
     );
     const cls = classNames(className, {
