@@ -28,7 +28,7 @@ import {
   Transfer,
   Radio,
 } from 'wmstool';
-import zhCN from 'wmstool/lib/locale-provider/zh_CN';
+import zhCN from 'wmstool/es/locale-provider/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 

@@ -153,7 +153,7 @@ const columns = [{
 
 ```jsx
 import { Table } from 'wmstool';
-import { ColumnProps } from 'wmstool/lib/table';
+import { ColumnProps } from 'wmstool/es/table';
 
 interface IUser {
   key: number;

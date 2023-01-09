@@ -13,7 +13,7 @@ title: LocaleProvider (Deprecated)
 
 ```jsx
 import { LocaleProvider } from 'wmstool';
-import fr_FR from 'wmstool/lib/locale-provider/fr_FR';
+import fr_FR from 'wmstool/es/locale-provider/fr_FR';
 import moment from 'moment';
 import 'moment/locale/fr';
 

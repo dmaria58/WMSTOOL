@@ -169,7 +169,7 @@ CustomizedForm = Form.create({})(CustomizedForm);
 
 ```jsx
 import { Form } from 'wmstool';
-import { FormComponentProps } from 'wmstool/lib/form';
+import { FormComponentProps } from 'wmstool/es/form';
 
 interface UserFormProps extends FormComponentProps {
   age: number;

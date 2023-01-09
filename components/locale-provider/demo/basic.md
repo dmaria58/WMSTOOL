@@ -15,7 +15,7 @@ Wrap your app with `LocaleProvider`, and apply the corresponding language packag
 
 ```jsx
 import { Pagination, LocaleProvider } from 'wmstool';
-import zhCN from 'wmstool/lib/locale-provider/zh_CN';
+import zhCN from 'wmstool/es/locale-provider/zh_CN';
 
 const App = () => (
   <div>

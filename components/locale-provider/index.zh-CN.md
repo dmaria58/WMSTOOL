@@ -14,7 +14,7 @@ LocaleProvider 使用 React 的 [context](https://facebook.github.io/react/docs/
 
 ```jsx
 import { LocaleProvider } from 'wmstool';
-import zh_CN from 'wmstool/lib/locale-provider/zh_CN';
+import zh_CN from 'wmstool/es/locale-provider/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 

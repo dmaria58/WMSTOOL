@@ -103,3 +103,7 @@ declare module "*.json" {
 declare module "prop-types"
 
 declare module "lodash.debounce"
+
+declare module 'react-copy-to-clipboard';
+
+declare module 'react-lifecycles-compat';

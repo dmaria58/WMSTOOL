@@ -28,8 +28,8 @@ import {
   Transfer,
   Radio,
 } from 'wmstool';
-import enUS from 'wmstool/lib/locale/en_US';
-import zhCN from 'wmstool/lib/locale/zh_CN';
+import enUS from 'wmstool/es/locale/en_US';
+import zhCN from 'wmstool/es/locale/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 

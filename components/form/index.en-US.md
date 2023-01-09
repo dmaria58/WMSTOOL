@@ -168,7 +168,7 @@ See more advanced usage at [async-validator](https://github.com/yiminghe/async-v
 
 ```jsx
 import { Form } from 'wmstool';
-import { FormComponentProps } from 'wmstool/lib/form';
+import { FormComponentProps } from 'wmstool/es/form';
 
 interface UserFormProps extends FormComponentProps {
   age: number;

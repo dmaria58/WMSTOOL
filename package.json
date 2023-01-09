@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "3.0.2",
+  "version": "3.0.4",
   "description": "一套前端组件库基于antd 3.0.3、react",
   "scripts": {
     "testsingle": "jest --config  .jest.js",
@@ -38,7 +38,7 @@
     "prop-types": "^15.7.2",
     "raf": "^3.4.1",
     "rc-animate": "^2.4.1",
-    "rc-calendar": "~9.3.0",
+    "rc-calendar": "~9.15.7",
     "rc-cascader": "~0.12.0",
     "rc-checkbox": "~2.1.1",
     "rc-collapse": "~1.7.5",
@@ -72,6 +72,7 @@
     "react-draggable": "^4.4.3",
     "react-lazy-load": "^3.0.12",
     "react-lazyload": "^2.3.0",
+    "react-lifecycles-compat": "^3.0.4",
     "react-resizable": "^1.11.1",
     "react-slick": "~0.16.0",
     "react-window": "^1.8.5",

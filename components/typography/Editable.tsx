@@ -46,11 +46,9 @@ class Editable extends React.Component<EditableProps, EditableState> {
   };
 
   componentDidMount() {
-    if (this.textarea && this.textarea.resizableTextArea) {
-      const { textArea } = this.textarea.resizableTextArea;
+    if (this.textarea ) {
+      const textArea  = this.textarea;
       textArea.focus();
-      const { length } = textArea.value;
-      textArea.setSelectionRange(length, length);
     }
   }
 
