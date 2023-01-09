@@ -202,7 +202,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Action 一 John Brown
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -210,7 +210,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -260,7 +260,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Action 一 Jim Green
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -268,7 +268,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -318,7 +318,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Action 一 Joe Black
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -326,7 +326,7 @@ exports[`renders ./components/table/demo/basic.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -1771,7 +1771,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -1779,7 +1779,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -1853,7 +1853,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -1861,7 +1861,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -1935,7 +1935,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -1943,7 +1943,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2017,7 +2017,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2025,7 +2025,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2099,7 +2099,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2107,7 +2107,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2181,7 +2181,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2189,7 +2189,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2263,7 +2263,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2271,7 +2271,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2345,7 +2345,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2353,7 +2353,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2427,7 +2427,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2435,7 +2435,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -2509,7 +2509,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Action 一 John Brown
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           href="#"
@@ -2517,7 +2517,7 @@ exports[`renders ./components/table/demo/dynamic-settings.md correctly 1`] = `
                           Delete
                         </a>
                         <div
-                          class="ant-divider ant-divider-vertical"
+                          class="wmstool-divider ant-divider-vertical"
                         />
                         <a
                           class="wmstool-dropdown-link"
@@ -8455,7 +8455,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Action 一 
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -8463,7 +8463,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -8514,7 +8514,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Action 一 
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -8522,7 +8522,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"
@@ -8573,7 +8573,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Action 一 
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         href="#"
@@ -8581,7 +8581,7 @@ exports[`renders ./components/table/demo/jsx.md correctly 1`] = `
                         Delete
                       </a>
                       <div
-                        class="ant-divider ant-divider-vertical"
+                        class="wmstool-divider ant-divider-vertical"
                       />
                       <a
                         class="wmstool-dropdown-link"

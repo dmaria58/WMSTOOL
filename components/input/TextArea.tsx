@@ -26,6 +26,7 @@ export interface AutoSizeType {
 
 export interface TextAreaProps extends AbstractInputProps {
   autosize?: boolean | AutoSizeType;
+  autoSize?: boolean | AutoSizeType;
   onPressEnter?: React.FormEventHandler<any>;
 }
 

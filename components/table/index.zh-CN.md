@@ -152,8 +152,8 @@ const columns = [{
 ## 在 TypeScript 中使用
 
 ```jsx
-import { Table } from 'antd';
-import { ColumnProps } from 'antd/lib/table';
+import { Table } from 'wmstool';
+import { ColumnProps } from 'wmstool/es/table';
 
 interface IUser {
   key: number;
