@@ -1,5 +1,3 @@
-import defaultLocale from './default';
-import * as moment from 'moment';
-moment.locale('en');
+import locale from '../locale/en_US';
 
-export default defaultLocale;
+export default locale;

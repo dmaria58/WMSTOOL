@@ -1,6 +1,6 @@
 import * as antd from '..';
 
-describe('antd', () => {
+describe('wmstool', () => {
   it('exports modules correctly', () => {
     expect(Object.keys(antd)).toMatchSnapshot();
   });

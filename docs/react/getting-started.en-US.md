@@ -29,7 +29,7 @@ Such features, together with packaging the production version, are covered in th
 $ npm install antd-init -g
 ```
 
-Read [the documentation of `antd-init`](https://github.com/ant-design/antd-init/) and [the documentation of `ant-tool`](http://ant-tool.github.io/) to explore more features.
+Read [the documentation of `antd-init`](https://github.com/ant-design/antd-init/) and [the documentation of `wmstool-tool`](http://ant-tool.github.io/) to explore more features.
 
 > Also, you can use scaffold/demo which is provided by community:
 >
