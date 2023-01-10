@@ -1,6 +1,6 @@
 {
   "name": "wmstool",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "一套前端组件库基于antd 3.0.3、react",
   "scripts": {
     "testsingle": "jest --config  .jest.js",
@@ -24,6 +24,7 @@
     "array-tree-filter": "^2.0.0",
     "babel-runtime": "6.x",
     "classnames": "~2.2.0",
+    "copy-to-clipboard": "^3.2.0",
     "create-react-class": "^15.6.0",
     "css-animation": "^1.2.5",
     "dom-closest": "^0.2.0",
@@ -146,7 +147,7 @@
     "rc-scroll-anim": "^2.0.2",
     "rc-tween-one": "^1.1.2",
     "react-color": "^2.11.7",
-    "react-copy-to-clipboard": "^5.0.0",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-document-title": "^2.0.1",
     "react-dom": "^16.0.0",
     "react-github-button": "^0.1.1",
