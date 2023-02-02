@@ -118,7 +118,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     );
 
     this.columns = props.columns || normalizeColumns(props.children as React.ReactChildren);
-    
+
     let hjj=this.props.ColumnsChangeList || this.columns;
     //先取100行
     this.state = {
@@ -143,27 +143,58 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     });
 
     this.renderData = "";
-    
+
   }
   componentDidMount (){
     //监听table滚动
     if(this.props.isMaxData ){
       let table = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body`) as any;
+      let colgroup = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body .wmstool-table-fixed colgroup`)as any;
       let f_lazy = document.querySelector(`.${this.state.tableId} .wmstool-table-scroll .wmstool-table-body .wmstool-table-fixed .table_lazy_list`)as any;
+      let f_lazy_left = document.querySelector(`.${this.state.tableId}  .wmstool-table-fixed-left .wmstool-table-body-outer .wmstool-table-body-inner .table_lazy_list`)as any;
+      let f_lazy_right = document.querySelector(`.${this.state.tableId}  .wmstool-table-fixed-right .wmstool-table-body-outer .wmstool-table-body-inner .table_lazy_list`)as any;
       if(table && f_lazy){
         table.addEventListener("scroll",()=>{
+          colgroup.style.display="none"
           if(this.state.lazy_marginTop != table.scrollTop){
            f_lazy.scrollTop=table.scrollTop;
-           this.setState({lazy_marginTop:table.scrollTop})           
+           if(f_lazy_left)  f_lazy_left.scrollTop=table.scrollTop;
+           if(f_lazy_right) f_lazy_right.scrollTop=table.scrollTop;
+           this.setState({lazy_marginTop:table.scrollTop})
           }
 
         })
-        f_lazy.addEventListener("scroll",()=>{
+        f_lazy.addEventListener("scroll",(e)=>{
+          colgroup.style.display="none"
           if(this.state.lazy_marginTop != f_lazy.scrollTop){
             table.scrollTop=f_lazy.scrollTop;
+           if(f_lazy_left) {f_lazy_left.scrollTop=f_lazy.scrollTop};
+           if(f_lazy_right) f_lazy_right.scrollTop=f_lazy.scrollTop;
             this.setState({lazy_marginTop:f_lazy.scrollTop})
           }
-        })        
+        })
+        if(f_lazy_left){
+                colgroup.style.display="none"
+                f_lazy_left.addEventListener("scroll",()=>{
+                     if(this.state.lazy_marginTop != f_lazy_left.scrollTop){
+                       table.scrollTop=f_lazy_left.scrollTop;
+                       f_lazy.scrollTop=f_lazy_left.scrollTop;
+                       if(f_lazy_right) f_lazy_right.scrollTop=f_lazy_left.scrollTop;
+                       this.setState({lazy_marginTop:f_lazy_left.scrollTop})
+                     }
+                })
+        }
+        if(f_lazy_right){
+                colgroup.style.display="none"
+                f_lazy_right.addEventListener("scroll",()=>{
+                     if(this.state.lazy_marginTop != f_lazy_right.scrollTop){
+                       table.scrollTop=f_lazy_right.scrollTop;
+                       f_lazy.scrollTop=f_lazy_right.scrollTop;
+                       if(f_lazy_left) f_lazy_left.scrollTop=f_lazy_right.scrollTop;
+                       this.setState({lazy_marginTop:f_lazy_left.scrollTop})
+                     }
+                })
+        }
       }
     }
   }
@@ -238,7 +269,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
 	      lastIndex: null,
         lazy_marginTop:0
       });
-      this.CheckboxPropsCache = {};     
+      this.CheckboxPropsCache = {};
       this.getSameScrollTop(0);
     }
     if (this.getSortOrderColumns(this.columns).length > 0) {
@@ -735,7 +766,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     else{
        columns = this.columns.concat();
     }
-    
+
     if (rowSelection) {
       const data = this.getFlatCurrentPageData().filter((item, index) => {
         if (rowSelection.getCheckboxProps) {
@@ -1015,7 +1046,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     let s_height=mheight*tableprops.children.length as number;
     let r_Col=this.getCol(mergedColumns);
     return (
-      <div style={{height:s_height,paddingTop:this.state.lazy_marginTop,width:'100%',minWidth:x}}>
+      <div className="table_lazy_div" style={{height:s_height,paddingTop:this.state.lazy_marginTop,width:'100%'}}>
       <List
         className="table_lazy_list"
         height={y}
@@ -1032,7 +1063,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
           </table>)
       }}
       </List>
-      </div>     
+      </div>
     )
   }
   getCol=(mergedColumns:object[])=>{
@@ -1051,11 +1082,11 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
         const newColumn = { ...column };
         newColumn.key = this.getColumnKey(newColumn, i);
         return newColumn;
-      });     
+      });
       this.components = {body: {wrapper: this.TableWrap.bind(this,
         this.props.isMaxData.lazyHeight,
         this.props.scroll,
-        columns      
+        columns
         )}};
       return;
     }
@@ -1107,7 +1138,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     if ('expandIconColumnIndex' in restProps) {
       expandIconColumnIndex = restProps.expandIconColumnIndex as number;
     }
-    return (    
+    return (
       <RcTable
         key="table"
         {...restProps}
@@ -1176,7 +1207,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     if (downloadExcelData&&downloadExcelData.isDownTableExcel) {
       return (
         <div className="wmstool-table-edit_download" onClick={() => this.clickDownExcel(downloadExcelData)}>
-          {downloadExcelData.IconContent?downloadExcelData.IconContent:<Icon title={downloadExcelData.iconTitle||null} type={downloadExcelData.iconType||"export"} />} 
+          {downloadExcelData.IconContent?downloadExcelData.IconContent:<Icon title={downloadExcelData.iconTitle||null} type={downloadExcelData.iconType||"export"} />}
         </div>
       )
     }

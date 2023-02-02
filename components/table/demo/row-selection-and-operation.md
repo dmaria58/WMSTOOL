@@ -20,7 +20,8 @@ import { Table, Button } from 'wmstool';
 const columns = [{
   title: 'Name',
   dataIndex: 'name',
-  width:100
+  width:100,
+  fixed:'left'
 }, {
   title: 'Age',
   dataIndex: 'age',
@@ -29,7 +30,8 @@ const columns = [{
   title: 'Address',
   dataIndex: 'address',
   width:100
-}, {
+}
+, {
   title: 'code1',
   dataIndex: 'code1',
   width:100
@@ -104,11 +106,12 @@ const columns = [{
 }, {
   title: 'code20',
   dataIndex: 'code20',
-   width:100
+   width:100,
+   fixed:'right'
 }];
 
 const datas = [];
-for (let i = 0; i < 3000; i++) {
+for (let i = 0; i < 50000; i++) {
   datas.push({
     key: i,
     name: `E${i}`,
@@ -221,7 +224,7 @@ class App extends React.Component {
             {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
           </span>
         </div>
-        <Table rowSelection={rowSelection} pagination={{ pageSize: 3000 }} onRowClick={this.onRowClick}  scroll={{ x: 2000, y: 300 }} columns={columns} dataSource={this.state.data} isMaxData={{lazyHeight:54}} bordered={true}/>
+        <Table rowSelection={rowSelection} bordered={false} pagination={{ pageSize: 3000 }} onRowClick={this.onRowClick}  scroll={{ x: 3000, y: 300 }} columns={columns} dataSource={this.state.data} isMaxData={{lazyHeight:54}} />
       </div>
     );
   }

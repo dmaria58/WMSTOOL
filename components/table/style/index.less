@@ -534,13 +534,13 @@
 .wmstool-table-edit_div{
     position: absolute;
     top: 6px;
-    right: 7px;  
+    right: 7px;
     width:150px;
 }
 .wmstool-table-edit_download{
   position: absolute;
   top: 6px;
-  right: 50px;  
+  right: 50px;
   width:150px;
   text-align:right;
   padding: 5px;
@@ -611,23 +611,53 @@
     &[class*="@{table-prefix-cls}-row-level-0"] .@{table-prefix-cls}-selection-column > span {
       display: inline-block;
     }
-  } 
+  }
  }
+
 .table_lazy_list::-webkit-scrollbar    //滚动条整体部分
-{  
-    width: 0px;  
+{
+    width: 0px;
 }
 .table_lazy_list{
   padding-bottom:10px;
 }
 
+
 .tableLayout .wmstool-table-body > table{
   table-layout: fixed;
 }
-.wmstool-table-cell-ellipsis{
+.wmstool-table-cell-ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: keep-all;
+}
+.wmstool-table-fixed-left{
+  .table_lazy_div{
+    min-width: 100% !important;
+  }
+  .wmstool-table-fixed{
+    width: 100%;
+  }
+
+}
+.wmstool-table-fixed-left{
+  .wmstool-table-body-inner .wmstool-table-fixed colgroup{
+    display: none;
+  }
+}
+.wmstool-table-fixed-right{
+  .table_lazy_div{
+    min-width: 100% !important;
+  }
+  .wmstool-table-fixed{
+    width: 100%;
+  }
+
+}
+.wmstool-table-fixed-right{
+  .wmstool-table-body-inner .wmstool-table-fixed colgroup{
+    display: none;
+  }
 }
 @import './size';
